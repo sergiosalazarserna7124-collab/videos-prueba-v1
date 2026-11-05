@@ -4,7 +4,7 @@
  "composio_account": "instagram_adept-warmth",
  "ig_user_id": "29073808048954218",
  "zona_horaria": "America/Bogota",
- "reglas": "Publicar cada item pendiente cuando llegue su hora (when, hora de Bogotá). Caption tal cual, con # normal (no %23). Reel con share_to_feed y user_tags [{username: sergio_salazaar}]. Luego status=publicado + ig_media_id + permalink.",
+ "reglas": "Publicar cada item pendiente cuando llegue su hora (when, hora de Bogotá) como COLABORACIÓN con sergio_salazaar (no etiqueta). Crear el contenedor con COMPOSIO_PROXY_EXECUTE (toolkit instagram) POST https://graph.instagram.com/v21.0/29073808048954218/media con query: media_type=REELS, video_url=<video>, share_to_feed=true, collaborators=[\"sergio_salazaar\"], caption=<caption con # normal>. Si el item ya trae creation_id, usar ese. Publicar con INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH (cuenta instagram_adept-warmth, ig_user_id 29073808048954218, max_wait_seconds 50, reintentar si IN_PROGRESS). Luego status=publicado + ig_media_id + permalink.",
  "items": [
   {
    "when": "2026-11-05T11:45",
@@ -14,21 +14,25 @@
    "status": "publicado",
    "ig_media_id": "17947615110352661",
    "permalink": "https://www.instagram.com/reel/DfXfR0jDNPf/",
-   "nota": "el texto salió con %23 en vez de #; corregir a mano en la app"
+   "nota": "salió con %23 y con etiqueta; corregir texto e invitar colaborador a mano en la app"
   },
   {
    "when": "2026-11-05T12:30",
    "title": "Un mensaje. Una demanda.",
    "video": "https://static.metricool.com/planner/202611/7885543-file-9007833649662234815.mp4",
    "caption": "Un solo mensaje de texto metió en una demanda a una de las inmobiliarias más grandes de Nueva York.\nAhora piensa en tu inmobiliaria: tus asesores mandan cientos de mensajes al día desde su WhatsApp. ¿Tú sabes qué dicen?\nComenta SISTEMA y te mando cómo funciona.\n#inmobiliarias #bienesraices #asesoresinmobiliarios #crm #whatsapp",
-   "status": "pendiente"
+   "status": "publicado",
+   "ig_media_id": "18137961439656533",
+   "permalink": "https://www.instagram.com/reel/DfXkgMrDK_7/",
+   "nota": "salió con etiqueta, no colaboración; invitar colaborador a mano en la app"
   },
   {
    "when": "2026-11-05T14:00",
    "title": "Le pregunto a mi CRM qué hizo cada asesor",
    "video": "https://static.metricool.com/planner/202611/7885543-file-15402547458740610984.mp4",
    "caption": "Le pregunto a mi sistema qué hizo cada asesor y me responde al instante.\nSígueme para ver cómo funciona por dentro.\n#inmobiliarias #crm #bienesraices #leadmaster",
-   "status": "pendiente"
+   "status": "pendiente",
+   "creation_id": "18110448554285889"
   },
   {
    "when": "2026-11-05T18:00",
@@ -152,9 +156,9 @@
   {
    "when": "2026-11-09T20:30",
    "title": "E · Así recibirías tus reportes",
-   "video": null,
-   "caption": null,
-   "status": "falta_video"
+   "video": "https://static.metricool.com/planner/202611/7885543-file-17422092858928712331.mp4",
+   "caption": "Así es como recibirías los reportes de tu inmobiliaria si usaras Lead Master: cada mañana cada asesor recibe por WhatsApp su lista del día, en la tarde el resumen de lo que hizo, y tú recibes el reporte del equipo a la hora que elijas: cuántos leads entraron, a quién llamó cada asesor, quién se quedó sin contacto y cuántas citas salieron.\nComenta REPORTE y te mando cómo funciona.\n#inmobiliarias #reportes #asesoresinmobiliarios #crm #whatsapp",
+   "status": "pendiente"
   },
   {
    "when": "2026-11-10T10:00",
@@ -213,10 +217,45 @@
    "status": "pendiente"
   },
   {
+   "when": "2026-11-12T10:00",
+   "title": "Idea 5 · Depas de +150 mil USD",
+   "video": "https://static.metricool.com/planner/202611/7885543-file-9663530115091617031.mp4",
+   "caption": "Si vendes departamentos de más de 150 mil dólares, estás perdiendo compradores serios entre cientos de mensajes. El que tiene el dinero le escribe a 3 o 4 inmobiliarias y compra con la que contesta primero. Con Lead Master cada lead llega directo al asesor con aviso por WhatsApp, y si no hay llamada a tiempo, pasa al siguiente.\nComenta PRIMERO y te mando cómo funciona.\n#inmobiliarias #bienesraices #departamentos #leads #asesoresinmobiliarios",
+   "status": "pendiente"
+  },
+  {
+   "when": "2026-11-12T18:00",
+   "title": "C · Puros curiosos",
+   "video": "https://static.metricool.com/planner/202611/7885543-file-13021987381155657170.mp4",
+   "caption": "Esta es la razón por la que a tu inmobiliaria le siguen llegando puros curiosos: nunca le dices a Meta quién agendó, quién apartó y quién compró. Cuando un lead agenda una cita, Lead Master se lo avisa a Meta en automático, y tus anuncios empiezan a buscar gente que sí agenda.\nComenta META y te mando cómo funciona.\n#inmobiliarias #metaads #marketinginmobiliario #leads #bienesraices",
+   "status": "pendiente"
+  },
+  {
+   "when": "2026-11-12T20:30",
+   "title": "Idea 8 · 9 mil dólares en anuncios",
+   "video": "https://static.metricool.com/planner/202611/7885543-file-361745905564430968.mp4",
+   "caption": "Una inmobiliaria metió 9 mil dólares en anuncios y no vendió ni un departamento. El problema no estaba en la pauta: para trabajar bien esos 700 leads tocaba hacer unas 9 mil llamadas y el equipo hizo 3 mil. Lead Master mide eso por ti, asesor por asesor y campaña por campaña.\nComenta LLAMADAS y te mando cómo funciona.\n#inmobiliarias #metaads #leads #equipocomercial #bienesraices",
+   "status": "pendiente"
+  },
+  {
    "when": "2026-11-13T14:00",
    "title": "Idea 11 · ¿Qué anuncio te vendió?",
    "video": "https://static.metricool.com/planner/202611/7885543-file-2145984795680545843.mp4",
    "caption": "¿Qué anuncio te vendió el último departamento? Casi nadie lo sabe. Si solo miras el costo por lead, apagas el anuncio que vendía. Lead Master sigue cada lead desde el anuncio hasta la venta y te dice cuánto te costó cada cita.\nComenta CAMPAÑA y te mando cómo funciona.\n#inmobiliarias #metaads #marketinginmobiliario #leads #bienesraices",
+   "status": "pendiente"
+  },
+  {
+   "when": "2026-11-13T18:00",
+   "title": "D · Los CRM murieron",
+   "video": "https://static.metricool.com/planner/202611/7885543-file-4764602369873301499.mp4",
+   "caption": "Los CRM para el mundo inmobiliario murieron. Llegaron los CRA: CRM que se llenan solos. Un CRA escucha las llamadas, lee el WhatsApp y registra el presupuesto, la zona, qué busca el lead y en qué etapa va. Antes tu equipo trabajaba para el CRM; ahora el CRA trabaja para tu equipo.\nComenta CRA y te mando cómo funciona.\n#crm #inmobiliarias #inteligenciaartificial #bienesraices #asesoresinmobiliarios",
+   "status": "pendiente"
+  },
+  {
+   "when": "2026-11-13T20:30",
+   "title": "Idea 6 · No es la cantidad de leads",
+   "video": "https://static.metricool.com/planner/202611/7885543-file-14661188019091949202.mp4",
+   "caption": "El problema de tu inmobiliaria no es la cantidad de leads que te llegan. Cuando medimos 6,497 leads de 11 inmobiliarias, 1 de cada 3 nunca habló con una persona: nadie los llamó. Antes de comprar más leads, atiende los que ya pagaste.\nComenta LEADS y te mando cómo funciona.\n#inmobiliarias #leads #asesoresinmobiliarios #bienesraices #crm",
    "status": "pendiente"
   },
   {
