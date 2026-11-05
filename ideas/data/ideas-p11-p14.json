@@ -1,0 +1,619 @@
+[
+ {
+  "id": "P11-01",
+  "pilar": "P11",
+  "angulo": "P11a",
+  "titulo": "46 leads en Inmuebles24 que nadie abrió",
+  "gancho": "Licenciado, ¿quién revisa el correo de Inmuebles24? Silencio. ¿Nadie? Tres semanas. Cuarenta y seis leads.",
+  "formato": "junta",
+  "idea": "Junta: el dueño descubre la bandeja del portal con 46 leads sin abrir de tres semanas y todos se echan la culpa. Corte a Lead Master: cada lead del portal entra solo y se asigna en segundos.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P11-02",
+  "pilar": "P11",
+  "angulo": "P11a",
+  "titulo": "La contraseña del portal la tenía el Plátano",
+  "gancho": "Don Piña quería saber por qué no entraban leads del portal. La contraseña la tenía el Plátano. Y el Plátano estaba de vacaciones.",
+  "formato": "fruti",
+  "idea": "Frutinovela: todo el portal depende de una sola fruta con la contraseña; mientras el Plátano toma el sol, los leads se pudren en la bandeja. Lead Master conecta el portal y nadie tiene que entrar a revisarlo.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P11-03",
+  "pilar": "P11",
+  "angulo": "P11a",
+  "titulo": "¿Quién revisa tu EasyBroker? Pregunta seria",
+  "gancho": "Pregúntale hoy a tu equipo quién revisa los leads de EasyBroker y cada cuánto. Si te dicen «cuando puedo», ya perdiste leads.",
+  "formato": "camara",
+  "idea": "Sergio a cámara: el lead de portal es el más caliente porque ya vio la propiedad, y hoy depende de que alguien se acuerde de entrar. Con Lead Master le llega solo al asesor, sin revisar nada.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P11-04",
+  "pilar": "P11",
+  "angulo": "P11b",
+  "titulo": "Así llega un lead de Inmuebles24 con Lead Master",
+  "gancho": "Diana Trejo pregunta por un depa en Inmuebles24 a las 4:12. A las 4:12 ya tiene asesor.",
+  "formato": "motion",
+  "idea": "Motion: aviso del portal, la tarjeta del lead entra a Lead Master, se asigna a Paola y le llega por WhatsApp con la propiedad que vio. Un contador de segundos en pantalla todo el tiempo.",
+  "cta": "LEADS",
+  "base": "10"
+ },
+ {
+  "id": "P11-05",
+  "pilar": "P11",
+  "angulo": "P11b",
+  "titulo": "POV: eres el lead que preguntó en el portal",
+  "gancho": "POV: preguntaste por un departamento en un portal hace cuatro días y sigues esperando que alguien te conteste.",
+  "formato": "pov",
+  "idea": "Skit IA: la lead revisa el celular cada mañana, le crece la barba al esposo, se cambia la estación del año y termina comprando otro depa. Versión dos: con Lead Master le marcan en minutos.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P11-06",
+  "pilar": "P11",
+  "angulo": "P11b",
+  "titulo": "Si no contesta a tiempo, pasa al siguiente",
+  "gancho": "El lead llegó del portal, se lo asignaron a Diego y Diego está comiendo. ¿Qué hace tu sistema actual? Nada.",
+  "formato": "motion",
+  "idea": "Motion: un reloj corriendo sobre la tarjeta del lead; Diego no atiende, Lead Master lo reasigna a Valeria y ella agenda la cita. Explica la regla de tiempo de atención en una sola tarjeta.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P11-07",
+  "pilar": "P11",
+  "angulo": "P11c",
+  "titulo": "Pagas 3 portales. ¿Cuál te vende?",
+  "gancho": "Pagas tres portales inmobiliarios y no sabes cuál te trae compradores y cuál te trae puros curiosos.",
+  "formato": "motion",
+  "idea": "Motion: tres portales con su costo al mes; Lead Master muestra leads, contactados, citas y apartados de cada uno. El que más leads manda tiene cero citas. Ahí decides dónde poner el dinero.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P11-08",
+  "pilar": "P11",
+  "angulo": "P11c",
+  "titulo": "El portal que nadie se atreve a cancelar",
+  "gancho": "Llevamos un año pagando este portal. ¿Cuántas ventas nos dio? «Eh... muchas, jefe». ¿Cuántas?",
+  "formato": "junta",
+  "idea": "Junta: nadie sabe cuántas ventas trajo cada portal y el coordinador inventa números en vivo. Corte al reporte por fuente de Lead Master: el portal «favorito» dio cero citas en tres meses.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P11-09",
+  "pilar": "P11",
+  "angulo": "P11c",
+  "titulo": "Deja de medir portales por cantidad de leads",
+  "gancho": "El portal que más leads te manda probablemente no es el que más te vende.",
+  "formato": "camara",
+  "idea": "Sergio a cámara: a un portal se le mide por citas y apartados, no por leads. Muestra cómo Lead Master cruza el origen de cada lead con lo que pasó después.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P11-10",
+  "pilar": "P11",
+  "angulo": "P11d",
+  "titulo": "El lead llegó el viernes. La Fresa lo vio el lunes.",
+  "gancho": "Viernes, nueve de la noche. Un lead del portal pregunta por la casa de 6 millones. Nadie lo ve hasta el lunes.",
+  "formato": "fruti",
+  "idea": "Frutinovela: la Cereza espera todo el fin de semana mirando el celular; el sábado otra inmobiliaria le contesta. El lunes la Fresa llega tarde al drama. Con Lead Master el lead entra, se asigna solo y, si nadie lo atiende a tiempo, pasa al siguiente asesor.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P11-11",
+  "pilar": "P11",
+  "angulo": "P11d",
+  "titulo": "Lo que pasa con tus leads de fin de semana",
+  "gancho": "Revisa a qué hora llegan tus leads de portales. Te vas a llevar una sorpresa con los fines de semana.",
+  "formato": "motion",
+  "idea": "Motion: mapa de calor de leads por día y hora con datos de ejemplo; sábado y domingo se acumulan sin atender. Lead Master los asigna en cuanto llegan y, si un asesor no atiende, pasan al siguiente: el lunes nadie empieza con 30 pendientes.",
+  "cta": "LEADS",
+  "base": "G6"
+ },
+ {
+  "id": "P11-12",
+  "pilar": "P11",
+  "angulo": "P11d",
+  "titulo": "POV: es sábado y quieres ver depas hoy",
+  "gancho": "POV: es sábado, quieres ver tres departamentos hoy y le escribiste a cinco inmobiliarias. Solo una te contestó.",
+  "formato": "pov",
+  "idea": "Skit IA: la pareja en el auto con cuatro chats en visto; la única que contesta agenda recorrido esa misma tarde. Remate: «esa es la que vende». Lead Master hace que esa seas tú.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P11-13",
+  "pilar": "P11",
+  "angulo": "P11e",
+  "titulo": "Portales, Meta y referidos en un solo lugar",
+  "gancho": "Tus leads llegan por cinco lados: portales, Meta, la página, referidos y WhatsApp. Y cada uno vive en un lugar distinto.",
+  "formato": "motion",
+  "idea": "Motion: cinco fuentes caen como ríos en una sola bandeja de Lead Master; cada lead con su origen y su asesor asignado. Cierre: un solo reporte con todo.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P11-14",
+  "pilar": "P11",
+  "angulo": "P11e",
+  "titulo": "«¿De dónde llegó este cliente?» «No sé»",
+  "gancho": "¡Vendimos el depa de 9 millones! ¿De dónde llegó el cliente? «Mmm... de Facebook, creo». ¿Crees?",
+  "formato": "junta",
+  "idea": "Junta: celebran la venta y nadie sabe si vino del portal, de Meta o de un referido; dos asesores pelean por quién lo trajo. Lead Master guarda el origen de cada lead desde el primer mensaje.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P11-15",
+  "pilar": "P11",
+  "angulo": "P11e",
+  "titulo": "Conecto mi EasyBroker a Lead Master en vivo",
+  "gancho": "Te enseño qué pasa cuando alguien pregunta por una propiedad de tu EasyBroker con Lead Master conectado.",
+  "formato": "pantalla",
+  "idea": "Demo grabada: se manda una consulta de prueba desde el portal y se ve cómo aparece en Lead Master, ya asignada, con aviso al asesor por WhatsApp. Todo en una sola toma.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P12-01",
+  "pilar": "P12",
+  "angulo": "P12a",
+  "titulo": "«Ahorita te mando opciones»: la traición",
+  "gancho": "El Plátano le prometió opciones a la Cereza el martes. Es viernes. La Cereza ya firmó con otro.",
+  "formato": "fruti",
+  "idea": "Frutinovela: el Plátano repite «ahorita te mando» en cada escena mientras juega en el celular; Don Piña lo descubre con música de tragedia. Remate: con Lead Master la IA le deja las opciones listas para enviar.",
+  "cta": "SISTEMA",
+  "base": "24"
+ },
+ {
+  "id": "P12-02",
+  "pilar": "P12",
+  "angulo": "P12a",
+  "titulo": "POV: llevas 3 días esperando las opciones",
+  "gancho": "POV: le pediste a un asesor opciones de depas de dos recámaras. Te dijo «ahorita te mando». Eso fue el lunes.",
+  "formato": "pov",
+  "idea": "Skit IA: la lead mira el chat, palomitas grises, luego azules, luego nada; termina en la página de otra inmobiliaria. Corte: así se ve cuando la IA busca y el asesor manda en minutos.",
+  "cta": "LEADS",
+  "base": "24"
+ },
+ {
+  "id": "P12-03",
+  "pilar": "P12",
+  "angulo": "P12a",
+  "titulo": "214 «ahorita te mando». Mandaron 31.",
+  "gancho": "Le pregunté a mi CRM cuántas veces mi equipo prometió «ahorita te mando opciones». 214. ¿Sabes cuántas mandaron?",
+  "formato": "junta",
+  "idea": "Junta: el dueño proyecta el número en la pantalla y los asesores se esconden detrás de las laptops. Lo sacó del chat de Lead Master en una pregunta. Remate: ahora la IA les busca las opciones.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P12-04",
+  "pilar": "P12",
+  "angulo": "P12b",
+  "titulo": "Así busca opciones la IA de Lead Master",
+  "gancho": "Adriana escribe: «Busco depa de dos recámaras en la Del Valle, hasta 5 millones, con estacionamiento». Mira lo que pasa.",
+  "formato": "motion",
+  "idea": "Motion: el mensaje en WhatsApp, la IA subraya los requisitos, busca en el inventario de EasyBroker y muestra cuatro opciones con foto y precio. El asesor las revisa y las manda.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P12-05",
+  "pilar": "P12",
+  "angulo": "P12b",
+  "titulo": "Cronometro a la IA buscando en mi EasyBroker",
+  "gancho": "Le pido a la IA de Lead Master opciones para un lead de prueba y cronometro cuánto tarda.",
+  "formato": "pantalla",
+  "idea": "Demo grabada con cronómetro en la esquina: el lead pide casa con jardín en Zapopan, la IA trae opciones del inventario conectado y el asesor manda las fichas. Se detiene el reloj.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P12-06",
+  "pilar": "P12",
+  "angulo": "P12b",
+  "titulo": "La IA no vende. Te ahorra la búsqueda.",
+  "gancho": "No quiero una IA que le hable a mis clientes por mí. Quiero una que le busque las opciones a mi asesor.",
+  "formato": "camara",
+  "idea": "Sergio a cámara: la IA busca en el inventario, el asesor decide y manda, y el cliente sigue hablando con una persona. El flujo aparece en pantalla en tres pasos.",
+  "cta": "SISTEMA",
+  "base": "15"
+ },
+ {
+  "id": "P12-07",
+  "pilar": "P12",
+  "angulo": "P12c",
+  "titulo": "300 propiedades y nadie sabe qué hay",
+  "gancho": "¿Tenemos algo de tres recámaras en Polanco abajo de 12 millones? «Déjeme buscar, jefe». Cuarenta minutos después: «¿Cuál Polanco?»",
+  "formato": "junta",
+  "idea": "Junta: el asesor abre 15 pestañas, el Excel de inventario y el grupo de captaciones; todos opinan y nadie encuentra nada. Corte: la IA de Lead Master lo encuentra en segundos.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P12-08",
+  "pilar": "P12",
+  "angulo": "P12c",
+  "titulo": "El Limón y su Excel de inventario",
+  "gancho": "El Limón juró que su Excel de inventario estaba al día. La Fresa llevó a un cliente a ver un depa... que ya estaba vendido.",
+  "formato": "fruti",
+  "idea": "Frutinovela: la Fresa llega con el cliente a un depa vendido, vergüenza total, y Don Piña explota contra el Limón. Remate: la IA busca en el inventario conectado de EasyBroker, no en un Excel viejo.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P12-09",
+  "pilar": "P12",
+  "angulo": "P12c",
+  "titulo": "40 minutos por lead para armar opciones",
+  "gancho": "Tu asesor tarda 40 minutos en armar opciones para un solo lead. Con 20 leads al día, haz la cuenta.",
+  "formato": "motion",
+  "idea": "Motion: contador 40 minutos por 20 leads igual a 13 horas; el asesor nunca termina y elige a quién sí mandarle. Con la IA buscando en el inventario, cada lead recibe opciones el mismo día.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P12-10",
+  "pilar": "P12",
+  "angulo": "P12d",
+  "titulo": "POV: pediste depa de 3 millones y te mandan de 8",
+  "gancho": "POV: dijiste que tu presupuesto era de 3 millones y el asesor te manda puras opciones de 8.",
+  "formato": "pov",
+  "idea": "Skit IA: la lead ve fichas cada vez más caras y fuera de zona, pone cara de incredulidad y bloquea al asesor. Corte: la IA filtra por presupuesto, zona y recámaras según lo que el lead escribió.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P12-11",
+  "pilar": "P12",
+  "angulo": "P12d",
+  "titulo": "El asesor que manda todo el catálogo",
+  "gancho": "¿El cliente pidió una casa? Mándale las 87 que tenemos. Algo le va a gustar.",
+  "formato": "parodia",
+  "idea": "Parodia de un asesor «estratega» que dispara PDFs, links y fotos sin leer lo que pidió el cliente, hasta que el cliente deja de contestar. Lead Master: la IA lee el chat y propone solo lo que coincide.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P12-12",
+  "pilar": "P12",
+  "angulo": "P12d",
+  "titulo": "La IA leyó lo que tu asesor no leyó",
+  "gancho": "El lead dijo tres veces que necesita que acepten mascotas. Tu asesor le mandó cinco opciones que no las aceptan.",
+  "formato": "motion",
+  "idea": "Motion: el chat con los requisitos resaltados (mascotas, planta baja, crédito Infonavit); las opciones equivocadas se tachan y la IA arma la lista con lo que sí cumple.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P12-13",
+  "pilar": "P12",
+  "angulo": "P12e",
+  "titulo": "Opciones en 5 minutos vs. en 3 días",
+  "gancho": "Dos inmobiliarias recibieron al mismo lead. Una le mandó opciones en cinco minutos. La otra, en tres días. Adivina quién hizo el recorrido.",
+  "formato": "motion",
+  "idea": "Motion en pantalla dividida: a la izquierda el asesor que busca a mano, a la derecha la IA que busca y el asesor que manda. Una línea de tiempo corre hasta la cita.",
+  "cta": "LEADS",
+  "base": "10"
+ },
+ {
+  "id": "P12-14",
+  "pilar": "P12",
+  "angulo": "P12e",
+  "titulo": "La competencia le mandó opciones antes",
+  "gancho": "¡¿Cómo que el cliente ya fue a ver depas con otra inmobiliaria?! ¡Nos escribió a nosotros primero!",
+  "formato": "junta",
+  "idea": "Junta: el dueño lee el chat en voz alta: el lead preguntó a las 10, la competencia le mandó opciones a las 10:20 y aquí respondieron al día siguiente. Remate con la IA de Lead Master buscando opciones al momento.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P12-15",
+  "pilar": "P12",
+  "angulo": "P12e",
+  "titulo": "La Cereza y las dos inmobiliarias",
+  "gancho": "La Cereza le escribió a dos inmobiliarias. Una le mandó opciones en minutos. La otra... la otra era la de Don Piña.",
+  "formato": "fruti",
+  "idea": "Frutinovela de rivalidad: Don Piña ve por la ventana a la Cereza firmando con la inmobiliaria rival, zoom dramático. Flashback: el Plátano tardó tres días. Final: Don Piña instala Lead Master.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P13-01",
+  "pilar": "P13",
+  "angulo": "P13a",
+  "titulo": "¿Por qué carajo no pasan los reportes?",
+  "gancho": "¡Llevo meses diciéndoles! ¡Meses! ¿Por qué carajo nadie me pasa los reportes?",
+  "formato": "junta",
+  "idea": "Junta clásica: el dueño golpea la mesa y cada asesor da una excusa absurda (se me borró, el Excel no abre, lo mandé por correo). Corte en seco: con Lead Master el reporte le llega solo por WhatsApp, sin que nadie llene nada.",
+  "cta": "SISTEMA",
+  "base": "E"
+ },
+ {
+  "id": "P13-02",
+  "pilar": "P13",
+  "angulo": "P13a",
+  "titulo": "Don Piña y el reporte que nunca llegó",
+  "gancho": "Don Piña esperó el reporte del lunes. Y el del martes. Y el del miércoles. El jueves, la Piña explotó.",
+  "formato": "fruti",
+  "idea": "Frutinovela con música de telenovela: Don Piña recorre la oficina; el Plátano finge una llamada, el Limón dice que ya casi, y la Fresa es la única que lo tiene. Remate: con Lead Master el reporte llega solo cada mañana.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P13-03",
+  "pilar": "P13",
+  "angulo": "P13a",
+  "titulo": "Las 10 excusas para no pasar el reporte",
+  "gancho": "Excusa número uno: «es que estuve con clientes todo el día». La número siete es mi favorita.",
+  "formato": "junta",
+  "idea": "Junta en formato ranking: diez caricaturas, diez excusas, y el dueño cada vez más rojo hasta que le sale humo de las orejas. Remate: un reporte que no depende de nadie, armado con sus chats y llamadas.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P13-04",
+  "pilar": "P13",
+  "angulo": "P13b",
+  "titulo": "Los 47 mensajes que mandas para saber qué pasó",
+  "gancho": "¿Le llamaste a Diana? ¿Y la cita del jueves? ¿Mandaste la cotización? Así es tu WhatsApp todo el día.",
+  "formato": "motion",
+  "idea": "Motion: el celular del dueño con burbujas que no paran de subir hacia cada asesor y un contador de mensajes. Corte: lo mismo resuelto con un solo reporte diario de Lead Master.",
+  "cta": "SISTEMA",
+  "base": "E"
+ },
+ {
+  "id": "P13-05",
+  "pilar": "P13",
+  "angulo": "P13b",
+  "titulo": "POV: eres dueño y también niñera",
+  "gancho": "POV: tienes una inmobiliaria de 12 asesores y tu verdadero trabajo es preguntarles si ya llamaron.",
+  "formato": "pov",
+  "idea": "Skit IA: el dueño despierta y pregunta, desayuna y pregunta, maneja y pregunta, se duerme preguntando. Remate: Lead Master le dice a cada asesor a quién llamar y a ti quién no llamó.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P13-06",
+  "pilar": "P13",
+  "angulo": "P13b",
+  "titulo": "No tienes un problema de asesores",
+  "gancho": "Si tu día se va en preguntarle a cada asesor qué hizo, no tienes un problema de asesores. Tienes un problema de sistema.",
+  "formato": "camara",
+  "idea": "Sergio a cámara: cuando cada asesor recibe su lista del día y tú recibes el reporte, ya no hay nada que preguntar. En pantalla, la lista del asesor y el reporte del dueño lado a lado.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P13-07",
+  "pilar": "P13",
+  "angulo": "P13c",
+  "titulo": "El Limón maquilló el Excel",
+  "gancho": "Según el Excel del Limón, el equipo contactó al 92 % de los leads. Don Piña quiso ver las llamadas.",
+  "formato": "fruti",
+  "idea": "Frutinovela: Don Piña abre el reporte de Lead Master y sale 41 %; el Limón suda jugo y hay revelación con zoom triple. Mensaje: el reporte sale de los chats y las llamadas, no de lo que alguien escribe.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P13-08",
+  "pilar": "P13",
+  "angulo": "P13c",
+  "titulo": "El coordinador que tarda 4 días en el reporte",
+  "gancho": "Contraté a un coordinador para tener control. Ahora tengo a un coordinador que tarda cuatro días en armar un Excel.",
+  "formato": "junta",
+  "idea": "Junta: el coordinador presenta orgulloso el reporte de la semana pasada y el dueño pregunta por hoy. Lead Master arma el reporte del día solo y el coordinador se dedica a entrenar al equipo.",
+  "cta": "SISTEMA",
+  "base": "17"
+ },
+ {
+  "id": "P13-09",
+  "pilar": "P13",
+  "angulo": "P13c",
+  "titulo": "Viernes 7 pm: tu coordinador sigue en Excel",
+  "gancho": "Viernes, siete de la noche. Tu coordinador sigue copiando datos de nueve asesores a un Excel. ¿Te suena?",
+  "formato": "motion",
+  "idea": "Motion: foto de oficina vacía, pantalla de Excel y un reloj que avanza mientras cada celda se llena a mano. Corte: el mismo reporte hecho por Lead Master con llamadas, chats y citas reales.",
+  "cta": "SISTEMA",
+  "base": "17"
+ },
+ {
+  "id": "P13-10",
+  "pilar": "P13",
+  "angulo": "P13d",
+  "titulo": "8:00 am: te llega esto. Nadie lo llenó.",
+  "gancho": "Son las ocho de la mañana y te llega esto por WhatsApp. Nadie lo llenó.",
+  "formato": "motion",
+  "idea": "Motion: el reporte del dueño en el celular: leads que entraron, llamadas por asesor, sin contacto y citas, con Diego en rojo. Explica de dónde sale cada número.",
+  "cta": "SISTEMA",
+  "base": "E"
+ },
+ {
+  "id": "P13-11",
+  "pilar": "P13",
+  "angulo": "P13d",
+  "titulo": "Te explico el reporte línea por línea",
+  "gancho": "Este es el reporte que recibe un dueño de inmobiliaria con Lead Master. Te lo explico línea por línea.",
+  "formato": "pantalla",
+  "idea": "Demo grabada del reporte con datos de demo: zoom a cada sección y qué decisión tomar con cada una (a quién reasignar, a quién felicitar, qué fuente cortar).",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P13-12",
+  "pilar": "P13",
+  "angulo": "P13d",
+  "titulo": "La junta de los lunes que dura 10 minutos",
+  "gancho": "Antes, la junta de los lunes duraba tres horas. Hoy dura diez minutos. ¿Qué cambió?",
+  "formato": "junta",
+  "idea": "Junta en antes y después: caricaturas peleando por números contra la misma junta con el reporte de Lead Master proyectado. Cada quien ya sabe sus números y solo se habla de cómo vender más.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P13-13",
+  "pilar": "P13",
+  "angulo": "P13e",
+  "titulo": "Don Piña se fue de vacaciones",
+  "gancho": "Don Piña se fue una semana a Cancún. Cuando regresó, la oficina era un caos.",
+  "formato": "fruti",
+  "idea": "Frutinovela: sin el jefe, el Plátano no llama, el Aguacate hace cosas raras y el Limón no reporta. Segunda parte: Don Piña en la playa recibe el reporte en el celular y ve todo. Control sin estar ahí.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P13-14",
+  "pilar": "P13",
+  "angulo": "P13e",
+  "titulo": "POV: estás de vacaciones y llega el reporte",
+  "gancho": "POV: estás en la playa, son las ocho de la mañana y te llega el reporte de tu inmobiliaria por WhatsApp.",
+  "formato": "pov",
+  "idea": "Skit IA: el dueño en camastro revisa el reporte; ve que Valeria agendó tres citas y que Diego tiene cuatro leads sin contacto. Manda un solo mensaje y sigue descansando.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P13-15",
+  "pilar": "P13",
+  "angulo": "P13e",
+  "titulo": "Si no funciona sin ti, no es una empresa",
+  "gancho": "Si te vas una semana y tus ventas se caen, no tienes una inmobiliaria. Tienes un autoempleo con asesores.",
+  "formato": "camara",
+  "idea": "Sergio a cámara, opinión fuerte: el control no puede depender de que el dueño esté encima. Lead Master le dice a cada asesor qué hacer y a ti cómo va todo, estés donde estés.",
+  "cta": "INMOBILIARIO"
+ },
+ {
+  "id": "P14-01",
+  "pilar": "P14",
+  "angulo": "P14a",
+  "titulo": "Este lead que nadie contestó valía 180 mil",
+  "gancho": "Un depa de 6 millones con 3 % de comisión son 180 mil pesos. Este lead nadie lo contestó.",
+  "formato": "motion",
+  "idea": "Motion: la cuenta de la comisión paso a paso sobre un chat sin respuesta, y el número se quema. Lead Master avisa cuando un lead se queda sin seguimiento.",
+  "cta": "LEADS",
+  "base": "23"
+ },
+ {
+  "id": "P14-02",
+  "pilar": "P14",
+  "angulo": "P14a",
+  "titulo": "¿Cuánto dinero perdimos este mes?",
+  "gancho": "Quiero saber cuánto dinero perdimos este mes en leads que nadie contestó. ¡Ahorita! ¿Nadie sabe?",
+  "formato": "junta",
+  "idea": "Junta: el dueño exige el número, el coordinador saca la calculadora y empiezan a sumar; la cifra crece en pantalla hasta que alguien se desmaya. Lead Master muestra los leads sin contacto de cada asesor.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P14-03",
+  "pilar": "P14",
+  "angulo": "P14a",
+  "titulo": "Expediente: el lead de los 12 millones",
+  "gancho": "Expediente 0347. Lead: penthouse de 12 millones. Primera respuesta: tres días después. Resultado: compró con la competencia.",
+  "formato": "noticia",
+  "idea": "Formato expediente con sello: línea de tiempo del lead perdido, minuto a minuto, y sello rojo de PERDIDO. Remate: con Lead Master le habrían marcado en minutos y el dueño habría recibido el aviso.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P14-04",
+  "pilar": "P14",
+  "angulo": "P14b",
+  "titulo": "Gastas 50 mil en anuncios y tiras 16 mil",
+  "gancho": "Si gastas 50 mil pesos al mes en Meta y uno de cada tres leads nunca habló con nadie, estás tirando 16 mil.",
+  "formato": "motion",
+  "idea": "Motion: billetes cayendo a un bote de basura al ritmo de los leads sin contacto, con la cuenta en pantalla. Lead Master asigna, da seguimiento y le avisa a Meta quién sí compra.",
+  "cta": "LEADS",
+  "base": "08"
+ },
+ {
+  "id": "P14-05",
+  "pilar": "P14",
+  "angulo": "P14b",
+  "titulo": "El Mango pidió más presupuesto",
+  "gancho": "El Mango de marketing dijo que faltaba presupuesto. Don Piña le dio el doble. Nadie llamó a los leads.",
+  "formato": "fruti",
+  "idea": "Frutinovela: llega el doble de leads y el doble de leads ignorados; Don Piña descubre el reporte y el Mango y el Plátano se culpan entre sí. Moral: antes de subir presupuesto, asegúrate de que alguien los atienda.",
+  "cta": "LEADS",
+  "base": "08"
+ },
+ {
+  "id": "P14-06",
+  "pilar": "P14",
+  "angulo": "P14b",
+  "titulo": "No le subas a tus anuncios todavía",
+  "gancho": "Antes de meterle más dinero a Meta, contesta esto: ¿cuántos leads del mes pasado recibieron una llamada?",
+  "formato": "camara",
+  "idea": "Sergio a cámara: si no sabes ese número, más presupuesto solo es más desperdicio. Muestra la métrica de leads sin contacto en Lead Master.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P14-07",
+  "pilar": "P14",
+  "angulo": "P14c",
+  "titulo": "Lo compró con la competencia. Era nuestro lead.",
+  "gancho": "¡¿Cómo que Adriana Solís compró con la inmobiliaria de enfrente?! ¡Era nuestra lead!",
+  "formato": "junta",
+  "idea": "Junta: revisan el historial y el asesor la había descartado sin seguimiento; la competencia sí la buscó. El dueño calcula la comisión que se fue. Lead Master: avisos de leads sin seguimiento y revisión de descartados.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P14-08",
+  "pilar": "P14",
+  "angulo": "P14c",
+  "titulo": "POV: tu lead firmando con otra inmobiliaria",
+  "gancho": "POV: pasas por la oficina de la competencia y adentro está la clienta que tu asesor dijo que «no estaba interesada».",
+  "formato": "pov",
+  "idea": "Skit IA: el dueño pegado a la ventana mientras la clienta firma y sonríe; flashback al chat sin respuesta. Remate: Lead Master muestra cada descarte con su conversación.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P14-09",
+  "pilar": "P14",
+  "angulo": "P14c",
+  "titulo": "240 mil de comisión perdidos por un «ahorita»",
+  "gancho": "El cliente pidió cita un martes. El Plátano dijo «ahorita lo agendo». Eran 240 mil pesos de comisión.",
+  "formato": "fruti",
+  "idea": "Frutinovela: el cliente espera, el Plátano se distrae, el cliente se va con la competencia; Don Piña lee el chat una semana después y llora jugo. Con Lead Master ese lead aparece como urgente y el dueño recibe el aviso.",
+  "cta": "LEADS",
+  "base": "24"
+ },
+ {
+  "id": "P14-10",
+  "pilar": "P14",
+  "angulo": "P14d",
+  "titulo": "Tu asesor que no llama te cuesta más que su sueldo",
+  "gancho": "Diego no llama. Pero no te cuesta solo su sueldo: te cuesta los 60 leads que le diste este mes.",
+  "formato": "motion",
+  "idea": "Motion: Diego en el reporte con 9 llamadas y 12 leads olvidados; la cuenta de leads por costo de cada lead más las comisiones posibles. Antes de despedirlo, mira los datos.",
+  "cta": "SISTEMA",
+  "base": "19"
+ },
+ {
+  "id": "P14-11",
+  "pilar": "P14",
+  "angulo": "P14d",
+  "titulo": "El asesor más caro de la oficina",
+  "gancho": "¿Quién es el asesor más caro de esta oficina? «¿El que gana más?». No. El que no llama.",
+  "formato": "junta",
+  "idea": "Junta: el dueño pone en pantalla lo que costaron los leads de cada asesor contra sus llamadas; todos voltean a ver a Diego, que finge estar en una llamada con el celular al revés. Datos del reporte de Lead Master.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P14-12",
+  "pilar": "P14",
+  "angulo": "P14d",
+  "titulo": "Haz esta cuenta con tu peor asesor",
+  "gancho": "Haz esta cuenta con tu peor asesor: leads que le diste por lo que te costó cada uno. ¿Sigue siendo barato?",
+  "formato": "camara",
+  "idea": "Sergio a cámara con la cuenta en pantalla. Explica que con Lead Master ves las llamadas de cada asesor y, si alguien no atiende a tiempo, el lead pasa al siguiente.",
+  "cta": "SISTEMA"
+ },
+ {
+  "id": "P14-13",
+  "pilar": "P14",
+  "angulo": "P14e",
+  "titulo": "Calcula lo que pierdes en 30 segundos",
+  "gancho": "Dame 30 segundos y te digo cuánto dinero está perdiendo tu inmobiliaria cada mes.",
+  "formato": "motion",
+  "idea": "Motion tipo calculadora: leads al mes, porcentaje sin contacto, ticket promedio y comisión; la cifra final en grande. Invita a comentar para recibir la calculadora.",
+  "cta": "INMOBILIARIO",
+  "base": "23"
+ },
+ {
+  "id": "P14-14",
+  "pilar": "P14",
+  "angulo": "P14e",
+  "titulo": "POV: haces la cuenta por primera vez",
+  "gancho": "POV: eres dueño de inmobiliaria y por primera vez calculas cuánto te cuestan los leads que nadie contestó.",
+  "formato": "pov",
+  "idea": "Skit IA: el dueño con calculadora; la cifra crece y la cara pasa de tranquila a pálida hasta que se le cae el café. Remate: Lead Master y el reporte de leads sin contacto.",
+  "cta": "LEADS"
+ },
+ {
+  "id": "P14-15",
+  "pilar": "P14",
+  "angulo": "P14e",
+  "titulo": "«Todo va excelente, licenciado»",
+  "gancho": "Licenciado, todo va excelente: gastamos 80 mil y llegaron 400 leads. ¿Y cuántos compraron? ...Siguiente pregunta.",
+  "formato": "parodia",
+  "idea": "Parodia de un analista optimista que solo mide gasto y cantidad de leads; el dueño pide ventas por fuente y nadie sabe. Lead Master une cada lead con su cita y su apartado.",
+  "cta": "LEADS"
+ }
+]

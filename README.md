@@ -4,6 +4,7 @@ Fábrica de reels verticales (1080x1920) para Lead Master: fotos realistas, moti
 
 - Guiones (25): documento "Guiones LeadMaster: 25 reels" en Claude (ver `guiones/README.md`).
 - Videos terminados: `videos/`.
+- Ideas de contenido (210, con mapa de pilares, guiones de prueba y plan de producción con IA): `ideas/` y la página para aprobarlas: https://claude.ai/artifact/P3VF9fWuQsvozsJ2Apkz7c
 - Motor: `engine/` (Remotion + Python).
 
 ## Cómo se arma un video

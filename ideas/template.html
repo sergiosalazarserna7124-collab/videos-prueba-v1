@@ -1,0 +1,720 @@
+<title>Mapa de contenido Lead Master</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@500&family=Poppins:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: brand dark-first console. Mapa de círculos arriba, banco de ideas como tablero de aprobación, luego material de apoyo. */
+:root {
+  color-scheme: dark;
+  --bg: #060B12;
+  --panel: #0D1219;
+  --panel2: #111A24;
+  --line: #1E2A3A;
+  --fg: #E8EEF6;
+  --muted: #9AA7B8;
+  --cyan: #00F0FF;
+  --purple: #C27CF6;
+  --red: #FF5C6C;
+  --amber: #FFB020;
+  --green: #00E676;
+  --on-accent: #060B12;
+  --display: "Bebas Neue", Impact, "Arial Narrow", sans-serif;
+  --body: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+    --bg: #F3F6FA; --panel: #FFFFFF; --panel2: #E9EEF5; --line: #D3DCE8;
+    --fg: #0B1420; --muted: #4C5A6C;
+    --cyan: #00788C; --purple: #7F2DBA; --red: #C42A3C; --amber: #9A5A00; --green: #0A7D45;
+    --on-accent: #FFFFFF;
+  }
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #F3F6FA; --panel: #FFFFFF; --panel2: #E9EEF5; --line: #D3DCE8;
+  --fg: #0B1420; --muted: #4C5A6C;
+  --cyan: #00788C; --purple: #7F2DBA; --red: #C42A3C; --amber: #9A5A00; --green: #0A7D45;
+  --on-accent: #FFFFFF;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--body); font-size: 15px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 64px;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 1180px; margin: 0 auto; }
+h1, h2, h3 { text-wrap: balance; margin: 0; }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(48px, 9vw, 92px); line-height: .92; letter-spacing: .5px; }
+h1 .grad { background: linear-gradient(120deg, var(--purple), var(--cyan)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+h2 { font-family: var(--display); font-weight: 400; font-size: clamp(34px, 5vw, 46px); line-height: 1; letter-spacing: .4px; }
+h3 { font-size: 17px; font-weight: 600; line-height: 1.3; }
+p { margin: 0; }
+a { color: var(--cyan); }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
+.muted { color: var(--muted); }
+.mono { font-family: var(--mono); }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+
+/* Header */
+header.top { padding-block: 40px 28px; display: grid; gap: 18px; }
+.lede { max-width: 62ch; color: var(--muted); font-size: 16px; }
+.stats { display: flex; flex-wrap: wrap; gap: 10px 28px; font-variant-numeric: tabular-nums; }
+.stat b { font-family: var(--display); font-size: 34px; font-weight: 400; line-height: 1; display: block; }
+.stat span { font-size: 12px; color: var(--muted); letter-spacing: .4px; }
+.stat.ok b { color: var(--green); } .stat.maybe b { color: var(--amber); } .stat.no b { color: var(--red); }
+
+/* Nav */
+nav.sec {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
+  padding-inline: max(16px, env(safe-area-inset-left, 0px));
+}
+nav.sec .in { max-width: 1180px; margin: 0 auto; display: flex; gap: 4px; overflow-x: auto; padding-block: 8px; scrollbar-width: none; }
+nav.sec a { white-space: nowrap; text-decoration: none; color: var(--muted); font-size: 13px; font-weight: 500; padding: 6px 12px; border-radius: 999px; }
+nav.sec a:hover { color: var(--fg); background: var(--panel2); }
+
+section.block { padding-block: 56px 8px; display: grid; gap: 22px; scroll-margin-top: 60px; }
+.sechead { display: grid; gap: 8px; }
+.sechead p { max-width: 70ch; color: var(--muted); }
+
+/* Map */
+.mapgrid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+@media (max-width: 900px) { .mapgrid { grid-template-columns: minmax(0, 1fr); } }
+.mapcard { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 16px; display: grid; gap: 12px; min-width: 0; }
+.mapcard svg { width: 100%; height: auto; display: block; max-width: 100%; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12px; color: var(--muted); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
+.svg-line { stroke: var(--line); stroke-width: 1.5; }
+.pnode { cursor: pointer; }
+.pnode circle { fill: var(--panel2); stroke: var(--fam); stroke-width: 2.5; transition: fill .15s; }
+.pnode:hover circle, .pnode.sel circle { fill: color-mix(in srgb, var(--fam) 22%, var(--panel2)); }
+.pnode.sel circle { stroke-width: 4; }
+.pnode .lab { fill: var(--fg); font-family: var(--body); font-size: 10.5px; font-weight: 600; }
+.pnode .pid { fill: var(--fam); font-family: var(--mono); font-size: 9px; }
+.pnode:focus { outline: none; }
+.pnode:focus-visible circle { stroke: var(--fg); }
+.hub circle { fill: var(--bg); stroke: url(#hubgrad); stroke-width: 3; }
+.hub text { fill: var(--fg); font-family: var(--display); font-size: 26px; letter-spacing: .5px; }
+.hub .small { font-family: var(--mono); font-size: 10px; fill: var(--muted); letter-spacing: 1px; }
+.flor .core circle { fill: color-mix(in srgb, var(--fam) 20%, var(--panel2)); stroke: var(--fam); stroke-width: 3; }
+.flor .core text { fill: var(--fg); font-family: var(--display); font-size: 20px; letter-spacing: .3px; }
+.flor .arrow { stroke: var(--fam); stroke-width: 2; }
+.flor .head { fill: var(--fam); }
+.flor .ang { cursor: pointer; }
+.flor .ang circle { fill: var(--panel2); stroke: var(--fam); stroke-width: 1.5; stroke-dasharray: 4 3; }
+.flor .ang:hover circle, .flor .ang.sel circle { fill: color-mix(in srgb, var(--fam) 16%, var(--panel2)); stroke-dasharray: none; }
+.flor .ang text { fill: var(--fg); font-family: var(--body); font-size: 11.5px; font-weight: 500; }
+.flor .ang .cnt { fill: var(--muted); font-family: var(--mono); font-size: 9.5px; }
+.florinfo { display: grid; gap: 10px; }
+.florinfo .why { color: var(--muted); }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.plist, .alist { display: none; gap: 6px; }
+.plist button, .alist button { display: flex; align-items: center; gap: 8px; text-align: left; border: 1px solid var(--line); background: var(--panel2); border-radius: 10px; padding: 8px 10px; font-size: 13px; cursor: pointer; min-width: 0; }
+.plist button[aria-pressed="true"], .alist button[aria-pressed="true"] { border-color: var(--fam); background: color-mix(in srgb, var(--fam) 16%, var(--panel2)); }
+.plist i { flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--fam); }
+.alist span { margin-left: auto; font-family: var(--mono); font-size: 11px; color: var(--muted); white-space: nowrap; }
+@media (max-width: 600px) {
+  .plist { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .alist { display: grid; }
+  .legend { display: none; }
+}
+
+/* Buttons / chips */
+.btn { border: 1px solid var(--line); background: var(--panel2); border-radius: 999px; padding: 7px 14px; font-size: 13px; font-weight: 500; cursor: pointer; }
+.btn:hover { border-color: var(--muted); }
+.btn.primary { background: var(--cyan); color: var(--on-accent); border-color: var(--cyan); font-weight: 600; }
+.chip { border: 1px solid var(--line); background: transparent; border-radius: 999px; padding: 5px 12px; font-size: 12.5px; cursor: pointer; color: var(--muted); white-space: nowrap; }
+.chip:hover { color: var(--fg); border-color: var(--muted); }
+.chip[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.pill { display: inline-flex; align-items: center; gap: 6px; font-size: 11.5px; font-weight: 600; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.pill.new { color: var(--purple); border-color: color-mix(in srgb, var(--purple) 50%, var(--line)); }
+.pill.base { color: var(--cyan); border-color: color-mix(in srgb, var(--cyan) 45%, var(--line)); }
+.pill.cta { font-family: var(--mono); font-weight: 500; letter-spacing: .5px; }
+
+/* Filters */
+.filters { display: grid; gap: 12px; background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 14px; }
+.frow { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: thin; align-items: center; }
+.frow .lbl { font-size: 11px; font-family: var(--mono); letter-spacing: 1px; text-transform: uppercase; color: var(--muted); margin-right: 6px; white-space: nowrap; }
+.search { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.search input, .search select { background: var(--panel2); border: 1px solid var(--line); color: var(--fg); border-radius: 10px; padding: 8px 12px; font: inherit; font-size: 14px; min-width: 0; }
+.search input { flex: 1 1 220px; }
+.search select { flex: 0 1 280px; }
+.active-filters { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 13px; color: var(--muted); }
+.active-filters button { border: 1px solid var(--line); background: var(--panel2); border-radius: 999px; padding: 3px 10px; font-size: 12px; cursor: pointer; color: var(--fg); }
+.syncnote { font-size: 13px; color: var(--muted); border-left: 3px solid var(--amber); padding: 6px 12px; background: var(--panel); border-radius: 0 10px 10px 0; }
+.syncnote[hidden] { display: none; }
+
+/* Idea cards */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 14px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 16px; display: grid; gap: 10px; align-content: start; min-width: 0; position: relative; }
+.card::before { content: ""; position: absolute; left: 0; top: 14px; bottom: 14px; width: 3px; border-radius: 0 3px 3px 0; background: var(--fam); opacity: .9; }
+.card.st-aprobada { border-color: color-mix(in srgb, var(--green) 55%, var(--line)); }
+.card.st-talvez { border-color: color-mix(in srgb, var(--amber) 55%, var(--line)); }
+.card.st-descartada { opacity: .55; }
+.card .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.card .id { font-family: var(--mono); font-size: 12px; color: var(--fam); }
+.card .hook { font-size: 14px; color: var(--fg); border-left: 2px solid var(--line); padding-left: 10px; }
+.card .hook b { display: block; font-size: 10.5px; font-family: var(--mono); color: var(--muted); letter-spacing: 1px; text-transform: uppercase; font-weight: 500; }
+.card .desc { font-size: 13.5px; color: var(--muted); }
+.card .ang { font-size: 12px; color: var(--muted); }
+.vote { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 4px; }
+.vote button { border: 1px solid var(--line); background: var(--panel2); border-radius: 10px; padding: 7px 4px; font-size: 12.5px; font-weight: 600; cursor: pointer; color: var(--muted); }
+.vote button:hover { color: var(--fg); }
+.vote button[disabled] { cursor: default; opacity: .6; }
+.vote .ok[aria-pressed="true"] { background: var(--green); border-color: var(--green); color: var(--on-accent); }
+.vote .maybe[aria-pressed="true"] { background: var(--amber); border-color: var(--amber); color: var(--on-accent); }
+.vote .no[aria-pressed="true"] { background: var(--red); border-color: var(--red); color: var(--on-accent); }
+.empty { padding: 32px; text-align: center; color: var(--muted); border: 1px dashed var(--line); border-radius: 16px; }
+.count { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.copybox { width: 100%; min-height: 120px; background: var(--panel2); color: var(--fg); border: 1px solid var(--line); border-radius: 10px; padding: 10px; font-family: var(--mono); font-size: 12px; }
+
+/* Asked items */
+.asks { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 14px; }
+.ask { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 16px; display: grid; gap: 8px; align-content: start; }
+.ask .q { font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
+.ask p { color: var(--muted); font-size: 14px; }
+.ask .btn { justify-self: start; }
+
+/* Scripts */
+.scripts { display: grid; gap: 18px; }
+.script { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 18px; display: grid; gap: 12px; min-width: 0; }
+.script .cast { font-size: 13px; color: var(--muted); }
+.tbl { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th { text-align: left; font-family: var(--mono); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); font-weight: 500; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+td { padding: 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.n { font-family: var(--mono); color: var(--muted); width: 36px; font-variant-numeric: tabular-nums; }
+td.who { font-weight: 600; white-space: nowrap; }
+td.see { color: var(--muted); font-size: 13px; }
+.closing { border-left: 3px solid var(--cyan); padding: 8px 12px; background: var(--panel2); border-radius: 0 10px 10px 0; font-size: 14px; }
+.closing b { font-family: var(--mono); font-size: 11px; letter-spacing: 1px; color: var(--cyan); display: block; font-weight: 500; }
+
+/* Stories */
+.stories { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 14px; }
+.story { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 16px; display: grid; gap: 10px; align-content: start; }
+.story p { font-size: 14px; color: var(--muted); }
+.story .lesson { color: var(--fg); font-weight: 600; font-size: 14px; }
+
+/* Production */
+.callout { background: linear-gradient(120deg, color-mix(in srgb, var(--purple) 14%, var(--panel)), color-mix(in srgb, var(--cyan) 12%, var(--panel))); border: 1px solid var(--line); border-radius: 18px; padding: 20px; font-size: 17px; font-weight: 500; max-width: 80ch; }
+.rec { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; letter-spacing: .3px; white-space: nowrap; border: 1px solid; }
+.rec.principal { color: var(--green); border-color: currentColor; }
+.rec.probar { color: var(--cyan); border-color: currentColor; }
+.rec.respaldo { color: var(--muted); border-color: var(--line); }
+.rec.no { color: var(--red); border-color: currentColor; }
+.tools td:first-child { font-weight: 600; min-width: 150px; }
+.tools td { font-size: 13.5px; }
+.tools td.price { font-family: var(--mono); font-size: 12.5px; min-width: 150px; }
+.twocol { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 18px; align-items: start; }
+@media (max-width: 860px) { .twocol { grid-template-columns: minmax(0, 1fr); } }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; counter-reset: s; }
+.steps li { counter-increment: s; display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 10px; }
+.steps li::before { content: counter(s); font-family: var(--display); font-size: 26px; line-height: 1; color: var(--cyan); }
+.steps b { display: block; }
+.steps span { color: var(--muted); font-size: 14px; }
+.costs { display: grid; gap: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+.costs div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 14px; border-bottom: 1px solid var(--line); font-size: 14px; }
+.costs div:last-child { border-bottom: 0; }
+.costs b { font-family: var(--mono); font-weight: 500; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.panelbox { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 16px; display: grid; gap: 10px; }
+.small { font-size: 12.5px; color: var(--muted); }
+.sources { font-size: 12.5px; color: var(--muted); display: grid; gap: 4px; }
+.sources a { word-break: break-word; }
+
+/* Variations */
+.axes { display: grid; gap: 10px; }
+.axis { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 10px; align-items: baseline; }
+@media (max-width: 600px) { .axis { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
+.axis b { font-family: var(--mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+.axis .row .pill { font-weight: 500; color: var(--fg); }
+.bigmath { font-family: var(--display); font-size: clamp(26px, 4vw, 36px); line-height: 1.05; color: var(--fg); }
+.bigmath em { font-style: normal; color: var(--cyan); }
+ol.vlist { margin: 0; padding-left: 22px; display: grid; gap: 6px; color: var(--muted); }
+ol.vlist li::marker { color: var(--cyan); font-family: var(--mono); }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="eyebrow">Lead Master · Contenido para dueños de inmobiliarias</div>
+    <h1>Mapa de <span class="grad">contenido</span></h1>
+    <p class="lede">Cada círculo es un tema que le duele a un dueño de inmobiliaria. Las flechas salen a los ángulos y cada ángulo trae ideas listas para aprobar. Marca cada idea como aprobada, tal vez o descartada; las aprobadas pasan a producción.</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <nav class="sec" aria-label="Secciones">
+    <div class="in">
+      <a href="#mapa">Mapa</a>
+      <a href="#ideas">Ideas</a>
+      <a href="#pedidos">Lo que pediste</a>
+      <a href="#guiones">Guiones de prueba</a>
+      <a href="#historias">Historias</a>
+      <a href="#produccion">Cómo producir barato</a>
+      <a href="#variaciones">Variaciones</a>
+    </div>
+  </nav>
+
+  <section class="block" id="mapa">
+    <div class="sechead">
+      <div class="eyebrow">Los círculos</div>
+      <h2>14 pilares, 5 ángulos cada uno</h2>
+      <p>Toca un círculo para ver sus flechas. Toca una flecha para ver sus ideas.</p>
+    </div>
+    <div class="mapgrid">
+      <div class="mapcard">
+        <div id="ring"></div>
+        <div class="legend" id="legend"></div>
+        <div class="plist" id="plist"></div>
+      </div>
+      <div class="mapcard">
+        <div id="flor"></div>
+        <div class="alist" id="alist"></div>
+        <div class="florinfo" id="florinfo"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="ideas">
+    <div class="sechead">
+      <div class="eyebrow">Banco de ideas</div>
+      <h2>Aprueba lo que quieres lanzar</h2>
+      <p>Tus marcas se guardan en la página y yo las leo para pasar a guion y producción. Filtra por pilar, formato o estado.</p>
+    </div>
+    <p class="syncnote" id="syncnote" hidden></p>
+    <div class="filters">
+      <div class="search">
+        <label class="eyebrow" for="q" hidden>Buscar</label>
+        <input id="q" type="search" placeholder="Buscar: descartados, portal, Meta, frutinovela…" autocomplete="off">
+        <label for="pilarsel" hidden>Pilar</label>
+        <select id="pilarsel"></select>
+      </div>
+      <div class="frow" id="fmtrow" role="group" aria-label="Formato"></div>
+      <div class="frow" id="strow" role="group" aria-label="Estado"></div>
+      <div class="active-filters" id="active"></div>
+    </div>
+    <div class="row" style="justify-content: space-between;">
+      <span class="count" id="count"></span>
+      <button class="btn" id="copyok" type="button">Copiar aprobadas</button>
+    </div>
+    <textarea class="copybox" id="copybox" hidden readonly aria-label="Lista de ideas aprobadas"></textarea>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="block" id="pedidos">
+    <div class="sechead">
+      <div class="eyebrow">Tu lista de WhatsApp</div>
+      <h2>Lo que pediste, uno por uno</h2>
+      <p>Cómo entendí cada punto y dónde están sus ideas.</p>
+    </div>
+    <div class="asks" id="asks"></div>
+  </section>
+
+  <section class="block" id="guiones">
+    <div class="sechead">
+      <div class="eyebrow">Para la primera prueba</div>
+      <h2>Guiones de juntas y frutinovelas</h2>
+      <p>Un personaje habla por plano, de 4 a 8 segundos cada uno, para que la IA sincronice bien los labios. El cierre con Lead Master se hace en el motor.</p>
+    </div>
+    <div class="scripts" id="scripts"></div>
+  </section>
+
+  <section class="block" id="historias">
+    <div class="sechead">
+      <div class="eyebrow">Anécdotas</div>
+      <h2>Historias de asesores</h2>
+      <p>Basadas en casos que vemos, con nombres de demo. Cada una sirve para varios formatos.</p>
+    </div>
+    <div class="stories" id="stories"></div>
+  </section>
+
+  <section class="block" id="produccion">
+    <div class="sechead">
+      <div class="eyebrow">Seedance, Veo, Gemini</div>
+      <h2>Cómo producir sin que salga caro</h2>
+    </div>
+    <div class="callout" id="prodsum"></div>
+    <div class="tbl mapcard"><table class="tools" id="tools"></table></div>
+    <div class="twocol">
+      <div class="panelbox">
+        <div class="eyebrow">El proceso</div>
+        <ol class="steps" id="steps"></ol>
+      </div>
+      <div style="display:grid; gap:14px;">
+        <div class="eyebrow">Cuánto cuesta</div>
+        <div class="costs" id="costs"></div>
+        <div class="panelbox">
+          <div class="eyebrow">Primera prueba</div>
+          <ol class="steps" id="tests"></ol>
+          <p class="small" id="criteria"></p>
+        </div>
+      </div>
+    </div>
+    <div class="panelbox">
+      <div class="eyebrow">Lo que necesito de ti</div>
+      <p id="need"></p>
+      <p class="small" id="caveat"></p>
+      <div class="sources">
+        <span>Fuentes de precios:</span>
+        <a href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/" target="_blank" rel="noopener">Google · Gemini Omni 1.2 Flash</a>
+        <a href="https://the-decoder.com/googles-gemini-omni-1-2-flash-stretches-ai-video-clips-to-15-seconds-and-cuts-pricing-by-30-percent/" target="_blank" rel="noopener">The Decoder · Omni 1.2 Flash, US$0.07/s</a>
+        <a href="https://help.artlist.io/hc/en-us/articles/37099208586013-Gemini-Omni-Flash" target="_blank" rel="noopener">Artlist · Omni Flash: audio y referencias</a>
+        <a href="https://costgoat.com/pricing/seedance" target="_blank" rel="noopener">CostGoat · precios de Seedance</a>
+        <a href="https://www.atlascloud.ai/blog/ai-updates/seedance-2.0-mini-overview" target="_blank" rel="noopener">Atlas Cloud · Seedance 2.0 Mini</a>
+        <a href="https://www.8frame.co/blog/veo-3-1-price-comparison-2026" target="_blank" rel="noopener">8frame · precios de Veo 3.1</a>
+        <a href="https://support.google.com/googleone/answer/16287445" target="_blank" rel="noopener">Google One · créditos de IA</a>
+        <a href="https://kling.ai/blog/kling-video-3-omni-native-lip-sync-audio-guide" target="_blank" rel="noopener">Kling · audio y labios en español</a>
+        <a href="https://es.cyberlink.com/blog/actualidad/5370/que-son-las-frutinovelas" target="_blank" rel="noopener">CyberLink · cómo se hacen las frutinovelas</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="variaciones">
+    <div class="sechead">
+      <div class="eyebrow">Lo que ya funciona, otra vez</div>
+      <h2>Variaciones</h2>
+      <p id="varintro"></p>
+    </div>
+    <div class="panelbox"><div class="axes" id="axes"></div></div>
+    <p class="bigmath" id="math"></p>
+    <div class="panelbox">
+      <h3 id="extitle"></h3>
+      <ol class="vlist" id="exlist"></ol>
+    </div>
+  </section>
+</div>
+
+<script type="application/json" id="data">/*__DATA__*/</script>
+<script>
+(function () {
+  "use strict";
+  const D = JSON.parse(document.getElementById("data").textContent);
+  const M = D.meta, IDEAS = D.ideas;
+  const PIL = Object.fromEntries(M.pilares.map(p => [p.id, p]));
+  const ANG = {};
+  M.pilares.forEach(p => Object.entries(p.angulos).forEach(([k, v]) => { ANG[k] = { id: k, nombre: v, pilar: p.id }; }));
+  const FAMVAR = { purple: "var(--purple)", red: "var(--red)", cyan: "var(--cyan)", amber: "var(--amber)" };
+  const famOf = pid => FAMVAR[M.familias[PIL[pid].familia].color];
+  const BASE_NAMES = D.base || {};
+  const ESTADOS = { aprobada: "Aprobada", talvez: "Tal vez", descartada: "Descartada" };
+
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  const state = { pilar: "P13", angulo: null, formato: null, estado: "todas", q: "", filterPilar: null };
+  let votes = {};
+  let db = null, readOnly = false, mode = "loading";
+  const busy = new Set();
+
+  function wrap(text, max) {
+    const words = String(text).split(/\s+/); const lines = []; let cur = "";
+    for (const w of words) {
+      if (cur && (cur + " " + w).length > max) { lines.push(cur); cur = w; } else { cur = cur ? cur + " " + w : w; }
+    }
+    if (cur) lines.push(cur);
+    return lines;
+  }
+  function svgText(lines, x, y, lh, cls) {
+    const y0 = y - (lines.length - 1) * lh / 2;
+    return `<text class="${cls || ""}" x="${x}" text-anchor="middle">` +
+      lines.map((l, i) => `<tspan x="${x}" y="${(y0 + i * lh).toFixed(1)}" dy="0.35em">${esc(l)}</tspan>`).join("") + `</text>`;
+  }
+
+  /* ---------- Ring (overview) ---------- */
+  function renderRing() {
+    const W = 600, cx = 300, cy = 300, R = 228, r = 46;
+    const n = M.pilares.length;
+    let lines = "", nodes = "";
+    M.pilares.forEach((p, i) => {
+      const a = -Math.PI / 2 + i * 2 * Math.PI / n;
+      const x = cx + R * Math.cos(a), y = cy + R * Math.sin(a);
+      const x1 = cx + 78 * Math.cos(a), y1 = cy + 78 * Math.sin(a);
+      const x2 = cx + (R - r - 4) * Math.cos(a), y2 = cy + (R - r - 4) * Math.sin(a);
+      lines += `<line class="svg-line" x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"/>`;
+      const lab = wrap(p.corto, 12);
+      nodes += `<g class="pnode${state.pilar === p.id ? " sel" : ""}" data-p="${p.id}" tabindex="0" role="button" aria-label="${esc(p.nombre)}" style="--fam:${famOf(p.id)}">
+        <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r}"/>
+        <text class="pid" x="${x.toFixed(1)}" y="${(y - r + 13).toFixed(1)}" text-anchor="middle">${p.id}</text>
+        ${svgText(lab, x, y + 4, 12.5, "lab")}
+      </g>`;
+    });
+    $("#ring").innerHTML = `<svg viewBox="0 0 ${W} ${W}" role="img" aria-label="Mapa de pilares de contenido">
+      <defs><linearGradient id="hubgrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--purple)"/><stop offset="1" stop-color="var(--cyan)"/></linearGradient></defs>
+      ${lines}
+      <g class="hub"><circle cx="${cx}" cy="${cy}" r="74"/>
+        <text x="${cx}" y="${cy - 6}" text-anchor="middle">LEAD MASTER</text>
+        <text class="small" x="${cx}" y="${cy + 18}" text-anchor="middle">${M.pilares.length} PILARES</text></g>
+      ${nodes}</svg>`;
+    $("#ring").querySelectorAll(".pnode").forEach(g => {
+      const go = () => { state.pilar = g.dataset.p; renderRing(); renderFlor(); };
+      g.addEventListener("click", go);
+      g.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
+    });
+    $("#plist").innerHTML = M.pilares.map(p => `<button type="button" data-p="${p.id}" style="--fam:${famOf(p.id)}" aria-pressed="${state.pilar === p.id}"><i></i>${esc(p.corto)}</button>`).join("");
+    $("#legend").innerHTML = Object.values(M.familias).map(f => `<span><i style="background:${FAMVAR[f.color]}"></i>${esc(f.nombre)}: ${esc(f.desc)}</span>`).join("");
+  }
+
+  $("#plist").addEventListener("click", e => {
+    const b = e.target.closest("[data-p]"); if (!b) return;
+    state.pilar = b.dataset.p; renderRing(); renderFlor(); document.getElementById("flor").scrollIntoView();
+  });
+  $("#alist").addEventListener("click", e => {
+    const b = e.target.closest("[data-a]"); if (!b) return;
+    state.angulo = b.dataset.a; state.filterPilar = null; renderFlor(); renderIdeas(); document.getElementById("ideas").scrollIntoView();
+  });
+
+  /* ---------- Flor (pillar + arrows) ---------- */
+  function renderFlor() {
+    const p = PIL[state.pilar];
+    const W = 600, H = 540, cx = 300, cy = 270, R = 192, rc = 74, ra = 64;
+    const keys = Object.keys(p.angulos);
+    let g = "";
+    keys.forEach((k, i) => {
+      const a = -Math.PI / 2 + i * 2 * Math.PI / keys.length;
+      const x = cx + R * Math.cos(a), y = cy + R * Math.sin(a);
+      const sx = cx + (rc + 4) * Math.cos(a), sy = cy + (rc + 4) * Math.sin(a);
+      const ex = cx + (R - ra - 6) * Math.cos(a), ey = cy + (R - ra - 6) * Math.sin(a);
+      const hl = 11, hw = 6;
+      const bx = ex - hl * Math.cos(a), by = ey - hl * Math.sin(a);
+      const px = -Math.sin(a), py = Math.cos(a);
+      const head = `${ex.toFixed(1)},${ey.toFixed(1)} ${(bx + hw * px).toFixed(1)},${(by + hw * py).toFixed(1)} ${(bx - hw * px).toFixed(1)},${(by - hw * py).toFixed(1)}`;
+      const n = IDEAS.filter(d => d.angulo === k).length;
+      const ok = IDEAS.filter(d => d.angulo === k && votes[d.id] === "aprobada").length;
+      g += `<line class="arrow" x1="${sx.toFixed(1)}" y1="${sy.toFixed(1)}" x2="${bx.toFixed(1)}" y2="${by.toFixed(1)}"/>
+        <polygon class="head" points="${head}"/>
+        <g class="ang${state.angulo === k ? " sel" : ""}" data-a="${k}" tabindex="0" role="button" aria-label="${esc(p.angulos[k])}">
+          <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${ra}"/>
+          ${svgText(wrap(p.angulos[k], 15), x, y - 6, 13.5, "")}
+          <text class="cnt" x="${x.toFixed(1)}" y="${(y + ra - 14).toFixed(1)}" text-anchor="middle">${n} ideas${ok ? " · " + ok + " ok" : ""}</text>
+        </g>`;
+    });
+    $("#flor").innerHTML = `<svg class="flor" viewBox="0 0 ${W} ${H}" role="img" aria-label="Ángulos del pilar ${esc(p.nombre)}" style="--fam:${famOf(p.id)}">
+      ${g}
+      <g class="core"><circle cx="${cx}" cy="${cy}" r="${rc}"/>${svgText(wrap(p.corto.toUpperCase(), 12), cx, cy, 21, "")}</g></svg>`;
+    $("#flor").querySelectorAll(".ang").forEach(el => {
+      const go = () => { state.angulo = el.dataset.a; state.filterPilar = null; renderFlor(); renderIdeas(); document.getElementById("ideas").scrollIntoView(); };
+      el.addEventListener("click", go);
+      el.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
+    });
+    $("#alist").innerHTML = keys.map(k => `<button type="button" data-a="${k}" style="--fam:${famOf(p.id)}" aria-pressed="${state.angulo === k}">${esc(p.angulos[k])}<span>${IDEAS.filter(d => d.angulo === k).length} ideas</span></button>`).join("");
+    const total = IDEAS.filter(d => d.pilar === p.id).length;
+    $("#florinfo").innerHTML = `<div class="row"><span class="pill" style="color:${famOf(p.id)};border-color:currentColor">${esc(M.familias[p.familia].nombre)}</span><span class="mono muted" style="font-size:12px">${p.id}</span></div>
+      <h3>${esc(p.nombre)}</h3><p class="why">${esc(p.porque)}</p>
+      <div class="row"><button class="btn primary" type="button" id="seeall">Ver sus ${total} ideas</button></div>`;
+    $("#seeall").addEventListener("click", () => { state.filterPilar = p.id; state.angulo = null; renderFlor(); renderIdeas(); document.getElementById("ideas").scrollIntoView(); });
+  }
+
+  /* ---------- Filters ---------- */
+  function renderFilters() {
+    $("#pilarsel").innerHTML = `<option value="">Todos los pilares</option>` + M.pilares.map(p => `<option value="${p.id}">${p.id} · ${esc(p.nombre)}</option>`).join("");
+    $("#pilarsel").addEventListener("change", e => { state.filterPilar = e.target.value || null; state.angulo = null; renderFlor(); renderIdeas(); });
+    const fmts = [["", "Todos los formatos"]].concat(Object.entries(M.formatos).map(([k, f]) => [k, f.nombre]));
+    $("#fmtrow").innerHTML = `<span class="lbl">Formato</span>` + fmts.map(([k, n]) => `<button class="chip" type="button" data-f="${k}" aria-pressed="${(state.formato || "") === k}">${esc(n)}</button>`).join("");
+    $("#fmtrow").addEventListener("click", e => { const b = e.target.closest("[data-f]"); if (!b) return; state.formato = b.dataset.f || null; syncChips(); renderIdeas(); });
+    const sts = [["todas", "Todas"], ["pendiente", "Sin revisar"], ["aprobada", "Aprobadas"], ["talvez", "Tal vez"], ["descartada", "Descartadas"]];
+    $("#strow").innerHTML = `<span class="lbl">Estado</span>` + sts.map(([k, n]) => `<button class="chip" type="button" data-s="${k}" aria-pressed="${state.estado === k}">${n}</button>`).join("");
+    $("#strow").addEventListener("click", e => { const b = e.target.closest("[data-s]"); if (!b) return; state.estado = b.dataset.s; syncChips(); renderIdeas(); });
+    let t; $("#q").addEventListener("input", e => { clearTimeout(t); t = setTimeout(() => { state.q = e.target.value.trim().toLowerCase(); renderIdeas(); }, 150); });
+  }
+  function syncChips() {
+    document.querySelectorAll("#fmtrow [data-f]").forEach(b => b.setAttribute("aria-pressed", String((state.formato || "") === b.dataset.f)));
+    document.querySelectorAll("#strow [data-s]").forEach(b => b.setAttribute("aria-pressed", String(state.estado === b.dataset.s)));
+    $("#pilarsel").value = state.filterPilar || "";
+  }
+
+  function filtered() {
+    const norm = s => String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+    const q = norm(state.q);
+    return IDEAS.filter(d => {
+      if (state.angulo && d.angulo !== state.angulo) return false;
+      if (!state.angulo && state.filterPilar && d.pilar !== state.filterPilar) return false;
+      if (state.formato && d.formato !== state.formato) return false;
+      const v = votes[d.id];
+      if (state.estado === "pendiente" && v) return false;
+      if (["aprobada", "talvez", "descartada"].includes(state.estado) && v !== state.estado) return false;
+      if (q) {
+        const hay = norm([d.id, d.titulo, d.gancho, d.idea, (M.formatos[d.formato] || {}).nombre, (ANG[d.angulo] || {}).nombre, PIL[d.pilar].nombre].join(" "));
+        if (!q.split(/\s+/).every(w => hay.includes(w))) return false;
+      }
+      return true;
+    });
+  }
+
+  /* ---------- Idea cards ---------- */
+  function cardHTML(d) {
+    const f = M.formatos[d.formato] || { nombre: d.formato };
+    const v = votes[d.id] || "";
+    const base = d.base ? `<span class="pill base" title="${esc(BASE_NAMES[d.base] || "")}">Variación de ${esc(d.base)}</span>` : "";
+    const dis = (readOnly || busy.has(d.id)) ? " disabled" : "";
+    return `<article class="card${v ? " st-" + v : ""}" style="--fam:${famOf(d.pilar)}" data-id="${d.id}">
+      <div class="meta"><span class="id">${d.id}</span><span class="pill${f.nuevo ? " new" : ""}">${esc(f.nombre)}</span>${base}<span class="pill cta">${esc(d.cta || "")}</span></div>
+      <h3>${esc(d.titulo)}</h3>
+      <p class="hook"><b>Gancho</b>${esc(d.gancho)}</p>
+      <p class="desc">${esc(d.idea)}</p>
+      <p class="ang">${esc(PIL[d.pilar].corto)} → ${esc((ANG[d.angulo] || {}).nombre || "")}</p>
+      <div class="vote" role="group" aria-label="Decisión para ${d.id}">
+        <button type="button" class="ok" data-v="aprobada" aria-pressed="${v === "aprobada"}"${dis}>Aprobar</button>
+        <button type="button" class="maybe" data-v="talvez" aria-pressed="${v === "talvez"}"${dis}>Tal vez</button>
+        <button type="button" class="no" data-v="descartada" aria-pressed="${v === "descartada"}"${dis}>Descartar</button>
+      </div>
+    </article>`;
+  }
+  function renderIdeas() {
+    const list = filtered();
+    $("#grid").innerHTML = list.length ? list.map(cardHTML).join("") : `<div class="empty">Ninguna idea con estos filtros. Quita alguno arriba.</div>`;
+    $("#count").textContent = `${list.length} de ${IDEAS.length} ideas`;
+    const act = [];
+    if (state.angulo) act.push(`<button type="button" data-clear="angulo">Ángulo: ${esc(ANG[state.angulo].nombre)} ✕</button>`);
+    else if (state.filterPilar) act.push(`<button type="button" data-clear="pilar">Pilar: ${esc(PIL[state.filterPilar].nombre)} ✕</button>`);
+    $("#active").innerHTML = act.join("");
+    syncChips();
+  }
+  $("#active").addEventListener("click", e => {
+    const b = e.target.closest("[data-clear]"); if (!b) return;
+    if (b.dataset.clear === "angulo") state.angulo = null; else state.filterPilar = null;
+    renderFlor(); renderIdeas();
+  });
+  $("#grid").addEventListener("click", e => {
+    const b = e.target.closest("[data-v]"); if (!b || b.disabled) return;
+    const id = b.closest(".card").dataset.id;
+    const next = votes[id] === b.dataset.v ? null : b.dataset.v;
+    setVote(id, next);
+  });
+
+  function renderStats() {
+    const c = { aprobada: 0, talvez: 0, descartada: 0 };
+    IDEAS.forEach(d => { const v = votes[d.id]; if (c[v] != null) c[v]++; });
+    const pend = IDEAS.length - c.aprobada - c.talvez - c.descartada;
+    const nAng = M.pilares.reduce((s, p) => s + Object.keys(p.angulos).length, 0);
+    $("#stats").innerHTML = `
+      <div class="stat"><b>${IDEAS.length}</b><span>ideas</span></div>
+      <div class="stat"><b>${M.pilares.length}</b><span>pilares</span></div>
+      <div class="stat"><b>${nAng}</b><span>ángulos</span></div>
+      <div class="stat"><b>${Object.keys(M.formatos).length}</b><span>formatos</span></div>
+      <div class="stat ok"><b>${c.aprobada}</b><span>aprobadas</span></div>
+      <div class="stat maybe"><b>${c.talvez}</b><span>tal vez</span></div>
+      <div class="stat no"><b>${c.descartada}</b><span>descartadas</span></div>
+      <div class="stat"><b>${pend}</b><span>sin revisar</span></div>`;
+  }
+  function refresh() { renderStats(); renderFlor(); renderIdeas(); }
+
+  /* ---------- Persistence ---------- */
+  function note(msg) { const n = $("#syncnote"); n.textContent = msg || ""; n.hidden = !msg; }
+  const LS = "lm-votos";
+  function loadLocal() { try { votes = JSON.parse(localStorage.getItem(LS) || "{}") || {}; } catch (e) { votes = {}; } }
+  function saveLocal() { try { localStorage.setItem(LS, JSON.stringify(votes)); } catch (e) {} }
+
+  async function setVote(id, estado) {
+    const prev = votes[id];
+    if (estado) votes[id] = estado; else delete votes[id];
+    if (mode !== "db") { saveLocal(); refresh(); return; }
+    busy.add(id); refresh();
+    try {
+      const ref = db.collection("votos").doc(id);
+      if (estado) await ref.set({ estado, t: Date.now() }); else await ref.delete();
+    } catch (err) {
+      if (prev) votes[id] = prev; else delete votes[id];
+      if (err && err.code === "invalid_argument") { readOnly = true; note("Tienes acceso de solo lectura: puedes ver las ideas pero no marcarlas."); }
+      else if (err && err.code === "unavailable") { note("No se pudo guardar. Intenta de nuevo en un momento."); }
+      else note("No se pudo guardar esta marca.");
+    } finally { busy.delete(id); refresh(); }
+  }
+
+  async function initDb() {
+    try { db = (window.claude && window.claude.use) ? await window.claude.use("db") : null; } catch (e) { db = null; }
+    if (!db) {
+      mode = "local"; loadLocal(); refresh();
+      note("Abre esta página con tu cuenta de Claude para que tus marcas se guarden y yo las pueda leer. Mientras tanto se guardan solo en este navegador.");
+      return;
+    }
+    mode = "db";
+    let first = true;
+    const timer = setTimeout(() => note("Todavía no se pueden cargar las marcas guardadas. Pueden no estar al día."), 10000);
+    db.collection("votos").onSnapshot(snap => {
+      if (!snap.metadata.fromCache) { clearTimeout(timer); if (first) note(""); first = false; }
+      const v = {};
+      snap.docs.forEach(doc => { const x = doc.data(); if (x && ESTADOS[x.estado]) v[doc.id] = x.estado; });
+      busy.forEach(id => { if (votes[id]) v[id] = votes[id]; else delete v[id]; });
+      votes = v; refresh();
+    }, err => { clearTimeout(timer); note("Se perdió la conexión con las marcas guardadas. Recarga la página para verlas al día."); });
+  }
+
+  $("#copyok").addEventListener("click", () => {
+    const ok = IDEAS.filter(d => votes[d.id] === "aprobada");
+    const text = ok.length ? ok.map(d => `${d.id} · ${d.titulo} (${(M.formatos[d.formato] || {}).nombre})`).join("\n") : "Todavía no hay ideas aprobadas.";
+    const box = $("#copybox");
+    const fallback = () => { box.value = text; box.hidden = false; box.focus(); box.select(); };
+    try {
+      navigator.clipboard.writeText(text).then(() => { $("#copyok").textContent = "Copiadas"; setTimeout(() => $("#copyok").textContent = "Copiar aprobadas", 1600); }, fallback);
+    } catch (e) { fallback(); }
+  });
+
+  /* ---------- Static sections ---------- */
+  function renderAsks() {
+    $("#asks").innerHTML = M.pedidos.map((a, i) => {
+      const tgt = a.pilar ? `data-p="${a.pilar}"` : `data-f="${a.formato}"`;
+      const label = a.pilar ? `Ver ideas de ${esc(PIL[a.pilar].corto)}` : `Ver ideas en ${esc(M.formatos[a.formato].nombre)}`;
+      return `<div class="ask"><span class="q">Punto ${i + 1}</span><h3>${esc(a.titulo)}</h3><p>${esc(a.entendi)}</p><button class="btn" type="button" ${tgt}>${label}</button></div>`;
+    }).join("");
+    $("#asks").addEventListener("click", e => {
+      const b = e.target.closest("button"); if (!b) return;
+      if (b.dataset.p) { state.filterPilar = b.dataset.p; state.pilar = b.dataset.p; state.angulo = null; state.formato = null; renderRing(); }
+      else { state.formato = b.dataset.f; state.filterPilar = null; state.angulo = null; }
+      renderFlor(); renderIdeas(); document.getElementById("ideas").scrollIntoView();
+    });
+  }
+  function renderScripts() {
+    $("#scripts").innerHTML = M.guiones.map(g => `<article class="script" style="--fam:${famOf(g.pilar)}">
+      <div class="row"><span class="pill new">${esc(M.formatos[g.formato].nombre)}</span><span class="pill">${esc(g.dur)}</span><span class="mono muted" style="font-size:12px">${g.id} · ${esc(PIL[g.pilar].corto)}</span></div>
+      <h3 style="font-size:20px">${esc(g.titulo)}</h3>
+      <p class="cast">Elenco: ${esc(g.elenco)}</p>
+      <div class="tbl"><table><thead><tr><th>#</th><th>Quién</th><th>Dice</th><th>Se ve</th></tr></thead><tbody>
+        ${g.planos.map((p, i) => `<tr><td class="n">${i + 1}</td><td class="who">${esc(p.quien)}</td><td>${esc(p.dice)}</td><td class="see">${esc(p.ve)}</td></tr>`).join("")}
+      </tbody></table></div>
+      <p class="closing"><b>CIERRE EN EL MOTOR</b>${esc(g.cierre)}</p>
+    </article>`).join("");
+  }
+  function renderStories() {
+    $("#stories").innerHTML = M.historias.map(h => `<article class="story">
+      <div class="row"><span class="pill${M.formatos[h.formato].nuevo ? " new" : ""}">${esc(M.formatos[h.formato].nombre)}</span><span class="mono muted" style="font-size:12px">${esc(PIL[h.pilar].corto)}</span></div>
+      <h3>${esc(h.titulo)}</h3><p>${esc(h.historia)}</p><p class="lesson">${esc(h.leccion)}</p></article>`).join("");
+  }
+  function renderProd() {
+    const P = M.produccion;
+    $("#prodsum").textContent = P.resumen;
+    const recName = { principal: "Principal", probar: "Probar", respaldo: "Respaldo", no: "No usar" };
+    $("#tools").innerHTML = `<thead><tr><th>Herramienta</th><th>Precio</th><th>Qué hace bien</th><th>Para qué</th></tr></thead><tbody>` +
+      P.herramientas.map(h => `<tr><td>${esc(h.nombre)}<div class="small" style="font-weight:400">${esc(h.donde)}</div></td><td class="price">${esc(h.precio)}</td><td>${esc(h.bien)}</td><td><span class="rec ${h.rec}">${recName[h.rec]}</span><div class="small" style="margin-top:4px">${esc(h.uso)}</div></td></tr>`).join("") + `</tbody>`;
+    $("#steps").innerHTML = P.pasos.map(s => `<li><div><b>${esc(s.t)}</b><span>${esc(s.d)}</span></div></li>`).join("");
+    $("#costs").innerHTML = P.costos.map(c => `<div><span>${esc(c.concepto)}</span><b>${esc(c.valor)}</b></div>`).join("");
+    $("#tests").innerHTML = P.pruebas.map(s => `<li><div><b>${esc(s.t)}</b><span>${esc(s.d)}</span></div></li>`).join("");
+    $("#criteria").textContent = "Qué vamos a revisar: " + P.criterios;
+    $("#need").textContent = P.necesito;
+    $("#caveat").textContent = P.avisos;
+  }
+  function renderVars() {
+    const V = M.variaciones;
+    $("#varintro").textContent = V.intro;
+    $("#axes").innerHTML = V.ejes.map(a => `<div class="axis"><b>${esc(a.eje)}</b><div class="row">${a.valores.map(v => `<span class="pill">${esc(v)}</span>`).join("")}</div></div>`).join("");
+    const m = V.cuenta.split("=");
+    $("#math").innerHTML = m.length === 2 ? `${esc(m[0])}= <em>${esc(m[1].trim())}</em>` : esc(V.cuenta);
+    $("#extitle").textContent = V.ejemplo_titulo;
+    $("#exlist").innerHTML = V.ejemplo.map(x => `<li>${esc(x)}</li>`).join("");
+  }
+
+  renderFilters(); renderAsks(); renderScripts(); renderStories(); renderProd(); renderVars();
+  renderRing(); refresh();
+  initDb();
+})();
+</script>
