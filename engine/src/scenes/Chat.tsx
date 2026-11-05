@@ -57,7 +57,7 @@ export const Chat: React.FC<{dur: number; p: any}> = ({dur, p}) => {
           <BigTitle lines={p.introLines} lineAts={p.introAts} size={p.introSize ?? 120} accent={p.accent ?? C.cyan} />
         </div>
       ) : null}
-      {p.label ? (
+      {p.label && !intro ? (
         <div style={{position: 'absolute', left: 70, top: 262}}>
           <Pill text={p.label} bg="rgba(255,255,255,0.14)" size={24} />
         </div>
