@@ -163,6 +163,38 @@
      "at": "@CRM",
      "p": {
       "chip": "Todo registrado, sin capturar nada",
+      "cards": [
+       {
+        "name": "Lucía Hernández",
+        "sub": "Depa · Zona Hotelera",
+        "col": 0,
+        "age": "hace 4 min"
+       },
+       {
+        "name": "Diana Trejo",
+        "sub": "Casa · Puerto Cancún",
+        "col": 0,
+        "age": "hace 12 min"
+       },
+       {
+        "name": "Adriana Solís",
+        "sub": "Terreno · Puerto Cancún",
+        "col": 1,
+        "age": "hace 1 h"
+       },
+       {
+        "name": "Carlos Ruiz",
+        "sub": "Preventa · Zona Hotelera",
+        "col": 1,
+        "age": "ayer"
+       },
+       {
+        "name": "Sofía Méndez",
+        "sub": "Depa · Puerto Cancún",
+        "col": 2,
+        "age": "jueves 5 pm"
+       }
+      ],
       "move": {
        "card": 0,
        "to": 2,

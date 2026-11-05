@@ -990,7 +990,12 @@ ADVISOR_DAY = [L('Llamadas: 14 · Chats: 22', b=True), L('Contactados: 9 de 12')
 
 INSERTS = {
     # 01 Guadalajara
-    ('n01', 4): dict(ins=[crm('@CRM', move='@CRM+12', chip='Todo registrado, sin capturar nada')]),
+    ('n01', 4): dict(ins=[crm('@CRM', move='@CRM+12', chip='Todo registrado, sin capturar nada', cards=[
+        {'name': 'Lucía Hernández', 'sub': 'Depa · Providencia', 'col': 0, 'age': 'hace 4 min'},
+        {'name': 'Diana Trejo', 'sub': 'Casa · Zapopan', 'col': 0, 'age': 'hace 12 min'},
+        {'name': 'Adriana Solís', 'sub': 'Terreno · Zapopan', 'col': 1, 'age': 'hace 1 h'},
+        {'name': 'Carlos Ruiz', 'sub': 'Preventa · Providencia', 'col': 1, 'age': 'ayer'},
+        {'name': 'Sofía Méndez', 'sub': 'Depa · Zapopan', 'col': 2, 'age': 'jueves 5 pm'}])]),
     ('n01', 5): dict(ins=[note('@nota', lead='Diana Trejo', tag='Lead · Zapopan', stage='Interesada', typeAt='@nota+3',
                                note='Busca casa con jardín para mudarse en marzo. Pidió planos y forma de pago.',
                                fields=[F('Presupuesto', '330 mil USD', '@presupuesto'), F('Zona', 'Zapopan', '@zona'),
