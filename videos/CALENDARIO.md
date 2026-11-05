@@ -1,29 +1,81 @@
-# Calendario de publicaciones (Metricool · hora de Bogotá)
+# Calendario de publicaciones (hora de Bogotá)
 
-Redes conectadas hoy en Metricool: **TikTok, YouTube (Shorts) y Facebook (Reels)**.
-Instagram y LinkedIn no están conectados todavía; en cuanto se conecten se agregan a todo lo programado.
+7 videos al día en TikTok, YouTube (Shorts), Facebook (Reels) e Instagram (@leaad_master, en colaboración con @sergio_salazaar).
+Las versiones por ciudad de la idea 1 van una por día.
 
-Ritmo: 4 videos al día (10:00, 14:00, 18:00 y 20:30). Hasta el 11 de noviembre, las 10:00 y 14:00
-son tus videos que ya estaban programados solo en YouTube (ahora también van a TikTok y Facebook).
+## 2026-11-05
+- 11:45 · El mayor error al medir a tu equipo comercial (publicado)
+- 12:30 · Un mensaje. Una demanda. (publicado)
+- 14:00 · Le pregunto a mi CRM qué hizo cada asesor (publicado)
+- 16:00 · Idea 1 · Jalisco
+- 18:00 · Idea 4 · Curiosos vs compradores
+- 19:15 · Idea 12 · Orgullo GoHighLevel
+- 20:30 · Idea 3 · Este CRM se mueve solo
 
-| Día | 10:00 | 14:00 | 18:00 | 20:30 |
-|---|---|---|---|---|
-| Jue 5 nov | (11:40) El mayor error al medir a tu equipo · TikTok + FB (en YouTube ya salió) · 12:30 Un mensaje. Una demanda. | Le pregunto a mi CRM qué hizo cada asesor | Idea 4 · Curiosos vs compradores (reemplaza "Meta te manda leads malos") | Idea 3 · Este CRM se mueve solo |
-| Vie 6 nov | ¿Te siguen llegando leads basura? | Tu asesor renuncia y se lleva tus leads | Idea 18 · Tu asesor dice que marcó 15 (reemplaza "Sí le marqué, jefe") | Idea 1 · Guadalajara |
-| Sáb 7 nov | Deja de pelear para que llenen el CRM | El lead en 5 minutos vs. en 2 horas | Idea 2 · Vendes desarrollos | G1 · Si yo tuviera una inmobiliaria |
-| Dom 8 nov | Una IA no va a vender una casa sola | "Los leads no contestan" ¿Seguro? | Idea 7 · Robando tus leads | Idea 10 · Así le llegaría un lead |
-| Lun 9 nov | No contrates un CRM sin ver esto | Si no llama a tiempo, pasa al siguiente | B · Marketing y ventas pelean (reemplaza "¿Ventas o marketing?") | E · Así recibirías tus reportes |
-| Mar 10 nov | Marketing vs. ventas | Cuatro días armando el reporte en Excel | Idea 9 · ¿Todavía llenan el CRM a mano? (reemplaza "El CRM que nadie llena") | Idea 21 · El lead de las 11 de la noche |
-| Mié 11 nov | ¿Tu equipo no llena el CRM? | Este video lo editó una IA | Idea 19 · Antes de despedir a un asesor (reemplaza "Unos pocos asesores venden todo") | A · Por qué tu CRM no funciona |
-| Jue 12 nov | Idea 5 · Depas de +150 mil USD | G2 | C · Puros curiosos | Idea 8 · 9 mil dólares en anuncios |
-| Vie 13 nov | G3 | Idea 11 · ¿Qué anuncio te vendió? | D · Los CRM murieron | Idea 6 · No es la cantidad de leads |
-| Sáb 14 nov | Idea 12 · Orgullo GoHighLevel | G4 | Idea 13 · Pagaste GoHighLevel | Idea 17 · Contrataste un coordinador |
-| Dom 15 nov | F · Lead Master en un minuto | Idea 14 · GoHighLevel no basta | Idea 20 · Renunció y se llevó tus leads | G6 · La mitad de tus leads de noche |
-| Lun 16 nov | Idea 22 · El día de tus asesores | Idea 15 · Parodia agente de IA | Idea 23 · Lo que quema tu inmobiliaria | Idea 16 · Parodia chatbot |
-| Mar 17 nov | Idea 24 · «Ahorita te mando» | Idea 25 · Este video te apareció | G5 · CRM que nadie llena | — |
+## 2026-11-06
+- 08:00 · G3 · Si crees que se roban los leads
+- 10:00 · ¿Te siguen llegando leads basura?
+- 12:00 · F · Lead Master en un minuto
+- 14:00 · Tu asesor renuncia y se lleva tus leads
+- 16:00 · Idea 22 · El día de tus asesores
+- 18:00 · Idea 18 · Tu asesor dice que marcó 15
+- 20:30 · Idea 1 · Guadalajara
 
-Las versiones por ciudad de la idea 1 (Jalisco, Monterrey, Mérida, Puebla, Querétaro, CDMX, Cancún)
-quedan para anuncios segmentados por ciudad; no se programan en orgánico para no repetir el mismo video.
+## 2026-11-07
+- 08:00 · Idea 13 · Pagaste GoHighLevel
+- 10:00 · Deja de pelear para que llenen el CRM
+- 12:00 · Idea 1 · Monterrey
+- 14:00 · El lead en 5 minutos vs. en 2 horas
+- 16:00 · Idea 15 · Parodia agente de IA
+- 18:00 · Idea 2 · Vendes desarrollos
+- 20:30 · G1 · Si yo tuviera una inmobiliaria
 
-Los 5 videos de la otra IA que estaban pendientes (TikTok + YouTube) se reemplazaron por los nuevos;
-los 2 que ya se habían publicado el 4 de noviembre se dejan como están.
+## 2026-11-08
+- 08:00 · G4 · Si yo vendiera desarrollos
+- 10:00 · Una IA no va a vender una casa sola
+- 12:00 · Idea 1 · la Ciudad de México
+- 14:00 · “Los leads no contestan” ¿Seguro?
+- 16:00 · Idea 23 · Lo que quema tu inmobiliaria
+- 18:00 · Idea 7 · Robando tus leads
+- 20:30 · Idea 10 · Así le llegaría un lead
+
+## 2026-11-09
+- 08:00 · Idea 17 · Contrataste un coordinador
+- 10:00 · No contrates un CRM sin ver esto
+- 12:00 · Idea 1 · Mérida
+- 14:00 · Si no llama a tiempo, pasa al siguiente
+- 16:00 · Idea 14 · GoHighLevel no basta
+- 18:00 · B · Marketing y ventas pelean
+- 20:30 · E · Así recibirías tus reportes
+
+## 2026-11-10
+- 08:00 · Idea 20 · Renunció y se llevó tus leads
+- 10:00 · Marketing vs. ventas
+- 12:00 · Idea 1 · Cancún
+- 14:00 · Cuatro días armando el reporte en Excel
+- 16:00 · Idea 16 · Parodia chatbot
+- 18:00 · Idea 9 · ¿Todavía llenan el CRM a mano?
+- 20:30 · Idea 21 · El lead de las 11 de la noche
+
+## 2026-11-11
+- 08:00 · G6 · La mitad de tus leads de noche
+- 10:00 · ¿Tu equipo no llena el CRM? 2 formas
+- 12:00 · Idea 1 · Querétaro
+- 14:00 · Este video lo editó una IA
+- 16:00 · Idea 24 · «Ahorita te mando»
+- 18:00 · Idea 19 · Antes de despedir a un asesor
+- 20:30 · A · Por qué tu CRM no funciona
+
+## 2026-11-12
+- 08:00 · Idea 25 · Este video te apareció
+- 10:00 · Idea 5 · Depas de +150 mil USD
+- 12:00 · Idea 1 · Puebla
+- 14:00 · G2 · No puedo creer que todavía confíes
+- 16:00 · G5 · CRM que nadie llena
+- 18:00 · C · Puros curiosos
+- 20:30 · Idea 8 · 9 mil dólares en anuncios
+
+## 2026-11-13
+- 14:00 · Idea 11 · ¿Qué anuncio te vendió?
+- 18:00 · D · Los CRM murieron
+- 20:30 · Idea 6 · No es la cantidad de leads
