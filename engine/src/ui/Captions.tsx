@@ -51,8 +51,8 @@ export const Captions: React.FC<{words: Word[]; y?: number; hidden?: [number, nu
       <div
         style={{
           position: 'absolute',
-          left: SAFE.left + 40,
-          right: 1080 - SAFE.right + 40,
+          left: 110,
+          right: 110,
           top: y,
           display: 'flex',
           flexWrap: 'wrap',

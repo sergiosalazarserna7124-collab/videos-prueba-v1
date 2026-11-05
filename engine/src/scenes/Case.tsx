@@ -18,8 +18,8 @@ export const Case: React.FC<{dur: number; p: any}> = ({dur, p}) => {
       <div
         style={{
           position: 'absolute',
-          left: SAFE.left,
-          width: 820,
+          left: 110,
+          width: 860,
           top: 300,
           background: 'rgba(13,18,25,0.92)',
           border: `1px solid ${C.line}`,
@@ -83,7 +83,11 @@ export const Case: React.FC<{dur: number; p: any}> = ({dur, p}) => {
         <div
           style={{
             position: 'absolute',
-            left: SAFE.left + 40,
+            left: 0,
+            right: 0,
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            width: 'fit-content',
             top: 960,
             transform: `rotate(-8deg) scale(${interpolate(stamp, [0, 1], [2.2, 1])})`,
             opacity: Math.min(1, stamp * 2),

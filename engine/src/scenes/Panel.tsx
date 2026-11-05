@@ -21,8 +21,8 @@ export const Panel: React.FC<{dur: number; p: any}> = ({dur, p}) => {
       <div
         style={{
           position: 'absolute',
-          left: SAFE.left - 10,
-          width: 870,
+          left: 90,
+          width: 900,
           top: 280,
           background: 'rgba(13,18,25,0.96)',
           border: `1px solid ${C.line}`,

@@ -15,7 +15,7 @@ export const Cta: React.FC<{dur: number; p: any}> = ({dur, p}) => {
   return (
     <AbsoluteFill>
       <BrandBg dur={dur} />
-      <div style={{position: 'absolute', left: 0, right: 140, top: 330, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+      <div style={{position: 'absolute', left: 0, right: 0, top: 330, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <div style={{opacity: a, transform: `translateY(${interpolate(a, [0, 1], [40, 0])}px)`}}>
           <Logo size={96} />
         </div>

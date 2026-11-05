@@ -15,7 +15,7 @@ export const Phone: React.FC<{
 }> = ({children, at = 0, top = 260, width = 640, height = 920, left, screenBg = C.waDark}) => {
   const f = useCurrentFrame();
   const s = pop(f, at, 30, 16, 0.7);
-  const x = left ?? (1080 - width) / 2 - 40; // corrido a la izquierda: libre la columna de botones
+  const x = left ?? (1080 - width) / 2;
   return (
     <div
       style={{

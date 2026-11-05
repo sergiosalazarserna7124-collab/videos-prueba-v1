@@ -13,13 +13,14 @@ export const News: React.FC<{dur: number; p: any}> = ({dur, p}) => {
   return (
     <AbsoluteFill>
       <Bg img={p.img} dur={dur} dim={0.4} drift="in" />
-      <div style={{position: 'absolute', left: SAFE.left, top: SAFE.top + 10, right: 1080 - SAFE.rightTop}}>
+      <div style={{position: 'absolute', left: 80, top: SAFE.top + 10, right: 80, display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
             gap: 18,
-            transform: `translateX(${interpolate(bar, [0, 1], [-200, 0])}px)`,
+            justifyContent: 'center',
+            transform: `translateY(${interpolate(bar, [0, 1], [-40, 0])}px)`,
             opacity: bar,
           }}
         >
@@ -35,7 +36,7 @@ export const News: React.FC<{dur: number; p: any}> = ({dur, p}) => {
           </span>
         </div>
         <div style={{marginTop: 34}}>
-          <BigTitle lines={p.lines} at={0} stagger={4} size={p.size ?? 150} accent={p.accent ?? C.red} />
+          <BigTitle lines={p.lines} at={0} stagger={4} size={p.size ?? 150} accent={p.accent ?? C.red} align="center" />
         </div>
         {p.sub ? (
           <div
@@ -45,7 +46,7 @@ export const News: React.FC<{dur: number; p: any}> = ({dur, p}) => {
               fontWeight: 600,
               fontSize: 38,
               color: C.white,
-              maxWidth: 820,
+              maxWidth: 860,
               opacity: fadeIn(f, 14),
               textShadow: '0 4px 20px rgba(0,0,0,0.7)',
             }}
@@ -58,7 +59,9 @@ export const News: React.FC<{dur: number; p: any}> = ({dur, p}) => {
         <div
           style={{
             position: 'absolute',
-            left: SAFE.left,
+            left: 0,
+            right: 0,
+            textAlign: 'center',
             top: 1080,
             fontFamily: FONT.ui,
             fontSize: 26,

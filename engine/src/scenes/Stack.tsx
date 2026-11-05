@@ -13,9 +13,9 @@ export const Stack: React.FC<{dur: number; p: any}> = ({dur, p}) => {
   return (
     <AbsoluteFill>
       <Bg img={p.img} dur={dur} dim={0.6} blur={p.blur ?? 0} drift="up" />
-      <div style={{position: 'absolute', left: SAFE.left, width: 840, top: p.top ?? 320, display: 'flex', flexDirection: 'column', gap: 26}}>
+      <div style={{position: 'absolute', left: 110, width: 860, top: p.top ?? 320, display: 'flex', flexDirection: 'column', gap: 26}}>
         {p.title ? (
-          <div style={{fontFamily: FONT.title, fontSize: 84, color: C.white, lineHeight: 1, marginBottom: 8}}>{p.title}</div>
+          <div style={{fontFamily: FONT.title, fontSize: 84, color: C.white, lineHeight: 1, marginBottom: 8, textAlign: 'center'}}>{p.title}</div>
         ) : null}
         {items.map((it, i) => {
           const s = pop(f, it.at, 30, 15, 0.6);

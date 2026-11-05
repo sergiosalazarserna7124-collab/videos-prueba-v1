@@ -18,7 +18,7 @@ export const FloatChats: React.FC<{dur: number; p: any}> = ({dur, p}) => {
         const life = 70;
         const t = (f - start) / life;
         if (t < 0 || t > 1) return null;
-        const x = 70 + ((i * 263) % 700);
+        const x = 90 + ((i * 263) % 640);
         const y = interpolate(t, [0, 1], [1250, 330]);
         const op = interpolate(t, [0, 0.12, 0.8, 1], [0, 1, 1, 0]);
         const isIn = i % 3 !== 0;
@@ -49,7 +49,7 @@ export const FloatChats: React.FC<{dur: number; p: any}> = ({dur, p}) => {
           </div>
         );
       })}
-      <div style={{position: 'absolute', left: SAFE.left, right: 1080 - SAFE.right, top: p.titleTop ?? 760}}>
+      <div style={{position: 'absolute', left: 80, right: 80, top: p.titleTop ?? 760}}>
         <BigTitle lines={p.lines ?? []} lineAts={p.lineAts} size={p.size ?? 140} accent={p.accent ?? C.cyan} />
       </div>
       {p.counter ? (

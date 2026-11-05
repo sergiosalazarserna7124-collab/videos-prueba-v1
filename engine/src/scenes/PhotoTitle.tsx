@@ -11,13 +11,13 @@ export const PhotoTitle: React.FC<{dur: number; p: any}> = ({dur, p}) => {
   return (
     <AbsoluteFill>
       <Bg img={p.img} dur={dur} dim={p.dim ?? 0.3} drift={p.drift ?? 'in'} />
-      <div style={{position: 'absolute', left: SAFE.left, right: 1080 - SAFE.right, top}}>
+      <div style={{position: 'absolute', left: 80, right: 80, top}}>
         <BigTitle
           lines={p.lines ?? []}
           lineAts={p.lineAts}
           size={p.size ?? 130}
           accent={p.accent}
-          align={p.align ?? 'left'}
+          align={p.align ?? 'center'}
         />
       </div>
     </AbsoluteFill>

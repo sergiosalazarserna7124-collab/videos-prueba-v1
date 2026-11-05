@@ -31,7 +31,7 @@ export const BigTitle: React.FC<{
   align?: 'left' | 'center';
   shadow?: boolean;
   lineAts?: number[]; // frames por línea (opcional)
-}> = ({lines, at = 0, stagger = 5, size = 128, accent = C.cyan, align = 'left', shadow = true, lineAts}) => {
+}> = ({lines, at = 0, stagger = 5, size = 128, accent = C.cyan, align = 'center', shadow = true, lineAts}) => {
   const f = useCurrentFrame();
   return (
     <div style={{display: 'flex', flexDirection: 'column', alignItems: align === 'center' ? 'center' : 'flex-start'}}>

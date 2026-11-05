@@ -53,12 +53,12 @@ export const Chat: React.FC<{dur: number; p: any}> = ({dur, p}) => {
     <AbsoluteFill>
       <Bg img={p.bg} dur={dur} dim={0.25 + 0.35 * blurT} blur={(p.blur ?? 6) * blurT} drift="in" />
       {p.introLines ? (
-        <div style={{position: 'absolute', left: SAFE.left, right: 1080 - SAFE.right, top: SAFE.top + 20, opacity: 1 - blurT}}>
+        <div style={{position: 'absolute', left: 80, right: 80, top: SAFE.top + 20, opacity: 1 - blurT}}>
           <BigTitle lines={p.introLines} lineAts={p.introAts} size={p.introSize ?? 120} accent={p.accent ?? C.cyan} />
         </div>
       ) : null}
       {p.label && !intro ? (
-        <div style={{position: 'absolute', left: 70, top: 262}}>
+        <div style={{position: 'absolute', left: 0, right: 0, top: 262, display: 'flex', justifyContent: 'center'}}>
           <Pill text={p.label} bg="rgba(255,255,255,0.14)" size={24} />
         </div>
       ) : null}
