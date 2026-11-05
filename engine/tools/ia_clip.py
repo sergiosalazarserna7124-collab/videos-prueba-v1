@@ -1,65 +1,111 @@
-"""Genera un plano de IA (personas) con Gemini por la ruta compatible con OpenAI.
+"""Genera un plano de IA (personas) con gemini-omni por la Interactions API nativa de Gemini.
 
-La key la pone el proxy del entorno (Authorization: Bearer); aquí va un marcador.
+Requiere: pip install -U google-genai  y la key en la variable GEMINI_API_KEY (nunca se imprime).
+Ojo: si el entorno tiene un secreto de red que mete `Authorization: Bearer` en
+generativelanguage.googleapis.com, Google responde 401 y hay que quitar ese secreto.
+
 Uso:
   python3 tools/ia_clip.py start <nombre> "<prompt>" [segundos] [modelo]
   python3 tools/ia_clip.py wait <nombre>      -> public/clips/<nombre>.mp4
+  python3 tools/ia_clip.py spec <spec.json>   -> lanza y espera todos los planos del campo "ia"
 """
+import base64
 import json
 import os
 import sys
 import time
 import urllib.request
-import urllib.error
 
-BASE = 'https://generativelanguage.googleapis.com/v1beta/openai'
+from google import genai
+
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 CLIPS = os.path.join(ROOT, 'public', 'clips')
 JOBS = os.path.join(CLIPS, '_jobs.json')
 MODEL = 'gemini-omni-1.2-flash'
+DONE_BAD = ('failed', 'cancelled', 'incomplete', 'budget_exceeded')
 
 
-def req(method, path, body=None, raw=False):
-    data = json.dumps(body).encode() if body is not None else None
-    r = urllib.request.Request(BASE + path, data=data, method=method,
-                               headers={'Authorization': 'Bearer proxy-injected', 'Content-Type': 'application/json'})
-    try:
-        with urllib.request.urlopen(r, timeout=300) as resp:
-            out = resp.read()
-            return out if raw else json.loads(out)
-    except urllib.error.HTTPError as e:
-        raise SystemExit(f'{e.code} {e.read().decode()[:1500]}')
+_CLIENT = None
+
+
+def client():
+    global _CLIENT
+    if _CLIENT is not None:
+        return _CLIENT
+    key = os.environ.get('GEMINI_API_KEY')
+    if not key:
+        raise SystemExit('Falta GEMINI_API_KEY')
+    _CLIENT = genai.Client(api_key=key)
+    return _CLIENT
 
 
 def jobs():
     return json.load(open(JOBS)) if os.path.exists(JOBS) else {}
 
 
-def start(name, prompt, seconds='8', model=MODEL):
+def save_jobs(j):
     os.makedirs(CLIPS, exist_ok=True)
-    res = req('POST', '/videos', {'model': model, 'prompt': prompt, 'seconds': str(seconds), 'size': '720x1280'})
-    j = jobs()
-    j[name] = {'id': res.get('id'), 'model': model, 'prompt': prompt, 'seconds': seconds, 'created': time.time()}
     json.dump(j, open(JOBS, 'w'), ensure_ascii=False, indent=1)
-    print(name, json.dumps(res)[:400])
 
 
-def wait(name, timeout=600):
-    vid = jobs()[name]['id']
+def start(name, prompt, seconds='8', model=MODEL):
+    it = client().interactions.create(
+        model=model,
+        input=prompt,
+        background=True,
+        response_modalities=['video'],
+        response_format={'type': 'video', 'aspect_ratio': '9:16', 'resolution': '720p',
+                         'duration': f'{seconds}s', 'delivery': 'inline'},
+    )
+    j = jobs()
+    j[name] = {'id': it.id, 'model': model, 'prompt': prompt, 'seconds': seconds, 'created': time.time()}
+    save_jobs(j)
+    print(name, it.id, it.status)
+    return it.id
+
+
+def _video_bytes(it):
+    v = getattr(it, 'output_video', None)
+    if v is None:
+        for step in getattr(it, 'outputs', None) or getattr(it, 'steps', None) or []:
+            for c in getattr(step, 'content', None) or [step]:
+                if getattr(c, 'type', None) == 'video':
+                    v = c
+    if v is None:
+        raise SystemExit('La interacción terminó sin video: ' + it.model_dump_json()[:800])
+    if v.data:
+        return base64.b64decode(v.data) if isinstance(v.data, str) else bytes(v.data)
+    r = urllib.request.Request(v.uri, headers={'x-goog-api-key': os.environ['GEMINI_API_KEY']})
+    with urllib.request.urlopen(r, timeout=300) as resp:
+        return resp.read()
+
+
+def wait(name, timeout=900):
+    iid = jobs()[name]['id']
+    c = client()
     t0 = time.time()
     while time.time() - t0 < timeout:
-        st = req('GET', f'/videos/{vid}')
-        s = st.get('status')
-        if s in ('completed', 'succeeded'):
-            data = req('GET', f'/videos/{vid}/content', raw=True)
+        it = c.interactions.get(iid)
+        if it.status == 'completed':
+            data = _video_bytes(it)
             out = os.path.join(CLIPS, f'{name}.mp4')
             open(out, 'wb').write(data)
             print(name, 'listo', out, len(data))
             return out
-        if s in ('failed', 'cancelled', 'canceled'):
-            raise SystemExit(f'{name} falló: {json.dumps(st)[:800]}')
-        time.sleep(8)
+        if it.status in DONE_BAD:
+            raise SystemExit(f'{name} falló ({it.status}): {it.model_dump_json()[:800]}')
+        time.sleep(10)
     raise SystemExit(f'{name}: sigue en proceso')
+
+
+def from_spec(path):
+    spec = json.load(open(path))
+    for ia in spec.get('ia', []):
+        if not os.path.exists(os.path.join(CLIPS, ia['clip'] + '.mp4')):
+            start(ia['clip'], ia['prompt'])
+    for ia in spec.get('ia', []):
+        if not os.path.exists(os.path.join(CLIPS, ia['clip'] + '.mp4')):
+            wait(ia['clip'])
 
 
 if __name__ == '__main__':
@@ -68,3 +114,5 @@ if __name__ == '__main__':
         start(*sys.argv[2:])
     elif cmd == 'wait':
         wait(sys.argv[2])
+    elif cmd == 'spec':
+        from_spec(sys.argv[2])
