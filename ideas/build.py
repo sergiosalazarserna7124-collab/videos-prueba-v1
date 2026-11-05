@@ -52,7 +52,10 @@ def load():
 
 def build_html(meta, ideas):
     tpl = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
-    payload = json.dumps({'meta': meta, 'ideas': ideas, 'base': BASE}, ensure_ascii=False)
+    sala = []
+    for f in sorted(glob.glob(os.path.join(HERE, '..', 'guiones', 'sala-de-juntas', 's*.json'))):
+        sala += json.load(open(f, encoding='utf-8'))
+    payload = json.dumps({'meta': meta, 'ideas': ideas, 'base': BASE, 'sala': sala}, ensure_ascii=False)
     payload = payload.replace('</', '<\\/')
     out = tpl.replace('/*__DATA__*/', payload)
     path = os.path.join(HERE, 'banco-de-ideas.html')

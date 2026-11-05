@@ -178,6 +178,16 @@ section.block { padding-block: 56px 8px; display: grid; gap: 22px; scroll-margin
 .count { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .copybox { width: 100%; min-height: 120px; background: var(--panel2); color: var(--fg); border: 1px solid var(--line); border-radius: 10px; padding: 10px; font-family: var(--mono); font-size: 12px; }
 
+/* Sala scripts */
+.sala details { border-top: 1px solid var(--line); padding-top: 8px; }
+.sala summary { cursor: pointer; font-size: 13px; font-weight: 600; color: var(--cyan); }
+.sala .dlg { font-size: 14px; display: grid; gap: 4px; }
+.sala .dlg b { color: var(--fg); }
+.sala .shot { font-size: 12.5px; color: var(--muted); }
+.sala .mot { font-size: 13px; color: var(--muted); display: grid; gap: 8px; margin-top: 8px; }
+.sala .mot code { font-family: var(--mono); font-size: 11px; color: var(--fam); }
+.sala .scr { font-family: var(--display); font-size: 26px; line-height: 1; letter-spacing: .3px; }
+
 /* Asked items */
 .asks { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 14px; }
 .ask { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 16px; display: grid; gap: 8px; align-content: start; }
@@ -258,6 +268,7 @@ ol.vlist li::marker { color: var(--cyan); font-family: var(--mono); }
     <div class="in">
       <a href="#mapa">Mapa</a>
       <a href="#ideas">Ideas</a>
+      <a href="#sala">50 guiones nuevos</a>
       <a href="#pedidos">Lo que pediste</a>
       <a href="#guiones">Guiones de prueba</a>
       <a href="#historias">Historias</a>
@@ -310,6 +321,16 @@ ol.vlist li::marker { color: var(--cyan); font-family: var(--mono); }
     </div>
     <textarea class="copybox" id="copybox" hidden readonly aria-label="Lista de ideas aprobadas"></textarea>
     <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="block" id="sala">
+    <div class="sechead">
+      <div class="eyebrow">Serie Sala de Juntas</div>
+      <h2>50 guiones listos para producir</h2>
+      <p>Todos empiezan con personas hechas con IA (8 a 16 segundos en la sala de juntas o en frutinovela) y siguen con el motor y la voz del narrador. Aprueba los que quieras producir.</p>
+    </div>
+    <div class="frow" id="salarow" role="group" aria-label="Tema"></div>
+    <div class="grid" id="sala-grid"></div>
   </section>
 
   <section class="block" id="pedidos">
@@ -607,7 +628,7 @@ ol.vlist li::marker { color: var(--cyan); font-family: var(--mono); }
       <div class="stat no"><b>${c.descartada}</b><span>descartadas</span></div>
       <div class="stat"><b>${pend}</b><span>sin revisar</span></div>`;
   }
-  function refresh() { renderStats(); renderFlor(); renderIdeas(); }
+  function refresh() { renderStats(); renderFlor(); renderIdeas(); if (typeof renderSala === "function") renderSala(); }
 
   /* ---------- Persistence ---------- */
   function note(msg) { const n = $("#syncnote"); n.textContent = msg || ""; n.hidden = !msg; }
@@ -658,6 +679,45 @@ ol.vlist li::marker { color: var(--cyan); font-family: var(--mono); }
     try {
       navigator.clipboard.writeText(text).then(() => { $("#copyok").textContent = "Copiadas"; setTimeout(() => $("#copyok").textContent = "Copiar aprobadas", 1600); }, fallback);
     } catch (e) { fallback(); }
+  });
+
+  /* ---------- Sala de juntas ---------- */
+  const SALA = D.sala || [];
+  const TEMAS = {llamadas: "Llamadas masivas", chat: "Chat con IA", metricas: "Métricas", objeciones: "Objeciones", opciones: "La IA busca opciones", portales: "Portales", anecdotas: "Anécdotas", descartados: "Descartados", circulos: "Los círculos"};
+  let salaTema = null;
+  function salaCard(g) {
+    const v = votes[g.id] || "";
+    const dis = (readOnly || busy.has(g.id)) ? " disabled" : "";
+    const ia = g.ia.map(p => `<div class="shot">${esc(p.plano)}</div>` + p.dialogo.map(d => `<div><b>${esc(d.quien)}:</b> «${esc(d.dice)}»</div>`).join("")).join("");
+    const mot = g.motor.map(m => `<div><code>${esc(m.tipo)}</code> ${esc(m.voz)}<br><span>Pantalla: ${esc(m.pantalla)}</span></div>`).join("");
+    return `<article class="card sala${v ? " st-" + v : ""}" style="--fam:${famOf(g.pilar)}" data-id="${g.id}">
+      <div class="meta"><span class="id">${g.id}</span><span class="pill new">${g.formato === "fruti" ? "Frutinovela" : "Junta"}</span><span class="pill">${esc(TEMAS[g.tema] || g.tema)}</span><span class="pill">~${g.dur} s</span><span class="pill cta">${esc(g.cta)}</span></div>
+      <h3>${esc(g.titulo)}</h3>
+      <div class="scr">${g.gancho_pantalla.map(x => esc(x).replace(/\[([^\]]+)\]/g, '<span style="color:var(--cyan)">$1</span>')).join("<br>")}</div>
+      <div class="dlg">${ia}</div>
+      <details><summary>Ver la parte del motor y el cierre</summary><div class="mot">${mot}<div><b>Cierre:</b> ${esc(g.cierre)}</div></div></details>
+      <div class="vote" role="group" aria-label="Decisión para ${g.id}">
+        <button type="button" class="ok" data-v="aprobada" aria-pressed="${v === "aprobada"}"${dis}>Aprobar</button>
+        <button type="button" class="maybe" data-v="talvez" aria-pressed="${v === "talvez"}"${dis}>Tal vez</button>
+        <button type="button" class="no" data-v="descartada" aria-pressed="${v === "descartada"}"${dis}>Descartar</button>
+      </div>
+    </article>`;
+  }
+  function renderSala() {
+    const list = SALA.filter(g => !salaTema || g.tema === salaTema);
+    $("#sala-grid").innerHTML = list.map(salaCard).join("");
+  }
+  $("#salarow").innerHTML = `<span class="lbl">Tema</span>` + [["", "Todos"]].concat(Object.entries(TEMAS)).map(([k, n]) => `<button class="chip" type="button" data-t="${k}" aria-pressed="${k === ""}">${esc(n)}</button>`).join("");
+  $("#salarow").addEventListener("click", e => {
+    const b = e.target.closest("[data-t]"); if (!b) return;
+    salaTema = b.dataset.t || null;
+    document.querySelectorAll("#salarow [data-t]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    renderSala();
+  });
+  $("#sala-grid").addEventListener("click", e => {
+    const b = e.target.closest("[data-v]"); if (!b || b.disabled) return;
+    const id = b.closest(".card").dataset.id;
+    setVote(id, votes[id] === b.dataset.v ? null : b.dataset.v);
   });
 
   /* ---------- Static sections ---------- */
