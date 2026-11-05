@@ -27,6 +27,13 @@ Sergio pidió hacer SOLO este video y revisarlo antes de hacer los otros 9 aprob
 - `engine/tools/ia_clip.py` tiene un intento con la ruta compatible con OpenAI que NO sirve para Omni:
   actualizarlo a la Interactions API.
 
+## Ojo con la autenticación
+El entorno tiene DOS cosas para Gemini: la variable `GEMINI_API_KEY` (ya guardada, 5 nov) y un secreto de red
+que el proxy mete como `Authorization: Bearer` en todo lo que va a generativelanguage.googleapis.com.
+Si la llamada nativa con `x-goog-api-key: $GEMINI_API_KEY` devuelve 401 por ese Bearer, prueba `?key=$GEMINI_API_KEY`;
+si sigue fallando, pídele a Sergio que borre el secreto de red "Gemini API key (Google AI Studio)" en el ⚙ del entorno
+(la variable basta para todo). Nunca imprimas la key.
+
 ## Render
 ```bash
 cd engine
