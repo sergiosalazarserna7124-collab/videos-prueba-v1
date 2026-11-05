@@ -171,6 +171,37 @@
     }
    ],
    "key": "n21_s4",
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@recordatorio",
+     "p": {
+      "title": "Leads de la noche",
+      "sub": "Avisos para Valeria Ríos",
+      "time": "8:00 am",
+      "sched": "Recordatorio a primera hora",
+      "lines": [
+       {
+        "t": "Diana Trejo · llegó domingo 11:40 pm",
+        "b": true
+       },
+       {
+        "t": "Lucía Hernández · llegó sábado 9:15 pm"
+       },
+       {
+        "t": "Llámalos antes de las 9:00 am",
+        "at": "@llamar",
+        "c": "amber"
+       }
+      ],
+      "alert": {
+       "t": "Sin llamada a las 9:00: Diana Trejo pasó a Paola G.",
+       "c": "red",
+       "at": "@siguiente"
+      }
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

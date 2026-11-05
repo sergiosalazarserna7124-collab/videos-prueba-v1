@@ -108,6 +108,15 @@
     }
    ],
    "key": "n06_s3",
+   "ins": [
+    {
+     "kind": "call",
+     "at": "@nadie",
+     "p": {
+      "missed": true
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
@@ -209,6 +218,69 @@
     }
    ],
    "key": "n06_s5",
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@dice",
+     "p": {
+      "title": "Sin contacto hoy",
+      "time": "1:00 pm",
+      "sched": "Alerta de leads sin llamar",
+      "lines": [
+       {
+        "t": "Leads sin llamar hoy: 7",
+        "b": true
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@asignados"
+       },
+       {
+        "t": "Adriana Solís · Diego H. · espera 26 h",
+        "at": "@asignados",
+        "c": "red"
+       },
+       {
+        "t": "Carlos Ruiz · Diego H. · espera 5 h",
+        "at": "@asignados+6",
+        "c": "amber"
+       },
+       {
+        "t": "Lucía Hernández · Andrés M. · espera 3 h",
+        "at": "@esperando",
+        "c": "amber"
+       }
+      ],
+      "alert": false
+     }
+    },
+    {
+     "kind": "tasks",
+     "at": "@marca",
+     "p": {
+      "who": "Diego Herrera",
+      "right": "Ordenadas por la IA",
+      "items": [
+       {
+        "t": "Llamar primero a Adriana Solís",
+        "state": "new",
+        "sub": "Lleva 26 h esperando"
+       },
+       {
+        "t": "Luego a Carlos Ruiz",
+        "state": "new",
+        "sub": "Lleva 5 h esperando"
+       },
+       {
+        "t": "Después a Sofía Méndez",
+        "state": "new",
+        "sub": "Pidió que la buscaran hoy"
+       }
+      ]
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

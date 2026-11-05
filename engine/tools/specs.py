@@ -1024,6 +1024,22 @@ INSERTS = {
                                typeAt='@pronto+4', note='Quiere comprar este mes. Ya tiene crédito aprobado. Prioridad alta.',
                                fields=[F('Busca', 'Depa 3 recámaras', '@busca'), F('Zona', 'Polanco', '@zona'),
                                        F('Presupuesto', '450 mil USD', '@presupuesto'), F('Cuándo compra', 'Este mes', '@pronto')])]),
+    # 05 depas de +150 mil USD
+    ('n05', 5): dict(ins=[report('@aviso', title='Lead nuevo para ti', sub='Avisos para Valeria Ríos', time='11:02 am',
+                                 sched='Lead asignado hace 1 min', lines=[
+        L('Diana Trejo · Depa en Polanco', b=True), L('Presupuesto: 450 mil USD'), L('Viene de: anuncio de Meta'),
+        L('Llámala antes de 10 min', '@llamada', c='amber')],
+        alert={'t': 'Sin llamada en 10 min: el lead pasó a Diego H.', 'c': 'red', 'at': '@siguiente'})]),
+    # 06 no es la cantidad de leads
+    ('n06', 3): dict(ins=[callrec('@nadie', missed=True)]),
+    ('n06', 5): dict(ins=[report('@dice', title='Sin contacto hoy', time='1:00 pm', sched='Alerta de leads sin llamar', lines=[
+        L('Leads sin llamar hoy: 7', b=True), SEP('@asignados'),
+        L('Adriana Solís · Diego H. · espera 26 h', '@asignados', c='red'),
+        L('Carlos Ruiz · Diego H. · espera 5 h', '@asignados+6', c='amber'),
+        L('Lucía Hernández · Andrés M. · espera 3 h', '@esperando', c='amber')], alert=False),
+        tasks('@marca', who='Diego Herrera', right='Ordenadas por la IA', items=[
+            T('Llamar primero a Adriana Solís', 'Lleva 26 h esperando'), T('Luego a Carlos Ruiz', 'Lleva 5 h esperando'),
+            T('Después a Sofía Méndez', 'Pidió que la buscaran hoy')])]),
     # 07 robando leads
     ('n07', 5): dict(ins=[crm('@CRM', '@llamadas', move='@CRM+12', chip='Solo conversaciones con leads'),
                           callrec('@llamadas', advisor='Diego Herrera', lead='Adriana Solís')]),
@@ -1042,6 +1058,13 @@ INSERTS = {
     ('n10', 5): dict(ins=[note('@anota', typeAt='@Lucía', fields=[F('Busca', 'Depa 2 recámaras', '@busca'), F('Zona', 'Tulum', '@Lucía'),
                                                                      F('Presupuesto', '250 mil USD', '@Lucía+4'), F('Etapa', 'Cita', '@cita')]),
                           cita('@cita', confirmAt='@confirmar'), report('@reporte')]),
+    # 11 qué anuncio te vendió
+    ('n11', 4): dict(ins=[crm('@agendó', move='@apartó', cols=['Contactado', 'Cita', 'Apartado'], chip='Del anuncio hasta la venta', cards=[
+        {'name': 'Lucía Hernández', 'sub': 'Anuncio B · Tulum', 'col': 1, 'age': 'asistió el sábado'},
+        {'name': 'Diana Trejo', 'sub': 'Anuncio B · Mérida', 'col': 0, 'age': 'hace 2 h'},
+        {'name': 'Adriana Solís', 'sub': 'Anuncio A · CDMX', 'col': 0, 'age': 'no agendó'},
+        {'name': 'Carlos Ruiz', 'sub': 'Anuncio B · Tulum', 'col': 1, 'age': 'jueves 5 pm'},
+        {'name': 'Sofía Méndez', 'sub': 'Anuncio B · Cancún', 'col': 2, 'age': 'apartó ayer'}])]),
     # 12 orgullo GoHighLevel
     ('n12', 6): dict(ins=[crm('@llena', move='@CRM+4'), report('@días')]),
     # 13 pagaste GoHighLevel
@@ -1055,6 +1078,14 @@ INSERTS = {
     ('n15', 2): dict(ins=[cita('@agendó', mode='missed', source='Agendada por el bot', missedText='Ningún asesor sabía de la cita',
                                what='Visita · Oficina', advisor='Sin asignar')]),
     ('n15', 5): dict(ins=[crm('@CRM', move='@CRM+10')]),
+    # 16 chatbot de botones
+    ('n16', 4): dict(ins=[note('@contestó', lead='Lucía Hernández', tag='Lead · Preguntó por estacionamiento', stage='Cita', typeAt='@quedó+4',
+                               note='Quiere estacionamiento para 2 autos. Visita el sábado a las 11 am.',
+                               fields=[F('Contestó', 'Sí · Valeria R.', '@contestó'), F('Tardó', '4 minutos', '@tardó'),
+                                       F('Quedó en', 'Visita el sábado', '@quedó'), F('Etapa', 'Cita', '@quedó+4')])]),
+    ('n16', 5): dict(ins=[tasks('@recuerda', items=[T('Responderle a Lucía Hernández', 'Te preguntó por el estacionamiento hace 2 h'),
+                                                    T('Mandar precios a Diana Trejo', 'Se los prometiste ayer'),
+                                                    T('Confirmar visita del sábado', 'Lucía Hernández · 11 am', 'done')])]),
     # 17 coordinador
     ('n17', 5): dict(ins=[callrec('@escucha'), tasks('@arma', who='Diego Herrera'),
                           report('@ti', title='Tu equipo hoy', lines=[
@@ -1065,18 +1096,39 @@ INSERTS = {
     # 18 marcó 15 veces
     ('n18', 5): dict(ins=[callrec('@llamada', '@chats', when='Hoy 11:42 am · 3 min 42 s',
                                   summary=['Le marcó 1 vez, duró 3:42', 'Quiere visitar el sábado', 'Quedaron en mandar ubicación'])]),
+    # 19 antes de despedir
+    ('n19', 5): dict(ins=[report('@Así', title='Ranking de tu equipo', time='lunes 8:00 am', sched='Tu ranking llega los lunes a las 8:00 am', lines=[
+        L('Paola G. · 61 llamadas · 7 citas', b=True), L('Valeria R. · 48 llamadas · 6 citas'), L('Andrés M. · tarda 3 h en responder', c='amber'),
+        L('Diego H. · 9 llamadas · 1 cita', c='red'), SEP('@más'),
+        L('Darle más leads: Paola G.', '@más', c='green'), L('Entrenar: Andrés M.', '@entrenar', c='amber'),
+        L('Revisar: Diego H.', '@entrenar+12', c='red')], alert=False)]),
     # 20 renunció
     ('n20', 4): dict(ins=[crm('@CRM', move='@CRM+10', chip='Lo personal se queda fuera')]),
     ('n20', 5): dict(ins=[note('@nota', lead='Adriana Solís', tag='Antes con Diego Herrera', stage='Reasignada', typeAt='@nota+4',
                                note='Quedó en mandarle 2 opciones en Mérida el lunes. Reasignada a Paola Gutiérrez.',
                                fields=[F('Busca', 'Casa en Mérida'), F('Presupuesto', '180 mil USD'), F('Último contacto', 'Hace 2 días'),
                                        F('Nuevo asesor', 'Paola G.', '@otro')])]),
+    # 21 el lead de las 11 de la noche
+    ('n21', 4): dict(ins=[report('@recordatorio', title='Leads de la noche', sub='Avisos para Valeria Ríos', time='8:00 am',
+                                 sched='Recordatorio a primera hora', lines=[
+        L('Diana Trejo · llegó domingo 11:40 pm', b=True), L('Lucía Hernández · llegó sábado 9:15 pm'),
+        L('Llámalos antes de las 9:00 am', '@llamar', c='amber')],
+        alert={'t': 'Sin llamada a las 9:00: Diana Trejo pasó a Paola G.', 'c': 'red', 'at': '@siguiente'})]),
     # 22 el día de tus asesores
     ('n22', 4): dict(ins=[note('@IA', typeAt='@IA+6', fields=[F('Busca', 'Depa 2 recámaras'), F('Zona', 'Tulum'), F('Presupuesto', '250 mil USD'),
                                                             F('Etapa', 'Cita', '@cita')]),
                           cita('@cita', confirmAt='@confirmar')]),
     ('n22', 5): dict(ins=[report('@resumen', title='Tu resumen del día', sub='Tu día con Lead Master', sched='Tu resumen llega a las 7:00 pm',
                                  lines=ADVISOR_DAY, alert=False)]),
+    # 23 lo que quema tu inmobiliaria
+    ('n23', 3): dict(ins=[callrec('@nadie', missed=True)]),
+    ('n23', 5): dict(ins=[report('@dice', title='Sin contacto hoy', time='1:00 pm', sched='Alerta de leads sin contactar', lines=[
+        L('Leads sin contactar hoy: 6', b=True), SEP('@asesor'),
+        L('Adriana Solís · Diego H. · espera 5 h', '@asesor', c='red'),
+        L('Lucía Hernández · Andrés M. · espera 26 h', '@esperando', c='red')], alert=False),
+        tasks('@marca', who='Diego Herrera', right='Ordenadas por la IA', items=[
+            T('Llamar primero a Adriana Solís', 'Lleva 5 h esperando'), T('Luego a Carlos Ruiz', 'Lleva 2 h esperando')]),
+        ]),
     # 24 ahorita te mando
     ('n24', 5): dict(type='ui', ins=[tasks(0, '@reporte', who='Diego Herrera', items=[
         T('Mandar opciones a Adriana Solís', 'Lo prometiste ayer en el chat', at='@opciones'),
@@ -1099,6 +1151,11 @@ INSERTS = {
         L('Diego H.: 12 leads olvidados', '@olvido+6', c='red'), L('Paola G.: 0 olvidados', '@olvido+10', c='green')], alert=False)]),
     # B marketing vs ventas
     ('b', 6): dict(ins=[cita('@cita', '@llamar', mode='done', doneText='Cita registrada')]),
+    # C puros curiosos
+    ('c', 4): dict(ins=[callrec('@contestan', missed=True, title='Llamadas del equipo', right='No contesta', when='Lead de formulario de Meta',
+                                attempts=['Lunes 10:14 · no contestó', 'Martes 4:30 pm · no contestó', 'Miércoles · no contestó'],
+                                chip='Llenó el formulario y desapareció')]),
+    ('c', 5): dict(ins=[cita('@agenda', '@avisa', mode='done', doneText='Cita agendada', source='Detectada en el chat por la IA')]),
     # D los CRM murieron
     ('d', 2): dict(ins=[crm('@CRM', '@notas', move=False, chip='Qué pasaba con cada lead'), note('@notas', empty=True)]),
     ('d', 5): dict(ins=[callrec('@Escucha'),
@@ -1123,6 +1180,16 @@ INSERTS = {
     ('g2', 4): dict(ins=[callrec('@llamada', '@sin')]),
     ('g3', 3): dict(ins=[crm('@CRM', move='@CRM+8', chip='Solo conversaciones con leads')]),
     ('g3', 4): dict(ins=[callrec('@grabadas')]),
+    ('g4', 4): dict(ins=[report('@llegue', title='Lead nuevo para ti', sub='Avisos para Valeria Ríos', time='10:15 am',
+                                sched='Lead asignado hace 1 min', lines=[
+        L('Diana Trejo · Desarrollo en Mérida', b=True), L('Viene de: anuncio de Meta'), L('Llámala antes de 10 min', '@llamada', c='amber')],
+        alert={'t': 'Sin llamada en 10 min: el lead pasó a Diego H.', 'c': 'red', 'at': '@otro'})]),
+    ('g4', 5): dict(ins=[cita('@agenda', '@avise', mode='done', what='Recorrido · Desarrollo', doneText='Recorrido agendado',
+                              when='Sábado 15 · 11:00 am', dayIdx=5)]),
+    ('g6', 4): dict(ins=[report('@guardia', title='Lead nuevo · guardia', sub='Avisos para Paola Gutiérrez', time='11:40 pm',
+                                sched='Estás de guardia esta noche', lines=[
+        L('Diana Trejo · Depa en Tulum', b=True), L('Llegó hace 1 min por Meta'), L('Asignado a ti: llámala ahora', '@asignados', c='amber')],
+        alert={'t': 'Paola G. le escribió en 3 min.', 'c': 'green', 'at': '@asignados+20'})]),
     ('g5', 3): dict(ins=[crm('@vacío', stale=True, chip='Sin notas, sin etapas')]),
     ('g5', 5): dict(ins=[crm('@CRM', move='@solo'), callrec('@escucha'),
                          note('@nota', typeAt='@nota+4', fields=[F('Presupuesto', '180 mil USD', '@presupuesto'), F('Zona', 'Mérida', '@zona'),

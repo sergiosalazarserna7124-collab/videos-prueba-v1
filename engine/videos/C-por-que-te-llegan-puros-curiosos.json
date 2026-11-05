@@ -152,6 +152,24 @@
     }
    ],
    "key": "c_s4",
+   "ins": [
+    {
+     "kind": "call",
+     "at": "@contestan",
+     "p": {
+      "missed": true,
+      "title": "Llamadas del equipo",
+      "right": "No contesta",
+      "when": "Lead de formulario de Meta",
+      "attempts": [
+       "Lunes 10:14 · no contestó",
+       "Martes 4:30 pm · no contestó",
+       "Miércoles · no contestó"
+      ],
+      "chip": "Llenó el formulario y desapareció"
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
@@ -218,6 +236,18 @@
     }
    ],
    "key": "c_s5",
+   "ins": [
+    {
+     "kind": "cita",
+     "at": "@agenda",
+     "to": "@avisa",
+     "p": {
+      "mode": "done",
+      "doneText": "Cita agendada",
+      "source": "Detectada en el chat por la IA"
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

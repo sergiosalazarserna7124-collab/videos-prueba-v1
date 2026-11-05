@@ -122,6 +122,15 @@
     }
    ],
    "key": "n23_s3",
+   "ins": [
+    {
+     "kind": "call",
+     "at": "@nadie",
+     "p": {
+      "missed": true
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
@@ -209,6 +218,59 @@
     }
    ],
    "key": "n23_s5",
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@dice",
+     "p": {
+      "title": "Sin contacto hoy",
+      "time": "1:00 pm",
+      "sched": "Alerta de leads sin contactar",
+      "lines": [
+       {
+        "t": "Leads sin contactar hoy: 6",
+        "b": true
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@asesor"
+       },
+       {
+        "t": "Adriana Solís · Diego H. · espera 5 h",
+        "at": "@asesor",
+        "c": "red"
+       },
+       {
+        "t": "Lucía Hernández · Andrés M. · espera 26 h",
+        "at": "@esperando",
+        "c": "red"
+       }
+      ],
+      "alert": false
+     }
+    },
+    {
+     "kind": "tasks",
+     "at": "@marca",
+     "p": {
+      "who": "Diego Herrera",
+      "right": "Ordenadas por la IA",
+      "items": [
+       {
+        "t": "Llamar primero a Adriana Solís",
+        "state": "new",
+        "sub": "Lleva 5 h esperando"
+       },
+       {
+        "t": "Luego a Carlos Ruiz",
+        "state": "new",
+        "sub": "Lleva 2 h esperando"
+       }
+      ]
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

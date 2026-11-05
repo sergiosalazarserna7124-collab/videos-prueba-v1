@@ -179,6 +179,57 @@
     }
    ],
    "key": "n11_s4",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@agendó",
+     "p": {
+      "cols": [
+       "Contactado",
+       "Cita",
+       "Apartado"
+      ],
+      "chip": "Del anuncio hasta la venta",
+      "cards": [
+       {
+        "name": "Lucía Hernández",
+        "sub": "Anuncio B · Tulum",
+        "col": 1,
+        "age": "asistió el sábado"
+       },
+       {
+        "name": "Diana Trejo",
+        "sub": "Anuncio B · Mérida",
+        "col": 0,
+        "age": "hace 2 h"
+       },
+       {
+        "name": "Adriana Solís",
+        "sub": "Anuncio A · CDMX",
+        "col": 0,
+        "age": "no agendó"
+       },
+       {
+        "name": "Carlos Ruiz",
+        "sub": "Anuncio B · Tulum",
+        "col": 1,
+        "age": "jueves 5 pm"
+       },
+       {
+        "name": "Sofía Méndez",
+        "sub": "Anuncio B · Cancún",
+        "col": 2,
+        "age": "apartó ayer"
+       }
+      ],
+      "move": {
+       "card": 0,
+       "to": 2,
+       "at": "@apartó"
+      }
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

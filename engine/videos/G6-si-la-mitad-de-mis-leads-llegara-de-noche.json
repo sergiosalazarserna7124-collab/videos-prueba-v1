@@ -150,6 +150,37 @@
     }
    ],
    "key": "g6_s4",
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@guardia",
+     "p": {
+      "title": "Lead nuevo · guardia",
+      "sub": "Avisos para Paola Gutiérrez",
+      "time": "11:40 pm",
+      "sched": "Estás de guardia esta noche",
+      "lines": [
+       {
+        "t": "Diana Trejo · Depa en Tulum",
+        "b": true
+       },
+       {
+        "t": "Llegó hace 1 min por Meta"
+       },
+       {
+        "t": "Asignado a ti: llámala ahora",
+        "at": "@asignados",
+        "c": "amber"
+       }
+      ],
+      "alert": {
+       "t": "Paola G. le escribió en 3 min.",
+       "c": "green",
+       "at": "@asignados+20"
+      }
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

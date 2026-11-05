@@ -140,6 +140,37 @@
     }
    ],
    "key": "g4_s4",
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@llegue",
+     "p": {
+      "title": "Lead nuevo para ti",
+      "sub": "Avisos para Valeria Ríos",
+      "time": "10:15 am",
+      "sched": "Lead asignado hace 1 min",
+      "lines": [
+       {
+        "t": "Diana Trejo · Desarrollo en Mérida",
+        "b": true
+       },
+       {
+        "t": "Viene de: anuncio de Meta"
+       },
+       {
+        "t": "Llámala antes de 10 min",
+        "at": "@llamada",
+        "c": "amber"
+       }
+      ],
+      "alert": {
+       "t": "Sin llamada en 10 min: el lead pasó a Diego H.",
+       "c": "red",
+       "at": "@otro"
+      }
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
@@ -196,6 +227,20 @@
     }
    ],
    "key": "g4_s5",
+   "ins": [
+    {
+     "kind": "cita",
+     "at": "@agenda",
+     "to": "@avise",
+     "p": {
+      "mode": "done",
+      "what": "Recorrido · Desarrollo",
+      "doneText": "Recorrido agendado",
+      "when": "Sábado 15 · 11:00 am",
+      "dayIdx": 5
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

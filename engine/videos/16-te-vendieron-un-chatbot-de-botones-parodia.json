@@ -197,6 +197,41 @@
     }
    ],
    "key": "n16_s4",
+   "ins": [
+    {
+     "kind": "note",
+     "at": "@contestó",
+     "p": {
+      "lead": "Lucía Hernández",
+      "tag": "Lead · Preguntó por estacionamiento",
+      "stage": "Cita",
+      "typeAt": "@quedó+4",
+      "note": "Quiere estacionamiento para 2 autos. Visita el sábado a las 11 am.",
+      "fields": [
+       {
+        "k": "Contestó",
+        "v": "Sí · Valeria R.",
+        "at": "@contestó"
+       },
+       {
+        "k": "Tardó",
+        "v": "4 minutos",
+        "at": "@tardó"
+       },
+       {
+        "k": "Quedó en",
+        "v": "Visita el sábado",
+        "at": "@quedó"
+       },
+       {
+        "k": "Etapa",
+        "v": "Cita",
+        "at": "@quedó+4"
+       }
+      ]
+     }
+    }
+   ],
    "voice": "antonio"
   },
   {
@@ -228,6 +263,31 @@
     }
    ],
    "key": "n16_s5",
+   "ins": [
+    {
+     "kind": "tasks",
+     "at": "@recuerda",
+     "p": {
+      "items": [
+       {
+        "t": "Responderle a Lucía Hernández",
+        "state": "new",
+        "sub": "Te preguntó por el estacionamiento hace 2 h"
+       },
+       {
+        "t": "Mandar precios a Diana Trejo",
+        "state": "new",
+        "sub": "Se los prometiste ayer"
+       },
+       {
+        "t": "Confirmar visita del sábado",
+        "state": "done",
+        "sub": "Lucía Hernández · 11 am"
+       }
+      ]
+     }
+    }
+   ],
    "voice": "antonio"
   },
   {

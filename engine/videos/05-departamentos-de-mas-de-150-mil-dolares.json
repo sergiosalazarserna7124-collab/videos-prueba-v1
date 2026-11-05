@@ -177,6 +177,40 @@
     }
    ],
    "key": "n05_s5",
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@aviso",
+     "p": {
+      "title": "Lead nuevo para ti",
+      "sub": "Avisos para Valeria Ríos",
+      "time": "11:02 am",
+      "sched": "Lead asignado hace 1 min",
+      "lines": [
+       {
+        "t": "Diana Trejo · Depa en Polanco",
+        "b": true
+       },
+       {
+        "t": "Presupuesto: 450 mil USD"
+       },
+       {
+        "t": "Viene de: anuncio de Meta"
+       },
+       {
+        "t": "Llámala antes de 10 min",
+        "at": "@llamada",
+        "c": "amber"
+       }
+      ],
+      "alert": {
+       "t": "Sin llamada en 10 min: el lead pasó a Diego H.",
+       "c": "red",
+       "at": "@siguiente"
+      }
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

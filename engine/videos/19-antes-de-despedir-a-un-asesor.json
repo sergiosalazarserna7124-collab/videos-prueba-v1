@@ -184,6 +184,55 @@
     }
    ],
    "key": "n19_s5",
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@Así",
+     "p": {
+      "title": "Ranking de tu equipo",
+      "time": "lunes 8:00 am",
+      "sched": "Tu ranking llega los lunes a las 8:00 am",
+      "lines": [
+       {
+        "t": "Paola G. · 61 llamadas · 7 citas",
+        "b": true
+       },
+       {
+        "t": "Valeria R. · 48 llamadas · 6 citas"
+       },
+       {
+        "t": "Andrés M. · tarda 3 h en responder",
+        "c": "amber"
+       },
+       {
+        "t": "Diego H. · 9 llamadas · 1 cita",
+        "c": "red"
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@más"
+       },
+       {
+        "t": "Darle más leads: Paola G.",
+        "at": "@más",
+        "c": "green"
+       },
+       {
+        "t": "Entrenar: Andrés M.",
+        "at": "@entrenar",
+        "c": "amber"
+       },
+       {
+        "t": "Revisar: Diego H.",
+        "at": "@entrenar+12",
+        "c": "red"
+       }
+      ],
+      "alert": false
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
