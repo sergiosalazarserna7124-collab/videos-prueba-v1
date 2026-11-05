@@ -1,0 +1,16 @@
+{
+ "j01_a": {
+  "id": "v1_Chd4UUx0YXFhUUotRzR4ZElQMl9PWjZRcxIXeFFMdGFxYVFKLUc0eGRJUDJfT1o2UXM",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film, warm office lighting. Setting: a modern real estate agency meeting room with a glass wall, a long white table with laptops, coffee mugs and printed charts. At the head of the table stands Don Ramiro, a short chubby Mexican boss in his fifties with a thick black mustache, receding hairline, white shirt with rolled-up sleeves and a loose red tie. His face turns red with anger, he slams both fists on the table so the mugs jump, and shouts in Mexican Spanish: \"¡Llevo meses diciéndoles! ¡Meses! ¿Por qué carajo nadie me pasa los reportes?\" Three sales agents around the table flinch. Medium shot, slow push-in. Audio: only his angry voice in Spanish, fists on the table, mugs rattling. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1793917638.889837
+ },
+ "j01_b": {
+  "id": "v1_Chd6Z0x0YXJURktMTzV3YlVQbmRDcmtBMBIXemdMdGFyVEZLTE81d2JVUG5kQ3JrQTA",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film, warm office lighting. Same modern real estate agency meeting room with a glass wall, laptops and coffee mugs. Diego, a skinny young sales agent with glasses, slicked-back gelled hair and an oversized blue blazer, sweats nervously behind his laptop and says in Mexican Spanish: \"Es que el Excel no abre, jefe.\" Then Paola, a confident woman with curly hair and a pink blouse, shrugs and says: \"Yo lo mandé por correo... creo.\" Awkward silence, crickets chirping. Medium two-shot, static camera. Audio: their voices in Spanish, then crickets. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1793917647.7854722
+ }
+}
