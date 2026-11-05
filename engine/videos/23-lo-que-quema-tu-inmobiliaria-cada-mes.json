@@ -1,0 +1,240 @@
+{
+ "id": "23-lo-que-quema-tu-inmobiliaria-cada-mes",
+ "title": "Lo que quema tu inmobiliaria cada mes",
+ "voice": "fernando",
+ "music": "music/pulse.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "cuenta",
+  "tirados",
+  "midiendo"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Haz esta cuenta conmigo si tienes una inmobiliaria que invierte en Meta.",
+   "p": {
+    "img": "scrolling_ads",
+    "lines": [
+     "HAZ ESTA",
+     "[CUENTA]"
+    ],
+    "kicker": "Inmobiliarias en Meta"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n23_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "stat",
+   "text": "Metes 60 mil pesos al mes y te llegan 400 leads. Cada uno te costó 150 pesos.",
+   "p": {
+    "items": [
+     {
+      "value": 60000,
+      "label": "al mes en Meta",
+      "at": "@60",
+      "color": "cyan",
+      "prefix": "$"
+     },
+     {
+      "value": 400,
+      "label": "leads",
+      "at": "@400",
+      "color": "cyan"
+     },
+     {
+      "value": 150,
+      "label": "por lead",
+      "at": "@150",
+      "color": "amber",
+      "prefix": "$"
+     }
+    ],
+    "stacked": true
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@60",
+     "vol": 0.09
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@400",
+     "vol": 0.09
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@150",
+     "vol": 0.09
+    }
+   ],
+   "key": "n23_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "stat",
+   "text": "En las inmobiliarias que medimos, 1 de cada 3 leads nunca habló con una persona. Eso son 133 leads al mes que nadie llamó:",
+   "p": {
+    "items": [
+     {
+      "value": 1,
+      "label": "nunca habló con una persona",
+      "at": "@1",
+      "color": "red",
+      "suffix": " de cada 3"
+     },
+     {
+      "value": 133,
+      "label": "leads al mes que nadie llamó",
+      "at": "@133",
+      "color": "red"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@1",
+     "vol": 0.09
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@133",
+     "vol": 0.09
+    }
+   ],
+   "key": "n23_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "stat",
+   "text": "20 mil pesos tirados cada mes, 240 mil al año. Y nadie te lo dice, porque nadie lo está midiendo.",
+   "p": {
+    "items": [
+     {
+      "value": 20000,
+      "label": "tirados cada mes",
+      "at": "@20",
+      "color": "red",
+      "prefix": "$"
+     },
+     {
+      "value": 240000,
+      "label": "al año",
+      "at": "@240",
+      "color": "red",
+      "prefix": "$"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@20",
+     "vol": 0.09
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@240",
+     "vol": 0.09
+    }
+   ],
+   "key": "n23_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "panel",
+   "text": "Lead Master te dice, el mismo día y con nombre, qué leads nadie ha contactado, de qué asesor son y cuánto llevan esperando. Le marca al asesor a quién llamar primero y, si no lo hace, el lead pasa a otro.",
+   "p": {
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Diego Herrera",
+      "lead": "Adriana Solís",
+      "summary": "Esperando desde hace 5 horas.",
+      "status": "Sin contacto",
+      "color": "red",
+      "at": "@nadie"
+     },
+     {
+      "ch": "call",
+      "advisor": "Andrés Molina",
+      "lead": "Lucía Hernández",
+      "summary": "Esperando desde hace 26 horas.",
+      "status": "Pasa a otro",
+      "color": "amber",
+      "at": "@otro"
+     }
+    ],
+    "title": "Sin contacto hoy"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@nadie",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@otro",
+     "vol": 0.08
+    }
+   ],
+   "key": "n23_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Antes de meterle más dinero a Meta, deja de tirar el que ya pagaste. Dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "DEJA DE TIRAR DINERO",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n23_s6",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

@@ -1,0 +1,234 @@
+{
+ "id": "22-el-dia-de-tus-asesores-con-lead-master",
+ "title": "Así sería el día de tus asesores si usaras Lead Master",
+ "voice": "antonio",
+ "music": "music/drive.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "urgente",
+  "lista",
+  "resumen"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Así sería el día de tus asesores inmobiliarios si usaras Lead Master.",
+   "p": {
+    "img": "advisor_woman",
+    "lines": [
+     "EL DÍA DE TUS",
+     "[ASESORES]"
+    ],
+    "kicker": "Si usaras Lead Master"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n22_s1",
+   "voice": "antonio"
+  },
+  {
+   "type": "floatchats",
+   "text": "Hoy tu asesor llega en la mañana, abre WhatsApp y tiene 40 chats. No sabe por dónde empezar, no se acuerda a quién le prometió llamar y la libreta no ayuda. Así se le pasan los leads que más valen.",
+   "p": {
+    "img": "advisor_notebook",
+    "lines": [
+     "40 CHATS.",
+     "¿POR [DÓNDE] EMPIEZA?"
+    ],
+    "titleTop": 640,
+    "lineAts": [
+     "@40",
+     "@dónde"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/riser.wav",
+     "at": 0,
+     "vol": 0.07
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@dónde",
+     "vol": 0.12
+    }
+   ],
+   "key": "n22_s2",
+   "voice": "antonio"
+  },
+  {
+   "type": "phonelist",
+   "text": "Con Lead Master, a las 8 de la mañana le llega por WhatsApp su lista del día: lo urgente, los leads que nunca ha buscado, los que no le han contestado y los que se están enfriando.",
+   "p": {
+    "items": [
+     {
+      "t": "Lo urgente",
+      "at": "@urgente",
+      "color": "red",
+      "n": 3
+     },
+     {
+      "t": "Nunca los has buscado",
+      "at": "@nunca",
+      "color": "amber",
+      "n": 5
+     },
+     {
+      "t": "No te han contestado",
+      "at": "@contestado",
+      "color": "purple",
+      "n": 7
+     },
+     {
+      "t": "Se están enfriando",
+      "at": "@enfriando",
+      "color": "cyan",
+      "n": 4
+     }
+    ],
+    "bg": "advisor_woman",
+    "title": "Mi trabajo",
+    "sub": "8:00 am",
+    "clock": "8:00"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@urgente",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@nunca",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@contestado",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@enfriando",
+     "vol": 0.11
+    }
+   ],
+   "key": "n22_s3",
+   "voice": "antonio"
+  },
+  {
+   "type": "panel",
+   "text": "Habla con sus leads como siempre; la IA anota todo y le deja la cita lista para confirmar.",
+   "p": {
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Busca 3 recámaras · Visita: sábado 11 am",
+      "status": "Cita para confirmar",
+      "color": "amber",
+      "at": "@anota"
+     }
+    ],
+    "title": "Lo anotó la IA"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@anota",
+     "vol": 0.08
+    }
+   ],
+   "key": "n22_s4",
+   "voice": "antonio"
+  },
+  {
+   "type": "phonelist",
+   "text": "La lista se recalcula cada hora con lo que pasa en sus chats y llamadas. Y en la tarde recibe el resumen de lo que hizo.",
+   "p": {
+    "items": [
+     {
+      "t": "La lista se recalcula cada hora",
+      "at": "@recalcula",
+      "color": "cyan"
+     },
+     {
+      "t": "Resumen del día.pdf",
+      "at": "@resumen",
+      "color": "purple",
+      "sub": "18 llamadas · 7 contactados · 2 citas"
+     }
+    ],
+    "bg": "advisor_car",
+    "title": "Tu día",
+    "sub": "7:00 pm",
+    "clock": "7:00"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@recalcula",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@resumen",
+     "vol": 0.11
+    }
+   ],
+   "key": "n22_s5",
+   "voice": "antonio"
+  },
+  {
+   "type": "cta",
+   "text": "Tu equipo sabe qué hacer y tú dejas de perseguirlo. Dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "TU EQUIPO SABE QUÉ HACER",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n22_s6",
+   "voice": "antonio",
+   "captions": true
+  }
+ ]
+}

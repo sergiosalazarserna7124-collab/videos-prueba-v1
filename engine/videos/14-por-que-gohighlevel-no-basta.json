@@ -1,0 +1,301 @@
+{
+ "id": "14-por-que-gohighlevel-no-basta",
+ "title": "Por qué GoHighLevel no le basta a tu inmobiliaria",
+ "voice": "antonio",
+ "music": "music/drive.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "Ferrari",
+  "cuerda",
+  "cerebro",
+  "verdad"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Te explico por qué GoHighLevel no le basta a tu inmobiliaria.",
+   "p": {
+    "img": "sportscar_rope",
+    "lines": [
+     "GOHIGHLEVEL",
+     "[NO BASTA]"
+    ],
+    "kicker": "Inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n14_s1",
+   "voice": "antonio"
+  },
+  {
+   "type": "photo",
+   "text": "GoHighLevel es como tener un Ferrari y moverlo con una cuerda y tres personas.",
+   "p": {
+    "img": "sportscar_rope",
+    "lines": [
+     "UN FERRARI",
+     "CON [CUERDA]"
+    ],
+    "lineAts": [
+     "@Ferrari",
+     "@cuerda"
+    ],
+    "drift": "out"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@cuerda",
+     "vol": 0.1
+    }
+   ],
+   "key": "n14_s2",
+   "voice": "antonio"
+  },
+  {
+   "type": "compare",
+   "text": "Es potente, pero es un lienzo en blanco: guarda contactos, tiene pipeline y manda mensajes. Lo que no sabe es qué pasa en los chats y en las llamadas de tus asesores.",
+   "p": {
+    "rows": [
+     {
+      "t": "Guarda contactos",
+      "l": true,
+      "r": true,
+      "at": "@contactos"
+     },
+     {
+      "t": "Pipeline",
+      "l": true,
+      "r": true,
+      "at": "@pipeline"
+     },
+     {
+      "t": "Manda mensajes",
+      "l": true,
+      "r": true,
+      "at": "@mensajes"
+     },
+     {
+      "t": "Sabe qué pasa en chats y llamadas",
+      "l": false,
+      "r": true,
+      "at": "@sabe"
+     }
+    ],
+    "left": "GoHighLevel",
+    "right": "Con Lead Master",
+    "title": "UN LIENZO EN BLANCO"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@contactos",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@pipeline",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@mensajes",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@sabe",
+     "vol": 0.11
+    }
+   ],
+   "key": "n14_s3",
+   "voice": "antonio"
+  },
+  {
+   "type": "photo",
+   "text": "Así que, si nadie lo llena, el pipeline no dice la verdad. Y tú pagas un Ferrari que no se mueve.",
+   "p": {
+    "img": "owner_stressed",
+    "lines": [
+     "EL PIPELINE",
+     "[NO DICE] LA VERDAD"
+    ],
+    "lineAts": [
+     0,
+     "@verdad"
+    ],
+    "stamp": {
+     "text": "NO SE MUEVE",
+     "at": "@mueve"
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@verdad",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@mueve",
+     "vol": 0.28
+    }
+   ],
+   "key": "n14_s4",
+   "voice": "antonio"
+  },
+  {
+   "type": "flow",
+   "text": "Lead Master no reemplaza a GoHighLevel: se conecta a él y le pone un cerebro. Lee los WhatsApp, escucha las llamadas, escribe la nota, mueve la etapa y le dice a cada asesor qué hacer hoy.",
+   "p": {
+    "nodes": [
+     {
+      "t": "Lee los WhatsApp",
+      "at": "@WhatsApp",
+      "color": "cyan"
+     },
+     {
+      "t": "Escucha las llamadas",
+      "at": "@llamadas",
+      "color": "purple"
+     },
+     {
+      "t": "Escribe la nota y mueve la etapa",
+      "at": "@nota",
+      "color": "green"
+     },
+     {
+      "t": "Le dice al asesor qué hacer hoy",
+      "at": "@hoy",
+      "color": "amber"
+     }
+    ],
+    "title": "LE PONE UN CEREBRO"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamadas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@nota",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@hoy",
+     "vol": 0.12
+    }
+   ],
+   "key": "n14_s5",
+   "voice": "antonio"
+  },
+  {
+   "type": "stack",
+   "text": "GoHighLevel guarda; Lead Master te dice qué pasó. Y si todavía no lo tienes, te lo dejamos funcionando.",
+   "p": {
+    "items": [
+     {
+      "t": "Guarda",
+      "at": "@guarda",
+      "color": "purple",
+      "k": "GoHighLevel"
+     },
+     {
+      "t": "Te dice qué pasó",
+      "at": "@pasó",
+      "color": "cyan",
+      "k": "Lead Master"
+     },
+     {
+      "t": "Te lo dejamos funcionando",
+      "at": "@funcionando",
+      "color": "green",
+      "k": "¿No lo tienes?"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@guarda",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@pasó",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@funcionando",
+     "vol": 0.12
+    }
+   ],
+   "key": "n14_s6",
+   "voice": "antonio"
+  },
+  {
+   "type": "cta",
+   "text": "Si ya tienes GoHighLevel en tu inmobiliaria, dale clic al botón de abajo y ponlo a trabajar.",
+   "p": {
+    "mode": "ad",
+    "top": "PONLO A TRABAJAR",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n14_s7",
+   "voice": "antonio",
+   "captions": true
+  }
+ ]
+}

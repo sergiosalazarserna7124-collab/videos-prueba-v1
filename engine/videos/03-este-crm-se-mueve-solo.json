@@ -1,0 +1,252 @@
+{
+ "id": "03-este-crm-se-mueve-solo",
+ "title": "Este CRM se mueve solo",
+ "voice": "fernando",
+ "music": "music/pulse.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "solo",
+  "mentira",
+  "nuevo",
+  "verdad"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Este CRM se mueve solo. Y está hecho para inmobiliarias.",
+   "p": {
+    "img": "laptop_dashboard",
+    "lines": [
+     "ESTE CRM",
+     "SE MUEVE [SOLO]"
+    ],
+    "kicker": "Para inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n03_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "stack",
+   "text": "Si tienes una inmobiliaria, ya sabes cómo termina todo CRM. La primera semana tus asesores lo llenan. La segunda dejan de poner notas. Al mes, el pipeline es una mentira:",
+   "p": {
+    "items": [
+     {
+      "t": "Lo llenan",
+      "at": "@primera",
+      "color": "green",
+      "k": "Semana 1"
+     },
+     {
+      "t": "Dejan de poner notas",
+      "at": "@segunda",
+      "color": "amber",
+      "k": "Semana 2"
+     },
+     {
+      "t": "El pipeline es una mentira",
+      "at": "@mes",
+      "color": "red",
+      "k": "Mes 1"
+     }
+    ],
+    "img": "excel_night"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@primera",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@segunda",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@mes",
+     "vol": 0.12
+    }
+   ],
+   "key": "n03_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "leads de hace tres meses siguen en «nuevo» y nadie sabe en qué quedó cada uno. Y tú decides con datos que nadie actualizó.",
+   "p": {
+    "img": "owner_stressed",
+    "lines": [
+     "3 MESES",
+     "EN [«NUEVO»]"
+    ],
+    "lineAts": [
+     0,
+     "@nuevo"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@nuevo",
+     "vol": 0.1
+    }
+   ],
+   "key": "n03_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "chat",
+   "text": "Mira lo que pasa con Lead Master. Tu asesora le escribe al lead por WhatsApp, como siempre. El lead le cuenta que busca un departamento de dos recámaras en Tulum y que puede ver el proyecto el jueves.",
+   "p": {
+    "messages": [
+     {
+      "from": "out",
+      "text": "Hola Lucía, ¿qué estás buscando?",
+      "at": "@escribe"
+     },
+     {
+      "from": "in",
+      "text": "Un depa de 2 recámaras en Tulum.",
+      "at": "@busca"
+     },
+     {
+      "from": "in",
+      "text": "Puedo ir a ver el proyecto el jueves.",
+      "at": "@jueves"
+     }
+    ],
+    "bg": "advisor_woman",
+    "contact": "Lucía Hernández",
+    "sub": "Lead · Tulum"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@escribe",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@busca",
+     "vol": 0.16
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@jueves",
+     "vol": 0.16
+    }
+   ],
+   "key": "n03_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "panel",
+   "text": "Sin que ella toque nada, el sistema anota qué busca, la zona y el presupuesto, escribe la nota, mueve la etapa y le deja lista la cita del jueves para confirmar. Tu CRM, por fin, dice la verdad.",
+   "p": {
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Lucía Hernández",
+      "summary": "Busca 2 recámaras · Zona: Tulum · Presupuesto definido",
+      "status": "Datos anotados",
+      "color": "cyan",
+      "at": "@anota"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Lucía Hernández",
+      "summary": "Nota escrita por la IA · Etapa: cita",
+      "status": "Etapa movida",
+      "color": "green",
+      "at": "@etapa"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Lucía Hernández",
+      "summary": "Cita del jueves lista",
+      "status": "Confirmar en un clic",
+      "color": "amber",
+      "at": "@confirmar"
+     }
+    ],
+    "title": "CRM · Lucía Hernández",
+    "right": "Se llenó solo"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@anota",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@etapa",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@confirmar",
+     "vol": 0.08
+    }
+   ],
+   "key": "n03_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Dale clic al botón de abajo y te lo instalamos en tu inmobiliaria.",
+   "p": {
+    "mode": "ad",
+    "top": "TU CRM DICE LA VERDAD",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n03_s6",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

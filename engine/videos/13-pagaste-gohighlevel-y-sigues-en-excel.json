@@ -1,0 +1,234 @@
+{
+ "id": "13-pagaste-gohighlevel-y-sigues-en-excel",
+ "title": "Le pagaste a alguien para instalar GoHighLevel y sigues en Excel",
+ "voice": "fernando",
+ "music": "music/pulse.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "Excel",
+  "cobran",
+  "mal",
+  "funcionando"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Si tienes una inmobiliaria y le pagaste a alguien para que te instalara GoHighLevel, pero tu equipo sigue en Excel, no eres el único.",
+   "p": {
+    "img": "excel_night",
+    "lines": [
+     "PAGASTE GOHIGHLEVEL",
+     "Y SIGUES EN [EXCEL]"
+    ],
+    "kicker": "Inmobiliarias",
+    "size": 100
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n13_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "stack",
+   "text": "Pasa todo el tiempo. Te lo instalan, te cobran y se van.",
+   "p": {
+    "items": [
+     {
+      "t": "Te lo instalan",
+      "at": "@instalan",
+      "color": "cyan"
+     },
+     {
+      "t": "Te cobran",
+      "at": "@cobran",
+      "color": "amber"
+     },
+     {
+      "t": "Y se van",
+      "at": "@van",
+      "color": "red"
+     }
+    ],
+    "img": "meeting"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@instalan",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@cobran",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@van",
+     "vol": 0.12
+    }
+   ],
+   "key": "n13_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Te dejan un pipeline bonito que nadie usa, automatizaciones que nadie entiende y a tus asesores de vuelta en su WhatsApp personal.",
+   "p": {
+    "img": "advisor_night",
+    "lines": [
+     "PIPELINE BONITO",
+     "QUE [NADIE USA]"
+    ],
+    "lineAts": [
+     0,
+     "@usa"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@usa",
+     "vol": 0.1
+    }
+   ],
+   "key": "n13_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "quote",
+   "text": "Un dueño nos contó que pagó 8 mil pesos y no le quedó nada configurado. Otro lo dijo así: «pago y me entregan mal». Y el lunes tú sigues armando el reporte a mano.",
+   "p": {
+    "text": "Pago y me entregan mal.",
+    "img": "owner_stressed",
+    "who": "Dueño de inmobiliaria"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    }
+   ],
+   "key": "n13_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "stack",
+   "text": "Nosotros dejamos tu GoHighLevel funcionando para una inmobiliaria en 7 días y le conectamos Lead Master, para que las notas, las etapas y los reportes se hagan solos.",
+   "p": {
+    "items": [
+     {
+      "t": "GoHighLevel funcionando en 7 días",
+      "at": "@7",
+      "color": "cyan"
+     },
+     {
+      "t": "Lead Master conectado",
+      "at": "@conectamos",
+      "color": "purple"
+     },
+     {
+      "t": "Notas, etapas y reportes solos",
+      "at": "@reportes",
+      "color": "green"
+     }
+    ],
+    "title": "CÓMO LO HACEMOS",
+    "num": true
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@7",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@conectamos",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@reportes",
+     "vol": 0.12
+    }
+   ],
+   "key": "n13_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "stat",
+   "text": "Después te acompañamos 60 días, con reuniones cada semana, hasta que tu equipo lo use.",
+   "p": {
+    "items": [
+     {
+      "value": 60,
+      "label": "días de acompañamiento, con reuniones cada semana",
+      "at": "@60",
+      "color": "cyan"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@60",
+     "vol": 0.09
+    }
+   ],
+   "key": "n13_s6",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Dale clic al botón de abajo y te lo dejamos funcionando.",
+   "p": {
+    "mode": "ad",
+    "top": "TE LO DEJAMOS FUNCIONANDO",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n13_s7",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

@@ -1,0 +1,230 @@
+{
+ "id": "17-contrataste-un-coordinador",
+ "title": "Contrataste un coordinador para vigilar a tus asesores",
+ "voice": "fernando",
+ "music": "music/pulse.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "niñera",
+  "coordinadora",
+  "vigilar",
+  "Ninguno"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Si tienes una inmobiliaria y contrataste a alguien para vigilar a tus asesores, mira esto.",
+   "p": {
+    "img": "coordinator",
+    "lines": [
+     "¿CONTRATASTE A ALGUIEN",
+     "PARA [VIGILAR]?"
+    ],
+    "kicker": "Inmobiliarias",
+    "size": 96
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n17_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "chat",
+   "text": "Primero lo hacías tú: «¿ya le marcaste?», «¿ya mandaste las opciones?», «¿ya llenaste el CRM?». Te volviste la niñera del equipo.",
+   "p": {
+    "messages": [
+     {
+      "from": "out",
+      "text": "¿Ya le marcaste?",
+      "at": "@marcaste"
+     },
+     {
+      "from": "out",
+      "text": "¿Ya mandaste las opciones?",
+      "at": "@opciones"
+     },
+     {
+      "from": "out",
+      "text": "¿Ya llenaste el CRM?",
+      "at": "@llenaste"
+     }
+    ],
+    "bg": "owner_stressed",
+    "contact": "Equipo comercial",
+    "sub": "grupo"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@marcaste",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@opciones",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llenaste",
+     "vol": 0.1
+    }
+   ],
+   "key": "n17_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "quote",
+   "text": "Luego metiste a una coordinadora. Un dueño nos dijo: «metí una coordinadora, pero pues tampoco lo hacen».",
+   "p": {
+    "text": "Metí una coordinadora, pero pues tampoco lo hacen.",
+    "img": "coordinator",
+    "who": "Dueño de inmobiliaria"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    }
+   ],
+   "key": "n17_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Y es normal: ¿qué gerente tiene tiempo de escuchar todas las llamadas y leer todos los chats? Ninguno.",
+   "p": {
+    "img": "headset_calls",
+    "lines": [
+     "¿QUIÉN ESCUCHA",
+     "[TODAS] LAS LLAMADAS?"
+    ],
+    "lineAts": [
+     "@escuchar",
+     "@todas"
+    ],
+    "stamp": {
+     "text": "NINGUNO",
+     "at": "@Ninguno",
+     "size": 120
+    },
+    "size": 104
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@todas",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@Ninguno",
+     "vol": 0.28
+    }
+   ],
+   "key": "n17_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "panel",
+   "text": "Lead Master sí lo hace. Lee cada chat, escucha cada llamada que sale del CRM y le arma a cada asesor su lista del día. A ti te dice quién no la cumplió, qué leads se están enfriando y quién lleva días sin dar seguimiento.",
+   "p": {
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Diego Herrera",
+      "lead": "Adriana Solís",
+      "summary": "No cumplió su lista de ayer: 6 pendientes.",
+      "status": "No cumplió",
+      "color": "red",
+      "at": "@cumplió"
+     },
+     {
+      "ch": "call",
+      "advisor": "Andrés Molina",
+      "lead": "Lucía Hernández",
+      "summary": "Sin contacto en 3 días.",
+      "status": "Se enfría",
+      "color": "amber",
+      "at": "@enfriando"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Paola Gutiérrez",
+      "lead": "Diana Trejo",
+      "summary": "4 días sin seguimiento.",
+      "status": "Sin seguimiento",
+      "color": "red",
+      "at": "@seguimiento"
+     }
+    ],
+    "title": "Lo que no se cumplió"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@cumplió",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@enfriando",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@seguimiento",
+     "vol": 0.08
+    }
+   ],
+   "key": "n17_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Deja de perseguir a tu equipo. Dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "DEJA DE PERSEGUIRLOS",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n17_s6",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

@@ -1,0 +1,246 @@
+{
+ "id": "15-mi-agente-de-ia-vende-solo-parodia",
+ "title": "«¡Mi agente de IA vende departamentos solo!» (parodia)",
+ "voice": "antonio",
+ "music": "music/drive.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "bot",
+  "persona",
+  "seguimiento",
+  "nadie"
+ ],
+ "scenes": [
+  {
+   "type": "mock",
+   "text": "¡Dueño de inmobiliaria! ¡Mi agente de inteligencia artificial vende departamentos solo! ¡Contesta veinticuatro siete! ¡Despide a tus asesores!",
+   "p": {
+    "lines": [
+     {
+      "t": "¡DUEÑO DE INMOBILIARIA!",
+      "at": 0
+     },
+     {
+      "t": "¡VENDE SOLO!",
+      "at": "@vende"
+     },
+     {
+      "t": "¡24/7!",
+      "at": "@veinticuatro"
+     },
+     {
+      "t": "¡DESPIDE A TUS ASESORES!",
+      "at": "@Despide"
+     }
+    ],
+    "img": "guru"
+   },
+   "fx": "aguda",
+   "voice": "fernando",
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 0,
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@vende",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@veinticuatro",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@Despide",
+     "vol": 0.12
+    }
+   ],
+   "key": "n15_s1"
+  },
+  {
+   "type": "photo",
+   "text": "Ajá. A una inmobiliaria le pasó esto: el bot le agendó una cita a un cliente, el cliente llegó a la oficina y ningún asesor sabía nada.",
+   "p": {
+    "img": "robot_reception",
+    "lines": [
+     "AJÁ.",
+     "Y LUEGO [PASA ESTO]"
+    ],
+    "lineAts": [
+     0,
+     "@bot"
+    ],
+    "stamp": {
+     "text": "NADIE SABÍA",
+     "at": "@nada"
+    }
+   },
+   "voice": "antonio",
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@bot",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@nada",
+     "vol": 0.28
+    },
+    {
+     "src": "sfx/scratch.wav",
+     "at": 0,
+     "vol": 0.22
+    }
+   ],
+   "key": "n15_s2"
+  },
+  {
+   "type": "quote",
+   "text": "El dueño lo resumió así: «estábamos mejor antes del sistema».",
+   "p": {
+    "text": "Estábamos mejor antes del sistema.",
+    "img": "empty_desk",
+    "who": "Dueño de inmobiliaria"
+   },
+   "voice": "antonio",
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    }
+   ],
+   "key": "n15_s3"
+  },
+  {
+   "type": "photo",
+   "text": "En bienes raíces nadie compra una casa porque un bot le contestó rápido. Compra porque una persona le dio seguimiento.",
+   "p": {
+    "img": "showing_tour",
+    "lines": [
+     "COMPRA POR UNA",
+     "[PERSONA]"
+    ],
+    "lineAts": [
+     "@nadie",
+     "@persona"
+    ]
+   },
+   "voice": "antonio",
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@persona",
+     "vol": 0.1
+    }
+   ],
+   "key": "n15_s4"
+  },
+  {
+   "type": "panel",
+   "text": "La IA sí sirve, pero trabajando para tu asesor, no en su lugar. Lead Master lee los chats y las llamadas, llena el CRM, le dice a cada asesor a quién llamar y a ti te dice quién no está llamando.",
+   "p": {
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "CRM lleno por la IA.",
+      "status": "Nota lista",
+      "color": "green",
+      "at": "@llena"
+     },
+     {
+      "ch": "call",
+      "advisor": "Diego Herrera",
+      "lead": "Adriana Solís",
+      "summary": "Llamar hoy antes de las 12.",
+      "status": "A quién llamar",
+      "color": "amber",
+      "at": "@llamar"
+     },
+     {
+      "ch": "call",
+      "advisor": "Andrés Molina",
+      "lead": "4 leads asignados",
+      "summary": "Sin llamadas desde el lunes.",
+      "status": "No está llamando",
+      "color": "red",
+      "at": "@está",
+      "raw": true
+     }
+    ],
+    "title": "La IA trabaja para tu asesor"
+   },
+   "voice": "antonio",
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@llena",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@llamar",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@está",
+     "vol": 0.08
+    }
+   ],
+   "key": "n15_s5"
+  },
+  {
+   "type": "cta",
+   "text": "Y no, no despide a nadie. Dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "NO DESPIDE A NADIE",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "voice": "antonio",
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n15_s6",
+   "captions": true
+  }
+ ]
+}

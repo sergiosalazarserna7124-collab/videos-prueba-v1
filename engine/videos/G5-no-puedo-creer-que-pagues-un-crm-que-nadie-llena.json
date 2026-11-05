@@ -1,0 +1,242 @@
+{
+ "id": "G5-no-puedo-creer-que-pagues-un-crm-que-nadie-llena",
+ "title": "No puedo creer que sigas pagando un CRM que nadie llena",
+ "voice": "fernando",
+ "music": "music/pulse.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "vacío",
+  "multas",
+  "notas",
+  "solo",
+  "ciegas"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "No puedo creer que tu inmobiliaria siga pagando un CRM que tus asesores no llenan.",
+   "p": {
+    "img": "excel_night",
+    "lines": [
+     "UN CRM QUE",
+     "[NADIE LLENA]"
+    ],
+    "kicker": "Inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "g5_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "stack",
+   "text": "Pagaste la licencia, pagaste la instalación, hiciste juntas y pusiste multas.",
+   "p": {
+    "items": [
+     {
+      "t": "Licencia pagada",
+      "at": "@licencia",
+      "color": "amber"
+     },
+     {
+      "t": "Instalación pagada",
+      "at": "@instalación",
+      "color": "amber"
+     },
+     {
+      "t": "Juntas y multas",
+      "at": "@juntas",
+      "color": "red"
+     }
+    ],
+    "img": "meeting"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@licencia",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@instalación",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@juntas",
+     "vol": 0.12
+    }
+   ],
+   "key": "g5_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Y el CRM sigue vacío: sin notas, sin etapas, con leads de hace meses en «nuevo».",
+   "p": {
+    "img": "notebook",
+    "lines": [
+     "SIN NOTAS.",
+     "SIN [ETAPAS]."
+    ],
+    "lineAts": [
+     "@notas",
+     "@etapas"
+    ],
+    "stamp": {
+     "text": "VACÍO",
+     "at": "@vacío",
+     "size": 110
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@etapas",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@vacío",
+     "vol": 0.28
+    }
+   ],
+   "key": "g5_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "quote",
+   "text": "«El talón de Aquiles de todos es poner notas», nos dijo un dueño. Y con un CRM vacío, decides a ciegas.",
+   "p": {
+    "text": "El talón de Aquiles de todos es poner notas.",
+    "img": "owner_stressed",
+    "who": "Dueño de inmobiliaria"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    }
+   ],
+   "key": "g5_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "panel",
+   "text": "Con Lead Master el CRM se llena solo. La IA lee el WhatsApp y escucha las llamadas de cada asesor; escribe la nota, el presupuesto, la zona y las objeciones; mueve la etapa y crea la tarea del siguiente paso.",
+   "p": {
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Nota: busca 2 recámaras en Tulum · Objeción: precio · Siguiente paso: recorrido el jueves.",
+      "status": "Etapa movida",
+      "color": "green",
+      "at": "@escribe"
+     },
+     {
+      "ch": "call",
+      "advisor": "Andrés Molina",
+      "lead": "Lucía Hernández",
+      "summary": "Tarea creada: mandar planos el lunes.",
+      "status": "Tarea creada",
+      "color": "cyan",
+      "at": "@tarea"
+     }
+    ],
+    "title": "La IA llenó esto"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@escribe",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@tarea",
+     "vol": 0.08
+    }
+   ],
+   "key": "g5_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Tu asesor solo habla con el lead. Y tú recibes cada día el reporte de lo que pasó.",
+   "p": {
+    "img": "owner_relaxed",
+    "lines": [
+     "TU ASESOR",
+     "SOLO [HABLA]"
+    ],
+    "lineAts": [
+     0,
+     "@habla"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@habla",
+     "vol": 0.1
+    }
+   ],
+   "key": "g5_s6",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Antes tu equipo trabajaba para el CRM; ahora el CRM trabaja para tu equipo. Dale clic al link de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "EL CRM TRABAJA PARA TI",
+    "button": "Dale clic al link"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "g5_s7",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

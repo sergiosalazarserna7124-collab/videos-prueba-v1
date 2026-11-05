@@ -1,0 +1,215 @@
+{
+ "id": "19-antes-de-despedir-a-un-asesor",
+ "title": "Antes de despedir a un asesor, mira esto",
+ "voice": "fernando",
+ "music": "music/pulse.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "despedir",
+  "ranking",
+  "entrenar"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Si tienes una inmobiliaria y estás por despedir a un asesor, mira esto antes.",
+   "p": {
+    "img": "empty_desk",
+    "lines": [
+     "ANTES DE",
+     "[DESPEDIR], MIRA"
+    ],
+    "kicker": "Inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n19_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "bars",
+   "text": "En casi todos los equipos pasa lo mismo: unos pocos asesores hacen casi todo el trabajo.",
+   "p": {
+    "rows": [
+     {
+      "name": "Paola Gutiérrez",
+      "value": 412,
+      "sub": "llamadas"
+     },
+     {
+      "name": "Valeria Ríos",
+      "value": 356,
+      "sub": "llamadas"
+     },
+     {
+      "name": "Andrés Molina",
+      "value": 74,
+      "sub": "llamadas"
+     },
+     {
+      "name": "Diego Herrera",
+      "value": 41,
+      "sub": "llamadas",
+      "color": "red"
+     }
+    ],
+    "at": "@pocos",
+    "title": "Llamadas por asesor",
+    "right": "Ejemplo"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/riser.wav",
+     "at": "@pocos",
+     "vol": 0.08
+    }
+   ],
+   "key": "n19_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "stat",
+   "text": "En las inmobiliarias que medimos, 2 de cada 10 asesores hicieron entre el 46 y el 88 por ciento de todas las llamadas.",
+   "p": {
+    "items": [
+     {
+      "value": 2,
+      "label": "de cada 10 asesores hicieron entre el 46 y el 88% de las llamadas",
+      "at": "@2",
+      "color": "cyan"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@2",
+     "vol": 0.09
+    }
+   ],
+   "key": "n19_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "quote",
+   "text": "«De 10, te trabajan bien 3, y el resto, quién sabe», nos dijo un dueño. Sin datos, despides al que te cae mal, no al que no trabaja.",
+   "p": {
+    "text": "De 10, te trabajan bien 3, y el resto, quién sabe.",
+    "img": "meeting",
+    "who": "Dueño de inmobiliaria"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    }
+   ],
+   "key": "n19_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "panel",
+   "text": "Lead Master te arma el ranking real de tu equipo: cuántos leads tiene cada asesor, cuántas llamadas hizo, a cuántos contactó, cuánto tarda en responder y cuántas citas sacó. Así sabes a quién darle más leads, a quién entrenar y a quién no.",
+   "p": {
+    "rows": [
+     {
+      "ch": "call",
+      "advisor": "Paola Gutiérrez",
+      "lead": "41 leads",
+      "summary": "412 llamadas · responde en 6 min · 9 citas",
+      "status": "Darle más leads",
+      "color": "green",
+      "at": "@ranking",
+      "raw": true
+     },
+     {
+      "ch": "call",
+      "advisor": "Andrés Molina",
+      "lead": "38 leads",
+      "summary": "74 llamadas · responde en 40 min · 3 citas",
+      "status": "Entrenar",
+      "color": "amber",
+      "at": "@entrenar",
+      "raw": true
+     },
+     {
+      "ch": "call",
+      "advisor": "Diego Herrera",
+      "lead": "61 leads",
+      "summary": "41 llamadas · responde en 2 h · 1 cita",
+      "status": "Revisar",
+      "color": "red",
+      "at": "@citas",
+      "raw": true
+     }
+    ],
+    "title": "Ranking real del equipo"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@ranking",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@entrenar",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@citas",
+     "vol": 0.08
+    }
+   ],
+   "key": "n19_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Medir antes de despedir. Dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "MEDIR ANTES DE DESPEDIR",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n19_s6",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

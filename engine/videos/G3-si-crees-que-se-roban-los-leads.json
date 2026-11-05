@@ -1,0 +1,255 @@
+{
+ "id": "G3-si-crees-que-se-roban-los-leads",
+ "title": "Si crees que tus asesores se roban los leads",
+ "voice": "fernando",
+ "music": "music/pulse.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "roban",
+  "fuera",
+  "grabadas",
+  "aviso",
+  "raro",
+  "historial"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Si tienes una inmobiliaria en México con más de 5 asesores y crees que se roban los leads que les das, esto es lo que yo haría para tener control.",
+   "p": {
+    "img": "advisor_car",
+    "lines": [
+     "¿SE ROBAN",
+     "TUS [LEADS]?"
+    ],
+    "kicker": "Inmobiliaria con +5 asesores"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "g3_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Porque mientras el lead viva en el WhatsApp personal y en el celular de cada asesor, no ves qué le dijeron, si le ofrecieron otro proyecto ni si lo están trabajando por fuera.",
+   "p": {
+    "img": "advisor_night",
+    "lines": [
+     "TODO EN SU",
+     "[CELULAR]"
+    ],
+    "lineAts": [
+     "@WhatsApp",
+     "@celular"
+    ],
+    "stamp": {
+     "text": "POR FUERA",
+     "at": "@fuera"
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@celular",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@fuera",
+     "vol": 0.28
+    }
+   ],
+   "key": "g3_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "flow",
+   "text": "Lo primero: conectar el WhatsApp de cada asesor a mi CRM. Solo las conversaciones con leads; lo personal no.",
+   "p": {
+    "nodes": [
+     {
+      "t": "WhatsApp del asesor",
+      "at": "@WhatsApp",
+      "color": "cyan"
+     },
+     {
+      "t": "Tu CRM",
+      "at": "@CRM",
+      "color": "green"
+     },
+     {
+      "t": "Solo chats con leads",
+      "at": "@Solo",
+      "color": "amber",
+      "sub": "lo personal no"
+     }
+    ],
+    "title": "1 · WHATSAPP CONECTADO"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@CRM",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@Solo",
+     "vol": 0.12
+    }
+   ],
+   "key": "g3_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "phonelist",
+   "text": "Lo segundo: que todas las llamadas salgan del sistema, con el número del asesor, y queden grabadas. Ya no hay llamadas por fuera que yo no vea.",
+   "p": {
+    "items": [
+     {
+      "t": "Diego Herrera → Adriana Solís",
+      "at": "@llamadas",
+      "color": "green",
+      "sub": "4:12 min · grabada"
+     },
+     {
+      "t": "Paola Gutiérrez → Diana Trejo",
+      "at": "@grabadas",
+      "color": "green",
+      "sub": "2:05 min · grabada"
+     },
+     {
+      "t": "Llamadas por fuera",
+      "at": "@fuera",
+      "color": "cyan",
+      "n": 0
+     }
+    ],
+    "bg": "headset_calls",
+    "title": "2 · Llamadas grabadas",
+    "sub": "Desde el sistema"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@llamadas",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@grabadas",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@fuera",
+     "vol": 0.11
+    }
+   ],
+   "key": "g3_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "stack",
+   "text": "Y lo último: que si un lead se queda sin seguimiento o pasa algo raro, me llegue un aviso. Si el asesor se va, el historial se queda en mi inmobiliaria.",
+   "p": {
+    "items": [
+     {
+      "t": "Lead sin seguimiento",
+      "at": "@seguimiento",
+      "color": "amber",
+      "k": "Aviso"
+     },
+     {
+      "t": "Algo raro con un lead",
+      "at": "@raro",
+      "color": "red",
+      "k": "Aviso"
+     },
+     {
+      "t": "El historial se queda",
+      "at": "@historial",
+      "color": "green",
+      "k": "Si se va"
+     }
+    ],
+    "img": "empty_desk",
+    "title": "3 · AVISOS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@seguimiento",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@raro",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@historial",
+     "vol": 0.12
+    }
+   ],
+   "key": "g3_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Eso hace Lead Master. Si quieres que te ayudemos a instalarlo, dale clic al link de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "TUS LEADS, PROTEGIDOS",
+    "button": "Dale clic al link"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "g3_s6",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

@@ -1,0 +1,255 @@
+{
+ "id": "G2-no-puedo-creer-que-todavia-confies",
+ "title": "No puedo creer que todavía confíes en lo que te dicen",
+ "voice": "fernando",
+ "music": "music/drive.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "confíes",
+  "comprobarlo",
+  "peor",
+  "pagaste",
+  "historial",
+  "tuyos"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "No puedo creer que teniendo una inmobiliaria con más de 5 asesores todavía confíes en lo que tus asesores te dicen que hacen.",
+   "p": {
+    "img": "owner_stressed",
+    "lines": [
+     "¿TODAVÍA LES",
+     "[CREES]?"
+    ],
+    "lineAts": [
+     0,
+     "@confíes"
+    ],
+    "kicker": "Inmobiliaria con +5 asesores"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@confíes",
+     "vol": 0.1
+    }
+   ],
+   "key": "g2_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "chat",
+   "text": "Te dicen que llamaron, que el lead no contestó, que le mandaron seguimiento. Pero no tienes forma de comprobarlo.",
+   "p": {
+    "messages": [
+     {
+      "from": "in",
+      "text": "Sí le marqué, jefe. No contestó.",
+      "at": "@llamaron"
+     },
+     {
+      "from": "in",
+      "text": "Ya le mandé seguimiento.",
+      "at": "@seguimiento"
+     }
+    ],
+    "bg": "advisor_car",
+    "contact": "Diego Herrera",
+    "sub": "Asesor"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@llamaron",
+     "vol": 0.16
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@seguimiento",
+     "vol": 0.16
+    }
+   ],
+   "key": "g2_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Y lo peor: hay asesores que se van de tu inmobiliaria y se llevan tus leads, clientes que tú pagaste, porque nunca tuviste control de lo que estaban haciendo.",
+   "p": {
+    "img": "empty_desk",
+    "lines": [
+     "SE VAN",
+     "CON TUS [LEADS]"
+    ],
+    "lineAts": [
+     "@van",
+     "@leads"
+    ],
+    "stamp": {
+     "text": "LEADS QUE TÚ PAGASTE",
+     "at": "@pagaste",
+     "size": 72
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@leads",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@pagaste",
+     "vol": 0.28
+    }
+   ],
+   "key": "g2_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "panel",
+   "text": "Lead Master registra cada llamada, cada chat y cada interacción, sin que el asesor llene nada y sin depender de lo que él te reporte.",
+   "p": {
+    "rows": [
+     {
+      "ch": "call",
+      "advisor": "Diego Herrera",
+      "lead": "Adriana Solís",
+      "summary": "Llamada 10:42 · 0:00 · no contestó · no volvió a marcar.",
+      "status": "Sin seguimiento",
+      "color": "red",
+      "at": "@llamada"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Mandó 3 opciones y agendó visita.",
+      "status": "Sigue el proceso",
+      "color": "green",
+      "at": "@chat"
+     }
+    ],
+    "title": "Lo que sí pasó"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@llamada",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@chat",
+     "vol": 0.08
+    }
+   ],
+   "key": "g2_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "stack",
+   "text": "Sabes quién llamó, cuándo, qué dijo y si está siguiendo el proceso. Y si se va, el historial se queda contigo.",
+   "p": {
+    "items": [
+     {
+      "t": "Quién llamó y cuándo",
+      "at": "@quién",
+      "color": "cyan"
+     },
+     {
+      "t": "Qué dijo",
+      "at": "@dijo",
+      "color": "purple"
+     },
+     {
+      "t": "Si sigue el proceso",
+      "at": "@proceso",
+      "color": "green"
+     },
+     {
+      "t": "El historial se queda contigo",
+      "at": "@historial",
+      "color": "amber"
+     }
+    ],
+    "img": "meeting"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@quién",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@dijo",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@proceso",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@historial",
+     "vol": 0.12
+    }
+   ],
+   "key": "g2_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Recuerda: los leads son tuyos, no de tu asesor. Si quieres dejar de perder dinero por no tener control, dale clic al link de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "LOS LEADS SON TUYOS",
+    "button": "Dale clic al link"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "g2_s6",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

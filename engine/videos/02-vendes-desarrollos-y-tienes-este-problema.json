@@ -1,0 +1,295 @@
+{
+ "id": "02-vendes-desarrollos-y-tienes-este-problema",
+ "title": "Vendes desarrollos y tienes este problema",
+ "voice": "fernando",
+ "music": "music/drive.mp3",
+ "tempo": 1.12,
+ "keywords": [
+  "desarrollos",
+  "vacía",
+  "razón",
+  "lanzamiento",
+  "recorrido"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Si vendes desarrollos inmobiliarios, seguro tienes este problema.",
+   "p": {
+    "img": "construction",
+    "lines": [
+     "¿VENDES",
+     "[DESARROLLOS]?"
+    ],
+    "kicker": "Desarrollos inmobiliarios"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n02_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "stat",
+   "text": "Lanzas un proyecto, metes dinero en anuncios y te llegan 500 leads en un mes.",
+   "p": {
+    "items": [
+     {
+      "value": 500,
+      "label": "leads en el primer mes del lanzamiento",
+      "at": "@500",
+      "color": "cyan"
+     }
+    ],
+    "img": "aerial_community"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@500",
+     "vol": 0.09
+    }
+   ],
+   "key": "n02_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Pero la sala de ventas sigue vacía. Tus asesores dicen que los leads son malos y que nadie contesta. Marketing dice que no les llaman a tiempo.",
+   "p": {
+    "img": "empty_salesroom",
+    "lines": [
+     "SALA DE VENTAS",
+     "[VACÍA]"
+    ],
+    "lineAts": [
+     0,
+     "@vacía"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@vacía",
+     "vol": 0.1
+    }
+   ],
+   "key": "n02_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Y tú no tienes cómo saber quién tiene la razón.",
+   "p": {
+    "img": "marketing_sales_fight",
+    "lines": [
+     "¿QUIÉN TIENE",
+     "LA [RAZÓN]?"
+    ],
+    "lineAts": [
+     0,
+     "@razón"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@razón",
+     "vol": 0.1
+    }
+   ],
+   "key": "n02_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "stat",
+   "text": "Cuando medimos 6,497 leads de 11 inmobiliarias, 1 de cada 3 nunca habló con una persona. No eran malos: nadie los atendió.",
+   "p": {
+    "items": [
+     {
+      "value": 6497,
+      "label": "leads medidos en 11 inmobiliarias",
+      "at": "@6,497",
+      "color": "cyan"
+     },
+     {
+      "value": 1,
+      "label": "nunca habló con una persona",
+      "at": "@nunca",
+      "color": "red",
+      "suffix": " de cada 3"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@6,497",
+     "vol": 0.09
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@nunca",
+     "vol": 0.09
+    }
+   ],
+   "key": "n02_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "panel",
+   "text": "Lead Master se conecta al WhatsApp y a las llamadas de tus asesores y te dice qué pasó con cada lead del lanzamiento: quién contestó, quién agendó recorrido, quién se descartó y por qué, y a quién nadie llamó.",
+   "p": {
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Agendó recorrido para el sábado.",
+      "status": "Recorrido",
+      "color": "green",
+      "at": "@agendó"
+     },
+     {
+      "ch": "call",
+      "advisor": "Andrés Molina",
+      "lead": "Lucía Hernández",
+      "summary": "Descartado: buscaba renta, no compra.",
+      "status": "Descartado",
+      "color": "amber",
+      "at": "@descartó"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Diego Herrera",
+      "lead": "Adriana Solís",
+      "summary": "Nadie la llamó en 4 días.",
+      "status": "Sin contacto",
+      "color": "red",
+      "at": "@nadie"
+     }
+    ],
+    "title": "Tu lanzamiento, lead por lead"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@agendó",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@descartó",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@nadie",
+     "vol": 0.08
+    }
+   ],
+   "key": "n02_s6",
+   "voice": "fernando"
+  },
+  {
+   "type": "events",
+   "text": "Y le avisa a Meta quién sí agenda, para que tus campañas te traigan más de esos.",
+   "p": {
+    "events": [
+     {
+      "name": "Recorrido agendado",
+      "count": 38,
+      "at": 0,
+      "hot": true
+     },
+     {
+      "name": "Apartado",
+      "count": 7,
+      "at": 4
+     }
+    ],
+    "toastAt": "@agenda",
+    "toast": "Evento recibido: Recorrido agendado",
+    "toastSub": "Lanzamiento · hace 3 min"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 0,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 4,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@agenda",
+     "vol": 0.12
+    }
+   ],
+   "key": "n02_s7",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Si estás vendiendo un desarrollo y quieres llenar tu sala de ventas, dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "LLENA TU SALA DE VENTAS",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n02_s8",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

@@ -1,0 +1,225 @@
+{
+ "id": "07-tus-asesores-se-pueden-estar-robando-tus-leads",
+ "title": "Tus asesores se pueden estar robando tus leads",
+ "voice": "fernando",
+ "music": "music/pulse.mp3",
+ "tempo": 1.12,
+ "keywords": [
+  "robando",
+  "control",
+  "fuera",
+  "grabadas",
+  "raro"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Tus asesores inmobiliarios se pueden estar robando los leads que pagaste y tú ni cuenta te das.",
+   "p": {
+    "img": "advisor_car",
+    "lines": [
+     "TE PUEDEN ESTAR",
+     "[ROBANDO] LEADS"
+    ],
+    "kicker": "Inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n07_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Le escriben al lead desde su WhatsApp personal y le llaman desde su celular. Ahí pierdes el control.",
+   "p": {
+    "img": "advisor_night",
+    "lines": [
+     "SU WHATSAPP.",
+     "SU [CELULAR]."
+    ],
+    "lineAts": [
+     "@WhatsApp",
+     "@celular"
+    ],
+    "stamp": {
+     "text": "SIN CONTROL",
+     "at": "@control"
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@celular",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@control",
+     "vol": 0.28
+    }
+   ],
+   "key": "n07_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "stack",
+   "text": "No sabes qué le dijeron, si le ofrecieron otro proyecto o si lo están trabajando por fuera. Y el día que renuncian, se van con todas esas conversaciones.",
+   "p": {
+    "items": [
+     {
+      "t": "¿Qué le dijeron?",
+      "at": "@dijeron",
+      "color": "amber"
+     },
+     {
+      "t": "¿Le ofrecieron otro proyecto?",
+      "at": "@ofrecieron",
+      "color": "red"
+     },
+     {
+      "t": "¿Lo trabajan por fuera?",
+      "at": "@fuera",
+      "color": "red"
+     }
+    ],
+    "img": "empty_desk"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@dijeron",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@ofrecieron",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@fuera",
+     "vol": 0.12
+    }
+   ],
+   "key": "n07_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "quote",
+   "text": "Un director comercial nos lo dijo así: «la forma en la que se roban los leads es precisamente por las llamadas».",
+   "p": {
+    "text": "La forma en la que se roban los leads es precisamente por las llamadas.",
+    "img": "headset_calls",
+    "who": "Director comercial de un desarrollo"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    }
+   ],
+   "key": "n07_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "flow",
+   "text": "Con Lead Master, el WhatsApp de cada asesor queda conectado a tu CRM: solo se guardan las conversaciones con leads, lo personal no. Las llamadas salen del sistema, con el número del asesor, y quedan grabadas. Y si un lead se queda sin seguimiento o pasa algo raro, te avisa.",
+   "p": {
+    "nodes": [
+     {
+      "t": "WhatsApp del asesor",
+      "at": "@WhatsApp",
+      "color": "cyan"
+     },
+     {
+      "t": "Solo chats con leads",
+      "at": "@personal",
+      "color": "amber",
+      "sub": "lo personal no"
+     },
+     {
+      "t": "Llamadas desde el sistema",
+      "at": "@llamadas",
+      "color": "purple",
+      "sub": "grabadas"
+     },
+     {
+      "t": "Aviso si pasa algo raro",
+      "at": "@raro",
+      "color": "red"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@personal",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamadas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@raro",
+     "vol": 0.12
+    }
+   ],
+   "key": "n07_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Los leads son tuyos, tú los pagaste. Dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "LOS LEADS SON TUYOS",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n07_s6",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

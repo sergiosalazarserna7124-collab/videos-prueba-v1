@@ -1,0 +1,253 @@
+{
+ "id": "09-todavia-llenan-el-crm-a-mano",
+ "title": "¿Todavía le pides a tus asesores que llenen el CRM a mano?",
+ "voice": "fernando",
+ "music": "music/pulse.mp3",
+ "tempo": 1.12,
+ "keywords": [
+  "mano",
+  "multas",
+  "bonos",
+  "capturar",
+  "nadie"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "¿Tu inmobiliaria todavía le pide a los asesores que llenen el CRM a mano?",
+   "p": {
+    "img": "advisor_notebook",
+    "lines": [
+     "¿LLENAN EL CRM",
+     "[A MANO]?"
+    ],
+    "kicker": "Inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n09_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "stack",
+   "text": "Ya intentaste todo: bonos para el que lo llene, multas para el que no, juntas diarias, una coordinadora revisando.",
+   "p": {
+    "items": [
+     {
+      "t": "Bonos",
+      "at": "@bonos",
+      "color": "green"
+     },
+     {
+      "t": "Multas",
+      "at": "@multas",
+      "color": "red"
+     },
+     {
+      "t": "Juntas diarias",
+      "at": "@juntas",
+      "color": "amber"
+     },
+     {
+      "t": "Una coordinadora revisando",
+      "at": "@coordinadora",
+      "color": "purple"
+     }
+    ],
+    "img": "meeting"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@bonos",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@multas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@juntas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@coordinadora",
+     "vol": 0.12
+    }
+   ],
+   "key": "n09_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Duró tres días. Porque a tu asesor le pagas por vender, no por capturar datos.",
+   "p": {
+    "img": "coordinator",
+    "lines": [
+     "DURÓ",
+     "[TRES DÍAS]"
+    ],
+    "lineAts": [
+     0,
+     "@días"
+    ],
+    "stamp": {
+     "text": "VENDER, NO CAPTURAR",
+     "at": "@capturar",
+     "color": "cyan",
+     "size": 76
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@días",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@capturar",
+     "vol": 0.28
+    }
+   ],
+   "key": "n09_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "quote",
+   "text": "«El talón de Aquiles de todos es estar poniendo notas», nos dijo un dueño. Y mientras tanto el CRM se queda vacío y tú no sabes qué pasa con los leads que pagaste.",
+   "p": {
+    "text": "El talón de Aquiles de todos es estar poniendo notas.",
+    "img": "excel_night",
+    "who": "Dueño de inmobiliaria"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    }
+   ],
+   "key": "n09_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "panel",
+   "text": "Con Lead Master nadie llena nada. La IA lee los chats y escucha las llamadas de cada asesor, y escribe la nota, el presupuesto, la zona y las objeciones. Mueve la etapa, crea la tarea de seguimiento y te deja todo listo para tu reporte.",
+   "p": {
+    "rows": [
+     {
+      "ch": "call",
+      "advisor": "Andrés Molina",
+      "lead": "Diana Trejo",
+      "summary": "Nota: busca casa en Mérida · Objeción: tiempo de entrega",
+      "status": "Nota escrita",
+      "color": "green",
+      "at": "@nota"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Paola Gutiérrez",
+      "lead": "Adriana Solís",
+      "summary": "Tarea: mandar planos el viernes",
+      "status": "Tarea creada",
+      "color": "cyan",
+      "at": "@tarea"
+     }
+    ],
+    "title": "La IA llenó esto"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@nota",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@tarea",
+     "vol": 0.08
+    }
+   ],
+   "key": "n09_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Tu asesor solo habla con el lead, como siempre lo ha hecho.",
+   "p": {
+    "img": "advisor_woman",
+    "lines": [
+     "TU ASESOR",
+     "SOLO [HABLA]"
+    ],
+    "lineAts": [
+     0,
+     "@habla"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@habla",
+     "vol": 0.1
+    }
+   ],
+   "key": "n09_s6",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Deja de pelear por el CRM. Dale clic al botón de abajo y te lo instalamos.",
+   "p": {
+    "mode": "ad",
+    "top": "DEJA DE PELEAR POR EL CRM",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n09_s7",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

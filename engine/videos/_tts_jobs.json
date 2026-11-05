@@ -1,0 +1,1613 @@
+[
+{
+"key": "n01_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si yo tuviera una inmobiliaria en Guadalajara con más de 5 asesores y no supiera qué hacen con los lids que les doy, esto es lo que haría para tener control y vender más.",
+"next": "Porque hoy, seguramente, inviertes en anuncios, los lids le llegan al WhatsApp de cada asesor y ahí se pierde la pista."
+},
+{
+"key": "n01_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Porque hoy, seguramente, inviertes en anuncios, los lids le llegan al WhatsApp de cada asesor y ahí se pierde la pista.",
+"prev": "Si yo tuviera una inmobiliaria en Guadalajara con más de 5 asesores y no supiera qué hacen con los lids que les doy, esto es lo que haría para tener control y vender más.",
+"next": "No sabes a quién le contestaron, a quién nunca llamaron y a quién dejaron en visto. Y cuando preguntas, todos te dicen que bien."
+},
+{
+"key": "n01_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "No sabes a quién le contestaron, a quién nunca llamaron y a quién dejaron en visto. Y cuando preguntas, todos te dicen que bien.",
+"prev": "Porque hoy, seguramente, inviertes en anuncios, los lids le llegan al WhatsApp de cada asesor y ahí se pierde la pista.",
+"next": "Primero, conectaría el WhatsApp y las llamadas de cada asesor al CRM, para que todo quede registrado sin que nadie capture nada."
+},
+{
+"key": "n01_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Primero, conectaría el WhatsApp y las llamadas de cada asesor al CRM, para que todo quede registrado sin que nadie capture nada.",
+"prev": "No sabes a quién le contestaron, a quién nunca llamaron y a quién dejaron en visto. Y cuando preguntas, todos te dicen que bien.",
+"next": "Segundo, dejaría que la IA llene la nota, el presupuesto, la zona y la etapa de cada lid."
+},
+{
+"key": "n01_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Segundo, dejaría que la IA llene la nota, el presupuesto, la zona y la etapa de cada lid.",
+"prev": "Primero, conectaría el WhatsApp y las llamadas de cada asesor al CRM, para que todo quede registrado sin que nadie capture nada.",
+"next": "Tercero, pediría que todos los días me llegue a mi WhatsApp el reporte: cuántos lids entraron, a quién llamó cada asesor y quién se quedó sin contacto. Eso es Lid Máster."
+},
+{
+"key": "n01_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Tercero, pediría que todos los días me llegue a mi WhatsApp el reporte: cuántos lids entraron, a quién llamó cada asesor y quién se quedó sin contacto. Eso es Lid Máster.",
+"prev": "Segundo, dejaría que la IA llene la nota, el presupuesto, la zona y la etapa de cada lid.",
+"next": "Si tienes una inmobiliaria con más de 5 asesores, dale clic al botón de abajo y te lo instalamos."
+},
+{
+"key": "n01_s7",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si tienes una inmobiliaria con más de 5 asesores, dale clic al botón de abajo y te lo instalamos.",
+"prev": "Tercero, pediría que todos los días me llegue a mi WhatsApp el reporte: cuántos lids entraron, a quién llamó cada asesor y quién se quedó sin contacto. Eso es Lid Máster."
+},
+{
+"key": "n02_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si vendes desarrollos inmobiliarios, seguro tienes este problema.",
+"next": "Lanzas un proyecto, metes dinero en anuncios y te llegan 500 lids en un mes."
+},
+{
+"key": "n02_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lanzas un proyecto, metes dinero en anuncios y te llegan 500 lids en un mes.",
+"prev": "Si vendes desarrollos inmobiliarios, seguro tienes este problema.",
+"next": "Pero la sala de ventas sigue vacía. Tus asesores dicen que los lids son malos y que nadie contesta. Marketing dice que no les llaman a tiempo."
+},
+{
+"key": "n02_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Pero la sala de ventas sigue vacía. Tus asesores dicen que los lids son malos y que nadie contesta. Marketing dice que no les llaman a tiempo.",
+"prev": "Lanzas un proyecto, metes dinero en anuncios y te llegan 500 lids en un mes.",
+"next": "Y tú no tienes cómo saber quién tiene la razón."
+},
+{
+"key": "n02_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y tú no tienes cómo saber quién tiene la razón.",
+"prev": "Pero la sala de ventas sigue vacía. Tus asesores dicen que los lids son malos y que nadie contesta. Marketing dice que no les llaman a tiempo.",
+"next": "Cuando medimos 6,497 lids de 11 inmobiliarias, 1 de cada 3 nunca habló con una persona. No eran malos: nadie los atendió."
+},
+{
+"key": "n02_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Cuando medimos 6,497 lids de 11 inmobiliarias, 1 de cada 3 nunca habló con una persona. No eran malos: nadie los atendió.",
+"prev": "Y tú no tienes cómo saber quién tiene la razón.",
+"next": "Lid Máster se conecta al WhatsApp y a las llamadas de tus asesores y te dice qué pasó con cada lid del lanzamiento: quién contestó, quién agendó recorrido, quién se descartó y por qué, y a quién nadie llamó."
+},
+{
+"key": "n02_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lid Máster se conecta al WhatsApp y a las llamadas de tus asesores y te dice qué pasó con cada lid del lanzamiento: quién contestó, quién agendó recorrido, quién se descartó y por qué, y a quién nadie llamó.",
+"prev": "Cuando medimos 6,497 lids de 11 inmobiliarias, 1 de cada 3 nunca habló con una persona. No eran malos: nadie los atendió.",
+"next": "Y le avisa a Meta quién sí agenda, para que tus campañas te traigan más de esos."
+},
+{
+"key": "n02_s7",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y le avisa a Meta quién sí agenda, para que tus campañas te traigan más de esos.",
+"prev": "Lid Máster se conecta al WhatsApp y a las llamadas de tus asesores y te dice qué pasó con cada lid del lanzamiento: quién contestó, quién agendó recorrido, quién se descartó y por qué, y a quién nadie llamó.",
+"next": "Si estás vendiendo un desarrollo y quieres llenar tu sala de ventas, dale clic al botón de abajo."
+},
+{
+"key": "n02_s8",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si estás vendiendo un desarrollo y quieres llenar tu sala de ventas, dale clic al botón de abajo.",
+"prev": "Y le avisa a Meta quién sí agenda, para que tus campañas te traigan más de esos."
+},
+{
+"key": "n03_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Este CRM se mueve solo. Y está hecho para inmobiliarias.",
+"next": "Si tienes una inmobiliaria, ya sabes cómo termina todo CRM. La primera semana tus asesores lo llenan. La segunda dejan de poner notas. Al mes, el pipeline es una mentira:"
+},
+{
+"key": "n03_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si tienes una inmobiliaria, ya sabes cómo termina todo CRM. La primera semana tus asesores lo llenan. La segunda dejan de poner notas. Al mes, el pipeline es una mentira:",
+"prev": "Este CRM se mueve solo. Y está hecho para inmobiliarias.",
+"next": "lids de hace tres meses siguen en «nuevo» y nadie sabe en qué quedó cada uno. Y tú decides con datos que nadie actualizó."
+},
+{
+"key": "n03_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "lids de hace tres meses siguen en «nuevo» y nadie sabe en qué quedó cada uno. Y tú decides con datos que nadie actualizó.",
+"prev": "Si tienes una inmobiliaria, ya sabes cómo termina todo CRM. La primera semana tus asesores lo llenan. La segunda dejan de poner notas. Al mes, el pipeline es una mentira:",
+"next": "Mira lo que pasa con Lid Máster. Tu asesora le escribe al lid por WhatsApp, como siempre. El lid le cuenta que busca un departamento de dos recámaras en Tulum y que puede ver el proyecto el jueves."
+},
+{
+"key": "n03_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Mira lo que pasa con Lid Máster. Tu asesora le escribe al lid por WhatsApp, como siempre. El lid le cuenta que busca un departamento de dos recámaras en Tulum y que puede ver el proyecto el jueves.",
+"prev": "lids de hace tres meses siguen en «nuevo» y nadie sabe en qué quedó cada uno. Y tú decides con datos que nadie actualizó.",
+"next": "Sin que ella toque nada, el sistema anota qué busca, la zona y el presupuesto, escribe la nota, mueve la etapa y le deja lista la cita del jueves para confirmar. Tu CRM, por fin, dice la verdad."
+},
+{
+"key": "n03_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Sin que ella toque nada, el sistema anota qué busca, la zona y el presupuesto, escribe la nota, mueve la etapa y le deja lista la cita del jueves para confirmar. Tu CRM, por fin, dice la verdad.",
+"prev": "Mira lo que pasa con Lid Máster. Tu asesora le escribe al lid por WhatsApp, como siempre. El lid le cuenta que busca un departamento de dos recámaras en Tulum y que puede ver el proyecto el jueves.",
+"next": "Dale clic al botón de abajo y te lo instalamos en tu inmobiliaria."
+},
+{
+"key": "n03_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Dale clic al botón de abajo y te lo instalamos en tu inmobiliaria.",
+"prev": "Sin que ella toque nada, el sistema anota qué busca, la zona y el presupuesto, escribe la nota, mueve la etapa y le deja lista la cita del jueves para confirmar. Tu CRM, por fin, dice la verdad."
+},
+{
+"key": "n04_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Este es el sistema que separa a los curiosos de los compradores en tu inmobiliaria, antes de que tus asesores pierdan el día.",
+"next": "Te llegan cientos de mensajes: «¿cuánto cuesta?», «¿sigue disponible?», «mándame info». Tus asesores contestan uno por uno, como pueden."
+},
+{
+"key": "n04_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Te llegan cientos de mensajes: «¿cuánto cuesta?», «¿sigue disponible?», «mándame info». Tus asesores contestan uno por uno, como pueden.",
+"prev": "Este es el sistema que separa a los curiosos de los compradores en tu inmobiliaria, antes de que tus asesores pierdan el día.",
+"next": "Y mientras le responden al que solo está viendo, la persona que sí quiere comprar se queda esperando. Cuando por fin le contestan, ya agendó con otra inmobiliaria."
+},
+{
+"key": "n04_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y mientras le responden al que solo está viendo, la persona que sí quiere comprar se queda esperando. Cuando por fin le contestan, ya agendó con otra inmobiliaria.",
+"prev": "Te llegan cientos de mensajes: «¿cuánto cuesta?», «¿sigue disponible?», «mándame info». Tus asesores contestan uno por uno, como pueden.",
+"next": "Lid Máster lee cada conversación y saca lo que importa: qué busca, en qué zona, con qué presupuesto y qué tan pronto quiere comprar. Con eso, cada asesor sabe a quién atender primero."
+},
+{
+"key": "n04_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lid Máster lee cada conversación y saca lo que importa: qué busca, en qué zona, con qué presupuesto y qué tan pronto quiere comprar. Con eso, cada asesor sabe a quién atender primero.",
+"prev": "Y mientras le responden al que solo está viendo, la persona que sí quiere comprar se queda esperando. Cuando por fin le contestan, ya agendó con otra inmobiliaria.",
+"next": "Y cuando un lid agenda una cita, el sistema se lo avisa a Meta, para que tus anuncios busquen más gente así y menos curiosos."
+},
+{
+"key": "n04_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y cuando un lid agenda una cita, el sistema se lo avisa a Meta, para que tus anuncios busquen más gente así y menos curiosos.",
+"prev": "Lid Máster lee cada conversación y saca lo que importa: qué busca, en qué zona, con qué presupuesto y qué tan pronto quiere comprar. Con eso, cada asesor sabe a quién atender primero.",
+"next": "Si tu inmobiliaria recibe más de 100 lids al mes, dale clic al botón de abajo."
+},
+{
+"key": "n04_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si tu inmobiliaria recibe más de 100 lids al mes, dale clic al botón de abajo.",
+"prev": "Y cuando un lid agenda una cita, el sistema se lo avisa a Meta, para que tus anuncios busquen más gente así y menos curiosos."
+},
+{
+"key": "n05_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si vendes departamentos de más de 3 millones de pesos y no tienes este sistema, estás perdiendo compradores serios entre cientos de mensajes.",
+"next": "La persona que tiene el dinero para comprar no le escribe solo a tu inmobiliaria. Le escribe a tres o cuatro al mismo tiempo."
+},
+{
+"key": "n05_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "La persona que tiene el dinero para comprar no le escribe solo a tu inmobiliaria. Le escribe a tres o cuatro al mismo tiempo.",
+"prev": "Si vendes departamentos de más de 3 millones de pesos y no tienes este sistema, estás perdiendo compradores serios entre cientos de mensajes.",
+"next": "Y casi siempre compra con la que le contesta primero, le resuelve las dudas y la invita a ver el proyecto."
+},
+{
+"key": "n05_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y casi siempre compra con la que le contesta primero, le resuelve las dudas y la invita a ver el proyecto.",
+"prev": "La persona que tiene el dinero para comprar no le escribe solo a tu inmobiliaria. Le escribe a tres o cuatro al mismo tiempo.",
+"next": "En las inmobiliarias que medimos, la mitad de los lids esperó más de 2 horas por el primer contacto. Solo 17 de cada 100 recibieron respuesta en 5 minutos."
+},
+{
+"key": "n05_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "En las inmobiliarias que medimos, la mitad de los lids esperó más de 2 horas por el primer contacto. Solo 17 de cada 100 recibieron respuesta en 5 minutos.",
+"prev": "Y casi siempre compra con la que le contesta primero, le resuelve las dudas y la invita a ver el proyecto.",
+"next": "Con Lid Máster, cada lid llega directo al asesor que le toca, con aviso por WhatsApp. Si no hay llamada en el tiempo que tú decides, pasa al siguiente asesor."
+},
+{
+"key": "n05_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Con Lid Máster, cada lid llega directo al asesor que le toca, con aviso por WhatsApp. Si no hay llamada en el tiempo que tú decides, pasa al siguiente asesor.",
+"prev": "En las inmobiliarias que medimos, la mitad de los lids esperó más de 2 horas por el primer contacto. Solo 17 de cada 100 recibieron respuesta en 5 minutos.",
+"next": "Y tú ves cuánto tarda cada uno en responder, con cada lid."
+},
+{
+"key": "n05_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y tú ves cuánto tarda cada uno en responder, con cada lid.",
+"prev": "Con Lid Máster, cada lid llega directo al asesor que le toca, con aviso por WhatsApp. Si no hay llamada en el tiempo que tú decides, pasa al siguiente asesor.",
+"next": "Dale clic al botón de abajo y te lo instalamos en tu inmobiliaria en 7 días."
+},
+{
+"key": "n05_s7",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Dale clic al botón de abajo y te lo instalamos en tu inmobiliaria en 7 días.",
+"prev": "Y tú ves cuánto tarda cada uno en responder, con cada lid."
+},
+{
+"key": "n06_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "El problema de tu inmobiliaria no es la cantidad de lids que te llegan.",
+"next": "Cuando las ventas no salen, todos piden lo mismo: más lids, mejores lids, otra agencia."
+},
+{
+"key": "n06_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Cuando las ventas no salen, todos piden lo mismo: más lids, mejores lids, otra agencia.",
+"prev": "El problema de tu inmobiliaria no es la cantidad de lids que te llegan.",
+"next": "Pero cuando medimos 6,497 lids de 11 inmobiliarias durante 60 días, 1 de cada 3 nunca habló con una persona. No contestaron mal: nadie los llamó."
+},
+{
+"key": "n06_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Pero cuando medimos 6,497 lids de 11 inmobiliarias durante 60 días, 1 de cada 3 nunca habló con una persona. No contestaron mal: nadie los llamó.",
+"prev": "Cuando las ventas no salen, todos piden lo mismo: más lids, mejores lids, otra agencia.",
+"next": "Y lo más raro es que se quedaron sin contacto más los que llegaron en horario de oficina que los de la noche. Estás pagando lids que tu propio equipo no atiende."
+},
+{
+"key": "n06_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y lo más raro es que se quedaron sin contacto más los que llegaron en horario de oficina que los de la noche. Estás pagando lids que tu propio equipo no atiende.",
+"prev": "Pero cuando medimos 6,497 lids de 11 inmobiliarias durante 60 días, 1 de cada 3 nunca habló con una persona. No contestaron mal: nadie los llamó.",
+"next": "Lid Máster te dice, el mismo día y con nombre, qué lids nadie ha llamado, quién los tiene asignados y cuánto llevan esperando. Y a cada asesor le marca a quién buscar primero."
+},
+{
+"key": "n06_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lid Máster te dice, el mismo día y con nombre, qué lids nadie ha llamado, quién los tiene asignados y cuánto llevan esperando. Y a cada asesor le marca a quién buscar primero.",
+"prev": "Y lo más raro es que se quedaron sin contacto más los que llegaron en horario de oficina que los de la noche. Estás pagando lids que tu propio equipo no atiende.",
+"next": "Antes de comprar más lids, atiende los que ya pagaste. Dale clic al botón de abajo."
+},
+{
+"key": "n06_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Antes de comprar más lids, atiende los que ya pagaste. Dale clic al botón de abajo.",
+"prev": "Lid Máster te dice, el mismo día y con nombre, qué lids nadie ha llamado, quién los tiene asignados y cuánto llevan esperando. Y a cada asesor le marca a quién buscar primero."
+},
+{
+"key": "n07_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Tus asesores inmobiliarios se pueden estar robando los lids que pagaste y tú ni cuenta te das.",
+"next": "Le escriben al lid desde su WhatsApp personal y le llaman desde su celular. Ahí pierdes el control."
+},
+{
+"key": "n07_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Le escriben al lid desde su WhatsApp personal y le llaman desde su celular. Ahí pierdes el control.",
+"prev": "Tus asesores inmobiliarios se pueden estar robando los lids que pagaste y tú ni cuenta te das.",
+"next": "No sabes qué le dijeron, si le ofrecieron otro proyecto o si lo están trabajando por fuera. Y el día que renuncian, se van con todas esas conversaciones."
+},
+{
+"key": "n07_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "No sabes qué le dijeron, si le ofrecieron otro proyecto o si lo están trabajando por fuera. Y el día que renuncian, se van con todas esas conversaciones.",
+"prev": "Le escriben al lid desde su WhatsApp personal y le llaman desde su celular. Ahí pierdes el control.",
+"next": "Un director comercial nos lo dijo así: «la forma en la que se roban los lids es precisamente por las llamadas»."
+},
+{
+"key": "n07_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Un director comercial nos lo dijo así: «la forma en la que se roban los lids es precisamente por las llamadas».",
+"prev": "No sabes qué le dijeron, si le ofrecieron otro proyecto o si lo están trabajando por fuera. Y el día que renuncian, se van con todas esas conversaciones.",
+"next": "Con Lid Máster, el WhatsApp de cada asesor queda conectado a tu CRM: solo se guardan las conversaciones con lids, lo personal no. Las llamadas salen del sistema, con el número del asesor, y quedan grabadas. Y si un lid se queda sin seguimiento o pasa algo raro, te avisa."
+},
+{
+"key": "n07_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Con Lid Máster, el WhatsApp de cada asesor queda conectado a tu CRM: solo se guardan las conversaciones con lids, lo personal no. Las llamadas salen del sistema, con el número del asesor, y quedan grabadas. Y si un lid se queda sin seguimiento o pasa algo raro, te avisa.",
+"prev": "Un director comercial nos lo dijo así: «la forma en la que se roban los lids es precisamente por las llamadas».",
+"next": "Los lids son tuyos, tú los pagaste. Dale clic al botón de abajo."
+},
+{
+"key": "n07_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Los lids son tuyos, tú los pagaste. Dale clic al botón de abajo.",
+"prev": "Con Lid Máster, el WhatsApp de cada asesor queda conectado a tu CRM: solo se guardan las conversaciones con lids, lo personal no. Las llamadas salen del sistema, con el número del asesor, y quedan grabadas. Y si un lid se queda sin seguimiento o pasa algo raro, te avisa."
+},
+{
+"key": "n08_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Una inmobiliaria metió 9 mil dólares en anuncios y no vendió ni un departamento.",
+"next": "Le llegaron 700 lids. El dueño culpó a Meta, después a la agencia, después a los lids."
+},
+{
+"key": "n08_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Le llegaron 700 lids. El dueño culpó a Meta, después a la agencia, después a los lids.",
+"prev": "Una inmobiliaria metió 9 mil dólares en anuncios y no vendió ni un departamento.",
+"next": "Pero cuando revisamos los números, el problema estaba en otro lado: para trabajar bien esos 700 lids tocaba hacer unas 9 mil llamadas. El equipo hizo 3 mil."
+},
+{
+"key": "n08_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Pero cuando revisamos los números, el problema estaba en otro lado: para trabajar bien esos 700 lids tocaba hacer unas 9 mil llamadas. El equipo hizo 3 mil.",
+"prev": "Le llegaron 700 lids. El dueño culpó a Meta, después a la agencia, después a los lids.",
+"next": "Dos de cada tres intentos nunca pasaron. Y nadie lo sabía, porque nadie lo estaba midiendo."
+},
+{
+"key": "n08_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Dos de cada tres intentos nunca pasaron. Y nadie lo sabía, porque nadie lo estaba midiendo.",
+"prev": "Pero cuando revisamos los números, el problema estaba en otro lado: para trabajar bien esos 700 lids tocaba hacer unas 9 mil llamadas. El equipo hizo 3 mil.",
+"next": "Lid Máster mide eso por ti: cuántas llamadas hizo cada asesor, cuántos lids contestaron, a quién nunca se le dio seguimiento y cuántas citas salieron de cada campaña."
+},
+{
+"key": "n08_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lid Máster mide eso por ti: cuántas llamadas hizo cada asesor, cuántos lids contestaron, a quién nunca se le dio seguimiento y cuántas citas salieron de cada campaña.",
+"prev": "Dos de cada tres intentos nunca pasaron. Y nadie lo sabía, porque nadie lo estaba midiendo.",
+"next": "Y a cada asesor le dice todos los días a quién le toca llamar."
+},
+{
+"key": "n08_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y a cada asesor le dice todos los días a quién le toca llamar.",
+"prev": "Lid Máster mide eso por ti: cuántas llamadas hizo cada asesor, cuántos lids contestaron, a quién nunca se le dio seguimiento y cuántas citas salieron de cada campaña.",
+"next": "Antes de cambiar de agencia, mide a tu equipo. Dale clic al botón de abajo."
+},
+{
+"key": "n08_s7",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Antes de cambiar de agencia, mide a tu equipo. Dale clic al botón de abajo.",
+"prev": "Y a cada asesor le dice todos los días a quién le toca llamar."
+},
+{
+"key": "n09_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "¿Tu inmobiliaria todavía le pide a los asesores que llenen el CRM a mano?",
+"next": "Ya intentaste todo: bonos para el que lo llene, multas para el que no, juntas diarias, una coordinadora revisando."
+},
+{
+"key": "n09_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Ya intentaste todo: bonos para el que lo llene, multas para el que no, juntas diarias, una coordinadora revisando.",
+"prev": "¿Tu inmobiliaria todavía le pide a los asesores que llenen el CRM a mano?",
+"next": "Duró tres días. Porque a tu asesor le pagas por vender, no por capturar datos."
+},
+{
+"key": "n09_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Duró tres días. Porque a tu asesor le pagas por vender, no por capturar datos.",
+"prev": "Ya intentaste todo: bonos para el que lo llene, multas para el que no, juntas diarias, una coordinadora revisando.",
+"next": "«El talón de Aquiles de todos es estar poniendo notas», nos dijo un dueño. Y mientras tanto el CRM se queda vacío y tú no sabes qué pasa con los lids que pagaste."
+},
+{
+"key": "n09_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "«El talón de Aquiles de todos es estar poniendo notas», nos dijo un dueño. Y mientras tanto el CRM se queda vacío y tú no sabes qué pasa con los lids que pagaste.",
+"prev": "Duró tres días. Porque a tu asesor le pagas por vender, no por capturar datos.",
+"next": "Con Lid Máster nadie llena nada. La IA lee los chats y escucha las llamadas de cada asesor, y escribe la nota, el presupuesto, la zona y las objeciones. Mueve la etapa, crea la tarea de seguimiento y te deja todo listo para tu reporte."
+},
+{
+"key": "n09_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Con Lid Máster nadie llena nada. La IA lee los chats y escucha las llamadas de cada asesor, y escribe la nota, el presupuesto, la zona y las objeciones. Mueve la etapa, crea la tarea de seguimiento y te deja todo listo para tu reporte.",
+"prev": "«El talón de Aquiles de todos es estar poniendo notas», nos dijo un dueño. Y mientras tanto el CRM se queda vacío y tú no sabes qué pasa con los lids que pagaste.",
+"next": "Tu asesor solo habla con el lid, como siempre lo ha hecho."
+},
+{
+"key": "n09_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Tu asesor solo habla con el lid, como siempre lo ha hecho.",
+"prev": "Con Lid Máster nadie llena nada. La IA lee los chats y escucha las llamadas de cada asesor, y escribe la nota, el presupuesto, la zona y las objeciones. Mueve la etapa, crea la tarea de seguimiento y te deja todo listo para tu reporte.",
+"next": "Deja de pelear por el CRM. Dale clic al botón de abajo y te lo instalamos."
+},
+{
+"key": "n09_s7",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Deja de pelear por el CRM. Dale clic al botón de abajo y te lo instalamos.",
+"prev": "Tu asesor solo habla con el lid, como siempre lo ha hecho."
+},
+{
+"key": "n10_s1",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Así le llegaría un lid a tus asesores si tu inmobiliaria usara Lid Máster.",
+"next": "Hoy, cuando alguien deja sus datos a las 11 de la noche, el lid se queda en una bandeja hasta que alguien se acuerde. Para la mañana siguiente, ya le escribió a otra inmobiliaria."
+},
+{
+"key": "n10_s2",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Hoy, cuando alguien deja sus datos a las 11 de la noche, el lid se queda en una bandeja hasta que alguien se acuerde. Para la mañana siguiente, ya le escribió a otra inmobiliaria.",
+"prev": "Así le llegaría un lid a tus asesores si tu inmobiliaria usara Lid Máster.",
+"next": "Con Lid Máster, Lucía llena el formulario de un departamento en Tulum a las 11:08 de la noche. El sistema se lo asigna a Valeria según tus reglas y le manda un WhatsApp: nuevo lid, Lucía Hernández, dos recámaras en Tulum."
+},
+{
+"key": "n10_s3",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Con Lid Máster, Lucía llena el formulario de un departamento en Tulum a las 11:08 de la noche. El sistema se lo asigna a Valeria según tus reglas y le manda un WhatsApp: nuevo lid, Lucía Hernández, dos recámaras en Tulum.",
+"prev": "Hoy, cuando alguien deja sus datos a las 11 de la noche, el lid se queda en una bandeja hasta que alguien se acuerde. Para la mañana siguiente, ya le escribió a otra inmobiliaria.",
+"next": "A primera hora, Valeria la tiene en su lista como urgente y con un tiempo para llamar. Si no llama, el lid pasa a otro asesor."
+},
+{
+"key": "n10_s4",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "A primera hora, Valeria la tiene en su lista como urgente y con un tiempo para llamar. Si no llama, el lid pasa a otro asesor.",
+"prev": "Con Lid Máster, Lucía llena el formulario de un departamento en Tulum a las 11:08 de la noche. El sistema se lo asigna a Valeria según tus reglas y le manda un WhatsApp: nuevo lid, Lucía Hernández, dos recámaras en Tulum.",
+"next": "Cuando hablan, la IA anota qué busca Lucía y deja la cita lista para confirmar. Y tú lo ves todo en tu reporte."
+},
+{
+"key": "n10_s5",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Cuando hablan, la IA anota qué busca Lucía y deja la cita lista para confirmar. Y tú lo ves todo en tu reporte.",
+"prev": "A primera hora, Valeria la tiene en su lista como urgente y con un tiempo para llamar. Si no llama, el lid pasa a otro asesor.",
+"next": "Ningún lid se queda esperando. Dale clic al botón de abajo y te lo instalamos."
+},
+{
+"key": "n10_s6",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Ningún lid se queda esperando. Dale clic al botón de abajo y te lo instalamos.",
+"prev": "Cuando hablan, la IA anota qué busca Lucía y deja la cita lista para confirmar. Y tú lo ves todo en tu reporte."
+},
+{
+"key": "n11_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si tienes una inmobiliaria que invierte en Meta, contéstame esto: ¿qué anuncio te vendió el último departamento?",
+"next": "Casi nadie lo sabe. Ves el costo por lid y apagas los anuncios caros. Pero el lid más barato casi nunca es el que compra."
+},
+{
+"key": "n11_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Casi nadie lo sabe. Ves el costo por lid y apagas los anuncios caros. Pero el lid más barato casi nunca es el que compra.",
+"prev": "Si tienes una inmobiliaria que invierte en Meta, contéstame esto: ¿qué anuncio te vendió el último departamento?",
+"next": "Un anuncio te puede traer lids a 40 pesos y ninguna cita, y otro, lids a 95 pesos y nueve citas. Si solo miras el costo por lid, apagas el que vendía."
+},
+{
+"key": "n11_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Un anuncio te puede traer lids a 40 pesos y ninguna cita, y otro, lids a 95 pesos y nueve citas. Si solo miras el costo por lid, apagas el que vendía.",
+"prev": "Casi nadie lo sabe. Ves el costo por lid y apagas los anuncios caros. Pero el lid más barato casi nunca es el que compra.",
+"next": "Lid Máster sigue cada lid desde el anuncio hasta el final: si lo contactaron, si agendó, si asistió, si apartó y si compró."
+},
+{
+"key": "n11_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lid Máster sigue cada lid desde el anuncio hasta el final: si lo contactaron, si agendó, si asistió, si apartó y si compró.",
+"prev": "Un anuncio te puede traer lids a 40 pesos y ninguna cita, y otro, lids a 95 pesos y nueve citas. Si solo miras el costo por lid, apagas el que vendía.",
+"next": "Te muestra por campaña y por anuncio cuánto te costó cada cita y cada venta. Y le avisa a Meta quién sí agendó y compró, para que tu publicidad busque más compradores."
+},
+{
+"key": "n11_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Te muestra por campaña y por anuncio cuánto te costó cada cita y cada venta. Y le avisa a Meta quién sí agendó y compró, para que tu publicidad busque más compradores.",
+"prev": "Lid Máster sigue cada lid desde el anuncio hasta el final: si lo contactaron, si agendó, si asistió, si apartó y si compró.",
+"next": "Deja de medir costo por lid y empieza a medir costo por cita. Dale clic al botón de abajo."
+},
+{
+"key": "n11_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Deja de medir costo por lid y empieza a medir costo por cita. Dale clic al botón de abajo.",
+"prev": "Te muestra por campaña y por anuncio cuánto te costó cada cita y cada venta. Y le avisa a Meta quién sí agendó y compró, para que tu publicidad busque más compradores."
+},
+{
+"key": "n12_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si tienes una inmobiliaria y dices con orgullo que pagas Go High Level, este video es para ti.",
+"next": "Dices con orgullo que pagas Go High Level… y tus asesores siguen anotando en una libreta."
+},
+{
+"key": "n12_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Dices con orgullo que pagas Go High Level… y tus asesores siguen anotando en una libreta.",
+"prev": "Si tienes una inmobiliaria y dices con orgullo que pagas Go High Level, este video es para ti.",
+"next": "Dices con orgullo que metes 50 mil pesos al mes en Meta… y no sabes cuántas citas te dieron."
+},
+{
+"key": "n12_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Dices con orgullo que metes 50 mil pesos al mes en Meta… y no sabes cuántas citas te dieron.",
+"prev": "Dices con orgullo que pagas Go High Level… y tus asesores siguen anotando en una libreta.",
+"next": "Dices con orgullo que tienes 12 asesores… y no sabes cuántos llamaron hoy."
+},
+{
+"key": "n12_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Dices con orgullo que tienes 12 asesores… y no sabes cuántos llamaron hoy.",
+"prev": "Dices con orgullo que metes 50 mil pesos al mes en Meta… y no sabes cuántas citas te dieron.",
+"next": "Dices con orgullo que tu equipo es una familia… y el que renunció se llevó sus lids en su WhatsApp."
+},
+{
+"key": "n12_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Dices con orgullo que tu equipo es una familia… y el que renunció se llevó sus lids en su WhatsApp.",
+"prev": "Dices con orgullo que tienes 12 asesores… y no sabes cuántos llamaron hoy.",
+"next": "Tener las herramientas no es tener el control. Lid Máster conecta tu Go High Level con el WhatsApp y las llamadas de tus asesores, llena el CRM solo y te manda todos los días qué pasó con cada lid."
+},
+{
+"key": "n12_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Tener las herramientas no es tener el control. Lid Máster conecta tu Go High Level con el WhatsApp y las llamadas de tus asesores, llena el CRM solo y te manda todos los días qué pasó con cada lid.",
+"prev": "Dices con orgullo que tu equipo es una familia… y el que renunció se llevó sus lids en su WhatsApp.",
+"next": "Orgullo es saberlo. Dale clic al botón de abajo."
+},
+{
+"key": "n12_s7",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Orgullo es saberlo. Dale clic al botón de abajo.",
+"prev": "Tener las herramientas no es tener el control. Lid Máster conecta tu Go High Level con el WhatsApp y las llamadas de tus asesores, llena el CRM solo y te manda todos los días qué pasó con cada lid."
+},
+{
+"key": "n13_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si tienes una inmobiliaria y le pagaste a alguien para que te instalara Go High Level, pero tu equipo sigue en Excel, no eres el único.",
+"next": "Pasa todo el tiempo. Te lo instalan, te cobran y se van."
+},
+{
+"key": "n13_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Pasa todo el tiempo. Te lo instalan, te cobran y se van.",
+"prev": "Si tienes una inmobiliaria y le pagaste a alguien para que te instalara Go High Level, pero tu equipo sigue en Excel, no eres el único.",
+"next": "Te dejan un pipeline bonito que nadie usa, automatizaciones que nadie entiende y a tus asesores de vuelta en su WhatsApp personal."
+},
+{
+"key": "n13_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Te dejan un pipeline bonito que nadie usa, automatizaciones que nadie entiende y a tus asesores de vuelta en su WhatsApp personal.",
+"prev": "Pasa todo el tiempo. Te lo instalan, te cobran y se van.",
+"next": "Un dueño nos contó que pagó 8 mil pesos y no le quedó nada configurado. Otro lo dijo así: «pago y me entregan mal». Y el lunes tú sigues armando el reporte a mano."
+},
+{
+"key": "n13_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Un dueño nos contó que pagó 8 mil pesos y no le quedó nada configurado. Otro lo dijo así: «pago y me entregan mal». Y el lunes tú sigues armando el reporte a mano.",
+"prev": "Te dejan un pipeline bonito que nadie usa, automatizaciones que nadie entiende y a tus asesores de vuelta en su WhatsApp personal.",
+"next": "Nosotros dejamos tu Go High Level funcionando para una inmobiliaria en 7 días y le conectamos Lid Máster, para que las notas, las etapas y los reportes se hagan solos."
+},
+{
+"key": "n13_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Nosotros dejamos tu Go High Level funcionando para una inmobiliaria en 7 días y le conectamos Lid Máster, para que las notas, las etapas y los reportes se hagan solos.",
+"prev": "Un dueño nos contó que pagó 8 mil pesos y no le quedó nada configurado. Otro lo dijo así: «pago y me entregan mal». Y el lunes tú sigues armando el reporte a mano.",
+"next": "Después te acompañamos 60 días, con reuniones cada semana, hasta que tu equipo lo use."
+},
+{
+"key": "n13_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Después te acompañamos 60 días, con reuniones cada semana, hasta que tu equipo lo use.",
+"prev": "Nosotros dejamos tu Go High Level funcionando para una inmobiliaria en 7 días y le conectamos Lid Máster, para que las notas, las etapas y los reportes se hagan solos.",
+"next": "Dale clic al botón de abajo y te lo dejamos funcionando."
+},
+{
+"key": "n13_s7",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Dale clic al botón de abajo y te lo dejamos funcionando.",
+"prev": "Después te acompañamos 60 días, con reuniones cada semana, hasta que tu equipo lo use."
+},
+{
+"key": "n14_s1",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Te explico por qué Go High Level no le basta a tu inmobiliaria.",
+"next": "Go High Level es como tener un Ferrari y moverlo con una cuerda y tres personas."
+},
+{
+"key": "n14_s2",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Go High Level es como tener un Ferrari y moverlo con una cuerda y tres personas.",
+"prev": "Te explico por qué Go High Level no le basta a tu inmobiliaria.",
+"next": "Es potente, pero es un lienzo en blanco: guarda contactos, tiene pipeline y manda mensajes. Lo que no sabe es qué pasa en los chats y en las llamadas de tus asesores."
+},
+{
+"key": "n14_s3",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Es potente, pero es un lienzo en blanco: guarda contactos, tiene pipeline y manda mensajes. Lo que no sabe es qué pasa en los chats y en las llamadas de tus asesores.",
+"prev": "Go High Level es como tener un Ferrari y moverlo con una cuerda y tres personas.",
+"next": "Así que, si nadie lo llena, el pipeline no dice la verdad. Y tú pagas un Ferrari que no se mueve."
+},
+{
+"key": "n14_s4",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Así que, si nadie lo llena, el pipeline no dice la verdad. Y tú pagas un Ferrari que no se mueve.",
+"prev": "Es potente, pero es un lienzo en blanco: guarda contactos, tiene pipeline y manda mensajes. Lo que no sabe es qué pasa en los chats y en las llamadas de tus asesores.",
+"next": "Lid Máster no reemplaza a Go High Level: se conecta a él y le pone un cerebro. Lee los WhatsApp, escucha las llamadas, escribe la nota, mueve la etapa y le dice a cada asesor qué hacer hoy."
+},
+{
+"key": "n14_s5",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Lid Máster no reemplaza a Go High Level: se conecta a él y le pone un cerebro. Lee los WhatsApp, escucha las llamadas, escribe la nota, mueve la etapa y le dice a cada asesor qué hacer hoy.",
+"prev": "Así que, si nadie lo llena, el pipeline no dice la verdad. Y tú pagas un Ferrari que no se mueve.",
+"next": "Go High Level guarda; Lid Máster te dice qué pasó. Y si todavía no lo tienes, te lo dejamos funcionando."
+},
+{
+"key": "n14_s6",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Go High Level guarda; Lid Máster te dice qué pasó. Y si todavía no lo tienes, te lo dejamos funcionando.",
+"prev": "Lid Máster no reemplaza a Go High Level: se conecta a él y le pone un cerebro. Lee los WhatsApp, escucha las llamadas, escribe la nota, mueve la etapa y le dice a cada asesor qué hacer hoy.",
+"next": "Si ya tienes Go High Level en tu inmobiliaria, dale clic al botón de abajo y ponlo a trabajar."
+},
+{
+"key": "n14_s7",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Si ya tienes Go High Level en tu inmobiliaria, dale clic al botón de abajo y ponlo a trabajar.",
+"prev": "Go High Level guarda; Lid Máster te dice qué pasó. Y si todavía no lo tienes, te lo dejamos funcionando."
+},
+{
+"key": "n15_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "¡Dueño de inmobiliaria! ¡Mi agente de inteligencia artificial vende departamentos solo! ¡Contesta veinticuatro siete! ¡Despide a tus asesores!",
+"style": 0.8
+},
+{
+"key": "n15_s2",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Ajá. A una inmobiliaria le pasó esto: el bot le agendó una cita a un cliente, el cliente llegó a la oficina y ningún asesor sabía nada.",
+"next": "El dueño lo resumió así: «estábamos mejor antes del sistema»."
+},
+{
+"key": "n15_s3",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "El dueño lo resumió así: «estábamos mejor antes del sistema».",
+"prev": "Ajá. A una inmobiliaria le pasó esto: el bot le agendó una cita a un cliente, el cliente llegó a la oficina y ningún asesor sabía nada.",
+"next": "En bienes raíces nadie compra una casa porque un bot le contestó rápido. Compra porque una persona le dio seguimiento."
+},
+{
+"key": "n15_s4",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "En bienes raíces nadie compra una casa porque un bot le contestó rápido. Compra porque una persona le dio seguimiento.",
+"prev": "El dueño lo resumió así: «estábamos mejor antes del sistema».",
+"next": "La IA sí sirve, pero trabajando para tu asesor, no en su lugar. Lid Máster lee los chats y las llamadas, llena el CRM, le dice a cada asesor a quién llamar y a ti te dice quién no está llamando."
+},
+{
+"key": "n15_s5",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "La IA sí sirve, pero trabajando para tu asesor, no en su lugar. Lid Máster lee los chats y las llamadas, llena el CRM, le dice a cada asesor a quién llamar y a ti te dice quién no está llamando.",
+"prev": "En bienes raíces nadie compra una casa porque un bot le contestó rápido. Compra porque una persona le dio seguimiento.",
+"next": "Y no, no despide a nadie. Dale clic al botón de abajo."
+},
+{
+"key": "n15_s6",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Y no, no despide a nadie. Dale clic al botón de abajo.",
+"prev": "La IA sí sirve, pero trabajando para tu asesor, no en su lugar. Lid Máster lee los chats y las llamadas, llena el CRM, le dice a cada asesor a quién llamar y a ti te dice quién no está llamando."
+},
+{
+"key": "n16_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "¡Tu inmobiliaria necesita mi chatbot que califica lids con inteligencia artificial de última generación!",
+"style": 0.8
+},
+{
+"key": "n16_s2",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "El lid pregunta: ¿el depa tiene estacionamiento? El bot: elige una opción. El lid: quiero hablar con alguien. El bot: no entendí tu respuesta.",
+"next": "Y el lid se fue. No quería un menú: quería una persona. Nadie compra un departamento de 5 millones con un menú de botones."
+},
+{
+"key": "n16_s3",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Y el lid se fue. No quería un menú: quería una persona. Nadie compra un departamento de 5 millones con un menú de botones.",
+"prev": "El lid pregunta: ¿el depa tiene estacionamiento? El bot: elige una opción. El lid: quiero hablar con alguien. El bot: no entendí tu respuesta.",
+"next": "Lo que tu inmobiliaria necesita no es un bot que conteste por tu asesor. Es saber si tu asesor contestó, cuánto tardó y en qué quedó."
+},
+{
+"key": "n16_s4",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Lo que tu inmobiliaria necesita no es un bot que conteste por tu asesor. Es saber si tu asesor contestó, cuánto tardó y en qué quedó.",
+"prev": "Y el lid se fue. No quería un menú: quería una persona. Nadie compra un departamento de 5 millones con un menú de botones.",
+"next": "Lid Máster te lo dice con cada lid, el mismo día, y le recuerda al asesor a quién le debe una respuesta."
+},
+{
+"key": "n16_s5",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Lid Máster te lo dice con cada lid, el mismo día, y le recuerda al asesor a quién le debe una respuesta.",
+"prev": "Lo que tu inmobiliaria necesita no es un bot que conteste por tu asesor. Es saber si tu asesor contestó, cuánto tardó y en qué quedó.",
+"next": "Dale clic al botón de abajo."
+},
+{
+"key": "n16_s6",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Dale clic al botón de abajo.",
+"prev": "Lid Máster te lo dice con cada lid, el mismo día, y le recuerda al asesor a quién le debe una respuesta."
+},
+{
+"key": "n17_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si tienes una inmobiliaria y contrataste a alguien para vigilar a tus asesores, mira esto.",
+"next": "Primero lo hacías tú: «¿ya le marcaste?», «¿ya mandaste las opciones?», «¿ya llenaste el CRM?». Te volviste la niñera del equipo."
+},
+{
+"key": "n17_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Primero lo hacías tú: «¿ya le marcaste?», «¿ya mandaste las opciones?», «¿ya llenaste el CRM?». Te volviste la niñera del equipo.",
+"prev": "Si tienes una inmobiliaria y contrataste a alguien para vigilar a tus asesores, mira esto.",
+"next": "Luego metiste a una coordinadora. Un dueño nos dijo: «metí una coordinadora, pero pues tampoco lo hacen»."
+},
+{
+"key": "n17_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Luego metiste a una coordinadora. Un dueño nos dijo: «metí una coordinadora, pero pues tampoco lo hacen».",
+"prev": "Primero lo hacías tú: «¿ya le marcaste?», «¿ya mandaste las opciones?», «¿ya llenaste el CRM?». Te volviste la niñera del equipo.",
+"next": "Y es normal: ¿qué gerente tiene tiempo de escuchar todas las llamadas y leer todos los chats? Ninguno."
+},
+{
+"key": "n17_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y es normal: ¿qué gerente tiene tiempo de escuchar todas las llamadas y leer todos los chats? Ninguno.",
+"prev": "Luego metiste a una coordinadora. Un dueño nos dijo: «metí una coordinadora, pero pues tampoco lo hacen».",
+"next": "Lid Máster sí lo hace. Lee cada chat, escucha cada llamada que sale del CRM y le arma a cada asesor su lista del día. A ti te dice quién no la cumplió, qué lids se están enfriando y quién lleva días sin dar seguimiento."
+},
+{
+"key": "n17_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lid Máster sí lo hace. Lee cada chat, escucha cada llamada que sale del CRM y le arma a cada asesor su lista del día. A ti te dice quién no la cumplió, qué lids se están enfriando y quién lleva días sin dar seguimiento.",
+"prev": "Y es normal: ¿qué gerente tiene tiempo de escuchar todas las llamadas y leer todos los chats? Ninguno.",
+"next": "Deja de perseguir a tu equipo. Dale clic al botón de abajo."
+},
+{
+"key": "n17_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Deja de perseguir a tu equipo. Dale clic al botón de abajo.",
+"prev": "Lid Máster sí lo hace. Lee cada chat, escucha cada llamada que sale del CRM y le arma a cada asesor su lista del día. A ti te dice quién no la cumplió, qué lids se están enfriando y quién lleva días sin dar seguimiento."
+},
+{
+"key": "n18_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Tu asesor inmobiliario dice que marcó 15 veces. Tu CRM dice 13. ¿A quién le crees?",
+"next": "Un dueño nos lo dijo así: «si me ponen que llamaron 20, tengo que confiar en que llamaron 20, pero no puedo controlarlo»."
+},
+{
+"key": "n18_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Un dueño nos lo dijo así: «si me ponen que llamaron 20, tengo que confiar en que llamaron 20, pero no puedo controlarlo».",
+"prev": "Tu asesor inmobiliario dice que marcó 15 veces. Tu CRM dice 13. ¿A quién le crees?",
+"next": "Y otro: «no es que lo hagan a propósito, es que no llevan el hábito de registrar»."
+},
+{
+"key": "n18_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y otro: «no es que lo hagan a propósito, es que no llevan el hábito de registrar».",
+"prev": "Un dueño nos lo dijo así: «si me ponen que llamaron 20, tengo que confiar en que llamaron 20, pero no puedo controlarlo».",
+"next": "El resultado es el mismo: decides a quién darle más lids con números que nadie puede comprobar."
+},
+{
+"key": "n18_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "El resultado es el mismo: decides a quién darle más lids con números que nadie puede comprobar.",
+"prev": "Y otro: «no es que lo hagan a propósito, es que no llevan el hábito de registrar».",
+"next": "Con Lid Máster, cada llamada que sale del CRM queda grabada, con hora y duración, y la IA te dice qué se habló y en qué quedaron. Los chats de WhatsApp también quedan. Ya no tienes que creerle a nadie: lo ves."
+},
+{
+"key": "n18_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Con Lid Máster, cada llamada que sale del CRM queda grabada, con hora y duración, y la IA te dice qué se habló y en qué quedaron. Los chats de WhatsApp también quedan. Ya no tienes que creerle a nadie: lo ves.",
+"prev": "El resultado es el mismo: decides a quién darle más lids con números que nadie puede comprobar.",
+"next": "Como dijo un cliente: «mi verdad es lo que dice el sistema». Dale clic al botón de abajo."
+},
+{
+"key": "n18_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Como dijo un cliente: «mi verdad es lo que dice el sistema». Dale clic al botón de abajo.",
+"prev": "Con Lid Máster, cada llamada que sale del CRM queda grabada, con hora y duración, y la IA te dice qué se habló y en qué quedaron. Los chats de WhatsApp también quedan. Ya no tienes que creerle a nadie: lo ves."
+},
+{
+"key": "n19_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si tienes una inmobiliaria y estás por despedir a un asesor, mira esto antes.",
+"next": "En casi todos los equipos pasa lo mismo: unos pocos asesores hacen casi todo el trabajo."
+},
+{
+"key": "n19_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "En casi todos los equipos pasa lo mismo: unos pocos asesores hacen casi todo el trabajo.",
+"prev": "Si tienes una inmobiliaria y estás por despedir a un asesor, mira esto antes.",
+"next": "En las inmobiliarias que medimos, 2 de cada 10 asesores hicieron entre el 46 y el 88 por ciento de todas las llamadas."
+},
+{
+"key": "n19_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "En las inmobiliarias que medimos, 2 de cada 10 asesores hicieron entre el 46 y el 88 por ciento de todas las llamadas.",
+"prev": "En casi todos los equipos pasa lo mismo: unos pocos asesores hacen casi todo el trabajo.",
+"next": "«De 10, te trabajan bien 3, y el resto, quién sabe», nos dijo un dueño. Sin datos, despides al que te cae mal, no al que no trabaja."
+},
+{
+"key": "n19_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "«De 10, te trabajan bien 3, y el resto, quién sabe», nos dijo un dueño. Sin datos, despides al que te cae mal, no al que no trabaja.",
+"prev": "En las inmobiliarias que medimos, 2 de cada 10 asesores hicieron entre el 46 y el 88 por ciento de todas las llamadas.",
+"next": "Lid Máster te arma el ranking real de tu equipo: cuántos lids tiene cada asesor, cuántas llamadas hizo, a cuántos contactó, cuánto tarda en responder y cuántas citas sacó. Así sabes a quién darle más lids, a quién entrenar y a quién no."
+},
+{
+"key": "n19_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lid Máster te arma el ranking real de tu equipo: cuántos lids tiene cada asesor, cuántas llamadas hizo, a cuántos contactó, cuánto tarda en responder y cuántas citas sacó. Así sabes a quién darle más lids, a quién entrenar y a quién no.",
+"prev": "«De 10, te trabajan bien 3, y el resto, quién sabe», nos dijo un dueño. Sin datos, despides al que te cae mal, no al que no trabaja.",
+"next": "Medir antes de despedir. Dale clic al botón de abajo."
+},
+{
+"key": "n19_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Medir antes de despedir. Dale clic al botón de abajo.",
+"prev": "Lid Máster te arma el ranking real de tu equipo: cuántos lids tiene cada asesor, cuántas llamadas hizo, a cuántos contactó, cuánto tarda en responder y cuántas citas sacó. Así sabes a quién darle más lids, a quién entrenar y a quién no."
+},
+{
+"key": "n20_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Tu mejor asesor renunció el viernes y se llevó tus lids en su WhatsApp.",
+"next": "Si tienes una inmobiliaria, ya te pasó o te va a pasar. Sus conversaciones, sus seguimientos, las visitas que tenía apalabradas: todo estaba en su celular."
+},
+{
+"key": "n20_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si tienes una inmobiliaria, ya te pasó o te va a pasar. Sus conversaciones, sus seguimientos, las visitas que tenía apalabradas: todo estaba en su celular.",
+"prev": "Tu mejor asesor renunció el viernes y se llevó tus lids en su WhatsApp.",
+"next": "«Cuando se va, no sabemos ni a quiénes les estaba dando seguimiento», nos dijo un dueño. Y el asesor nuevo empieza de cero con lids que tú ya pagaste."
+},
+{
+"key": "n20_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "«Cuando se va, no sabemos ni a quiénes les estaba dando seguimiento», nos dijo un dueño. Y el asesor nuevo empieza de cero con lids que tú ya pagaste.",
+"prev": "Si tienes una inmobiliaria, ya te pasó o te va a pasar. Sus conversaciones, sus seguimientos, las visitas que tenía apalabradas: todo estaba en su celular.",
+"next": "Con Lid Máster, el WhatsApp de cada asesor se conecta al CRM. Solo se guardan las conversaciones con lids; lo personal se queda fuera."
+},
+{
+"key": "n20_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Con Lid Máster, el WhatsApp de cada asesor se conecta al CRM. Solo se guardan las conversaciones con lids; lo personal se queda fuera.",
+"prev": "«Cuando se va, no sabemos ni a quiénes les estaba dando seguimiento», nos dijo un dueño. Y el asesor nuevo empieza de cero con lids que tú ya pagaste.",
+"next": "Si mañana alguien se va, el historial se queda en tu inmobiliaria, con la nota de en qué quedó cada lid, y se lo pasas a otro asesor."
+},
+{
+"key": "n20_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si mañana alguien se va, el historial se queda en tu inmobiliaria, con la nota de en qué quedó cada lid, y se lo pasas a otro asesor.",
+"prev": "Con Lid Máster, el WhatsApp de cada asesor se conecta al CRM. Solo se guardan las conversaciones con lids; lo personal se queda fuera.",
+"next": "Los lids son de tu inmobiliaria. Dale clic al botón de abajo."
+},
+{
+"key": "n20_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Los lids son de tu inmobiliaria. Dale clic al botón de abajo.",
+"prev": "Si mañana alguien se va, el historial se queda en tu inmobiliaria, con la nota de en qué quedó cada lid, y se lo pasas a otro asesor."
+},
+{
+"key": "n21_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Casi la mitad de los lids de tu inmobiliaria llega de noche o en fin de semana. ¿Quién los contesta?",
+"next": "De los 6,497 lids que medimos, el 47% llegó fuera de horario. Y la mitad de esos esperó más de 10 horas por la primera respuesta."
+},
+{
+"key": "n21_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "De los 6,497 lids que medimos, el 47% llegó fuera de horario. Y la mitad de esos esperó más de 10 horas por la primera respuesta.",
+"prev": "Casi la mitad de los lids de tu inmobiliaria llega de noche o en fin de semana. ¿Quién los contesta?",
+"next": "La persona que vio tu desarrollo un domingo en la noche no espera al lunes: le escribe a otras dos inmobiliarias y se queda con la que contesta primero."
+},
+{
+"key": "n21_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "La persona que vio tu desarrollo un domingo en la noche no espera al lunes: le escribe a otras dos inmobiliarias y se queda con la que contesta primero.",
+"prev": "De los 6,497 lids que medimos, el 47% llegó fuera de horario. Y la mitad de esos esperó más de 10 horas por la primera respuesta.",
+"next": "Con Lid Máster pones tus reglas: guardia en la noche y los fines de semana, y para lo que llega fuera de horario, recordatorio a primera hora con un tiempo para llamar. Si nadie llama, el lid pasa al siguiente asesor. Y tú ves cuánto tarda cada uno."
+},
+{
+"key": "n21_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Con Lid Máster pones tus reglas: guardia en la noche y los fines de semana, y para lo que llega fuera de horario, recordatorio a primera hora con un tiempo para llamar. Si nadie llama, el lid pasa al siguiente asesor. Y tú ves cuánto tarda cada uno.",
+"prev": "La persona que vio tu desarrollo un domingo en la noche no espera al lunes: le escribe a otras dos inmobiliarias y se queda con la que contesta primero.",
+"next": "Que ningún lid espere hasta el lunes. Dale clic al botón de abajo."
+},
+{
+"key": "n21_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Que ningún lid espere hasta el lunes. Dale clic al botón de abajo.",
+"prev": "Con Lid Máster pones tus reglas: guardia en la noche y los fines de semana, y para lo que llega fuera de horario, recordatorio a primera hora con un tiempo para llamar. Si nadie llama, el lid pasa al siguiente asesor. Y tú ves cuánto tarda cada uno."
+},
+{
+"key": "n22_s1",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Así sería el día de tus asesores inmobiliarios si usaras Lid Máster.",
+"next": "Hoy tu asesor llega en la mañana, abre WhatsApp y tiene 40 chats. No sabe por dónde empezar, no se acuerda a quién le prometió llamar y la libreta no ayuda. Así se le pasan los lids que más valen."
+},
+{
+"key": "n22_s2",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Hoy tu asesor llega en la mañana, abre WhatsApp y tiene 40 chats. No sabe por dónde empezar, no se acuerda a quién le prometió llamar y la libreta no ayuda. Así se le pasan los lids que más valen.",
+"prev": "Así sería el día de tus asesores inmobiliarios si usaras Lid Máster.",
+"next": "Con Lid Máster, a las 8 de la mañana le llega por WhatsApp su lista del día: lo urgente, los lids que nunca ha buscado, los que no le han contestado y los que se están enfriando."
+},
+{
+"key": "n22_s3",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Con Lid Máster, a las 8 de la mañana le llega por WhatsApp su lista del día: lo urgente, los lids que nunca ha buscado, los que no le han contestado y los que se están enfriando.",
+"prev": "Hoy tu asesor llega en la mañana, abre WhatsApp y tiene 40 chats. No sabe por dónde empezar, no se acuerda a quién le prometió llamar y la libreta no ayuda. Así se le pasan los lids que más valen.",
+"next": "Habla con sus lids como siempre; la IA anota todo y le deja la cita lista para confirmar."
+},
+{
+"key": "n22_s4",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Habla con sus lids como siempre; la IA anota todo y le deja la cita lista para confirmar.",
+"prev": "Con Lid Máster, a las 8 de la mañana le llega por WhatsApp su lista del día: lo urgente, los lids que nunca ha buscado, los que no le han contestado y los que se están enfriando.",
+"next": "La lista se recalcula cada hora con lo que pasa en sus chats y llamadas. Y en la tarde recibe el resumen de lo que hizo."
+},
+{
+"key": "n22_s5",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "La lista se recalcula cada hora con lo que pasa en sus chats y llamadas. Y en la tarde recibe el resumen de lo que hizo.",
+"prev": "Habla con sus lids como siempre; la IA anota todo y le deja la cita lista para confirmar.",
+"next": "Tu equipo sabe qué hacer y tú dejas de perseguirlo. Dale clic al botón de abajo."
+},
+{
+"key": "n22_s6",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Tu equipo sabe qué hacer y tú dejas de perseguirlo. Dale clic al botón de abajo.",
+"prev": "La lista se recalcula cada hora con lo que pasa en sus chats y llamadas. Y en la tarde recibe el resumen de lo que hizo."
+},
+{
+"key": "n23_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Haz esta cuenta conmigo si tienes una inmobiliaria que invierte en Meta.",
+"next": "Metes 60 mil pesos al mes y te llegan 400 lids. Cada uno te costó 150 pesos."
+},
+{
+"key": "n23_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Metes 60 mil pesos al mes y te llegan 400 lids. Cada uno te costó 150 pesos.",
+"prev": "Haz esta cuenta conmigo si tienes una inmobiliaria que invierte en Meta.",
+"next": "En las inmobiliarias que medimos, 1 de cada 3 lids nunca habló con una persona. Eso son 133 lids al mes que nadie llamó:"
+},
+{
+"key": "n23_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "En las inmobiliarias que medimos, 1 de cada 3 lids nunca habló con una persona. Eso son 133 lids al mes que nadie llamó:",
+"prev": "Metes 60 mil pesos al mes y te llegan 400 lids. Cada uno te costó 150 pesos.",
+"next": "20 mil pesos tirados cada mes, 240 mil al año. Y nadie te lo dice, porque nadie lo está midiendo."
+},
+{
+"key": "n23_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "20 mil pesos tirados cada mes, 240 mil al año. Y nadie te lo dice, porque nadie lo está midiendo.",
+"prev": "En las inmobiliarias que medimos, 1 de cada 3 lids nunca habló con una persona. Eso son 133 lids al mes que nadie llamó:",
+"next": "Lid Máster te dice, el mismo día y con nombre, qué lids nadie ha contactado, de qué asesor son y cuánto llevan esperando. Le marca al asesor a quién llamar primero y, si no lo hace, el lid pasa a otro."
+},
+{
+"key": "n23_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lid Máster te dice, el mismo día y con nombre, qué lids nadie ha contactado, de qué asesor son y cuánto llevan esperando. Le marca al asesor a quién llamar primero y, si no lo hace, el lid pasa a otro.",
+"prev": "20 mil pesos tirados cada mes, 240 mil al año. Y nadie te lo dice, porque nadie lo está midiendo.",
+"next": "Antes de meterle más dinero a Meta, deja de tirar el que ya pagaste. Dale clic al botón de abajo."
+},
+{
+"key": "n23_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Antes de meterle más dinero a Meta, deja de tirar el que ya pagaste. Dale clic al botón de abajo.",
+"prev": "Lid Máster te dice, el mismo día y con nombre, qué lids nadie ha contactado, de qué asesor son y cuánto llevan esperando. Le marca al asesor a quién llamar primero y, si no lo hace, el lid pasa a otro."
+},
+{
+"key": "n24_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "«Ahorita te mando opciones.» Si tienes una inmobiliaria, esa frase te está costando ventas.",
+"next": "El lid pide opciones de casas en Mérida. Tu asesor contesta «claro, ahorita te mando». Y nunca las manda. O las manda, el lid no responde y ahí se acaba el seguimiento."
+},
+{
+"key": "n24_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "El lid pide opciones de casas en Mérida. Tu asesor contesta «claro, ahorita te mando». Y nunca las manda. O las manda, el lid no responde y ahí se acaba el seguimiento.",
+"prev": "«Ahorita te mando opciones.» Si tienes una inmobiliaria, esa frase te está costando ventas.",
+"next": "«Te mando opciones, cric, cric, quince días, se perdió», nos dijo un dueño."
+},
+{
+"key": "n24_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "«Te mando opciones, cric, cric, quince días, se perdió», nos dijo un dueño.",
+"prev": "El lid pide opciones de casas en Mérida. Tu asesor contesta «claro, ahorita te mando». Y nunca las manda. O las manda, el lid no responde y ahí se acaba el seguimiento.",
+"next": "Y otro: «nos están comprando, pero no estamos vendiendo, porque no hacemos seguimiento»."
+},
+{
+"key": "n24_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y otro: «nos están comprando, pero no estamos vendiendo, porque no hacemos seguimiento».",
+"prev": "«Te mando opciones, cric, cric, quince días, se perdió», nos dijo un dueño.",
+"next": "Lid Máster lee cada conversación y saca los compromisos. Si el asesor prometió mandar opciones, llamar el martes o confirmar una visita, queda como tarea en su lista del día. Y si no la cumple, tú lo ves en tu reporte."
+},
+{
+"key": "n24_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lid Máster lee cada conversación y saca los compromisos. Si el asesor prometió mandar opciones, llamar el martes o confirmar una visita, queda como tarea en su lista del día. Y si no la cumple, tú lo ves en tu reporte.",
+"prev": "Y otro: «nos están comprando, pero no estamos vendiendo, porque no hacemos seguimiento».",
+"next": "Que ningún «ahorita te mando» se quede en el aire. Dale clic al botón de abajo."
+},
+{
+"key": "n24_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Que ningún «ahorita te mando» se quede en el aire. Dale clic al botón de abajo.",
+"prev": "Lid Máster lee cada conversación y saca los compromisos. Si el asesor prometió mandar opciones, llamar el martes o confirmar una visita, queda como tarea en su lista del día. Y si no la cumple, tú lo ves en tu reporte."
+},
+{
+"key": "n25_s1",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Este video te apareció porque tienes una inmobiliaria, o porque viste algo de Lid Máster estos días.",
+"next": "Seguramente ya probaste un CRM que tu equipo nunca llenó, o un bot que espantó a tus lids. Y sigues sin saber qué pasa con cada lid que pagas."
+},
+{
+"key": "n25_s2",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Seguramente ya probaste un CRM que tu equipo nunca llenó, o un bot que espantó a tus lids. Y sigues sin saber qué pasa con cada lid que pagas.",
+"prev": "Este video te apareció porque tienes una inmobiliaria, o porque viste algo de Lid Máster estos días.",
+"next": "Lid Máster es un sistema de gestión comercial hecho solo para inmobiliarias. No es un CRM más ni un chatbot de botones."
+},
+{
+"key": "n25_s3",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Lid Máster es un sistema de gestión comercial hecho solo para inmobiliarias. No es un CRM más ni un chatbot de botones.",
+"prev": "Seguramente ya probaste un CRM que tu equipo nunca llenó, o un bot que espantó a tus lids. Y sigues sin saber qué pasa con cada lid que pagas.",
+"next": "Se conecta al WhatsApp y a las llamadas de tus asesores, llena el CRM solo, le dice a cada asesor qué hacer cada día y a ti te manda el reporte de tu equipo por WhatsApp."
+},
+{
+"key": "n25_s4",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Se conecta al WhatsApp y a las llamadas de tus asesores, llena el CRM solo, le dice a cada asesor qué hacer cada día y a ti te manda el reporte de tu equipo por WhatsApp.",
+"prev": "Lid Máster es un sistema de gestión comercial hecho solo para inmobiliarias. No es un CRM más ni un chatbot de botones.",
+"next": "Ya lo usan más de 15 inmobiliarias en México, Colombia y Estados Unidos. Lo instalamos en 7 días, te acompañamos 60 y tu equipo no aprende nada nuevo: solo habla con sus lids."
+},
+{
+"key": "n25_s5",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Ya lo usan más de 15 inmobiliarias en México, Colombia y Estados Unidos. Lo instalamos en 7 días, te acompañamos 60 y tu equipo no aprende nada nuevo: solo habla con sus lids.",
+"prev": "Se conecta al WhatsApp y a las llamadas de tus asesores, llena el CRM solo, le dice a cada asesor qué hacer cada día y a ti te manda el reporte de tu equipo por WhatsApp.",
+"next": "Si tienes 5 asesores o más e inviertes en anuncios, dale clic al botón de abajo y agenda una llamada."
+},
+{
+"key": "n25_s6",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Si tienes 5 asesores o más e inviertes en anuncios, dale clic al botón de abajo y agenda una llamada.",
+"prev": "Ya lo usan más de 15 inmobiliarias en México, Colombia y Estados Unidos. Lo instalamos en 7 días, te acompañamos 60 y tu equipo no aprende nada nuevo: solo habla con sus lids."
+},
+{
+"key": "a_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si tienes una inmobiliaria y ya pagaste un CRM, esto te va a doler: 8 de cada 10 inmobiliarias que implementan un CRM no lo terminan usando.",
+"next": "Si ya lo viviste, lo sabes. Tus asesores no actualizan las etapas, no ponen notas, no crean tareas."
+},
+{
+"key": "a_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si ya lo viviste, lo sabes. Tus asesores no actualizan las etapas, no ponen notas, no crean tareas.",
+"prev": "Si tienes una inmobiliaria y ya pagaste un CRM, esto te va a doler: 8 de cada 10 inmobiliarias que implementan un CRM no lo terminan usando.",
+"next": "Para ellos el CRM es una carga, así que hablan con el lid desde su WhatsApp y a ti nadie te reporta nada."
+},
+{
+"key": "a_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Para ellos el CRM es una carga, así que hablan con el lid desde su WhatsApp y a ti nadie te reporta nada.",
+"prev": "Si ya lo viviste, lo sabes. Tus asesores no actualizan las etapas, no ponen notas, no crean tareas.",
+"next": "Y terminas con marketing celebrando mil lids, muy pocas cartas oferta y, a veces, cero ventas."
+},
+{
+"key": "a_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y terminas con marketing celebrando mil lids, muy pocas cartas oferta y, a veces, cero ventas.",
+"prev": "Para ellos el CRM es una carga, así que hablan con el lid desde su WhatsApp y a ti nadie te reporta nada.",
+"next": "Sin saber si el lid era malo o si el asesor hizo un mal trabajo, no puedes arreglar nada."
+},
+{
+"key": "a_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Sin saber si el lid era malo o si el asesor hizo un mal trabajo, no puedes arreglar nada.",
+"prev": "Y terminas con marketing celebrando mil lids, muy pocas cartas oferta y, a veces, cero ventas.",
+"next": "Por eso creamos un sistema que monitorea todo lo que hace tu equipo comercial. Tus asesores solo hablan con el lid desde su WhatsApp; el sistema registra cada chat y cada intento, mueve la etapa y pone la nota."
+},
+{
+"key": "a_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Por eso creamos un sistema que monitorea todo lo que hace tu equipo comercial. Tus asesores solo hablan con el lid desde su WhatsApp; el sistema registra cada chat y cada intento, mueve la etapa y pone la nota.",
+"prev": "Sin saber si el lid era malo o si el asesor hizo un mal trabajo, no puedes arreglar nada.",
+"next": "Y cada semana tú recibes qué pasó con cada prospecto: a quién llamaron, quién nunca contestó y a quién dejaron en el olvido."
+},
+{
+"key": "a_s7",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y cada semana tú recibes qué pasó con cada prospecto: a quién llamaron, quién nunca contestó y a quién dejaron en el olvido.",
+"prev": "Por eso creamos un sistema que monitorea todo lo que hace tu equipo comercial. Tus asesores solo hablan con el lid desde su WhatsApp; el sistema registra cada chat y cada intento, mueve la etapa y pone la nota.",
+"next": "Si tienes una inmobiliaria con al menos 5 asesores y quieres más recorridos, cartas oferta y ventas, dale clic al botón de abajo."
+},
+{
+"key": "a_s8",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si tienes una inmobiliaria con al menos 5 asesores y quieres más recorridos, cartas oferta y ventas, dale clic al botón de abajo.",
+"prev": "Y cada semana tú recibes qué pasó con cada prospecto: a quién llamaron, quién nunca contestó y a quién dejaron en el olvido."
+},
+{
+"key": "b_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Así son las juntas de marketing y ventas en tu inmobiliaria.",
+"next": "Marketing dice: «Conseguimos mil lids y ventas no vendió». Tus asesores dicen: «Los lids son basura, nadie contesta»."
+},
+{
+"key": "b_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Marketing dice: «Conseguimos mil lids y ventas no vendió». Tus asesores dicen: «Los lids son basura, nadie contesta».",
+"prev": "Así son las juntas de marketing y ventas en tu inmobiliaria.",
+"next": "Marketing dice que es mentira, que se tardan en llamar. Los asesores juran que les marcaron diez veces."
+},
+{
+"key": "b_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Marketing dice que es mentira, que se tardan en llamar. Los asesores juran que les marcaron diez veces.",
+"prev": "Marketing dice: «Conseguimos mil lids y ventas no vendió». Tus asesores dicen: «Los lids son basura, nadie contesta».",
+"next": "Y tú, que pagas los anuncios y la agencia, sales de la junta sin saber a quién creerle. Y así cada semana."
+},
+{
+"key": "b_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y tú, que pagas los anuncios y la agencia, sales de la junta sin saber a quién creerle. Y así cada semana.",
+"prev": "Marketing dice que es mentira, que se tardan en llamar. Los asesores juran que les marcaron diez veces.",
+"next": "Este sistema, que ya usan más de 15 inmobiliarias en México, Estados Unidos y Colombia, te dice qué pasó con cada lid: cuál se perdió porque era malo y cuál por culpa del asesor."
+},
+{
+"key": "b_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Este sistema, que ya usan más de 15 inmobiliarias en México, Estados Unidos y Colombia, te dice qué pasó con cada lid: cuál se perdió porque era malo y cuál por culpa del asesor.",
+"prev": "Y tú, que pagas los anuncios y la agencia, sales de la junta sin saber a quién creerle. Y así cada semana.",
+"next": "Tus asesores solo hablan y llaman desde su WhatsApp; el sistema registra cada chat, cada llamada y cada cita, y le dice a cada uno a quién llamar y a quién darle seguimiento."
+},
+{
+"key": "b_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Tus asesores solo hablan y llaman desde su WhatsApp; el sistema registra cada chat, cada llamada y cada cita, y le dice a cada uno a quién llamar y a quién darle seguimiento.",
+"prev": "Este sistema, que ya usan más de 15 inmobiliarias en México, Estados Unidos y Colombia, te dice qué pasó con cada lid: cuál se perdió porque era malo y cuál por culpa del asesor.",
+"next": "Si tienes una inmobiliaria con más de 5 asesores y estás cansado de perder dinero, dale clic al botón de abajo."
+},
+{
+"key": "b_s7",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si tienes una inmobiliaria con más de 5 asesores y estás cansado de perder dinero, dale clic al botón de abajo.",
+"prev": "Tus asesores solo hablan y llaman desde su WhatsApp; el sistema registra cada chat, cada llamada y cada cita, y le dice a cada uno a quién llamar y a quién darle seguimiento."
+},
+{
+"key": "c_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Esta es la razón por la que a tu inmobiliaria le siguen llegando puros curiosos y no personas que agendan una cita.",
+"next": "Nunca le dices a Meta cuáles de las personas que te escribieron agendaron, cuáles apartaron y cuáles compraron."
+},
+{
+"key": "c_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Nunca le dices a Meta cuáles de las personas que te escribieron agendaron, cuáles apartaron y cuáles compraron.",
+"prev": "Esta es la razón por la que a tu inmobiliaria le siguen llegando puros curiosos y no personas que agendan una cita.",
+"next": "Solo le dices «mándame mensajes» o «mándame formularios». Y Meta hace exactamente eso: te llena de curiosos que escriben y desaparecen."
+},
+{
+"key": "c_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Solo le dices «mándame mensajes» o «mándame formularios». Y Meta hace exactamente eso: te llena de curiosos que escriben y desaparecen.",
+"prev": "Nunca le dices a Meta cuáles de las personas que te escribieron agendaron, cuáles apartaron y cuáles compraron.",
+"next": "Por eso tu asesor te dice «es que no me contestan»."
+},
+{
+"key": "c_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Por eso tu asesor te dice «es que no me contestan».",
+"prev": "Solo le dices «mándame mensajes» o «mándame formularios». Y Meta hace exactamente eso: te llena de curiosos que escriben y desaparecen.",
+"next": "Lo que necesitas es un filtro. Cuando un lid agenda una cita, Lid Máster se lo avisa a Meta en automático: «este lid pasó a cita agendada»."
+},
+{
+"key": "c_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lo que necesitas es un filtro. Cuando un lid agenda una cita, Lid Máster se lo avisa a Meta en automático: «este lid pasó a cita agendada».",
+"prev": "Por eso tu asesor te dice «es que no me contestan».",
+"next": "Meta empieza a buscar personas con más probabilidad de agendar un recorrido o un Zoom. Y cuando junta suficientes citas, le pides: «mándame solo gente parecida a la que sí agenda»."
+},
+{
+"key": "c_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Meta empieza a buscar personas con más probabilidad de agendar un recorrido o un Zoom. Y cuando junta suficientes citas, le pides: «mándame solo gente parecida a la que sí agenda».",
+"prev": "Lo que necesitas es un filtro. Cuando un lid agenda una cita, Lid Máster se lo avisa a Meta en automático: «este lid pasó a cita agendada».",
+"next": "Deja de buscar a quien llena formularios. Nosotros lo instalamos y lo configuramos; tú no tocas nada. Dale clic al botón de abajo."
+},
+{
+"key": "c_s7",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Deja de buscar a quien llena formularios. Nosotros lo instalamos y lo configuramos; tú no tocas nada. Dale clic al botón de abajo.",
+"prev": "Meta empieza a buscar personas con más probabilidad de agendar un recorrido o un Zoom. Y cuando junta suficientes citas, le pides: «mándame solo gente parecida a la que sí agenda»."
+},
+{
+"key": "d_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Los CRM para el mundo inmobiliario han muerto. Llegaron los ce erre a: CRM que se llenan solos.",
+"next": "La única ventaja de un CRM era saber qué pasaba con cada lid. Pero esa información se pierde el día que tu asesor deja de poner notas y de mover etapas."
+},
+{
+"key": "d_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "La única ventaja de un CRM era saber qué pasaba con cada lid. Pero esa información se pierde el día que tu asesor deja de poner notas y de mover etapas.",
+"prev": "Los CRM para el mundo inmobiliario han muerto. Llegaron los ce erre a: CRM que se llenan solos.",
+"next": "Y siempre deja de hacerlo, porque le da pereza capturar datos."
+},
+{
+"key": "d_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y siempre deja de hacerlo, porque le da pereza capturar datos.",
+"prev": "La única ventaja de un CRM era saber qué pasaba con cada lid. Pero esa información se pierde el día que tu asesor deja de poner notas y de mover etapas.",
+"next": "Ahí se fueron a la basura los miles de dólares que pagaste por tu CRM."
+},
+{
+"key": "d_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Ahí se fueron a la basura los miles de dólares que pagaste por tu CRM.",
+"prev": "Y siempre deja de hacerlo, porque le da pereza capturar datos.",
+"next": "Un ce erre a no depende de que nadie llene nada. Escucha las llamadas de cada asesor, lee su WhatsApp y registra solo el presupuesto, la zona, qué busca el lid y en qué etapa va."
+},
+{
+"key": "d_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Un ce erre a no depende de que nadie llene nada. Escucha las llamadas de cada asesor, lee su WhatsApp y registra solo el presupuesto, la zona, qué busca el lid y en qué etapa va.",
+"prev": "Ahí se fueron a la basura los miles de dólares que pagaste por tu CRM.",
+"next": "Y le dice en tiempo real a cada asesor qué hacer con cada lid. Antes tu equipo trabajaba para el CRM; ahora el ce erre a trabaja para tu equipo."
+},
+{
+"key": "d_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y le dice en tiempo real a cada asesor qué hacer con cada lid. Antes tu equipo trabajaba para el CRM; ahora el ce erre a trabaja para tu equipo.",
+"prev": "Un ce erre a no depende de que nadie llene nada. Escucha las llamadas de cada asesor, lee su WhatsApp y registra solo el presupuesto, la zona, qué busca el lid y en qué etapa va.",
+"next": "Dale clic a este anuncio y te lo instalamos en tu inmobiliaria."
+},
+{
+"key": "d_s7",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Dale clic a este anuncio y te lo instalamos en tu inmobiliaria.",
+"prev": "Y le dice en tiempo real a cada asesor qué hacer con cada lid. Antes tu equipo trabajaba para el CRM; ahora el ce erre a trabaja para tu equipo."
+},
+{
+"key": "e_s1",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Así es como recibirías los reportes de tu inmobiliaria si usaras Lid Máster.",
+"next": "Hoy tus asesores empiezan el día sin un paso a paso. No saben a quién llamar ni a quién darle seguimiento, y no se acuerdan de lo que prometieron la semana pasada."
+},
+{
+"key": "e_s2",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Hoy tus asesores empiezan el día sin un paso a paso. No saben a quién llamar ni a quién darle seguimiento, y no se acuerdan de lo que prometieron la semana pasada.",
+"prev": "Así es como recibirías los reportes de tu inmobiliaria si usaras Lid Máster.",
+"next": "Abren WhatsApp, buscan entre cientos de chats y se les pasan lids. Y tú, para saber qué pasó, tienes que preguntar uno por uno o pelear con un Excel que nadie llena."
+},
+{
+"key": "e_s3",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Abren WhatsApp, buscan entre cientos de chats y se les pasan lids. Y tú, para saber qué pasó, tienes que preguntar uno por uno o pelear con un Excel que nadie llena.",
+"prev": "Hoy tus asesores empiezan el día sin un paso a paso. No saben a quién llamar ni a quién darle seguimiento, y no se acuerdan de lo que prometieron la semana pasada.",
+"next": "Con Lid Máster, cada mañana cada asesor recibe por WhatsApp su lista del día: a quién llamar, quién le pidió que lo buscara hoy y con quién tiene recorrido o Zoom."
+},
+{
+"key": "e_s4",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Con Lid Máster, cada mañana cada asesor recibe por WhatsApp su lista del día: a quién llamar, quién le pidió que lo buscara hoy y con quién tiene recorrido o Zoom.",
+"prev": "Abren WhatsApp, buscan entre cientos de chats y se les pasan lids. Y tú, para saber qué pasó, tienes que preguntar uno por uno o pelear con un Excel que nadie llena.",
+"next": "En la tarde recibe el resumen de lo que hizo."
+},
+{
+"key": "e_s5",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "En la tarde recibe el resumen de lo que hizo.",
+"prev": "Con Lid Máster, cada mañana cada asesor recibe por WhatsApp su lista del día: a quién llamar, quién le pidió que lo buscara hoy y con quién tiene recorrido o Zoom.",
+"next": "Y tú, como dueño, recibes todos los días en tu WhatsApp el reporte del equipo: cuántos lids entraron, a quién llamó cada asesor, quién se quedó sin contacto y cuántas citas salieron."
+},
+{
+"key": "e_s6",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Y tú, como dueño, recibes todos los días en tu WhatsApp el reporte del equipo: cuántos lids entraron, a quién llamó cada asesor, quién se quedó sin contacto y cuántas citas salieron.",
+"prev": "En la tarde recibe el resumen de lo que hizo.",
+"next": "Así ya no se te pasa ningún lid. Dale clic a este anuncio y te lo instalamos."
+},
+{
+"key": "e_s7",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Así ya no se te pasa ningún lid. Dale clic a este anuncio y te lo instalamos.",
+"prev": "Y tú, como dueño, recibes todos los días en tu WhatsApp el reporte del equipo: cuántos lids entraron, a quién llamó cada asesor, quién se quedó sin contacto y cuántas citas salieron."
+},
+{
+"key": "f_s1",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Si tienes una inmobiliaria, te explico en un minuto qué es Lid Máster y por qué ya lo usan más de 15 inmobiliarias en México, Colombia y Estados Unidos.",
+"next": "Uno: junta todos tus lids de portales, referidos y anuncios, y los reparte entre tus asesores; si uno no atiende a tiempo, pasa al siguiente."
+},
+{
+"key": "f_s2",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Uno: junta todos tus lids de portales, referidos y anuncios, y los reparte entre tus asesores; si uno no atiende a tiempo, pasa al siguiente.",
+"prev": "Si tienes una inmobiliaria, te explico en un minuto qué es Lid Máster y por qué ya lo usan más de 15 inmobiliarias en México, Colombia y Estados Unidos.",
+"next": "Dos: como vive en el WhatsApp y las llamadas de cada asesor, sabe a quién contactaron, a quién no y cuánto tardaron."
+},
+{
+"key": "f_s3",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Dos: como vive en el WhatsApp y las llamadas de cada asesor, sabe a quién contactaron, a quién no y cuánto tardaron.",
+"prev": "Uno: junta todos tus lids de portales, referidos y anuncios, y los reparte entre tus asesores; si uno no atiende a tiempo, pasa al siguiente.",
+"next": "Tres: cada día le dice a cada asesor a quién llamar."
+},
+{
+"key": "f_s4",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Tres: cada día le dice a cada asesor a quién llamar.",
+"prev": "Dos: como vive en el WhatsApp y las llamadas de cada asesor, sabe a quién contactaron, a quién no y cuánto tardaron.",
+"next": "Cuatro: te da los reportes sin que nadie llene nada."
+},
+{
+"key": "f_s5",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Cuatro: te da los reportes sin que nadie llene nada.",
+"prev": "Tres: cada día le dice a cada asesor a quién llamar.",
+"next": "Cinco: le avisa a Meta quién sí agenda y compra, para que te traiga más compradores y menos curiosos."
+},
+{
+"key": "f_s6",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Cinco: le avisa a Meta quién sí agenda y compra, para que te traiga más compradores y menos curiosos.",
+"prev": "Cuatro: te da los reportes sin que nadie llene nada.",
+"next": "Lids ordenados, asesores que saben qué hacer y tú con el control, sin perseguir a nadie. Dale clic y te lo instalamos en tu inmobiliaria."
+},
+{
+"key": "f_s7",
+"voice_id": "htFfPSZGJwjBv1CL0aMD",
+"text": "Lids ordenados, asesores que saben qué hacer y tú con el control, sin perseguir a nadie. Dale clic y te lo instalamos en tu inmobiliaria.",
+"prev": "Cinco: le avisa a Meta quién sí agenda y compra, para que te traiga más compradores y menos curiosos."
+},
+{
+"key": "g1_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si yo tuviera una inmobiliaria en México con más de 5 asesores y no supiera qué hacen con los lids que les doy, esto es lo que haría para tener control total de mi equipo y vender más.",
+"next": "Porque hoy le das los lids a tu equipo y ahí se pierde la pista: no sabes a quién llamaron, cuánto tardaron ni qué le dijeron."
+},
+{
+"key": "g1_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Porque hoy le das los lids a tu equipo y ahí se pierde la pista: no sabes a quién llamaron, cuánto tardaron ni qué le dijeron.",
+"prev": "Si yo tuviera una inmobiliaria en México con más de 5 asesores y no supiera qué hacen con los lids que les doy, esto es lo que haría para tener control total de mi equipo y vender más.",
+"next": "Lo primero que haría es instalar un sistema que le diga a cada asesor a quién llamar y en qué momento, sin que él lo decida."
+},
+{
+"key": "g1_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lo primero que haría es instalar un sistema que le diga a cada asesor a quién llamar y en qué momento, sin que él lo decida.",
+"prev": "Porque hoy le das los lids a tu equipo y ahí se pierde la pista: no sabes a quién llamaron, cuánto tardaron ni qué le dijeron.",
+"next": "Ese mismo sistema registra cuántas llamadas hace, cuánto tarda en marcar y qué habla en cada una."
+},
+{
+"key": "g1_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Ese mismo sistema registra cuántas llamadas hace, cuánto tarda en marcar y qué habla en cada una.",
+"prev": "Lo primero que haría es instalar un sistema que le diga a cada asesor a quién llamar y en qué momento, sin que él lo decida.",
+"next": "Lo segundo: recordatorios para que haga todos los intentos que le pido, y si no los hace, que me avise."
+},
+{
+"key": "g1_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lo segundo: recordatorios para que haga todos los intentos que le pido, y si no los hace, que me avise.",
+"prev": "Ese mismo sistema registra cuántas llamadas hace, cuánto tarda en marcar y qué habla en cada una.",
+"next": "Y lo último: entender qué hace mi mejor vendedor y cómo maneja cada objeción, para que todo el equipo siga ese mismo camino."
+},
+{
+"key": "g1_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y lo último: entender qué hace mi mejor vendedor y cómo maneja cada objeción, para que todo el equipo siga ese mismo camino.",
+"prev": "Lo segundo: recordatorios para que haga todos los intentos que le pido, y si no los hace, que me avise.",
+"next": "Ese sistema es Lid Máster. Si quieres que te lo instalemos en tu inmobiliaria, dale clic al link de abajo."
+},
+{
+"key": "g1_s7",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Ese sistema es Lid Máster. Si quieres que te lo instalemos en tu inmobiliaria, dale clic al link de abajo.",
+"prev": "Y lo último: entender qué hace mi mejor vendedor y cómo maneja cada objeción, para que todo el equipo siga ese mismo camino."
+},
+{
+"key": "g2_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "No puedo creer que teniendo una inmobiliaria con más de 5 asesores todavía confíes en lo que tus asesores te dicen que hacen.",
+"next": "Te dicen que llamaron, que el lid no contestó, que le mandaron seguimiento. Pero no tienes forma de comprobarlo."
+},
+{
+"key": "g2_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Te dicen que llamaron, que el lid no contestó, que le mandaron seguimiento. Pero no tienes forma de comprobarlo.",
+"prev": "No puedo creer que teniendo una inmobiliaria con más de 5 asesores todavía confíes en lo que tus asesores te dicen que hacen.",
+"next": "Y lo peor: hay asesores que se van de tu inmobiliaria y se llevan tus lids, clientes que tú pagaste, porque nunca tuviste control de lo que estaban haciendo."
+},
+{
+"key": "g2_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y lo peor: hay asesores que se van de tu inmobiliaria y se llevan tus lids, clientes que tú pagaste, porque nunca tuviste control de lo que estaban haciendo.",
+"prev": "Te dicen que llamaron, que el lid no contestó, que le mandaron seguimiento. Pero no tienes forma de comprobarlo.",
+"next": "Lid Máster registra cada llamada, cada chat y cada interacción, sin que el asesor llene nada y sin depender de lo que él te reporte."
+},
+{
+"key": "g2_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lid Máster registra cada llamada, cada chat y cada interacción, sin que el asesor llene nada y sin depender de lo que él te reporte.",
+"prev": "Y lo peor: hay asesores que se van de tu inmobiliaria y se llevan tus lids, clientes que tú pagaste, porque nunca tuviste control de lo que estaban haciendo.",
+"next": "Sabes quién llamó, cuándo, qué dijo y si está siguiendo el proceso. Y si se va, el historial se queda contigo."
+},
+{
+"key": "g2_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Sabes quién llamó, cuándo, qué dijo y si está siguiendo el proceso. Y si se va, el historial se queda contigo.",
+"prev": "Lid Máster registra cada llamada, cada chat y cada interacción, sin que el asesor llene nada y sin depender de lo que él te reporte.",
+"next": "Recuerda: los lids son tuyos, no de tu asesor. Si quieres dejar de perder dinero por no tener control, dale clic al link de abajo."
+},
+{
+"key": "g2_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Recuerda: los lids son tuyos, no de tu asesor. Si quieres dejar de perder dinero por no tener control, dale clic al link de abajo.",
+"prev": "Sabes quién llamó, cuándo, qué dijo y si está siguiendo el proceso. Y si se va, el historial se queda contigo."
+},
+{
+"key": "g3_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si tienes una inmobiliaria en México con más de 5 asesores y crees que se roban los lids que les das, esto es lo que yo haría para tener control.",
+"next": "Porque mientras el lid viva en el WhatsApp personal y en el celular de cada asesor, no ves qué le dijeron, si le ofrecieron otro proyecto ni si lo están trabajando por fuera."
+},
+{
+"key": "g3_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Porque mientras el lid viva en el WhatsApp personal y en el celular de cada asesor, no ves qué le dijeron, si le ofrecieron otro proyecto ni si lo están trabajando por fuera.",
+"prev": "Si tienes una inmobiliaria en México con más de 5 asesores y crees que se roban los lids que les das, esto es lo que yo haría para tener control.",
+"next": "Lo primero: conectar el WhatsApp de cada asesor a mi CRM. Solo las conversaciones con lids; lo personal no."
+},
+{
+"key": "g3_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lo primero: conectar el WhatsApp de cada asesor a mi CRM. Solo las conversaciones con lids; lo personal no.",
+"prev": "Porque mientras el lid viva en el WhatsApp personal y en el celular de cada asesor, no ves qué le dijeron, si le ofrecieron otro proyecto ni si lo están trabajando por fuera.",
+"next": "Lo segundo: que todas las llamadas salgan del sistema, con el número del asesor, y queden grabadas. Ya no hay llamadas por fuera que yo no vea."
+},
+{
+"key": "g3_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lo segundo: que todas las llamadas salgan del sistema, con el número del asesor, y queden grabadas. Ya no hay llamadas por fuera que yo no vea.",
+"prev": "Lo primero: conectar el WhatsApp de cada asesor a mi CRM. Solo las conversaciones con lids; lo personal no.",
+"next": "Y lo último: que si un lid se queda sin seguimiento o pasa algo raro, me llegue un aviso. Si el asesor se va, el historial se queda en mi inmobiliaria."
+},
+{
+"key": "g3_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y lo último: que si un lid se queda sin seguimiento o pasa algo raro, me llegue un aviso. Si el asesor se va, el historial se queda en mi inmobiliaria.",
+"prev": "Lo segundo: que todas las llamadas salgan del sistema, con el número del asesor, y queden grabadas. Ya no hay llamadas por fuera que yo no vea.",
+"next": "Eso hace Lid Máster. Si quieres que te ayudemos a instalarlo, dale clic al link de abajo."
+},
+{
+"key": "g3_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Eso hace Lid Máster. Si quieres que te ayudemos a instalarlo, dale clic al link de abajo.",
+"prev": "Y lo último: que si un lid se queda sin seguimiento o pasa algo raro, me llegue un aviso. Si el asesor se va, el historial se queda en mi inmobiliaria."
+},
+{
+"key": "g4_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si yo vendiera desarrollos con más de 5 asesores y mis lids de Meta no contestaran, esto es lo que haría.",
+"next": "Porque «los lids no contestan» casi nunca es todo el problema. Le pediste a Meta formularios y te mandó gente que llena formularios."
+},
+{
+"key": "g4_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Porque «los lids no contestan» casi nunca es todo el problema. Le pediste a Meta formularios y te mandó gente que llena formularios.",
+"prev": "Si yo vendiera desarrollos con más de 5 asesores y mis lids de Meta no contestaran, esto es lo que haría.",
+"next": "Y en las inmobiliarias que medimos, la mitad de los lids esperó más de 2 horas por el primer contacto."
+},
+{
+"key": "g4_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y en las inmobiliarias que medimos, la mitad de los lids esperó más de 2 horas por el primer contacto.",
+"prev": "Porque «los lids no contestan» casi nunca es todo el problema. Le pediste a Meta formularios y te mandó gente que llena formularios.",
+"next": "Lo primero: que cada lid le llegue al asesor en el momento, y si no hay llamada en el tiempo que yo pongo, que pase a otro."
+},
+{
+"key": "g4_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lo primero: que cada lid le llegue al asesor en el momento, y si no hay llamada en el tiempo que yo pongo, que pase a otro.",
+"prev": "Y en las inmobiliarias que medimos, la mitad de los lids esperó más de 2 horas por el primer contacto.",
+"next": "Lo segundo: que el sistema detecte en el chat cuando un lid agenda un recorrido o un Zoom y se lo avise a Meta, para que mis anuncios busquen gente así."
+},
+{
+"key": "g4_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lo segundo: que el sistema detecte en el chat cuando un lid agenda un recorrido o un Zoom y se lo avise a Meta, para que mis anuncios busquen gente así.",
+"prev": "Lo primero: que cada lid le llegue al asesor en el momento, y si no hay llamada en el tiempo que yo pongo, que pase a otro.",
+"next": "Y lo último: medir cada campaña hasta el final, con citas, apartados y ventas, no solo lids."
+},
+{
+"key": "g4_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y lo último: medir cada campaña hasta el final, con citas, apartados y ventas, no solo lids.",
+"prev": "Lo segundo: que el sistema detecte en el chat cuando un lid agenda un recorrido o un Zoom y se lo avise a Meta, para que mis anuncios busquen gente así.",
+"next": "Eso es Lid Máster. Dale clic al link de abajo y te lo instalamos."
+},
+{
+"key": "g4_s7",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Eso es Lid Máster. Dale clic al link de abajo y te lo instalamos.",
+"prev": "Y lo último: medir cada campaña hasta el final, con citas, apartados y ventas, no solo lids."
+},
+{
+"key": "g5_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "No puedo creer que tu inmobiliaria siga pagando un CRM que tus asesores no llenan.",
+"next": "Pagaste la licencia, pagaste la instalación, hiciste juntas y pusiste multas."
+},
+{
+"key": "g5_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Pagaste la licencia, pagaste la instalación, hiciste juntas y pusiste multas.",
+"prev": "No puedo creer que tu inmobiliaria siga pagando un CRM que tus asesores no llenan.",
+"next": "Y el CRM sigue vacío: sin notas, sin etapas, con lids de hace meses en «nuevo»."
+},
+{
+"key": "g5_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y el CRM sigue vacío: sin notas, sin etapas, con lids de hace meses en «nuevo».",
+"prev": "Pagaste la licencia, pagaste la instalación, hiciste juntas y pusiste multas.",
+"next": "«El talón de Aquiles de todos es poner notas», nos dijo un dueño. Y con un CRM vacío, decides a ciegas."
+},
+{
+"key": "g5_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "«El talón de Aquiles de todos es poner notas», nos dijo un dueño. Y con un CRM vacío, decides a ciegas.",
+"prev": "Y el CRM sigue vacío: sin notas, sin etapas, con lids de hace meses en «nuevo».",
+"next": "Con Lid Máster el CRM se llena solo. La IA lee el WhatsApp y escucha las llamadas de cada asesor; escribe la nota, el presupuesto, la zona y las objeciones; mueve la etapa y crea la tarea del siguiente paso."
+},
+{
+"key": "g5_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Con Lid Máster el CRM se llena solo. La IA lee el WhatsApp y escucha las llamadas de cada asesor; escribe la nota, el presupuesto, la zona y las objeciones; mueve la etapa y crea la tarea del siguiente paso.",
+"prev": "«El talón de Aquiles de todos es poner notas», nos dijo un dueño. Y con un CRM vacío, decides a ciegas.",
+"next": "Tu asesor solo habla con el lid. Y tú recibes cada día el reporte de lo que pasó."
+},
+{
+"key": "g5_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Tu asesor solo habla con el lid. Y tú recibes cada día el reporte de lo que pasó.",
+"prev": "Con Lid Máster el CRM se llena solo. La IA lee el WhatsApp y escucha las llamadas de cada asesor; escribe la nota, el presupuesto, la zona y las objeciones; mueve la etapa y crea la tarea del siguiente paso.",
+"next": "Antes tu equipo trabajaba para el CRM; ahora el CRM trabaja para tu equipo. Dale clic al link de abajo."
+},
+{
+"key": "g5_s7",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Antes tu equipo trabajaba para el CRM; ahora el CRM trabaja para tu equipo. Dale clic al link de abajo.",
+"prev": "Tu asesor solo habla con el lid. Y tú recibes cada día el reporte de lo que pasó."
+},
+{
+"key": "g6_s1",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Si yo tuviera una inmobiliaria con más de 5 asesores y casi la mitad de mis lids llegara de noche o en fin de semana, esto es lo que haría.",
+"next": "Porque así pasa: de 6,497 lids que medimos, el 47% llegó fuera de horario, y la mitad de esos esperó más de 10 horas por la primera respuesta."
+},
+{
+"key": "g6_s2",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Porque así pasa: de 6,497 lids que medimos, el 47% llegó fuera de horario, y la mitad de esos esperó más de 10 horas por la primera respuesta.",
+"prev": "Si yo tuviera una inmobiliaria con más de 5 asesores y casi la mitad de mis lids llegara de noche o en fin de semana, esto es lo que haría.",
+"next": "Para entonces ya le habían escrito a otra inmobiliaria."
+},
+{
+"key": "g6_s3",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Para entonces ya le habían escrito a otra inmobiliaria.",
+"prev": "Porque así pasa: de 6,497 lids que medimos, el 47% llegó fuera de horario, y la mitad de esos esperó más de 10 horas por la primera respuesta.",
+"next": "Lo primero: una guardia en la noche y los fines de semana, con los lids asignados solos."
+},
+{
+"key": "g6_s4",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lo primero: una guardia en la noche y los fines de semana, con los lids asignados solos.",
+"prev": "Para entonces ya le habían escrito a otra inmobiliaria.",
+"next": "Lo segundo: que a primera hora cada asesor tenga en su lista los lids de la noche, con un tiempo para llamar, y si no llama, que pasen a otro."
+},
+{
+"key": "g6_s5",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Lo segundo: que a primera hora cada asesor tenga en su lista los lids de la noche, con un tiempo para llamar, y si no llama, que pasen a otro.",
+"prev": "Lo primero: una guardia en la noche y los fines de semana, con los lids asignados solos.",
+"next": "Y lo último: ver cada semana cuánto tarda cada asesor en responder, para saber quién está dejando enfriar los lids."
+},
+{
+"key": "g6_s6",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Y lo último: ver cada semana cuánto tarda cada asesor en responder, para saber quién está dejando enfriar los lids.",
+"prev": "Lo segundo: que a primera hora cada asesor tenga en su lista los lids de la noche, con un tiempo para llamar, y si no llama, que pasen a otro.",
+"next": "Eso hace Lid Máster. Dale clic al link de abajo y te lo instalamos en tu inmobiliaria."
+},
+{
+"key": "g6_s7",
+"voice_id": "dlGxemPxFMTY7iXagmOj",
+"text": "Eso hace Lid Máster. Dale clic al link de abajo y te lo instalamos en tu inmobiliaria.",
+"prev": "Y lo último: ver cada semana cuánto tarda cada asesor en responder, para saber quién está dejando enfriar los lids."
+}
+]

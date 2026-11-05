@@ -1,0 +1,266 @@
+{
+ "id": "G4-si-yo-vendiera-desarrollos",
+ "title": "Si yo vendiera desarrollos y mis leads no contestaran",
+ "voice": "fernando",
+ "music": "music/drive.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "contestan",
+  "formularios",
+  "recorrido",
+  "Zoom",
+  "campaña"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Si yo vendiera desarrollos con más de 5 asesores y mis leads de Meta no contestaran, esto es lo que haría.",
+   "p": {
+    "img": "monterrey_tower",
+    "lines": [
+     "«LOS LEADS NO",
+     "[CONTESTAN]»"
+    ],
+    "kicker": "Desarrollos · +5 asesores"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "g4_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Porque «los leads no contestan» casi nunca es todo el problema. Le pediste a Meta formularios y te mandó gente que llena formularios.",
+   "p": {
+    "img": "scrolling_ads",
+    "lines": [
+     "PEDISTE",
+     "[FORMULARIOS]"
+    ],
+    "lineAts": [
+     "@pediste",
+     "@formularios"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@formularios",
+     "vol": 0.1
+    }
+   ],
+   "key": "g4_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "stat",
+   "text": "Y en las inmobiliarias que medimos, la mitad de los leads esperó más de 2 horas por el primer contacto.",
+   "p": {
+    "items": [
+     {
+      "value": 2,
+      "label": "esperó la mitad de los leads por el primer contacto",
+      "at": "@2",
+      "color": "red",
+      "prefix": "+",
+      "suffix": " h"
+     }
+    ],
+    "foot": "6,497 leads de 11 inmobiliarias en 60 días"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@2",
+     "vol": 0.09
+    }
+   ],
+   "key": "g4_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "flow",
+   "text": "Lo primero: que cada lead le llegue al asesor en el momento, y si no hay llamada en el tiempo que yo pongo, que pase a otro.",
+   "p": {
+    "nodes": [
+     {
+      "t": "Entra el lead",
+      "at": "@lead",
+      "color": "cyan"
+     },
+     {
+      "t": "Le llega al asesor",
+      "at": "@asesor",
+      "color": "cyan"
+     },
+     {
+      "t": "¿No llamó a tiempo?",
+      "at": "@pase",
+      "color": "amber",
+      "sub": "pasa a otro asesor"
+     }
+    ],
+    "title": "1 · AL INSTANTE"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@lead",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@asesor",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@pase",
+     "vol": 0.12
+    }
+   ],
+   "key": "g4_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "events",
+   "text": "Lo segundo: que el sistema detecte en el chat cuando un lead agenda un recorrido o un Zoom y se lo avise a Meta, para que mis anuncios busquen gente así.",
+   "p": {
+    "events": [
+     {
+      "name": "Recorrido agendado",
+      "count": 23,
+      "at": "@recorrido",
+      "hot": true
+     },
+     {
+      "name": "Zoom agendado",
+      "count": 31,
+      "at": "@Zoom"
+     },
+     {
+      "name": "Apartado",
+      "count": 6,
+      "at": "@avise"
+     }
+    ],
+    "toastAt": "@avise",
+    "toast": "Evento recibido: Recorrido agendado",
+    "toastSub": "2 · Meta busca gente así"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@recorrido",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@Zoom",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@avise",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@avise",
+     "vol": 0.12
+    }
+   ],
+   "key": "g4_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "bars",
+   "text": "Y lo último: medir cada campaña hasta el final, con citas, apartados y ventas, no solo leads.",
+   "p": {
+    "rows": [
+     {
+      "name": "Campaña Tulum",
+      "value": 19,
+      "sub": "citas"
+     },
+     {
+      "name": "Campaña Mérida",
+      "value": 11,
+      "sub": "citas"
+     },
+     {
+      "name": "Campaña CDMX",
+      "value": 3,
+      "sub": "citas"
+     }
+    ],
+    "at": "@campaña",
+    "title": "3 · Citas por campaña"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/riser.wav",
+     "at": "@campaña",
+     "vol": 0.08
+    }
+   ],
+   "key": "g4_s6",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Eso es Lead Master. Dale clic al link de abajo y te lo instalamos.",
+   "p": {
+    "mode": "ad",
+    "top": "TE LO INSTALAMOS",
+    "button": "Dale clic al link"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "g4_s7",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

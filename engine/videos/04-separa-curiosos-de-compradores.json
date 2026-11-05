@@ -1,0 +1,234 @@
+{
+ "id": "04-separa-curiosos-de-compradores",
+ "title": "El sistema que separa a los curiosos de los compradores",
+ "voice": "fernando",
+ "music": "music/drive.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "curiosos",
+  "compradores",
+  "primero",
+  "esperando"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Este es el sistema que separa a los curiosos de los compradores en tu inmobiliaria, antes de que tus asesores pierdan el día.",
+   "p": {
+    "img": "showing_tour",
+    "lines": [
+     "CURIOSOS VS",
+     "[COMPRADORES]"
+    ],
+    "kicker": "Inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n04_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "floatchats",
+   "text": "Te llegan cientos de mensajes: «¿cuánto cuesta?», «¿sigue disponible?», «mándame info». Tus asesores contestan uno por uno, como pueden.",
+   "p": {
+    "img": "office_agents",
+    "lines": [
+     "CIENTOS DE",
+     "[MENSAJES]"
+    ],
+    "titleTop": 640,
+    "lineAts": [
+     0,
+     "@mensajes"
+    ],
+    "bubbles": [
+     "¿Cuánto cuesta?",
+     "¿Sigue disponible?",
+     "Mándame info",
+     "¿Aceptan mascotas?",
+     "Solo estoy viendo"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/riser.wav",
+     "at": 0,
+     "vol": 0.07
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@mensajes",
+     "vol": 0.12
+    }
+   ],
+   "key": "n04_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Y mientras le responden al que solo está viendo, la persona que sí quiere comprar se queda esperando. Cuando por fin le contestan, ya agendó con otra inmobiliaria.",
+   "p": {
+    "img": "couple_tour",
+    "lines": [
+     "EL COMPRADOR",
+     "SE [FUE]"
+    ],
+    "lineAts": [
+     "@comprar",
+     "@otra"
+    ],
+    "stamp": {
+     "text": "AGENDÓ CON OTRA",
+     "at": "@otra+8",
+     "size": 80
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@otra",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@otra+8",
+     "vol": 0.28
+    }
+   ],
+   "key": "n04_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "panel",
+   "text": "Lead Master lee cada conversación y saca lo que importa: qué busca, en qué zona, con qué presupuesto y qué tan pronto quiere comprar. Con eso, cada asesor sabe a quién atender primero.",
+   "p": {
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Quiere comprar este mes · Zona: Polanco · Presupuesto definido",
+      "status": "Atender primero",
+      "color": "green",
+      "at": "@busca"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Diego Herrera",
+      "lead": "Lucía Hernández",
+      "summary": "Solo preguntó el precio.",
+      "status": "Después",
+      "color": "amber",
+      "at": "@primero"
+     }
+    ],
+    "title": "Prioridad de hoy"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@busca",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@primero",
+     "vol": 0.08
+    }
+   ],
+   "key": "n04_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "events",
+   "text": "Y cuando un lead agenda una cita, el sistema se lo avisa a Meta, para que tus anuncios busquen más gente así y menos curiosos.",
+   "p": {
+    "events": [
+     {
+      "name": "Cita agendada",
+      "count": 52,
+      "at": 0,
+      "hot": true
+     },
+     {
+      "name": "Apartado",
+      "count": 7,
+      "at": 6
+     }
+    ],
+    "toastAt": "@avisa",
+    "toast": "Evento recibido: Cita agendada",
+    "toastSub": "Más gente así, menos curiosos"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 0,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 6,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@avisa",
+     "vol": 0.12
+    }
+   ],
+   "key": "n04_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Si tu inmobiliaria recibe más de 100 leads al mes, dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "+100 LEADS AL MES",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n04_s6",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

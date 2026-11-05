@@ -1,0 +1,257 @@
+{
+ "id": "08-9-mil-dolares-en-anuncios",
+ "title": "9 mil dólares en anuncios y ni un departamento vendido",
+ "voice": "fernando",
+ "music": "music/drive.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "culpó",
+  "midiendo",
+  "agencia"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Una inmobiliaria metió 9 mil dólares en anuncios y no vendió ni un departamento.",
+   "p": {
+    "img": "owner_stressed",
+    "lines": [
+     "9 MIL DÓLARES.",
+     "[0] VENTAS."
+    ],
+    "kicker": "Caso real"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n08_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "stack",
+   "text": "Le llegaron 700 leads. El dueño culpó a Meta, después a la agencia, después a los leads.",
+   "p": {
+    "items": [
+     {
+      "t": "Meta",
+      "at": "@Meta",
+      "color": "amber",
+      "k": "Culpa de"
+     },
+     {
+      "t": "La agencia",
+      "at": "@agencia",
+      "color": "amber",
+      "k": "Culpa de"
+     },
+     {
+      "t": "Los leads",
+      "at": "@leads#2",
+      "color": "red",
+      "k": "Culpa de"
+     }
+    ],
+    "img": "meeting",
+    "title": "700 LEADS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@Meta",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@agencia",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@leads#2",
+     "vol": 0.12
+    }
+   ],
+   "key": "n08_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "stat",
+   "text": "Pero cuando revisamos los números, el problema estaba en otro lado: para trabajar bien esos 700 leads tocaba hacer unas 9 mil llamadas. El equipo hizo 3 mil.",
+   "p": {
+    "items": [
+     {
+      "value": 9000,
+      "label": "llamadas que tocaba hacer",
+      "at": "@9",
+      "color": "cyan"
+     },
+     {
+      "value": 3000,
+      "label": "llamadas que hicieron",
+      "at": "@3",
+      "color": "red"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@9",
+     "vol": 0.09
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@3",
+     "vol": 0.09
+    }
+   ],
+   "key": "n08_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Dos de cada tres intentos nunca pasaron. Y nadie lo sabía, porque nadie lo estaba midiendo.",
+   "p": {
+    "img": "headset_calls",
+    "lines": [
+     "2 DE CADA 3",
+     "[NUNCA PASARON]"
+    ],
+    "lineAts": [
+     0,
+     "@pasaron"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@pasaron",
+     "vol": 0.1
+    }
+   ],
+   "key": "n08_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "bars",
+   "text": "Lead Master mide eso por ti: cuántas llamadas hizo cada asesor, cuántos leads contestaron, a quién nunca se le dio seguimiento y cuántas citas salieron de cada campaña.",
+   "p": {
+    "rows": [
+     {
+      "name": "Paola Gutiérrez",
+      "value": 412,
+      "sub": "llamadas"
+     },
+     {
+      "name": "Valeria Ríos",
+      "value": 298,
+      "sub": "llamadas"
+     },
+     {
+      "name": "Andrés Molina",
+      "value": 61,
+      "sub": "llamadas"
+     },
+     {
+      "name": "Diego Herrera",
+      "value": 23,
+      "sub": "llamadas",
+      "color": "red"
+     }
+    ],
+    "at": "@llamadas",
+    "title": "Llamadas por asesor",
+    "right": "Este mes"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/riser.wav",
+     "at": "@llamadas",
+     "vol": 0.08
+    }
+   ],
+   "key": "n08_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "phonelist",
+   "text": "Y a cada asesor le dice todos los días a quién le toca llamar.",
+   "p": {
+    "items": [
+     {
+      "t": "Te toca llamar hoy",
+      "at": "@llamar",
+      "color": "red",
+      "n": 14
+     }
+    ],
+    "bg": "advisor_woman",
+    "title": "Mi trabajo",
+    "sub": "Hoy"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@llamar",
+     "vol": 0.14
+    }
+   ],
+   "key": "n08_s6",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Antes de cambiar de agencia, mide a tu equipo. Dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "MIDE A TU EQUIPO",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n08_s7",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

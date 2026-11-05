@@ -1,0 +1,214 @@
+{
+ "id": "20-renuncio-y-se-llevo-tus-leads",
+ "title": "Tu mejor asesor renunció y se llevó tus leads",
+ "voice": "fernando",
+ "music": "music/drive.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "renunció",
+  "celular",
+  "historial"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Tu mejor asesor renunció el viernes y se llevó tus leads en su WhatsApp.",
+   "p": {
+    "img": "empty_desk",
+    "lines": [
+     "RENUNCIÓ Y SE",
+     "LLEVÓ TUS [LEADS]"
+    ],
+    "kicker": "Inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n20_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "floatchats",
+   "text": "Si tienes una inmobiliaria, ya te pasó o te va a pasar. Sus conversaciones, sus seguimientos, las visitas que tenía apalabradas: todo estaba en su celular.",
+   "p": {
+    "img": "advisor_night",
+    "lines": [
+     "TODO EN SU",
+     "[CELULAR]"
+    ],
+    "titleTop": 640,
+    "lineAts": [
+     "@todo",
+     "@celular"
+    ],
+    "bubbles": [
+     "¿Seguimos con la visita?",
+     "Te mando la cotización",
+     "El sábado paso",
+     "¿Ya hay fecha de entrega?"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/riser.wav",
+     "at": 0,
+     "vol": 0.07
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@celular",
+     "vol": 0.12
+    }
+   ],
+   "key": "n20_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "quote",
+   "text": "«Cuando se va, no sabemos ni a quiénes les estaba dando seguimiento», nos dijo un dueño. Y el asesor nuevo empieza de cero con leads que tú ya pagaste.",
+   "p": {
+    "text": "Cuando se va, no sabemos ni a quiénes les estaba dando seguimiento.",
+    "img": "empty_desk",
+    "who": "Dueño de inmobiliaria"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    }
+   ],
+   "key": "n20_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "flow",
+   "text": "Con Lead Master, el WhatsApp de cada asesor se conecta al CRM. Solo se guardan las conversaciones con leads; lo personal se queda fuera.",
+   "p": {
+    "nodes": [
+     {
+      "t": "WhatsApp del asesor",
+      "at": "@WhatsApp",
+      "color": "cyan"
+     },
+     {
+      "t": "CRM de tu inmobiliaria",
+      "at": "@CRM",
+      "color": "green"
+     },
+     {
+      "t": "Solo chats con leads",
+      "at": "@personal",
+      "color": "amber",
+      "sub": "lo personal se queda fuera"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@CRM",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@personal",
+     "vol": 0.12
+    }
+   ],
+   "key": "n20_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "panel",
+   "text": "Si mañana alguien se va, el historial se queda en tu inmobiliaria, con la nota de en qué quedó cada lead, y se lo pasas a otro asesor.",
+   "p": {
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Diego Herrera",
+      "lead": "Adriana Solís",
+      "summary": "Quedó en visita el sábado · le prometió cotización.",
+      "status": "Pasar a Valeria",
+      "color": "amber",
+      "at": "@historial"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Diego Herrera",
+      "lead": "Lucía Hernández",
+      "summary": "Esperando planos.",
+      "status": "Pasar a Andrés",
+      "color": "amber",
+      "at": "@pasas"
+     }
+    ],
+    "title": "Historial de Diego",
+    "right": "Se queda contigo"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@historial",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@pasas",
+     "vol": 0.08
+    }
+   ],
+   "key": "n20_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Los leads son de tu inmobiliaria. Dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "LOS LEADS SON TUYOS",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n20_s6",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

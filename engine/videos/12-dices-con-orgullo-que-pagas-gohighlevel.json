@@ -1,0 +1,237 @@
+{
+ "id": "12-dices-con-orgullo-que-pagas-gohighlevel",
+ "title": "Dices con orgullo que pagas GoHighLevel",
+ "voice": "fernando",
+ "music": "music/drive.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "orgullo",
+  "libreta",
+  "familia"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Si tienes una inmobiliaria y dices con orgullo que pagas GoHighLevel, este video es para ti.",
+   "p": {
+    "img": "owner_relaxed",
+    "lines": [
+     "DICES CON",
+     "[ORGULLO]…"
+    ],
+    "kicker": "Inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n12_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Dices con orgullo que pagas GoHighLevel… y tus asesores siguen anotando en una libreta.",
+   "p": {
+    "img": "advisor_notebook",
+    "lines": [
+     "PAGAS",
+     "[GOHIGHLEVEL]…"
+    ],
+    "stamp": {
+     "text": "LIBRETA",
+     "at": "@libreta"
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@libreta",
+     "vol": 0.28
+    }
+   ],
+   "key": "n12_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Dices con orgullo que metes 50 mil pesos al mes en Meta… y no sabes cuántas citas te dieron.",
+   "p": {
+    "img": "scrolling_ads",
+    "lines": [
+     "50 MIL AL MES",
+     "EN [META]…"
+    ],
+    "stamp": {
+     "text": "¿CUÁNTAS CITAS?",
+     "at": "@cuántas",
+     "color": "amber"
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@cuántas",
+     "vol": 0.28
+    }
+   ],
+   "key": "n12_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Dices con orgullo que tienes 12 asesores… y no sabes cuántos llamaron hoy.",
+   "p": {
+    "img": "office_agents",
+    "lines": [
+     "TIENES 12",
+     "[ASESORES]…"
+    ],
+    "stamp": {
+     "text": "NI IDEA",
+     "at": "@cuántos",
+     "size": 120
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@cuántos",
+     "vol": 0.28
+    }
+   ],
+   "key": "n12_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Dices con orgullo que tu equipo es una familia… y el que renunció se llevó sus leads en su WhatsApp.",
+   "p": {
+    "img": "empty_desk",
+    "lines": [
+     "TU EQUIPO ES",
+     "UNA [FAMILIA]…"
+    ],
+    "stamp": {
+     "text": "SE LLEVÓ TUS LEADS",
+     "at": "@llevó",
+     "size": 76
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@llevó",
+     "vol": 0.28
+    }
+   ],
+   "key": "n12_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "flow",
+   "text": "Tener las herramientas no es tener el control. Lead Master conecta tu GoHighLevel con el WhatsApp y las llamadas de tus asesores, llena el CRM solo y te manda todos los días qué pasó con cada lead.",
+   "p": {
+    "nodes": [
+     {
+      "t": "GoHighLevel",
+      "at": "@conecta",
+      "color": "cyan"
+     },
+     {
+      "t": "WhatsApp y llamadas",
+      "at": "@WhatsApp",
+      "color": "cyan"
+     },
+     {
+      "t": "CRM lleno solo",
+      "at": "@llena",
+      "color": "green"
+     },
+     {
+      "t": "Reporte diario",
+      "at": "@manda",
+      "color": "purple"
+     }
+    ],
+    "title": "EL CONTROL"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@conecta",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llena",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@manda",
+     "vol": 0.12
+    }
+   ],
+   "key": "n12_s6",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Orgullo es saberlo. Dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "ORGULLO ES SABERLO",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n12_s7",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

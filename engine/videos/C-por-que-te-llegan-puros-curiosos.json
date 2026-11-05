@@ -1,0 +1,307 @@
+{
+ "id": "C-por-que-te-llegan-puros-curiosos",
+ "title": "Por qué a tu inmobiliaria le llegan puros curiosos",
+ "voice": "fernando",
+ "music": "music/pulse.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "curiosos",
+  "filtro",
+  "formularios",
+  "contestan",
+  "agendada",
+  "agenda"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Esta es la razón por la que a tu inmobiliaria le siguen llegando puros curiosos y no personas que agendan una cita.",
+   "p": {
+    "img": "scrolling_ads",
+    "lines": [
+     "PUROS [CURIOSOS]",
+     "Y CERO CITAS"
+    ],
+    "kicker": "Inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "c_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "stack",
+   "text": "Nunca le dices a Meta cuáles de las personas que te escribieron agendaron, cuáles apartaron y cuáles compraron.",
+   "p": {
+    "items": [
+     {
+      "t": "Quién agendó",
+      "at": "@agendaron",
+      "color": "cyan"
+     },
+     {
+      "t": "Quién apartó",
+      "at": "@apartaron",
+      "color": "purple"
+     },
+     {
+      "t": "Quién compró",
+      "at": "@compraron",
+      "color": "green"
+     }
+    ],
+    "img": "laptop_dashboard",
+    "title": "LO QUE META NO SABE"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@agendaron",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@apartaron",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@compraron",
+     "vol": 0.12
+    }
+   ],
+   "key": "c_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "floatchats",
+   "text": "Solo le dices «mándame mensajes» o «mándame formularios». Y Meta hace exactamente eso: te llena de curiosos que escriben y desaparecen.",
+   "p": {
+    "img": "office_agents",
+    "lines": [
+     "«MÁNDAME",
+     "[FORMULARIOS]»"
+    ],
+    "titleTop": 640,
+    "lineAts": [
+     "@mensajes",
+     "@formularios"
+    ],
+    "bubbles": [
+     "¿Precio?",
+     "Info",
+     "¿Sigue disponible?",
+     "Le piqué sin querer",
+     "Solo estoy viendo"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/riser.wav",
+     "at": 0,
+     "vol": 0.07
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@formularios",
+     "vol": 0.12
+    }
+   ],
+   "key": "c_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Por eso tu asesor te dice «es que no me contestan».",
+   "p": {
+    "img": "advisor_car",
+    "lines": [
+     "«ES QUE NO",
+     "ME [CONTESTAN]»"
+    ],
+    "lineAts": [
+     0,
+     "@contestan"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@contestan",
+     "vol": 0.1
+    }
+   ],
+   "key": "c_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "events",
+   "text": "Lo que necesitas es un filtro. Cuando un lead agenda una cita, Lead Master se lo avisa a Meta en automático: «este lead pasó a cita agendada».",
+   "p": {
+    "events": [
+     {
+      "name": "Contactado con respuesta",
+      "count": 184,
+      "at": 0
+     },
+     {
+      "name": "Cita agendada",
+      "count": 46,
+      "at": 4,
+      "hot": true
+     },
+     {
+      "name": "Apartado",
+      "count": 9,
+      "at": 8
+     },
+     {
+      "name": "Vendido",
+      "count": 4,
+      "at": 12
+     }
+    ],
+    "toastAt": "@pasó",
+    "toast": "Evento recibido: Cita agendada",
+    "toastSub": "Campaña Mérida · hace 1 min"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 0,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 4,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 8,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 12,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@pasó",
+     "vol": 0.12
+    }
+   ],
+   "key": "c_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "flow",
+   "text": "Meta empieza a buscar personas con más probabilidad de agendar un recorrido o un Zoom. Y cuando junta suficientes citas, le pides: «mándame solo gente parecida a la que sí agenda».",
+   "p": {
+    "nodes": [
+     {
+      "t": "Lead agenda cita",
+      "at": 0,
+      "color": "cyan"
+     },
+     {
+      "t": "Meta recibe el evento",
+      "at": "@buscar",
+      "color": "purple"
+     },
+     {
+      "t": "Busca gente que agenda",
+      "at": "@recorrido",
+      "color": "purple",
+      "sub": "recorridos y Zooms"
+     },
+     {
+      "t": "Más citas, menos curiosos",
+      "at": "@parecida",
+      "color": "green"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 0,
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@buscar",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@recorrido",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@parecida",
+     "vol": 0.12
+    }
+   ],
+   "key": "c_s6",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Deja de buscar a quien llena formularios. Nosotros lo instalamos y lo configuramos; tú no tocas nada. Dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "TÚ NO TOCAS NADA",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "c_s7",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

@@ -1,0 +1,276 @@
+{
+ "id": "E-asi-recibirias-tus-reportes",
+ "title": "Así recibirías los reportes si usaras Lead Master",
+ "voice": "antonio",
+ "music": "music/pulse.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "reportes",
+  "reporte",
+  "lista",
+  "resumen",
+  "Excel"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Así es como recibirías los reportes de tu inmobiliaria si usaras Lead Master.",
+   "p": {
+    "img": "owner_phone_report",
+    "lines": [
+     "ASÍ RECIBIRÍAS",
+     "TUS [REPORTES]"
+    ],
+    "kicker": "Si usaras Lead Master"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "e_s1",
+   "voice": "antonio"
+  },
+  {
+   "type": "floatchats",
+   "text": "Hoy tus asesores empiezan el día sin un paso a paso. No saben a quién llamar ni a quién darle seguimiento, y no se acuerdan de lo que prometieron la semana pasada.",
+   "p": {
+    "img": "advisor_woman",
+    "lines": [
+     "¿A QUIÉN",
+     "[LLAMO] HOY?"
+    ],
+    "titleTop": 640,
+    "lineAts": [
+     "@llamar",
+     "@prometieron"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/riser.wav",
+     "at": 0,
+     "vol": 0.07
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@prometieron",
+     "vol": 0.12
+    }
+   ],
+   "key": "e_s2",
+   "voice": "antonio"
+  },
+  {
+   "type": "photo",
+   "text": "Abren WhatsApp, buscan entre cientos de chats y se les pasan leads. Y tú, para saber qué pasó, tienes que preguntar uno por uno o pelear con un Excel que nadie llena.",
+   "p": {
+    "img": "excel_night",
+    "lines": [
+     "Y TÚ, PELEANDO",
+     "CON UN [EXCEL]"
+    ],
+    "lineAts": [
+     "@tú",
+     "@Excel"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@Excel",
+     "vol": 0.1
+    }
+   ],
+   "key": "e_s3",
+   "voice": "antonio"
+  },
+  {
+   "type": "phonelist",
+   "text": "Con Lead Master, cada mañana cada asesor recibe por WhatsApp su lista del día: a quién llamar, quién le pidió que lo buscara hoy y con quién tiene recorrido o Zoom.",
+   "p": {
+    "items": [
+     {
+      "t": "A quién llamar",
+      "at": "@llamar",
+      "color": "red",
+      "n": 9
+     },
+     {
+      "t": "Te pidió que lo buscaras hoy",
+      "at": "@pidió",
+      "color": "amber",
+      "n": 3
+     },
+     {
+      "t": "Recorridos y Zooms",
+      "at": "@recorrido",
+      "color": "green",
+      "n": 2
+     }
+    ],
+    "bg": "advisor_woman",
+    "title": "Tu lista de hoy",
+    "sub": "WhatsApp · 8:00 am",
+    "clock": "8:00"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@llamar",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@pidió",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@recorrido",
+     "vol": 0.11
+    }
+   ],
+   "key": "e_s4",
+   "voice": "antonio"
+  },
+  {
+   "type": "phonelist",
+   "text": "En la tarde recibe el resumen de lo que hizo.",
+   "p": {
+    "items": [
+     {
+      "t": "Resumen del día.pdf",
+      "at": "@resumen",
+      "color": "purple",
+      "sub": "14 llamadas · 6 contactados · 2 citas"
+     }
+    ],
+    "bg": "advisor_car",
+    "title": "Tu día",
+    "sub": "7:00 pm",
+    "clock": "7:00"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@resumen",
+     "vol": 0.14
+    }
+   ],
+   "key": "e_s5",
+   "voice": "antonio"
+  },
+  {
+   "type": "phonelist",
+   "text": "Y tú, como dueño, recibes todos los días en tu WhatsApp el reporte del equipo: cuántos leads entraron, a quién llamó cada asesor, quién se quedó sin contacto y cuántas citas salieron.",
+   "p": {
+    "items": [
+     {
+      "t": "Leads que entraron",
+      "at": "@entraron",
+      "color": "cyan",
+      "n": 37
+     },
+     {
+      "t": "Llamadas del equipo",
+      "at": "@llamó",
+      "color": "purple",
+      "n": 84
+     },
+     {
+      "t": "Sin contacto",
+      "at": "@contacto",
+      "color": "red",
+      "n": 6
+     },
+     {
+      "t": "Citas",
+      "at": "@citas",
+      "color": "green",
+      "n": 5
+     }
+    ],
+    "bg": "owner_phone_report",
+    "title": "Reporte del equipo",
+    "sub": "Lead Master · todos los días"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@entraron",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamó",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@contacto",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@citas",
+     "vol": 0.11
+    }
+   ],
+   "key": "e_s6",
+   "voice": "antonio"
+  },
+  {
+   "type": "cta",
+   "text": "Así ya no se te pasa ningún lead. Dale clic a este anuncio y te lo instalamos.",
+   "p": {
+    "mode": "ad",
+    "top": "NINGÚN LEAD SE TE PASA",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "e_s7",
+   "voice": "antonio",
+   "captions": true
+  }
+ ]
+}

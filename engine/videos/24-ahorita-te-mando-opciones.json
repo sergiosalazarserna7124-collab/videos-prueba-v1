@@ -1,0 +1,198 @@
+{
+ "id": "24-ahorita-te-mando-opciones",
+ "title": "«Ahorita te mando opciones»",
+ "voice": "fernando",
+ "music": "music/drive.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "ahorita",
+  "opciones",
+  "seguimiento",
+  "compromisos"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "«Ahorita te mando opciones.» Si tienes una inmobiliaria, esa frase te está costando ventas.",
+   "p": {
+    "img": "merida_street",
+    "lines": [
+     "«AHORITA TE",
+     "MANDO [OPCIONES]»"
+    ],
+    "kicker": "Inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n24_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "chat",
+   "text": "El lead pide opciones de casas en Mérida. Tu asesor contesta «claro, ahorita te mando». Y nunca las manda. O las manda, el lead no responde y ahí se acaba el seguimiento.",
+   "p": {
+    "messages": [
+     {
+      "from": "in",
+      "text": "¿Me mandas opciones de casas en Mérida?",
+      "at": "@pide"
+     },
+     {
+      "from": "out",
+      "text": "Claro, ahorita te mando.",
+      "at": "@claro"
+     },
+     {
+      "from": "system",
+      "text": "15 días después",
+      "at": "@nunca"
+     }
+    ],
+    "bg": "merida_house",
+    "contact": "Adriana Solís",
+    "sub": "Lead · Mérida"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@pide",
+     "vol": 0.16
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@claro",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@nunca",
+     "vol": 0.1
+    }
+   ],
+   "key": "n24_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "quote",
+   "text": "«Te mando opciones, cric, cric, quince días, se perdió», nos dijo un dueño.",
+   "p": {
+    "text": "Te mando opciones, cric, cric, quince días, se perdió.",
+    "img": "advisor_notebook",
+    "who": "Dueño de inmobiliaria"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    }
+   ],
+   "key": "n24_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "quote",
+   "text": "Y otro: «nos están comprando, pero no estamos vendiendo, porque no hacemos seguimiento».",
+   "p": {
+    "text": "Nos están comprando, pero no estamos vendiendo, porque no hacemos seguimiento.",
+    "img": "meeting",
+    "who": "Dueño de inmobiliaria"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    }
+   ],
+   "key": "n24_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "phonelist",
+   "text": "Lead Master lee cada conversación y saca los compromisos. Si el asesor prometió mandar opciones, llamar el martes o confirmar una visita, queda como tarea en su lista del día. Y si no la cumple, tú lo ves en tu reporte.",
+   "p": {
+    "items": [
+     {
+      "t": "Mandar opciones a Adriana Solís",
+      "at": "@opciones",
+      "color": "red",
+      "sub": "Lo prometiste ayer"
+     },
+     {
+      "t": "Llamar a Diana Trejo el martes",
+      "at": "@martes",
+      "color": "amber"
+     },
+     {
+      "t": "Confirmar visita de Lucía",
+      "at": "@visita",
+      "color": "green"
+     }
+    ],
+    "bg": "advisor_woman",
+    "title": "Compromisos de hoy",
+    "sub": "Sacados de tus chats"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@opciones",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@martes",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@visita",
+     "vol": 0.11
+    }
+   ],
+   "key": "n24_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Que ningún «ahorita te mando» se quede en el aire. Dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "NINGÚN «AHORITA» EN EL AIRE",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n24_s6",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

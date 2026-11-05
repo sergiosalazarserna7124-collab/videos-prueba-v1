@@ -1,0 +1,254 @@
+{
+ "id": "G1-si-yo-tuviera-una-inmobiliaria",
+ "title": "Si yo tuviera una inmobiliaria en México con más de 5 asesores",
+ "voice": "fernando",
+ "music": "music/pulse.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "control",
+  "primero",
+  "segundo",
+  "último",
+  "objeción",
+  "vendedor"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Si yo tuviera una inmobiliaria en México con más de 5 asesores y no supiera qué hacen con los leads que les doy, esto es lo que haría para tener control total de mi equipo y vender más.",
+   "p": {
+    "img": "gdl_development",
+    "lines": [
+     "ESTO ES LO",
+     "QUE [YO HARÍA]"
+    ],
+    "kicker": "Inmobiliaria con +5 asesores"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "g1_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Porque hoy le das los leads a tu equipo y ahí se pierde la pista: no sabes a quién llamaron, cuánto tardaron ni qué le dijeron.",
+   "p": {
+    "img": "office_agents",
+    "lines": [
+     "¿A QUIÉN LLAMARON?",
+     "¿QUÉ LE [DIJERON]?"
+    ],
+    "lineAts": [
+     "@llamaron",
+     "@dijeron"
+    ],
+    "size": 104
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@dijeron",
+     "vol": 0.1
+    }
+   ],
+   "key": "g1_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "phonelist",
+   "text": "Lo primero que haría es instalar un sistema que le diga a cada asesor a quién llamar y en qué momento, sin que él lo decida.",
+   "p": {
+    "items": [
+     {
+      "t": "Llamar a Diana Trejo",
+      "at": "@llamar",
+      "color": "red",
+      "n": 1,
+      "sub": "Ahora"
+     },
+     {
+      "t": "Llamar a Lucía Hernández",
+      "at": "@momento",
+      "color": "amber",
+      "n": 2,
+      "sub": "11:30 am"
+     }
+    ],
+    "bg": "headset_calls",
+    "title": "1 · Mi trabajo",
+    "sub": "El sistema decide el orden"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@llamar",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@momento",
+     "vol": 0.11
+    }
+   ],
+   "key": "g1_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "bars",
+   "text": "Ese mismo sistema registra cuántas llamadas hace, cuánto tarda en marcar y qué habla en cada una.",
+   "p": {
+    "rows": [
+     {
+      "name": "Paola Gutiérrez",
+      "value": 34,
+      "sub": "llamadas"
+     },
+     {
+      "name": "Valeria Ríos",
+      "value": 27,
+      "sub": "llamadas"
+     },
+     {
+      "name": "Diego Herrera",
+      "value": 9,
+      "sub": "llamadas"
+     },
+     {
+      "name": "Andrés Molina",
+      "value": 4,
+      "sub": "llamadas"
+     }
+    ],
+    "at": "@registra",
+    "title": "Llamadas de hoy"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/riser.wav",
+     "at": "@registra",
+     "vol": 0.08
+    }
+   ],
+   "key": "g1_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "phonelist",
+   "text": "Lo segundo: recordatorios para que haga todos los intentos que le pido, y si no los hace, que me avise.",
+   "p": {
+    "items": [
+     {
+      "t": "Te faltan 2 intentos con Adriana Solís",
+      "at": "@recordatorios",
+      "color": "amber"
+     },
+     {
+      "t": "Aviso al dueño: intentos sin hacer",
+      "at": "@avise",
+      "color": "red"
+     }
+    ],
+    "bg": "advisor_car",
+    "title": "2 · Recordatorios",
+    "sub": "Hasta que se cumplan"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@recordatorios",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@avise",
+     "vol": 0.11
+    }
+   ],
+   "key": "g1_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "panel",
+   "text": "Y lo último: entender qué hace mi mejor vendedor y cómo maneja cada objeción, para que todo el equipo siga ese mismo camino.",
+   "p": {
+    "rows": [
+     {
+      "ch": "call",
+      "advisor": "Paola Gutiérrez",
+      "lead": "Diana Trejo",
+      "summary": "Objeción: «está muy caro». Comparó con lo que paga de renta y la invitó a ver el proyecto.",
+      "status": "Cita agendada",
+      "color": "green",
+      "at": "@objeción"
+     }
+    ],
+    "title": "3 · Tu mejor vendedor",
+    "right": "Cómo maneja objeciones"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@objeción",
+     "vol": 0.08
+    }
+   ],
+   "key": "g1_s6",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Ese sistema es Lead Master. Si quieres que te lo instalemos en tu inmobiliaria, dale clic al link de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "TE LO INSTALAMOS",
+    "button": "Dale clic al link"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "g1_s7",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

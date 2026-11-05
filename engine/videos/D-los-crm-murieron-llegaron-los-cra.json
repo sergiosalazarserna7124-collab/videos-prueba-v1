@@ -1,0 +1,270 @@
+{
+ "id": "D-los-crm-murieron-llegaron-los-cra",
+ "title": "Los CRM inmobiliarios murieron: llegaron los CRA",
+ "voice": "fernando",
+ "music": "music/drive.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "CRA",
+  "murieron",
+  "pereza",
+  "basura",
+  "solos",
+  "solo"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Los CRM para el mundo inmobiliario han muerto. Llegaron los CRA: CRM que se llenan solos.",
+   "p": {
+    "img": "excel_night",
+    "lines": [
+     "LOS CRM",
+     "[MURIERON]"
+    ],
+    "kicker": "Inmobiliarias",
+    "stamp": {
+     "text": "LLEGARON LOS CRA",
+     "at": "@CRA",
+     "color": "cyan",
+     "size": 80
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@CRA",
+     "vol": 0.28
+    }
+   ],
+   "key": "d_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "La única ventaja de un CRM era saber qué pasaba con cada lead. Pero esa información se pierde el día que tu asesor deja de poner notas y de mover etapas.",
+   "p": {
+    "img": "notebook",
+    "lines": [
+     "SIN NOTAS",
+     "NO HAY [DATOS]"
+    ],
+    "lineAts": [
+     "@pierde",
+     "@notas"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@notas",
+     "vol": 0.1
+    }
+   ],
+   "key": "d_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Y siempre deja de hacerlo, porque le da pereza capturar datos.",
+   "p": {
+    "img": "advisor_notebook",
+    "lines": [
+     "LE DA",
+     "[PEREZA]"
+    ],
+    "lineAts": [
+     0,
+     "@pereza"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@pereza",
+     "vol": 0.1
+    }
+   ],
+   "key": "d_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Ahí se fueron a la basura los miles de dólares que pagaste por tu CRM.",
+   "p": {
+    "img": "owner_stressed",
+    "lines": [
+     "MILES DE",
+     "[DÓLARES]"
+    ],
+    "lineAts": [
+     0,
+     "@dólares"
+    ],
+    "stamp": {
+     "text": "A LA BASURA",
+     "at": "@basura"
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@dólares",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@basura",
+     "vol": 0.28
+    }
+   ],
+   "key": "d_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "panel",
+   "text": "Un CRA no depende de que nadie llene nada. Escucha las llamadas de cada asesor, lee su WhatsApp y registra solo el presupuesto, la zona, qué busca el lead y en qué etapa va.",
+   "p": {
+    "rows": [
+     {
+      "ch": "call",
+      "advisor": "Andrés Molina",
+      "lead": "Diana Trejo",
+      "summary": "Presupuesto definido · Zona: Polanco · Busca 3 recámaras",
+      "status": "Registrado solo",
+      "color": "green",
+      "at": "@Escucha"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Lucía Hernández",
+      "summary": "Zona: Tulum · Busca depa para vivir · Etapa: interesada",
+      "status": "Etapa: interesada",
+      "color": "cyan",
+      "at": "@zona"
+     }
+    ],
+    "title": "CRA: se llena solo"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@Escucha",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@zona",
+     "vol": 0.08
+    }
+   ],
+   "key": "d_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "phonelist",
+   "text": "Y le dice en tiempo real a cada asesor qué hacer con cada lead. Antes tu equipo trabajaba para el CRM; ahora el CRA trabaja para tu equipo.",
+   "p": {
+    "items": [
+     {
+      "t": "Llama a Diana Trejo",
+      "at": "@dice",
+      "color": "red",
+      "n": 1,
+      "sub": "Quedó de confirmar visita hoy"
+     },
+     {
+      "t": "Manda opciones a Lucía",
+      "at": "@qué",
+      "color": "amber",
+      "n": 2,
+      "sub": "Lo prometiste ayer"
+     },
+     {
+      "t": "El CRA trabaja para ti",
+      "at": "@trabaja",
+      "color": "green"
+     }
+    ],
+    "bg": "advisor_woman",
+    "title": "Qué hacer ahora",
+    "sub": "En tiempo real"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@dice",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@qué",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@trabaja",
+     "vol": 0.11
+    }
+   ],
+   "key": "d_s6",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Dale clic a este anuncio y te lo instalamos en tu inmobiliaria.",
+   "p": {
+    "mode": "ad",
+    "top": "UN CRM QUE SE LLENA SOLO",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "d_s7",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

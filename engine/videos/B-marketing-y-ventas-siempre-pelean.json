@@ -1,0 +1,283 @@
+{
+ "id": "B-marketing-y-ventas-siempre-pelean",
+ "title": "Marketing y ventas siempre pelean",
+ "voice": "fernando",
+ "music": "music/drive.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "marketing",
+  "basura",
+  "mentira",
+  "creerle",
+  "malo",
+  "culpa"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Así son las juntas de marketing y ventas en tu inmobiliaria.",
+   "p": {
+    "img": "marketing_sales_fight",
+    "lines": [
+     "MARKETING",
+     "VS [VENTAS]"
+    ],
+    "kicker": "Tu inmobiliaria"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "b_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "chat",
+   "text": "Marketing dice: «Conseguimos mil leads y ventas no vendió». Tus asesores dicen: «Los leads son basura, nadie contesta».",
+   "p": {
+    "messages": [
+     {
+      "from": "in",
+      "text": "Marketing: Conseguimos mil leads y ventas no vendió.",
+      "at": "@Conseguimos"
+     },
+     {
+      "from": "out",
+      "text": "Asesores: Los leads son basura, nadie contesta.",
+      "at": "@Los"
+     }
+    ],
+    "bg": "meeting",
+    "contact": "Junta comercial",
+    "sub": "Marketing, Ventas, Tú"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@Conseguimos",
+     "vol": 0.16
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@Los",
+     "vol": 0.1
+    }
+   ],
+   "key": "b_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "stack",
+   "text": "Marketing dice que es mentira, que se tardan en llamar. Los asesores juran que les marcaron diez veces.",
+   "p": {
+    "items": [
+     {
+      "t": "Se tardan en llamar",
+      "at": "@mentira",
+      "color": "purple",
+      "k": "Marketing"
+     },
+     {
+      "t": "Les marcamos 10 veces",
+      "at": "@juran",
+      "color": "amber",
+      "k": "Asesores"
+     }
+    ],
+    "img": "office_agents"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@mentira",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@juran",
+     "vol": 0.12
+    }
+   ],
+   "key": "b_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Y tú, que pagas los anuncios y la agencia, sales de la junta sin saber a quién creerle. Y así cada semana.",
+   "p": {
+    "img": "owner_stressed",
+    "lines": [
+     "¿A QUIÉN",
+     "LE [CREES]?"
+    ],
+    "lineAts": [
+     "@quién",
+     "@creerle"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@creerle",
+     "vol": 0.1
+    }
+   ],
+   "key": "b_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "panel",
+   "text": "Este sistema, que ya usan más de 15 inmobiliarias en México, Estados Unidos y Colombia, te dice qué pasó con cada lead: cuál se perdió porque era malo y cuál por culpa del asesor.",
+   "p": {
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Andrés Molina",
+      "lead": "Lucía Hernández",
+      "summary": "No buscaba comprar: pidió información por error.",
+      "status": "Lead malo",
+      "color": "amber",
+      "at": "@malo"
+     },
+     {
+      "ch": "call",
+      "advisor": "Diego Herrera",
+      "lead": "Adriana Solís",
+      "summary": "Pidió que le llamaran el martes. Nadie le llamó.",
+      "status": "Culpa del asesor",
+      "color": "red",
+      "at": "@culpa"
+     }
+    ],
+    "title": "Qué pasó con cada lead",
+    "right": "+15 inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@malo",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@culpa",
+     "vol": 0.08
+    }
+   ],
+   "key": "b_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "phonelist",
+   "text": "Tus asesores solo hablan y llaman desde su WhatsApp; el sistema registra cada chat, cada llamada y cada cita, y le dice a cada uno a quién llamar y a quién darle seguimiento.",
+   "p": {
+    "items": [
+     {
+      "t": "Chats registrados",
+      "at": "@chat",
+      "color": "cyan",
+      "n": 48
+     },
+     {
+      "t": "Llamadas registradas",
+      "at": "@llamada",
+      "color": "purple",
+      "n": 31
+     },
+     {
+      "t": "Citas",
+      "at": "@cita",
+      "color": "green",
+      "n": 6
+     },
+     {
+      "t": "A quién llamar hoy",
+      "at": "@llamar",
+      "color": "amber",
+      "n": 12
+     }
+    ],
+    "bg": "advisor_woman",
+    "title": "Mi trabajo",
+    "sub": "Registrado solo"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@chat",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamada",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@cita",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamar",
+     "vol": 0.11
+    }
+   ],
+   "key": "b_s6",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Si tienes una inmobiliaria con más de 5 asesores y estás cansado de perder dinero, dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "¿+5 ASESORES?",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "b_s7",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

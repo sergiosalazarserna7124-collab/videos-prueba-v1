@@ -1,0 +1,274 @@
+{
+ "id": "G6-si-la-mitad-de-mis-leads-llegara-de-noche",
+ "title": "Si casi la mitad de mis leads llegara de noche",
+ "voice": "fernando",
+ "music": "music/drive.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "noche",
+  "guardia",
+  "horario",
+  "enfriar"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Si yo tuviera una inmobiliaria con más de 5 asesores y casi la mitad de mis leads llegara de noche o en fin de semana, esto es lo que haría.",
+   "p": {
+    "img": "woman_night_phone",
+    "lines": [
+     "LEADS DE",
+     "[NOCHE]"
+    ],
+    "kicker": "Inmobiliaria con +5 asesores"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "g6_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "stat",
+   "text": "Porque así pasa: de 6,497 leads que medimos, el 47% llegó fuera de horario, y la mitad de esos esperó más de 10 horas por la primera respuesta.",
+   "p": {
+    "items": [
+     {
+      "value": 47,
+      "label": "llegó fuera de horario",
+      "at": "@47%",
+      "color": "amber",
+      "suffix": "%"
+     },
+     {
+      "value": 10,
+      "label": "esperó la mitad por la primera respuesta",
+      "at": "@10",
+      "color": "red",
+      "prefix": "+",
+      "suffix": " h"
+     }
+    ],
+    "foot": "6,497 leads medidos en Lead Master"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@47%",
+     "vol": 0.09
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@10",
+     "vol": 0.09
+    }
+   ],
+   "key": "g6_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Para entonces ya le habían escrito a otra inmobiliaria.",
+   "p": {
+    "img": "night_building",
+    "lines": [
+     "YA LE ESCRIBIÓ",
+     "A [OTRA]"
+    ],
+    "lineAts": [
+     0,
+     "@otra"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@otra",
+     "vol": 0.1
+    }
+   ],
+   "key": "g6_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "flow",
+   "text": "Lo primero: una guardia en la noche y los fines de semana, con los leads asignados solos.",
+   "p": {
+    "nodes": [
+     {
+      "t": "Lead a las 11 pm",
+      "at": 0,
+      "color": "cyan"
+     },
+     {
+      "t": "Asesor de guardia",
+      "at": "@guardia",
+      "color": "purple"
+     },
+     {
+      "t": "Asignado solo",
+      "at": "@asignados",
+      "color": "green"
+     }
+    ],
+    "title": "1 · GUARDIA"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 0,
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@guardia",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@asignados",
+     "vol": 0.12
+    }
+   ],
+   "key": "g6_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "phonelist",
+   "text": "Lo segundo: que a primera hora cada asesor tenga en su lista los leads de la noche, con un tiempo para llamar, y si no llama, que pasen a otro.",
+   "p": {
+    "items": [
+     {
+      "t": "Leads de la noche",
+      "at": "@noche",
+      "color": "red",
+      "n": 4
+     },
+     {
+      "t": "Tiempo para llamar",
+      "at": "@tiempo",
+      "color": "amber",
+      "sub": "20 minutos"
+     },
+     {
+      "t": "Si no llamas, pasa a otro",
+      "at": "@pasen",
+      "color": "purple"
+     }
+    ],
+    "bg": "advisor_woman",
+    "title": "2 · Mi trabajo",
+    "sub": "8:00 am",
+    "clock": "8:00"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@noche",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@tiempo",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@pasen",
+     "vol": 0.11
+    }
+   ],
+   "key": "g6_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "bars",
+   "text": "Y lo último: ver cada semana cuánto tarda cada asesor en responder, para saber quién está dejando enfriar los leads.",
+   "p": {
+    "rows": [
+     {
+      "name": "Paola Gutiérrez",
+      "value": 6,
+      "sub": "min"
+     },
+     {
+      "name": "Valeria Ríos",
+      "value": 14,
+      "sub": "min"
+     },
+     {
+      "name": "Diego Herrera",
+      "value": 95,
+      "sub": "min",
+      "color": "red"
+     }
+    ],
+    "at": "@tarda",
+    "title": "3 · Tiempo de respuesta"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/riser.wav",
+     "at": "@tarda",
+     "vol": 0.08
+    }
+   ],
+   "key": "g6_s6",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Eso hace Lead Master. Dale clic al link de abajo y te lo instalamos en tu inmobiliaria.",
+   "p": {
+    "mode": "ad",
+    "top": "NINGÚN LEAD SE ENFRÍA",
+    "button": "Dale clic al link"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "g6_s7",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

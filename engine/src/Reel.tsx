@@ -11,6 +11,14 @@ import {FloatChats} from './scenes/FloatChats';
 import {Stack} from './scenes/Stack';
 import {Panel} from './scenes/Panel';
 import {Cta} from './scenes/Cta';
+import {Stat} from './scenes/Stat';
+import {Quote} from './scenes/Quote';
+import {Compare} from './scenes/Compare';
+import {Events} from './scenes/Events';
+import {Flow} from './scenes/Flow';
+import {Bars} from './scenes/Bars';
+import {PhoneList} from './scenes/PhoneList';
+import {Mock} from './scenes/Mock';
 
 loadFonts();
 
@@ -23,6 +31,14 @@ const SCENES: Record<string, React.FC<{dur: number; p: any}>> = {
   stack: Stack,
   panel: Panel,
   cta: Cta,
+  stat: Stat,
+  quote: Quote,
+  compare: Compare,
+  events: Events,
+  flow: Flow,
+  bars: Bars,
+  phonelist: PhoneList,
+  mock: Mock,
 };
 
 export type SceneSpec = {

@@ -1,0 +1,180 @@
+{
+ "id": "18-tu-asesor-dice-que-marco-15",
+ "title": "Tu asesor dice que marcó 15. Tu CRM dice 13",
+ "voice": "fernando",
+ "music": "music/drive.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "comprobar",
+  "grabada",
+  "verdad",
+  "crees"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Tu asesor inmobiliario dice que marcó 15 veces. Tu CRM dice 13. ¿A quién le crees?",
+   "p": {
+    "img": "headset_calls",
+    "lines": [
+     "DICE 15.",
+     "TU CRM DICE [13]."
+    ],
+    "kicker": "Inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n18_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "quote",
+   "text": "Un dueño nos lo dijo así: «si me ponen que llamaron 20, tengo que confiar en que llamaron 20, pero no puedo controlarlo».",
+   "p": {
+    "text": "Si me ponen que llamaron 20, tengo que confiar en que llamaron 20, pero no puedo controlarlo.",
+    "img": "owner_stressed",
+    "who": "Dueño de inmobiliaria"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    }
+   ],
+   "key": "n18_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "quote",
+   "text": "Y otro: «no es que lo hagan a propósito, es que no llevan el hábito de registrar».",
+   "p": {
+    "text": "No es que lo hagan a propósito, es que no llevan el hábito de registrar.",
+    "img": "meeting",
+    "who": "Dueño de inmobiliaria"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    }
+   ],
+   "key": "n18_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "El resultado es el mismo: decides a quién darle más leads con números que nadie puede comprobar.",
+   "p": {
+    "img": "office_agents",
+    "lines": [
+     "NÚMEROS QUE NADIE",
+     "PUEDE [COMPROBAR]"
+    ],
+    "lineAts": [
+     0,
+     "@comprobar"
+    ],
+    "size": 104
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@comprobar",
+     "vol": 0.1
+    }
+   ],
+   "key": "n18_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "phonelist",
+   "text": "Con Lead Master, cada llamada que sale del CRM queda grabada, con hora y duración, y la IA te dice qué se habló y en qué quedaron. Los chats de WhatsApp también quedan. Ya no tienes que creerle a nadie: lo ves.",
+   "p": {
+    "items": [
+     {
+      "t": "10:42 · Adriana Solís",
+      "at": "@hora",
+      "color": "red",
+      "sub": "0:00 · no contestó"
+     },
+     {
+      "t": "11:15 · Diana Trejo",
+      "at": "@duración",
+      "color": "green",
+      "sub": "3:48 · quedó en visita"
+     },
+     {
+      "t": "Resumen de la IA",
+      "at": "@quedaron",
+      "color": "purple",
+      "sub": "Qué se habló y en qué quedaron"
+     }
+    ],
+    "bg": "headset_calls",
+    "title": "Llamadas de Diego",
+    "sub": "Grabadas desde el CRM"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@hora",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@duración",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@quedaron",
+     "vol": 0.11
+    }
+   ],
+   "key": "n18_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Como dijo un cliente: «mi verdad es lo que dice el sistema». Dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "«MI VERDAD ES EL SISTEMA»",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n18_s6",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

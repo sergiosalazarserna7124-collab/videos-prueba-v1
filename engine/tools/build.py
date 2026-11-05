@@ -24,7 +24,12 @@ CHROME = '/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-li
 TTS_MAP = {
     'Lead': 'Lid', 'Master': 'Máster', 'lead': 'lid', 'leads': 'lids', 'Leads': 'Lids',
     'SISTEMA': 'sistema', 'LEADS': 'lids', 'CRM': 'CRM', 'INMOBILIARIO': 'inmobiliario',
+    'GoHighLevel': 'Go High Level', 'CRA': 'ce erre a', 'CRAs': 'ce erre as',
 }
+
+# Palabras que siempre se resaltan en los subtítulos (además de las del video y los números).
+BASE_KEYWORDS = ['Lead', 'Master', 'WhatsApp', 'CRM', 'Meta', 'GoHighLevel', 'control', 'citas', 'ventas',
+                 'curiosos', 'Excel', 'demanda', 'dinero', 'reporte', 'robando', 'renunció', 'noche']
 
 GAP = 0.12  # segundos entre escenas
 TAIL = 0.18  # aire después de la última sílaba de cada escena
@@ -36,13 +41,25 @@ def norm(s):
     return re.sub(r'[^\w]', '', s).lower()
 
 
-def to_tts(text):
-    out = []
+def tts_tokens(text):
+    """Devuelve (palabras para la voz, palabras para pantalla alineadas 1 a 1).
+
+    Si una palabra se pronuncia con varias (GoHighLevel -> Go High Level), en pantalla
+    la primera lleva el texto original y las demás quedan vacías.
+    """
+    voice, disp = [], []
     for tok in text.split():
         m = re.match(r'^([«"¿¡(]*)(.*?)([.,;:!?»")…]*)$', tok)
         pre, core, post = m.groups()
-        out.append(pre + TTS_MAP.get(core, core) + post)
-    return ' '.join(out)
+        parts = TTS_MAP.get(core, core).split(' ')
+        for j, part in enumerate(parts):
+            voice.append((pre if j == 0 else '') + part + (post if j == len(parts) - 1 else ''))
+            disp.append(tok if j == 0 else '')
+    return voice, disp
+
+
+def to_tts(text):
+    return ' '.join(tts_tokens(text)[0])
 
 
 def words_from_alignment(al):
@@ -74,16 +91,26 @@ def probe_dur(path):
 
 def build(spec_path, safe=False):
     spec = json.load(open(spec_path))
-    keywords = {norm(k) for k in spec.get('keywords', [])}
+    keywords = {norm(k) for k in spec.get('keywords', []) + BASE_KEYWORDS}
     scenes = []
     all_words = []
     t0 = 0.0
     for i, sc in enumerate(spec['scenes']):
         key = sc['key']
-        tempo = spec.get('tempo', 1.0)
+        tempo = sc.get('tempo', spec.get('tempo', 1.0))
         mp3 = os.path.join(PUB, 'tts', f'{key}.mp3')
         audio_rel = f'tts/{key}.mp3'
-        if abs(tempo - 1.0) > 1e-3:
+        factor = tempo  # cuánto se acorta el tiempo de la voz
+        if sc.get('fx') == 'aguda':
+            # Voz de parodia: más aguda, con vibrato, sin alargarla.
+            tag = f'{key}@aguda.mp3'
+            out = os.path.join(PUB, 'tts', tag)
+            if not os.path.exists(out):
+                af = 'asetrate=44100*1.3,aresample=44100,atempo=0.92,vibrato=f=6:d=0.25'
+                subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', mp3, '-af', af, '-b:a', '192k', out], check=True)
+            mp3, audio_rel = out, f'tts/{tag}'
+            factor = 1.3 * 0.92
+        elif abs(tempo - 1.0) > 1e-3:
             # Acelera la voz sin cambiar el tono (quita aire, más ritmo).
             tag = f'{key}@{int(round(tempo * 100))}.mp3'
             fast = os.path.join(PUB, 'tts', tag)
@@ -91,9 +118,9 @@ def build(spec_path, safe=False):
                 subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', mp3, '-af', f'atempo={tempo}', '-b:a', '192k', fast], check=True)
             mp3, audio_rel = fast, f'tts/{tag}'
         al = json.load(open(os.path.join(PUB, 'tts', f'{key}.json')))
-        al = {'chars': al['chars'], 'start': [x / tempo for x in al['start']], 'end': [x / tempo for x in al['end']]}
+        al = {'chars': al['chars'], 'start': [x / factor for x in al['start']], 'end': [x / factor for x in al['end']]}
         tw = words_from_alignment(al)
-        disp = sc['text'].split()
+        disp = tts_tokens(sc['text'])[1]
         if len(tw) != len(disp):
             print(f'  ! {key}: {len(tw)} palabras de voz vs {len(disp)} en pantalla; uso las de la voz')
             disp = [w for w, _, _ in tw]
@@ -130,8 +157,10 @@ def build(spec_path, safe=False):
             'audio': audio_rel, 'sfx': sfx, 'captions': sc.get('captions', True),
         })
         for d, s, e in local:
+            if not d:
+                continue  # parte extra de una palabra que se pronuncia con varias
             all_words.append({'w': d, 's': round(start_f / FPS + s, 3), 'e': round(start_f / FPS + e, 3),
-                              'hl': norm(d) in keywords})
+                              'hl': norm(d) in keywords or bool(re.search(r'\d', d))})
         t0 += dur_s
     total = round(t0 * FPS)
     props = {

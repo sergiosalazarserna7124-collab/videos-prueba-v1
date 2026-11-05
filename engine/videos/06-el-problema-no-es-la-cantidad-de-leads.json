@@ -1,0 +1,240 @@
+{
+ "id": "06-el-problema-no-es-la-cantidad-de-leads",
+ "title": "El problema no es la cantidad de leads",
+ "voice": "fernando",
+ "music": "music/drive.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "oficina",
+  "pagando",
+  "raro"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "El problema de tu inmobiliaria no es la cantidad de leads que te llegan.",
+   "p": {
+    "img": "dashboard_tv",
+    "lines": [
+     "NO TE FALTAN",
+     "[LEADS]"
+    ],
+    "kicker": "Inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n06_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "stack",
+   "text": "Cuando las ventas no salen, todos piden lo mismo: más leads, mejores leads, otra agencia.",
+   "p": {
+    "items": [
+     {
+      "t": "Más leads",
+      "at": "@más",
+      "color": "amber"
+     },
+     {
+      "t": "Mejores leads",
+      "at": "@mejores",
+      "color": "amber"
+     },
+     {
+      "t": "Otra agencia",
+      "at": "@agencia",
+      "color": "red"
+     }
+    ],
+    "img": "meeting",
+    "title": "LO QUE TODOS PIDEN"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@más",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@mejores",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@agencia",
+     "vol": 0.12
+    }
+   ],
+   "key": "n06_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "stat",
+   "text": "Pero cuando medimos 6,497 leads de 11 inmobiliarias durante 60 días, 1 de cada 3 nunca habló con una persona. No contestaron mal: nadie los llamó.",
+   "p": {
+    "items": [
+     {
+      "value": 1,
+      "label": "nunca habló con una persona",
+      "at": "@1",
+      "color": "red",
+      "suffix": " de cada 3"
+     }
+    ],
+    "foot": "6,497 leads de 11 inmobiliarias en 60 días"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@1",
+     "vol": 0.09
+    }
+   ],
+   "key": "n06_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "stat",
+   "text": "Y lo más raro es que se quedaron sin contacto más los que llegaron en horario de oficina que los de la noche. Estás pagando leads que tu propio equipo no atiende.",
+   "p": {
+    "items": [
+     {
+      "value": 40,
+      "label": "sin contacto en horario de oficina",
+      "at": "@oficina",
+      "color": "red",
+      "suffix": "%"
+     },
+     {
+      "value": 33,
+      "label": "sin contacto de noche",
+      "at": "@noche",
+      "color": "amber",
+      "suffix": "%"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@oficina",
+     "vol": 0.09
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@noche",
+     "vol": 0.09
+    }
+   ],
+   "key": "n06_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "panel",
+   "text": "Lead Master te dice, el mismo día y con nombre, qué leads nadie ha llamado, quién los tiene asignados y cuánto llevan esperando. Y a cada asesor le marca a quién buscar primero.",
+   "p": {
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Diego Herrera",
+      "lead": "Adriana Solís",
+      "summary": "Esperando desde hace 5 horas.",
+      "status": "Sin contacto",
+      "color": "red",
+      "at": "@nadie"
+     },
+     {
+      "ch": "call",
+      "advisor": "Andrés Molina",
+      "lead": "Lucía Hernández",
+      "summary": "Esperando desde hace 26 horas.",
+      "status": "Sin contacto",
+      "color": "red",
+      "at": "@asignados"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Buscar primero.",
+      "status": "Urgente",
+      "color": "amber",
+      "at": "@primero"
+     }
+    ],
+    "title": "Sin contacto hoy"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@nadie",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@asignados",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@primero",
+     "vol": 0.08
+    }
+   ],
+   "key": "n06_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Antes de comprar más leads, atiende los que ya pagaste. Dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "ATIENDE LOS QUE YA PAGASTE",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n06_s6",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

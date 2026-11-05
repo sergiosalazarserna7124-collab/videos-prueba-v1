@@ -1,0 +1,253 @@
+{
+ "id": "05-departamentos-de-mas-de-3-millones",
+ "title": "Si vendes departamentos de más de 3 millones",
+ "voice": "fernando",
+ "music": "music/pulse.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "serios",
+  "primero",
+  "millones"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Si vendes departamentos de más de 3 millones de pesos y no tienes este sistema, estás perdiendo compradores serios entre cientos de mensajes.",
+   "p": {
+    "img": "living_ocean",
+    "lines": [
+     "COMPRADORES",
+     "[SERIOS]"
+    ],
+    "kicker": "Depas de +3 millones"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n05_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "La persona que tiene el dinero para comprar no le escribe solo a tu inmobiliaria. Le escribe a tres o cuatro al mismo tiempo.",
+   "p": {
+    "img": "couple_tour",
+    "lines": [
+     "LE ESCRIBE A",
+     "[4 INMOBILIARIAS]"
+    ],
+    "lineAts": [
+     0,
+     "@cuatro"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@cuatro",
+     "vol": 0.1
+    }
+   ],
+   "key": "n05_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Y casi siempre compra con la que le contesta primero, le resuelve las dudas y la invita a ver el proyecto.",
+   "p": {
+    "img": "showing_tour",
+    "lines": [
+     "GANA LA QUE",
+     "CONTESTA [PRIMERO]"
+    ],
+    "lineAts": [
+     0,
+     "@primero"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@primero",
+     "vol": 0.1
+    }
+   ],
+   "key": "n05_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "stat",
+   "text": "En las inmobiliarias que medimos, la mitad de los leads esperó más de 2 horas por el primer contacto. Solo 17 de cada 100 recibieron respuesta en 5 minutos.",
+   "p": {
+    "items": [
+     {
+      "value": 2,
+      "label": "esperó la mitad por el primer contacto",
+      "at": "@2",
+      "color": "red",
+      "prefix": "+",
+      "suffix": " h"
+     },
+     {
+      "value": 17,
+      "label": "de cada 100 recibieron respuesta en 5 minutos",
+      "at": "@17",
+      "color": "amber"
+     }
+    ],
+    "foot": "6,497 leads de 11 inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@2",
+     "vol": 0.09
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@17",
+     "vol": 0.09
+    }
+   ],
+   "key": "n05_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "flow",
+   "text": "Con Lead Master, cada lead llega directo al asesor que le toca, con aviso por WhatsApp. Si no hay llamada en el tiempo que tú decides, pasa al siguiente asesor.",
+   "p": {
+    "nodes": [
+     {
+      "t": "Lead nuevo",
+      "at": 0,
+      "color": "cyan"
+     },
+     {
+      "t": "Aviso por WhatsApp al asesor",
+      "at": "@WhatsApp",
+      "color": "cyan"
+     },
+     {
+      "t": "¿Sin llamada a tiempo?",
+      "at": "@siguiente",
+      "color": "amber",
+      "sub": "pasa al siguiente asesor"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 0,
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@siguiente",
+     "vol": 0.12
+    }
+   ],
+   "key": "n05_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "bars",
+   "text": "Y tú ves cuánto tarda cada uno en responder, con cada lead.",
+   "p": {
+    "rows": [
+     {
+      "name": "Paola Gutiérrez",
+      "value": 4,
+      "sub": "min"
+     },
+     {
+      "name": "Valeria Ríos",
+      "value": 9,
+      "sub": "min"
+     },
+     {
+      "name": "Andrés Molina",
+      "value": 38,
+      "sub": "min"
+     },
+     {
+      "name": "Diego Herrera",
+      "value": 126,
+      "sub": "min",
+      "color": "red"
+     }
+    ],
+    "at": "@tarda",
+    "title": "Tiempo de respuesta"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/riser.wav",
+     "at": "@tarda",
+     "vol": 0.08
+    }
+   ],
+   "key": "n05_s6",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Dale clic al botón de abajo y te lo instalamos en tu inmobiliaria en 7 días.",
+   "p": {
+    "mode": "ad",
+    "top": "LISTO EN 7 DÍAS",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n05_s7",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

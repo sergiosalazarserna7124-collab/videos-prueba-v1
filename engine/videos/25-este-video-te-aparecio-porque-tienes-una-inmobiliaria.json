@@ -1,0 +1,257 @@
+{
+ "id": "25-este-video-te-aparecio-porque-tienes-una-inmobiliaria",
+ "title": "Este video te apareció porque tienes una inmobiliaria",
+ "voice": "antonio",
+ "music": "music/pulse.mp3",
+ "tempo": 1.12,
+ "keywords": [
+  "apareció",
+  "inmobiliarias",
+  "chatbot"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Este video te apareció porque tienes una inmobiliaria, o porque viste algo de Lead Master estos días.",
+   "p": {
+    "img": "tulum_pool",
+    "lines": [
+     "ESTE VIDEO TE",
+     "[APARECIÓ] POR ESTO"
+    ],
+    "kicker": "Tienes una inmobiliaria"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n25_s1",
+   "voice": "antonio"
+  },
+  {
+   "type": "photo",
+   "text": "Seguramente ya probaste un CRM que tu equipo nunca llenó, o un bot que espantó a tus leads. Y sigues sin saber qué pasa con cada lead que pagas.",
+   "p": {
+    "img": "robot_reception",
+    "lines": [
+     "OTRO CRM.",
+     "OTRO [BOT]."
+    ],
+    "lineAts": [
+     "@CRM",
+     "@bot"
+    ],
+    "stamp": {
+     "text": "NO FUNCIONÓ",
+     "at": "@sigues"
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@bot",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@sigues",
+     "vol": 0.28
+    }
+   ],
+   "key": "n25_s2",
+   "voice": "antonio"
+  },
+  {
+   "type": "stack",
+   "text": "Lead Master es un sistema de gestión comercial hecho solo para inmobiliarias. No es un CRM más ni un chatbot de botones.",
+   "p": {
+    "items": [
+     {
+      "t": "Hecho solo para inmobiliarias",
+      "at": "@inmobiliarias",
+      "color": "green"
+     },
+     {
+      "t": "No es un CRM más",
+      "at": "@CRM",
+      "color": "amber"
+     },
+     {
+      "t": "No es un chatbot de botones",
+      "at": "@chatbot",
+      "color": "amber"
+     }
+    ],
+    "title": "LEAD MASTER"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@inmobiliarias",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@CRM",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@chatbot",
+     "vol": 0.12
+    }
+   ],
+   "key": "n25_s3",
+   "voice": "antonio"
+  },
+  {
+   "type": "flow",
+   "text": "Se conecta al WhatsApp y a las llamadas de tus asesores, llena el CRM solo, le dice a cada asesor qué hacer cada día y a ti te manda el reporte de tu equipo por WhatsApp.",
+   "p": {
+    "nodes": [
+     {
+      "t": "WhatsApp y llamadas",
+      "at": "@WhatsApp",
+      "color": "cyan"
+     },
+     {
+      "t": "CRM lleno solo",
+      "at": "@llena",
+      "color": "green"
+     },
+     {
+      "t": "Qué hacer cada día",
+      "at": "@día",
+      "color": "amber",
+      "sub": "para cada asesor"
+     },
+     {
+      "t": "Reporte por WhatsApp",
+      "at": "@reporte",
+      "color": "purple",
+      "sub": "para ti"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llena",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@día",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@reporte",
+     "vol": 0.12
+    }
+   ],
+   "key": "n25_s4",
+   "voice": "antonio"
+  },
+  {
+   "type": "stat",
+   "text": "Ya lo usan más de 15 inmobiliarias en México, Colombia y Estados Unidos. Lo instalamos en 7 días, te acompañamos 60 y tu equipo no aprende nada nuevo: solo habla con sus leads.",
+   "p": {
+    "items": [
+     {
+      "value": 15,
+      "label": "inmobiliarias en México, Colombia y EE. UU.",
+      "at": "@15",
+      "color": "cyan",
+      "prefix": "+"
+     },
+     {
+      "value": 7,
+      "label": "días para instalarlo",
+      "at": "@7",
+      "color": "green"
+     },
+     {
+      "value": 60,
+      "label": "días de acompañamiento",
+      "at": "@60",
+      "color": "purple"
+     }
+    ],
+    "stacked": true
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@15",
+     "vol": 0.09
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@7",
+     "vol": 0.09
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@60",
+     "vol": 0.09
+    }
+   ],
+   "key": "n25_s5",
+   "voice": "antonio"
+  },
+  {
+   "type": "cta",
+   "text": "Si tienes 5 asesores o más e inviertes en anuncios, dale clic al botón de abajo y agenda una llamada.",
+   "p": {
+    "mode": "ad",
+    "top": "+5 ASESORES",
+    "button": "Agenda una llamada"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n25_s6",
+   "voice": "antonio",
+   "captions": true
+  }
+ ]
+}

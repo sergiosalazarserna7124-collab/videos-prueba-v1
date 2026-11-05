@@ -80,7 +80,7 @@ export const Panel: React.FC<{dur: number; p: any}> = ({dur, p}) => {
                     </div>
                   )}
                   <div style={{fontFamily: FONT.ui, fontWeight: 700, fontSize: 31, color: C.white}}>{r.advisor}</div>
-                  <div style={{fontFamily: FONT.ui, fontSize: 26, color: C.gray}}>con {r.lead}</div>
+                  <div style={{fontFamily: FONT.ui, fontSize: 26, color: C.gray}}>{(r as any).raw ? r.lead : `con ${r.lead}`}</div>
                   <div
                     style={{
                       marginLeft: 'auto',

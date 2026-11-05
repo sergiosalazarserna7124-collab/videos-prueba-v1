@@ -1,0 +1,333 @@
+{
+ "id": "A-por-que-tu-crm-no-funciona",
+ "title": "Por qué tu CRM no funciona",
+ "voice": "fernando",
+ "music": "music/pulse.mp3",
+ "tempo": 1.12,
+ "keywords": [
+  "etapas",
+  "notas",
+  "tareas",
+  "carga",
+  "cero",
+  "malo",
+  "monitorea",
+  "olvido"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Si tienes una inmobiliaria y ya pagaste un CRM, esto te va a doler: 8 de cada 10 inmobiliarias que implementan un CRM no lo terminan usando.",
+   "p": {
+    "img": "excel_night",
+    "lines": [
+     "8 DE CADA 10",
+     "[NO USAN] SU CRM"
+    ],
+    "kicker": "Inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "a_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "stack",
+   "text": "Si ya lo viviste, lo sabes. Tus asesores no actualizan las etapas, no ponen notas, no crean tareas.",
+   "p": {
+    "items": [
+     {
+      "t": "Nadie las actualiza",
+      "at": "@etapas",
+      "color": "amber",
+      "k": "Etapas"
+     },
+     {
+      "t": "Nadie las pone",
+      "at": "@notas",
+      "color": "amber",
+      "k": "Notas"
+     },
+     {
+      "t": "Nadie las crea",
+      "at": "@tareas",
+      "color": "red",
+      "k": "Tareas"
+     }
+    ],
+    "img": "office_agents"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@etapas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@notas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@tareas",
+     "vol": 0.12
+    }
+   ],
+   "key": "a_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "floatchats",
+   "text": "Para ellos el CRM es una carga, así que hablan con el lead desde su WhatsApp y a ti nadie te reporta nada.",
+   "p": {
+    "img": "advisor_car",
+    "lines": [
+     "TODO PASA",
+     "EN SU [WHATSAPP]"
+    ],
+    "titleTop": 640,
+    "lineAts": [
+     "@hablan",
+     "@WhatsApp"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/riser.wav",
+     "at": 0,
+     "vol": 0.07
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    }
+   ],
+   "key": "a_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "stat",
+   "text": "Y terminas con marketing celebrando mil leads, muy pocas cartas oferta y, a veces, cero ventas.",
+   "p": {
+    "items": [
+     {
+      "value": 1000,
+      "label": "leads que celebra marketing",
+      "at": "@mil",
+      "color": "cyan"
+     },
+     {
+      "value": 0,
+      "label": "ventas",
+      "at": "@cero",
+      "color": "red"
+     }
+    ],
+    "img": "meeting"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@mil",
+     "vol": 0.09
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@cero",
+     "vol": 0.09
+    }
+   ],
+   "key": "a_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Sin saber si el lead era malo o si el asesor hizo un mal trabajo, no puedes arreglar nada.",
+   "p": {
+    "img": "owner_stressed",
+    "lines": [
+     "¿LEAD MALO",
+     "O [MAL ASESOR]?"
+    ],
+    "lineAts": [
+     0,
+     "@asesor"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@asesor",
+     "vol": 0.1
+    }
+   ],
+   "key": "a_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "panel",
+   "text": "Por eso creamos un sistema que monitorea todo lo que hace tu equipo comercial. Tus asesores solo hablan con el lead desde su WhatsApp; el sistema registra cada chat y cada intento, mueve la etapa y pone la nota.",
+   "p": {
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Busca 2 recámaras en Tulum. Visita el jueves a las 5 pm.",
+      "status": "Etapa: cita",
+      "color": "green",
+      "at": "@registra"
+     },
+     {
+      "ch": "call",
+      "advisor": "Diego Herrera",
+      "lead": "Adriana Solís",
+      "summary": "3 intentos de llamada sin respuesta. Siguiente intento: hoy 6 pm.",
+      "status": "En seguimiento",
+      "color": "amber",
+      "at": "@intento"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Paola Gutiérrez",
+      "lead": "Lucía Hernández",
+      "summary": "Pidió precios de preventa. Nota escrita por la IA.",
+      "status": "Nota lista",
+      "color": "cyan",
+      "at": "@nota"
+     }
+    ],
+    "title": "Tu equipo, en automático"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@registra",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@intento",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@nota",
+     "vol": 0.08
+    }
+   ],
+   "key": "a_s6",
+   "voice": "fernando"
+  },
+  {
+   "type": "phonelist",
+   "text": "Y cada semana tú recibes qué pasó con cada prospecto: a quién llamaron, quién nunca contestó y a quién dejaron en el olvido.",
+   "p": {
+    "items": [
+     {
+      "t": "A quién llamaron",
+      "at": "@llamaron",
+      "color": "green",
+      "n": 142
+     },
+     {
+      "t": "Quién nunca contestó",
+      "at": "@contestó",
+      "color": "amber",
+      "n": 38
+     },
+     {
+      "t": "Leads en el olvido",
+      "at": "@olvido",
+      "color": "red",
+      "n": 21
+     }
+    ],
+    "bg": "owner_phone_report",
+    "title": "Reporte semanal",
+    "sub": "Lead Master · lunes 8:00"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@llamaron",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@contestó",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@olvido",
+     "vol": 0.11
+    }
+   ],
+   "key": "a_s7",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Si tienes una inmobiliaria con al menos 5 asesores y quieres más recorridos, cartas oferta y ventas, dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "+5 ASESORES",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "a_s8",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

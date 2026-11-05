@@ -1,0 +1,202 @@
+{
+ "id": "21-el-lead-de-las-11-de-la-noche",
+ "title": "El lead de las 11 de la noche",
+ "voice": "fernando",
+ "music": "music/pulse.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "noche",
+  "lunes",
+  "guardia",
+  "horario"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Casi la mitad de los leads de tu inmobiliaria llega de noche o en fin de semana. ¿Quién los contesta?",
+   "p": {
+    "img": "woman_night_phone",
+    "lines": [
+     "CASI LA MITAD",
+     "LLEGA DE [NOCHE]"
+    ],
+    "kicker": "Inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n21_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "stat",
+   "text": "De los 6,497 leads que medimos, el 47% llegó fuera de horario. Y la mitad de esos esperó más de 10 horas por la primera respuesta.",
+   "p": {
+    "items": [
+     {
+      "value": 47,
+      "label": "de los leads llegó fuera de horario",
+      "at": "@47%",
+      "color": "amber",
+      "suffix": "%"
+     },
+     {
+      "value": 10,
+      "label": "esperó la mitad por la primera respuesta",
+      "at": "@10",
+      "color": "red",
+      "prefix": "+",
+      "suffix": " h"
+     }
+    ],
+    "foot": "6,497 leads medidos en Lead Master"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@47%",
+     "vol": 0.09
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@10",
+     "vol": 0.09
+    }
+   ],
+   "key": "n21_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "La persona que vio tu desarrollo un domingo en la noche no espera al lunes: le escribe a otras dos inmobiliarias y se queda con la que contesta primero.",
+   "p": {
+    "img": "night_building",
+    "lines": [
+     "NO ESPERA",
+     "AL [LUNES]"
+    ],
+    "lineAts": [
+     0,
+     "@lunes"
+    ],
+    "stamp": {
+     "text": "SE FUE CON OTRA",
+     "at": "@primero",
+     "size": 84
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@lunes",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@primero",
+     "vol": 0.28
+    }
+   ],
+   "key": "n21_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "flow",
+   "text": "Con Lead Master pones tus reglas: guardia en la noche y los fines de semana, y para lo que llega fuera de horario, recordatorio a primera hora con un tiempo para llamar. Si nadie llama, el lead pasa al siguiente asesor. Y tú ves cuánto tarda cada uno.",
+   "p": {
+    "nodes": [
+     {
+      "t": "Guardia de noche y fin de semana",
+      "at": "@guardia",
+      "color": "purple"
+     },
+     {
+      "t": "Recordatorio a primera hora",
+      "at": "@recordatorio",
+      "color": "cyan",
+      "sub": "con tiempo para llamar"
+     },
+     {
+      "t": "Si nadie llama, pasa al siguiente",
+      "at": "@siguiente",
+      "color": "amber"
+     },
+     {
+      "t": "Ves cuánto tarda cada uno",
+      "at": "@tarda",
+      "color": "green"
+     }
+    ],
+    "title": "TUS REGLAS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@guardia",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@recordatorio",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@siguiente",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@tarda",
+     "vol": 0.12
+    }
+   ],
+   "key": "n21_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Que ningún lead espere hasta el lunes. Dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "NINGÚN LEAD ESPERA AL LUNES",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n21_s5",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}

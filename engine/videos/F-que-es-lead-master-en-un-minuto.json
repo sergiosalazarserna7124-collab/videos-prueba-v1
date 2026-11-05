@@ -1,0 +1,318 @@
+{
+ "id": "F-que-es-lead-master-en-un-minuto",
+ "title": "Qué es Lead Master, en un minuto",
+ "voice": "antonio",
+ "music": "music/drive.mp3",
+ "tempo": 1.12,
+ "keywords": [
+  "Uno",
+  "Dos",
+  "Tres",
+  "Cuatro",
+  "Cinco"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Si tienes una inmobiliaria, te explico en un minuto qué es Lead Master y por qué ya lo usan más de 15 inmobiliarias en México, Colombia y Estados Unidos.",
+   "p": {
+    "img": "showroom",
+    "lines": [
+     "LEAD MASTER",
+     "EN [UN MINUTO]"
+    ],
+    "kicker": "Inmobiliarias"
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "f_s1",
+   "voice": "antonio"
+  },
+  {
+   "type": "flow",
+   "text": "Uno: junta todos tus leads de portales, referidos y anuncios, y los reparte entre tus asesores; si uno no atiende a tiempo, pasa al siguiente.",
+   "p": {
+    "nodes": [
+     {
+      "t": "Portales · referidos · anuncios",
+      "at": "@portales",
+      "color": "cyan"
+     },
+     {
+      "t": "Lead Master",
+      "at": "@reparte",
+      "color": "purple"
+     },
+     {
+      "t": "Asesor asignado",
+      "at": "@asesores",
+      "color": "cyan"
+     },
+     {
+      "t": "Si no atiende, pasa al siguiente",
+      "at": "@siguiente",
+      "color": "amber"
+     }
+    ],
+    "title": "1 · TODOS TUS LEADS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@portales",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@reparte",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@asesores",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@siguiente",
+     "vol": 0.12
+    }
+   ],
+   "key": "f_s2",
+   "voice": "antonio"
+  },
+  {
+   "type": "panel",
+   "text": "Dos: como vive en el WhatsApp y las llamadas de cada asesor, sabe a quién contactaron, a quién no y cuánto tardaron.",
+   "p": {
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Contactada en 4 minutos.",
+      "status": "Contactado",
+      "color": "green",
+      "at": "@contactaron"
+     },
+     {
+      "ch": "call",
+      "advisor": "Diego Herrera",
+      "lead": "Adriana Solís",
+      "summary": "Sin llamada en 26 horas.",
+      "status": "Sin contacto",
+      "color": "red",
+      "at": "@no"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Paola Gutiérrez",
+      "lead": "Lucía Hernández",
+      "summary": "Primer mensaje a las 3 h 10 min.",
+      "status": "Tarde",
+      "color": "amber",
+      "at": "@tardaron"
+     }
+    ],
+    "title": "2 · Qué pasó con cada lead"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@contactaron",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@no",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@tardaron",
+     "vol": 0.08
+    }
+   ],
+   "key": "f_s3",
+   "voice": "antonio"
+  },
+  {
+   "type": "phonelist",
+   "text": "Tres: cada día le dice a cada asesor a quién llamar.",
+   "p": {
+    "items": [
+     {
+      "t": "Lo urgente",
+      "at": "@día",
+      "color": "red",
+      "n": 3
+     },
+     {
+      "t": "Nunca los has buscado",
+      "at": "@llamar",
+      "color": "amber",
+      "n": 5
+     }
+    ],
+    "bg": "advisor_woman",
+    "title": "3 · Mi trabajo",
+    "sub": "Qué debo hacer hoy"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@día",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamar",
+     "vol": 0.11
+    }
+   ],
+   "key": "f_s4",
+   "voice": "antonio"
+  },
+  {
+   "type": "phonelist",
+   "text": "Cuatro: te da los reportes sin que nadie llene nada.",
+   "p": {
+    "items": [
+     {
+      "t": "Reporte semanal.pdf",
+      "at": "@reportes",
+      "color": "purple",
+      "sub": "214 leads · 19 citas · 4 apartados"
+     }
+    ],
+    "bg": "owner_phone_report",
+    "title": "4 · Tus reportes",
+    "sub": "Sin que nadie llene nada"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@reportes",
+     "vol": 0.14
+    }
+   ],
+   "key": "f_s5",
+   "voice": "antonio"
+  },
+  {
+   "type": "events",
+   "text": "Cinco: le avisa a Meta quién sí agenda y compra, para que te traiga más compradores y menos curiosos.",
+   "p": {
+    "events": [
+     {
+      "name": "Contactado con respuesta",
+      "count": 184,
+      "at": 0
+     },
+     {
+      "name": "Zoom agendado",
+      "count": 31,
+      "at": 4
+     },
+     {
+      "name": "Cita presencial agendada",
+      "count": 46,
+      "at": 8
+     },
+     {
+      "name": "Vendido",
+      "count": 4,
+      "at": 12
+     }
+    ],
+    "toastAt": "@agenda",
+    "toast": "Evento recibido: Zoom agendado",
+    "toastSub": "5 · Meta aprende quién compra"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 0,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 4,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 8,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 12,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@agenda",
+     "vol": 0.12
+    }
+   ],
+   "key": "f_s6",
+   "voice": "antonio"
+  },
+  {
+   "type": "cta",
+   "text": "Leads ordenados, asesores que saben qué hacer y tú con el control, sin perseguir a nadie. Dale clic y te lo instalamos en tu inmobiliaria.",
+   "p": {
+    "mode": "ad",
+    "top": "TÚ CON EL CONTROL",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "f_s7",
+   "voice": "antonio",
+   "captions": true
+  }
+ ]
+}

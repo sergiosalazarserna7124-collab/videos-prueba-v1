@@ -1,0 +1,259 @@
+{
+ "id": "16-te-vendieron-un-chatbot-de-botones-parodia",
+ "title": "Te vendieron un chatbot de botones (parodia)",
+ "voice": "antonio",
+ "music": "music/pulse.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "bot",
+  "menú",
+  "persona",
+  "botones",
+  "tardó"
+ ],
+ "scenes": [
+  {
+   "type": "mock",
+   "text": "¡Tu inmobiliaria necesita mi chatbot que califica leads con inteligencia artificial de última generación!",
+   "p": {
+    "lines": [
+     {
+      "t": "¡CHATBOT CON IA!",
+      "at": 0
+     },
+     {
+      "t": "¡ÚLTIMA GENERACIÓN!",
+      "at": "@última"
+     }
+    ],
+    "img": "guru"
+   },
+   "fx": "aguda",
+   "voice": "fernando",
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 0,
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@última",
+     "vol": 0.12
+    }
+   ],
+   "key": "n16_s1"
+  },
+  {
+   "type": "chat",
+   "text": "El lead pregunta: ¿el depa tiene estacionamiento? El bot: elige una opción. El lead: quiero hablar con alguien. El bot: no entendí tu respuesta.",
+   "p": {
+    "messages": [
+     {
+      "from": "out",
+      "text": "Hola, ¿el depa tiene estacionamiento?",
+      "at": "@pregunta"
+     },
+     {
+      "from": "in",
+      "text": "¡Hola! Elige una opción: 1. Comprar  2. Rentar  3. Otro",
+      "at": "@elige"
+     },
+     {
+      "from": "out",
+      "text": "Quiero hablar con alguien",
+      "at": "@quiero"
+     },
+     {
+      "from": "in",
+      "text": "No entendí tu respuesta. Elige una opción.",
+      "at": "@entendí"
+     }
+    ],
+    "bg": "robot_reception",
+    "contact": "Asistente virtual",
+    "sub": "bot"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@pregunta",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@elige",
+     "vol": 0.16
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@quiero",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@entendí",
+     "vol": 0.16
+    },
+    {
+     "src": "sfx/scratch.wav",
+     "at": 0,
+     "vol": 0.22
+    }
+   ],
+   "key": "n16_s2",
+   "voice": "antonio"
+  },
+  {
+   "type": "photo",
+   "text": "Y el lead se fue. No quería un menú: quería una persona. Nadie compra un departamento de 5 millones con un menú de botones.",
+   "p": {
+    "img": "woman_night_phone",
+    "lines": [
+     "QUERÍA UNA",
+     "[PERSONA]"
+    ],
+    "lineAts": [
+     "@menú",
+     "@persona"
+    ],
+    "stamp": {
+     "text": "SE FUE",
+     "at": "@fue",
+     "size": 120
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@persona",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@fue",
+     "vol": 0.28
+    }
+   ],
+   "key": "n16_s3",
+   "voice": "antonio"
+  },
+  {
+   "type": "panel",
+   "text": "Lo que tu inmobiliaria necesita no es un bot que conteste por tu asesor. Es saber si tu asesor contestó, cuánto tardó y en qué quedó.",
+   "p": {
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Contestó en 3 minutos · Quedó en visita el sábado.",
+      "status": "Contestó",
+      "color": "green",
+      "at": "@contestó"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Diego Herrera",
+      "lead": "Adriana Solís",
+      "summary": "Tardó 6 horas · Sin siguiente paso.",
+      "status": "Tarde",
+      "color": "red",
+      "at": "@tardó"
+     }
+    ],
+    "title": "Tu equipo, hoy"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@contestó",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@tardó",
+     "vol": 0.08
+    }
+   ],
+   "key": "n16_s4",
+   "voice": "antonio"
+  },
+  {
+   "type": "phonelist",
+   "text": "Lead Master te lo dice con cada lead, el mismo día, y le recuerda al asesor a quién le debe una respuesta.",
+   "p": {
+    "items": [
+     {
+      "t": "Le debes respuesta a Lucía Hernández",
+      "at": "@recuerda",
+      "color": "amber",
+      "sub": "Hace 2 horas"
+     }
+    ],
+    "bg": "advisor_woman",
+    "title": "Mi trabajo",
+    "sub": "Pendientes"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@recuerda",
+     "vol": 0.14
+    }
+   ],
+   "key": "n16_s5",
+   "voice": "antonio"
+  },
+  {
+   "type": "cta",
+   "text": "Dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "QUERÍA UNA PERSONA",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.6,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n16_s6",
+   "voice": "antonio",
+   "captions": true
+  }
+ ]
+}

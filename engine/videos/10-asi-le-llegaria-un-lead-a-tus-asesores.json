@@ -1,0 +1,226 @@
+{
+ "id": "10-asi-le-llegaria-un-lead-a-tus-asesores",
+ "title": "Así le llegaría un lead a tus asesores si usaras Lead Master",
+ "voice": "antonio",
+ "music": "music/drive.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "urgente",
+  "bandeja",
+  "Lucía",
+  "Valeria"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Así le llegaría un lead a tus asesores si tu inmobiliaria usara Lead Master.",
+   "p": {
+    "img": "woman_night_phone",
+    "lines": [
+     "ASÍ LE LLEGA UN",
+     "LEAD A TU [ASESOR]"
+    ],
+    "kicker": "Si usaras Lead Master",
+    "size": 112
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n10_s1",
+   "voice": "antonio"
+  },
+  {
+   "type": "photo",
+   "text": "Hoy, cuando alguien deja sus datos a las 11 de la noche, el lead se queda en una bandeja hasta que alguien se acuerde. Para la mañana siguiente, ya le escribió a otra inmobiliaria.",
+   "p": {
+    "img": "night_building",
+    "lines": [
+     "SE QUEDA EN",
+     "UNA [BANDEJA]"
+    ],
+    "lineAts": [
+     0,
+     "@bandeja"
+    ],
+    "stamp": {
+     "text": "YA ESCRIBIÓ A OTRA",
+     "at": "@otra",
+     "size": 76
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@bandeja",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@otra",
+     "vol": 0.28
+    }
+   ],
+   "key": "n10_s2",
+   "voice": "antonio"
+  },
+  {
+   "type": "flow",
+   "text": "Con Lead Master, Lucía llena el formulario de un departamento en Tulum a las 11:08 de la noche. El sistema se lo asigna a Valeria según tus reglas y le manda un WhatsApp: nuevo lead, Lucía Hernández, dos recámaras en Tulum.",
+   "p": {
+    "nodes": [
+     {
+      "t": "Lucía llena el formulario",
+      "at": "@Lucía",
+      "color": "cyan",
+      "sub": "Depa en Tulum · 11:08 pm"
+     },
+     {
+      "t": "Se asigna a Valeria",
+      "at": "@asigna",
+      "color": "purple",
+      "sub": "según tus reglas"
+     },
+     {
+      "t": "WhatsApp a Valeria",
+      "at": "@WhatsApp",
+      "color": "cyan",
+      "sub": "Nuevo lead: Lucía Hernández"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@Lucía",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@asigna",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    }
+   ],
+   "key": "n10_s3",
+   "voice": "antonio"
+  },
+  {
+   "type": "phonelist",
+   "text": "A primera hora, Valeria la tiene en su lista como urgente y con un tiempo para llamar. Si no llama, el lead pasa a otro asesor.",
+   "p": {
+    "items": [
+     {
+      "t": "Lucía Hernández",
+      "at": "@urgente",
+      "color": "red",
+      "n": 1,
+      "sub": "Urgente · llamar antes de las 8:20"
+     },
+     {
+      "t": "Si no llamas, pasa a otro asesor",
+      "at": "@pasa",
+      "color": "amber"
+     }
+    ],
+    "bg": "advisor_woman",
+    "title": "Mi trabajo",
+    "sub": "8:00 am",
+    "clock": "8:00"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@urgente",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@pasa",
+     "vol": 0.11
+    }
+   ],
+   "key": "n10_s4",
+   "voice": "antonio"
+  },
+  {
+   "type": "panel",
+   "text": "Cuando hablan, la IA anota qué busca Lucía y deja la cita lista para confirmar. Y tú lo ves todo en tu reporte.",
+   "p": {
+    "rows": [
+     {
+      "ch": "call",
+      "advisor": "Valeria Ríos",
+      "lead": "Lucía Hernández",
+      "summary": "Busca 2 recámaras en Tulum para vivir · Visita: sábado 11 am",
+      "status": "Cita para confirmar",
+      "color": "amber",
+      "at": "@cita"
+     }
+    ],
+    "title": "CRM · Lucía Hernández"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@cita",
+     "vol": 0.08
+    }
+   ],
+   "key": "n10_s5",
+   "voice": "antonio"
+  },
+  {
+   "type": "cta",
+   "text": "Ningún lead se queda esperando. Dale clic al botón de abajo y te lo instalamos.",
+   "p": {
+    "mode": "ad",
+    "top": "NINGÚN LEAD ESPERA",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n10_s6",
+   "voice": "antonio",
+   "captions": true
+  }
+ ]
+}

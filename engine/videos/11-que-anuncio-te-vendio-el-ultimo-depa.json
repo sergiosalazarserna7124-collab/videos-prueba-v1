@@ -1,0 +1,253 @@
+{
+ "id": "11-que-anuncio-te-vendio-el-ultimo-depa",
+ "title": "¿Qué anuncio te vendió el último departamento?",
+ "voice": "fernando",
+ "music": "music/pulse.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "anuncio",
+  "barato",
+  "caros",
+  "vendía",
+  "costo"
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "text": "Si tienes una inmobiliaria que invierte en Meta, contéstame esto: ¿qué anuncio te vendió el último departamento?",
+   "p": {
+    "img": "scrolling_ads",
+    "lines": [
+     "¿QUÉ ANUNCIO TE",
+     "[VENDIÓ] EL DEPA?"
+    ],
+    "kicker": "Inmobiliarias en Meta",
+    "size": 112
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ],
+   "key": "n11_s1",
+   "voice": "fernando"
+  },
+  {
+   "type": "photo",
+   "text": "Casi nadie lo sabe. Ves el costo por lead y apagas los anuncios caros. Pero el lead más barato casi nunca es el que compra.",
+   "p": {
+    "img": "laptop_dashboard",
+    "lines": [
+     "APAGAS LOS",
+     "[CAROS]"
+    ],
+    "lineAts": [
+     "@apagas",
+     "@caros"
+    ],
+    "stamp": {
+     "text": "EL BARATO NO COMPRA",
+     "at": "@compra",
+     "size": 76
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@caros",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@compra",
+     "vol": 0.28
+    }
+   ],
+   "key": "n11_s2",
+   "voice": "fernando"
+  },
+  {
+   "type": "stack",
+   "text": "Un anuncio te puede traer leads a 40 pesos y ninguna cita, y otro, leads a 95 pesos y nueve citas. Si solo miras el costo por lead, apagas el que vendía.",
+   "p": {
+    "items": [
+     {
+      "t": "Lead a $40 · 0 citas",
+      "at": "@40",
+      "color": "red",
+      "k": "Anuncio A"
+     },
+     {
+      "t": "Lead a $95 · 9 citas",
+      "at": "@95",
+      "color": "green",
+      "k": "Anuncio B"
+     },
+     {
+      "t": "Apagaste el que vendía",
+      "at": "@vendía",
+      "color": "amber",
+      "k": "Resultado"
+     }
+    ],
+    "title": "EJEMPLO"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@40",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@95",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@vendía",
+     "vol": 0.12
+    }
+   ],
+   "key": "n11_s3",
+   "voice": "fernando"
+  },
+  {
+   "type": "flow",
+   "text": "Lead Master sigue cada lead desde el anuncio hasta el final: si lo contactaron, si agendó, si asistió, si apartó y si compró.",
+   "p": {
+    "nodes": [
+     {
+      "t": "Anuncio",
+      "at": "@anuncio",
+      "color": "cyan"
+     },
+     {
+      "t": "Contactado",
+      "at": "@contactaron",
+      "color": "cyan"
+     },
+     {
+      "t": "Agendó y asistió",
+      "at": "@agendó",
+      "color": "purple"
+     },
+     {
+      "t": "Apartó y compró",
+      "at": "@compró",
+      "color": "green"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@anuncio",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@contactaron",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@agendó",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@compró",
+     "vol": 0.12
+    }
+   ],
+   "key": "n11_s4",
+   "voice": "fernando"
+  },
+  {
+   "type": "bars",
+   "text": "Te muestra por campaña y por anuncio cuánto te costó cada cita y cada venta. Y le avisa a Meta quién sí agendó y compró, para que tu publicidad busque más compradores.",
+   "p": {
+    "rows": [
+     {
+      "name": "Campaña Tulum",
+      "value": 528,
+      "sub": "pesos por cita",
+      "color": "green"
+     },
+     {
+      "name": "Campaña Mérida",
+      "value": 910,
+      "sub": "pesos por cita",
+      "color": "cyan"
+     },
+     {
+      "name": "Campaña CDMX",
+      "value": 4800,
+      "sub": "pesos por cita",
+      "color": "red"
+     }
+    ],
+    "at": "@campaña",
+    "title": "Costo por cita",
+    "right": "Ejemplo"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/riser.wav",
+     "at": "@campaña",
+     "vol": 0.08
+    }
+   ],
+   "key": "n11_s5",
+   "voice": "fernando"
+  },
+  {
+   "type": "cta",
+   "text": "Deja de medir costo por lead y empieza a medir costo por cita. Dale clic al botón de abajo.",
+   "p": {
+    "mode": "ad",
+    "top": "MIDE COSTO POR CITA",
+    "button": "Dale clic abajo"
+   },
+   "tail": 1.0,
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "n11_s6",
+   "voice": "fernando",
+   "captions": true
+  }
+ ]
+}
