@@ -1,0 +1,181 @@
+"""Arma los props de un video (tiempos por palabra, escenas, subtítulos) y lo renderiza.
+
+Uso:
+  python3 tools/build.py videos/v01.json            # props + render + loudnorm
+  python3 tools/build.py videos/v01.json --still 120 # solo un cuadro de prueba
+  python3 tools/build.py videos/v01.json --safe      # con guías de zona segura
+
+Voces: public/tts/<key>.mp3 + <key>.json (alineación por carácter de ElevenLabs).
+"""
+import json
+import os
+import re
+import subprocess
+import sys
+import unicodedata
+
+FPS = 30
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+PUB = os.path.join(ROOT, 'public')
+OUT = os.path.join(ROOT, '..', 'videos')
+CHROME = '/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell'
+
+# Cómo se escribe en pantalla -> cómo se le pasa a la voz (palabra por palabra).
+TTS_MAP = {
+    'Lead': 'Lid', 'Master': 'Máster', 'lead': 'lid', 'leads': 'lids', 'Leads': 'Lids',
+    'SISTEMA': 'sistema', 'LEADS': 'lids', 'CRM': 'CRM', 'INMOBILIARIO': 'inmobiliario',
+}
+
+GAP = 0.12  # segundos entre escenas
+TAIL = 0.18  # aire después de la última sílaba de cada escena
+
+
+def norm(s):
+    s = unicodedata.normalize('NFD', s)
+    s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
+    return re.sub(r'[^\w]', '', s).lower()
+
+
+def to_tts(text):
+    out = []
+    for tok in text.split():
+        m = re.match(r'^([«"¿¡(]*)(.*?)([.,;:!?»")…]*)$', tok)
+        pre, core, post = m.groups()
+        out.append(pre + TTS_MAP.get(core, core) + post)
+    return ' '.join(out)
+
+
+def words_from_alignment(al):
+    """Agrupa la alineación por carácter en palabras con inicio y fin."""
+    words = []
+    cur = ''
+    s = None
+    e = None
+    for ch, cs, ce in zip(al['chars'], al['start'], al['end']):
+        if ch.isspace():
+            if cur:
+                words.append((cur, s, e))
+            cur, s, e = '', None, None
+            continue
+        if s is None:
+            s = cs
+        cur += ch
+        e = ce
+    if cur:
+        words.append((cur, s, e))
+    return words
+
+
+def probe_dur(path):
+    r = subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', path],
+                       capture_output=True, text=True)
+    return float(r.stdout.strip())
+
+
+def build(spec_path, safe=False):
+    spec = json.load(open(spec_path))
+    keywords = {norm(k) for k in spec.get('keywords', [])}
+    scenes = []
+    all_words = []
+    t0 = 0.0
+    for i, sc in enumerate(spec['scenes']):
+        key = sc['key']
+        tempo = spec.get('tempo', 1.0)
+        mp3 = os.path.join(PUB, 'tts', f'{key}.mp3')
+        audio_rel = f'tts/{key}.mp3'
+        if abs(tempo - 1.0) > 1e-3:
+            # Acelera la voz sin cambiar el tono (quita aire, más ritmo).
+            tag = f'{key}@{int(round(tempo * 100))}.mp3'
+            fast = os.path.join(PUB, 'tts', tag)
+            if not os.path.exists(fast):
+                subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', mp3, '-af', f'atempo={tempo}', '-b:a', '192k', fast], check=True)
+            mp3, audio_rel = fast, f'tts/{tag}'
+        al = json.load(open(os.path.join(PUB, 'tts', f'{key}.json')))
+        al = {'chars': al['chars'], 'start': [x / tempo for x in al['start']], 'end': [x / tempo for x in al['end']]}
+        tw = words_from_alignment(al)
+        disp = sc['text'].split()
+        if len(tw) != len(disp):
+            print(f'  ! {key}: {len(tw)} palabras de voz vs {len(disp)} en pantalla; uso las de la voz')
+            disp = [w for w, _, _ in tw]
+        last_end = tw[-1][2] if tw else probe_dur(mp3)
+        dur_s = last_end + TAIL + sc.get('tail', 0) + (GAP if i < len(spec['scenes']) - 1 else 0)
+        dur_s = max(dur_s, sc.get('min', 0))
+        start_f = round(t0 * FPS)
+        dur_f = round((t0 + dur_s) * FPS) - start_f
+        local = [(d, s, e) for d, (_, s, e) in zip(disp, tw)]
+
+        def anchor(v, local=local):
+            if not isinstance(v, str) or not v.startswith('@'):
+                return v
+            m = re.match(r'^@([^#+\-]+)(?:#(\d+))?(:e)?([+\-]\d+)?$', v)
+            word, nth, end, off = m.group(1), int(m.group(2) or 1), m.group(3), int(m.group(4) or 0)
+            hits = [x for x in local if norm(x[0]) == norm(word)]
+            if len(hits) < nth:
+                print(f'  ! ancla no encontrada: {v} en {key}')
+                return 0
+            w = hits[nth - 1]
+            return max(0, round((w[2] if end else w[1]) * FPS) + off)
+
+        def resolve(obj):
+            if isinstance(obj, dict):
+                return {k: resolve(v) for k, v in obj.items()}
+            if isinstance(obj, list):
+                return [resolve(v) for v in obj]
+            return anchor(obj)
+
+        p = resolve(sc.get('p', {}))
+        sfx = [dict(x, at=anchor(x.get('at', 0))) for x in sc.get('sfx', [])]
+        scenes.append({
+            'type': sc['type'], 'from': start_f, 'dur': dur_f, 'p': p,
+            'audio': audio_rel, 'sfx': sfx, 'captions': sc.get('captions', True),
+        })
+        for d, s, e in local:
+            all_words.append({'w': d, 's': round(start_f / FPS + s, 3), 'e': round(start_f / FPS + e, 3),
+                              'hl': norm(d) in keywords})
+        t0 += dur_s
+    total = round(t0 * FPS)
+    props = {
+        'id': spec['id'], 'totalFrames': total, 'scenes': scenes, 'words': all_words,
+        'music': {'src': spec['music'], 'vol': spec.get('musicVol', 0.1)} if spec.get('music') else None,
+        'safeDebug': safe,
+    }
+    os.makedirs(os.path.join(ROOT, 'build'), exist_ok=True)
+    path = os.path.join(ROOT, 'build', f"{spec['id']}.props.json")
+    json.dump(props, open(path, 'w'), ensure_ascii=False, indent=1)
+    print(f"{spec['id']}: {total} frames ({total / FPS:.1f} s), {len(scenes)} escenas")
+    return props, path
+
+
+def render(spec_id, props_path, still=None):
+    os.makedirs(OUT, exist_ok=True)
+    base = ['npx', 'remotion']
+    common = [f'--props={props_path}', f'--browser-executable={CHROME}', '--log=error']
+    if still is not None:
+        out = os.path.join(ROOT, 'build', f'{spec_id}-f{still}.png')
+        cmd = base + ['still', 'src/index.ts', 'Reel', out, f'--frame={still}'] + common
+        subprocess.run(cmd, cwd=ROOT, check=True)
+        return out
+    raw = os.path.join(ROOT, 'build', f'{spec_id}.raw.mp4')
+    cmd = base + ['render', 'src/index.ts', 'Reel', raw, '--codec=h264', '--crf=18',
+                  '--concurrency=4', '--audio-bitrate=320k', '--timeout=120000'] + common
+    subprocess.run(cmd, cwd=ROOT, check=True)
+    final = os.path.join(OUT, f'{spec_id}.mp4')
+    # Entrega a -14 LUFS con limitador a -1 dBTP.
+    subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', raw, '-c:v', 'copy',
+                    '-af', 'loudnorm=I=-14:TP=-1:LRA=11', '-ar', '48000', '-c:a', 'aac', '-b:a', '256k',
+                    '-movflags', '+faststart', final], check=True)
+    return final
+
+
+if __name__ == '__main__':
+    spec_path = sys.argv[1]
+    safe = '--safe' in sys.argv
+    still = None
+    if '--still' in sys.argv:
+        still = [int(x) for x in sys.argv[sys.argv.index('--still') + 1].split(',')]
+    props, path = build(spec_path, safe)
+    if still is not None:
+        for s in still:
+            print(render(props['id'], path, s))
+    elif '--props-only' not in sys.argv:
+        print(render(props['id'], path))

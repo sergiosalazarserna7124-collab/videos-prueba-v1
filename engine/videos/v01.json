@@ -1,0 +1,353 @@
+{
+  "id": "01-un-mensaje-una-demanda",
+  "title": "Un mensaje. Una demanda.",
+  "voice": "fernando",
+  "music": "music/pulse.mp3",
+  "keywords": [
+    "mensaje",
+    "demanda",
+    "negros",
+    "WhatsApp",
+    "venta",
+    "corregir",
+    "Lead",
+    "Master",
+    "SISTEMA",
+    "dueño",
+    "chats",
+    "llamadas",
+    "primero"
+  ],
+  "scenes": [
+    {
+      "key": "v01_s1",
+      "text": "Un solo mensaje de texto acaba de meter en una demanda a una de las inmobiliarias más grandes de Nueva York.",
+      "type": "news",
+      "p": {
+        "img": "queens_house",
+        "label": "Demanda",
+        "meta": "Nueva York · 27 oct 2026",
+        "lines": [
+          "UN MENSAJE.",
+          "UNA [DEMANDA]."
+        ],
+        "size": 168,
+        "source": "Fuente: NBC New York e IBTimes"
+      },
+      "sfx": [
+        {
+          "src": "sfx/impact.wav",
+          "at": 0,
+          "vol": 0.22
+        }
+      ]
+    },
+    {
+      "key": "v01_s2",
+      "text": "Una pareja iba a ver un departamento. Al bajarse del carro, a ella le llegó un mensaje de la agente. Decía: «Agh... son negros.»",
+      "type": "chat",
+      "p": {
+        "bg": "couple_car",
+        "style": "sms",
+        "label": "Recreación",
+        "clock": "4:12",
+        "contact": "Agente inmobiliaria",
+        "sub": "Mensaje de texto",
+        "messages": [
+          {
+            "from": "in",
+            "text": "Ugh. They are black…",
+            "at": "@Decía-2",
+            "alert": true,
+            "translation": "«Agh… son negros.»"
+          }
+        ],
+        "phoneAt": "@mensaje",
+        "introLines": [
+          "IBAN A VER",
+          "UN [DEPA]."
+        ],
+        "introAts": [
+          0,
+          6
+        ],
+        "blur": 8
+      },
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "vol": 0.1
+        },
+        {
+          "src": "sfx/whoosh.wav",
+          "at": "@mensaje",
+          "vol": 0.1
+        },
+        {
+          "src": "sfx/notif.wav",
+          "at": "@Decía-2",
+          "vol": 0.22
+        }
+      ]
+    },
+    {
+      "key": "v01_s3",
+      "text": "El mensaje era para el dueño. Le llegó a ella.",
+      "type": "photo",
+      "p": {
+        "img": "couple_sidewalk",
+        "lines": [
+          "ERA PARA [EL DUEÑO].",
+          "LE LLEGÓ A [ELLA]."
+        ],
+        "lineAts": [
+          0,
+          "@Le"
+        ],
+        "accent": "red",
+        "size": 120,
+        "drift": "in"
+      },
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "vol": 0.1
+        },
+        {
+          "src": "sfx/pop.wav",
+          "at": "@Le",
+          "vol": 0.14
+        }
+      ]
+    },
+    {
+      "key": "v01_s4",
+      "text": "Hoy la pareja demandó a la agente, a la inmobiliaria y a los dueños. Y la agente ya no trabaja ahí.",
+      "type": "case",
+      "p": {
+        "img": "lawyer_desk",
+        "label": "Demanda en Queens",
+        "title": "LOS DEMANDADOS",
+        "items": [
+          {
+            "t": "La agente",
+            "at": "@agente"
+          },
+          {
+            "t": "La inmobiliaria",
+            "at": "@inmobiliaria"
+          },
+          {
+            "t": "Los dueños",
+            "at": "@dueños"
+          }
+        ],
+        "foot": "Por discriminación en la vivienda (ley federal de Vivienda Justa y ley de derechos humanos de NYC). No se publicó un monto.",
+        "stamp": {
+          "text": "FUERA DE LA EMPRESA",
+          "at": "@ya"
+        }
+      },
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "vol": 0.1
+        },
+        {
+          "src": "sfx/pop.wav",
+          "at": "@agente",
+          "vol": 0.14
+        },
+        {
+          "src": "sfx/pop.wav",
+          "at": "@inmobiliaria",
+          "vol": 0.14
+        },
+        {
+          "src": "sfx/pop.wav",
+          "at": "@dueños",
+          "vol": 0.14
+        },
+        {
+          "src": "sfx/stamp.wav",
+          "at": "@ya",
+          "vol": 0.3
+        }
+      ]
+    },
+    {
+      "key": "v01_s5",
+      "text": "Ahora piensa en tu inmobiliaria. Tus asesores mandan cientos de mensajes al día desde su WhatsApp. ¿Tú sabes qué dicen?",
+      "type": "floatchats",
+      "p": {
+        "img": "office_agents",
+        "lines": [
+          "¿TÚ SABES",
+          "[QUÉ DICEN]?"
+        ],
+        "lineAts": [
+          "@tu#2",
+          "@qué"
+        ],
+        "titleTop": 640,
+        "bubbles": [
+          "Hola, ¿sigue disponible?",
+          "Te mando info",
+          "¿Para cuándo?",
+          "Ahorita te marco",
+          "Ese ya se vendió",
+          "Mándame tu presupuesto"
+        ]
+      },
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "vol": 0.1
+        },
+        {
+          "src": "sfx/riser.wav",
+          "at": "@WhatsApp",
+          "vol": 0.1
+        },
+        {
+          "src": "sfx/impact.wav",
+          "at": "@tu#2",
+          "vol": 0.16
+        }
+      ]
+    },
+    {
+      "key": "v01_s6",
+      "text": "Un mensaje mal escrito te cuesta una venta. Uno peor te cuesta una demanda. Y lo que no ves, no lo puedes corregir.",
+      "type": "stack",
+      "p": {
+        "img": "advisor_car",
+        "items": [
+          {
+            "k": "Un mensaje mal escrito",
+            "t": "Te cuesta una venta",
+            "color": "amber",
+            "at": 0
+          },
+          {
+            "k": "Uno peor",
+            "t": "Te cuesta una demanda",
+            "color": "red",
+            "at": "@Uno"
+          },
+          {
+            "k": "Lo que no ves",
+            "t": "No lo puedes corregir",
+            "color": "cyan",
+            "at": "@lo"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "vol": 0.1
+        },
+        {
+          "src": "sfx/pop.wav",
+          "at": "@Uno",
+          "vol": 0.14
+        },
+        {
+          "src": "sfx/pop.wav",
+          "at": "@lo",
+          "vol": 0.14
+        }
+      ]
+    },
+    {
+      "key": "v01_s7",
+      "text": "Lead Master lee los chats y escucha las llamadas de cada asesor con cada lead, y te deja por escrito qué le dijeron y en qué quedaron. Para que te enteres tú primero, y no por una demanda.",
+      "type": "panel",
+      "p": {
+        "title": "Conversaciones de hoy",
+        "right": "Resumen de la IA",
+        "rows": [
+          {
+            "ch": "wa",
+            "advisor": "Valeria Ríos",
+            "lead": "Diana Trejo",
+            "summary": "Le mandó 3 opciones en Tulum. Quedaron en visita el jueves a las 5 pm.",
+            "status": "Cita agendada",
+            "color": "green",
+            "at": "@chats"
+          },
+          {
+            "ch": "call",
+            "advisor": "Diego Herrera",
+            "lead": "Adriana Solís",
+            "summary": "Llamada de 4 min. Pidió precios con descuento; quedó pendiente enviarlos.",
+            "status": "Tarea pendiente",
+            "color": "amber",
+            "at": "@llamadas"
+          },
+          {
+            "ch": "wa",
+            "advisor": "Paola Gutiérrez",
+            "lead": "Lucía Hernández",
+            "summary": "Preguntó por las amenidades y nadie le contestó en 2 días.",
+            "status": "Sin respuesta",
+            "color": "red",
+            "at": "@escrito"
+          }
+        ]
+      },
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "vol": 0.1
+        },
+        {
+          "src": "sfx/ding.wav",
+          "at": "@chats",
+          "vol": 0.1
+        },
+        {
+          "src": "sfx/ding.wav",
+          "at": "@llamadas",
+          "vol": 0.1
+        },
+        {
+          "src": "sfx/ding.wav",
+          "at": "@escrito",
+          "vol": 0.1
+        }
+      ]
+    },
+    {
+      "key": "v01_s8",
+      "text": "Comenta SISTEMA y te mando cómo funciona.",
+      "type": "cta",
+      "captions": false,
+      "tail": 1.4,
+      "p": {
+        "word": "SISTEMA",
+        "sub": "y te mando cómo funciona"
+      },
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "vol": 0.1
+        },
+        {
+          "src": "sfx/impact.wav",
+          "at": 6,
+          "vol": 0.16
+        }
+      ]
+    }
+  ],
+  "tempo": 1.1
+}
