@@ -19,6 +19,8 @@ import {Flow} from './scenes/Flow';
 import {Bars} from './scenes/Bars';
 import {PhoneList} from './scenes/PhoneList';
 import {Mock} from './scenes/Mock';
+import {Clip} from './scenes/Clip';
+import {Dialer} from './scenes/Dialer';
 import {BrandBg} from './ui/Bg';
 import {coverOf, Ins, InsertLayer} from './ui/Inserts';
 
@@ -41,6 +43,8 @@ const SCENES: Record<string, React.FC<{dur: number; p: any}>> = {
   bars: Bars,
   phonelist: PhoneList,
   mock: Mock,
+  clip: Clip,
+  dialer: Dialer,
   ui: ({dur}) => <BrandBg dur={dur} />, // fondo de marca; el contenido lo ponen los insertos
 };
 
@@ -61,7 +65,7 @@ export type ReelProps = {
   totalFrames: number;
   scenes: SceneSpec[];
   words: Word[];
-  music?: {src: string; vol: number};
+  music?: {src: string; vol: number; from?: number};
   safeDebug?: boolean;
 };
 
@@ -120,7 +124,11 @@ export const Reel: React.FC<ReelProps> = ({scenes, words, music, safeDebug}) => 
         );
       })}
       <Captions words={words} hidden={hidden} />
-      {music ? <Audio src={staticFile(music.src)} volume={music.vol} loop /> : null}
+      {music ? (
+        <Sequence from={music.from ?? 0}>
+          <Audio src={staticFile(music.src)} volume={music.vol} loop />
+        </Sequence>
+      ) : null}
       {safeDebug ? <SafeGuide /> : null}
     </AbsoluteFill>
   );

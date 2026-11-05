@@ -1,0 +1,564 @@
+[
+ {
+  "id": "S11",
+  "tema": "chat",
+  "pilar": "P09",
+  "titulo": "¿Quién no llamó hoy? Don Ramiro le pregunta a la IA",
+  "gancho_pantalla": [
+   "¿QUIÉN NO",
+   "[LLAMÓ] HOY?"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Plano medio de Don Ramiro de pie en la cabecera de la mesa, mirando a cada asesor con los ojos entrecerrados.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "A ver. Que levante la mano el que NO llamó a sus leads hoy."
+     }
+    ],
+    "sonido": "silencio tenso, reloj de pared"
+   },
+   {
+    "plano": "Diego, Andrés y Paola con los brazos cruzados; Don Ramiro voltea su celular hacia Diego y sonríe.",
+    "dialogo": [
+     {
+      "quien": "Diego",
+      "dice": "¡Yo llamé a todos, jefe! A todititos."
+     },
+     {
+      "quien": "Don Ramiro",
+      "dice": "Qué raro. La IA dice que hiciste dos llamadas."
+     }
+    ],
+    "sonido": "grillos"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "En casi todas las juntas pasa lo mismo: preguntas quién hizo su trabajo y todos dicen que sí. Y tú no tienes cómo comprobarlo sin revisar celular por celular.",
+    "pantalla": "Foto de junta con asesores. Titular: TODOS DICEN QUE [SÍ]."
+   },
+   {
+    "tipo": "mock",
+    "voz": "Con Lead Master le escribes al sistema como a una persona: ¿quién no llamó a sus leads hoy? Y te contesta en segundos, con nombres y números.",
+    "pantalla": "Chat con la IA de Lead Master. Pregunta: «¿Quién no llamó a sus leads hoy?». Respuesta: «Diego H.: 2 de 14 leads. Andrés M.: 5 de 11. Paola G.: 12 de 12.»"
+   },
+   {
+    "tipo": "ui+report",
+    "voz": "Lo sabe porque vive en el WhatsApp y en las llamadas de cada asesor. Nadie tiene que llenar nada para que tú tengas la respuesta.",
+    "pantalla": "Inserto report: «Hoy: 37 leads asignados · 9 sin llamada (Diego H. 6, Andrés M. 3) · 5 citas»."
+   }
+  ],
+  "cta": "SISTEMA",
+  "cierre": "Comenta SISTEMA y te enseño el chat por dentro.",
+  "dur": 36
+ },
+ {
+  "id": "S12",
+  "tema": "chat",
+  "pilar": "P09",
+  "titulo": "Plátano Diego no se acuerda qué le prometió a Lucía",
+  "gancho_pantalla": [
+   "¿QUÉ LE",
+   "[PROMETISTE]?"
+  ],
+  "formato": "fruti",
+  "ia": [
+   {
+    "plano": "Sala de juntas de frutas con música de telenovela. Plátano Diego contesta el celular, se pone pálido y tapa la bocina con la mano.",
+    "dialogo": [
+     {
+      "quien": "Plátano Diego",
+      "dice": "¡Es Lucía Hernández! ¿Qué le prometí? ¿¡Qué le prometí la semana pasada!?"
+     }
+    ],
+    "sonido": "música dramática, celular vibrando"
+   },
+   {
+    "plano": "Fresa Valeria, sentada a su lado, le quita el celular con calma y empieza a teclear; triple zoom dramático a Plátano.",
+    "dialogo": [
+     {
+      "quien": "Fresa Valeria",
+      "dice": "Tranquilo, Plátano. Le preguntamos al sistema."
+     },
+     {
+      "quien": "Plátano Diego",
+      "dice": "¿El sistema se acuerda mejor que yo?"
+     }
+    ],
+    "sonido": "trueno, golpe de piano"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "Tu asesor habla con cuarenta leads a la semana. Es imposible que se acuerde de lo que le prometió a cada uno. Y el lead sí se acuerda.",
+    "pantalla": "Foto de asesor con el celular lleno de chats. Titular: EL LEAD SÍ SE [ACUERDA]."
+   },
+   {
+    "tipo": "mock",
+    "voz": "En Lead Master el asesor pregunta: ¿qué le prometí a Lucía Hernández? Y la IA le contesta con lo que se habló en el chat y en la llamada.",
+    "pantalla": "Chat con la IA. Pregunta: «¿Qué le prometí a Lucía Hernández?». Respuesta: «Mandarle 3 opciones en Del Valle hasta 4.5 millones y llamarla el jueves a las 6 pm. Le preocupa el crédito.»"
+   },
+   {
+    "tipo": "ui+note",
+    "voz": "Todo eso queda escrito solo, de cada chat y de cada llamada. Tu asesor contesta seguro y el lead siente que lo están atendiendo de verdad.",
+    "pantalla": "Inserto note: «Nota de la IA · Lucía Hernández · 3 opciones en Del Valle · llamar jueves 6 pm · duda: crédito»."
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y te mando cómo funciona.",
+  "dur": 35
+ },
+ {
+  "id": "S13",
+  "tema": "metricas",
+  "pilar": "P10",
+  "titulo": "«Nadie contesta», dijo Diego. Los números no",
+  "gancho_pantalla": [
+   "NADIE",
+   "[CONTESTA]"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Diego de pie frente a la mesa, con los brazos abiertos, indignado; golpea la mesa con la palma.",
+    "dialogo": [
+     {
+      "quien": "Diego",
+      "dice": "¡Jefe, esos leads no sirven! ¡Nadie contesta! ¡Nadie!"
+     }
+    ],
+    "sonido": "golpe en la mesa"
+   },
+   {
+    "plano": "Don Ramiro voltea despacio hacia Paola, que levanta la mirada de su laptop con una ceja arriba.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "¿Y a ti, Paola?"
+     },
+     {
+      "quien": "Paola",
+      "dice": "A mí me contestan cuatro de cada diez. Los mismos leads."
+     }
+    ],
+    "sonido": "silencio incómodo"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "Cuando un asesor dice que nadie contesta, casi siempre le crees. Y le echas la culpa a la campaña, al portal o a Meta.",
+    "pantalla": "Foto de asesor frustrado con el celular. Titular: ¿CULPA DEL [LEAD]?"
+   },
+   {
+    "tipo": "bars",
+    "voz": "Lead Master mide la tasa de contestación de cada asesor. Si con los mismos leads a Paola le contestan cuatro de cada diez y a Diego uno, el problema no es el lead.",
+    "pantalla": "Barras de tasa de contestación: Paola G. 41 % · Valeria R. 37 % · Diego H. 9 %."
+   },
+   {
+    "tipo": "stack",
+    "voz": "Y te enseña por qué: cuántos intentos hizo, a qué hora llamó y cuánto duró cada llamada. Así sabes si tienes que cambiar la campaña o hablar con tu asesor.",
+    "pantalla": "Tarjetas sobre Diego H.: «1 intento por lead» · «Llama de 1 a 3 pm» · «Llamadas de 8 segundos»."
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y te enseño la tasa de tu equipo.",
+  "dur": 37
+ },
+ {
+  "id": "S14",
+  "tema": "metricas",
+  "pilar": "P10",
+  "titulo": "Diego llama a la hora de la comida. Todos los días",
+  "gancho_pantalla": [
+   "¿A QUÉ HORA",
+   "[LLAMAS]?"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Diego en la sala de juntas con la boca llena, mordiendo una torta enorme y marcando con la otra mano.",
+    "dialogo": [
+     {
+      "quien": "Diego",
+      "dice": "Son las dos y media, jefe. Hora perfecta para llamar."
+     }
+    ],
+    "sonido": "mordida, tono de llamada que nadie contesta"
+   },
+   {
+    "plano": "Don Ramiro, rojo de coraje, señala la torta con el dedo tembloroso.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "¡A esta hora tus clientes también están comiendo, Diego! ¡Como tú!"
+     }
+    ],
+    "sonido": "golpe en la mesa"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "Tu equipo llama cuando tiene tiempo, no cuando el cliente puede contestar. Y luego te dice que los leads no contestan.",
+    "pantalla": "Foto de asesor comiendo en su escritorio. Titular: LLAMAN CUANDO [PUEDEN]."
+   },
+   {
+    "tipo": "bars",
+    "voz": "Lead Master te muestra a qué hora te contestan más tus leads. En este ejemplo contestaban el triple entre siete y nueve de la noche, justo cuando nadie llamaba.",
+    "pantalla": "Barras por hora (datos de ejemplo): 9 am 18 % · 2 pm 7 % · 7 pm 39 % · 8 pm 34 %."
+   },
+   {
+    "tipo": "ui+tasks",
+    "voz": "¿Por qué te importa? Porque mover las llamadas a la hora correcta sube las contestaciones sin pagar un solo lead más.",
+    "pantalla": "Inserto tasks: lista del día de Diego: «7:00 pm · llamar a Adriana Solís, Diana Trejo y Lucía Hernández»."
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y te digo a qué hora te contestan.",
+  "dur": 35
+ },
+ {
+  "id": "S15",
+  "tema": "metricas",
+  "pilar": "P10",
+  "titulo": "61 llamadas de 7 segundos: el récord de Andrés",
+  "gancho_pantalla": [
+   "61 LLAMADAS",
+   "DE [7] SEGUNDOS"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Andrés se pone de pie y presume con el celular en alto mientras los demás aplauden sin ganas.",
+    "dialogo": [
+     {
+      "quien": "Andrés",
+      "dice": "Sesenta y una llamadas ayer. Soy el que más llamó de toda la oficina."
+     }
+    ],
+    "sonido": "aplausos flojos"
+   },
+   {
+    "plano": "Rubén se baja los lentes a la punta de la nariz y lee su laptop; Don Ramiro abre los ojos enormes.",
+    "dialogo": [
+     {
+      "quien": "Rubén",
+      "dice": "Sesenta y una… de siete segundos cada una."
+     },
+     {
+      "quien": "Don Ramiro",
+      "dice": "¿Siete segundos? ¡Eso ni es un hola!"
+     }
+    ],
+    "sonido": "disco rayado"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "Contar llamadas no sirve de nada si no sabes cuánto duraron ni cuántas veces se intentó de verdad con cada lead.",
+    "pantalla": "Foto de asesor marcando sin parar. Titular: ¿LLAMADAS O [MARCADAS]?"
+   },
+   {
+    "tipo": "panel",
+    "voz": "Lead Master te muestra por asesor cuántas llamadas hizo, cuánto duraron y cuántos intentos hubo por lead. Ahí ves quién de verdad está hablando con clientes.",
+    "pantalla": "Panel: Paola G. · 38 llamadas · 3:40 min promedio · 3 intentos por lead | Andrés M. · 61 llamadas · 0:07 min promedio · 1 intento por lead."
+   },
+   {
+    "tipo": "compare",
+    "voz": "¿Por qué importa? Porque una llamada de siete segundos no vende ningún departamento. Una conversación de cuatro minutos sí agenda una visita con un cliente.",
+    "pantalla": "Antes: «Andrés: 61 llamadas» (se ve increíble). Con Lead Master: «61 llamadas · 0 conversaciones · 0 citas»."
+   }
+  ],
+  "cta": "SISTEMA",
+  "cierre": "Comenta SISTEMA y te enseño las llamadas de tu equipo.",
+  "dur": 36
+ },
+ {
+  "id": "S16",
+  "tema": "metricas",
+  "pilar": "P10",
+  "titulo": "El lead preguntó a las 10:02. Diego contestó a las 4:15",
+  "gancho_pantalla": [
+   "SEIS HORAS",
+   "PARA [CONTESTAR]"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Don Ramiro lee su celular en voz alta, con una calma que da miedo, de pie junto a Diego.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "La señora preguntó a las diez de la mañana. ¿A qué hora le contestaste?"
+     }
+    ],
+    "sonido": "reloj de pared con tic tac fuerte"
+   },
+   {
+    "plano": "Diego mira al techo, cuenta con los dedos y sonríe nervioso.",
+    "dialogo": [
+     {
+      "quien": "Diego",
+      "dice": "A las cuatro… y cuarto. Pero le contesté con mucho cariño, jefe."
+     }
+    ],
+    "sonido": "grillos"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "Un lead que pregunta por un departamento está preguntando en otras tres inmobiliarias al mismo tiempo. El primero que contesta se queda con la conversación.",
+    "pantalla": "Foto de mujer con el celular comparando chats. Titular: EL PRIMERO [GANA]."
+   },
+   {
+    "tipo": "panel",
+    "voz": "Lead Master mide el tiempo de respuesta de cada asesor, desde que entra el lead hasta el primer mensaje o la primera llamada.",
+    "pantalla": "Panel de tiempo de primera respuesta: Paola G. 6 min · Valeria R. 14 min · Diego H. 6 h 13 min."
+   },
+   {
+    "tipo": "ui+report",
+    "voz": "Y si un lead se queda sin atender, pasa al siguiente asesor y a ti te llega el aviso. ¿Por qué importa? Porque cada hora de espera es un comprador que se enfría.",
+    "pantalla": "Inserto report: «Aviso: Diana Trejo lleva 2 h sin respuesta (Diego H.) → reasignada a Paola G.»."
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y te enseño cuánto tarda tu equipo.",
+  "dur": 37
+ },
+ {
+  "id": "S17",
+  "tema": "metricas",
+  "pilar": "P10",
+  "titulo": "Los 23 leads que nadie tocó en la Inmobiliaria Frutal",
+  "gancho_pantalla": [
+   "23 LEADS",
+   "[SIN] CONTACTO"
+  ],
+  "formato": "fruti",
+  "ia": [
+   {
+    "plano": "Sala de juntas de frutas con música de telenovela. Limón abre la laptop despacio, con mirada fría, frente a Don Piña.",
+    "dialogo": [
+     {
+      "quien": "Limón",
+      "dice": "Don Piña… hay veintitrés leads que nadie ha tocado. Ni un mensaje."
+     }
+    ],
+    "sonido": "música dramática, trueno"
+   },
+   {
+    "plano": "Don Piña voltea lentamente hacia Plátano Diego, que se esconde detrás de una taza; triple zoom a su cara.",
+    "dialogo": [
+     {
+      "quien": "Don Piña",
+      "dice": "¿De quién son esos leads, Plátano?"
+     },
+     {
+      "quien": "Plátano Diego",
+      "dice": "¿Míos? ¿Todos? Qué coincidencia."
+     }
+    ],
+    "sonido": "triple zoom, golpe de piano"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "En casi todas las inmobiliarias hay leads que entraron, se asignaron y nadie les escribió nunca. Y el dueño no se entera, porque nadie lo reporta.",
+    "pantalla": "Foto de bandeja de WhatsApp con mensajes sin leer. Titular: NADIE LES [ESCRIBIÓ]."
+   },
+   {
+    "tipo": "stat",
+    "voz": "Lead Master te dice cuántos leads están sin contacto hoy, de qué asesor son y desde cuándo están esperando.",
+    "pantalla": "Número gigante: 23 sin contacto · Diego H. 17 · Andrés M. 6."
+   },
+   {
+    "tipo": "ui+tasks",
+    "voz": "Esos leads suben solos a la lista urgente del asesor por WhatsApp. ¿Por qué importa? Porque ya pagaste por cada uno, y un lead sin contacto es dinero tirado.",
+    "pantalla": "Inserto tasks: lista de Diego por WhatsApp: «Lo urgente: 17 leads que nunca has buscado»."
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y te digo cuántos tienes sin tocar.",
+  "dur": 36
+ },
+ {
+  "id": "S18",
+  "tema": "metricas",
+  "pilar": "P10",
+  "titulo": "400 leads de Facebook vs. 40 del portal: ¿cuál vende?",
+  "gancho_pantalla": [
+   "¿DE DÓNDE",
+   "SALEN LAS [CITAS]?"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Karla de pie junto a una pantalla con una gráfica que sube, sonriendo de oreja a oreja.",
+    "dialogo": [
+     {
+      "quien": "Karla",
+      "dice": "¡Cuatrocientos leads este mes, a tres dólares! ¡La mejor campaña del año!"
+     }
+    ],
+    "sonido": "fanfarria corta"
+   },
+   {
+    "plano": "Paola, sin levantar la vista del celular, la interrumpe; Don Ramiro voltea a verla con la boca abierta.",
+    "dialogo": [
+     {
+      "quien": "Paola",
+      "dice": "Y dos citas. Las otras nueve salieron del portal."
+     },
+     {
+      "quien": "Don Ramiro",
+      "dice": "¿Y entonces a quién le estamos pagando?"
+     }
+    ],
+    "sonido": "disco rayado"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "Contar cuántos leads te trae cada canal no sirve. Lo que importa es cuántas citas y cuántos apartados salen de cada uno.",
+    "pantalla": "Foto de dueño frente a una gráfica de anuncios. Titular: LEADS NO SON [CITAS]."
+   },
+   {
+    "tipo": "bars",
+    "voz": "Lead Master te muestra las citas por fuente: anuncios, portales y referidos. Así ves qué canal trae compradores y cuál te trae puros curiosos.",
+    "pantalla": "Barras (datos de ejemplo): Facebook 400 leads → 2 citas · Inmuebles24 40 leads → 9 citas · Referidos 12 leads → 4 citas."
+   },
+   {
+    "tipo": "compare",
+    "voz": "¿Por qué importa? Porque así mueves tu presupuesto a lo que sí vende. Y Lead Master le avisa a Meta quién sí agendó, para que te traiga más gente así.",
+    "pantalla": "Antes: «Costo por lead: US$3». Con Lead Master: «Costo por cita: Facebook US$600 · Inmuebles24 US$45»."
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y te enseño de dónde salen tus citas.",
+  "dur": 37
+ },
+ {
+  "id": "S19",
+  "tema": "objeciones",
+  "pilar": "P10",
+  "titulo": "¿Por qué no compran? Rubén tendría que oír 300 llamadas",
+  "gancho_pantalla": [
+   "¿POR QUÉ NO",
+   "[COMPRAN]?"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Don Ramiro golpea la mesa con una carpeta gruesa; todos brincan en sus sillas.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "¡Trescientos leads y tres ventas! ¿Por qué carajo no nos compran?"
+     }
+    ],
+    "sonido": "golpe de carpeta"
+   },
+   {
+    "plano": "Rubén se ajusta los lentes y voltea la laptop hacia Don Ramiro, muy serio.",
+    "dialogo": [
+     {
+      "quien": "Rubén",
+      "dice": "Para saberlo habría que escuchar las trescientas llamadas, jefe."
+     },
+     {
+      "quien": "Don Ramiro",
+      "dice": "¡Pues escúchalas!"
+     }
+    ],
+    "sonido": "Rubén traga saliva"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "Nadie en tu equipo tiene tiempo de escuchar cientos de llamadas para entender por qué no te compran. Así que adivinas.",
+    "pantalla": "Foto de coordinador con audífonos y una pila de papeles. Titular: ¿Y SI SOLO [ADIVINAS]?"
+   },
+   {
+    "tipo": "bars",
+    "voz": "Lead Master detecta las objeciones en los chats y en las llamadas, y te dice cuáles se repiten más: precio, ubicación, crédito y el famoso «lo voy a pensar».",
+    "pantalla": "Barras (datos de ejemplo): «Está muy caro» 34 % · «No califico al crédito» 27 % · «Lo voy a pensar» 21 % · «Está muy lejos» 18 %."
+   },
+   {
+    "tipo": "stack",
+    "voz": "Si el veintisiete por ciento no califica al crédito, no necesitas más leads. Necesitas un aliado hipotecario y una respuesta preparada para esa objeción.",
+    "pantalla": "Tarjetas: «Crédito: invita al asesor hipotecario a la primera llamada» · «Precio: muestra planes de pago» · «Lo voy a pensar: agenda la visita con fecha»."
+   }
+  ],
+  "cta": "SISTEMA",
+  "cierre": "Comenta SISTEMA y te enseño las objeciones de tus clientes.",
+  "dur": 37
+ },
+ {
+  "id": "S20",
+  "tema": "objeciones",
+  "pilar": "P10",
+  "titulo": "«Lo voy a pensar»: la frase que Diego siempre acepta",
+  "gancho_pantalla": [
+   "«LO VOY A",
+   "[PENSAR]»"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Diego habla por el celular en altavoz sobre la mesa de juntas; sonríe tranquilo y cuelga.",
+    "dialogo": [
+     {
+      "quien": "Diego",
+      "dice": "Perfecto, señora. Piénselo con calma, yo aquí la espero."
+     }
+    ],
+    "sonido": "tono de llamada colgada"
+   },
+   {
+    "plano": "Paola y Don Ramiro voltean a ver a Diego al mismo tiempo, incrédulos.",
+    "dialogo": [
+     {
+      "quien": "Paola",
+      "dice": "Es la quinta de hoy que se va a pensarlo."
+     },
+     {
+      "quien": "Diego",
+      "dice": "Es que la gente piensa mucho, Paola."
+     }
+    ],
+    "sonido": "grillos"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "«Lo voy a pensar» casi nunca significa que lo va a pensar. Significa que tiene una duda que nadie le preguntó.",
+    "pantalla": "Foto de clienta dudando con el celular en la mano. Titular: NO LO VA A [PENSAR]."
+   },
+   {
+    "tipo": "bars",
+    "voz": "Lead Master junta las objeciones de todos los chats y llamadas de tu equipo. Si «lo voy a pensar» es la número uno, ya sabes qué entrenar en la próxima junta.",
+    "pantalla": "Barras (datos de ejemplo): «Lo voy a pensar» 38 % · Precio 26 % · Ubicación 19 % · Crédito 17 %."
+   },
+   {
+    "tipo": "compare",
+    "voz": "Antes, cada asesor aceptaba la frase y colgaba. Ahora que sabes que es la objeción más común, entrenas a tu equipo con una sola pregunta: ¿qué le falta para decidirse?",
+    "pantalla": "Antes: «5 leads se quedaron pensando». Con Lead Master: «Objeción número 1 del equipo: lo voy a pensar · Respuesta: ¿qué le falta para decidirse?»."
+   }
+  ],
+  "cta": "SISTEMA",
+  "cierre": "Comenta SISTEMA y te enseño qué objeciones escucha tu equipo.",
+  "dur": 36
+ }
+]

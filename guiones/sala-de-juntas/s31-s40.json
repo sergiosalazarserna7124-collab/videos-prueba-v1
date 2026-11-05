@@ -1,0 +1,299 @@
+[
+ {
+  "id": "S31",
+  "tema": "portales",
+  "pilar": "P11",
+  "titulo": "El portal que nadie abre (y la contraseña perdida)",
+  "gancho_pantalla": ["46 LEADS", "SIN [ABRIR]"],
+  "formato": "junta",
+  "ia": [
+   {"plano": "Plano medio en la sala de juntas: Don Ramiro, rojo, señala una laptop cerrada en la mesa; Diego se encoge en su silla con el saco grande.",
+    "dialogo": [
+     {"quien": "Don Ramiro", "dice": "¿Quién tiene la contraseña del portal? ¡Llevo dos semanas sin ver un solo lead!"},
+     {"quien": "Diego", "dice": "La cambié yo, jefe… y no me acuerdo cuál puse."}
+    ],
+    "sonido": "silencio incómodo, un reloj de pared"},
+   {"plano": "Rubén, con los lentes en la punta de la nariz, voltea la laptop hacia la mesa; la bandeja del portal llena de mensajes sin abrir. Don Ramiro abre los ojos enormes.",
+    "dialogo": [
+     {"quien": "Rubén", "dice": "Ya entré. Hay cuarenta y seis leads sin abrir. Desde octubre."},
+     {"quien": "Don Ramiro", "dice": "¡¿Desde octubre?!"}
+    ],
+    "sonido": "golpe dramático, tazas que tiemblan"}
+  ],
+  "motor": [
+   {"tipo": "photo", "voz": "Si para ver tus leads de portales alguien tiene que entrar a revisar, se te pierden. El lead que espera tres días ya le escribió a otra inmobiliaria.", "pantalla": "Titular: 46 LEADS SIN [ABRIR]. Foto de laptop con una bandeja de entrada llena."},
+   {"tipo": "flow", "voz": "Lead Master está conectado a EasyBroker, Inmuebles24 y otros portales. Cada vez que alguien deja sus datos, el lead aparece solo en el sistema.", "pantalla": "Flujo: EasyBroker / Inmuebles24 / otros portales → Lead Master → asesor."},
+   {"tipo": "ui+crm", "voz": "Se asigna a un asesor en ese momento y, si no lo atiende a tiempo, pasa al siguiente. Nadie tiene que entrar al portal a revisar nada.", "pantalla": "Tarjeta: Adriana Solís · Inmuebles24 · Depa 2 recámaras · asignada a Paola G. Contador de 10 min; al llegar a cero pasa a Valeria R."}
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y te mostramos cómo se conecta tu portal.",
+  "dur": 37
+ },
+ {
+  "id": "S32",
+  "tema": "portales",
+  "pilar": "P11",
+  "titulo": "Llegó el viernes a las 9 pm. Lo vio el miércoles",
+  "gancho_pantalla": ["LLEGÓ EL VIERNES", "LO VIO [HOY]"],
+  "formato": "junta",
+  "ia": [
+   {"plano": "Plano medio: Diego, sonriente, levanta su celular como si trajera buenas noticias; Don Ramiro, al lado, deja de tomar café a medio sorbo.",
+    "dialogo": [
+     {"quien": "Diego", "dice": "Jefe, entró un lead buenísimo del portal. Llegó el viernes en la noche, lo vi hoy."},
+     {"quien": "Don Ramiro", "dice": "¡¿Hoy?! ¡Diego, es miércoles!"}
+    ],
+    "sonido": "café que se derrama, golpe de taza"},
+   {"plano": "Paola, sin levantar la vista de su laptop, con sarcasmo; Diego se queda congelado con el celular en alto.",
+    "dialogo": [
+     {"quien": "Paola", "dice": "Ya compró. Con la inmobiliaria de enfrente. Me la encontré en la tiendita."}
+    ],
+    "sonido": "grillos"}
+  ],
+  "motor": [
+   {"tipo": "events", "voz": "Viernes, nueve de la noche: un lead pregunta por una casa de seis millones en un portal. Sábado: otra inmobiliaria le contesta. Miércoles: tu asesor lo ve.", "pantalla": "Línea de tiempo: Vie 9:04 pm lead nuevo · Sáb 10:12 am le contesta la competencia · Mié 11:30 am Diego abre el portal."},
+   {"tipo": "ui+crm", "voz": "Con Lead Master, el lead del portal entra al sistema al instante y se asigna a un asesor, aunque sea viernes en la noche.", "pantalla": "Notificación 9:04 pm: Nuevo lead · Inmuebles24 · Lucía Hernández · asignado a Paola G."},
+   {"tipo": "phonelist", "voz": "Si no lo atiende a tiempo, pasa al siguiente. Y a las ocho de la mañana ya está en la lista de urgentes de tu asesor.", "pantalla": "Lista del día 8:00 am · Lo urgente: Lucía Hernández (portal, viernes 9:04 pm)."}
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y te lo instalamos.",
+  "dur": 36
+ },
+ {
+  "id": "S33",
+  "tema": "portales",
+  "pilar": "P11",
+  "titulo": "40 mil pesos al mes por un logo verde",
+  "gancho_pantalla": ["¿CUÁL PORTAL", "TE [VENDE]?"],
+  "formato": "junta",
+  "ia": [
+   {"plano": "Sala de juntas: Don Ramiro con tres facturas en la mano; Karla, con su tablet, sonríe forzada.",
+    "dialogo": [
+     {"quien": "Don Ramiro", "dice": "Pagamos tres portales. Tres. ¿Cuál nos vende? ¡Uno! ¡Díganme uno!"},
+     {"quien": "Karla", "dice": "¡Todos traen leads, Don Ramiro! ¡Muchísimos!"}
+    ],
+    "sonido": "papeles golpeando la mesa"},
+   {"plano": "Rubén revisa su Excel enorme, entrecierra los ojos; Don Ramiro se tapa la cara con las dos manos.",
+    "dialogo": [
+     {"quien": "Rubén", "dice": "Según mi Excel, el que más vende es… ¿el del logo verde?"},
+     {"quien": "Don Ramiro", "dice": "¡Estoy pagando cuarenta mil pesos al mes por un logo verde!"}
+    ],
+    "sonido": "suspiro largo, tecla de computadora"}
+  ],
+  "motor": [
+   {"tipo": "photo", "voz": "Muchas inmobiliarias pagan dos o tres portales cada mes y nadie sabe cuál trae compradores y cuál trae puros curiosos. Se renueva todo por costumbre.", "pantalla": "Titular: ¿CUÁL PORTAL TE [VENDE]? Foto de facturas sobre un escritorio."},
+   {"tipo": "flow", "voz": "Lead Master recibe los leads de todos tus portales en un solo lugar y sabe de dónde vino cada uno.", "pantalla": "Flujo: EasyBroker, Inmuebles24 y otro portal → Lead Master, cada lead con su etiqueta de origen."},
+   {"tipo": "bars", "voz": "Así ves, portal por portal, cuántos leads llegaron, a cuántos se les llamó y cuántas citas salieron. Y decides dónde poner tu dinero con datos, no con corazonadas.", "pantalla": "Barras por portal (ejemplo): Portal A 120 leads · 14 citas · Portal B 85 leads · 3 citas · Portal C 40 leads · 9 citas."}
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y te enseñamos tus números por portal.",
+  "dur": 36
+ },
+ {
+  "id": "S34",
+  "tema": "anecdotas",
+  "pilar": "P06",
+  "titulo": "Diego descartó 37 leads en una semana",
+  "gancho_pantalla": ["37 LEADS", "[DESCARTADOS]"],
+  "formato": "junta",
+  "ia": [
+   {"plano": "Don Ramiro lee una hoja larguísima que se desenrolla hasta el piso; Diego se ajusta los lentes, nervioso.",
+    "dialogo": [
+     {"quien": "Don Ramiro", "dice": "Diego, descartaste treinta y siete leads esta semana. ¿Todos dicen «no contesta»?"},
+     {"quien": "Diego", "dice": "Es que la gente ya no contesta, jefe. Es la economía."}
+    ],
+    "sonido": "papel desenrollándose"},
+   {"plano": "Paola levanta su celular con una sonrisa triunfal; Diego traga saliva en primer plano.",
+    "dialogo": [
+     {"quien": "Paola", "dice": "Yo le marqué a tres de tus descartados. Uno ya agendó para el sábado."}
+    ],
+    "sonido": "ding de notificación, golpe dramático"}
+  ],
+  "motor": [
+   {"tipo": "stat", "voz": "Pasó en una inmobiliaria: un asesor descartó treinta y siete leads en una semana. A treinta y uno les marcó una sola vez, todos entre la una y las tres de la tarde.", "pantalla": "Número gigante: 37 DESCARTADOS. Abajo: 31 con un solo intento."},
+   {"tipo": "ui+crm", "voz": "En Lead Master ves cada lead que tu asesor descartó, con el motivo, cuántas veces le marcó y la conversación completa.", "pantalla": "Lista de descartados: Diego H. · 37 · motivo «no contesta» · intentos: 1 · ver conversación."},
+   {"tipo": "compare", "voz": "Si el descarte no tiene sentido, se lo pasas a otro asesor. En ese caso, otra asesora retomó los treinta y siete: contestaron catorce y agendaron tres.", "pantalla": "Antes: 37 descartados. Después de reasignar: 14 contestaron · 3 citas."}
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y revisa tus descartados.",
+  "dur": 38
+ },
+ {
+  "id": "S35",
+  "tema": "anecdotas",
+  "pilar": "P04",
+  "titulo": "¿Qué primo, Andrés?",
+  "gancho_pantalla": ["¿QUÉ [PRIMO],", "ANDRÉS?"],
+  "formato": "junta",
+  "ia": [
+   {"plano": "Andrés, en una esquina de la sala con la chamarra de cuero, susurra al celular tapándose la boca; Don Ramiro aparece justo detrás de él, con los brazos cruzados.",
+    "dialogo": [
+     {"quien": "Andrés", "dice": "Sí, primo, te paso al cliente por fuera… le sale más barato."},
+     {"quien": "Don Ramiro", "dice": "¿Qué primo, Andrés?"}
+    ],
+    "sonido": "golpe musical seco"},
+   {"plano": "Andrés guarda el celular de golpe y sonríe nervioso; Paola, desde la mesa, levanta una ceja.",
+    "dialogo": [
+     {"quien": "Andrés", "dice": "Mi primo… el que vende tacos."},
+     {"quien": "Paola", "dice": "Tacos de departamentos de cuatro millones."}
+    ],
+    "sonido": "grillos"}
+  ],
+  "motor": [
+   {"tipo": "photo", "voz": "Pasó en una inmobiliaria: un asesor cerraba poco, pero sus leads siempre se enfriaban. Tres de ellos compraron en un mes con la inmobiliaria de su primo.", "pantalla": "Titular: SUS LEADS SE [ENFRIABAN]. Foto de asesor con el celular escondido."},
+   {"tipo": "chat", "voz": "Mientras el lead viva en el WhatsApp personal de tu asesor, no ves qué le dicen ni a quién se lo pasan.", "pantalla": "Chat: Andrés M.: «Te paso con un socio, por fuera te sale mejor la comisión». Diana Trejo: «Va, pásame su número»."},
+   {"tipo": "stack", "voz": "Con Lead Master, el WhatsApp de cada asesor está conectado, solo las conversaciones con leads. Las llamadas salen del sistema y quedan grabadas. Y si pasa algo raro con un lead, te llega un aviso.", "pantalla": "Tarjetas: WhatsApp conectado (solo leads) · Llamadas grabadas · Aviso: algo raro con Diana Trejo (Andrés M.)."}
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y cierra la puerta.",
+  "dur": 38
+ },
+ {
+  "id": "S36",
+  "tema": "anecdotas",
+  "pilar": "P04",
+  "titulo": "Aguacate renuncia y se lleva los leads",
+  "gancho_pantalla": ["SE FUE CON", "[120] LEADS"],
+  "formato": "fruti",
+  "ia": [
+   {"plano": "Sala de juntas de frutas, música de telenovela: Aguacate Andrés entra con una caja de cartón con sus cosas; Don Piña, en la cabecera, aprieta la corona de hojas.",
+    "dialogo": [
+     {"quien": "Aguacate Andrés", "dice": "Don Piña, renuncio. Me voy a otra inmobiliaria."},
+     {"quien": "Don Piña", "dice": "Está bien, Aguacate… pero mis leads se quedan."}
+    ],
+    "sonido": "violines dramáticos"},
+   {"plano": "Aguacate sonríe de lado y agita su celular; triple zoom a la cara de Don Piña, que cae de rodillas mientras Fresa Valeria se tapa la boca.",
+    "dialogo": [
+     {"quien": "Aguacate Andrés", "dice": "¿Cuáles leads? Los ciento veinte están en mi celular."},
+     {"quien": "Don Piña", "dice": "¡Aguacateeee!"}
+    ],
+    "sonido": "trueno, golpe de telenovela"}
+  ],
+  "motor": [
+   {"tipo": "stat", "voz": "Pasó en una inmobiliaria: un asesor con ciento veinte leads activos renunció un viernes. El lunes no había nada: los chats estaban en su celular y las notas en su libreta.", "pantalla": "Número gigante: 120 LEADS SE FUERON."},
+   {"tipo": "events", "voz": "Dos de esos leads compraron con él en su nueva inmobiliaria. Y nadie pudo hacer nada, porque no había historial.", "pantalla": "Línea de tiempo: Viernes renuncia · Lunes: 0 historial · Mes siguiente: 2 ventas con la competencia."},
+   {"tipo": "ui+crm", "voz": "En Lead Master el historial es de tu inmobiliaria: cada chat, cada llamada grabada y cada nota se quedan aunque el asesor se vaya. El que sigue retoma cada lead con todo el contexto.", "pantalla": "Ficha: Andrés M. dejó la empresa · 120 leads · historial completo (chats, llamadas, notas) · asignar a Paola G. y Valeria R."}
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS antes de que se te vaya el siguiente.",
+  "dur": 39
+ },
+ {
+  "id": "S37",
+  "tema": "anecdotas",
+  "pilar": "P05",
+  "titulo": "22 leads calientitos… de hace tres semanas",
+  "gancho_pantalla": ["22 LEADS", "[CALIENTITOS]"],
+  "formato": "junta",
+  "ia": [
+   {"plano": "Plano medio: Don Ramiro con los brazos cruzados; Diego, muy confiado, se recarga en la silla con las manos detrás de la cabeza.",
+    "dialogo": [
+     {"quien": "Don Ramiro", "dice": "Diego, ¿cuántos leads nuevos tienes?"},
+     {"quien": "Diego", "dice": "Veintidós, jefe. Todos calientitos."}
+    ],
+    "sonido": "murmullo de oficina"},
+   {"plano": "Don Ramiro se inclina sobre la mesa; Diego pierde la sonrisa y la silla se le va para atrás. Rubén escupe el café.",
+    "dialogo": [
+     {"quien": "Don Ramiro", "dice": "¿Y a cuántos les has hablado?"},
+     {"quien": "Diego", "dice": "¿Hoy… o en general?"}
+    ],
+    "sonido": "silla cayendo, café escupido"}
+  ],
+  "motor": [
+   {"tipo": "stat", "voz": "En muchas inmobiliarias, uno de cada tres leads nunca habló con nadie. No es que no contestaran: nadie les marcó.", "pantalla": "Número gigante: 1 DE CADA 3 NUNCA HABLÓ CON NADIE."},
+   {"tipo": "phonelist", "voz": "Con Lead Master, cada asesor recibe a las ocho de la mañana su lista del día: lo urgente, los que nunca ha buscado y los que se están enfriando.", "pantalla": "Lista del día de Diego H.: Lo urgente 3 · Nunca los has buscado 22 · Se están enfriando 5."},
+   {"tipo": "ui+report", "voz": "Y tú recibes el reporte: cuántos leads entraron, a quién llamó cada asesor y quién se quedó sin contacto. Con nombre y apellido.", "pantalla": "Reporte del equipo: Paola G. llamó a 14 · Diego H. llamó a 0 · Sin contacto: 22 (Diego H.)."}
+  ],
+  "cta": "SISTEMA",
+  "cierre": "Comenta SISTEMA y te lo instalamos.",
+  "dur": 35
+ },
+ {
+  "id": "S38",
+  "tema": "anecdotas",
+  "pilar": "P07",
+  "titulo": "«No me haga perder el tiempo»: la captura viral",
+  "gancho_pantalla": ["¿QUIÉN ESCRIBIÓ", "[ESTO]?"],
+  "formato": "junta",
+  "ia": [
+   {"plano": "Don Ramiro lee su celular en voz alta, incrédulo; todos alrededor de la mesa se voltean a ver a Andrés.",
+    "dialogo": [
+     {"quien": "Don Ramiro", "dice": "«Si no tiene para el enganche, no me haga perder el tiempo». ¿Quién escribió esto?"},
+     {"quien": "Andrés", "dice": "Pues… era la verdad, jefe."}
+    ],
+    "sonido": "golpe dramático"},
+   {"plano": "Karla entra corriendo con su tablet en alto; Don Ramiro se deja caer en la silla con la cara entre las manos.",
+    "dialogo": [
+     {"quien": "Karla", "dice": "Ya está en el grupo de Facebook de la colonia. Tiene trescientos comentarios."}
+    ],
+    "sonido": "notificaciones sonando sin parar"}
+  ],
+  "motor": [
+   {"tipo": "chat", "voz": "Pasó en una inmobiliaria: un lead preguntó si podía comprar con crédito y el asesor le contestó esto. El lead publicó la captura y el dueño se enteró por un comentario.", "pantalla": "Chat: Lucía Hernández: «¿Aceptan crédito?» · Asesor: «Si no tiene para el enganche no me haga perder el tiempo»."},
+   {"tipo": "photo", "voz": "Lo que escribe tu asesor lo firma tu inmobiliaria. Y casi siempre te enteras cuando ya es público.", "pantalla": "Titular: LO QUE ESCRIBE TU ASESOR LO [FIRMAS] TÚ."},
+   {"tipo": "stack", "voz": "Con Lead Master, las conversaciones con leads viven en tu sistema: las lees sin pedirle el celular a nadie, y te llega un aviso cuando pasa algo raro con un lead.", "pantalla": "Tarjetas: Conversaciones con leads en tu sistema · Llamadas grabadas · Aviso: conversación a revisar (Lucía Hernández)."}
+  ],
+  "cta": "SISTEMA",
+  "cierre": "Comenta SISTEMA y entérate antes que Facebook.",
+  "dur": 37
+ },
+ {
+  "id": "S39",
+  "tema": "anecdotas",
+  "pilar": "P13",
+  "titulo": "90 % contactados, según el Excel",
+  "gancho_pantalla": ["90 % SEGÚN", "EL [EXCEL]"],
+  "formato": "junta",
+  "ia": [
+   {"plano": "Rubén presenta orgulloso en la pantalla de la sala un Excel con un 90 % gigante en verde; Don Ramiro lo mira con los ojos entrecerrados.",
+    "dialogo": [
+     {"quien": "Rubén", "dice": "¡Noventa por ciento de leads contactados, Don Ramiro! ¡Récord!"},
+     {"quien": "Don Ramiro", "dice": "¿Noventa? ¿Y por qué este mes vendimos tres?"}
+    ],
+    "sonido": "fanfarria que se corta de golpe"},
+   {"plano": "Al fondo de la mesa, Diego se acerca a Paola y le susurra tapándose la boca; los dos miran al techo.",
+    "dialogo": [
+     {"quien": "Diego", "dice": "Yo puse que llamé a todos… por si acaso."},
+     {"quien": "Paola", "dice": "Yo también."}
+    ],
+    "sonido": "silbido inocente"}
+  ],
+  "motor": [
+   {"tipo": "compare", "voz": "Pasó en una inmobiliaria: el Excel decía noventa por ciento de leads contactados. Cuando conectaron los WhatsApp y las llamadas, el número real fue cuarenta y uno.", "pantalla": "Comparación: Según el Excel 90 % · Según los chats y las llamadas 41 %."},
+   {"tipo": "photo", "voz": "Nadie mentía a propósito. Cada asesor llenaba lo que se acordaba. Un reporte que alguien llena a mano es una opinión.", "pantalla": "Titular: UN REPORTE A MANO ES UNA [OPINIÓN]. Foto de Excel de noche."},
+   {"tipo": "ui+report", "voz": "Lead Master arma el reporte solo, con lo que de verdad pasó en los chats y las llamadas. Te llega todos los días a tu WhatsApp, sin que nadie llene nada.", "pantalla": "Reporte del equipo: Leads que entraron 37 · Contactados 15 (41 %) · Sin contacto 22 · Citas 3."}
+  ],
+  "cta": "SISTEMA",
+  "cierre": "Comenta SISTEMA y recibe el reporte de verdad.",
+  "dur": 37
+ },
+ {
+  "id": "S40",
+  "tema": "anecdotas",
+  "pilar": "P05",
+  "titulo": "Plátano Diego y las 15 llamadas en 3 minutos",
+  "gancho_pantalla": ["15 LLAMADAS", "EN [3] MINUTOS"],
+  "formato": "fruti",
+  "ia": [
+   {"plano": "Sala de juntas de frutas, música de telenovela: Don Piña de brazos cruzados frente a Plátano Diego, que levanta la mano como jurando.",
+    "dialogo": [
+     {"quien": "Don Piña", "dice": "Plátano Diego, ¿le marcaste a Lucía Hernández?"},
+     {"quien": "Plátano Diego", "dice": "¡Quince veces, Don Piña! ¡Lo juro por mi racimo!"}
+    ],
+    "sonido": "violines de suspenso"},
+   {"plano": "Limón abre la laptop con triple zoom dramático; Plátano Diego se pone café de los nervios y Don Piña se levanta furioso.",
+    "dialogo": [
+     {"quien": "Limón", "dice": "Quince llamadas… en tres minutos. A las dos de la tarde. En plena comida."},
+     {"quien": "Don Piña", "dice": "¡Plátanooo!"}
+    ],
+    "sonido": "trueno, golpe de telenovela"}
+  ],
+  "motor": [
+   {"tipo": "events", "voz": "Quince intentos en tres minutos no son seguimiento. Son un solo intento, justo a la hora en que nadie contesta.", "pantalla": "Registro de llamadas: Diego H. → Lucía Hernández · 15 llamadas entre 2:47 y 2:50 pm · 0 contestadas."},
+   {"tipo": "bars", "voz": "Lead Master registra cada llamada que sale del sistema: cuántos intentos, a qué hora y cuánto duró. Y te dice a qué hora sí te contestan tus leads.", "pantalla": "Barras de tasa de contestación por horario (ejemplo): 2 pm 8 % · 11 am 21 % · 7 pm 38 %."},
+   {"tipo": "phonelist", "voz": "Así tu asesor sabe a quién volver a llamar cada día, tú ves cada intento real, y dejas de escuchar «le marqué quince veces» en la junta.", "pantalla": "Lista del día de Diego H.: No te han contestado · Lucía Hernández (2.º intento)."}
+  ],
+  "cta": "SISTEMA",
+  "cierre": "Comenta SISTEMA y te lo instalamos.",
+  "dur": 36
+ }
+]

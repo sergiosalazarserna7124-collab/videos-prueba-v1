@@ -133,7 +133,28 @@ def build(spec_path, safe=False):
     scenes = []
     all_words = []
     t0 = 0.0
+    music_from = 0
     for i, sc in enumerate(spec['scenes']):
+        if sc['type'] == 'clip':
+            # Clip de IA con su propio audio: dura lo que dura el video (o 'cut' segundos).
+            p = dict(sc['p'])
+            vid = os.path.join(PUB, p['src'])
+            vdur = probe_dur(vid) - p.get('startFrom', 0) / FPS
+            dur_s = min(vdur, sc.get('cut', vdur)) + (GAP if i < len(spec['scenes']) - 1 else 0)
+            start_f = round(t0 * FPS)
+            dur_f = round((t0 + dur_s) * FPS) - start_f
+            wpath = os.path.join(PUB, p.get('words', '')) if p.get('words') else None
+            for x in (json.load(open(wpath)) if wpath and os.path.exists(wpath) else []):
+                if x['s'] * FPS >= dur_f:
+                    continue
+                all_words.append({'w': x['w'], 's': round(t0 + x['s'], 3), 'e': round(t0 + min(x['e'], dur_s), 3),
+                                  'hl': norm(x['w']) in keywords or bool(re.search(r'\d', x['w']))})
+            scenes.append({'type': 'clip', 'from': start_f, 'dur': dur_f, 'p': p,
+                           'sfx': [x for x in sc.get('sfx', []) if isinstance(x.get('at', 0), int)],
+                           'captions': sc.get('captions', True)})
+            t0 += dur_s
+            music_from = round(t0 * FPS) if spec.get('musicAfterClips', True) else 0
+            continue
         key = sc['key']
         tempo = sc.get('tempo', spec.get('tempo', 1.0))
         mp3 = os.path.join(PUB, 'tts', f'{key}.mp3')
@@ -209,7 +230,7 @@ def build(spec_path, safe=False):
     total = round(t0 * FPS)
     props = {
         'id': spec['id'], 'totalFrames': total, 'scenes': scenes, 'words': all_words,
-        'music': {'src': spec['music'], 'vol': spec.get('musicVol', 0.1)} if spec.get('music') else None,
+        'music': {'src': spec['music'], 'vol': spec.get('musicVol', 0.1), 'from': music_from} if spec.get('music') else None,
         'safeDebug': safe,
     }
     os.makedirs(os.path.join(ROOT, 'build'), exist_ok=True)

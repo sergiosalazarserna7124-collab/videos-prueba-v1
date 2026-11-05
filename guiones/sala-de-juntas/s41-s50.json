@@ -1,0 +1,568 @@
+[
+ {
+  "id": "S41",
+  "tema": "descartados",
+  "pilar": "P06",
+  "titulo": "412 descartados y nadie sabe por qué",
+  "gancho_pantalla": [
+   "412 LEADS",
+   "[DESCARTADOS]"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Plano medio de Don Ramiro en la cabecera de la mesa; desenrolla una hoja impresa tan larga que cae de la mesa y rueda por el piso de la sala de juntas.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "¿Cuatrocientos doce descartados? ¡¿Quién descartó a media ciudad?!"
+     }
+    ],
+    "sonido": "papel desenrollándose, rollo que cae al piso"
+   },
+   {
+    "plano": "Contraplano: Diego encogido detrás de su laptop, sudando; a su lado Paola cruza los brazos y lo mira de reojo.",
+    "dialogo": [
+     {
+      "quien": "Diego",
+      "dice": "Jefe, es que no contestaban…"
+     },
+     {
+      "quien": "Paola",
+      "dice": "Les marcó una vez. A la hora de la comida."
+     }
+    ],
+    "sonido": "silencio incómodo, un grillo"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "En casi todas las inmobiliarias, descartar un lead es un clic. Y nadie revisa por qué se descartó.",
+    "pantalla": "Titular: UN CLIC Y [ADIÓS]. Foto de asesor frente a la laptop."
+   },
+   {
+    "tipo": "mock",
+    "voz": "En Lead Master ves cada lead descartado, quién lo descartó, el motivo y la conversación completa. Así sabes si de verdad no le interesaba o si nadie le insistió.",
+    "pantalla": "Pantalla de descartados: Diego H. · 37 descartados esta semana · motivo «no contesta» · 31 con un solo intento."
+   },
+   {
+    "tipo": "ui+crm",
+    "voz": "Y si estaba mal descartado, lo reasignas a otro asesor antes de que compre con la competencia. Ese lead ya lo pagaste en anuncios.",
+    "pantalla": "Tarjeta de Lucía Hernández pasa de «Descartado» a «Paola G. · llamar hoy»."
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y te enseñamos tus descartados.",
+  "dur": 36
+ },
+ {
+  "id": "S42",
+  "tema": "descartados",
+  "pilar": "P06",
+  "titulo": "Motivo de descarte: «no le interesa»",
+  "gancho_pantalla": [
+   "NO LE INTERESA",
+   "¿[SEGURO]?"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Plano medio de Don Ramiro con los lentes en la mano, leyendo la pantalla de la laptop en voz alta; la vena de la frente le empieza a latir.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "Motivo de descarte: «no le interesa». Diego… ¡el señor preguntó por el enganche!"
+     }
+    ],
+    "sonido": "tic del reloj de la sala"
+   },
+   {
+    "plano": "Diego se acomoda el saco que le queda grande, muy seguro de sí; al fondo Rubén se baja los lentes y se tapa la cara con la mano.",
+    "dialogo": [
+     {
+      "quien": "Diego",
+      "dice": "Bueno, jefe, preguntar no es comprar."
+     }
+    ],
+    "sonido": "palmada en la frente"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "chat",
+    "voz": "Este es el chat del lead que Diego descartó por «no le interesa». Preguntó por el enganche, le dijeron «le paso info» y nadie volvió a escribirle.",
+    "pantalla": "Chat: Lead: «¿De cuánto es el enganche del depa de 2 recámaras?» · Diego: «le paso info» · tres días sin mensajes · etiqueta roja: Descartado, no le interesa."
+   },
+   {
+    "tipo": "mock",
+    "voz": "Lead Master pone al lado de cada motivo la conversación completa. Si el lead preguntó por el enganche, por el crédito o por una visita, no era un curioso.",
+    "pantalla": "Descartado · Motivo: «no le interesa» · Última pregunta del lead: «¿de cuánto es el enganche?» · botón Revisar."
+   },
+   {
+    "tipo": "ui+crm",
+    "voz": "Lo reasignas y otro asesor le llama hoy. Ya pagaste por ese lead. Que no se pierda por un clic.",
+    "pantalla": "Reasignado a Paola G. · llamada hoy 5:00 pm."
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y revisamos tus descartados.",
+  "dur": 35
+ },
+ {
+  "id": "S43",
+  "tema": "descartados",
+  "pilar": "P06",
+  "titulo": "La «curiosa» ya subió foto con las llaves",
+  "gancho_pantalla": [
+   "YA COMPRÓ.",
+   "[CON OTRO]"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Paola le enseña su celular a Don Ramiro: en la pantalla, una foto de una señora sonriendo con unas llaves frente a una casa nueva. Don Ramiro sonríe orgulloso.",
+    "dialogo": [
+     {
+      "quien": "Paola",
+      "dice": "Jefe, ¿se acuerda de Adriana Solís? Ya compró. Subió foto con las llaves."
+     },
+     {
+      "quien": "Don Ramiro",
+      "dice": "¡Qué bien! ¿Quién se la cerró?"
+     }
+    ],
+    "sonido": "murmullo de oficina"
+   },
+   {
+    "plano": "Silencio. Paola niega lentamente con la cabeza. Don Ramiro se pone rojo de abajo hacia arriba como termómetro y le sale vapor de las orejas; Diego se desliza debajo de la mesa.",
+    "dialogo": [
+     {
+      "quien": "Paola",
+      "dice": "Nosotros no, jefe."
+     }
+    ],
+    "sonido": "silbido de olla exprés"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "events",
+    "voz": "Adriana dejó sus datos en marzo. Diego le marcó una vez, la puso como curiosa y nadie más la buscó. En mayo compró una casa de 4 millones con otra inmobiliaria.",
+    "pantalla": "Línea de tiempo: 3 mar entra el lead · 3 mar 1 llamada · 4 mar descartada «curiosa» · 12 may compró con otra inmobiliaria."
+   },
+   {
+    "tipo": "stat",
+    "voz": "Una casa de 4 millones al 3 por ciento son 120 mil pesos de comisión que se fueron por un clic.",
+    "pantalla": "Número gigante: $120,000 · comisión que se fue."
+   },
+   {
+    "tipo": "mock",
+    "voz": "En Lead Master revisas los descartados de la semana con su motivo y su conversación, y reasignas los que todavía se pueden rescatar.",
+    "pantalla": "Descartados esta semana: 23 · Por revisar: 9 · Reasignados: 4."
+   }
+  ],
+  "cta": "INMOBILIARIO",
+  "cierre": "Comenta INMOBILIARIO y te enseñamos cómo.",
+  "dur": 37
+ },
+ {
+  "id": "S44",
+  "tema": "descartados",
+  "pilar": "P06",
+  "titulo": "La caja que el Plátano escondía",
+  "gancho_pantalla": [
+   "LA CAJA DE LOS",
+   "[DESCARTADOS]"
+  ],
+  "formato": "fruti",
+  "ia": [
+   {
+    "plano": "Sala de juntas de frutas. Fresa Valeria saca de debajo del escritorio de Plátano Diego una caja empolvada que dice DESCARTADOS; la abre y se ilumina como un tesoro. Zoom lento, música de telenovela.",
+    "dialogo": [
+     {
+      "quien": "Fresa Valeria",
+      "dice": "Don Piña… aquí hay ciento cincuenta leads… ¡y todos siguen vivos!"
+     }
+    ],
+    "sonido": "coro dramático"
+   },
+   {
+    "plano": "Don Piña con la corona de hojas erizada encara a Plátano Diego, que se pone café de los nervios. Trueno, triple zoom a la cara del Plátano.",
+    "dialogo": [
+     {
+      "quien": "Don Piña",
+      "dice": "¡Plátano! ¿Por qué escondiste estos leads?"
+     },
+     {
+      "quien": "Plátano Diego",
+      "dice": "No los escondí… ¡los descarté!"
+     }
+    ],
+    "sonido": "trueno, golpe de piano"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "En muchas inmobiliarias «descartado» quiere decir «nadie lo vuelve a ver». Y ahí hay leads que sí iban a comprar.",
+    "pantalla": "Titular: LEADS [ENTERRADOS]. Foto de oficina vacía de noche."
+   },
+   {
+    "tipo": "mock",
+    "voz": "Lead Master te muestra cada descartado con el motivo, cuántas veces se le llamó y la última conversación. Si a un lead se le marcó una sola vez, lo ves.",
+    "pantalla": "Tabla: Diego H. · 150 descartados · 112 con un solo intento · motivo más común: «no contesta»."
+   },
+   {
+    "tipo": "ui+call",
+    "voz": "Y los rescatas: los reasignas o los llamas uno tras otro con un botón. Si alguien contesta, hablas, y lo que se dijo queda en notas.",
+    "pantalla": "Botón «Llamar a todos (38)» · llamada en curso a Lucía Hernández · nota que se escribe sola."
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y rescatamos tu caja de descartados.",
+  "dur": 38
+ },
+ {
+  "id": "S45",
+  "tema": "descartados",
+  "pilar": "P06",
+  "titulo": "El viernes de revisar descartados a mano",
+  "gancho_pantalla": [
+   "600 CHATS",
+   "A [MANO]"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Don Ramiro de pie con una lupa gigante en la mano, como detective; los cuatro asesores alrededor de la mesa abren la boca horrorizados.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "¡A partir de hoy, cada viernes revisamos uno por uno los leads que descartaron!"
+     }
+    ],
+    "sonido": "golpe de orquesta de suspenso"
+   },
+   {
+    "plano": "Rubén gira su laptop: una lista que no se acaba. Don Ramiro baja la lupa despacio y se sienta derrotado.",
+    "dialogo": [
+     {
+      "quien": "Rubén",
+      "dice": "Jefe, son seiscientos. Nos quedamos hasta el lunes."
+     }
+    ],
+    "sonido": "trombón triste"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "Revisar descartados a mano no escala. Nadie tiene tiempo de leer seiscientos chats un viernes en la tarde. Y si nadie los revisa, tus asesores aprenden que descartar no tiene consecuencias.",
+    "pantalla": "Titular: 600 CHATS [A MANO]. Foto de Excel de noche."
+   },
+   {
+    "tipo": "mock",
+    "voz": "Lead Master te los ordena: cada descartado con su asesor, su motivo, cuántas veces se le llamó y la conversación al lado.",
+    "pantalla": "Descartados agrupados por asesor y por motivo, con número de intentos y botón Ver conversación."
+   },
+   {
+    "tipo": "bars",
+    "voz": "Así ves en cinco minutos que Diego descarta cuatro veces más que Paola, y casi siempre con una sola llamada.",
+    "pantalla": "Barras de descartados del mes: Diego H. 37 · Andrés M. 21 · Valeria R. 9 · Paola G. 8 · etiqueta «con 1 solo intento»."
+   }
+  ],
+  "cta": "SISTEMA",
+  "cierre": "Comenta SISTEMA y te lo enseñamos con tus datos.",
+  "dur": 35
+ },
+ {
+  "id": "S46",
+  "tema": "circulos",
+  "pilar": "P01",
+  "titulo": "Karla trajo un bot que atiende solito",
+  "gancho_pantalla": [
+   "PRESIONE 1",
+   "PARA [VENDER]"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Karla, con blazer morado, presenta su tablet frente a la mesa con sonrisa forzada de comercial; Don Ramiro la escucha con los brazos cruzados.",
+    "dialogo": [
+     {
+      "quien": "Karla",
+      "dice": "¡Les traje un bot que atiende solito a sus clientes, veinticuatro siete!"
+     },
+     {
+      "quien": "Don Ramiro",
+      "dice": "¿Y vende?"
+     }
+    ],
+    "sonido": "fanfarria de anuncio"
+   },
+   {
+    "plano": "Paola lee en voz alta desde su celular, sin emoción; todos voltean despacio a ver a Karla, que mantiene la sonrisa congelada.",
+    "dialogo": [
+     {
+      "quien": "Paola",
+      "dice": "Un cliente preguntó por un depa en Polanco. El bot le contestó: «presione uno»."
+     }
+    ],
+    "sonido": "disco rayado"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "chat",
+    "voz": "Así atienden muchos bots a alguien que quiere comprar un departamento de 6 millones. El cliente pregunta algo concreto y el bot lo manda a dar vueltas en un menú.",
+    "pantalla": "Chat: Lead: «¿El depa de Polanco tiene estacionamiento?» · Bot: «Presione 1 para ventas, 2 para rentas» · Lead: «?» · Bot: «No entendí. Presione 1» · el lead deja de contestar."
+   },
+   {
+    "tipo": "photo",
+    "voz": "Nadie compra una casa porque un bot le contestó rápido. La compra porque una persona le dio seguimiento.",
+    "pantalla": "Titular: COMPRA POR UNA [PERSONA]. Foto de recorrido con asesora."
+   },
+   {
+    "tipo": "phonelist",
+    "voz": "En Lead Master la IA trabaja para tu asesor: lee los chats y las llamadas, llena el CRM y cada mañana le dice a quién llamar.",
+    "pantalla": "Lista del día por WhatsApp: Lo urgente 3 · Nunca los has buscado 5 · No te contestaron 7 · Se están enfriando 4."
+   }
+  ],
+  "cta": "SISTEMA",
+  "cierre": "Comenta SISTEMA. Y no, no despide a nadie.",
+  "dur": 36
+ },
+ {
+  "id": "S47",
+  "tema": "circulos",
+  "pilar": "P02",
+  "titulo": "Karla vs. Diego: primer round",
+  "gancho_pantalla": [
+   "MARKETING",
+   "VS. [VENTAS]"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Karla y Diego frente a frente en la sala de juntas como boxeadores; Don Ramiro en medio hace de réferi y toca una campanita.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "¡Primer round! La agencia dice que los leads son buenos. Ventas dice que son basura."
+     }
+    ],
+    "sonido": "campana de box, multitud"
+   },
+   {
+    "plano": "Karla y Diego se gritan a la cara; Paola levanta la mano desde su silla sin despegar los ojos de su café.",
+    "dialogo": [
+     {
+      "quien": "Karla",
+      "dice": "¡Les mando trescientos a la semana!"
+     },
+     {
+      "quien": "Diego",
+      "dice": "¡Y ninguno contesta!"
+     },
+     {
+      "quien": "Paola",
+      "dice": "Diego, les marcas a los tres días."
+     }
+    ],
+    "sonido": "golpe de K.O."
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "Esta pelea pasa en casi todas las inmobiliarias, y siempre gana el que grita más fuerte, porque nadie tiene los datos.",
+    "pantalla": "Titular: GANA EL QUE [GRITA]. Foto de marketing y ventas peleando."
+   },
+   {
+    "tipo": "bars",
+    "voz": "Lead Master te dice por campaña cuántos leads entraron, en cuánto tiempo se les llamó y cuántos agendaron cita. Así sabes si el problema es la campaña o el seguimiento.",
+    "pantalla": "Barras por campaña: Campaña A · 120 leads · llamados en 18 min · 14 citas | Campaña B · 180 leads · llamados en 2 días · 3 citas."
+   },
+   {
+    "tipo": "flow",
+    "voz": "Y le avisa a Meta quién sí agenda y compra, para que te traiga más compradores y menos curiosos. Se acabó la pelea.",
+    "pantalla": "Flechas: El lead agenda → Lead Master avisa a Meta → Meta busca más gente como esa."
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y ponemos los datos en la mesa.",
+  "dur": 36
+ },
+ {
+  "id": "S48",
+  "tema": "circulos",
+  "pilar": "P03",
+  "titulo": "Rubén proyecta el CRM: 300 leads en «Nuevo»",
+  "gancho_pantalla": [
+   "300 LEADS EN",
+   "[NUEVO]"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Rubén proyecta en la pantalla de la sala un tablero de CRM con todas las tarjetas apiladas en la primera columna y telarañas en las demás; Don Ramiro se atraganta con el café.",
+    "dialogo": [
+     {
+      "quien": "Rubén",
+      "dice": "Jefe, este es nuestro CRM. Trescientos leads en «Nuevo»… desde marzo."
+     }
+    ],
+    "sonido": "tos, taza que se cae"
+   },
+   {
+    "plano": "Don Ramiro, con la camisa manchada de café, golpea la mesa; Rubén contesta sin inmutarse mientras Diego silba viendo al techo.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "¡¿Y cuánto estamos pagando por esto?!"
+     },
+     {
+      "quien": "Rubén",
+      "dice": "Lo de cada mes, jefe. Puntual."
+     }
+    ],
+    "sonido": "silbido de Diego"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "Pagaste GoHighLevel, pero tus asesores viven en WhatsApp, no en el CRM. Por eso las tarjetas nunca se mueven.",
+    "pantalla": "Titular: UN CRM QUE [NADIE] LLENA. Foto de laptop con tablero vacío."
+   },
+   {
+    "tipo": "ui+crm",
+    "voz": "Lead Master lee lo que pasa en los chats y en las llamadas de cada asesor y mueve el lead solo: contactado, cita, apartado.",
+    "pantalla": "Tarjeta de Diana Trejo pasa sola de «Nuevo» a «Cita agendada»."
+   },
+   {
+    "tipo": "ui+note",
+    "voz": "Las notas también se escriben solas con lo que se habló en la llamada. Tu asesor solo habla con clientes. Y tú abres el CRM y por fin dice la verdad.",
+    "pantalla": "Nota: «Busca 2 recámaras en la Del Valle, crédito aprobado, visita el sábado 11:00»."
+   }
+  ],
+  "cta": "CRM",
+  "cierre": "Comenta CRM y te enseñamos el tuyo moviéndose solo.",
+  "dur": 35
+ },
+ {
+  "id": "S49",
+  "tema": "circulos",
+  "pilar": "P04",
+  "titulo": "Aguacate Andrés y su «socio»",
+  "gancho_pantalla": [
+   "¿TU ASESOR",
+   "TIENE [SOCIO]?"
+  ],
+  "formato": "fruti",
+  "ia": [
+   {
+    "plano": "Sala de juntas de frutas. Don Piña golpea la mesa; Aguacate Andrés esconde el celular detrás de la espalda y suda. Música de telenovela, zoom rápido.",
+    "dialogo": [
+     {
+      "quien": "Don Piña",
+      "dice": "Aguacate, ¿por qué Diana Trejo dice que ya la atiende «tu socio»?"
+     },
+     {
+      "quien": "Aguacate Andrés",
+      "dice": "¿Socio? ¿Cuál socio? Yo no tengo socio."
+     }
+    ],
+    "sonido": "golpe en la mesa, violines"
+   },
+   {
+    "plano": "Limón abre la laptop despacio y la gira hacia Don Piña; Mango ahoga un grito, Fresa Valeria se tapa la boca. Trueno, triple zoom a Aguacate, que se empieza a poner café.",
+    "dialogo": [
+     {
+      "quien": "Limón",
+      "dice": "Tengo el chat, Don Piña."
+     }
+    ],
+    "sonido": "trueno, golpe de piano"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "chat",
+    "voz": "Este es el chat que nunca ves, porque vive en el celular personal de tu asesor. Ahí se ofrecen otros proyectos, otras comisiones y otros socios.",
+    "pantalla": "Chat Andrés → Diana Trejo: «Mejor te atiendo por fuera con mi socio, te sale más barato la comisión»."
+   },
+   {
+    "tipo": "stack",
+    "voz": "Con Lead Master el WhatsApp de cada asesor está conectado, solo las conversaciones con leads. Y las llamadas salen del sistema y quedan grabadas.",
+    "pantalla": "Tarjetas: WhatsApp conectado (lo personal no) · Llamadas grabadas · Llamadas por fuera: 0."
+   },
+   {
+    "tipo": "ui+report",
+    "voz": "Si un lead se queda sin seguimiento o pasa algo raro, te llega un aviso. Y si el asesor se va, el historial se queda contigo.",
+    "pantalla": "Aviso en WhatsApp: «Algo raro con Diana Trejo (Andrés M.)» · El historial se queda."
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS antes de que tu Aguacate tenga socio.",
+  "dur": 38
+ },
+ {
+  "id": "S50",
+  "tema": "circulos",
+  "pilar": "P07",
+  "titulo": "Llegó una demanda por un WhatsApp de Diego",
+  "gancho_pantalla": [
+   "UN WHATSAPP,",
+   "UNA [DEMANDA]"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Rubén entra corriendo a la sala de juntas agitando un sobre; Don Ramiro escupe el café sobre la mesa.",
+    "dialogo": [
+     {
+      "quien": "Rubén",
+      "dice": "¡Don Ramiro! ¡Llegó una demanda! ¡Por un WhatsApp de Diego!"
+     }
+    ],
+    "sonido": "puerta que se azota, escupitajo de café"
+   },
+   {
+    "plano": "Don Ramiro voltea despacio hacia Diego, que suda y sonríe nervioso; todos los demás se dan una palmada en la frente al mismo tiempo.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "Diego… ¿qué le escribiste a ese cliente?"
+     },
+     {
+      "quien": "Diego",
+      "dice": "Nada, jefe. Nomás que le garantizaba quince por ciento de plusvalía."
+     }
+    ],
+    "sonido": "cuatro palmadas al mismo tiempo"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "case",
+    "voz": "Cuando tu asesor promete algo por escrito desde el WhatsApp de la inmobiliaria, el cliente no demanda al asesor. Te demanda a ti.",
+    "pantalla": "Expediente: «Demanda por promesa de plusvalía garantizada» · Responsable: la inmobiliaria · sello."
+   },
+   {
+    "tipo": "photo",
+    "voz": "Y casi siempre el dueño se entera cuando ya llegó la carta del abogado. Porque nadie lee los chats de los asesores hasta que hay un problema.",
+    "pantalla": "Titular: TE ENTERAS [TARDE]. Foto de escritorio de abogado."
+   },
+   {
+    "tipo": "mock",
+    "voz": "Con Lead Master las conversaciones con leads viven en tu sistema: revisas qué se le prometió a cada cliente y te llega un aviso cuando algo raro pasa con un lead.",
+    "pantalla": "Conversación con la frase «te garantizo 15% de plusvalía» resaltada · aviso: «Algo raro con un lead de Diego H.»."
+   }
+  ],
+  "cta": "SISTEMA",
+  "cierre": "Comenta SISTEMA antes de que te llegue el sobre.",
+  "dur": 36
+ }
+]

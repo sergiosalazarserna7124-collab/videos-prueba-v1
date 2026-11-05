@@ -1,0 +1,564 @@
+[
+ {
+  "id": "S21",
+  "tema": "objeciones",
+  "pilar": "P10",
+  "titulo": "Treinta citas y cero apartados",
+  "gancho_pantalla": [
+   "30 CITAS,",
+   "[0] APARTADOS"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Plano medio de Don Ramiro en la cabecera de la sala de juntas; avienta una hoja impresa sobre la mesa y se le pone la cara roja.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "¡Treinta citas este mes y cero apartados! ¿Qué carajo les están diciendo los clientes?"
+     }
+    ],
+    "sonido": "hoja golpeando la mesa, tazas que brincan"
+   },
+   {
+    "plano": "Plano general de la mesa: Diego contesta rápido y nervioso; Rubén, muy serio, gira su laptop con un Excel enorme hacia Don Ramiro.",
+    "dialogo": [
+     {
+      "quien": "Diego",
+      "dice": "Que está caro, jefe."
+     },
+     {
+      "quien": "Rubén",
+      "dice": "Según mi Excel, la objeción número uno es… «otros»."
+     }
+    ],
+    "sonido": "silencio incómodo, un grillo"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "Si nadie sabe por qué no compran tus clientes, cada asesor adivina. Y con adivinanzas no se corrige nada.",
+    "pantalla": "Foto de una junta tensa. Titular: ¿POR QUÉ NO [COMPRAN]?"
+   },
+   {
+    "tipo": "bars",
+    "voz": "Lead Master lee los chats y las llamadas de tu equipo y te muestra las objeciones más comunes de tus clientes: precio, ubicación, crédito y el famoso «lo voy a pensar».",
+    "pantalla": "Barras «Objeciones del mes»: Precio 41 %, Ubicación 22 %, Crédito 18 %, «Lo voy a pensar» 12 %, Otras 7 %."
+   },
+   {
+    "tipo": "compare",
+    "voz": "Así sabes qué corregir. Si es precio, ajustas el anuncio. Si es crédito, capacitas al equipo. Y dejas de culpar al cliente.",
+    "pantalla": "Antes: «otros» en el Excel de Rubén. Con Lead Master: objeción número uno, precio, 41 % de las conversaciones."
+   }
+  ],
+  "cta": "SISTEMA",
+  "cierre": "Comenta SISTEMA y te lo instalamos.",
+  "dur": 36
+ },
+ {
+  "id": "S22",
+  "tema": "objeciones",
+  "pilar": "P10",
+  "titulo": "Fresa Valeria y los veinte «lo voy a pensar»",
+  "gancho_pantalla": [
+   "«LO VOY A",
+   "[PENSAR]»"
+  ],
+  "formato": "fruti",
+  "ia": [
+   {
+    "plano": "Sala de juntas de frutas con música de telenovela; zoom lento a Fresa Valeria, que llora lágrimas de jugo.",
+    "dialogo": [
+     {
+      "quien": "Fresa Valeria",
+      "dice": "Don Piña… los veinte clientes de esta semana me dijeron lo mismo: «lo voy a pensar»."
+     }
+    ],
+    "sonido": "violines dramáticos"
+   },
+   {
+    "plano": "Triple zoom a Don Piña, a quien se le paran las hojas de la corona; al fondo, Plátano Diego levanta la mano muy tranquilo.",
+    "dialogo": [
+     {
+      "quien": "Don Piña",
+      "dice": "¡¿Veinte?! ¿Y cuántos lo pensaron?"
+     },
+     {
+      "quien": "Plátano Diego",
+      "dice": "Yo tampoco lo pensé, Don Piña."
+     }
+    ],
+    "sonido": "trueno, golpe de orquesta"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "«Lo voy a pensar» no es un no. Es una objeción que nadie le preguntó al cliente. Y si no la mides, la escuchas todas las semanas.",
+    "pantalla": "Titular: «LO VOY A PENSAR» [NO ES UN NO]. Foto de asesora con el celular."
+   },
+   {
+    "tipo": "panel",
+    "voz": "Lead Master revisa los chats y las llamadas de tu equipo y te dice qué objeciones se repiten más. Aquí, «lo voy a pensar» va en primer lugar.",
+    "pantalla": "Panel «Objeciones del mes»: «Lo voy a pensar» 34 %, Precio 27 %, Crédito 19 %, Ubicación 12 %."
+   },
+   {
+    "tipo": "phonelist",
+    "voz": "Y como cada asesor recibe su lista del día, esos clientes no se quedan pensando solos: les toca llamada antes de que se enfríen.",
+    "pantalla": "Celular de Valeria, «Tu lista de hoy · 8:00 am»: Se están enfriando (6) · Diana Trejo: «lo voy a pensar», hace 3 días."
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y te lo instalamos.",
+  "dur": 38
+ },
+ {
+  "id": "S23",
+  "tema": "objeciones",
+  "pilar": "P10",
+  "titulo": "¿Quién sabe de crédito Infonavit?",
+  "gancho_pantalla": [
+   "¿QUIÉN SABE DE",
+   "[CRÉDITO]?"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Don Ramiro de pie junto a un pizarrón con la palabra CRÉDITO escrita enorme; mira a todos con los brazos cruzados.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "Uno de cada tres clientes pregunta por crédito Infonavit. ¿Quién sabe cómo funciona?"
+     }
+    ],
+    "sonido": "marcador rechinando en el pizarrón"
+   },
+   {
+    "plano": "Silencio total; Diego levanta la mano despacio, muy serio. Paola se tapa la cara con las dos manos.",
+    "dialogo": [
+     {
+      "quien": "Diego",
+      "dice": "Jefe… ¿se come?"
+     }
+    ],
+    "sonido": "grillos, Don Ramiro suspira fuerte"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "Si tus clientes preguntan por crédito y tu equipo no sabe contestar, no es que no tengan dinero. Es que nadie les resolvió la duda.",
+    "pantalla": "Titular: NADIE LES [RESOLVIÓ] LA DUDA. Foto de pareja revisando papeles."
+   },
+   {
+    "tipo": "bars",
+    "voz": "Lead Master saca de los chats y las llamadas las objeciones más comunes de tus clientes. En esta inmobiliaria, el crédito aparece en casi uno de cada tres.",
+    "pantalla": "Barras «Objeciones del mes»: Crédito 31 %, Precio 26 %, Ubicación 17 %, «Lo voy a pensar» 15 %."
+   },
+   {
+    "tipo": "flow",
+    "voz": "Con ese dato sabes qué hacer: una capacitación de crédito el lunes, una ficha clara para mandar por WhatsApp y un asesor que sí domine el tema.",
+    "pantalla": "Flujo: Objeción detectada → Capacitación de crédito → Ficha por WhatsApp → Más citas."
+   }
+  ],
+  "cta": "INMOBILIARIO",
+  "cierre": "Comenta INMOBILIARIO y te lo instalamos.",
+  "dur": 37
+ },
+ {
+  "id": "S24",
+  "tema": "opciones",
+  "pilar": "P12",
+  "titulo": "«Ahorita te mando opciones»… hace dos semanas",
+  "gancho_pantalla": [
+   "¿Y LAS",
+   "[OPCIONES]?"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Don Ramiro lee en voz alta un mensaje en su celular, temblando de coraje; detrás de él, todos fingen trabajar.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "«Me dijeron ahorita te mando opciones… hace dos semanas.» ¡¿Quién fue?!"
+     }
+    ],
+    "sonido": "teclados que suenan de golpe"
+   },
+   {
+    "plano": "Plano general: todos señalan a Diego al mismo tiempo; Diego se esconde detrás de su laptop.",
+    "dialogo": [
+     {
+      "quien": "Diego",
+      "dice": "¡Es que tenemos trescientas propiedades, jefe! No me las sé todas."
+     }
+    ],
+    "sonido": "whoosh de todos los brazos señalando"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "chat",
+    "voz": "El lead pidió algo clarísimo: dos recámaras, en la Roma, hasta cinco millones. Y tu asesor tardó dos semanas porque tenía que buscar a mano.",
+    "pantalla": "Chat de WhatsApp. Adriana Solís: «Busco depa de 2 recámaras en la Roma, hasta 5 millones». Asesor: «Ahorita te mando opciones». Hace 14 días."
+   },
+   {
+    "tipo": "mock",
+    "voz": "Con Lead Master, la IA lee lo que pidió el lead y busca en tu inventario de EasyBroker las propiedades que sí coinciden.",
+    "pantalla": "Pantalla «Opciones para Adriana Solís»: Roma Norte, 2 rec., $4.8 M · Roma Sur, 2 rec., $4.5 M · Roma Norte, 2 rec., $4.9 M · Roma Sur, 2 rec., $4.2 M."
+   },
+   {
+    "tipo": "chat",
+    "voz": "Tu asesor las revisa y se las manda en minutos, no en dos semanas. Y el cliente siente que alguien sí lo está atendiendo.",
+    "pantalla": "Chat: el asesor manda 3 fichas. Adriana: «¡Me gusta la segunda! ¿La puedo ver el sábado?»"
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y te lo instalamos.",
+  "dur": 38
+ },
+ {
+  "id": "S25",
+  "tema": "opciones",
+  "pilar": "P12",
+  "titulo": "Paola y las 40 pestañas abiertas",
+  "gancho_pantalla": [
+   "40 PESTAÑAS",
+   "[ABIERTAS]"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Primer plano de Paola frente a su laptop con decenas de pestañas abiertas; el pelo rizado cada vez más despeinado.",
+    "dialogo": [
+     {
+      "quien": "Paola",
+      "dice": "Llevo una hora buscando un depa con terraza que acepte mascotas. ¡Una hora!"
+     }
+    ],
+    "sonido": "clics de mouse sin parar"
+   },
+   {
+    "plano": "Rubén se asoma por encima de sus lentes con una sonrisa orgullosa y le enseña su laptop.",
+    "dialogo": [
+     {
+      "quien": "Rubén",
+      "dice": "Tranquila, yo tengo todo el inventario en un Excel."
+     },
+     {
+      "quien": "Paola",
+      "dice": "¿De qué año, Rubén?"
+     }
+    ],
+    "sonido": "Rubén carraspea; un grillo"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "Tu equipo pierde horas buscando propiedades a mano entre el portal, el Excel y la memoria. Y mientras busca, el lead se enfría.",
+    "pantalla": "Titular: HORAS [BUSCANDO] A MANO. Foto de asesora frente a la laptop de noche."
+   },
+   {
+    "tipo": "mock",
+    "voz": "En Lead Master, la IA toma lo que pidió el lead, presupuesto, zona y lo que necesita, y busca en tu inventario de EasyBroker o del portal.",
+    "pantalla": "Pantalla «Lo que pidió»: Del Valle · hasta $3.5 M · terraza · acepta mascotas → 3 propiedades encontradas."
+   },
+   {
+    "tipo": "stat",
+    "voz": "Lo que le tomaba una hora a Paola, ahora le toma un par de minutos. Ella revisa las opciones y las manda.",
+    "pantalla": "Número gigante: 1 HORA → [MINUTOS]."
+   }
+  ],
+  "cta": "SISTEMA",
+  "cierre": "Comenta SISTEMA y te lo instalamos.",
+  "dur": 35
+ },
+ {
+  "id": "S26",
+  "tema": "opciones",
+  "pilar": "P12",
+  "titulo": "Plátano le mandó un penthouse de 12 millones",
+  "gancho_pantalla": [
+   "PIDIÓ [4]",
+   "LE MANDARON [12]"
+  ],
+  "formato": "fruti",
+  "ia": [
+   {
+    "plano": "Sala de juntas de frutas, música de telenovela; Don Piña sostiene un celular con la foto de un penthouse de lujo.",
+    "dialogo": [
+     {
+      "quien": "Don Piña",
+      "dice": "Plátano… la señora Lucía pidió una casa de cuatro millones en Zapopan."
+     }
+    ],
+    "sonido": "violines que suben"
+   },
+   {
+    "plano": "Triple zoom dramático a Plátano Diego, que sonríe orgulloso; trueno de fondo.",
+    "dialogo": [
+     {
+      "quien": "Don Piña",
+      "dice": "¡¿Y tú le mandaste un penthouse de doce millones en Polanco?!"
+     },
+     {
+      "quien": "Plátano Diego",
+      "dice": "Es que estaba bonito, Don Piña."
+     }
+    ],
+    "sonido": "trueno, golpe de orquesta"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "chat",
+    "voz": "Cuando tu asesor manda opciones que no tienen nada que ver con lo que pidió el cliente, el cliente entiende una sola cosa: no me escucharon.",
+    "pantalla": "Chat. Lucía Hernández: «Busco casa en Zapopan, hasta 4 millones». Asesor: ficha de penthouse en Polanco, $12 M. Lucía: «Ok… gracias». Visto."
+   },
+   {
+    "tipo": "mock",
+    "voz": "Lead Master lee lo que pidió el lead y busca en tu inventario opciones que sí coinciden en presupuesto y en zona.",
+    "pantalla": "Pantalla «Lucía Hernández · Zapopan · hasta $4 M» → 3 casas: $3.6 M, $3.9 M, $4 M."
+   },
+   {
+    "tipo": "compare",
+    "voz": "Tu asesor manda lo que el cliente sí puede comprar, en minutos. Y nadie vuelve a mandar un penthouse porque estaba bonito.",
+    "pantalla": "Antes: penthouse de $12 M «porque estaba bonito». Con Lead Master: 3 casas en Zapopan hasta $4 M."
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y te lo instalamos.",
+  "dur": 36
+ },
+ {
+  "id": "S27",
+  "tema": "opciones",
+  "pilar": "P12",
+  "titulo": "«Tres días… pero eran muy buenas»",
+  "gancho_pantalla": [
+   "¿CUÁNTO",
+   "[TARDASTE]?"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Andrés entra a la sala de juntas mirando su celular escondido debajo de la chamarra; Don Ramiro lo detiene con la mirada.",
+    "dialogo": [
+     {
+      "quien": "Andrés",
+      "dice": "Jefe, el cliente del depa de Polanco ya compró con otra inmobiliaria."
+     }
+    ],
+    "sonido": "puerta que se cierra, silencio"
+   },
+   {
+    "plano": "Don Ramiro se inclina hacia Andrés con una calma que da miedo; Andrés traga saliva.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "¿Cuánto tardaste en mandarle opciones?"
+     },
+     {
+      "quien": "Andrés",
+      "dice": "Tres días… pero eran muy buenas."
+     }
+    ],
+    "sonido": "un tic de reloj, tensión"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "events",
+    "voz": "Lunes, el lead pide opciones. Martes, otra inmobiliaria le manda tres. Miércoles, las visita. Jueves, por fin le llegan las tuyas.",
+    "pantalla": "Línea de tiempo: Lun 10:12 pide opciones · Mar 9:40 la competencia le manda 3 · Mié 17:00 visita · Jue 18:05 llegan las tuyas."
+   },
+   {
+    "tipo": "mock",
+    "voz": "Con Lead Master, en cuanto el lead pide algo, la IA busca en tu inventario de EasyBroker y le deja las opciones listas a tu asesor.",
+    "pantalla": "Pantalla: nuevo mensaje del lead → «Opciones encontradas: 4» → botón «Revisar y enviar»."
+   },
+   {
+    "tipo": "compare",
+    "voz": "En bienes raíces, el que contesta primero con buenas opciones se queda con la visita. Con Lead Master, ese puede ser tu equipo todos los días.",
+    "pantalla": "Antes: 3 días. Con Lead Master: [MINUTOS]."
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y te lo instalamos.",
+  "dur": 35
+ },
+ {
+  "id": "S28",
+  "tema": "opciones",
+  "pilar": "P12",
+  "titulo": "¿Teníamos casa con alberca o no teníamos?",
+  "gancho_pantalla": [
+   "¿TENÍAMOS",
+   "[ESA] CASA?"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Don Ramiro con el puño sobre la mesa y la vena de la frente saltando; todos lo miran sin parpadear.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "El cliente quería casa con alberca en Juriquilla. ¿Teníamos o no teníamos?"
+     }
+    ],
+    "sonido": "puño en la mesa"
+   },
+   {
+    "plano": "Paola y Diego se miran; Paola levanta tres dedos, a Diego se le abren los ojos como platos.",
+    "dialogo": [
+     {
+      "quien": "Paola",
+      "dice": "Teníamos tres."
+     },
+     {
+      "quien": "Diego",
+      "dice": "¿¡Tres!? Yo le dije que no había nada…"
+     }
+    ],
+    "sonido": "golpe de música de suspenso"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "photo",
+    "voz": "Tu equipo no se sabe todo tu inventario de memoria. Nadie se lo sabe. Y por eso a veces dicen que no hay, cuando sí hay.",
+    "pantalla": "Titular: SÍ HABÍA. NADIE [SABÍA]. Foto de casa con alberca."
+   },
+   {
+    "tipo": "mock",
+    "voz": "Lead Master toma lo que el lead pidió en el chat y busca en tu inventario de EasyBroker o del portal lo que coincide, aunque el asesor no se acuerde.",
+    "pantalla": "Pantalla «Juriquilla · casa · con alberca» → 3 propiedades de tu inventario."
+   },
+   {
+    "tipo": "chat",
+    "voz": "Tu asesor revisa, manda las tres y agenda la visita. Esa venta ya no se va con la competencia por no saber lo que tenías.",
+    "pantalla": "Chat: el asesor manda 3 fichas. Lead: «¡La segunda! ¿El sábado a las 11?» Inserto de cita agendada: sábado 11:00."
+   }
+  ],
+  "cta": "INMOBILIARIO",
+  "cierre": "Comenta INMOBILIARIO y te lo instalamos.",
+  "dur": 37
+ },
+ {
+  "id": "S29",
+  "tema": "portales",
+  "pilar": "P11",
+  "titulo": "La contraseña del portal la tenía la practicante",
+  "gancho_pantalla": [
+   "¿QUIÉN REVISÓ",
+   "EL [PORTAL]?"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Don Ramiro señala la pantalla de la sala, donde se ve una bandeja de mensajes con un número rojo enorme sin leer.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "¿Quién revisó los leads de Inmuebles24 esta semana? ¿Nadie?"
+     }
+    ],
+    "sonido": "zumbido de proyector"
+   },
+   {
+    "plano": "Rubén sube la mano despacio, sin despegar los ojos de su Excel; Don Ramiro se acerca.",
+    "dialogo": [
+     {
+      "quien": "Rubén",
+      "dice": "La contraseña la tenía la practicante, jefe."
+     },
+     {
+      "quien": "Don Ramiro",
+      "dice": "¿Y la practicante?!"
+     }
+    ],
+    "sonido": "Rubén contesta bajito: «se fue en agosto»; un grillo"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "stat",
+    "voz": "Cuando un portal depende de que alguien entre a revisar, pasa esto: cuarenta y seis leads sin abrir. Personas que preguntaron por una propiedad y nadie les contestó.",
+    "pantalla": "Número gigante: [46] leads sin abrir · Inmuebles24 · últimas 3 semanas."
+   },
+   {
+    "tipo": "flow",
+    "voz": "Lead Master está conectado a tus portales, EasyBroker, Inmuebles24 y otros. Cada lead entra solo al sistema y se le asigna a un asesor.",
+    "pantalla": "Flujo: Portal → Lead Master → Asignado a Paola G. → Llamada."
+   },
+   {
+    "tipo": "phonelist",
+    "voz": "Y si ese asesor no lo atiende a tiempo, pasa al siguiente. Nadie tiene que entrar al portal. Ni acordarse de la contraseña.",
+    "pantalla": "Celular de Paola: «Nuevo lead de Inmuebles24: Diana Trejo · asignado a ti»."
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y te lo instalamos.",
+  "dur": 36
+ },
+ {
+  "id": "S30",
+  "tema": "portales",
+  "pilar": "P11",
+  "titulo": "El lead del viernes a las 9 de la noche",
+  "gancho_pantalla": [
+   "VIERNES,",
+   "[9:00] PM"
+  ],
+  "formato": "junta",
+  "ia": [
+   {
+    "plano": "Lunes temprano; Don Ramiro con un café en la mano y cara de pocos amigos lee una notificación en su celular.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "Un lead de EasyBroker pidió visita el viernes a las nueve. ¿Quién lo vio?"
+     }
+    ],
+    "sonido": "sorbo de café, taza que se azota"
+   },
+   {
+    "plano": "Diego bosteza con lentes de sol puestos; Paola lo mira de reojo.",
+    "dialogo": [
+     {
+      "quien": "Diego",
+      "dice": "Lo vi hoy, jefe… pero ya se fue a ver otro desarrollo."
+     },
+     {
+      "quien": "Paola",
+      "dice": "Los portales no descansan, Diego."
+     }
+    ],
+    "sonido": "bostezo largo, golpe de música"
+   }
+  ],
+  "motor": [
+   {
+    "tipo": "events",
+    "voz": "Viernes, nueve de la noche: el lead pide visita. Sábado: otra inmobiliaria le contesta. Lunes: tu equipo por fin abre el portal.",
+    "pantalla": "Línea de tiempo: Vie 21:04 lead de EasyBroker · Sáb 10:15 la competencia contesta · Lun 9:30 tu equipo lo ve."
+   },
+   {
+    "tipo": "flow",
+    "voz": "Con Lead Master, el lead del portal entra solo al sistema en cuanto llega y se le asigna a un asesor. No espera a que alguien revise el lunes.",
+    "pantalla": "Flujo: EasyBroker (vie 21:04) → Lead Master → Asignado a Paola G. (21:04)."
+   },
+   {
+    "tipo": "phonelist",
+    "voz": "Si el asesor no lo atiende a tiempo, pasa al siguiente. Y el sábado en la mañana ese lead ya está en la lista de urgentes.",
+    "pantalla": "Celular, «Tu lista de hoy · sábado 8:00 am»: Urgentes (2) · Diana Trejo: pidió visita ayer a las 21:04."
+   }
+  ],
+  "cta": "LEADS",
+  "cierre": "Comenta LEADS y te lo instalamos.",
+  "dur": 36
+ }
+]
