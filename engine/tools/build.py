@@ -186,8 +186,14 @@ def render(spec_id, props_path, still=None):
         return out
     raw = os.path.join(ROOT, 'build', f'{spec_id}.raw.mp4')
     cmd = base + ['render', 'src/index.ts', 'Reel', raw, '--codec=h264', '--crf=18',
-                  '--concurrency=4', '--audio-bitrate=320k', '--timeout=120000'] + common
-    subprocess.run(cmd, cwd=ROOT, check=True)
+                  '--concurrency=3', '--audio-bitrate=320k', '--timeout=240000'] + common
+    # A veces un cuadro se queda esperando una imagen; se reintenta hasta 3 veces.
+    for attempt in range(3):
+        if subprocess.run(cmd, cwd=ROOT).returncode == 0:
+            break
+        print(f'  ! render falló (intento {attempt + 1}), reintentando')
+    else:
+        raise RuntimeError(f'render falló 3 veces: {spec_id}')
     final = os.path.join(OUT, f'{spec_id}.mp4')
     # Entrega a -14 LUFS con limitador a -1 dBTP.
     subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', raw, '-c:v', 'copy',

@@ -1,3 +1,7 @@
 node_modules/
 engine/build/
 .DS_Store
+# Solo se suben las copias para celular; las HD quedan locales
+videos/*.mp4
+!videos/*-celular.mp4
+!videos/01-un-mensaje-una-demanda.mp4
