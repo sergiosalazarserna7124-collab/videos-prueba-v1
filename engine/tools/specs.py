@@ -523,9 +523,9 @@ video('04-separa-curiosos-de-compradores', 'n04', 'El sistema que separa a los c
     cta('Si tu inmobiliaria recibe más de 100 leads al mes, dale clic al botón de abajo.', '+100 LEADS AL MES'),
 ], music='drive', keywords=['curiosos', 'compradores', 'primero', 'esperando'])
 
-video('05-departamentos-de-mas-de-3-millones', 'n05', 'Si vendes departamentos de más de 3 millones', [
-    photo('Si vendes departamentos de más de 3 millones de pesos y no tienes este sistema, estás perdiendo compradores serios entre cientos de mensajes.',
-          'living_ocean', ['COMPRADORES', '[SERIOS]'], kicker='Depas de +3 millones'),
+video('05-departamentos-de-mas-de-150-mil-dolares', 'n05', 'Si vendes departamentos de más de 150 mil dólares', [
+    photo('Si vendes departamentos de más de 150 mil dólares y no tienes este sistema, estás perdiendo compradores serios entre cientos de mensajes.',
+          'living_ocean', ['COMPRADORES', '[SERIOS]'], kicker='Depas de +150 mil USD'),
     photo('La persona que tiene el dinero para comprar no le escribe solo a tu inmobiliaria. Le escribe a tres o cuatro al mismo tiempo.',
           'couple_tour', ['LE ESCRIBE A', '[4 INMOBILIARIAS]'], [0, '@cuatro']),
     photo('Y casi siempre compra con la que le contesta primero, le resuelve las dudas y la invita a ver el proyecto.',
@@ -541,7 +541,7 @@ video('05-departamentos-de-mas-de-3-millones', 'n05', 'Si vendes departamentos d
           {'name': 'Andrés Molina', 'value': 38, 'sub': 'min'}, {'name': 'Diego Herrera', 'value': 126, 'sub': 'min', 'color': 'red'}],
          title='Tiempo de respuesta', at='@tarda'),
     cta('Dale clic al botón de abajo y te lo instalamos en tu inmobiliaria en 7 días.', 'LISTO EN 7 DÍAS'),
-], keywords=['serios', 'primero', 'millones'])
+], keywords=['serios', 'primero', 'dólares'])
 
 video('06-el-problema-no-es-la-cantidad-de-leads', 'n06', 'El problema no es la cantidad de leads', [
     photo('El problema de tu inmobiliaria no es la cantidad de leads que te llegan.', 'dashboard_tv', ['NO TE FALTAN', '[LEADS]'],
@@ -635,16 +635,16 @@ video('11-que-anuncio-te-vendio-el-ultimo-depa', 'n11', '¿Qué anuncio te vendi
           'scrolling_ads', ['¿QUÉ ANUNCIO TE', '[VENDIÓ] EL DEPA?'], kicker='Inmobiliarias en Meta', size=112),
     photo('Casi nadie lo sabe. Ves el costo por lead y apagas los anuncios caros. Pero el lead más barato casi nunca es el que compra.',
           'laptop_dashboard', ['APAGAS LOS', '[CAROS]'], ['@apagas', '@caros'], stamp={'text': 'EL BARATO NO COMPRA', 'at': '@compra', 'size': 76}),
-    stack('Un anuncio te puede traer leads a 40 pesos y ninguna cita, y otro, leads a 95 pesos y nueve citas. Si solo miras el costo por lead, apagas el que vendía.',
-          [it('Lead a $40 · 0 citas', '@40', 'red', k='Anuncio A'), it('Lead a $95 · 9 citas', '@95', 'green', k='Anuncio B'),
+    stack('Un anuncio te puede traer leads a 2 dólares y ninguna cita, y otro, leads a 5 dólares y nueve citas. Si solo miras el costo por lead, apagas el que vendía.',
+          [it('Lead a 2 USD · 0 citas', '@2', 'red', k='Anuncio A'), it('Lead a 5 USD · 9 citas', '@5', 'green', k='Anuncio B'),
            it('Apagaste el que vendía', '@vendía', 'amber', k='Resultado')], title='EJEMPLO'),
     flow('Lead Master sigue cada lead desde el anuncio hasta el final: si lo contactaron, si agendó, si asistió, si apartó y si compró.',
          [node('Anuncio', '@anuncio'), node('Contactado', '@contactaron', 'cyan'), node('Agendó y asistió', '@agendó', 'purple'),
           node('Apartó y compró', '@compró', 'green')]),
     bars('Te muestra por campaña y por anuncio cuánto te costó cada cita y cada venta. Y le avisa a Meta quién sí agendó y compró, para que tu publicidad busque más compradores.',
-         [{'name': 'Campaña Tulum', 'value': 528, 'sub': 'pesos por cita', 'color': 'green'},
-          {'name': 'Campaña Mérida', 'value': 910, 'sub': 'pesos por cita', 'color': 'cyan'},
-          {'name': 'Campaña CDMX', 'value': 4800, 'sub': 'pesos por cita', 'color': 'red'}], title='Costo por cita', right='Ejemplo', at='@campaña'),
+         [{'name': 'Campaña Tulum', 'value': 29, 'sub': 'USD por cita', 'color': 'green'},
+          {'name': 'Campaña Mérida', 'value': 50, 'sub': 'USD por cita', 'color': 'cyan'},
+          {'name': 'Campaña CDMX', 'value': 265, 'sub': 'USD por cita', 'color': 'red'}], title='Costo por cita', right='Ejemplo', at='@campaña'),
     cta('Deja de medir costo por lead y empieza a medir costo por cita. Dale clic al botón de abajo.', 'MIDE COSTO POR CITA'),
 ], keywords=['anuncio', 'barato', 'caros', 'vendía', 'costo'])
 
@@ -653,8 +653,8 @@ video('12-dices-con-orgullo-que-pagas-gohighlevel', 'n12', 'Dices con orgullo qu
           ['DICES CON', '[ORGULLO]…'], kicker='Inmobiliarias'),
     photo('Dices con orgullo que pagas GoHighLevel… y tus asesores siguen anotando en una libreta.', 'advisor_notebook',
           ['PAGAS', '[GOHIGHLEVEL]…'], stamp={'text': 'LIBRETA', 'at': '@libreta'}),
-    photo('Dices con orgullo que metes 50 mil pesos al mes en Meta… y no sabes cuántas citas te dieron.', 'scrolling_ads',
-          ['50 MIL AL MES', 'EN [META]…'], stamp={'text': '¿CUÁNTAS CITAS?', 'at': '@cuántas', 'color': 'amber'}),
+    photo('Dices con orgullo que metes 3 mil dólares al mes en Meta… y no sabes cuántas citas te dieron.', 'scrolling_ads',
+          ['3 MIL USD AL MES', 'EN [META]…'], stamp={'text': '¿CUÁNTAS CITAS?', 'at': '@cuántas', 'color': 'amber'}),
     photo('Dices con orgullo que tienes 12 asesores… y no sabes cuántos llamaron hoy.', 'office_agents',
           ['TIENES 12', '[ASESORES]…'], stamp={'text': 'NI IDEA', 'at': '@cuántos', 'size': 120}),
     photo('Dices con orgullo que tu equipo es una familia… y el que renunció se llevó sus leads en su WhatsApp.', 'empty_desk',
@@ -672,7 +672,7 @@ video('13-pagaste-gohighlevel-y-sigues-en-excel', 'n13', 'Le pagaste a alguien p
           [it('Te lo instalan', '@instalan', 'cyan'), it('Te cobran', '@cobran', 'amber'), it('Y se van', '@van', 'red')], img='meeting'),
     photo('Te dejan un pipeline bonito que nadie usa, automatizaciones que nadie entiende y a tus asesores de vuelta en su WhatsApp personal.',
           'advisor_night', ['PIPELINE BONITO', 'QUE [NADIE USA]'], [0, '@usa']),
-    quote('Un dueño nos contó que pagó 8 mil pesos y no le quedó nada configurado. Otro lo dijo así: «pago y me entregan mal». Y el lunes tú sigues armando el reporte a mano.',
+    quote('Un dueño nos contó que pagó 500 dólares y no le quedó nada configurado. Otro lo dijo así: «pago y me entregan mal». Y el lunes tú sigues armando el reporte a mano.',
           'Pago y me entregan mal.', 'owner_stressed'),
     stack('Nosotros dejamos tu GoHighLevel funcionando para una inmobiliaria en 7 días y le conectamos Lead Master, para que las notas, las etapas y los reportes se hagan solos.',
           [it('GoHighLevel funcionando en 7 días', '@7', 'cyan'), it('Lead Master conectado', '@conectamos', 'purple'),
@@ -731,7 +731,7 @@ video('16-te-vendieron-un-chatbot-de-botones-parodia', 'n16', 'Te vendieron un c
           {'from': 'out', 'text': 'Quiero hablar con alguien', 'at': '@quiero'},
           {'from': 'in', 'text': 'No entendí tu respuesta. Elige una opción.', 'at': '@entendí'}],
          'robot_reception', 'Asistente virtual', sub='bot', extra_sfx=[fx(ST, 0, 0.22)]),
-    photo('Y el lead se fue. No quería un menú: quería una persona. Nadie compra un departamento de 5 millones con un menú de botones.',
+    photo('Y el lead se fue. No quería un menú: quería una persona. Nadie compra un departamento de 300 mil dólares con un menú de botones.',
           'woman_night_phone', ['QUERÍA UNA', '[PERSONA]'], ['@menú', '@persona'], stamp={'text': 'SE FUE', 'at': '@fue', 'size': 120}),
     panel('Lo que tu inmobiliaria necesita no es un bot que conteste por tu asesor. Es saber si tu asesor contestó, cuánto tardó y en qué quedó.',
           [wa('Valeria Ríos', 'Diana Trejo', 'Contestó en 3 minutos · Quedó en visita el sábado.', 'Contestó', 'green', '@contestó'),
@@ -850,13 +850,13 @@ video('22-el-dia-de-tus-asesores-con-lead-master', 'n22', 'Así sería el día d
 video('23-lo-que-quema-tu-inmobiliaria-cada-mes', 'n23', 'Lo que quema tu inmobiliaria cada mes', [
     photo('Haz esta cuenta conmigo si tienes una inmobiliaria que invierte en Meta.', 'scrolling_ads', ['HAZ ESTA', '[CUENTA]'],
           kicker='Inmobiliarias en Meta'),
-    stat('Metes 60 mil pesos al mes y te llegan 400 leads. Cada uno te costó 150 pesos.',
-         [num(60000, 'al mes en Meta', '@60', prefix='$'), num(400, 'leads', '@400'), num(150, 'por lead', '@150', 'amber', prefix='$')],
+    stat('Metes 4 mil dólares al mes y te llegan 400 leads. Cada uno te costó 10 dólares.',
+         [num(4000, 'al mes en Meta', '@4', prefix='US$'), num(400, 'leads', '@400'), num(10, 'por lead', '@10', 'amber', prefix='US$')],
          stacked=True),
     stat('En las inmobiliarias que medimos, 1 de cada 3 leads nunca habló con una persona. Eso son 133 leads al mes que nadie llamó:',
          [num(1, 'nunca habló con una persona', '@1', 'red', suffix=' de cada 3'), num(133, 'leads al mes que nadie llamó', '@133', 'red')]),
-    stat('20 mil pesos tirados cada mes, 240 mil al año. Y nadie te lo dice, porque nadie lo está midiendo.',
-         [num(20000, 'tirados cada mes', '@20', 'red', prefix='$'), num(240000, 'al año', '@240', 'red', prefix='$')]),
+    stat('Más de 1,300 dólares tirados cada mes, casi 16 mil al año. Y nadie te lo dice, porque nadie lo está midiendo.',
+         [num(1300, 'tirados cada mes', '@1,300', 'red', prefix='+US$'), num(16000, 'al año', '@16', 'red', prefix='US$')]),
     panel('Lead Master te dice, el mismo día y con nombre, qué leads nadie ha contactado, de qué asesor son y cuánto llevan esperando. Le marca al asesor a quién llamar primero y, si no lo hace, el lead pasa a otro.',
           [wa('Diego Herrera', 'Adriana Solís', 'Esperando desde hace 5 horas.', 'Sin contacto', 'red', '@nadie'),
            call('Andrés Molina', 'Lucía Hernández', 'Esperando desde hace 26 horas.', 'Pasa a otro', 'amber', '@otro')],
@@ -981,7 +981,7 @@ def T(t, sub=None, state='new', at=None):
     return d
 
 
-TULUM = [F('Busca', 'Depa 2 recámaras', '@busca'), F('Zona', 'Tulum', '@zona'), F('Presupuesto', '4.5 millones', '@presupuesto'),
+TULUM = [F('Busca', 'Depa 2 recámaras', '@busca'), F('Zona', 'Tulum', '@zona'), F('Presupuesto', '250 mil USD', '@presupuesto'),
          F('Etapa', 'Cita', '@etapa')]
 WEEKLY = [L('Leads de la semana: 214', b=True), L('Contactados: 176 · Sin contacto: 38'), L('Citas: 19 · Apartados: 4', c='green'), SEP(),
           L('Paola G. · 61 llamadas · 7 citas'), L('Valeria R. · 48 llamadas · 6 citas'), L('Diego H. · 9 llamadas · 12 leads olvidados', c='red')]
@@ -993,7 +993,7 @@ INSERTS = {
     ('n01', 4): dict(ins=[crm('@CRM', move='@CRM+12', chip='Todo registrado, sin capturar nada')]),
     ('n01', 5): dict(ins=[note('@nota', lead='Diana Trejo', tag='Lead · Zapopan', stage='Interesada', typeAt='@nota+3',
                                note='Busca casa con jardín para mudarse en marzo. Pidió planos y forma de pago.',
-                               fields=[F('Presupuesto', '6 millones', '@presupuesto'), F('Zona', 'Zapopan', '@zona'),
+                               fields=[F('Presupuesto', '330 mil USD', '@presupuesto'), F('Zona', 'Zapopan', '@zona'),
                                        F('Busca', 'Casa con jardín', '@zona+6'), F('Etapa', 'Interesada', '@etapa')])]),
     ('n01', 6): dict(type='ui', ins=[report(0, time='8:00 pm', lines=[
         L('Leads que entraron hoy: 23', '@entraron', b=True), L('Contactados: 18', '@entraron+8'), SEP('@llamó'),
@@ -1018,7 +1018,7 @@ INSERTS = {
     ('n04', 4): dict(ins=[note('@saca', '@eso', lead='Diana Trejo', tag='Lead · Polanco', stage='Atender primero', right='Sacado del chat',
                                typeAt='@pronto+4', note='Quiere comprar este mes. Ya tiene crédito aprobado. Prioridad alta.',
                                fields=[F('Busca', 'Depa 3 recámaras', '@busca'), F('Zona', 'Polanco', '@zona'),
-                                       F('Presupuesto', '8 millones', '@presupuesto'), F('Cuándo compra', 'Este mes', '@pronto')])]),
+                                       F('Presupuesto', '450 mil USD', '@presupuesto'), F('Cuándo compra', 'Este mes', '@pronto')])]),
     # 07 robando leads
     ('n07', 5): dict(ins=[crm('@CRM', '@llamadas', move='@CRM+12', chip='Solo conversaciones con leads'),
                           callrec('@llamadas', advisor='Diego Herrera', lead='Adriana Solís')]),
@@ -1028,14 +1028,14 @@ INSERTS = {
     # 09 llenan el CRM a mano
     ('n09', 4): dict(ins=[crm('@CRM', stale=True, chip='El CRM se queda vacío')]),
     ('n09', 5): dict(ins=[callrec('@escucha'),
-                          note('@nota', typeAt='@nota+6', fields=[F('Presupuesto', '3.2 millones', '@presupuesto'), F('Zona', 'Mérida', '@zona'),
+                          note('@nota', typeAt='@nota+6', fields=[F('Presupuesto', '180 mil USD', '@presupuesto'), F('Zona', 'Mérida', '@zona'),
                                                                   F('Objeciones', 'Fecha de entrega', '@objeciones'), F('Etapa', 'Cita', '@Mueve')],
                                lead='Adriana Solís', tag='Lead · Mérida', note='Le preocupa la fecha de entrega. Quiere visitar el sábado.'),
                           crm('@Mueve', move='@etapa', chip='Etapa movida y tarea creada'),
                           report('@reporte')]),
     # 10 así le llegaría un lead
     ('n10', 5): dict(ins=[note('@anota', typeAt='@Lucía', fields=[F('Busca', 'Depa 2 recámaras', '@busca'), F('Zona', 'Tulum', '@Lucía'),
-                                                                     F('Presupuesto', '4.5 millones', '@Lucía+4'), F('Etapa', 'Cita', '@cita')]),
+                                                                     F('Presupuesto', '250 mil USD', '@Lucía+4'), F('Etapa', 'Cita', '@cita')]),
                           cita('@cita', confirmAt='@confirmar'), report('@reporte')]),
     # 12 orgullo GoHighLevel
     ('n12', 6): dict(ins=[crm('@llena', move='@CRM+4'), report('@días')]),
@@ -1064,10 +1064,10 @@ INSERTS = {
     ('n20', 4): dict(ins=[crm('@CRM', move='@CRM+10', chip='Lo personal se queda fuera')]),
     ('n20', 5): dict(ins=[note('@nota', lead='Adriana Solís', tag='Antes con Diego Herrera', stage='Reasignada', typeAt='@nota+4',
                                note='Quedó en mandarle 2 opciones en Mérida el lunes. Reasignada a Paola Gutiérrez.',
-                               fields=[F('Busca', 'Casa en Mérida'), F('Presupuesto', '3.2 millones'), F('Último contacto', 'Hace 2 días'),
+                               fields=[F('Busca', 'Casa en Mérida'), F('Presupuesto', '180 mil USD'), F('Último contacto', 'Hace 2 días'),
                                        F('Nuevo asesor', 'Paola G.', '@otro')])]),
     # 22 el día de tus asesores
-    ('n22', 4): dict(ins=[note('@IA', typeAt='@IA+6', fields=[F('Busca', 'Depa 2 recámaras'), F('Zona', 'Tulum'), F('Presupuesto', '4.5 millones'),
+    ('n22', 4): dict(ins=[note('@IA', typeAt='@IA+6', fields=[F('Busca', 'Depa 2 recámaras'), F('Zona', 'Tulum'), F('Presupuesto', '250 mil USD'),
                                                             F('Etapa', 'Cita', '@cita')]),
                           cita('@cita', confirmAt='@confirmar')]),
     ('n22', 5): dict(ins=[report('@resumen', title='Tu resumen del día', sub='Tu día con Lead Master', sched='Tu resumen llega a las 7:00 pm',
@@ -1099,7 +1099,7 @@ INSERTS = {
     ('d', 5): dict(ins=[callrec('@Escucha'),
                         note('@registra', typeAt='@etapa', lead='Diana Trejo', tag='Lead · Polanco', stage='Interesada',
                              note='Busca 3 recámaras en Polanco para vivir. Quiere visitar el fin de semana.',
-                             fields=[F('Presupuesto', '9 millones', '@presupuesto'), F('Zona', 'Polanco', '@zona'),
+                             fields=[F('Presupuesto', '500 mil USD', '@presupuesto'), F('Zona', 'Polanco', '@zona'),
                                      F('Busca', '3 recámaras', '@busca'), F('Etapa', 'Interesada', '@etapa')])]),
     # E así recibirías tus reportes
     ('e', 5): dict(type='ui', ins=[report(0, title='Tu resumen del día', sub='Tu día con Lead Master', sched='Tu resumen llega a las 7:00 pm',
@@ -1120,7 +1120,7 @@ INSERTS = {
     ('g3', 4): dict(ins=[callrec('@grabadas')]),
     ('g5', 3): dict(ins=[crm('@vacío', stale=True, chip='Sin notas, sin etapas')]),
     ('g5', 5): dict(ins=[crm('@CRM', move='@solo'), callrec('@escucha'),
-                         note('@nota', typeAt='@nota+4', fields=[F('Presupuesto', '3.2 millones', '@presupuesto'), F('Zona', 'Mérida', '@zona'),
+                         note('@nota', typeAt='@nota+4', fields=[F('Presupuesto', '180 mil USD', '@presupuesto'), F('Zona', 'Mérida', '@zona'),
                                                                F('Objeciones', 'Fecha de entrega', '@objeciones'), F('Etapa', 'Cita', '@etapa')],
                               lead='Adriana Solís', tag='Lead · Mérida', note='Le preocupa la fecha de entrega. Quiere visitar el sábado.'),
                          tasks('@tarea', items=[T('Confirmar visita de Adriana Solís', 'Siguiente paso, creado por la IA', at='@tarea')])]),

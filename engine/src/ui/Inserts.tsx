@@ -258,7 +258,7 @@ const Note: React.FC<{ins: Ins}> = ({ins}) => {
   const fields: {k: string; v: string; at?: number}[] = p.fields ?? [
     {k: 'Busca', v: 'Depa 2 recámaras'},
     {k: 'Zona', v: 'Tulum'},
-    {k: 'Presupuesto', v: '4.5 millones'},
+    {k: 'Presupuesto', v: '250 mil USD'},
     {k: 'Etapa', v: 'Cita'},
   ];
   const note: string = p.note ?? 'Quiere ver el proyecto el jueves a las 5 pm. Pidió planos y forma de pago. Seguimiento: confirmar visita.';
@@ -564,7 +564,7 @@ const Call: React.FC<{ins: Ins}> = ({ins}) => {
   const advisor = p.advisor ?? 'Diego Herrera';
   const lead = p.lead ?? 'Adriana Solís';
   const prog = clamp01((f - ins.at - 10) / (p.playLen ?? 70));
-  const summary: string[] = p.summary ?? ['Quiere visitar el sábado a las 11', 'Presupuesto: 3.2 millones', 'Siguiente paso: mandar ubicación'];
+  const summary: string[] = p.summary ?? ['Quiere visitar el sábado a las 11', 'Presupuesto: 180 mil USD', 'Siguiente paso: mandar ubicación'];
   const attempts: string[] = p.attempts ?? ['Lunes 10:14 · sin llamada', 'Martes · sin llamada', 'Miércoles · sin llamada'];
   return (
     <Shell title={p.title ?? 'Llamadas del equipo'} right={p.right ?? (missed ? 'Nadie le llamó' : 'Grabada desde el CRM')} accent={missed ? C.red : C.purple}>

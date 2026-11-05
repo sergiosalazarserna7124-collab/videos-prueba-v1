@@ -33,15 +33,15 @@
   },
   {
    "type": "stat",
-   "text": "Metes 60 mil pesos al mes y te llegan 400 leads. Cada uno te costó 150 pesos.",
+   "text": "Metes 4 mil dólares al mes y te llegan 400 leads. Cada uno te costó 10 dólares.",
    "p": {
     "items": [
      {
-      "value": 60000,
+      "value": 4000,
       "label": "al mes en Meta",
-      "at": "@60",
+      "at": "@4",
       "color": "cyan",
-      "prefix": "$"
+      "prefix": "US$"
      },
      {
       "value": 400,
@@ -50,11 +50,11 @@
       "color": "cyan"
      },
      {
-      "value": 150,
+      "value": 10,
       "label": "por lead",
-      "at": "@150",
+      "at": "@10",
       "color": "amber",
-      "prefix": "$"
+      "prefix": "US$"
      }
     ],
     "stacked": true
@@ -67,7 +67,7 @@
     },
     {
      "src": "sfx/ding.wav",
-     "at": "@60",
+     "at": "@4",
      "vol": 0.09
     },
     {
@@ -77,7 +77,7 @@
     },
     {
      "src": "sfx/ding.wav",
-     "at": "@150",
+     "at": "@10",
      "vol": 0.09
     }
    ],
@@ -126,22 +126,22 @@
   },
   {
    "type": "stat",
-   "text": "20 mil pesos tirados cada mes, 240 mil al año. Y nadie te lo dice, porque nadie lo está midiendo.",
+   "text": "Más de 1,300 dólares tirados cada mes, casi 16 mil al año. Y nadie te lo dice, porque nadie lo está midiendo.",
    "p": {
     "items": [
      {
-      "value": 20000,
+      "value": 1300,
       "label": "tirados cada mes",
-      "at": "@20",
+      "at": "@1,300",
       "color": "red",
-      "prefix": "$"
+      "prefix": "+US$"
      },
      {
-      "value": 240000,
+      "value": 16000,
       "label": "al año",
-      "at": "@240",
+      "at": "@16",
       "color": "red",
-      "prefix": "$"
+      "prefix": "US$"
      }
     ]
    },
@@ -153,12 +153,12 @@
     },
     {
      "src": "sfx/ding.wav",
-     "at": "@20",
+     "at": "@1,300",
      "vol": 0.09
     },
     {
      "src": "sfx/ding.wav",
-     "at": "@240",
+     "at": "@16",
      "vol": 0.09
     }
    ],

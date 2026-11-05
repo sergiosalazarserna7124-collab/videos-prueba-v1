@@ -75,18 +75,18 @@
   },
   {
    "type": "stack",
-   "text": "Un anuncio te puede traer leads a 40 pesos y ninguna cita, y otro, leads a 95 pesos y nueve citas. Si solo miras el costo por lead, apagas el que vendía.",
+   "text": "Un anuncio te puede traer leads a 2 dólares y ninguna cita, y otro, leads a 5 dólares y nueve citas. Si solo miras el costo por lead, apagas el que vendía.",
    "p": {
     "items": [
      {
-      "t": "Lead a $40 · 0 citas",
-      "at": "@40",
+      "t": "Lead a 2 USD · 0 citas",
+      "at": "@2",
       "color": "red",
       "k": "Anuncio A"
      },
      {
-      "t": "Lead a $95 · 9 citas",
-      "at": "@95",
+      "t": "Lead a 5 USD · 9 citas",
+      "at": "@5",
       "color": "green",
       "k": "Anuncio B"
      },
@@ -107,12 +107,12 @@
     },
     {
      "src": "sfx/pop.wav",
-     "at": "@40",
+     "at": "@2",
      "vol": 0.12
     },
     {
      "src": "sfx/pop.wav",
-     "at": "@95",
+     "at": "@5",
      "vol": 0.12
     },
     {
@@ -188,20 +188,20 @@
     "rows": [
      {
       "name": "Campaña Tulum",
-      "value": 528,
-      "sub": "pesos por cita",
+      "value": 29,
+      "sub": "USD por cita",
       "color": "green"
      },
      {
       "name": "Campaña Mérida",
-      "value": 910,
-      "sub": "pesos por cita",
+      "value": 50,
+      "sub": "USD por cita",
       "color": "cyan"
      },
      {
       "name": "Campaña CDMX",
-      "value": 4800,
-      "sub": "pesos por cita",
+      "value": 265,
+      "sub": "USD por cita",
       "color": "red"
      }
     ],

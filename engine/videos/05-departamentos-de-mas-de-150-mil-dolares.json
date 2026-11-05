@@ -1,25 +1,25 @@
 {
- "id": "05-departamentos-de-mas-de-3-millones",
- "title": "Si vendes departamentos de más de 3 millones",
+ "id": "05-departamentos-de-mas-de-150-mil-dolares",
+ "title": "Si vendes departamentos de más de 150 mil dólares",
  "voice": "fernando",
  "music": "music/pulse.mp3",
  "tempo": 1.1,
  "keywords": [
   "serios",
   "primero",
-  "millones"
+  "dólares"
  ],
  "scenes": [
   {
    "type": "photo",
-   "text": "Si vendes departamentos de más de 3 millones de pesos y no tienes este sistema, estás perdiendo compradores serios entre cientos de mensajes.",
+   "text": "Si vendes departamentos de más de 150 mil dólares y no tienes este sistema, estás perdiendo compradores serios entre cientos de mensajes.",
    "p": {
     "img": "living_ocean",
     "lines": [
      "COMPRADORES",
      "[SERIOS]"
     ],
-    "kicker": "Depas de +3 millones"
+    "kicker": "Depas de +150 mil USD"
    },
    "sfx": [
     {
