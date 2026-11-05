@@ -157,6 +157,20 @@
     }
    ],
    "key": "n01_s4",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@CRM",
+     "p": {
+      "chip": "Todo registrado, sin capturar nada",
+      "move": {
+       "card": 0,
+       "to": 2,
+       "at": "@CRM+12"
+      }
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
@@ -203,10 +217,45 @@
     }
    ],
    "key": "n01_s5",
+   "ins": [
+    {
+     "kind": "note",
+     "at": "@nota",
+     "p": {
+      "lead": "Diana Trejo",
+      "tag": "Lead · Zapopan",
+      "stage": "Interesada",
+      "typeAt": "@nota+3",
+      "note": "Busca casa con jardín para mudarse en marzo. Pidió planos y forma de pago.",
+      "fields": [
+       {
+        "k": "Presupuesto",
+        "v": "6 millones",
+        "at": "@presupuesto"
+       },
+       {
+        "k": "Zona",
+        "v": "Zapopan",
+        "at": "@zona"
+       },
+       {
+        "k": "Busca",
+        "v": "Casa con jardín",
+        "at": "@zona+6"
+       },
+       {
+        "k": "Etapa",
+        "v": "Interesada",
+        "at": "@etapa"
+       }
+      ]
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
-   "type": "phonelist",
+   "type": "ui",
    "text": "Tercero, pediría que todos los días me llegue a mi WhatsApp el reporte: cuántos leads entraron, a quién llamó cada asesor y quién se quedó sin contacto. Eso es Lead Master.",
    "p": {
     "items": [
@@ -256,6 +305,58 @@
     }
    ],
    "key": "n01_s6",
+   "ins": [
+    {
+     "kind": "report",
+     "at": 0,
+     "p": {
+      "time": "8:00 pm",
+      "lines": [
+       {
+        "t": "Leads que entraron hoy: 23",
+        "at": "@entraron",
+        "b": true
+       },
+       {
+        "t": "Contactados: 18",
+        "at": "@entraron+8"
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@llamó"
+       },
+       {
+        "t": "Paola G. llamó a 9 · 2 citas",
+        "at": "@llamó"
+       },
+       {
+        "t": "Valeria R. llamó a 7 · 1 cita",
+        "at": "@llamó+5"
+       },
+       {
+        "t": "Andrés M. llamó a 2",
+        "at": "@llamó+10"
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@contacto"
+       },
+       {
+        "t": "Sin contacto: 5 (Diego H. 4, Andrés M. 1)",
+        "at": "@contacto",
+        "c": "red"
+       }
+      ],
+      "alert": {
+       "t": "Ahora: lead nuevo de Meta, Diana Trejo. Valeria R. le escribió en 3 min.",
+       "c": "green",
+       "at": "@Eso"
+      }
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

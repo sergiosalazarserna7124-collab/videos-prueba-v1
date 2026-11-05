@@ -147,6 +147,16 @@
     }
    ],
    "key": "n09_s4",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@CRM",
+     "p": {
+      "chip": "El CRM se queda vacío",
+      "stale": true
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
@@ -193,6 +203,60 @@
     }
    ],
    "key": "n09_s5",
+   "ins": [
+    {
+     "kind": "call",
+     "at": "@escucha"
+    },
+    {
+     "kind": "note",
+     "at": "@nota",
+     "p": {
+      "typeAt": "@nota+6",
+      "fields": [
+       {
+        "k": "Presupuesto",
+        "v": "3.2 millones",
+        "at": "@presupuesto"
+       },
+       {
+        "k": "Zona",
+        "v": "Mérida",
+        "at": "@zona"
+       },
+       {
+        "k": "Objeciones",
+        "v": "Fecha de entrega",
+        "at": "@objeciones"
+       },
+       {
+        "k": "Etapa",
+        "v": "Cita",
+        "at": "@Mueve"
+       }
+      ],
+      "lead": "Adriana Solís",
+      "tag": "Lead · Mérida",
+      "note": "Le preocupa la fecha de entrega. Quiere visitar el sábado."
+     }
+    },
+    {
+     "kind": "crm",
+     "at": "@Mueve",
+     "p": {
+      "chip": "Etapa movida y tarea creada",
+      "move": {
+       "card": 0,
+       "to": 2,
+       "at": "@etapa"
+      }
+     }
+    },
+    {
+     "kind": "report",
+     "at": "@reporte"
+    }
+   ],
    "voice": "fernando"
   },
   {

@@ -30,6 +30,20 @@
     }
    ],
    "key": "n03_s1",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@solo",
+     "p": {
+      "chip": "Se mueve solo",
+      "move": {
+       "card": 0,
+       "to": 2,
+       "at": "@solo+8"
+      }
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
@@ -81,6 +95,25 @@
     }
    ],
    "key": "n03_s2",
+   "ins": [
+    {
+     "kind": "note",
+     "at": "@segunda",
+     "to": "@mes",
+     "p": {
+      "emptyText": "Sin notas desde la semana 2",
+      "empty": true
+     }
+    },
+    {
+     "kind": "crm",
+     "at": "@pipeline",
+     "p": {
+      "chip": "El pipeline es una mentira",
+      "stale": true
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
@@ -221,6 +254,64 @@
     }
    ],
    "key": "n03_s5",
+   "ins": [
+    {
+     "kind": "note",
+     "at": "@anota",
+     "p": {
+      "typeAt": "@presupuesto+4",
+      "fields": [
+       {
+        "k": "Busca",
+        "v": "Depa 2 recámaras",
+        "at": "@busca"
+       },
+       {
+        "k": "Zona",
+        "v": "Tulum",
+        "at": "@zona"
+       },
+       {
+        "k": "Presupuesto",
+        "v": "4.5 millones",
+        "at": "@presupuesto"
+       },
+       {
+        "k": "Etapa",
+        "v": "Cita",
+        "at": "@etapa"
+       }
+      ],
+      "note": "Quiere ver el proyecto el jueves a las 5 pm. Pidió planos y forma de pago."
+     }
+    },
+    {
+     "kind": "crm",
+     "at": "@etapa",
+     "p": {
+      "move": {
+       "card": 0,
+       "to": 2,
+       "at": "@etapa+6"
+      }
+     }
+    },
+    {
+     "kind": "cita",
+     "at": "@cita",
+     "p": {
+      "confirmAt": "@confirmar"
+     }
+    },
+    {
+     "kind": "crm",
+     "at": "@CRM",
+     "p": {
+      "chip": "Tu CRM dice la verdad",
+      "move": false
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

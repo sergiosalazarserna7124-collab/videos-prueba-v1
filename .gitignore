@@ -5,3 +5,6 @@ engine/build/
 videos/*.mp4
 !videos/*-celular.mp4
 !videos/01-un-mensaje-una-demanda.mp4
+__pycache__/
+# Derivadas de las voces (tempo/efecto): se regeneran solas
+engine/public/tts/*@*.mp3

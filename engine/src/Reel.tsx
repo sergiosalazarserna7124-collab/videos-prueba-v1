@@ -19,6 +19,8 @@ import {Flow} from './scenes/Flow';
 import {Bars} from './scenes/Bars';
 import {PhoneList} from './scenes/PhoneList';
 import {Mock} from './scenes/Mock';
+import {BrandBg} from './ui/Bg';
+import {coverOf, Ins, InsertLayer} from './ui/Inserts';
 
 loadFonts();
 
@@ -39,6 +41,7 @@ const SCENES: Record<string, React.FC<{dur: number; p: any}>> = {
   bars: Bars,
   phonelist: PhoneList,
   mock: Mock,
+  ui: ({dur}) => <BrandBg dur={dur} />, // fondo de marca; el contenido lo ponen los insertos
 };
 
 export type SceneSpec = {
@@ -50,6 +53,7 @@ export type SceneSpec = {
   audioFrom?: number; // frames de retraso del audio dentro de la escena
   sfx?: {src: string; at: number; vol?: number}[];
   captions?: boolean;
+  ins?: Ins[]; // gráficos literales (CRM, nota, cita, reporte...) que entran en la palabra
 };
 
 export type ReelProps = {
@@ -59,6 +63,16 @@ export type ReelProps = {
   words: Word[];
   music?: {src: string; vol: number};
   safeDebug?: boolean;
+};
+
+// La escena de fondo se apaga y desenfoca mientras un inserto está en pantalla.
+const Covered: React.FC<{ins?: Ins[]; dur: number; children: React.ReactNode}> = ({ins, dur, children}) => {
+  const f = useCurrentFrame();
+  const c = coverOf(ins, f, dur);
+  if (c <= 0) return <AbsoluteFill>{children}</AbsoluteFill>;
+  return (
+    <AbsoluteFill style={{opacity: 1 - 0.78 * c, filter: `blur(${(10 * c).toFixed(1)}px)`, transform: `scale(${1 - 0.04 * c})`}}>{children}</AbsoluteFill>
+  );
 };
 
 // Entrada corta de cada escena: corte con un poco de desenfoque (sin zoom fuerte).
@@ -88,7 +102,10 @@ export const Reel: React.FC<ReelProps> = ({scenes, words, music, safeDebug}) => 
         const Comp = SCENES[s.type];
         return (
           <Sequence key={i} from={s.from} durationInFrames={s.dur} name={`${i + 1}-${s.type}`}>
-            <Enter>{Comp ? <Comp dur={s.dur} p={s.p} /> : null}</Enter>
+            <Enter>
+              <Covered ins={s.ins} dur={s.dur}>{Comp ? <Comp dur={s.dur} p={s.p} /> : null}</Covered>
+              {s.ins?.length ? <InsertLayer ins={s.ins} dur={s.dur} /> : null}
+            </Enter>
             {s.audio ? (
               <Sequence from={s.audioFrom ?? 0}>
                 <Audio src={staticFile(s.audio)} volume={1} />

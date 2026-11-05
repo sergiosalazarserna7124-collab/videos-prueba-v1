@@ -150,6 +150,19 @@
     }
    ],
    "key": "g1_s4",
+   "ins": [
+    {
+     "kind": "call",
+     "at": "@habla",
+     "p": {
+      "summary": [
+       "Habló de precios y entrega",
+       "Quiere visitar el sábado",
+       "Siguiente paso: confirmar"
+      ]
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

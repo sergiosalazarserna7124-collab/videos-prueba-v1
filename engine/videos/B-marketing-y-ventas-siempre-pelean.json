@@ -252,6 +252,17 @@
     }
    ],
    "key": "b_s6",
+   "ins": [
+    {
+     "kind": "cita",
+     "at": "@cita",
+     "to": "@llamar",
+     "p": {
+      "mode": "done",
+      "doneText": "Cita registrada"
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

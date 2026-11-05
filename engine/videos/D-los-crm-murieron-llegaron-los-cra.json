@@ -72,6 +72,24 @@
     }
    ],
    "key": "d_s2",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@CRM",
+     "to": "@notas",
+     "p": {
+      "chip": "Qué pasaba con cada lead",
+      "move": false
+     }
+    },
+    {
+     "kind": "note",
+     "at": "@notas",
+     "p": {
+      "empty": true
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
@@ -185,6 +203,45 @@
     }
    ],
    "key": "d_s5",
+   "ins": [
+    {
+     "kind": "call",
+     "at": "@Escucha"
+    },
+    {
+     "kind": "note",
+     "at": "@registra",
+     "p": {
+      "typeAt": "@etapa",
+      "lead": "Diana Trejo",
+      "tag": "Lead · Polanco",
+      "stage": "Interesada",
+      "note": "Busca 3 recámaras en Polanco para vivir. Quiere visitar el fin de semana.",
+      "fields": [
+       {
+        "k": "Presupuesto",
+        "v": "9 millones",
+        "at": "@presupuesto"
+       },
+       {
+        "k": "Zona",
+        "v": "Polanco",
+        "at": "@zona"
+       },
+       {
+        "k": "Busca",
+        "v": "3 recámaras",
+        "at": "@busca"
+       },
+       {
+        "k": "Etapa",
+        "v": "Interesada",
+        "at": "@etapa"
+       }
+      ]
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

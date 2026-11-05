@@ -218,6 +218,36 @@
     }
    ],
    "key": "n02_s6",
+   "ins": [
+    {
+     "kind": "call",
+     "at": "@llamadas",
+     "to": "@agendó",
+     "p": {
+      "advisor": "Andrés Molina",
+      "lead": "Lucía Hernández",
+      "summary": [
+       "Le interesa el lanzamiento",
+       "Pidió precios de preventa",
+       "Siguiente paso: recorrido"
+      ]
+     }
+    },
+    {
+     "kind": "cita",
+     "at": "@agendó",
+     "to": "@descartó",
+     "p": {
+      "mode": "done",
+      "what": "Recorrido · Lanzamiento",
+      "when": "Sábado 15 · 11:00 am",
+      "dayIdx": 5,
+      "lead": "Diana Trejo",
+      "source": "Agendó en el chat",
+      "doneText": "Recorrido agendado"
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

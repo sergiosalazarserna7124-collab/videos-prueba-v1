@@ -152,7 +152,7 @@
    "voice": "antonio"
   },
   {
-   "type": "phonelist",
+   "type": "ui",
    "text": "En la tarde recibe el resumen de lo que hizo.",
    "p": {
     "items": [
@@ -181,10 +181,43 @@
     }
    ],
    "key": "e_s5",
+   "ins": [
+    {
+     "kind": "report",
+     "at": 0,
+     "p": {
+      "title": "Tu resumen del día",
+      "sub": "Tu día con Lead Master",
+      "sched": "Tu resumen llega a las 7:00 pm",
+      "lines": [
+       {
+        "t": "Llamadas: 14 · Chats: 22",
+        "b": true
+       },
+       {
+        "t": "Contactados: 9 de 12"
+       },
+       {
+        "t": "Citas: 2 (jueves y sábado)",
+        "c": "green"
+       },
+       {
+        "t": "",
+        "sep": true
+       },
+       {
+        "t": "Mañana a primera hora: llamar a Diana Trejo",
+        "c": "amber"
+       }
+      ],
+      "alert": false
+     }
+    }
+   ],
    "voice": "antonio"
   },
   {
-   "type": "phonelist",
+   "type": "ui",
    "text": "Y tú, como dueño, recibes todos los días en tu WhatsApp el reporte del equipo: cuántos leads entraron, a quién llamó cada asesor, quién se quedó sin contacto y cuántas citas salieron.",
    "p": {
     "items": [
@@ -245,6 +278,59 @@
     }
    ],
    "key": "e_s6",
+   "ins": [
+    {
+     "kind": "report",
+     "at": 0,
+     "p": {
+      "lines": [
+       {
+        "t": "Leads que entraron hoy: 37",
+        "at": "@entraron",
+        "b": true
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@llamó"
+       },
+       {
+        "t": "Paola G. llamó a 14 · 2 citas",
+        "at": "@llamó"
+       },
+       {
+        "t": "Valeria R. llamó a 11 · 2 citas",
+        "at": "@llamó+5"
+       },
+       {
+        "t": "Diego H. llamó a 3",
+        "at": "@llamó+10",
+        "c": "amber"
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@contacto"
+       },
+       {
+        "t": "Sin contacto: 6 (Diego H. 4, Andrés M. 2)",
+        "at": "@contacto",
+        "c": "red"
+       },
+       {
+        "t": "Citas del día: 5",
+        "at": "@citas",
+        "c": "green"
+       }
+      ],
+      "alert": {
+       "t": "Ahora: Adriana Solís lleva 26 h sin llamada (Diego H.)",
+       "c": "amber",
+       "at": "@citas+20"
+      }
+     }
+    }
+   ],
    "voice": "antonio"
   },
   {

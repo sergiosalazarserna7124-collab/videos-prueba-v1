@@ -89,6 +89,44 @@ def probe_dur(path):
     return float(r.stdout.strip())
 
 
+# Gráficos literales: mínimo en pantalla (cuadros) antes de que termine la escena.
+INS_MIN = {'report': 75, 'cita': 66, 'note': 66, 'crm': 60, 'call': 60, 'tasks': 54}
+INS_SFX = {'report': ('sfx/notif.wav', 10, 0.14), 'cita': ('sfx/pop.wav', 10, 0.1), 'note': ('sfx/type.wav', 14, 0.07),
+           'crm': ('sfx/whoosh.wav', 0, 0.08), 'call': ('sfx/pop.wav', 4, 0.1), 'tasks': ('sfx/pop.wav', 6, 0.1)}
+
+
+def inserts(raw, dur_s):
+    """Ordena los insertos, encadena su fin con el siguiente y dice cuánto alargar la escena."""
+    ins = sorted([dict(x) for x in raw], key=lambda x: x['at'])
+    kept = []
+    for x in ins:
+        if kept and x['at'] - kept[-1]['at'] < 40:
+            print(f"  ! inserto {x['kind']} muy pegado al anterior; lo quito")
+            continue
+        kept.append(x)
+    for j, x in enumerate(kept[:-1]):
+        x.setdefault('to', kept[j + 1]['at'])
+    extra = 0.0
+    if kept and 'to' not in kept[-1]:
+        need = kept[-1]['at'] + INS_MIN.get(kept[-1]['kind'], 54) - dur_s * FPS
+        if need > 0:
+            extra = need / FPS
+    return kept, extra
+
+
+def insert_sfx(x):
+    out = [{'src': 'sfx/whoosh.wav', 'at': x['at'], 'vol': 0.07}]
+    src, off, vol = INS_SFX.get(x['kind'], (None, 0, 0))
+    if src and src != 'sfx/whoosh.wav':
+        out.append({'src': src, 'at': x['at'] + off, 'vol': vol})
+    p = x.get('p', {})
+    if x['kind'] == 'cita' and p.get('mode', 'confirm') == 'confirm':
+        out.append({'src': 'sfx/ding.wav', 'at': p.get('confirmAt', x['at'] + 42), 'vol': 0.12})
+    if x['kind'] == 'crm' and not p.get('stale'):
+        out.append({'src': 'sfx/pop.wav', 'at': (p.get('move') or {}).get('at', x['at'] + 26), 'vol': 0.11})
+    return out
+
+
 def build(spec_path, safe=False):
     spec = json.load(open(spec_path))
     keywords = {norm(k) for k in spec.get('keywords', []) + BASE_KEYWORDS}
@@ -127,8 +165,6 @@ def build(spec_path, safe=False):
         last_end = tw[-1][2] if tw else probe_dur(mp3)
         dur_s = last_end + TAIL + sc.get('tail', 0) + (GAP if i < len(spec['scenes']) - 1 else 0)
         dur_s = max(dur_s, sc.get('min', 0))
-        start_f = round(t0 * FPS)
-        dur_f = round((t0 + dur_s) * FPS) - start_f
         local = [(d, s, e) for d, (_, s, e) in zip(disp, tw)]
 
         def anchor(v, local=local):
@@ -152,10 +188,18 @@ def build(spec_path, safe=False):
 
         p = resolve(sc.get('p', {}))
         sfx = [dict(x, at=anchor(x.get('at', 0))) for x in sc.get('sfx', [])]
+        ins, extra = inserts(resolve(sc.get('ins', [])), dur_s)
+        dur_s += extra
+        for x in ins:
+            sfx += insert_sfx(x)
+        start_f = round(t0 * FPS)
+        dur_f = round((t0 + dur_s) * FPS) - start_f
         scenes.append({
             'type': sc['type'], 'from': start_f, 'dur': dur_f, 'p': p,
             'audio': audio_rel, 'sfx': sfx, 'captions': sc.get('captions', True),
         })
+        if ins:
+            scenes[-1]['ins'] = ins
         for d, s, e in local:
             if not d:
                 continue  # parte extra de una palabra que se pronuncia con varias

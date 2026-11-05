@@ -206,6 +206,23 @@
     }
    ],
    "key": "n12_s6",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@llena",
+     "p": {
+      "move": {
+       "card": 0,
+       "to": 2,
+       "at": "@CRM+4"
+      }
+     }
+    },
+    {
+     "kind": "report",
+     "at": "@días"
+    }
+   ],
    "voice": "fernando"
   },
   {

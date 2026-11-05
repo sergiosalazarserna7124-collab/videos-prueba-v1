@@ -195,6 +195,27 @@
     }
    ],
    "key": "n08_s5",
+   "ins": [
+    {
+     "kind": "call",
+     "at": "@nunca",
+     "to": "@citas",
+     "p": {
+      "missed": true
+     }
+    },
+    {
+     "kind": "cita",
+     "at": "@citas",
+     "p": {
+      "mode": "done",
+      "doneText": "Cita agendada",
+      "what": "Cita · Campaña Mérida",
+      "when": "Viernes 14 · 4:00 pm",
+      "dayIdx": 4
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

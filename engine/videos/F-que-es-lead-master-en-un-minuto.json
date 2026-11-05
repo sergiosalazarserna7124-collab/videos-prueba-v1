@@ -194,7 +194,7 @@
    "voice": "antonio"
   },
   {
-   "type": "phonelist",
+   "type": "ui",
    "text": "Cuatro: te da los reportes sin que nadie llene nada.",
    "p": {
     "items": [
@@ -222,6 +222,45 @@
     }
    ],
    "key": "f_s5",
+   "ins": [
+    {
+     "kind": "report",
+     "at": 0,
+     "p": {
+      "title": "Reporte semanal",
+      "time": "8:00 am",
+      "sched": "Tu reporte llega los lunes a las 8:00 am",
+      "lines": [
+       {
+        "t": "Leads de la semana: 214",
+        "b": true
+       },
+       {
+        "t": "Contactados: 176 · Sin contacto: 38"
+       },
+       {
+        "t": "Citas: 19 · Apartados: 4",
+        "c": "green"
+       },
+       {
+        "t": "",
+        "sep": true
+       },
+       {
+        "t": "Paola G. · 61 llamadas · 7 citas"
+       },
+       {
+        "t": "Valeria R. · 48 llamadas · 6 citas"
+       },
+       {
+        "t": "Diego H. · 9 llamadas · 12 leads olvidados",
+        "c": "red"
+       }
+      ],
+      "alert": false
+     }
+    }
+   ],
    "voice": "antonio"
   },
   {

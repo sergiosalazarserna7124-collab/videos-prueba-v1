@@ -903,6 +903,275 @@ video('25-este-video-te-aparecio-porque-tienes-una-inmobiliaria', 'n25', 'Este v
 
 
 # ---------------------------------------------------------------------
+# Gráficos literales: cuando la voz dice CRM, nota, cita, reporte, llamada o tareas,
+# aparece eso en pantalla en esa palabra (src/ui/Inserts.tsx). Clave: (prefijo, número de escena).
+
+def ins(kind, at, to=None, **p):
+    d = {'kind': kind, 'at': at}
+    if to is not None:
+        d['to'] = to
+    if p:
+        d['p'] = p
+    return d
+
+
+def crm(at, to=None, move=None, stale=False, **p):
+    if stale:
+        p['stale'] = True
+    elif move is False:
+        p['move'] = False
+    elif move is not None:
+        p['move'] = {'card': 0, 'to': 2, 'at': move}
+    return ins('crm', at, to, **p)
+
+
+def note(at, to=None, empty=False, **p):
+    if empty:
+        p['empty'] = True
+    return ins('note', at, to, **p)
+
+
+def cita(at, to=None, **p):
+    return ins('cita', at, to, **p)
+
+
+def report(at, to=None, **p):
+    return ins('report', at, to, **p)
+
+
+def callrec(at, to=None, **p):
+    return ins('call', at, to, **p)
+
+
+def tasks(at, to=None, **p):
+    return ins('tasks', at, to, **p)
+
+
+def F(k, v, at=None):
+    d = {'k': k, 'v': v}
+    if at is not None:
+        d['at'] = at
+    return d
+
+
+def L(t, at=None, c=None, b=False):
+    d = {'t': t}
+    if at is not None:
+        d['at'] = at
+    if c:
+        d['c'] = c
+    if b:
+        d['b'] = True
+    return d
+
+
+def SEP(at=None):
+    d = {'t': '', 'sep': True}
+    if at is not None:
+        d['at'] = at
+    return d
+
+
+def T(t, sub=None, state='new', at=None):
+    d = {'t': t, 'state': state}
+    if sub:
+        d['sub'] = sub
+    if at is not None:
+        d['at'] = at
+    return d
+
+
+TULUM = [F('Busca', 'Depa 2 recámaras', '@busca'), F('Zona', 'Tulum', '@zona'), F('Presupuesto', '4.5 millones', '@presupuesto'),
+         F('Etapa', 'Cita', '@etapa')]
+WEEKLY = [L('Leads de la semana: 214', b=True), L('Contactados: 176 · Sin contacto: 38'), L('Citas: 19 · Apartados: 4', c='green'), SEP(),
+          L('Paola G. · 61 llamadas · 7 citas'), L('Valeria R. · 48 llamadas · 6 citas'), L('Diego H. · 9 llamadas · 12 leads olvidados', c='red')]
+ADVISOR_DAY = [L('Llamadas: 14 · Chats: 22', b=True), L('Contactados: 9 de 12'), L('Citas: 2 (jueves y sábado)', c='green'), SEP(),
+               L('Mañana a primera hora: llamar a Diana Trejo', c='amber')]
+
+INSERTS = {
+    # 01 Guadalajara
+    ('n01', 4): dict(ins=[crm('@CRM', move='@CRM+12', chip='Todo registrado, sin capturar nada')]),
+    ('n01', 5): dict(ins=[note('@nota', lead='Diana Trejo', tag='Lead · Zapopan', stage='Interesada', typeAt='@nota+3',
+                               note='Busca casa con jardín para mudarse en marzo. Pidió planos y forma de pago.',
+                               fields=[F('Presupuesto', '6 millones', '@presupuesto'), F('Zona', 'Zapopan', '@zona'),
+                                       F('Busca', 'Casa con jardín', '@zona+6'), F('Etapa', 'Interesada', '@etapa')])]),
+    ('n01', 6): dict(type='ui', ins=[report(0, time='8:00 pm', lines=[
+        L('Leads que entraron hoy: 23', '@entraron', b=True), L('Contactados: 18', '@entraron+8'), SEP('@llamó'),
+        L('Paola G. llamó a 9 · 2 citas', '@llamó'), L('Valeria R. llamó a 7 · 1 cita', '@llamó+5'), L('Andrés M. llamó a 2', '@llamó+10'),
+        SEP('@contacto'), L('Sin contacto: 5 (Diego H. 4, Andrés M. 1)', '@contacto', c='red')],
+        alert={'t': 'Ahora: lead nuevo de Meta, Diana Trejo. Valeria R. le escribió en 3 min.', 'c': 'green', 'at': '@Eso'})]),
+    # 02 desarrollos
+    ('n02', 6): dict(ins=[callrec('@llamadas', '@agendó', advisor='Andrés Molina', lead='Lucía Hernández',
+                                  summary=['Le interesa el lanzamiento', 'Pidió precios de preventa', 'Siguiente paso: recorrido']),
+                          cita('@agendó', '@descartó', mode='done', what='Recorrido · Lanzamiento', when='Sábado 15 · 11:00 am',
+                               dayIdx=5, lead='Diana Trejo', source='Agendó en el chat', doneText='Recorrido agendado')]),
+    # 03 este CRM se mueve solo
+    ('n03', 1): dict(ins=[crm('@solo', move='@solo+8', chip='Se mueve solo')]),
+    ('n03', 2): dict(ins=[note('@segunda', '@mes', empty=True, emptyText='Sin notas desde la semana 2'),
+                          crm('@pipeline', stale=True, chip='El pipeline es una mentira')]),
+    ('n03', 5): dict(ins=[note('@anota', typeAt='@presupuesto+4', fields=TULUM,
+                               note='Quiere ver el proyecto el jueves a las 5 pm. Pidió planos y forma de pago.'),
+                          crm('@etapa', move='@etapa+6'),
+                          cita('@cita', confirmAt='@confirmar'),
+                          crm('@CRM', move=False, chip='Tu CRM dice la verdad')]),
+    # 04 curiosos vs compradores
+    ('n04', 4): dict(ins=[note('@saca', '@eso', lead='Diana Trejo', tag='Lead · Polanco', stage='Atender primero', right='Sacado del chat',
+                               typeAt='@pronto+4', note='Quiere comprar este mes. Ya tiene crédito aprobado. Prioridad alta.',
+                               fields=[F('Busca', 'Depa 3 recámaras', '@busca'), F('Zona', 'Polanco', '@zona'),
+                                       F('Presupuesto', '8 millones', '@presupuesto'), F('Cuándo compra', 'Este mes', '@pronto')])]),
+    # 07 robando leads
+    ('n07', 5): dict(ins=[crm('@CRM', '@llamadas', move='@CRM+12', chip='Solo conversaciones con leads'),
+                          callrec('@llamadas', advisor='Diego Herrera', lead='Adriana Solís')]),
+    # 08 9 mil dólares
+    ('n08', 5): dict(ins=[callrec('@nunca', '@citas', missed=True), cita('@citas', mode='done', doneText='Cita agendada',
+                                                                         what='Cita · Campaña Mérida', when='Viernes 14 · 4:00 pm', dayIdx=4)]),
+    # 09 llenan el CRM a mano
+    ('n09', 4): dict(ins=[crm('@CRM', stale=True, chip='El CRM se queda vacío')]),
+    ('n09', 5): dict(ins=[callrec('@escucha'),
+                          note('@nota', typeAt='@nota+6', fields=[F('Presupuesto', '3.2 millones', '@presupuesto'), F('Zona', 'Mérida', '@zona'),
+                                                                  F('Objeciones', 'Fecha de entrega', '@objeciones'), F('Etapa', 'Cita', '@Mueve')],
+                               lead='Adriana Solís', tag='Lead · Mérida', note='Le preocupa la fecha de entrega. Quiere visitar el sábado.'),
+                          crm('@Mueve', move='@etapa', chip='Etapa movida y tarea creada'),
+                          report('@reporte')]),
+    # 10 así le llegaría un lead
+    ('n10', 5): dict(ins=[note('@anota', typeAt='@Lucía', fields=[F('Busca', 'Depa 2 recámaras', '@busca'), F('Zona', 'Tulum', '@Lucía'),
+                                                                     F('Presupuesto', '4.5 millones', '@Lucía+4'), F('Etapa', 'Cita', '@cita')]),
+                          cita('@cita', confirmAt='@confirmar'), report('@reporte')]),
+    # 12 orgullo GoHighLevel
+    ('n12', 6): dict(ins=[crm('@llena', move='@CRM+4'), report('@días')]),
+    # 13 pagaste GoHighLevel
+    ('n13', 3): dict(ins=[crm('@pipeline', '@asesores', stale=True, chip='Bonito, pero nadie lo usa')]),
+    ('n13', 5): dict(ins=[note('@conectamos', typeAt='@notas'), report('@reportes')]),
+    # 14 GoHighLevel no basta
+    ('n14', 3): dict(ins=[crm('@pipeline', '@Lo', move=False, chip='Guarda contactos')]),
+    ('n14', 4): dict(ins=[crm('@pipeline', stale=True, chip='No dice la verdad')]),
+    ('n14', 5): dict(ins=[callrec('@escucha'), crm('@nota', move='@etapa', chip='Nota escrita y etapa movida por la IA')]),
+    # 15 parodia agente de IA
+    ('n15', 2): dict(ins=[cita('@agendó', mode='missed', source='Agendada por el bot', missedText='Ningún asesor sabía de la cita',
+                               what='Visita · Oficina', advisor='Sin asignar')]),
+    ('n15', 5): dict(ins=[crm('@CRM', move='@CRM+10')]),
+    # 17 coordinador
+    ('n17', 5): dict(ins=[callrec('@escucha'), tasks('@arma', who='Diego Herrera'),
+                          report('@ti', title='Tu equipo hoy', lines=[
+                              L('Listas cumplidas: 3 de 5 asesores', '@ti+4', b=True), SEP('@cumplió'),
+                              L('Diego H. no cumplió: 4 de 9 tareas', '@cumplió', c='red'),
+                              L('Leads que se están enfriando: 6', '@enfriando', c='amber'),
+                              L('Andrés M.: 3 días sin dar seguimiento', '@seguimiento', c='red')], alert=False)]),
+    # 18 marcó 15 veces
+    ('n18', 5): dict(ins=[callrec('@llamada', '@chats', when='Hoy 11:42 am · 3 min 42 s',
+                                  summary=['Le marcó 1 vez, duró 3:42', 'Quiere visitar el sábado', 'Quedaron en mandar ubicación'])]),
+    # 20 renunció
+    ('n20', 4): dict(ins=[crm('@CRM', move='@CRM+10', chip='Lo personal se queda fuera')]),
+    ('n20', 5): dict(ins=[note('@nota', lead='Adriana Solís', tag='Antes con Diego Herrera', stage='Reasignada', typeAt='@nota+4',
+                               note='Quedó en mandarle 2 opciones en Mérida el lunes. Reasignada a Paola Gutiérrez.',
+                               fields=[F('Busca', 'Casa en Mérida'), F('Presupuesto', '3.2 millones'), F('Último contacto', 'Hace 2 días'),
+                                       F('Nuevo asesor', 'Paola G.', '@otro')])]),
+    # 22 el día de tus asesores
+    ('n22', 4): dict(ins=[note('@IA', typeAt='@IA+6', fields=[F('Busca', 'Depa 2 recámaras'), F('Zona', 'Tulum'), F('Presupuesto', '4.5 millones'),
+                                                            F('Etapa', 'Cita', '@cita')]),
+                          cita('@cita', confirmAt='@confirmar')]),
+    ('n22', 5): dict(ins=[report('@resumen', title='Tu resumen del día', sub='Tu día con Lead Master', sched='Tu resumen llega a las 7:00 pm',
+                                 lines=ADVISOR_DAY, alert=False)]),
+    # 24 ahorita te mando
+    ('n24', 5): dict(type='ui', ins=[tasks(0, '@reporte', who='Diego Herrera', items=[
+        T('Mandar opciones a Adriana Solís', 'Lo prometiste ayer en el chat', at='@opciones'),
+        T('Llamar a Diana Trejo el martes', 'Ella pidió que la buscaran', at='@martes'),
+        T('Confirmar visita de Lucía Hernández', 'Sábado 11:00 am', 'done', at='@visita')]),
+        report('@reporte', title='Compromisos del equipo', lines=[
+            L('Cumplidos hoy: 7 de 10', b=True), SEP(),
+            L('Pendiente: mandar opciones a Adriana Solís (Diego H.)', c='red'), L('Hecho: llamar a Diana Trejo (Valeria R.)', c='green')],
+            alert=False)]),
+    # 25 te apareció
+    ('n25', 2): dict(ins=[crm('@CRM', '@bot', stale=True, chip='Nadie lo llenó')]),
+    ('n25', 4): dict(ins=[crm('@CRM', move='@CRM+8'), tasks('@hacer'), report('@reporte')]),
+    # A por qué tu CRM no funciona
+    ('a', 2): dict(ins=[note('@etapas', '@tareas', empty=True), tasks('@tareas', late=True)]),
+    ('a', 3): dict(ins=[crm('@CRM', '@hablan', stale=True, chip='Para ellos es una carga')]),
+    ('a', 6): dict(ins=[crm('@intento', move='@etapa'), note('@nota', typeAt='@nota+4')]),
+    ('a', 7): dict(type='ui', ins=[report(0, title='Reporte semanal', time='8:00 am', sched='Tu reporte llega los lunes a las 8:00 am', lines=[
+        L('Leads de la semana: 214', '@semana', b=True), L('Llamaron a 142', '@llamaron', c='green'),
+        L('Nunca contestaron: 38', '@contestó', c='amber'), L('En el olvido: 21 sin seguimiento', '@olvido', c='red'), SEP('@olvido+6'),
+        L('Diego H.: 12 leads olvidados', '@olvido+6', c='red'), L('Paola G.: 0 olvidados', '@olvido+10', c='green')], alert=False)]),
+    # B marketing vs ventas
+    ('b', 6): dict(ins=[cita('@cita', '@llamar', mode='done', doneText='Cita registrada')]),
+    # D los CRM murieron
+    ('d', 2): dict(ins=[crm('@CRM', '@notas', move=False, chip='Qué pasaba con cada lead'), note('@notas', empty=True)]),
+    ('d', 5): dict(ins=[callrec('@Escucha'),
+                        note('@registra', typeAt='@etapa', lead='Diana Trejo', tag='Lead · Polanco', stage='Interesada',
+                             note='Busca 3 recámaras en Polanco para vivir. Quiere visitar el fin de semana.',
+                             fields=[F('Presupuesto', '9 millones', '@presupuesto'), F('Zona', 'Polanco', '@zona'),
+                                     F('Busca', '3 recámaras', '@busca'), F('Etapa', 'Interesada', '@etapa')])]),
+    # E así recibirías tus reportes
+    ('e', 5): dict(type='ui', ins=[report(0, title='Tu resumen del día', sub='Tu día con Lead Master', sched='Tu resumen llega a las 7:00 pm',
+                                          lines=ADVISOR_DAY, alert=False)]),
+    ('e', 6): dict(type='ui', ins=[report(0, lines=[
+        L('Leads que entraron hoy: 37', '@entraron', b=True), SEP('@llamó'),
+        L('Paola G. llamó a 14 · 2 citas', '@llamó'), L('Valeria R. llamó a 11 · 2 citas', '@llamó+5'),
+        L('Diego H. llamó a 3', '@llamó+10', c='amber'), SEP('@contacto'),
+        L('Sin contacto: 6 (Diego H. 4, Andrés M. 2)', '@contacto', c='red'), L('Citas del día: 5', '@citas', c='green')],
+        alert={'t': 'Ahora: Adriana Solís lleva 26 h sin llamada (Diego H.)', 'c': 'amber', 'at': '@citas+20'})]),
+    # F en un minuto
+    ('f', 5): dict(type='ui', ins=[report(0, title='Reporte semanal', time='8:00 am', sched='Tu reporte llega los lunes a las 8:00 am',
+                                          lines=WEEKLY, alert=False)]),
+    # G1..G5
+    ('g1', 4): dict(ins=[callrec('@habla', summary=['Habló de precios y entrega', 'Quiere visitar el sábado', 'Siguiente paso: confirmar'])]),
+    ('g2', 4): dict(ins=[callrec('@llamada', '@sin')]),
+    ('g3', 3): dict(ins=[crm('@CRM', move='@CRM+8', chip='Solo conversaciones con leads')]),
+    ('g3', 4): dict(ins=[callrec('@grabadas')]),
+    ('g5', 3): dict(ins=[crm('@vacío', stale=True, chip='Sin notas, sin etapas')]),
+    ('g5', 5): dict(ins=[crm('@CRM', move='@solo'), callrec('@escucha'),
+                         note('@nota', typeAt='@nota+4', fields=[F('Presupuesto', '3.2 millones', '@presupuesto'), F('Zona', 'Mérida', '@zona'),
+                                                               F('Objeciones', 'Fecha de entrega', '@objeciones'), F('Etapa', 'Cita', '@etapa')],
+                              lead='Adriana Solís', tag='Lead · Mérida', note='Le preocupa la fecha de entrega. Quiere visitar el sábado.'),
+                         tasks('@tarea', items=[T('Confirmar visita de Adriana Solís', 'Siguiente paso, creado por la IA', at='@tarea')])]),
+    ('g5', 6): dict(ins=[report('@recibes')]),
+}
+
+
+# ---------------------------------------------------------------------
+# Idea 1 con el gancho en otras ciudades: solo cambia la primera escena (voz, foto y ciudad);
+# el resto reutiliza las voces del 01 de Guadalajara. Las zonas de los ejemplos se adaptan.
+CITIES = [
+    ('jalisco', 'jal', 'Jalisco', 'gdl_development', 'Jalisco', ('Zapopan', 'Providencia')),
+    ('monterrey', 'mty', 'Monterrey', 'monterrey_tower', 'Monterrey', ('San Pedro', 'Cumbres')),
+    ('merida', 'mid', 'Mérida', 'merida_house', 'Mérida', ('Temozón Norte', 'Altabrisa')),
+    ('puebla', 'pue', 'Puebla', 'aerial_community', 'Puebla', ('Angelópolis', 'Cholula')),
+    ('queretaro', 'qro', 'Querétaro', 'queretaro_house', 'Querétaro', ('Juriquilla', 'El Refugio')),
+    ('cdmx', 'cdmx', 'la Ciudad de México', 'polanco_building', 'CDMX', ('Polanco', 'Del Valle')),
+    ('cancun', 'cun', 'Cancún', 'cancun_tower', 'Cancún', ('Puerto Cancún', 'Zona Hotelera')),
+]
+
+
+def city_variants():
+    import copy
+    base = next(v for v in VIDEOS if v['prefix'] == 'n01')
+
+    def zones(obj, z1, z2):
+        return json.loads(json.dumps(obj, ensure_ascii=False).replace('Zapopan', z1).replace('Providencia', z2))
+
+    for slug, code, name, img, short, (z1, z2) in CITIES:
+        prefix = f'n01{code}'
+        v = zones(copy.deepcopy(base), z1, z2)
+        v['vid'] = f'01-si-yo-tuviera-una-inmobiliaria-en-{slug}'
+        v['prefix'] = prefix
+        v['title'] = f'Si yo tuviera una inmobiliaria en {name}'
+        v['keywords'] = [k for k in v['keywords'] if k != 'Guadalajara'] + [name.split()[-1]]
+        first = v['scenes'][0]
+        first['text'] = first['text'].replace('en Guadalajara', f'en {name}')
+        first['p']['img'] = img
+        first['p']['kicker'] = f'{short} · +5 asesores'
+        for i, sc in enumerate(v['scenes'][1:], start=2):
+            sc['key'] = f'n01_s{i}'
+        for (pre, n), extra in list(INSERTS.items()):
+            if pre == 'n01':
+                INSERTS[(prefix, n)] = zones(extra, z1, z2)
+        VIDEOS.append(v)
+
+
+city_variants()
+
+
+# ---------------------------------------------------------------------
 
 def build_all():
     out = []
@@ -914,7 +1183,10 @@ def build_all():
             sfx += sc.pop('extra_sfx', [])
             sfx.insert(0, fx(I, 0, 0.2) if i == 0 else fx(W, 0, 0.08))
             sc['sfx'] = sfx
-            sc['key'] = f"{v['prefix']}_s{i + 1}"
+            sc['key'] = sc.get('key') or f"{v['prefix']}_s{i + 1}"
+            extra = INSERTS.get((v['prefix'], i + 1))
+            if extra:
+                sc.update(extra)
             sc.setdefault('voice', v['voice'])
             if sc['type'] == 'cta':
                 sc.setdefault('captions', True)

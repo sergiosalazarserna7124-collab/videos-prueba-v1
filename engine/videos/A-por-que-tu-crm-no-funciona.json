@@ -85,6 +85,23 @@
     }
    ],
    "key": "a_s2",
+   "ins": [
+    {
+     "kind": "note",
+     "at": "@etapas",
+     "to": "@tareas",
+     "p": {
+      "empty": true
+     }
+    },
+    {
+     "kind": "tasks",
+     "at": "@tareas",
+     "p": {
+      "late": true
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
@@ -120,6 +137,17 @@
     }
    ],
    "key": "a_s3",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@CRM",
+     "to": "@hablan",
+     "p": {
+      "chip": "Para ellos es una carga",
+      "stale": true
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
@@ -249,10 +277,30 @@
     }
    ],
    "key": "a_s6",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@intento",
+     "p": {
+      "move": {
+       "card": 0,
+       "to": 2,
+       "at": "@etapa"
+      }
+     }
+    },
+    {
+     "kind": "note",
+     "at": "@nota",
+     "p": {
+      "typeAt": "@nota+4"
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
-   "type": "phonelist",
+   "type": "ui",
    "text": "Y cada semana tú recibes qué pasó con cada prospecto: a quién llamaron, quién nunca contestó y a quién dejaron en el olvido.",
    "p": {
     "items": [
@@ -302,6 +350,55 @@
     }
    ],
    "key": "a_s7",
+   "ins": [
+    {
+     "kind": "report",
+     "at": 0,
+     "p": {
+      "title": "Reporte semanal",
+      "time": "8:00 am",
+      "sched": "Tu reporte llega los lunes a las 8:00 am",
+      "lines": [
+       {
+        "t": "Leads de la semana: 214",
+        "at": "@semana",
+        "b": true
+       },
+       {
+        "t": "Llamaron a 142",
+        "at": "@llamaron",
+        "c": "green"
+       },
+       {
+        "t": "Nunca contestaron: 38",
+        "at": "@contestó",
+        "c": "amber"
+       },
+       {
+        "t": "En el olvido: 21 sin seguimiento",
+        "at": "@olvido",
+        "c": "red"
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@olvido+6"
+       },
+       {
+        "t": "Diego H.: 12 leads olvidados",
+        "at": "@olvido+6",
+        "c": "red"
+       },
+       {
+        "t": "Paola G.: 0 olvidados",
+        "at": "@olvido+10",
+        "c": "green"
+       }
+      ],
+      "alert": false
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

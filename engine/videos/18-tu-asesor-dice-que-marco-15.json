@@ -149,6 +149,21 @@
     }
    ],
    "key": "n18_s5",
+   "ins": [
+    {
+     "kind": "call",
+     "at": "@llamada",
+     "to": "@chats",
+     "p": {
+      "when": "Hoy 11:42 am · 3 min 42 s",
+      "summary": [
+       "Le marcó 1 vez, duró 3:42",
+       "Quiere visitar el sábado",
+       "Quedaron en mandar ubicación"
+      ]
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

@@ -161,6 +161,41 @@
     }
    ],
    "key": "n22_s4",
+   "ins": [
+    {
+     "kind": "note",
+     "at": "@IA",
+     "p": {
+      "typeAt": "@IA+6",
+      "fields": [
+       {
+        "k": "Busca",
+        "v": "Depa 2 recámaras"
+       },
+       {
+        "k": "Zona",
+        "v": "Tulum"
+       },
+       {
+        "k": "Presupuesto",
+        "v": "4.5 millones"
+       },
+       {
+        "k": "Etapa",
+        "v": "Cita",
+        "at": "@cita"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "cita",
+     "at": "@cita",
+     "p": {
+      "confirmAt": "@confirmar"
+     }
+    }
+   ],
    "voice": "antonio"
   },
   {
@@ -203,6 +238,39 @@
     }
    ],
    "key": "n22_s5",
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@resumen",
+     "p": {
+      "title": "Tu resumen del día",
+      "sub": "Tu día con Lead Master",
+      "sched": "Tu resumen llega a las 7:00 pm",
+      "lines": [
+       {
+        "t": "Llamadas: 14 · Chats: 22",
+        "b": true
+       },
+       {
+        "t": "Contactados: 9 de 12"
+       },
+       {
+        "t": "Citas: 2 (jueves y sábado)",
+        "c": "green"
+       },
+       {
+        "t": "",
+        "sep": true
+       },
+       {
+        "t": "Mañana a primera hora: llamar a Diana Trejo",
+        "c": "amber"
+       }
+      ],
+      "alert": false
+     }
+    }
+   ],
    "voice": "antonio"
   },
   {

@@ -195,6 +195,48 @@
     }
    ],
    "key": "n10_s5",
+   "ins": [
+    {
+     "kind": "note",
+     "at": "@anota",
+     "p": {
+      "typeAt": "@Lucía",
+      "fields": [
+       {
+        "k": "Busca",
+        "v": "Depa 2 recámaras",
+        "at": "@busca"
+       },
+       {
+        "k": "Zona",
+        "v": "Tulum",
+        "at": "@Lucía"
+       },
+       {
+        "k": "Presupuesto",
+        "v": "4.5 millones",
+        "at": "@Lucía+4"
+       },
+       {
+        "k": "Etapa",
+        "v": "Cita",
+        "at": "@cita"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "cita",
+     "at": "@cita",
+     "p": {
+      "confirmAt": "@confirmar"
+     }
+    },
+    {
+     "kind": "report",
+     "at": "@reporte"
+    }
+   ],
    "voice": "antonio"
   },
   {

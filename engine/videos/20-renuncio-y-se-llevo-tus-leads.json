@@ -136,6 +136,20 @@
     }
    ],
    "key": "n20_s4",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@CRM",
+     "p": {
+      "chip": "Lo personal se queda fuera",
+      "move": {
+       "card": 0,
+       "to": 2,
+       "at": "@CRM+10"
+      }
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
@@ -183,6 +197,38 @@
     }
    ],
    "key": "n20_s5",
+   "ins": [
+    {
+     "kind": "note",
+     "at": "@nota",
+     "p": {
+      "lead": "Adriana Solís",
+      "tag": "Antes con Diego Herrera",
+      "stage": "Reasignada",
+      "typeAt": "@nota+4",
+      "note": "Quedó en mandarle 2 opciones en Mérida el lunes. Reasignada a Paola Gutiérrez.",
+      "fields": [
+       {
+        "k": "Busca",
+        "v": "Casa en Mérida"
+       },
+       {
+        "k": "Presupuesto",
+        "v": "3.2 millones"
+       },
+       {
+        "k": "Último contacto",
+        "v": "Hace 2 días"
+       },
+       {
+        "k": "Nuevo asesor",
+        "v": "Paola G.",
+        "at": "@otro"
+       }
+      ]
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

@@ -118,6 +118,16 @@
     }
    ],
    "key": "g5_s3",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@vacío",
+     "p": {
+      "chip": "Sin notas, sin etapas",
+      "stale": true
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
@@ -182,6 +192,69 @@
     }
    ],
    "key": "g5_s5",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@CRM",
+     "p": {
+      "move": {
+       "card": 0,
+       "to": 2,
+       "at": "@solo"
+      }
+     }
+    },
+    {
+     "kind": "call",
+     "at": "@escucha"
+    },
+    {
+     "kind": "note",
+     "at": "@nota",
+     "p": {
+      "typeAt": "@nota+4",
+      "fields": [
+       {
+        "k": "Presupuesto",
+        "v": "3.2 millones",
+        "at": "@presupuesto"
+       },
+       {
+        "k": "Zona",
+        "v": "Mérida",
+        "at": "@zona"
+       },
+       {
+        "k": "Objeciones",
+        "v": "Fecha de entrega",
+        "at": "@objeciones"
+       },
+       {
+        "k": "Etapa",
+        "v": "Cita",
+        "at": "@etapa"
+       }
+      ],
+      "lead": "Adriana Solís",
+      "tag": "Lead · Mérida",
+      "note": "Le preocupa la fecha de entrega. Quiere visitar el sábado."
+     }
+    },
+    {
+     "kind": "tasks",
+     "at": "@tarea",
+     "p": {
+      "items": [
+       {
+        "t": "Confirmar visita de Adriana Solís",
+        "state": "new",
+        "sub": "Siguiente paso, creado por la IA",
+        "at": "@tarea"
+       }
+      ]
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
@@ -211,6 +284,12 @@
     }
    ],
    "key": "g5_s6",
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@recibes"
+    }
+   ],
    "voice": "fernando"
   },
   {

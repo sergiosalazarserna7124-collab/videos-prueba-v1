@@ -157,6 +157,43 @@
     }
    ],
    "key": "n04_s4",
+   "ins": [
+    {
+     "kind": "note",
+     "at": "@saca",
+     "to": "@eso",
+     "p": {
+      "lead": "Diana Trejo",
+      "tag": "Lead · Polanco",
+      "stage": "Atender primero",
+      "right": "Sacado del chat",
+      "typeAt": "@pronto+4",
+      "note": "Quiere comprar este mes. Ya tiene crédito aprobado. Prioridad alta.",
+      "fields": [
+       {
+        "k": "Busca",
+        "v": "Depa 3 recámaras",
+        "at": "@busca"
+       },
+       {
+        "k": "Zona",
+        "v": "Polanco",
+        "at": "@zona"
+       },
+       {
+        "k": "Presupuesto",
+        "v": "8 millones",
+        "at": "@presupuesto"
+       },
+       {
+        "k": "Cuándo compra",
+        "v": "Este mes",
+        "at": "@pronto"
+       }
+      ]
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

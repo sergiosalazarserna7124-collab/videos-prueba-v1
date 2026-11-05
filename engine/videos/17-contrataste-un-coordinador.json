@@ -199,6 +199,54 @@
     }
    ],
    "key": "n17_s5",
+   "ins": [
+    {
+     "kind": "call",
+     "at": "@escucha"
+    },
+    {
+     "kind": "tasks",
+     "at": "@arma",
+     "p": {
+      "who": "Diego Herrera"
+     }
+    },
+    {
+     "kind": "report",
+     "at": "@ti",
+     "p": {
+      "title": "Tu equipo hoy",
+      "lines": [
+       {
+        "t": "Listas cumplidas: 3 de 5 asesores",
+        "at": "@ti+4",
+        "b": true
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@cumplió"
+       },
+       {
+        "t": "Diego H. no cumplió: 4 de 9 tareas",
+        "at": "@cumplió",
+        "c": "red"
+       },
+       {
+        "t": "Leads que se están enfriando: 6",
+        "at": "@enfriando",
+        "c": "amber"
+       },
+       {
+        "t": "Andrés M.: 3 días sin dar seguimiento",
+        "at": "@seguimiento",
+        "c": "red"
+       }
+      ],
+      "alert": false
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

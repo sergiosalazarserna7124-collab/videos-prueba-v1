@@ -107,7 +107,20 @@
      "vol": 0.22
     }
    ],
-   "key": "n15_s2"
+   "key": "n15_s2",
+   "ins": [
+    {
+     "kind": "cita",
+     "at": "@agendó",
+     "p": {
+      "mode": "missed",
+      "source": "Agendada por el bot",
+      "missedText": "Ningún asesor sabía de la cita",
+      "what": "Visita · Oficina",
+      "advisor": "Sin asignar"
+     }
+    }
+   ]
   },
   {
    "type": "quote",
@@ -215,7 +228,20 @@
      "vol": 0.08
     }
    ],
-   "key": "n15_s5"
+   "key": "n15_s5",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@CRM",
+     "p": {
+      "move": {
+       "card": 0,
+       "to": 2,
+       "at": "@CRM+10"
+      }
+     }
+    }
+   ]
   },
   {
    "type": "cta",

@@ -124,6 +124,17 @@
     }
    ],
    "key": "n14_s3",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@pipeline",
+     "to": "@Lo",
+     "p": {
+      "chip": "Guarda contactos",
+      "move": false
+     }
+    }
+   ],
    "voice": "antonio"
   },
   {
@@ -162,6 +173,16 @@
     }
    ],
    "key": "n14_s4",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@pipeline",
+     "p": {
+      "chip": "No dice la verdad",
+      "stale": true
+     }
+    }
+   ],
    "voice": "antonio"
   },
   {
@@ -220,6 +241,24 @@
     }
    ],
    "key": "n14_s5",
+   "ins": [
+    {
+     "kind": "call",
+     "at": "@escucha"
+    },
+    {
+     "kind": "crm",
+     "at": "@nota",
+     "p": {
+      "chip": "Nota escrita y etapa movida por la IA",
+      "move": {
+       "card": 0,
+       "to": 2,
+       "at": "@etapa"
+      }
+     }
+    }
+   ],
    "voice": "antonio"
   },
   {

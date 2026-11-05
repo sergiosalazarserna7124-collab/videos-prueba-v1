@@ -194,6 +194,29 @@
     }
    ],
    "key": "n07_s5",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@CRM",
+     "to": "@llamadas",
+     "p": {
+      "chip": "Solo conversaciones con leads",
+      "move": {
+       "card": 0,
+       "to": 2,
+       "at": "@CRM+12"
+      }
+     }
+    },
+    {
+     "kind": "call",
+     "at": "@llamadas",
+     "p": {
+      "advisor": "Diego Herrera",
+      "lead": "Adriana Solís"
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {

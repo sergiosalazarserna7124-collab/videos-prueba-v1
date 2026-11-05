@@ -108,6 +108,17 @@
     }
    ],
    "key": "n13_s3",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@pipeline",
+     "to": "@asesores",
+     "p": {
+      "chip": "Bonito, pero nadie lo usa",
+      "stale": true
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
@@ -175,6 +186,19 @@
     }
    ],
    "key": "n13_s5",
+   "ins": [
+    {
+     "kind": "note",
+     "at": "@conectamos",
+     "p": {
+      "typeAt": "@notas"
+     }
+    },
+    {
+     "kind": "report",
+     "at": "@reportes"
+    }
+   ],
    "voice": "fernando"
   },
   {

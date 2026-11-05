@@ -119,6 +119,20 @@
     }
    ],
    "key": "g3_s3",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": "@CRM",
+     "p": {
+      "chip": "Solo conversaciones con leads",
+      "move": {
+       "card": 0,
+       "to": 2,
+       "at": "@CRM+8"
+      }
+     }
+    }
+   ],
    "voice": "fernando"
   },
   {
@@ -172,6 +186,12 @@
     }
    ],
    "key": "g3_s4",
+   "ins": [
+    {
+     "kind": "call",
+     "at": "@grabadas"
+    }
+   ],
    "voice": "fernando"
   },
   {
