@@ -53,3 +53,6 @@ publica Claude con Composio cuando llega cada aviso programado, siguiendo la col
 - Solo van los videos nuevos de IA. Los que Sergio editó al inicio (status `no_instagram`) ya están en Instagram: no se suben.
 - Siempre como colaboración con @sergio_salazaar (no etiqueta).
 - Para meter un video nuevo a Instagram: agregarlo a `videos/ig_queue.json` como `pendiente` con su hora (`when`, Bogotá).
+- Videos UGC con modelo (16: U1-U4 y UH1..UH6 x C1/C2, de la rama `claude/modest-euler-0k49k2`): programados el 6 nov
+  en Metricool (TikTok, Facebook, YouTube) del 13 al 15 nov, y en la cola de Instagram a la misma hora. Metricool tomó
+  cada video del link público de GitHub (raw, fijado al commit 717d253) y la cola usa la copia de static.metricool.com.

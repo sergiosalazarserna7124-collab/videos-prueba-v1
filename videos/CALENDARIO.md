@@ -76,6 +76,26 @@ Las versiones por ciudad de la idea 1 van una por día.
 - 20:30 · Idea 8 · 9 mil dólares en anuncios
 
 ## 2026-11-13
+- 08:00 · UGC · UH4-C1 · Robando leads + el CRM que nadie usa
+- 10:00 · UGC · U4 · Qué es Lead Master en 5 pasos (con modelo)
+- 12:00 · UGC · UH1-C2 · Jalisco + juntas de marketing y ventas
 - 14:00 · Idea 11 · ¿Qué anuncio te vendió?
+- 16:00 · UGC · UH5-C1 · Claridad en 7 días + el CRM que nadie usa
 - 18:00 · D · Los CRM murieron
 - 20:30 · Idea 6 · No es la cantidad de leads
+
+## 2026-11-14
+- 08:00 · UGC · UH6-C2 · Monitorear asesores + juntas de marketing y ventas
+- 10:00 · UGC · U1 · Así reciben su reporte tus asesores (con modelo)
+- 12:00 · UGC · UH2-C1 · Monterrey + el CRM que nadie usa
+- 14:00 · UGC · U2 · Los CRM murieron, llegaron los CRA (con modelo)
+- 16:00 · UGC · UH3-C2 · Mérida + juntas de marketing y ventas
+- 18:00 · UGC · UH4-C2 · Robando leads + juntas de marketing y ventas
+- 20:30 · UGC · UH1-C1 · Jalisco + el CRM que nadie usa
+
+## 2026-11-15
+- 08:00 · UGC · UH5-C2 · Claridad en 7 días + juntas de marketing y ventas
+- 10:00 · UGC · U3 · Por qué te llegan puros curiosos (con modelo)
+- 12:00 · UGC · UH2-C2 · Monterrey + juntas de marketing y ventas
+- 14:00 · UGC · UH6-C1 · Monitorear asesores + el CRM que nadie usa
+- 16:00 · UGC · UH3-C1 · Mérida + el CRM que nadie usa
