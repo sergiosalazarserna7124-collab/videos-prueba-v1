@@ -1,0 +1,783 @@
+{
+ "id": "U4-lead-master-en-5-pasos",
+ "title": "Qué es Lead Master: 5 pasos (UGC)",
+ "ugc": {
+  "src": "ugc/u4.mp4",
+  "words": "ugc/u4.words.json",
+  "face": [
+   551,
+   821,
+   600
+  ],
+  "zoom": 1.45,
+  "splitZoom": 1.15
+ },
+ "music": "music/drive.mp3",
+ "musicVol": 0.08,
+ "fix": {
+  "veinte": "20"
+ },
+ "keywords": [
+  "Uno:",
+  "Dos:",
+  "Tres:",
+  "Cuatro:",
+  "Cinco:",
+  "leads",
+  "lead",
+  "Meta",
+  "WhatsApp",
+  "reportes",
+  "control",
+  "compradores",
+  "curiosos",
+  "CRM",
+  "cita"
+ ],
+ "scenes": [
+  {
+   "layout": "face",
+   "p": {
+    "kicker": "Inmobiliarias",
+    "lines": [
+     "ORDENA TUS [LEADS]",
+     "EN 5 PASOS"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ]
+  },
+  {
+   "at": "@Te",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "TE LO EXPLICO",
+     "EN [UN MINUTO]"
+    ],
+    "lineAts": [
+     0,
+     "@minuto"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@minuto",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@ya",
+   "layout": "face",
+   "p": {
+    "big": {
+     "text": "+20",
+     "sub": "EQUIPOS INMOBILIARIOS",
+     "at": "@20",
+     "top": 270,
+     "size": 190,
+     "subSize": 70
+    },
+    "row": [
+     {
+      "t": "México",
+      "at": "@México"
+     },
+     {
+      "t": "Colombia",
+      "at": "@Colombia",
+      "color": "purple"
+     },
+     {
+      "t": "Estados Unidos",
+      "at": "@Estados",
+      "color": "green"
+     }
+    ],
+    "rowTop": 1060
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": "@20",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@México",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@Colombia",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@Estados",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Lead",
+   "layout": "face",
+   "p": {
+    "logo": {
+     "at": 0
+    },
+    "lines": [
+     "SISTEMA DE GESTIÓN",
+     "[COMERCIAL]"
+    ],
+    "lineAts": [
+     "@sistema",
+     "@comercial"
+    ],
+    "titleTop": 440,
+    "size": 96
+   }
+  },
+  {
+   "at": "@Funciona",
+   "layout": "face",
+   "p": {
+    "big": {
+     "text": "5",
+     "sub": "PASOS",
+     "at": "@cinco",
+     "top": 260,
+     "size": 220,
+     "subSize": 80
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": "@cinco",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@Uno",
+   "layout": "face",
+   "p": {
+    "step": {
+     "n": "1",
+     "lines": [
+      "CENTRALIZA",
+      "TUS [LEADS]"
+     ],
+     "at": 0
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@Los",
+   "layout": "full",
+   "type": "flow",
+   "p": {
+    "title": "1 · TODOS TUS LEADS",
+    "nodes": [
+     {
+      "t": "Portales · referidos · anuncios",
+      "at": "@portales",
+      "color": "cyan"
+     },
+     {
+      "t": "Se sincronizan solos",
+      "at": "@sincronizan",
+      "color": "purple"
+     },
+     {
+      "t": "Asignado a un asesor",
+      "at": "@asignan",
+      "color": "cyan"
+     },
+     {
+      "t": "Si no atiende, pasa al siguiente",
+      "at": "@siguiente",
+      "color": "amber"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@portales",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@sincronizan",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@asignan",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@siguiente",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Dos",
+   "layout": "face",
+   "p": {
+    "step": {
+     "n": "2",
+     "lines": [
+      "QUÉ PASÓ CON",
+      "CADA [LEAD]"
+     ],
+     "at": 0
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@Como",
+   "layout": "full",
+   "type": "hub",
+   "p": {
+    "title": "VIVE EN SU WHATSAPP",
+    "centerAt": 0,
+    "nodes": [
+     {
+      "name": "Paola Gutiérrez",
+      "at": "@WhatsApp"
+     },
+     {
+      "name": "Valeria Ríos",
+      "at": "@WhatsApp+5"
+     },
+     {
+      "name": "Diego Herrera",
+      "at": "@llamadas"
+     },
+     {
+      "name": "Andrés Molina",
+      "at": "@llamadas+5"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamadas",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@sabe",
+   "layout": "full",
+   "type": "panel",
+   "p": {
+    "title": "Qué pasó con cada lead",
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Contactada en 4 minutos.",
+      "status": "Contactado",
+      "color": "green",
+      "at": "@llamaron"
+     },
+     {
+      "ch": "call",
+      "advisor": "Diego Herrera",
+      "lead": "Adriana Solís",
+      "summary": "Sin llamada en 26 horas.",
+      "status": "Sin contacto",
+      "color": "red",
+      "at": "@no"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Paola Gutiérrez",
+      "lead": "Lucía Hernández",
+      "summary": "Primer mensaje a las 3 h 10 min.",
+      "status": "Tarde",
+      "color": "amber",
+      "at": "@tardaron"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/ding.wav",
+     "at": "@llamaron",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@no",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@tardaron",
+     "vol": 0.08
+    }
+   ]
+  },
+  {
+   "at": "@Y",
+   "layout": "split",
+   "ins": [
+    {
+     "kind": "note",
+     "at": 0,
+     "p": {
+      "typeAt": "@cliente",
+      "lead": "Lucía Hernández",
+      "tag": "Lead · Tulum",
+      "stage": "Interesada",
+      "note": "Busca depa de 2 recámaras en Tulum para vivir.",
+      "fields": [
+       {
+        "k": "Presupuesto",
+        "v": "250 mil USD",
+        "at": "@presupuesto"
+       },
+       {
+        "k": "Zona",
+        "v": "Tulum",
+        "at": "@zona"
+       },
+       {
+        "k": "Busca",
+        "v": "Depa 2 recámaras",
+        "at": "@busca"
+       },
+       {
+        "k": "Etapa",
+        "v": "Interesada",
+        "at": "@cliente"
+       }
+      ]
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@presupuesto",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@zona",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@busca",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Tres",
+   "layout": "face",
+   "p": {
+    "step": {
+     "n": "3",
+     "lines": [
+      "LE DICE AL ASESOR",
+      "QUÉ [HACER]"
+     ],
+     "at": 0
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@Todos",
+   "layout": "split",
+   "type": "phonelist",
+   "p": {
+    "title": "3 · Mi trabajo",
+    "sub": "Qué debo hacer hoy",
+    "clock": "8:00",
+    "items": [
+     {
+      "t": "A quién llamar",
+      "at": "@llamar",
+      "color": "red",
+      "n": 5
+     },
+     {
+      "t": "Te pidió que lo contactaras hoy",
+      "at": "@pidió",
+      "color": "amber",
+      "n": 2
+     },
+     {
+      "t": "Citas de hoy",
+      "at": "@cita",
+      "color": "green",
+      "n": 1
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/notif.wav",
+     "at": 0,
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamar",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@pidió",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@cita",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Cuatro",
+   "layout": "face",
+   "p": {
+    "step": {
+     "n": "4",
+     "lines": [
+      "REPORTES SIN QUE",
+      "NADIE LLENE [NADA]"
+     ],
+     "at": 0,
+     "size": 96
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@Ves",
+   "layout": "full",
+   "type": "bars",
+   "p": {
+    "title": "Llamadas por asesor",
+    "at": "@llamadas",
+    "rows": [
+     {
+      "name": "Paola Gutiérrez",
+      "value": 61,
+      "sub": "llamadas"
+     },
+     {
+      "name": "Valeria Ríos",
+      "value": 48,
+      "sub": "llamadas"
+     },
+     {
+      "name": "Andrés Molina",
+      "value": 33,
+      "sub": "llamadas"
+     },
+     {
+      "name": "Diego Herrera",
+      "value": 9,
+      "sub": "llamadas",
+      "color": "red"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamadas",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@cuántos",
+   "layout": "full",
+   "type": "stat",
+   "p": {
+    "title": "Esta semana",
+    "stacked": true,
+    "items": [
+     {
+      "value": 19,
+      "label": "citas agendadas",
+      "at": "@agendaron",
+      "color": "cyan"
+     },
+     {
+      "value": 4,
+      "label": "apartados",
+      "at": "@apartaron",
+      "color": "purple"
+     },
+     {
+      "value": 2,
+      "label": "ventas",
+      "at": "@compraron",
+      "color": "green"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@agendaron",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@apartaron",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@compraron",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Tu",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "TU EQUIPO NO",
+     "LLENA [NADA]"
+    ],
+    "lineAts": [
+     0,
+     "@nada"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": "@nada",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@Cinco",
+   "layout": "face",
+   "p": {
+    "step": {
+     "n": "5",
+     "lines": [
+      "LE ENSEÑA A META",
+      "QUIÉN SÍ [COMPRA]"
+     ],
+     "at": 0,
+     "size": 96
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@Cuando",
+   "layout": "full",
+   "type": "events",
+   "p": {
+    "events": [
+     {
+      "name": "Cita agendada",
+      "count": 46,
+      "at": "@agenda",
+      "hot": true
+     },
+     {
+      "name": "Asistió a la cita",
+      "count": 31,
+      "at": "@asiste"
+     },
+     {
+      "name": "Apartado",
+      "count": 9,
+      "at": "@aparta"
+     },
+     {
+      "name": "Vendido",
+      "count": 4,
+      "at": "@compra"
+     }
+    ],
+    "toastAt": "@automático",
+    "toast": "Evento enviado a Meta: Vendido",
+    "toastSub": "Lead Master · en automático"
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@agenda",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@asiste",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@aparta",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@compra",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@automático",
+     "vol": 0.08
+    }
+   ]
+  },
+  {
+   "at": "@Así",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "MÁS [COMPRADORES]",
+     "MENOS CURIOSOS"
+    ],
+    "lineAts": [
+     "@compradores",
+     "@curiosos"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@compradores",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@curiosos",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Leads",
+   "layout": "face",
+   "p": {
+    "pills": [
+     {
+      "t": "Leads centralizados",
+      "at": 0,
+      "icon": "check"
+     },
+     {
+      "t": "Asesores que saben qué hacer",
+      "at": "@asesores",
+      "icon": "check"
+     },
+     {
+      "t": "Tú con el control",
+      "at": "@control",
+      "icon": "check"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": 0,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@asesores",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@control",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Dale",
+   "layout": "face",
+   "p": {
+    "cta": {
+     "lines": [
+      "TE LO INSTALAMOS EN",
+      "TU [INMOBILIARIA]"
+     ],
+     "size": 92,
+     "button": "Dale clic abajo"
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}

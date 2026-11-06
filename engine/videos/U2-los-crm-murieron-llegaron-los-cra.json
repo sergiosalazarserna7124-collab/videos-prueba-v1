@@ -1,0 +1,484 @@
+{
+ "id": "U2-los-crm-murieron-llegaron-los-cra",
+ "title": "Los CRM murieron, llegaron los CRA (UGC)",
+ "ugc": {
+  "src": "ugc/u2.mp4",
+  "words": "ugc/u2.words.json",
+  "face": [
+   529,
+   778,
+   557
+  ],
+  "zoom": 1.45,
+  "splitZoom": 1.15
+ },
+ "music": "music/drive.mp3",
+ "musicVol": 0.08,
+ "keywords": [
+  "CRA",
+  "CRA,",
+  "CRM",
+  "muerto",
+  "pereza",
+  "basura",
+  "dólares",
+  "solo",
+  "notas",
+  "etapas",
+  "campos",
+  "Meta",
+  "diferencia",
+  "leads",
+  "lead"
+ ],
+ "scenes": [
+  {
+   "layout": "face",
+   "p": {
+    "kicker": "Inmobiliarias",
+    "lines": [
+     "EL CRM DE TUS",
+     "ASESORES [MURIÓ]"
+    ],
+    "stamp": {
+     "text": "LLEGARON LOS CRA",
+     "at": "@CRA",
+     "color": "cyan",
+     "size": 84,
+     "top": 1000
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@CRA",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "at": "@La",
+   "layout": "split",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": 0,
+     "p": {
+      "move": false,
+      "chip": "Qué pasaba con cada lead",
+      "right": "Si alguien lo llena"
+     }
+    }
+   ]
+  },
+  {
+   "at": "@pero",
+   "layout": "face",
+   "p": {
+    "pills": [
+     {
+      "t": "No pone notas",
+      "at": "@notas",
+      "icon": "x"
+     },
+     {
+      "t": "No mueve las etapas",
+      "at": "@etapas",
+      "icon": "x"
+     },
+     {
+      "t": "No llena los campos",
+      "at": "@campos",
+      "icon": "x"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@notas",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@etapas",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@campos",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Y",
+   "layout": "full",
+   "type": "photo",
+   "p": {
+    "img": "advisor_notebook",
+    "lines": [
+     "LE DA",
+     "[PEREZA]"
+    ],
+    "lineAts": [
+     0,
+     "@pereza"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@pereza",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Ahí",
+   "layout": "full",
+   "type": "photo",
+   "p": {
+    "img": "owner_stressed",
+    "lines": [
+     "MILES DE",
+     "[DÓLARES]"
+    ],
+    "lineAts": [
+     0,
+     "@dólares"
+    ],
+    "stamp": {
+     "text": "A LA BASURA",
+     "at": "@basura"
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@basura",
+     "vol": 0.26
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@dólares",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Un",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "UN [CRA] NO DEPENDE",
+     "DE QUE LLENEN NADA"
+    ],
+    "lineAts": [
+     0,
+     "@llene"
+    ],
+    "size": 104
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@Escucha",
+   "layout": "split",
+   "ins": [
+    {
+     "kind": "call",
+     "at": 0,
+     "p": {
+      "advisor": "Andrés Molina",
+      "lead": "Diana Trejo",
+      "summary": [
+       "Busca 3 recámaras en Polanco",
+       "Presupuesto: 500 mil USD",
+       "Quiere visitar el sábado"
+      ]
+     }
+    },
+    {
+     "kind": "note",
+     "at": "@registra",
+     "p": {
+      "typeAt": "@Presupuesto",
+      "lead": "Diana Trejo",
+      "tag": "Lead · Polanco",
+      "stage": "Interesada",
+      "note": "Busca 3 recámaras en Polanco. Quiere visitar el sábado.",
+      "right": "Se llena sola",
+      "fields": [
+       {
+        "k": "Presupuesto",
+        "v": "500 mil USD",
+        "at": "@Presupuesto"
+       },
+       {
+        "k": "Zona",
+        "v": "Polanco",
+        "at": "@zona"
+       },
+       {
+        "k": "Busca",
+        "v": "3 recámaras",
+        "at": "@busca"
+       },
+       {
+        "k": "Etapa",
+        "v": "Interesada",
+        "at": "@etapa"
+       }
+      ]
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@Presupuesto",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@zona",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@busca",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@etapa",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Y",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "LA GRAN",
+     "[DIFERENCIA]"
+    ],
+    "lineAts": [
+     0,
+     "@diferencia"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": "@diferencia",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@El",
+   "layout": "full",
+   "type": "compare",
+   "p": {
+    "title": "CRM VS. CRA",
+    "left": "CRM",
+    "right": "CRA",
+    "rows": [
+     {
+      "t": "Te muestra datos",
+      "l": true,
+      "r": true,
+      "at": "@muestra"
+     },
+     {
+      "t": "Se llena solo",
+      "l": false,
+      "r": true,
+      "at": "@CRA"
+     },
+     {
+      "t": "Le dice al asesor qué hacer",
+      "l": false,
+      "r": true,
+      "at": "@dice"
+     },
+     {
+      "t": "Registra cuándo lo hizo",
+      "l": false,
+      "r": true,
+      "at": "@registra"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@muestra",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@CRA",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@dice",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@registra",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Así",
+   "layout": "split",
+   "k": 0.86,
+   "ty": 10,
+   "ins": [
+    {
+     "kind": "tasks",
+     "at": 0,
+     "p": {
+      "title": "Pasos · Valeria Ríos",
+      "right": "No se salta ninguno",
+      "items": [
+       {
+        "t": "Llamar a Diana Trejo",
+        "sub": "Hecho a las 9:12 am",
+        "state": "done"
+       },
+       {
+        "t": "Mandar opciones a Lucía",
+        "sub": "Hecho a las 10:40 am",
+        "state": "done"
+       },
+       {
+        "t": "Confirmar visita de Adriana",
+        "sub": "Siguiente paso",
+        "state": "new"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "at": "@Además",
+   "layout": "full",
+   "type": "events",
+   "p": {
+    "events": [
+     {
+      "name": "Cita agendada",
+      "count": 46,
+      "at": "@agenda",
+      "hot": true
+     },
+     {
+      "name": "Apartado",
+      "count": 9,
+      "at": "@aparta"
+     },
+     {
+      "name": "Vendido",
+      "count": 4,
+      "at": "@compra"
+     }
+    ],
+    "toastAt": "@automático",
+    "toast": "Evento enviado a Meta: Apartado",
+    "toastSub": "Lead Master · en automático"
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@agenda",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@aparta",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@compra",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@automático",
+     "vol": 0.08
+    }
+   ]
+  },
+  {
+   "at": "@Antes",
+   "layout": "face",
+   "p": {
+    "pills": [
+     {
+      "t": "Antes: tu equipo trabajaba para el CRM",
+      "at": "@trabajaba",
+      "icon": "x"
+     },
+     {
+      "t": "Ahora: el CRA trabaja para tu equipo",
+      "at": "@trabaja",
+      "icon": "check"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@trabajaba",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@trabaja",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Dale",
+   "layout": "face",
+   "p": {
+    "cta": {
+     "lines": [
+      "UN CRM QUE SE",
+      "[LLENA SOLO]"
+     ],
+     "button": "Dale clic abajo"
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}

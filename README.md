@@ -28,6 +28,23 @@ Fábrica de reels verticales (1080x1920) para Lead Master: fotos realistas, moti
 - Música 20 dB debajo de la voz, efectos bajos, entrega a -14 LUFS.
 - Solo nombres de demo (leads: Adriana Solís, Diana Trejo, Lucía Hernández; asesores: Paola Gutiérrez, Valeria Ríos, Diego Herrera, Andrés Molina). Ningún cliente real.
 
+## Videos UGC (la modelo hablando a cámara)
+
+Su voz manda: el video de ella corre de principio a fin con su audio y el motor pone todo encima.
+Spec con `"ugc": {"src", "words", "face": [x, y nariz, y coronilla], "zoom", "splitZoom"}` y escenas con:
+
+- `"at": "@palabra"`: la escena empieza cuando ella dice esa palabra (se busca después de la escena anterior).
+- `"layout"`: `face` (ella completa, con `over` encima: título, píldoras, sello, paso, CTA), `split` (el sistema
+  arriba y ella abajo) o `full` (gráfico a pantalla completa, ella se sigue oyendo).
+
+```bash
+cd engine
+python3 tools/ugc_prep.py <original.mov> u1      # public/ugc/u1.mp4 (1440x2560, audio limpio a -16 LUFS)
+# subtítulos: ElevenLabs Scribe (Composio) -> public/ugc/u1.words.json
+python3 tools/build.py videos/U1-asi-reciben-su-reporte-tus-asesores.json
+```
+Los .mp4 de `public/ugc/` no se suben (pesan); los originales están en Drive (carpeta de la modelo UGC).
+
 ## Escenas disponibles
 
-`news` (titular), `chat` (WhatsApp / SMS en un celular), `photo` (foto + frases), `case` (expediente con sello), `floatchats` (burbujas subiendo + pregunta), `stack` (tarjetas), `panel` (panel de Lead Master), `cta` (cierre "Comenta PALABRA").
+`news` (titular), `chat` (WhatsApp / SMS en un celular), `photo` (foto + frases), `case` (expediente con sello), `floatchats` (burbujas subiendo + pregunta), `stack` (tarjetas), `panel` (panel de Lead Master), `hub` (Lead Master conectado al WhatsApp y llamadas de cada asesor), `over` (encima de la persona en los UGC), `cta` (cierre "Comenta PALABRA").

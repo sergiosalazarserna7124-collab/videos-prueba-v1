@@ -32,16 +32,19 @@ const chunkWords = (words: Word[], maxWords = 3, maxChars = 18): Chunk[] => {
 };
 
 // Subtítulos: 1-3 palabras, Poppins 800, contorno oscuro, palabras clave en cian.
-export const Captions: React.FC<{words: Word[]; y?: number; hidden?: [number, number][]}> = ({
+// ys: tramos [inicio, fin, y] en segundos para mover los subtítulos (ej. pantalla dividida en los UGC).
+export const Captions: React.FC<{words: Word[]; y?: number; hidden?: [number, number][]; ys?: [number, number, number][]}> = ({
   words,
-  y = 1210,
+  y: y0 = 1210,
   hidden = [],
+  ys = [],
 }) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   const t = f / fps;
   const chunks = useMemo(() => chunkWords(words), [words]);
   if (hidden.some(([a, b]) => t >= a && t < b)) return null;
+  const y = ys.find(([a, b]) => t >= a && t < b)?.[2] ?? y0;
   const c = chunks.find((x) => t >= x.s && t < x.e);
   if (!c) return null;
   const local = f - Math.round(c.s * fps);

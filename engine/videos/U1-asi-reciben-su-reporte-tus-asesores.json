@@ -1,0 +1,609 @@
+{
+ "id": "U1-asi-reciben-su-reporte-tus-asesores",
+ "title": "Así reciben su reporte tus asesores (UGC)",
+ "ugc": {
+  "src": "ugc/u1.mp4",
+  "words": "ugc/u1.words.json",
+  "face": [
+   497,
+   670,
+   389
+  ],
+  "zoom": 1.25,
+  "splitZoom": 1.0
+ },
+ "music": "music/pulse.mp3",
+ "musicVol": 0.08,
+ "keywords": [
+  "reporte",
+  "asesores",
+  "leads",
+  "lead",
+  "WhatsApp",
+  "CRM",
+  "Excel",
+  "solo",
+  "solos",
+  "Zoom",
+  "Zooms",
+  "recorridos",
+  "resumen",
+  "dueño",
+  "seguimiento"
+ ],
+ "scenes": [
+  {
+   "layout": "face",
+   "p": {
+    "kicker": "Inmobiliarias",
+    "lines": [
+     "EL [REPORTE] DIARIO",
+     "DE TUS ASESORES"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ]
+  },
+  {
+   "at": "@Seguramente",
+   "layout": "face",
+   "p": {
+    "pills": [
+     {
+      "t": "Sin un paso a paso",
+      "at": "@paso",
+      "icon": "x"
+     },
+     {
+      "t": "¿A quién llamar?",
+      "at": "@llamar",
+      "icon": "q"
+     },
+     {
+      "t": "¿A quién escribirle?",
+      "at": "@escribirle",
+      "icon": "q"
+     },
+     {
+      "t": "¿A quién darle seguimiento?",
+      "at": "@seguimiento",
+      "icon": "q"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@paso",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamar",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@escribirle",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@seguimiento",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Y",
+   "layout": "full",
+   "type": "photo",
+   "p": {
+    "img": "advisor_notebook",
+    "lines": [
+     "SUS",
+     "[COMPROMISOS]"
+    ],
+    "lineAts": [
+     0,
+     "@compromisos"
+    ],
+    "stamp": {
+     "text": "OLVIDADOS",
+     "at": "@pasada"
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@compromisos",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@pasada",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "at": "@¿Qué",
+   "layout": "full",
+   "type": "floatchats",
+   "p": {
+    "img": "office_agents",
+    "lines": [
+     "CIENTOS DE",
+     "[CHATS]"
+    ],
+    "titleTop": 640,
+    "lineAts": [
+     "@cientos",
+     "@chats"
+    ],
+    "bubbles": [
+     "¿Sigue disponible?",
+     "Mándame info",
+     "¿Precio?",
+     "Te marco mañana",
+     "¿Cuándo lo vemos?"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/riser.wav",
+     "at": 0,
+     "vol": 0.07
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@chats",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@Y",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "Y SE LES PASAN",
+     "LOS [LEADS]"
+    ],
+    "lineAts": [
+     0,
+     "@leads"
+    ],
+    "stamp": {
+     "text": "NUNCA LO ANOTARON",
+     "at": "@anotaron",
+     "top": 1000,
+     "size": 80
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@leads",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@anotaron",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "at": "@Un",
+   "layout": "split",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": 0,
+     "p": {
+      "stale": true,
+      "chip": "Depende de que el asesor lo llene"
+     }
+    }
+   ]
+  },
+  {
+   "at": "@Entra",
+   "layout": "full",
+   "type": "photo",
+   "p": {
+    "img": "excel_night",
+    "lines": [
+     "TU CRM O",
+     "TU [EXCEL]"
+    ],
+    "lineAts": [
+     0,
+     "@Excel"
+    ],
+    "stamp": {
+     "text": "DESACTUALIZADO",
+     "at": "@desactualizado",
+     "size": 88
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@Excel",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@desactualizado",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "at": "@En",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "EN LEAD MASTER",
+     "PASA [SOLO]"
+    ],
+    "lineAts": [
+     0,
+     "@solo"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": "@solo",
+     "vol": 0.14
+    }
+   ]
+  },
+  {
+   "at": "@Cada",
+   "layout": "split",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": 0,
+     "p": {
+      "title": "Leads de tu inmobiliaria",
+      "right": "Se asignan solos",
+      "cols": [
+       "Nuevo",
+       "Asignado",
+       "Contactado"
+      ],
+      "move": {
+       "card": 0,
+       "to": 1,
+       "at": "@asignó"
+      },
+      "chip": "Asignado a Valeria Ríos"
+     }
+    }
+   ]
+  },
+  {
+   "at": "@Y",
+   "layout": "full",
+   "type": "hub",
+   "p": {
+    "title": "TODO CONECTADO",
+    "centerAt": 0,
+    "nodes": [
+     {
+      "name": "Paola Gutiérrez",
+      "at": "@WhatsApp"
+     },
+     {
+      "name": "Valeria Ríos",
+      "at": "@WhatsApp+5"
+     },
+     {
+      "name": "Diego Herrera",
+      "at": "@llamadas"
+     },
+     {
+      "name": "Andrés Molina",
+      "at": "@llamadas+5"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamadas",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@inmobiliario",
+     "vol": 0.08
+    }
+   ]
+  },
+  {
+   "at": "@sabe",
+   "layout": "full",
+   "type": "panel",
+   "p": {
+    "title": "Qué pasó con cada lead",
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Contactada en 4 minutos.",
+      "status": "Contactado",
+      "color": "green",
+      "at": "@contactaron"
+     },
+     {
+      "ch": "call",
+      "advisor": "Diego Herrera",
+      "lead": "Adriana Solís",
+      "summary": "Sin llamada en 26 horas.",
+      "status": "Sin contacto",
+      "color": "red",
+      "at": "@no"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/ding.wav",
+     "at": "@contactaron",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@no",
+     "vol": 0.08
+    }
+   ]
+  },
+  {
+   "at": "@Cada",
+   "layout": "split",
+   "type": "phonelist",
+   "p": {
+    "title": "Tu reporte de hoy",
+    "sub": "WhatsApp · 8:00 am",
+    "clock": "8:00",
+    "items": [
+     {
+      "t": "A quién llamar",
+      "at": "@llamar",
+      "color": "red",
+      "n": 9
+     },
+     {
+      "t": "Te pidió que lo llamaras hoy",
+      "at": "@pidió",
+      "color": "amber",
+      "n": 3
+     },
+     {
+      "t": "Zoom agendado",
+      "at": "@Zoom",
+      "color": "green",
+      "n": 2
+     },
+     {
+      "t": "Qué pasó con cada lead",
+      "at": "@pasó",
+      "color": "cyan"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/notif.wav",
+     "at": 0,
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamar",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@pidió",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@Zoom",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@pasó",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Los",
+   "layout": "split",
+   "ins": [
+    {
+     "kind": "cita",
+     "at": 0,
+     "p": {
+      "mode": "confirm",
+      "confirmAt": "@solos",
+      "what": "Recorrido · Torre Mar",
+      "source": "Agendada sola por la IA"
+     }
+    }
+   ]
+  },
+  {
+   "at": "@Al",
+   "layout": "split",
+   "ins": [
+    {
+     "kind": "report",
+     "at": 0,
+     "p": {
+      "title": "Tu resumen del día",
+      "sub": "Tu día con Lead Master",
+      "sched": "Tu resumen llega a las 7:00 pm",
+      "alert": false,
+      "lines": [
+       {
+        "t": "Llamadas: 14 · Chats: 22",
+        "b": true
+       },
+       {
+        "t": "Contactados: 9 de 12"
+       },
+       {
+        "t": "Citas: 2 (jueves y sábado)",
+        "c": "green"
+       },
+       {
+        "t": "",
+        "sep": true
+       },
+       {
+        "t": "Mañana a primera hora: llamar a Diana Trejo",
+        "c": "amber"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "at": "@Y",
+   "layout": "full",
+   "type": "ui",
+   "ins": [
+    {
+     "kind": "report",
+     "at": 0,
+     "p": {
+      "title": "Reporte de tu equipo",
+      "sub": "Lead Master · todos los días",
+      "time": "7:00 pm",
+      "alert": false,
+      "lines": [
+       {
+        "t": "Leads que entraron hoy: 37",
+        "b": true
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@llamó"
+       },
+       {
+        "t": "Paola G. llamó a 14 · 2 citas",
+        "at": "@llamó"
+       },
+       {
+        "t": "Valeria R. llamó a 11 · 2 citas",
+        "at": "@llamó+5"
+       },
+       {
+        "t": "Diego H. llamó a 3",
+        "at": "@llamó+10",
+        "c": "amber"
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@contactó"
+       },
+       {
+        "t": "Contactados: 31 de 37",
+        "at": "@contactó"
+       },
+       {
+        "t": "Sin contacto: 6 (Diego H. 4)",
+        "at": "@contactó+6",
+        "c": "red"
+       },
+       {
+        "t": "Citas del día: 5",
+        "at": "@hizo",
+        "c": "green"
+       }
+      ]
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamó",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@contactó",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@hizo",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Así",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "NINGÚN [LEAD]",
+     "SE TE PASA"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@Dale",
+   "layout": "face",
+   "p": {
+    "cta": {
+     "lines": [
+      "TE LO",
+      "[INSTALAMOS]"
+     ],
+     "button": "Dale clic abajo"
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}

@@ -127,8 +127,120 @@ def insert_sfx(x):
     return out
 
 
+# ---------------------------------------------------------------------------- UGC
+# Video de la modelo hablando a cámara: su voz manda. Cada escena empieza en una palabra de ella
+# ("at": "@palabra", se busca después del inicio de la escena anterior) y dura hasta la siguiente.
+# layout: face (ella completa + "over" encima) | split (sistema arriba, ella abajo) | full (gráfico).
+UGC_SPLIT_CAP_Y = 905
+UGC_LEAD = 0.07  # el corte entra un poco antes de la palabra
+
+
+def build_ugc(spec, safe=False):
+    u = spec['ugc']
+    vdur = probe_dur(os.path.join(PUB, u['src']))
+    total = int(vdur * FPS)
+    fix = spec.get('fix', {})
+    raw = json.load(open(os.path.join(PUB, u['words'])))
+    W = [{'w': fix.get(x['w'], x['w']), 's': x['s'], 'e': x['e']} for x in raw]
+    keywords = {norm(k) for k in spec.get('keywords', []) + BASE_KEYWORDS}
+
+    def find(v, after):
+        m = re.match(r'^@([^#+\-:]+)(?:#(\d+))?(:e)?([+\-]\d+)?$', v)
+        word, nth, end, off = m.group(1), int(m.group(2) or 1), m.group(3), int(m.group(4) or 0)
+        hits = [x for x in W if norm(x['w']) == norm(word) and x['s'] >= after - 1e-3]
+        if len(hits) < nth:
+            raise SystemExit(f'  ! ancla no encontrada: {v} después de {after:.2f} s')
+        x = hits[nth - 1]
+        return (x['e'] if end else x['s']), off
+
+    starts = []
+    after = 0.0
+    for i, sc in enumerate(spec['scenes']):
+        a = sc.get('at', 0)
+        if i == 0:
+            st = 0.0
+        elif isinstance(a, (int, float)):
+            st = float(a)
+        else:
+            t, off = find(a, after)
+            st = max(0.0, t - UGC_LEAD) + off / FPS
+        starts.append(round(st * FPS))
+        after = st
+    starts.append(total)
+
+    scenes, segs, cap_ys, hidden = [], [], [], []
+    prev_layout = None
+    nface = 0
+    for i, sc in enumerate(spec['scenes']):
+        start_f, end_f = starts[i], starts[i + 1]
+        dur_f = end_f - start_f
+        st_s = start_f / FPS
+        layout = sc.get('layout', 'face')
+
+        def anchor(v, st_s=st_s, start_f=start_f):
+            if not isinstance(v, str) or not v.startswith('@'):
+                return v
+            t, off = find(v, st_s)
+            return max(0, round(t * FPS) - start_f + off)
+
+        def resolve(obj):
+            if isinstance(obj, dict):
+                return {k: resolve(v) for k, v in obj.items()}
+            if isinstance(obj, list):
+                return [resolve(v) for v in obj]
+            return anchor(obj)
+
+        p = resolve(sc.get('p', {}))
+        sfx = [dict(x, at=anchor(x.get('at', 0))) for x in sc.get('sfx', [])]
+        if layout != prev_layout and layout != 'face' and not sc.get('quiet'):
+            sfx.append({'src': 'sfx/whoosh.wav', 'at': 0, 'vol': 0.07})
+        ins, _ = inserts(resolve(sc.get('ins', [])), dur_f / FPS)
+        for x in ins:
+            sfx += insert_sfx(x)
+        zoom = sc.get('zoom')
+        if layout == 'face':
+            if zoom is None:
+                zoom = 1.0 if nface % 2 == 0 else spec.get('jump', 1.12)
+            nface += 1
+        out = {'type': sc.get('type', 'over' if layout == 'face' else 'ui'), 'from': start_f, 'dur': dur_f, 'p': p,
+               'sfx': sfx, 'captions': sc.get('captions', True), 'layout': layout}
+        if ins:
+            out['ins'] = ins
+        if layout == 'split':
+            out['enter'] = prev_layout != 'split'
+            for k in ('k', 'ty'):
+                if k in sc:
+                    out[k] = sc[k]
+            cap_ys.append([st_s, end_f / FPS, sc.get('capY', UGC_SPLIT_CAP_Y)])
+        elif 'capY' in sc:
+            cap_ys.append([st_s, end_f / FPS, sc['capY']])
+        if sc.get('captions') is False:
+            hidden.append([st_s, end_f / FPS])
+        scenes.append(out)
+        segs.append({'from': start_f, 'to': end_f, 'mode': layout, **({'zoom': zoom} if zoom else {})})
+        prev_layout = layout
+
+    words = [{'w': x['w'], 's': x['s'], 'e': x['e'], 'hl': norm(x['w']) in keywords or bool(re.search(r'\d', x['w']))}
+             for x in W if x['w']]
+    props = {
+        'id': spec['id'], 'totalFrames': total, 'scenes': scenes, 'words': words,
+        'music': {'src': spec['music'], 'vol': spec.get('musicVol', 0.05), 'from': 0} if spec.get('music') else None,
+        'safeDebug': safe,
+        'base': {'src': u['src'], 'faceX': u['face'][0], 'faceY': u['face'][1], 'faceTop': u['face'][2],
+                 'zoom': u.get('zoom', 1.2), 'splitZoom': u.get('splitZoom', 1.0), 'splitHead': u.get('splitHead', 40), 'segs': segs, 'vol': u.get('vol', 1.0)},
+        'capYs': cap_ys,
+    }
+    os.makedirs(os.path.join(ROOT, 'build'), exist_ok=True)
+    path = os.path.join(ROOT, 'build', f"{spec['id']}.props.json")
+    json.dump(props, open(path, 'w'), ensure_ascii=False, indent=1)
+    print(f"{spec['id']}: {total} frames ({total / FPS:.1f} s), {len(scenes)} escenas (UGC)")
+    return props, path
+
+
 def build(spec_path, safe=False):
     spec = json.load(open(spec_path))
+    if 'ugc' in spec:
+        return build_ugc(spec, safe)
     keywords = {norm(k) for k in spec.get('keywords', []) + BASE_KEYWORDS}
     scenes = []
     all_words = []

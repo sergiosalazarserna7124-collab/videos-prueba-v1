@@ -1,6 +1,10 @@
-import React from 'react';
+import React, {createContext, useContext} from 'react';
 import {AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import {C} from '../theme';
+
+// Dentro de una pantalla dividida (UGC: sistema arriba, persona abajo) las escenas no pintan su fondo:
+// lo pone el panel de arriba.
+export const NoBgCtx = createContext(false);
 
 // Foto de fondo con movimiento lento (sin zooms bruscos) y degradados para que el texto se lea.
 export const Bg: React.FC<{
@@ -13,7 +17,9 @@ export const Bg: React.FC<{
   bottomShade?: boolean;
   tint?: string;
 }> = ({img, dur, dim = 0.35, blur = 0, drift = 'in', topShade = true, bottomShade = true, tint}) => {
+  const noBg = useContext(NoBgCtx);
   const f = useCurrentFrame();
+  if (noBg) return null;
   const t = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
   let scale = 1.06 + 0.06 * t;
   let tx = 0;
@@ -53,8 +59,10 @@ export const Bg: React.FC<{
 };
 
 // Fondo oscuro de marca con rejilla sutil y brillo morado/cian.
-export const BrandBg: React.FC<{dur: number}> = ({dur}) => {
+export const BrandBg: React.FC<{dur: number; force?: boolean}> = ({dur, force}) => {
+  const noBg = useContext(NoBgCtx);
   const f = useCurrentFrame();
+  if (noBg && !force) return null;
   const t = f / Math.max(1, dur);
   return (
     <AbsoluteFill style={{backgroundColor: C.bg, overflow: 'hidden'}}>

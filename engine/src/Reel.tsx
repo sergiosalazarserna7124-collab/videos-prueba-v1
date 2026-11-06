@@ -21,6 +21,9 @@ import {PhoneList} from './scenes/PhoneList';
 import {Mock} from './scenes/Mock';
 import {Clip} from './scenes/Clip';
 import {Dialer} from './scenes/Dialer';
+import {Hub} from './scenes/Hub';
+import {Over} from './ugc/Over';
+import {BaseVideo, SplitTop, UgcBase} from './ugc/Base';
 import {BrandBg} from './ui/Bg';
 import {coverOf, Ins, InsertLayer} from './ui/Inserts';
 
@@ -45,6 +48,8 @@ const SCENES: Record<string, React.FC<{dur: number; p: any}>> = {
   mock: Mock,
   clip: Clip,
   dialer: Dialer,
+  hub: Hub,
+  over: Over, // encima de la persona en los UGC (títulos, píldoras, sellos)
   ui: ({dur}) => <BrandBg dur={dur} />, // fondo de marca; el contenido lo ponen los insertos
 };
 
@@ -58,6 +63,10 @@ export type SceneSpec = {
   sfx?: {src: string; at: number; vol?: number}[];
   captions?: boolean;
   ins?: Ins[]; // gráficos literales (CRM, nota, cita, reporte...) que entran en la palabra
+  layout?: 'face' | 'split' | 'full'; // solo UGC
+  enter?: boolean; // UGC split: el panel entra desde arriba
+  k?: number; // UGC split: escala del contenido arriba
+  ty?: number;
 };
 
 export type ReelProps = {
@@ -67,6 +76,8 @@ export type ReelProps = {
   words: Word[];
   music?: {src: string; vol: number; from?: number};
   safeDebug?: boolean;
+  base?: UgcBase; // UGC: video de la persona debajo de todo, con su audio
+  capYs?: [number, number, number][]; // UGC: altura de subtítulos por tramo
 };
 
 // La escena de fondo se apaga y desenfoca mientras un inserto está en pantalla.
@@ -96,20 +107,30 @@ const SafeGuide: React.FC = () => (
   </AbsoluteFill>
 );
 
-export const Reel: React.FC<ReelProps> = ({scenes, words, music, safeDebug}) => {
+const SceneBody: React.FC<{s: SceneSpec}> = ({s}) => {
+  const Comp = SCENES[s.type];
+  const body = (
+    <>
+      <Covered ins={s.ins} dur={s.dur}>{Comp ? <Comp dur={s.dur} p={s.p} /> : null}</Covered>
+      {s.ins?.length ? <InsertLayer ins={s.ins} dur={s.dur} /> : null}
+    </>
+  );
+  if (s.layout === 'split') return <SplitTop dur={s.dur} enter={!!s.enter} k={s.k} ty={s.ty}>{body}</SplitTop>;
+  if (s.layout === 'face') return <AbsoluteFill>{Comp ? <Comp dur={s.dur} p={s.p} /> : null}</AbsoluteFill>;
+  return <Enter>{body}</Enter>;
+};
+
+export const Reel: React.FC<ReelProps> = ({scenes, words, music, safeDebug, base, capYs}) => {
   const hidden: [number, number][] = scenes
     .filter((s) => s.captions === false)
     .map((s) => [s.from / 30, (s.from + s.dur) / 30]);
   return (
     <AbsoluteFill style={{backgroundColor: C.bg}}>
+      {base ? <BaseVideo base={base} /> : null}
       {scenes.map((s, i) => {
-        const Comp = SCENES[s.type];
         return (
-          <Sequence key={i} from={s.from} durationInFrames={s.dur} name={`${i + 1}-${s.type}`}>
-            <Enter>
-              <Covered ins={s.ins} dur={s.dur}>{Comp ? <Comp dur={s.dur} p={s.p} /> : null}</Covered>
-              {s.ins?.length ? <InsertLayer ins={s.ins} dur={s.dur} /> : null}
-            </Enter>
+          <Sequence key={i} from={s.from} durationInFrames={s.dur} name={`${i + 1}-${s.layout ? s.layout + '-' : ''}${s.type}`}>
+            <SceneBody s={s} />
             {s.audio ? (
               <Sequence from={s.audioFrom ?? 0}>
                 <Audio src={staticFile(s.audio)} volume={1} />
@@ -123,7 +144,7 @@ export const Reel: React.FC<ReelProps> = ({scenes, words, music, safeDebug}) => 
           </Sequence>
         );
       })}
-      <Captions words={words} hidden={hidden} />
+      <Captions words={words} hidden={hidden} ys={capYs} />
       {music ? (
         <Sequence from={music.from ?? 0}>
           <Audio src={staticFile(music.src)} volume={music.vol} loop />

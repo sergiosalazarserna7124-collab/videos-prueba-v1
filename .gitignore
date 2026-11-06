@@ -8,3 +8,5 @@ videos/*.mp4
 __pycache__/
 # Derivadas de las voces (tempo/efecto): se regeneran solas
 engine/public/tts/*@*.mp3
+# Videos UGC preparados (pesan); los originales están en Drive
+engine/public/ugc/*.mp4

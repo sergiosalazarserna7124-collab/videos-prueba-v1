@@ -1,0 +1,472 @@
+{
+ "id": "U3-por-que-te-llegan-puros-curiosos",
+ "title": "Por qué te llegan puros curiosos (UGC)",
+ "ugc": {
+  "src": "ugc/u3.mp4",
+  "words": "ugc/u3.words.json",
+  "face": [
+   518,
+   810,
+   432
+  ],
+  "zoom": 1.1,
+  "splitZoom": 1.0,
+  "splitHead": -20
+ },
+ "music": "music/pulse.mp3",
+ "musicVol": 0.08,
+ "keywords": [
+  "curiosos",
+  "Meta",
+  "filtro",
+  "formularios",
+  "formulario,",
+  "contestan",
+  "agendada",
+  "agenda",
+  "cita",
+  "citas",
+  "leads",
+  "lead",
+  "evento",
+  "Zoom"
+ ],
+ "scenes": [
+  {
+   "layout": "face",
+   "p": {
+    "kicker": "Inmobiliarias",
+    "lines": [
+     "TUS [LEADS] SON",
+     "PUROS CURIOSOS"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ]
+  },
+  {
+   "at": "@Nunca",
+   "layout": "split",
+   "type": "stack",
+   "p": {
+    "title": "LO QUE META NO SABE",
+    "items": [
+     {
+      "t": "Quién te escribió",
+      "at": "@mensaje",
+      "color": "cyan"
+     },
+     {
+      "t": "Quién agendó",
+      "at": "@agendaron",
+      "color": "purple"
+     },
+     {
+      "t": "Quién apartó",
+      "at": "@apartaron",
+      "color": "amber"
+     },
+     {
+      "t": "Quién compró",
+      "at": "@compraron",
+      "color": "green"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@mensaje",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@agendaron",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@apartaron",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@compraron",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Solo",
+   "layout": "face",
+   "p": {
+    "pills": [
+     {
+      "t": "«Mándame mensajes»",
+      "at": "@mensajes",
+      "icon": "dot"
+     },
+     {
+      "t": "«Mándame formularios»",
+      "at": "@formularios",
+      "icon": "dot"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@mensajes",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@formularios",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Y",
+   "layout": "full",
+   "type": "floatchats",
+   "p": {
+    "img": "office_agents",
+    "lines": [
+     "CIENTOS DE",
+     "[CURIOSOS]"
+    ],
+    "titleTop": 640,
+    "lineAts": [
+     "@cientos",
+     "@curiosos"
+    ],
+    "bubbles": [
+     "¿Precio?",
+     "Info",
+     "¿Sigue disponible?",
+     "Le piqué sin querer",
+     "Solo estoy viendo"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/riser.wav",
+     "at": 0,
+     "vol": 0.07
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@curiosos",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@Por",
+   "layout": "split",
+   "ins": [
+    {
+     "kind": "call",
+     "at": 0,
+     "p": {
+      "missed": true,
+      "title": "Llamadas del equipo",
+      "right": "No contesta",
+      "when": "Lead de formulario de Meta",
+      "attempts": [
+       "Lunes 10:14 · no contestó",
+       "Martes 4:30 pm · no contestó",
+       "Miércoles · no contestó"
+      ],
+      "chip": "Llenó el formulario y desapareció"
+     }
+    }
+   ]
+  },
+  {
+   "at": "@Lo",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "LO QUE NECESITAS:",
+     "UN [FILTRO]"
+    ],
+    "lineAts": [
+     0,
+     "@filtro"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": "@filtro",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@Cuando",
+   "layout": "split",
+   "ins": [
+    {
+     "kind": "cita",
+     "at": 0,
+     "p": {
+      "mode": "confirm",
+      "confirmAt": "@cita",
+      "what": "Recorrido · Torre Mar",
+      "lead": "Lucía Hernández",
+      "doneText": "Cita agendada"
+     }
+    }
+   ]
+  },
+  {
+   "at": "@Meta",
+   "layout": "full",
+   "type": "events",
+   "p": {
+    "events": [
+     {
+      "name": "Contactado con respuesta",
+      "count": 184,
+      "at": 0
+     },
+     {
+      "name": "Cita agendada",
+      "count": 46,
+      "at": 4,
+      "hot": true
+     },
+     {
+      "name": "Apartado",
+      "count": 9,
+      "at": 8
+     },
+     {
+      "name": "Vendido",
+      "count": 4,
+      "at": 12
+     }
+    ],
+    "toastAt": "@agendada",
+    "toast": "Evento recibido: Cita agendada",
+    "toastSub": "Campaña · hace 1 min"
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": 0,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 4,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 8,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": 12,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@agendada",
+     "vol": 0.08
+    }
+   ]
+  },
+  {
+   "at": "@empieza",
+   "layout": "full",
+   "type": "flow",
+   "p": {
+    "title": "META APRENDE",
+    "nodes": [
+     {
+      "t": "Meta recibe el evento",
+      "at": 0,
+      "color": "purple"
+     },
+     {
+      "t": "Busca gente parecida",
+      "at": "@buscarte",
+      "color": "purple"
+     },
+     {
+      "t": "Que agenda recorridos y Zooms",
+      "at": "@recorrido",
+      "color": "green"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": 0,
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@buscarte",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@recorrido",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Cuando",
+   "layout": "face",
+   "p": {
+    "row": [
+     {
+      "t": "Citas",
+      "at": "@citas",
+      "color": "cyan"
+     },
+     {
+      "t": "Apartados",
+      "at": "@apartados",
+      "color": "purple"
+     },
+     {
+      "t": "Cierres",
+      "at": "@cierres",
+      "color": "green"
+     }
+    ],
+    "rowTop": 280,
+    "lines": [
+     "«SOLO GENTE QUE",
+     "SÍ [AGENDA]»"
+    ],
+    "lineAts": [
+     "@mándame",
+     "@agenda"
+    ],
+    "titleTop": 390,
+    "size": 104
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@citas",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@apartados",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@cierres",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@agenda",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@Deja",
+   "layout": "face",
+   "p": {
+    "pills": [
+     {
+      "t": "Quien llena formularios",
+      "at": "@formularios",
+      "icon": "x"
+     },
+     {
+      "t": "Quien sí agenda",
+      "at": "@agenda",
+      "icon": "check"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@formularios",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@agenda",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Nosotros",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "NOSOTROS LO",
+     "[INSTALAMOS]"
+    ],
+    "lineAts": [
+     0,
+     "@instalamos"
+    ],
+    "stamp": {
+     "text": "TÚ NO TOCAS NADA",
+     "at": "@Tú",
+     "color": "cyan",
+     "size": 80,
+     "top": 1000
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@instalamos",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@Tú",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "at": "@Dale",
+   "layout": "face",
+   "p": {
+    "cta": {
+     "lines": [
+      "MÁS CITAS,",
+      "MENOS [CURIOSOS]"
+     ],
+     "button": "Dale clic abajo"
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}
