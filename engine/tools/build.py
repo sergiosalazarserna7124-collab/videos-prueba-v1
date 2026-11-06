@@ -369,8 +369,11 @@ def render(spec_id, props_path, still=None):
         subprocess.run(cmd, cwd=ROOT, check=True)
         return out
     raw = os.path.join(ROOT, 'build', f'{spec_id}.raw.mp4')
+    ugc = 'base' in json.load(open(props_path))
+    # UGC: el video de la persona a 1440p llena la memoria si no se limita el caché de cuadros.
+    extra = ['--concurrency=2', '--offthreadvideo-cache-size-in-bytes=1500000000'] if ugc else ['--concurrency=3']
     cmd = base + ['render', 'src/index.ts', 'Reel', raw, '--codec=h264', '--crf=18',
-                  '--concurrency=3', '--audio-bitrate=320k', '--timeout=240000'] + common
+                  '--audio-bitrate=320k', '--timeout=240000'] + extra + common
     # A veces un cuadro se queda esperando una imagen; se reintenta hasta 3 veces.
     for attempt in range(3):
         if subprocess.run(cmd, cwd=ROOT).returncode == 0:
