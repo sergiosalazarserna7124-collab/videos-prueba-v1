@@ -45,14 +45,16 @@ La escena `clip` (engine/src/scenes/Clip.tsx) pone el gancho "¿Y LOS REPORTES?"
 la música entra después de los clips. Probado con un clip de relleno: funciona.
 
 ## Instagram
-Instagram NO está en Metricool (Metricool solo tiene TikTok, Facebook y YouTube). Los reels de @leaad_master los
-publica Claude con Composio cuando llega cada aviso programado, siguiendo la cola `videos/ig_queue.json`.
-- Desde el 6 nov los avisos llegan a la sesión «Videos no subidos a Instagram» (rama `claude/dazzling-lovelace-todckv`).
-  Los avisos viejos de la sesión de videos quedaron apagados, para no publicar dos veces.
-- Sergio ya autorizó que salgan solos a su hora, sin pedirle permiso cada vez.
-- Solo van los videos nuevos de IA. Los que Sergio editó al inicio (status `no_instagram`) ya están en Instagram: no se suben.
-- Siempre como colaboración con @sergio_salazaar (no etiqueta).
-- Para meter un video nuevo a Instagram: agregarlo a `videos/ig_queue.json` como `pendiente` con su hora (`when`, Bogotá).
-- Videos UGC con modelo (16: U1-U4 y UH1..UH6 x C1/C2, de la rama `claude/modest-euler-0k49k2`): programados el 6 nov
-  en Metricool (TikTok, Facebook, YouTube) del 13 al 15 nov, y en la cola de Instagram a la misma hora. Metricool tomó
-  cada video del link público de GitHub (raw, fijado al commit 717d253) y la cola usa la copia de static.metricool.com.
+Desde el 6 nov (3 pm) Instagram se programa en **Metricool**, igual que TikTok, Facebook y YouTube.
+- Metricool tiene conectada la cuenta **@sergio_salazaar**. Cada reel sale desde ahí con **@leaad_master como colaborador**
+  (`instagramData.collaborators`). @leaad_master tiene que aceptar cada invitación en la app.
+- Por qué: con Composio los reels salían en @leaad_master con @sergio_salazaar invitado, pero nunca aparecieron en
+  @sergio_salazaar. Los avisos programados de Claude para Instagram quedaron apagados.
+- En Metricool hay un post solo de Instagram por cada reel (aparte del de TikTok/Facebook/YouTube), a la hora de
+  `videos/ig_queue.json`. Para un video nuevo: programarlo en Metricool con instagram + los demás, collaborator leaad_master.
+- Solo van los videos nuevos de IA y los UGC con modelo. Los que Sergio editó al inicio (status `no_instagram`) ya están en
+  @sergio_salazaar: no se suben.
+- Ya publicados en @leaad_master por Composio (no están en @sergio_salazaar): El mayor error, Un mensaje. Una demanda.,
+  Le pregunto a mi CRM, Idea 1 Jalisco, G3, F e Idea 4.
+- Videos UGC con modelo (16: U1-U4 y UH1..UH6 x C1/C2, de la rama `claude/modest-euler-0k49k2`): del 13 al 15 nov.
+  Metricool tomó cada video del link público de GitHub (raw, fijado al commit 717d253).
