@@ -12,6 +12,9 @@ leads, H5 claridad en 7 días, H6 monitorear asesores) x 2 cuerpos (C1 el CRM qu
 ventas) = 12 videos `videos/UH*-C*-celular.mp4`. Originales en Drive 1q-rkfY2oC3OlxRROjeswqORj9aPJOQLE (sueltos = cuerpos,
 carpeta Hooks = ganchos, carpeta editados = la edición vieja). Specs `engine/videos/UH*.json`, `UC*.json` ("part": true) y
 `engine/videos/_ugc_combos.json`; se renderiza cada parte una vez y `tools/ugc_combo.py` arma las combinaciones.
+Subidos en HD (los 16: U1-U4 + los 12) a Drive "ads laura/editados formato nuevo" (1bUHexL7mICjbiMi4wz5XS2Kl9rewvuit).
+Para subir a Drive desde aquí: URL de subida firmada del workbench de Composio (tool_router/internal/presigned_url),
+curl PUT local, y GOOGLEDRIVE_RESUMABLE_UPLOAD con el s3key (GOOGLEDRIVE_UPLOAD_FILE solo acepta 5 MB).
 
 # Siguiente paso: video demo J01 (Serie Sala de Juntas)
 
