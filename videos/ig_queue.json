@@ -1,10 +1,10 @@
 {
- "cuenta": "@leaad_master",
+ "cuenta": "@sergio_salazaar (Metricool) con @leaad_master de colaborador",
  "etiqueta": "sergio_salazaar",
  "composio_account": "instagram_adept-warmth",
  "ig_user_id": "29073808048954218",
  "zona_horaria": "America/Bogota",
- "reglas": "Publicar cada item pendiente cuando llegue su hora (when, hora de Bogotá) como COLABORACIÓN con sergio_salazaar (no etiqueta). Crear el contenedor con COMPOSIO_PROXY_EXECUTE (toolkit instagram) POST https://graph.instagram.com/v21.0/29073808048954218/media con query: media_type=REELS, video_url=<video>, share_to_feed=true, collaborators=[\"sergio_salazaar\"], caption=<caption con # normal>. Si el item ya trae creation_id, usar ese. Publicar con INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH (cuenta instagram_adept-warmth, ig_user_id 29073808048954218, max_wait_seconds 50, reintentar si IN_PROGRESS). Luego status=publicado + ig_media_id + permalink. Solo van los videos nuevos de IA: los videos que Sergio editó al inicio (status no_instagram) ya están en Instagram y NO se suben. Sergio autorizó publicar solos todos los pendientes a su hora (5 y 6 nov). Antes de publicar, revisar los últimos posts de @leaad_master para no duplicar.",
+ "reglas": "Desde el 6 nov Instagram se programa en Metricool (brand 7885543, cuenta @sergio_salazaar), un post solo de Instagram por reel, tipo REEL, instagramData.collaborators=[leaad_master]. Solo videos nuevos de IA y UGC con modelo; nunca los no_instagram (videos que Sergio editó al inicio, ya están en @sergio_salazaar). Status programado_metricool = ya está en Metricool (metricool_id). Los publicado con ig_media_id salieron antes en @leaad_master por Composio.",
  "items": [
   {
    "when": "2026-11-05T11:45",
@@ -101,28 +101,32 @@
    "title": "Idea 22 · El día de tus asesores",
    "video": "https://static.metricool.com/planner/202611/7885543-file-6745562470373720938.mp4",
    "caption": "Así sería el día de tus asesores inmobiliarios si usaras Lead Master: a las 8 de la mañana les llega por WhatsApp su lista del día, hablan con sus leads como siempre, la IA anota todo y les deja la cita lista, y en la tarde reciben el resumen de lo que hicieron.\nComenta EQUIPO y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #equipocomercial #crm #bienesraices",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419343961
   },
   {
    "when": "2026-11-06T18:00",
    "title": "Idea 18 · Tu asesor dice que marcó 15",
    "video": "https://static.metricool.com/planner/202611/7885543-file-5372856976062874236.mp4",
    "caption": "Tu asesor dice que marcó 15 veces. Tu CRM dice 13. ¿A quién le crees? Con Lead Master cada llamada que sale del CRM queda grabada, con hora y duración, y la IA te dice qué se habló y en qué quedaron. Ya no tienes que creerle a nadie: lo ves.\nComenta SISTEMA y te mando cómo funciona.\n#inmobiliarias #equipocomercial #asesoresinmobiliarios #crm #ventas",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419344624
   },
   {
    "when": "2026-11-06T20:30",
    "title": "Idea 1 · Guadalajara",
    "video": "https://static.metricool.com/planner/202611/7885543-file-12668431268655302112.mp4",
    "caption": "Si yo tuviera una inmobiliaria en Guadalajara con más de 5 asesores y no supiera qué hacen con los leads que les doy, esto es lo que haría: conectar el WhatsApp y las llamadas al CRM, dejar que la IA llene la nota y la etapa, y recibir el reporte del equipo todos los días en mi WhatsApp.\nComenta REPORTE y te mando cómo funciona.\n#inmobiliarias #guadalajara #bienesraices #crm #asesoresinmobiliarios",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419344828
   },
   {
    "when": "2026-11-07T08:00",
    "title": "Idea 13 · Pagaste GoHighLevel",
    "video": "https://static.metricool.com/planner/202611/7885543-file-12654804406459472357.mp4",
    "caption": "Le pagaste a alguien para que instalara GoHighLevel y tu inmobiliaria sigue haciendo todo a mano: un pipeline bonito que nadie usa y el reporte del lunes armado en Excel. Nosotros lo dejamos funcionando en 7 días y le conectamos Lead Master para que las notas, las etapas y los reportes se hagan solos.\nComenta GHL y te mando cómo funciona.\n#gohighlevel #inmobiliarias #crm #bienesraices #automatizacion",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419344999
   },
   {
    "when": "2026-11-07T10:00",
@@ -137,25 +141,28 @@
    "title": "Idea 3 · Este CRM se mueve solo",
    "video": "https://static.metricool.com/planner/202611/7885543-file-6035548245611221919.mp4",
    "caption": "Este CRM se mueve solo. Tu asesor habla con el lead por WhatsApp como siempre y el sistema anota qué busca, escribe la nota, mueve la etapa y le deja la cita lista para confirmar.\nComenta CRM y te enseño cómo funcionaría en tu inmobiliaria.\n#inmobiliarias #crm #bienesraices #asesoresinmobiliarios #leads",
-   "status": "pendiente",
+   "status": "programado_metricool",
    "when_original": "2026-11-05T20:30",
-   "nota": "atrasado del 5 nov: pasa a un hueco libre de Instagram (hora de un video editado al inicio)"
+   "nota": "atrasado del 5 nov: pasa a un hueco libre de Instagram (hora de un video editado al inicio)",
+   "metricool_id": 419345597
   },
   {
    "when": "2026-11-07T12:00",
    "title": "Idea 1 · Monterrey",
    "video": "https://static.metricool.com/planner/202611/7885543-file-15422568517791490899.mp4",
    "caption": "Si yo tuviera una inmobiliaria en Monterrey con más de 5 asesores y no supiera qué hacen con los leads que les doy, esto es lo que haría: conectar el WhatsApp y las llamadas al CRM, dejar que la IA llene la nota y la etapa, y recibir el reporte del equipo todos los días en mi WhatsApp.\nComenta REPORTE y te mando cómo funciona.\n#inmobiliarias #monterrey #bienesraices #crm #asesoresinmobiliarios",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419345637
   },
   {
    "when": "2026-11-07T14:00",
    "title": "Idea 12 · Orgullo GoHighLevel",
    "video": "https://static.metricool.com/planner/202611/7885543-file-12714744512155006254.mp4",
    "caption": "Dices con orgullo que pagas GoHighLevel… y tus asesores siguen anotando en una libreta. Tener las herramientas no es tener el control. Lead Master conecta tu GoHighLevel con el WhatsApp y las llamadas de tus asesores y llena el CRM solo.\nComenta GHL y te mando cómo funciona.\n#gohighlevel #inmobiliarias #crm #bienesraices #asesoresinmobiliarios",
-   "status": "pendiente",
+   "status": "programado_metricool",
    "when_original": "2026-11-05T19:15",
-   "nota": "atrasado del 5 nov: pasa a un hueco libre de Instagram (hora de un video editado al inicio)"
+   "nota": "atrasado del 5 nov: pasa a un hueco libre de Instagram (hora de un video editado al inicio)",
+   "metricool_id": 419346026
   },
   {
    "when": "2026-11-07T14:00",
@@ -170,28 +177,32 @@
    "title": "Idea 15 · Parodia agente de IA",
    "video": "https://static.metricool.com/planner/202611/7885543-file-2036052928471879151.mp4",
    "caption": "«Mi agente de IA vende solo.» Ajá. A una inmobiliaria el bot le agendó una cita a un cliente, el cliente llegó a la oficina y ningún asesor sabía nada. La IA sí sirve, pero trabajando para tu asesor, no en su lugar. (Parodia)\nComenta SISTEMA y te mando cómo funciona.\n#inmobiliarias #inteligenciaartificial #bienesraices #crm #humor",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419346090
   },
   {
    "when": "2026-11-07T18:00",
    "title": "Idea 2 · Vendes desarrollos",
    "video": "https://static.metricool.com/planner/202611/7885543-file-5215235059568826022.mp4",
    "caption": "Si vendes desarrollos inmobiliarios, seguro tienes este problema: metes dinero en anuncios, llegan 500 leads y la sala de ventas sigue vacía. Cuando medimos 6,497 leads, 1 de cada 3 nunca habló con una persona. No eran malos: nadie los atendió.\nComenta LANZAMIENTO y te mando cómo funciona.\n#desarrollosinmobiliarios #inmobiliarias #bienesraices #preventa #leads",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419346141
   },
   {
    "when": "2026-11-07T20:30",
    "title": "G1 · Si yo tuviera una inmobiliaria",
    "video": "https://static.metricool.com/planner/202611/7885543-file-7100775452332462906.mp4",
    "caption": "Si yo tuviera una inmobiliaria en México con más de 5 asesores y no supiera qué hacen con los leads que les doy, esto es lo que haría para tener control total de mi equipo y vender más: un sistema que le diga a cada asesor a quién llamar, que registre cada llamada y que me mande el reporte todos los días.\nComenta CONTROL y te mando cómo funciona.\n#inmobiliarias #mexico #bienesraices #asesoresinmobiliarios #crm",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419346183
   },
   {
    "when": "2026-11-08T08:00",
    "title": "G4 · Si yo vendiera desarrollos",
    "video": "https://static.metricool.com/planner/202611/7885543-file-6167791091439276931.mp4",
    "caption": "Si yo vendiera desarrollos con más de 5 asesores y mis leads de Meta no contestaran, esto es lo que haría: que cada lead le llegue al asesor en el momento y, si no hay llamada a tiempo, pase a otro; que el sistema detecte cuando un lead agenda un recorrido y se lo avise a Meta; y medir cada campaña hasta la venta, no solo leads.\nComenta DESARROLLO y te mando cómo funciona.\n#desarrollosinmobiliarios #inmobiliarias #metaads #preventa #bienesraices",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419346227
   },
   {
    "when": "2026-11-08T10:00",
@@ -206,7 +217,8 @@
    "title": "Idea 1 · la Ciudad de México",
    "video": "https://static.metricool.com/planner/202611/7885543-file-17282123721541205234.mp4",
    "caption": "Si yo tuviera una inmobiliaria en la Ciudad de México con más de 5 asesores y no supiera qué hacen con los leads que les doy, esto es lo que haría: conectar el WhatsApp y las llamadas al CRM, dejar que la IA llene la nota y la etapa, y recibir el reporte del equipo todos los días en mi WhatsApp.\nComenta REPORTE y te mando cómo funciona.\n#inmobiliarias #cdmx #bienesraices #crm #asesoresinmobiliarios",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419346368
   },
   {
    "when": "2026-11-08T14:00",
@@ -221,28 +233,32 @@
    "title": "Idea 23 · Lo que quema tu inmobiliaria",
    "video": "https://static.metricool.com/planner/202611/7885543-file-3718957968126346682.mp4",
    "caption": "Haz esta cuenta conmigo: metes 4 mil dólares al mes en Meta, te llegan 400 leads y 1 de cada 3 nunca habla con una persona. Son más de 1,300 dólares tirados cada mes, casi 16 mil al año. Antes de meterle más dinero a Meta, deja de tirar el que ya pagaste.\nComenta CUENTA y te mando cómo funciona.\n#inmobiliarias #metaads #leads #marketinginmobiliario #bienesraices",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419346397
   },
   {
    "when": "2026-11-08T18:00",
    "title": "Idea 7 · Robando tus leads",
    "video": "https://static.metricool.com/planner/202611/7885543-file-2271539894479416639.mp4",
    "caption": "Tus asesores se pueden estar robando tus leads y no te enteras. Con Lead Master el WhatsApp de cada asesor queda conectado a tu CRM (solo las conversaciones con leads) y las llamadas salen del sistema y quedan grabadas.\nComenta SISTEMA y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419346448
   },
   {
    "when": "2026-11-08T20:30",
    "title": "Idea 10 · Así le llegaría un lead",
    "video": "https://static.metricool.com/planner/202611/7885543-file-3040442799679902391.mp4",
    "caption": "Así le llegaría un lead a tus asesores si usaras Lead Master: entra el lead, le llega al asesor que le toca con aviso por WhatsApp, la IA anota qué busca y le deja la cita lista para confirmar. Y tú lo ves todo en tu reporte.\nComenta LEADS y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #leads #crm #bienesraices",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419346502
   },
   {
    "when": "2026-11-09T08:00",
    "title": "Idea 17 · Contrataste un coordinador",
    "video": "https://static.metricool.com/planner/202611/7885543-file-759515898135565342.mp4",
    "caption": "Contrataste un coordinador para vigilar a tus asesores… y ahora tienes que vigilar al coordinador. ¿Qué gerente tiene tiempo de escuchar todas las llamadas y leer todos los chats? Lead Master sí lo hace: le arma a cada asesor su lista del día y a ti te dice quién no la cumplió.\nComenta SISTEMA y te mando cómo funciona.\n#inmobiliarias #equipocomercial #asesoresinmobiliarios #crm #ventas",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419346551
   },
   {
    "when": "2026-11-09T10:00",
@@ -257,7 +273,8 @@
    "title": "Idea 1 · Mérida",
    "video": "https://static.metricool.com/planner/202611/7885543-file-4132124616535211073.mp4",
    "caption": "Si yo tuviera una inmobiliaria en Mérida con más de 5 asesores y no supiera qué hacen con los leads que les doy, esto es lo que haría: conectar el WhatsApp y las llamadas al CRM, dejar que la IA llene la nota y la etapa, y recibir el reporte del equipo todos los días en mi WhatsApp.\nComenta REPORTE y te mando cómo funciona.\n#inmobiliarias #merida #bienesraices #crm #asesoresinmobiliarios",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419346874
   },
   {
    "when": "2026-11-09T14:00",
@@ -272,28 +289,32 @@
    "title": "Idea 14 · GoHighLevel no basta",
    "video": "https://static.metricool.com/planner/202611/7885543-file-13106853325971443431.mp4",
    "caption": "¿Por qué GoHighLevel no basta para una inmobiliaria? Es potente, pero es un lienzo en blanco: no sabe qué pasa en los chats ni en las llamadas de tus asesores. Lead Master no lo reemplaza: se conecta a él y le pone un cerebro.\nComenta GHL y te mando cómo funciona.\n#gohighlevel #inmobiliarias #crm #inteligenciaartificial #bienesraices",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419347270
   },
   {
    "when": "2026-11-09T18:00",
    "title": "B · Marketing y ventas pelean",
    "video": "https://static.metricool.com/planner/202611/7885543-file-8679527415234282758.mp4",
    "caption": "Así son las juntas de marketing y ventas en tu inmobiliaria: marketing dice que consiguió mil leads y ventas no vendió; tus asesores dicen que los leads son basura. Y tú sales sin saber a quién creerle. Lead Master te dice qué pasó con cada lead: cuál se perdió porque era malo y cuál por culpa del asesor.\nComenta SISTEMA y te mando cómo funciona.\n#inmobiliarias #marketinginmobiliario #ventas #leads #crm",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419347944
   },
   {
    "when": "2026-11-09T20:30",
    "title": "E · Así recibirías tus reportes",
    "video": "https://static.metricool.com/planner/202611/7885543-file-17422092858928712331.mp4",
    "caption": "Así es como recibirías los reportes de tu inmobiliaria si usaras Lead Master: cada mañana cada asesor recibe por WhatsApp su lista del día, en la tarde el resumen de lo que hizo, y tú recibes el reporte del equipo a la hora que elijas: cuántos leads entraron, a quién llamó cada asesor, quién se quedó sin contacto y cuántas citas salieron.\nComenta REPORTE y te mando cómo funciona.\n#inmobiliarias #reportes #asesoresinmobiliarios #crm #whatsapp",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419350684
   },
   {
    "when": "2026-11-10T08:00",
    "title": "Idea 20 · Renunció y se llevó tus leads",
    "video": "https://static.metricool.com/planner/202611/7885543-file-10235924097804572600.mp4",
    "caption": "Tu mejor asesor renunció el viernes y se llevó tus leads en su WhatsApp. Con Lead Master el WhatsApp de cada asesor se conecta al CRM (solo las conversaciones con leads) y si alguien se va, el historial se queda en tu inmobiliaria con la nota de en qué quedó cada lead.\nComenta CRM y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #whatsapp #bienesraices",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419351628
   },
   {
    "when": "2026-11-10T10:00",
@@ -308,7 +329,8 @@
    "title": "Idea 1 · Cancún",
    "video": "https://static.metricool.com/planner/202611/7885543-file-216059682376621871.mp4",
    "caption": "Si yo tuviera una inmobiliaria en Cancún con más de 5 asesores y no supiera qué hacen con los leads que les doy, esto es lo que haría: conectar el WhatsApp y las llamadas al CRM, dejar que la IA llene la nota y la etapa, y recibir el reporte del equipo todos los días en mi WhatsApp.\nComenta REPORTE y te mando cómo funciona.\n#inmobiliarias #cancun #bienesraices #crm #asesoresinmobiliarios",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419351801
   },
   {
    "when": "2026-11-10T14:00",
@@ -323,28 +345,32 @@
    "title": "Idea 16 · Parodia chatbot",
    "video": "https://static.metricool.com/planner/202611/7885543-file-14232068146271731769.mp4",
    "caption": "Te vendieron un chatbot de botones para tu inmobiliaria. El lead pregunta si el depa tiene estacionamiento y el bot le dice «elige una opción». Nadie compra un departamento de 300 mil dólares con un menú de botones. (Parodia)\nComenta SISTEMA y te mando cómo funciona.\n#inmobiliarias #chatbot #inteligenciaartificial #bienesraices #humor",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419351939
   },
   {
    "when": "2026-11-10T18:00",
    "title": "Idea 9 · ¿Todavía llenan el CRM a mano?",
    "video": "https://static.metricool.com/planner/202611/7885543-file-9611198250550469773.mp4",
    "caption": "¿Tu inmobiliaria todavía le pide a los asesores que llenen el CRM a mano? Con Lead Master nadie llena nada: la IA lee los chats, escucha las llamadas, escribe la nota, mueve la etapa y te deja todo listo para tu reporte.\nComenta CRM y te enseño cómo se llena solo.\n#crm #inmobiliarias #asesoresinmobiliarios #inteligenciaartificial #bienesraices",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419351984
   },
   {
    "when": "2026-11-10T20:30",
    "title": "Idea 21 · El lead de las 11 de la noche",
    "video": "https://static.metricool.com/planner/202611/7885543-file-16523848823666968183.mp4",
    "caption": "Casi la mitad de los leads de tu inmobiliaria llega de noche o en fin de semana. ¿Quién los contesta? Con Lead Master pones tus reglas: guardia en la noche, recordatorio a primera hora y, si nadie llama, el lead pasa al siguiente asesor.\nComenta NOCHE y te mando cómo funciona.\n#inmobiliarias #leads #asesoresinmobiliarios #crm #bienesraices",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419352039
   },
   {
    "when": "2026-11-11T08:00",
    "title": "G6 · La mitad de tus leads de noche",
    "video": "https://static.metricool.com/planner/202611/7885543-file-8148432068091686088.mp4",
    "caption": "Si casi la mitad de los leads de mi inmobiliaria llegara de noche o en fin de semana, esto es lo que haría: una guardia en la noche con los leads asignados solos, una lista a primera hora con tiempo para llamar (y si no llama, pasa a otro), y ver cada semana cuánto tarda cada asesor en responder.\nComenta NOCHE y te mando cómo funciona.\n#inmobiliarias #leads #asesoresinmobiliarios #crm #bienesraices",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419352308
   },
   {
    "when": "2026-11-11T10:00",
@@ -359,7 +385,8 @@
    "title": "Idea 1 · Querétaro",
    "video": "https://static.metricool.com/planner/202611/7885543-file-16903344299576443163.mp4",
    "caption": "Si yo tuviera una inmobiliaria en Querétaro con más de 5 asesores y no supiera qué hacen con los leads que les doy, esto es lo que haría: conectar el WhatsApp y las llamadas al CRM, dejar que la IA llene la nota y la etapa, y recibir el reporte del equipo todos los días en mi WhatsApp.\nComenta REPORTE y te mando cómo funciona.\n#inmobiliarias #queretaro #bienesraices #crm #asesoresinmobiliarios",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419352467
   },
   {
    "when": "2026-11-11T14:00",
@@ -374,219 +401,248 @@
    "title": "Idea 24 · «Ahorita te mando»",
    "video": "https://static.metricool.com/planner/202611/7885543-file-2057832767997246091.mp4",
    "caption": "«Ahorita te mando opciones.» Si tienes una inmobiliaria, esa frase te está costando ventas. Lead Master lee cada conversación y saca los compromisos: si el asesor prometió mandar opciones o llamar el martes, queda como tarea en su lista. Y si no la cumple, tú lo ves en tu reporte.\nComenta SEGUIMIENTO y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #ventas #seguimiento #crm",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419353507
   },
   {
    "when": "2026-11-11T18:00",
    "title": "Idea 19 · Antes de despedir a un asesor",
    "video": "https://static.metricool.com/planner/202611/7885543-file-3770449174819208956.mp4",
    "caption": "Si estás por despedir a un asesor, mira esto antes. En las inmobiliarias que medimos, 2 de cada 10 asesores hicieron entre el 46 y el 88% de todas las llamadas. Lead Master te arma el ranking real de tu equipo: a quién darle más leads, a quién entrenar y a quién no.\nComenta RANKING y te mando cómo funciona.\n#inmobiliarias #equipocomercial #asesoresinmobiliarios #ventas #crm",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419353638
   },
   {
    "when": "2026-11-11T20:30",
    "title": "A · Por qué tu CRM no funciona",
    "video": "https://static.metricool.com/planner/202611/7885543-file-5428555625821174245.mp4",
    "caption": "Si ya pagaste un CRM, esto te va a doler: 8 de cada 10 inmobiliarias que implementan un CRM no lo terminan usando. Tus asesores no actualizan etapas, no ponen notas, no crean tareas. Por eso creamos un sistema que registra cada chat y cada llamada, mueve la etapa y pone la nota solo.\nComenta CRM y te mando cómo funciona.\n#crm #inmobiliarias #asesoresinmobiliarios #bienesraices #ventas",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419353716
   },
   {
    "when": "2026-11-12T08:00",
    "title": "Idea 25 · Este video te apareció",
    "video": "https://static.metricool.com/planner/202611/7885543-file-13741071870528837747.mp4",
    "caption": "Este video te apareció porque tienes una inmobiliaria. Lead Master es un sistema de gestión comercial hecho solo para inmobiliarias: se conecta al WhatsApp y a las llamadas de tus asesores, llena el CRM solo, le dice a cada asesor qué hacer y a ti te manda el reporte por WhatsApp. Ya lo usan más de 15 inmobiliarias en México, Colombia y Estados Unidos.\nComenta DEMO y te mando cómo funciona.\n#inmobiliarias #crm #bienesraices #asesoresinmobiliarios #leadmaster",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419353779
   },
   {
    "when": "2026-11-12T10:00",
    "title": "Idea 5 · Depas de +150 mil USD",
    "video": "https://static.metricool.com/planner/202611/7885543-file-9663530115091617031.mp4",
    "caption": "Si vendes departamentos de más de 150 mil dólares, estás perdiendo compradores serios entre cientos de mensajes. El que tiene el dinero le escribe a 3 o 4 inmobiliarias y compra con la que contesta primero. Con Lead Master cada lead llega directo al asesor con aviso por WhatsApp, y si no hay llamada a tiempo, pasa al siguiente.\nComenta PRIMERO y te mando cómo funciona.\n#inmobiliarias #bienesraices #departamentos #leads #asesoresinmobiliarios",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419354149
   },
   {
    "when": "2026-11-12T12:00",
    "title": "Idea 1 · Puebla",
    "video": "https://static.metricool.com/planner/202611/7885543-file-5856564716249135392.mp4",
    "caption": "Si yo tuviera una inmobiliaria en Puebla con más de 5 asesores y no supiera qué hacen con los leads que les doy, esto es lo que haría: conectar el WhatsApp y las llamadas al CRM, dejar que la IA llene la nota y la etapa, y recibir el reporte del equipo todos los días en mi WhatsApp.\nComenta REPORTE y te mando cómo funciona.\n#inmobiliarias #puebla #bienesraices #crm #asesoresinmobiliarios",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419354317
   },
   {
    "when": "2026-11-12T14:00",
    "title": "G2 · No puedo creer que todavía confíes",
    "video": "https://static.metricool.com/planner/202611/7885543-file-15602515490345707590.mp4",
    "caption": "No puedo creer que, teniendo una inmobiliaria con más de 5 asesores, todavía confíes en lo que tus asesores te dicen que hacen. Lead Master registra cada llamada, cada chat y cada interacción sin que nadie llene nada. Y si un asesor se va, el historial se queda contigo. Los leads son tuyos, no de tu asesor.\nComenta CONTROL y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #equipocomercial #crm #bienesraices",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419354364
   },
   {
    "when": "2026-11-12T16:00",
    "title": "G5 · CRM que nadie llena",
    "video": "https://static.metricool.com/planner/202611/7885543-file-1907689569867778883.mp4",
    "caption": "No puedo creer que tu inmobiliaria siga pagando un CRM que tus asesores no llenan: sin notas, sin etapas, con leads de hace meses en «nuevo». Con Lead Master el CRM se llena solo: la IA lee el WhatsApp, escucha las llamadas, escribe la nota, mueve la etapa y crea la tarea del siguiente paso.\nComenta CRM y te mando cómo funciona.\n#crm #inmobiliarias #asesoresinmobiliarios #inteligenciaartificial #bienesraices",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419354408
   },
   {
    "when": "2026-11-12T18:00",
    "title": "C · Puros curiosos",
    "video": "https://static.metricool.com/planner/202611/7885543-file-13021987381155657170.mp4",
    "caption": "Esta es la razón por la que a tu inmobiliaria le siguen llegando puros curiosos: nunca le dices a Meta quién agendó, quién apartó y quién compró. Cuando un lead agenda una cita, Lead Master se lo avisa a Meta en automático, y tus anuncios empiezan a buscar gente que sí agenda.\nComenta META y te mando cómo funciona.\n#inmobiliarias #metaads #marketinginmobiliario #leads #bienesraices",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419354469
   },
   {
    "when": "2026-11-12T20:30",
    "title": "Idea 8 · 9 mil dólares en anuncios",
    "video": "https://static.metricool.com/planner/202611/7885543-file-361745905564430968.mp4",
    "caption": "Una inmobiliaria metió 9 mil dólares en anuncios y no vendió ni un departamento. El problema no estaba en la pauta: para trabajar bien esos 700 leads tocaba hacer unas 9 mil llamadas y el equipo hizo 3 mil. Lead Master mide eso por ti, asesor por asesor y campaña por campaña.\nComenta LLAMADAS y te mando cómo funciona.\n#inmobiliarias #metaads #leads #equipocomercial #bienesraices",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419355203
   },
   {
    "when": "2026-11-13T08:00",
    "title": "UGC UH4-C1 · Robando leads + el CRM que nadie usa",
    "video": "https://static.metricool.com/planner/202611/7885543-file-13607440724838752384.mp4",
    "caption": "Tus asesores inmobiliarios se pueden estar robando los leads que conseguiste para vender tus desarrollos o tus departamentos, y ni cuenta te das.\n8 de cada 10 inmobiliarias que compran un CRM terminan sin usarlo: los asesores no mueven etapas ni ponen notas. Con Lead Master solo hablan con el lead por WhatsApp y el sistema registra cada chat y cada llamada, y te da el reporte de cada prospecto.\nComenta CONTROL y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices",
-   "status": "pendiente",
-   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH4-C1-robando-leads-crm-que-nadie-usa-celular.mp4)"
+   "status": "programado_metricool",
+   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH4-C1-robando-leads-crm-que-nadie-usa-celular.mp4)",
+   "metricool_id": 419356335
   },
   {
    "when": "2026-11-13T10:00",
    "title": "UGC U4 · Qué es Lead Master en 5 pasos (con modelo)",
    "video": "https://static.metricool.com/planner/202611/7885543-file-4411813812949759849.mp4",
    "caption": "Qué es Lead Master en 5 pasos: centraliza tus leads y los asigna, sabe qué pasó con cada uno, le dice a cada asesor inmobiliario qué hacer, te da los reportes sin que nadie llene nada y le enseña a Meta quién sí compra.\nComenta DEMO y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices",
-   "status": "pendiente",
-   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», U4-lead-master-en-5-pasos-celular.mp4)"
+   "status": "programado_metricool",
+   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», U4-lead-master-en-5-pasos-celular.mp4)",
+   "metricool_id": 419356371
   },
   {
    "when": "2026-11-13T12:00",
    "title": "UGC UH1-C2 · Jalisco + juntas de marketing y ventas",
    "video": "https://static.metricool.com/planner/202611/7885543-file-6739796528272800596.mp4",
    "caption": "Si yo tuviera una inmobiliaria en Jalisco con más de 5 asesores y no supiera qué hacen con los leads que les doy, esto es lo que haría para tener control y vender más.\nMarketing dice «conseguimos mil leads», ventas dice «son basura» y nadie sabe a quién creerle. Con Lead Master ves qué pasó con cada lead: quién se perdió por ser malo y quién por culpa del asesor.\nComenta CONTROL y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices #jalisco",
-   "status": "pendiente",
-   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH1-C2-jalisco-juntas-marketing-ventas-celular.mp4)"
+   "status": "programado_metricool",
+   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH1-C2-jalisco-juntas-marketing-ventas-celular.mp4)",
+   "metricool_id": 419356404
   },
   {
    "when": "2026-11-13T14:00",
    "title": "Idea 11 · ¿Qué anuncio te vendió?",
    "video": "https://static.metricool.com/planner/202611/7885543-file-2145984795680545843.mp4",
    "caption": "¿Qué anuncio te vendió el último departamento? Casi nadie lo sabe. Si solo miras el costo por lead, apagas el anuncio que vendía. Lead Master sigue cada lead desde el anuncio hasta la venta y te dice cuánto te costó cada cita.\nComenta CAMPAÑA y te mando cómo funciona.\n#inmobiliarias #metaads #marketinginmobiliario #leads #bienesraices",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419356457
   },
   {
    "when": "2026-11-13T16:00",
    "title": "UGC UH5-C1 · Claridad en 7 días + el CRM que nadie usa",
    "video": "https://static.metricool.com/planner/202611/7885543-file-12067216804951051255.mp4",
    "caption": "En menos de 7 días te doy claridad total de lo que hacen tus asesores inmobiliarios con los leads que les das, y vas a ver cuántas ventas estás perdiendo.\n8 de cada 10 inmobiliarias que compran un CRM terminan sin usarlo: los asesores no mueven etapas ni ponen notas. Con Lead Master solo hablan con el lead por WhatsApp y el sistema registra cada chat y cada llamada, y te da el reporte de cada prospecto.\nComenta REPORTE y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices",
-   "status": "pendiente",
-   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH5-C1-claridad-7-dias-crm-que-nadie-usa-celular.mp4)"
+   "status": "programado_metricool",
+   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH5-C1-claridad-7-dias-crm-que-nadie-usa-celular.mp4)",
+   "metricool_id": 419357212
   },
   {
    "when": "2026-11-13T18:00",
    "title": "D · Los CRM murieron",
    "video": "https://static.metricool.com/planner/202611/7885543-file-4764602369873301499.mp4",
    "caption": "Los CRM para el mundo inmobiliario murieron. Llegaron los CRA: CRM que se llenan solos. Un CRA escucha las llamadas, lee el WhatsApp y registra el presupuesto, la zona, qué busca el lead y en qué etapa va. Antes tu equipo trabajaba para el CRM; ahora el CRA trabaja para tu equipo.\nComenta CRA y te mando cómo funciona.\n#crm #inmobiliarias #inteligenciaartificial #bienesraices #asesoresinmobiliarios",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419357255
   },
   {
    "when": "2026-11-13T20:30",
    "title": "Idea 6 · No es la cantidad de leads",
    "video": "https://static.metricool.com/planner/202611/7885543-file-14661188019091949202.mp4",
    "caption": "El problema de tu inmobiliaria no es la cantidad de leads que te llegan. Cuando medimos 6,497 leads de 11 inmobiliarias, 1 de cada 3 nunca habló con una persona: nadie los llamó. Antes de comprar más leads, atiende los que ya pagaste.\nComenta LEADS y te mando cómo funciona.\n#inmobiliarias #leads #asesoresinmobiliarios #bienesraices #crm",
-   "status": "pendiente"
+   "status": "programado_metricool",
+   "metricool_id": 419357304
   },
   {
    "when": "2026-11-14T08:00",
    "title": "UGC UH6-C2 · Monitorear asesores + juntas de marketing y ventas",
    "video": "https://static.metricool.com/planner/202611/7885543-file-15405996922411962343.mp4",
    "caption": "Si pudieras ver qué tan mal atienden tus leads tus asesores inmobiliarios, podrías vender mucho más: dejar de darle leads a quien los atiende mal o entrenarlo.\nMarketing dice «conseguimos mil leads», ventas dice «son basura» y nadie sabe a quién creerle. Con Lead Master ves qué pasó con cada lead: quién se perdió por ser malo y quién por culpa del asesor.\nComenta SISTEMA y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices",
-   "status": "pendiente",
-   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH6-C2-monitorear-asesores-juntas-marketing-ventas-celular.mp4)"
+   "status": "programado_metricool",
+   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH6-C2-monitorear-asesores-juntas-marketing-ventas-celular.mp4)",
+   "metricool_id": 419357362
   },
   {
    "when": "2026-11-14T10:00",
    "title": "UGC U1 · Así reciben su reporte tus asesores (con modelo)",
    "video": "https://static.metricool.com/planner/202611/7885543-file-10131311780401899730.mp4",
    "caption": "Así reciben todos los días tus asesores inmobiliarios su reporte de qué hacer: a quién llamar, quién pidió que lo contactaran hoy y qué pasó con cada lead. Y tú recibes el reporte de todo tu equipo, sin que nadie llene nada.\nComenta REPORTE y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices",
-   "status": "pendiente",
-   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», U1-asi-reciben-su-reporte-tus-asesores-celular.mp4)"
+   "status": "programado_metricool",
+   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», U1-asi-reciben-su-reporte-tus-asesores-celular.mp4)",
+   "metricool_id": 419357401
   },
   {
    "when": "2026-11-14T12:00",
    "title": "UGC UH2-C1 · Monterrey + el CRM que nadie usa",
    "video": "https://static.metricool.com/planner/202611/7885543-file-9675421716513950394.mp4",
    "caption": "Si yo tuviera una inmobiliaria en Monterrey con más de 5 asesores y no supiera qué hacen con los leads que les doy, esto es lo que haría para tener control y vender más.\n8 de cada 10 inmobiliarias que compran un CRM terminan sin usarlo: los asesores no mueven etapas ni ponen notas. Con Lead Master solo hablan con el lead por WhatsApp y el sistema registra cada chat y cada llamada, y te da el reporte de cada prospecto.\nComenta CONTROL y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices #monterrey",
-   "status": "pendiente",
-   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH2-C1-monterrey-crm-que-nadie-usa-celular.mp4)"
+   "status": "programado_metricool",
+   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH2-C1-monterrey-crm-que-nadie-usa-celular.mp4)",
+   "metricool_id": 419357552
   },
   {
    "when": "2026-11-14T14:00",
    "title": "UGC U2 · Los CRM murieron, llegaron los CRA (con modelo)",
    "video": "https://static.metricool.com/planner/202611/7885543-file-17732116813861932463.mp4",
    "caption": "Los CRM para inmobiliarias murieron: llegaron los CRA. No dependen de que el asesor llene nada: escuchan las llamadas, leen el WhatsApp de cada asesor, registran todo solos y le dicen a cada asesor qué hacer con cada lead.\nComenta CRA y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices",
-   "status": "pendiente",
-   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», U2-los-crm-murieron-llegaron-los-cra-celular.mp4)"
+   "status": "programado_metricool",
+   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», U2-los-crm-murieron-llegaron-los-cra-celular.mp4)",
+   "metricool_id": 419357702
   },
   {
    "when": "2026-11-14T16:00",
    "title": "UGC UH3-C2 · Mérida + juntas de marketing y ventas",
    "video": "https://static.metricool.com/planner/202611/7885543-file-15297894830935273214.mp4",
    "caption": "Si yo tuviera una inmobiliaria en Mérida con más de 5 asesores y no supiera qué hacen con los leads que les doy, esto es lo que haría para tener control y vender más.\nMarketing dice «conseguimos mil leads», ventas dice «son basura» y nadie sabe a quién creerle. Con Lead Master ves qué pasó con cada lead: quién se perdió por ser malo y quién por culpa del asesor.\nComenta CONTROL y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices #merida",
-   "status": "pendiente",
-   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH3-C2-merida-juntas-marketing-ventas-celular.mp4)"
+   "status": "programado_metricool",
+   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH3-C2-merida-juntas-marketing-ventas-celular.mp4)",
+   "metricool_id": 419357751
   },
   {
    "when": "2026-11-14T18:00",
    "title": "UGC UH4-C2 · Robando leads + juntas de marketing y ventas",
    "video": "https://static.metricool.com/planner/202611/7885543-file-12381441612011152728.mp4",
    "caption": "Tus asesores inmobiliarios se pueden estar robando los leads que conseguiste para vender tus desarrollos o tus departamentos, y ni cuenta te das.\nMarketing dice «conseguimos mil leads», ventas dice «son basura» y nadie sabe a quién creerle. Con Lead Master ves qué pasó con cada lead: quién se perdió por ser malo y quién por culpa del asesor.\nComenta CONTROL y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices",
-   "status": "pendiente",
-   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH4-C2-robando-leads-juntas-marketing-ventas-celular.mp4)"
+   "status": "programado_metricool",
+   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH4-C2-robando-leads-juntas-marketing-ventas-celular.mp4)",
+   "metricool_id": 419357812
   },
   {
    "when": "2026-11-14T20:30",
    "title": "UGC UH1-C1 · Jalisco + el CRM que nadie usa",
    "video": "https://static.metricool.com/planner/202611/7885543-file-11977203430162207523.mp4",
    "caption": "Si yo tuviera una inmobiliaria en Jalisco con más de 5 asesores y no supiera qué hacen con los leads que les doy, esto es lo que haría para tener control y vender más.\n8 de cada 10 inmobiliarias que compran un CRM terminan sin usarlo: los asesores no mueven etapas ni ponen notas. Con Lead Master solo hablan con el lead por WhatsApp y el sistema registra cada chat y cada llamada, y te da el reporte de cada prospecto.\nComenta CONTROL y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices #jalisco",
-   "status": "pendiente",
-   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH1-C1-jalisco-crm-que-nadie-usa-celular.mp4)"
+   "status": "programado_metricool",
+   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH1-C1-jalisco-crm-que-nadie-usa-celular.mp4)",
+   "metricool_id": 419357859
   },
   {
    "when": "2026-11-15T08:00",
    "title": "UGC UH5-C2 · Claridad en 7 días + juntas de marketing y ventas",
    "video": "https://static.metricool.com/planner/202611/7885543-file-667747601826700766.mp4",
    "caption": "En menos de 7 días te doy claridad total de lo que hacen tus asesores inmobiliarios con los leads que les das, y vas a ver cuántas ventas estás perdiendo.\nMarketing dice «conseguimos mil leads», ventas dice «son basura» y nadie sabe a quién creerle. Con Lead Master ves qué pasó con cada lead: quién se perdió por ser malo y quién por culpa del asesor.\nComenta REPORTE y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices",
-   "status": "pendiente",
-   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH5-C2-claridad-7-dias-juntas-marketing-ventas-celular.mp4)"
+   "status": "programado_metricool",
+   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH5-C2-claridad-7-dias-juntas-marketing-ventas-celular.mp4)",
+   "metricool_id": 419358039
   },
   {
    "when": "2026-11-15T10:00",
    "title": "UGC U3 · Por qué te llegan puros curiosos (con modelo)",
    "video": "https://static.metricool.com/planner/202611/7885543-file-9089831483713733518.mp4",
    "caption": "Por esto a tu inmobiliaria le siguen llegando puros curiosos: nunca le dices a Meta qué leads agendaron, apartaron o compraron. Cuando un lead agenda, Lead Master se lo avisa a Meta en automático y tus anuncios buscan gente que sí agenda.\nComenta META y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices",
-   "status": "pendiente",
-   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», U3-por-que-te-llegan-puros-curiosos-celular.mp4)"
+   "status": "programado_metricool",
+   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», U3-por-que-te-llegan-puros-curiosos-celular.mp4)",
+   "metricool_id": 419358895
   },
   {
    "when": "2026-11-15T12:00",
    "title": "UGC UH2-C2 · Monterrey + juntas de marketing y ventas",
    "video": "https://static.metricool.com/planner/202611/7885543-file-18439726279376106220.mp4",
    "caption": "Si yo tuviera una inmobiliaria en Monterrey con más de 5 asesores y no supiera qué hacen con los leads que les doy, esto es lo que haría para tener control y vender más.\nMarketing dice «conseguimos mil leads», ventas dice «son basura» y nadie sabe a quién creerle. Con Lead Master ves qué pasó con cada lead: quién se perdió por ser malo y quién por culpa del asesor.\nComenta CONTROL y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices #monterrey",
-   "status": "pendiente",
-   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH2-C2-monterrey-juntas-marketing-ventas-celular.mp4)"
+   "status": "programado_metricool",
+   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH2-C2-monterrey-juntas-marketing-ventas-celular.mp4)",
+   "metricool_id": 419358937
   },
   {
    "when": "2026-11-15T14:00",
    "title": "UGC UH6-C1 · Monitorear asesores + el CRM que nadie usa",
    "video": "https://static.metricool.com/planner/202611/7885543-file-6947168252996957658.mp4",
    "caption": "Si pudieras ver qué tan mal atienden tus leads tus asesores inmobiliarios, podrías vender mucho más: dejar de darle leads a quien los atiende mal o entrenarlo.\n8 de cada 10 inmobiliarias que compran un CRM terminan sin usarlo: los asesores no mueven etapas ni ponen notas. Con Lead Master solo hablan con el lead por WhatsApp y el sistema registra cada chat y cada llamada, y te da el reporte de cada prospecto.\nComenta SISTEMA y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices",
-   "status": "pendiente",
-   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH6-C1-monitorear-asesores-crm-que-nadie-usa-celular.mp4)"
+   "status": "programado_metricool",
+   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH6-C1-monitorear-asesores-crm-que-nadie-usa-celular.mp4)",
+   "metricool_id": 419358982
   },
   {
    "when": "2026-11-15T16:00",
    "title": "UGC UH3-C1 · Mérida + el CRM que nadie usa",
    "video": "https://static.metricool.com/planner/202611/7885543-file-5503680707826253681.mp4",
    "caption": "Si yo tuviera una inmobiliaria en Mérida con más de 5 asesores y no supiera qué hacen con los leads que les doy, esto es lo que haría para tener control y vender más.\n8 de cada 10 inmobiliarias que compran un CRM terminan sin usarlo: los asesores no mueven etapas ni ponen notas. Con Lead Master solo hablan con el lead por WhatsApp y el sistema registra cada chat y cada llamada, y te da el reporte de cada prospecto.\nComenta CONTROL y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices #merida",
-   "status": "pendiente",
-   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH3-C1-merida-crm-que-nadie-usa-celular.mp4)"
+   "status": "programado_metricool",
+   "nota": "video UGC con modelo (sesión «Edición videos UGC modelo», UH3-C1-merida-crm-que-nadie-usa-celular.mp4)",
+   "metricool_id": 419359034
   }
  ]
 }
