@@ -7,8 +7,10 @@ Uso:
 
 Voces: public/tts/<key>.mp3 + <key>.json (alineación por carácter de ElevenLabs).
 """
+import hashlib
 import json
 import os
+import shutil
 import re
 import subprocess
 import sys
@@ -359,6 +361,51 @@ def build(spec_path, safe=False):
     return props, path
 
 
+UGC_CHUNK = 300  # cuadros por tramo
+
+
+def render_ugc(spec_id, props_path, raw, common):
+    """UGC: el lector de cuadros del video de la persona a veces se cuelga. Se renderiza por tramos
+    (cada uno se reintenta solo), el audio aparte, y se une todo sin recomprimir."""
+    props = json.load(open(props_path))
+    total = props['totalFrames']
+    work = os.path.join(ROOT, 'build', f'{spec_id}.parts')
+    # Los tramos ya hechos solo se reusan si los props no cambiaron.
+    sig = hashlib.md5(open(props_path, 'rb').read()).hexdigest()
+    sig_path = os.path.join(work, 'props.md5')
+    if os.path.isdir(work) and (not os.path.exists(sig_path) or open(sig_path).read() != sig):
+        shutil.rmtree(work)
+    os.makedirs(work, exist_ok=True)
+    open(sig_path, 'w').write(sig)
+    serve = os.path.join(ROOT, 'build', 'bundle')
+    subprocess.run(['npx', 'remotion', 'bundle', 'src/index.ts', f'--out-dir={serve}', '--log=error'], cwd=ROOT, check=True)
+    vid = ['--concurrency=2', '--offthreadvideo-cache-size-in-bytes=1500000000', '--timeout=90000']
+    parts = []
+    for a in range(0, total, UGC_CHUNK):
+        b = min(total, a + UGC_CHUNK) - 1
+        part = os.path.join(work, f'{a:05d}.mp4')
+        parts.append(part)
+        if os.path.exists(part) and os.path.getsize(part) > 0:
+            continue
+        tmp = part + '.tmp.mp4'
+        cmd = ['npx', 'remotion', 'render', serve, 'Reel', tmp, '--codec=h264', '--crf=18', '--muted',
+               f'--frames={a}-{b}'] + vid + common
+        for attempt in range(5):
+            if subprocess.run(cmd, cwd=ROOT).returncode == 0:
+                os.replace(tmp, part)
+                print(f'  tramo {a}-{b} listo')
+                break
+            print(f'  ! tramo {a}-{b} falló (intento {attempt + 1}), reintentando')
+        else:
+            raise RuntimeError(f'tramo {a}-{b} falló 5 veces: {spec_id}')
+    wav = os.path.join(work, 'audio.wav')
+    subprocess.run(['npx', 'remotion', 'render', serve, 'Reel', wav, '--codec=wav', '--timeout=240000'] + common, cwd=ROOT, check=True)
+    lst = os.path.join(work, 'list.txt')
+    open(lst, 'w').write(''.join(f"file '{p}'\n" for p in parts))
+    subprocess.run(['ffmpeg', '-y', '-v', 'error', '-f', 'concat', '-safe', '0', '-i', lst, '-i', wav,
+                    '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '320k', '-shortest', raw], check=True)
+
+
 def render(spec_id, props_path, still=None):
     os.makedirs(OUT, exist_ok=True)
     base = ['npx', 'remotion']
@@ -369,18 +416,18 @@ def render(spec_id, props_path, still=None):
         subprocess.run(cmd, cwd=ROOT, check=True)
         return out
     raw = os.path.join(ROOT, 'build', f'{spec_id}.raw.mp4')
-    ugc = 'base' in json.load(open(props_path))
-    # UGC: el video de la persona a 1440p llena la memoria si no se limita el caché de cuadros.
-    extra = ['--concurrency=2', '--offthreadvideo-cache-size-in-bytes=1500000000'] if ugc else ['--concurrency=3']
-    cmd = base + ['render', 'src/index.ts', 'Reel', raw, '--codec=h264', '--crf=18',
-                  '--audio-bitrate=320k', '--timeout=240000'] + extra + common
-    # A veces un cuadro se queda esperando una imagen; se reintenta hasta 3 veces.
-    for attempt in range(3):
-        if subprocess.run(cmd, cwd=ROOT).returncode == 0:
-            break
-        print(f'  ! render falló (intento {attempt + 1}), reintentando')
+    if 'base' in json.load(open(props_path)):
+        render_ugc(spec_id, props_path, raw, common)
     else:
-        raise RuntimeError(f'render falló 3 veces: {spec_id}')
+        cmd = base + ['render', 'src/index.ts', 'Reel', raw, '--codec=h264', '--crf=18',
+                      '--concurrency=3', '--audio-bitrate=320k', '--timeout=240000'] + common
+        # A veces un cuadro se queda esperando una imagen; se reintenta hasta 3 veces.
+        for attempt in range(3):
+            if subprocess.run(cmd, cwd=ROOT).returncode == 0:
+                break
+            print(f'  ! render falló (intento {attempt + 1}), reintentando')
+        else:
+            raise RuntimeError(f'render falló 3 veces: {spec_id}')
     final = os.path.join(OUT, f'{spec_id}.mp4')
     # Entrega a -14 LUFS con limitador a -1 dBTP.
     subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', raw, '-c:v', 'copy',
