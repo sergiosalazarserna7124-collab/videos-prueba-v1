@@ -68,5 +68,19 @@
   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, a real estate agency office with desks and property posters. Kevin, a young Mexican real estate agent in his early twenties with a beanie, a hoodie under a cheap blazer, chewing gum, very relaxed and careless, leans back in his chair with his feet on the desk, shrugs and says in Mexican Spanish, careless and fast: \"Jefa, esos leads estaban malísimos… nadie contestó. Bueno, eso creo.\" Medium shot, static camera. Audio: only his voice in Spanish, gum chewing, office ambience. No music. No subtitles, no on-screen text.",
   "seconds": "8",
   "created": 1793991141.237314
+ },
+ "j05_a": {
+  "id": "v1_Chd6RHp1YW9qaEJ0VGd5dE1QdkpHbzhBcxIXekR6dWFvamhCdFRneXRNUHZKR284QXM",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. A modern real estate agency meeting room with a glass wall and a long table; four real estate agents sit around the table silently avoiding eye contact. Ricardo, the owner of a real estate agency, a tall Mexican man in his forties with slicked-back dark hair with grey temples, an expensive navy suit and a loosened tie, sweating and panicking, stands at the head of the table holding up his phone showing ad results, eyes wide with panic, and says in Mexican Spanish, desperate and fast: \"¡Meta dice trescientos leads! Asesores inmobiliarios, ¿qué pasó con ellos? ¿Por qué no vendemos?\" Medium shot, slow push-in. Audio: only his voice in Spanish. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1793998028.8901768
+ },
+ "j05_b": {
+  "id": "v1_Chd6VHp1YXI2WkUtX2UwX2dQamVyaDJROBIXelR6dWFyNlpFLV9lMF9nUGplcmgyUTg",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. A modern real estate agency meeting room with a glass wall and a long table; four real estate agents sit around the table silently avoiding eye contact. Ricardo, the owner of a real estate agency, a tall Mexican man in his forties with slicked-back dark hair with grey temples, an expensive navy suit and a loosened tie, sweating and panicking, walks around the table pointing at each silent agent one by one, desperate, saying in Mexican Spanish: \"Hay citas en el calendario… ¿por qué no cerramos ninguna? ¿Alguien? ¿Nadie?\" The agents look away, one whistles, one stares at the ceiling. Medium wide shot, camera follows him. Audio: only his voice in Spanish, awkward silence. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1793998030.2936
  }
 }

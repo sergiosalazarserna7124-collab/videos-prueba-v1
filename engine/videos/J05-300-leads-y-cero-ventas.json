@@ -1,0 +1,258 @@
+{
+ "id": "J05-300-leads-y-cero-ventas",
+ "title": "300 leads y cero ventas: el dueño sin datos (Serie Sala de Juntas, video 5)",
+ "voice": "antonio",
+ "music": "music/pulse.mp3",
+ "tempo": 1.15,
+ "keywords": [
+  "leads",
+  "asesores",
+  "inmobiliarios",
+  "inmobiliaria",
+  "Meta",
+  "citas",
+  "vendemos",
+  "objeciones",
+  "precio",
+  "ubicación",
+  "crédito",
+  "datos",
+  "miedo",
+  "campaña"
+ ],
+ "ia": [
+  {
+   "clip": "j05_a",
+   "dice": "¡Meta dice trescientos leads! Asesores inmobiliarios, ¿qué pasó con ellos? ¿Por qué no vendemos?",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. A modern real estate agency meeting room with a glass wall and a long table; four real estate agents sit around the table silently avoiding eye contact. Ricardo, the owner of a real estate agency, a tall Mexican man in his forties with slicked-back dark hair with grey temples, an expensive navy suit and a loosened tie, sweating and panicking, stands at the head of the table holding up his phone showing ad results, eyes wide with panic, and says in Mexican Spanish, desperate and fast: \"¡Meta dice trescientos leads! Asesores inmobiliarios, ¿qué pasó con ellos? ¿Por qué no vendemos?\" Medium shot, slow push-in. Audio: only his voice in Spanish. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j05_b",
+   "dice": "Hay citas en el calendario… ¿por qué no cerramos ninguna? ¿Alguien? ¿Nadie?",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. A modern real estate agency meeting room with a glass wall and a long table; four real estate agents sit around the table silently avoiding eye contact. Ricardo, the owner of a real estate agency, a tall Mexican man in his forties with slicked-back dark hair with grey temples, an expensive navy suit and a loosened tie, sweating and panicking, walks around the table pointing at each silent agent one by one, desperate, saying in Mexican Spanish: \"Hay citas en el calendario… ¿por qué no cerramos ninguna? ¿Alguien? ¿Nadie?\" The agents look away, one whistles, one stares at the ceiling. Medium wide shot, camera follows him. Audio: only his voice in Spanish, awkward silence. No music. No subtitles, no on-screen text."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j05_a.mp4",
+    "words": "clips/j05_a.words.json",
+    "lines": [
+     "300 [LEADS]",
+     "Y CERO VENTAS"
+    ],
+    "kicker": "1 semana después de la campaña",
+    "kickerColor": "red",
+    "titleOut": 60,
+    "size": 140
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j05_b.mp4",
+    "words": "clips/j05_b.words.json"
+   }
+  },
+  {
+   "type": "compare",
+   "key": "j05_s2",
+   "voice": "antonio",
+   "text": "Meta te dice cuántos leads llegaron. Pero no te dice qué pasó después: quién los llamó, qué objeciones pusieron ni por qué no compraron.",
+   "p": {
+    "rows": [
+     {
+      "t": "Cuántos leads llegaron",
+      "l": true,
+      "r": true,
+      "at": "@llegaron"
+     },
+     {
+      "t": "Quién los llamó",
+      "l": false,
+      "r": true,
+      "at": "@llamó"
+     },
+     {
+      "t": "Qué objeciones pusieron",
+      "l": false,
+      "r": true,
+      "at": "@objeciones"
+     },
+     {
+      "t": "Por qué no compraron",
+      "l": false,
+      "r": true,
+      "at": "@compraron"
+     }
+    ],
+    "left": "Meta",
+    "right": "Lead Master",
+    "title": "¿Y DESPUÉS?"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llegaron",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamó",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@objeciones",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@compraron",
+     "vol": 0.11
+    }
+   ]
+  },
+  {
+   "type": "bars",
+   "key": "j05_s3",
+   "voice": "antonio",
+   "text": "Con Lead Master lo ves en un solo lugar: qué pasó en cada cita y las objeciones más comunes de tus clientes. El precio, la ubicación, el crédito o «lo voy a pensar».",
+   "p": {
+    "rows": [
+     {
+      "name": "El precio",
+      "value": 41,
+      "sub": "veces",
+      "color": "red"
+     },
+     {
+      "name": "«Lo voy a pensar»",
+      "value": 33,
+      "sub": "veces",
+      "color": "amber"
+     },
+     {
+      "name": "La ubicación",
+      "value": 27,
+      "sub": "veces"
+     },
+     {
+      "name": "El crédito",
+      "value": 19,
+      "sub": "veces"
+     }
+    ],
+    "at": "@objeciones",
+    "title": "Por qué no compraron",
+    "right": "Este mes"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@objeciones",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@precio",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "key": "j05_s4",
+   "voice": "antonio",
+   "text": "Así sabes si el problema es la campaña, el precio o tu equipo, y decides con datos, no con miedo.",
+   "p": {
+    "items": [
+     {
+      "t": "¿La campaña?",
+      "at": "@campaña",
+      "color": "cyan",
+      "k": "Con datos"
+     },
+     {
+      "t": "¿El precio?",
+      "at": "@precio",
+      "color": "amber",
+      "k": "Con datos"
+     },
+     {
+      "t": "¿Tu equipo?",
+      "at": "@equipo",
+      "color": "purple",
+      "k": "Con datos"
+     }
+    ],
+    "img": "owner_relaxed",
+    "title": "DECIDE CON DATOS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@campaña",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@precio",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@equipo",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "key": "j05_s5",
+   "voice": "antonio",
+   "tail": 1.0,
+   "captions": true,
+   "text": "Si tienes una inmobiliaria y pagas anuncios, comenta LEADS y te lo instalamos.",
+   "p": {
+    "word": "LEADS",
+    "top": "PARA INMOBILIARIAS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}

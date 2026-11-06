@@ -20,7 +20,7 @@ import urllib.request
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 CLIPS = os.path.join(ROOT, 'public', 'clips')
-MODELS = ['gemini-3.1-pro-preview', 'gemini-3.5-flash', 'gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-flash-latest']
+MODELS = ['gemini-3.5-flash', 'gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-flash-latest']
 PROMPT = ('Transcribe exactly the Spanish speech in this audio, word by word, with start and end time in seconds '
           'for each word. Keep punctuation (¡! ¿? , .) attached to words. Return only JSON: '
           '[{"w": "...", "s": 0.0, "e": 0.0}]. Ignore non-speech sounds.')
