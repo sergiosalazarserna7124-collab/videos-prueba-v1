@@ -1,3 +1,12 @@
+# Videos UGC de la modelo (6 nov 2026)
+
+Listos y enviados a Sergio: U1 reportes, U2 CRA, U3 curiosos, U4 Lead Master en 5 pasos
+(`videos/U*-celular.mp4`, specs en `engine/videos/U*.json`). Estilo de "Un mensaje. Una demanda" y siempre
+con casa o desarrollo detrás al inicio (`engine/tools/ugc_bg.py`).
+Originales: carpeta de Drive 1n0KyNDilNbQGyMV1GX1TdivMY9aWwAHr (se bajan con GOOGLEDRIVE_DOWNLOAD_FILE por Composio;
+drive.usercontent.google.com está bloqueado). Para rehacerlos: `tools/ugc_prep.py`, Scribe para las palabras,
+`tools/ugc_bg.py` y `tools/build.py` (ver README). Pendiente: que Sergio los revise; no están en la cola de Instagram.
+
 # Siguiente paso: video demo J01 (Serie Sala de Juntas)
 
 Estado al 5 nov 2026, 4:15 pm Bogotá.
