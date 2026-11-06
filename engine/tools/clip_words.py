@@ -25,7 +25,7 @@ PROMPT = ('Transcribe exactly the Spanish speech in this audio, word by word, wi
 
 
 def transcribe(wav):
-    key = os.environ['GEMINI_API_KEY']
+    key = os.environ.get('GEMINI_API_KEY') or os.environ.get('EMINI_API_KEY')
     b = base64.b64encode(open(wav, 'rb').read()).decode()
     body = {'contents': [{'parts': [{'inline_data': {'mime_type': 'audio/wav', 'data': b}}, {'text': PROMPT}]}],
             'generationConfig': {'responseMimeType': 'application/json', 'temperature': 0}}

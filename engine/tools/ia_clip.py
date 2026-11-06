@@ -28,11 +28,16 @@ DONE_BAD = ('failed', 'cancelled', 'incomplete', 'budget_exceeded')
 _CLIENT = None
 
 
+def gemini_key():
+    # En el entorno lead-master-video la variable quedó guardada como EMINI_API_KEY.
+    return os.environ.get('GEMINI_API_KEY') or os.environ.get('EMINI_API_KEY')
+
+
 def client():
     global _CLIENT
     if _CLIENT is not None:
         return _CLIENT
-    key = os.environ.get('GEMINI_API_KEY')
+    key = gemini_key()
     if not key:
         raise SystemExit('Falta GEMINI_API_KEY')
     _CLIENT = genai.Client(api_key=key)
@@ -75,7 +80,7 @@ def _video_bytes(it):
         raise SystemExit('La interacción terminó sin video: ' + it.model_dump_json()[:800])
     if v.data:
         return base64.b64decode(v.data) if isinstance(v.data, str) else bytes(v.data)
-    r = urllib.request.Request(v.uri, headers={'x-goog-api-key': os.environ['GEMINI_API_KEY']})
+    r = urllib.request.Request(v.uri, headers={'x-goog-api-key': gemini_key()})
     with urllib.request.urlopen(r, timeout=300) as resp:
         return resp.read()
 
