@@ -325,7 +325,7 @@
      "at": "@sistema",
      "color": "cyan",
      "size": 80,
-     "top": 1000
+     "top": 1110
     }
    },
    "sfx": [
@@ -349,7 +349,8 @@
      "at": "@sistema",
      "vol": 0.26
     }
-   ]
+   ],
+   "capY": 1290
   },
   {
    "at": "@Tus",

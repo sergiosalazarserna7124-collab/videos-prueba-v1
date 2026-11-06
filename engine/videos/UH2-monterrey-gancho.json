@@ -59,7 +59,7 @@
       "color": "cyan"
      }
     ],
-    "rowTop": 1050
+    "rowTop": 1125
    },
    "sfx": [
     {
@@ -91,7 +91,7 @@
      "at": "@vender",
      "color": "cyan",
      "size": 84,
-     "top": 1040
+     "top": 1110
     }
    },
    "sfx": [
@@ -105,7 +105,8 @@
      "at": "@vender",
      "vol": 0.26
     }
-   ]
+   ],
+   "capY": 1290
   }
  ]
 }
