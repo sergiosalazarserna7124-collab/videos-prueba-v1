@@ -137,17 +137,20 @@ UGC_SPLIT_CAP_Y = 925
 # Escala y desplazamiento del contenido en el panel de arriba según lo que se muestra (tarjeta o celular).
 # Los celulares se cortan abajo a propósito: lo importante está arriba de la pantalla.
 SPLIT_FIT = {'crm': (0.78, 24), 'note': (0.85, 4), 'cita': (0.84, 6), 'call': (0.88, -6), 'tasks': (0.92, -16),
-             'report': (0.85, 22), 'phonelist': (0.86, 18), 'stack': (0.8, 10)}
+             'report': (0.85, 22), 'phonelist': (0.86, 18), 'stack': (0.8, 10), 'chat': (0.82, 20)}
 UGC_LEAD = 0.07  # el corte entra un poco antes de la palabra
 
 
 def build_ugc(spec, safe=False):
     u = spec['ugc']
     vdur = probe_dur(os.path.join(PUB, u['src']))
-    total = int(vdur * FPS)
+    # "start"/"end" (segundos del video original) recortan silencios al inicio y al final.
+    t0, t1 = u.get('start', 0.0), min(vdur, u.get('end', vdur))
+    total = int((t1 - t0) * FPS)
     fix = spec.get('fix', {})
     raw = json.load(open(os.path.join(PUB, u['words'])))
-    W = [{'w': fix.get(x['w'], x['w']), 's': x['s'], 'e': x['e']} for x in raw]
+    W = [{'w': fix.get(x['w'], x['w']), 's': round(x['s'] - t0, 3), 'e': round(x['e'] - t0, 3)}
+         for x in raw if x['s'] >= t0 - 0.05 and x['s'] < t1]
     keywords = {norm(k) for k in spec.get('keywords', []) + BASE_KEYWORDS}
 
     def find(v, after):
@@ -236,7 +239,8 @@ def build_ugc(spec, safe=False):
         'music': {'src': spec['music'], 'vol': spec.get('musicVol', 0.05), 'from': 0} if spec.get('music') else None,
         'safeDebug': safe,
         'base': {'src': u['src'], 'faceX': u['face'][0], 'faceY': u['face'][1], 'faceTop': u['face'][2],
-                 'zoom': u.get('zoom', 1.2), 'splitZoom': u.get('splitZoom', 1.0), 'splitHead': u.get('splitHead', 40), 'segs': segs, 'vol': u.get('vol', 1.0)},
+                 'zoom': u.get('zoom', 1.2), 'splitZoom': u.get('splitZoom', 1.0), 'splitHead': u.get('splitHead', 40), 'segs': segs, 'vol': u.get('vol', 1.0),
+                 'startFrom': round(t0 * FPS)},
         'capYs': cap_ys,
     }
     os.makedirs(os.path.join(ROOT, 'build'), exist_ok=True)
@@ -362,6 +366,7 @@ def build(spec_path, safe=False):
 
 
 UGC_CHUNK = 300  # cuadros por tramo
+PARTS = set()  # ids de specs con "part": true
 
 
 def render_ugc(spec_id, props_path, raw, common):
@@ -418,6 +423,8 @@ def render(spec_id, props_path, still=None):
     raw = os.path.join(ROOT, 'build', f'{spec_id}.raw.mp4')
     if 'base' in json.load(open(props_path)):
         render_ugc(spec_id, props_path, raw, common)
+        if spec_id in PARTS:
+            return raw  # gancho o cuerpo suelto: lo une tools/ugc_combo.py
     else:
         cmd = base + ['render', 'src/index.ts', 'Reel', raw, '--codec=h264', '--crf=18',
                       '--concurrency=3', '--audio-bitrate=320k', '--timeout=240000'] + common
@@ -442,6 +449,8 @@ if __name__ == '__main__':
     still = None
     if '--still' in sys.argv:
         still = [int(x) for x in sys.argv[sys.argv.index('--still') + 1].split(',')]
+    if json.load(open(spec_path)).get('part'):
+        PARTS.add(json.load(open(spec_path))['id'])
     props, path = build(spec_path, safe)
     if still is not None:
         for s in still:

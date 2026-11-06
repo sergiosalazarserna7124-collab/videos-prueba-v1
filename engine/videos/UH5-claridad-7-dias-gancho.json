@@ -1,0 +1,97 @@
+{
+ "id": "UH5-claridad-7-dias-gancho",
+ "title": "Gancho H5 · Claridad en 7 días",
+ "part": true,
+ "ugc": {
+  "src": "ugc/h_7d.mp4",
+  "words": "ugc/h_7d.words.json",
+  "face": [
+   540,
+   865,
+   484
+  ],
+  "zoom": 1.0,
+  "splitZoom": 1.0,
+  "splitHead": -70,
+  "start": 0.12,
+  "end": 9.31,
+  "intro": {
+   "img": "queretaro_house",
+   "frames": 284,
+   "fade": [
+    1450,
+    1900
+   ]
+  }
+ },
+ "keywords": [
+  "leads",
+  "lead",
+  "asesores",
+  "inmobiliaria",
+  "Jalisco",
+  "Monterrey",
+  "Mérida",
+  "control",
+  "robando",
+  "desarrollos",
+  "departamentos",
+  "claridad",
+  "perdiendo",
+  "gestión",
+  "ventas",
+  "monitorear"
+ ],
+ "scenes": [
+  {
+   "layout": "face",
+   "p": {
+    "kicker": "Inmobiliarias",
+    "lines": [
+     "LO QUE HACEN CON",
+     "TUS [LEADS] EN 7 DÍAS"
+    ],
+    "size": 100
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ]
+  },
+  {
+   "at": "@y",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "LAS VENTAS QUE",
+     "ESTÁS [PERDIENDO]"
+    ],
+    "lineAts": [
+     "@ventas",
+     "@perdiendo"
+    ],
+    "stamp": {
+     "text": "MALA GESTIÓN",
+     "at": "@gestión",
+     "size": 88,
+     "top": 1000
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@perdiendo",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@gestión",
+     "vol": 0.26
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,108 @@
+{
+ "id": "UH4-robando-leads-gancho",
+ "title": "Gancho H4 · Robando leads",
+ "part": true,
+ "ugc": {
+  "src": "ugc/h_rob.mp4",
+  "words": "ugc/h_rob.words.json",
+  "face": [
+   553,
+   865,
+   484
+  ],
+  "zoom": 1.0,
+  "splitZoom": 1.0,
+  "splitHead": -70,
+  "start": 0.14,
+  "end": 7.23,
+  "intro": {
+   "img": "polanco_building",
+   "frames": 226,
+   "fade": [
+    1450,
+    1900
+   ]
+  }
+ },
+ "keywords": [
+  "leads",
+  "lead",
+  "asesores",
+  "inmobiliaria",
+  "Jalisco",
+  "Monterrey",
+  "Mérida",
+  "control",
+  "robando",
+  "desarrollos",
+  "departamentos",
+  "claridad",
+  "perdiendo",
+  "gestión",
+  "ventas",
+  "monitorear"
+ ],
+ "scenes": [
+  {
+   "layout": "face",
+   "p": {
+    "kicker": "Inmobiliarias",
+    "lines": [
+     "¿TUS ASESORES SE ROBAN",
+     "TUS [LEADS]?"
+    ],
+    "size": 104
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ]
+  },
+  {
+   "at": "@para",
+   "layout": "face",
+   "p": {
+    "row": [
+     {
+      "t": "Desarrollos",
+      "at": "@desarrollos",
+      "color": "cyan"
+     },
+     {
+      "t": "Departamentos",
+      "at": "@departamentos",
+      "color": "purple"
+     }
+    ],
+    "rowTop": 300,
+    "stamp": {
+     "text": "Y NI CUENTA TE DAS",
+     "at": "@cuenta",
+     "size": 80,
+     "top": 1000
+    },
+    "shadeH": 600
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@desarrollos",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@departamentos",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@cuenta",
+     "vol": 0.26
+    }
+   ]
+  }
+ ]
+}

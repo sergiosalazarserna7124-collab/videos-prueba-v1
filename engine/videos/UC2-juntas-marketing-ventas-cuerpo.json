@@ -1,0 +1,495 @@
+{
+ "id": "UC2-juntas-marketing-ventas-cuerpo",
+ "title": "Cuerpo C2 · Juntas de marketing y ventas",
+ "part": true,
+ "ugc": {
+  "src": "ugc/c2.mp4",
+  "words": "ugc/c2.words.json",
+  "face": [
+   583,
+   843,
+   467
+  ],
+  "zoom": 1.0,
+  "splitZoom": 1.0,
+  "splitHead": -70
+ },
+ "keywords": [
+  "marketing",
+  "ventas",
+  "leads.",
+  "basura",
+  "mentira",
+  "estresado",
+  "pelearon.",
+  "semanas.",
+  "lead",
+  "CRM",
+  "etapa,",
+  "nota",
+  "leads,",
+  "malo,",
+  "asesor.",
+  "WhatsApp",
+  "sistema",
+  "llamada,",
+  "chat,",
+  "cita",
+  "dinero,"
+ ],
+ "scenes": [
+  {
+   "layout": "full",
+   "type": "photo",
+   "p": {
+    "img": "marketing_sales_fight",
+    "lines": [
+     "MARKETING",
+     "VS. [VENTAS]"
+    ],
+    "lineAts": [
+     0,
+     "@ventas"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.16
+    }
+   ]
+  },
+  {
+   "at": "@El",
+   "layout": "split",
+   "type": "chat",
+   "p": {
+    "contact": "Junta comercial",
+    "sub": "Marketing, ventas y tú",
+    "top": 300,
+    "height": 760,
+    "messages": [
+     {
+      "from": "in",
+      "text": "Marketing: conseguimos mil leads",
+      "at": "@conseguimos"
+     },
+     {
+      "from": "out",
+      "text": "Ventas: y no se vendió nada",
+      "at": "@vendió"
+     },
+     {
+      "from": "out",
+      "text": "Asesor: esos leads son basura",
+      "at": "@basura"
+     },
+     {
+      "from": "out",
+      "text": "Asesor: nadie me contestó",
+      "at": "@contestó"
+     },
+     {
+      "from": "in",
+      "text": "Marketing: es mentira, se tardan en llamarles",
+      "at": "@mentira"
+     },
+     {
+      "from": "out",
+      "text": "Asesor: les llamé 10 veces a cada uno",
+      "at": "@diez"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/notif.wav",
+     "at": "@conseguimos",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@vendió",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@basura",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@contestó",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@mentira",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@diez",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@estás-14",
+   "layout": "full",
+   "type": "photo",
+   "p": {
+    "img": "owner_stressed",
+    "lines": [
+     "¿A QUIÉN",
+     "LE [CREES]?"
+    ],
+    "lineAts": [
+     0,
+     "@creerle"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@creerle",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Al",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "SOLO",
+     "[PELEARON]"
+    ],
+    "lineAts": [
+     0,
+     "@pelearon"
+    ],
+    "stamp": {
+     "text": "TODAS LAS SEMANAS",
+     "at": "@semanas",
+     "size": 80,
+     "top": 1000
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": "@pelearon",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@semanas",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "at": "@Estás",
+   "layout": "full",
+   "type": "floatchats",
+   "p": {
+    "img": "scrolling_ads",
+    "lines": [
+     "NI IDEA DE QUÉ",
+     "PASÓ CON CADA [LEAD]"
+    ],
+    "lineAts": [
+     "@idea",
+     "@lead"
+    ],
+    "titleTop": 640,
+    "size": 104
+   },
+   "sfx": [
+    {
+     "src": "sfx/riser.wav",
+     "at": 0,
+     "vol": 0.07
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@lead",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@probaste-6",
+   "layout": "split",
+   "ins": [
+    {
+     "kind": "crm",
+     "at": 0,
+     "p": {
+      "stale": true,
+      "chip": "Nadie lo actualiza"
+     }
+    }
+   ]
+  },
+  {
+   "at": "@no",
+   "layout": "face",
+   "p": {
+    "pills": [
+     {
+      "t": "No registran lo que pasa",
+      "at": "@registran"
+     },
+     {
+      "t": "No mueven la etapa",
+      "at": "@etapa"
+     },
+     {
+      "t": "No ponen la nota",
+      "at": "@nota"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@registran",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@etapa",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@nota",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Por",
+   "layout": "face",
+   "p": {
+    "big": {
+     "text": "+15",
+     "sub": "INMOBILIARIAS LO USAN",
+     "at": "@quince",
+     "top": 270,
+     "size": 190,
+     "subSize": 70
+    },
+    "row": [
+     {
+      "t": "México",
+      "at": "@México"
+     },
+     {
+      "t": "Estados Unidos",
+      "at": "@Estados",
+      "color": "purple"
+     },
+     {
+      "t": "Colombia",
+      "at": "@Colombia",
+      "color": "green"
+     }
+    ],
+    "rowTop": 1050
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": "@quince",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@México",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@Estados",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@Colombia",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@te",
+   "layout": "full",
+   "type": "panel",
+   "p": {
+    "title": "Qué pasó con cada lead",
+    "rows": [
+     {
+      "ch": "call",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "5 intentos, nunca contestó.",
+      "status": "Lead malo",
+      "color": "amber",
+      "at": "@malo"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Diego Herrera",
+      "lead": "Adriana Solís",
+      "summary": "Nunca le escribió. Se perdió por el asesor.",
+      "status": "Culpa del asesor",
+      "color": "red",
+      "at": "@asesor"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/ding.wav",
+     "at": "@malo",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@asesor",
+     "vol": 0.08
+    }
+   ]
+  },
+  {
+   "at": "@mejor-4",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "SOLO HABLAN",
+     "Y [LLAMAN]"
+    ],
+    "lineAts": [
+     0,
+     "@llamarlos"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamarlos",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@sistema-3",
+   "layout": "split",
+   "ins": [
+    {
+     "kind": "call",
+     "at": 0,
+     "p": {
+      "advisor": "Paola Gutiérrez",
+      "lead": "Lucía Hernández"
+     }
+    },
+    {
+     "kind": "cita",
+     "at": "@cita",
+     "p": {
+      "mode": "done",
+      "doneText": "Cita registrada",
+      "lead": "Lucía Hernández",
+      "advisor": "Paola Gutiérrez"
+     }
+    }
+   ]
+  },
+  {
+   "at": "@incluso",
+   "layout": "split",
+   "type": "phonelist",
+   "p": {
+    "title": "Qué hacer hoy",
+    "sub": "Lead Master · Paola G.",
+    "clock": "8:00",
+    "items": [
+     {
+      "t": "A quién llamar",
+      "at": "@llamar",
+      "color": "red",
+      "n": 6
+     },
+     {
+      "t": "A quién darle seguimiento",
+      "at": "@seguimiento",
+      "color": "amber",
+      "n": 4
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/notif.wav",
+     "at": 0,
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamar",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@seguimiento",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Así",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "¿CANSADO DE",
+     "PERDER [DINERO]?"
+    ],
+    "lineAts": [
+     0,
+     "@dinero"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": "@dinero",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@dale",
+   "layout": "face",
+   "p": {
+    "cta": {
+     "lines": [
+      "TU EQUIPO,",
+      "[BAJO CONTROL]"
+     ],
+     "button": "Dale clic abajo"
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}

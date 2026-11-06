@@ -1,0 +1,541 @@
+{
+ "id": "UC1-crm-que-nadie-usa-cuerpo",
+ "title": "Cuerpo C1 · El CRM que nadie usa",
+ "part": true,
+ "ugc": {
+  "src": "ugc/c1.mp4",
+  "words": "ugc/c1.words.json",
+  "face": [
+   518,
+   908,
+   528
+  ],
+  "zoom": 1.0,
+  "splitZoom": 1.0,
+  "splitHead": -70
+ },
+ "fix": {
+  "cartas,": "cartas",
+  "ofertas": "oferta"
+ },
+ "keywords": [
+  "CRM",
+  "etapas,",
+  "notas",
+  "tareas.",
+  "carga,",
+  "WhatsApp.",
+  "WhatsApp",
+  "reportes",
+  "leads,",
+  "ventas.",
+  "lead,",
+  "sistema",
+  "sistema.",
+  "reporte",
+  "olvido.",
+  "recorridos,",
+  "ventas,",
+  "cartas",
+  "oferta"
+ ],
+ "scenes": [
+  {
+   "layout": "full",
+   "type": "stat",
+   "p": {
+    "title": "Inmobiliarias que implementan un CRM",
+    "img": "empty_desk",
+    "items": [
+     {
+      "value": 8,
+      "label": "de cada 10 no terminan usándolo",
+      "at": "@diez",
+      "color": "red"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": "@diez",
+     "vol": 0.14
+    }
+   ]
+  },
+  {
+   "at": "@Y",
+   "layout": "face",
+   "p": {
+    "pills": [
+     {
+      "t": "No actualizan etapas",
+      "at": "@etapas"
+     },
+     {
+      "t": "No completan notas",
+      "at": "@notas"
+     },
+     {
+      "t": "No crean tareas",
+      "at": "@tareas"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@etapas",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@notas",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@tareas",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@esto-4",
+   "layout": "full",
+   "type": "photo",
+   "p": {
+    "img": "advisor_notebook",
+    "lines": [
+     "EL CRM ES",
+     "UNA [CARGA]"
+    ],
+    "lineAts": [
+     0,
+     "@carga"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@carga",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Por",
+   "layout": "full",
+   "type": "floatchats",
+   "p": {
+    "img": "advisor_night",
+    "lines": [
+     "TODO EN SU",
+     "[WHATSAPP]"
+    ],
+    "lineAts": [
+     0,
+     "@WhatsApp"
+    ],
+    "titleTop": 640,
+    "bubbles": [
+     "Hola, ¿sigue disponible?",
+     "Te mando info",
+     "¿Cuándo lo vemos?"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/riser.wav",
+     "at": 0,
+     "vol": 0.07
+    }
+   ]
+  },
+  {
+   "at": "@No",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "SIN [REPORTES]",
+     "DE LO QUE PASA"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@marketing",
+   "layout": "full",
+   "type": "stat",
+   "p": {
+    "title": "Lo que celebra marketing",
+    "img": "marketing_sales_fight",
+    "stacked": true,
+    "items": [
+     {
+      "value": 1000,
+      "label": "leads",
+      "at": "@mil",
+      "color": "cyan"
+     },
+     {
+      "value": 3,
+      "label": "cartas oferta",
+      "at": "@cartas",
+      "color": "amber"
+     },
+     {
+      "value": 0,
+      "label": "ventas",
+      "at": "@cero",
+      "color": "red"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@mil",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@cartas",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@cero",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@Lo",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "¿QUÉ PASÓ CON",
+     "CADA [LEAD]?"
+    ],
+    "lineAts": [
+     0,
+     "@lead"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@lead",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@si",
+   "layout": "split",
+   "ins": [
+    {
+     "kind": "call",
+     "at": 0,
+     "p": {
+      "missed": true,
+      "advisor": "Diego Herrera",
+      "lead": "Diana Trejo",
+      "right": "¿Qué pasó?",
+      "when": "Lead de Meta",
+      "attempts": [
+       "Lunes · no contestó",
+       "Martes · sin llamada",
+       "Miércoles · sin llamada"
+      ],
+      "chip": "¿No contestó o no le llamaron?"
+     }
+    }
+   ]
+  },
+  {
+   "at": "@Por",
+   "layout": "full",
+   "type": "hub",
+   "p": {
+    "title": "MONITOREA A TU EQUIPO",
+    "centerAt": 0,
+    "nodes": [
+     {
+      "name": "Paola Gutiérrez",
+      "at": "@sistema"
+     },
+     {
+      "name": "Valeria Ríos",
+      "at": "@sistema+5"
+     },
+     {
+      "name": "Diego Herrera",
+      "at": "@monitorea"
+     },
+     {
+      "name": "Andrés Molina",
+      "at": "@monitorea+5"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@sistema",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@monitorea",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Ellos",
+   "layout": "face",
+   "p": {
+    "pills": [
+     {
+      "t": "Sin llenar el CRM",
+      "at": "@completar",
+      "icon": "check"
+     },
+     {
+      "t": "Sin mover etapas",
+      "at": "@moverlo",
+      "icon": "check"
+     },
+     {
+      "t": "Sin poner notas",
+      "at": "@notas",
+      "icon": "check"
+     }
+    ],
+    "stamp": {
+     "text": "LO HACE EL SISTEMA",
+     "at": "@sistema",
+     "color": "cyan",
+     "size": 80,
+     "top": 1000
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@completar",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@moverlo",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@notas",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@sistema",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "at": "@Tus",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "SOLO HABLAN POR",
+     "[WHATSAPP]"
+    ],
+    "lineAts": [
+     0,
+     "@WhatsApp"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@sistema-3",
+   "layout": "split",
+   "ins": [
+    {
+     "kind": "note",
+     "at": 0,
+     "p": {
+      "lead": "Lucía Hernández",
+      "tag": "Lead · WhatsApp",
+      "stage": "Interesada",
+      "typeAt": "@chat",
+      "note": "Pidió fotos del depa de 2 recámaras. Quiere visitarlo el sábado.",
+      "fields": [
+       {
+        "k": "Chats",
+        "v": "12"
+       },
+       {
+        "k": "Intentos",
+        "v": "4",
+        "at": "@intento"
+       },
+       {
+        "k": "Busca",
+        "v": "Depa 2 recámaras"
+       },
+       {
+        "k": "Etapa",
+        "v": "Interesada"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "cita",
+     "at": "@agenda",
+     "p": {
+      "mode": "confirm",
+      "confirmAt": "@citas",
+      "source": "Agendada sola por la IA",
+      "lead": "Lucía Hernández"
+     }
+    }
+   ]
+  },
+  {
+   "at": "@Todas",
+   "layout": "full",
+   "type": "ui",
+   "ins": [
+    {
+     "kind": "report",
+     "at": 0,
+     "p": {
+      "title": "Reporte semanal",
+      "time": "8:00 am",
+      "sched": "Tu reporte llega los lunes a las 8:00 am",
+      "alert": false,
+      "lines": [
+       {
+        "t": "Prospectos de la semana: 86",
+        "b": true
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@llamaron"
+       },
+       {
+        "t": "Llamados: 71",
+        "at": "@llamaron"
+       },
+       {
+        "t": "Nunca contestaron: 9",
+        "at": "@contestó",
+        "c": "amber"
+       },
+       {
+        "t": "Olvidados: 6 (Diego H.)",
+        "at": "@olvido",
+        "c": "red"
+       }
+      ]
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamaron",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@contestó",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@olvido",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@Así",
+   "layout": "face",
+   "p": {
+    "pills": [
+     {
+      "t": "Más recorridos",
+      "at": "@recorridos",
+      "icon": "check"
+     },
+     {
+      "t": "Más cartas oferta",
+      "at": "@cartas",
+      "icon": "check"
+     },
+     {
+      "t": "Más ventas",
+      "at": "@ventas",
+      "icon": "check"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@recorridos",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@cartas",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@ventas",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "at": "@dale",
+   "layout": "face",
+   "p": {
+    "cta": {
+     "lines": [
+      "MÁS RECORRIDOS",
+      "Y [VENTAS]"
+     ],
+     "button": "Dale clic abajo"
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}

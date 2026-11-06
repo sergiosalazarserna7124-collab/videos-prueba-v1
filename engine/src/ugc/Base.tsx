@@ -18,7 +18,7 @@ const IN = 9; // cuadros de la transición a pantalla dividida
 
 export type Seg = {from: number; to: number; mode: 'face' | 'split' | 'full'; zoom?: number};
 // faceX/faceY: centro de la cara (nariz) y faceTop: coronilla, en coordenadas de 1080x1920 del video.
-export type UgcBase = {src: string; faceX: number; faceY: number; faceTop: number; zoom?: number; splitZoom?: number; splitHead?: number; segs: Seg[]; vol?: number};
+export type UgcBase = {src: string; faceX: number; faceY: number; faceTop: number; zoom?: number; splitZoom?: number; splitHead?: number; segs: Seg[]; vol?: number; startFrom?: number};
 
 type Geo = {top: number; x0: number; y0: number; z: number};
 
@@ -68,7 +68,7 @@ export const BaseVideo: React.FC<{base: UgcBase}> = ({base}) => {
           }}
         >
           <div style={{width: 1080, height: 1920, transform: `scale(${push})`, transformOrigin: `${base.faceX}px ${base.faceY}px`}}>
-            <OffthreadVideo src={staticFile(base.src)} volume={base.vol ?? 1} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+            <OffthreadVideo src={staticFile(base.src)} startFrom={base.startFrom ?? 0} volume={base.vol ?? 1} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
           </div>
         </div>
       </div>

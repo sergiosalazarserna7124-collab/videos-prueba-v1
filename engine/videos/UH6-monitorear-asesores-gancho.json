@@ -1,0 +1,121 @@
+{
+ "id": "UH6-monitorear-asesores-gancho",
+ "title": "Gancho H6 · Monitorear asesores",
+ "part": true,
+ "ugc": {
+  "src": "ugc/h_mon.mp4",
+  "words": "ugc/h_mon.words.json",
+  "face": [
+   562,
+   908,
+   528
+  ],
+  "zoom": 1.0,
+  "splitZoom": 1.0,
+  "splitHead": -70,
+  "start": 0.2,
+  "end": 11.29,
+  "intro": {
+   "img": "cancun_tower",
+   "frames": 349,
+   "fade": [
+    1450,
+    1900
+   ]
+  }
+ },
+ "keywords": [
+  "leads",
+  "lead",
+  "asesores",
+  "inmobiliaria",
+  "Jalisco",
+  "Monterrey",
+  "Mérida",
+  "control",
+  "robando",
+  "desarrollos",
+  "departamentos",
+  "claridad",
+  "perdiendo",
+  "gestión",
+  "ventas",
+  "monitorear"
+ ],
+ "scenes": [
+  {
+   "layout": "face",
+   "p": {
+    "kicker": "Inmobiliarias",
+    "lines": [
+     "LO MAL QUE TUS ASESORES",
+     "ATIENDEN TUS [LEADS]"
+    ],
+    "size": 88
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.2
+    }
+   ]
+  },
+  {
+   "at": "@te",
+   "layout": "face",
+   "p": {
+    "lines": [
+     "PODRÍAS VENDER",
+     "[MUCHO MÁS]"
+    ],
+    "lineAts": [
+     "@aumentar",
+     "@significativamente"
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@aumentar",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@significativamente",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "at": "@gracias",
+   "layout": "face",
+   "p": {
+    "pills": [
+     {
+      "t": "Sin leads para quien los atiende mal",
+      "at": "@darle",
+      "icon": "x"
+     },
+     {
+      "t": "O entrenarlos",
+      "at": "@entrenarlos",
+      "icon": "check"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/pop.wav",
+     "at": "@darle",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@entrenarlos",
+     "vol": 0.1
+    }
+   ]
+  }
+ ]
+}

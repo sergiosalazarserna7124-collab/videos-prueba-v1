@@ -1,0 +1,77 @@
+{
+ "musicVol": 0.08,
+ "combos": [
+  {
+   "id": "UH1-C1-jalisco-crm-que-nadie-usa",
+   "hook": "UH1-jalisco-gancho",
+   "body": "UC1-crm-que-nadie-usa-cuerpo",
+   "music": "music/pulse.mp3"
+  },
+  {
+   "id": "UH2-C1-monterrey-crm-que-nadie-usa",
+   "hook": "UH2-monterrey-gancho",
+   "body": "UC1-crm-que-nadie-usa-cuerpo",
+   "music": "music/pulse.mp3"
+  },
+  {
+   "id": "UH3-C1-merida-crm-que-nadie-usa",
+   "hook": "UH3-merida-gancho",
+   "body": "UC1-crm-que-nadie-usa-cuerpo",
+   "music": "music/pulse.mp3"
+  },
+  {
+   "id": "UH4-C1-robando-leads-crm-que-nadie-usa",
+   "hook": "UH4-robando-leads-gancho",
+   "body": "UC1-crm-que-nadie-usa-cuerpo",
+   "music": "music/pulse.mp3"
+  },
+  {
+   "id": "UH5-C1-claridad-7-dias-crm-que-nadie-usa",
+   "hook": "UH5-claridad-7-dias-gancho",
+   "body": "UC1-crm-que-nadie-usa-cuerpo",
+   "music": "music/pulse.mp3"
+  },
+  {
+   "id": "UH6-C1-monitorear-asesores-crm-que-nadie-usa",
+   "hook": "UH6-monitorear-asesores-gancho",
+   "body": "UC1-crm-que-nadie-usa-cuerpo",
+   "music": "music/pulse.mp3"
+  },
+  {
+   "id": "UH1-C2-jalisco-juntas-marketing-ventas",
+   "hook": "UH1-jalisco-gancho",
+   "body": "UC2-juntas-marketing-ventas-cuerpo",
+   "music": "music/drive.mp3"
+  },
+  {
+   "id": "UH2-C2-monterrey-juntas-marketing-ventas",
+   "hook": "UH2-monterrey-gancho",
+   "body": "UC2-juntas-marketing-ventas-cuerpo",
+   "music": "music/drive.mp3"
+  },
+  {
+   "id": "UH3-C2-merida-juntas-marketing-ventas",
+   "hook": "UH3-merida-gancho",
+   "body": "UC2-juntas-marketing-ventas-cuerpo",
+   "music": "music/drive.mp3"
+  },
+  {
+   "id": "UH4-C2-robando-leads-juntas-marketing-ventas",
+   "hook": "UH4-robando-leads-gancho",
+   "body": "UC2-juntas-marketing-ventas-cuerpo",
+   "music": "music/drive.mp3"
+  },
+  {
+   "id": "UH5-C2-claridad-7-dias-juntas-marketing-ventas",
+   "hook": "UH5-claridad-7-dias-gancho",
+   "body": "UC2-juntas-marketing-ventas-cuerpo",
+   "music": "music/drive.mp3"
+  },
+  {
+   "id": "UH6-C2-monitorear-asesores-juntas-marketing-ventas",
+   "hook": "UH6-monitorear-asesores-gancho",
+   "body": "UC2-juntas-marketing-ventas-cuerpo",
+   "music": "music/drive.mp3"
+  }
+ ]
+}
