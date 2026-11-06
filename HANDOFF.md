@@ -45,5 +45,11 @@ La escena `clip` (engine/src/scenes/Clip.tsx) pone el gancho "¿Y LOS REPORTES?"
 la música entra después de los clips. Probado con un clip de relleno: funciona.
 
 ## Instagram
-Las tareas programadas publican la cola `videos/ig_queue.json`. Sergio autorizó publicar Jalisco
-(ya publicado). Para los siguientes, preguntarle si quiere que se publiquen solos al llegar cada aviso.
+Instagram NO está en Metricool (Metricool solo tiene TikTok, Facebook y YouTube). Los reels de @leaad_master los
+publica Claude con Composio cuando llega cada aviso programado, siguiendo la cola `videos/ig_queue.json`.
+- Desde el 6 nov los avisos llegan a la sesión «Videos no subidos a Instagram» (rama `claude/dazzling-lovelace-todckv`).
+  Los avisos viejos de la sesión de videos quedaron apagados, para no publicar dos veces.
+- Sergio ya autorizó que salgan solos a su hora, sin pedirle permiso cada vez.
+- Solo van los videos nuevos de IA. Los que Sergio editó al inicio (status `no_instagram`) ya están en Instagram: no se suben.
+- Siempre como colaboración con @sergio_salazaar (no etiqueta).
+- Para meter un video nuevo a Instagram: agregarlo a `videos/ig_queue.json` como `pendiente` con su hora (`when`, Bogotá).

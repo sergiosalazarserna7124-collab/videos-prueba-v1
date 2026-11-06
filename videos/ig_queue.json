@@ -4,7 +4,7 @@
  "composio_account": "instagram_adept-warmth",
  "ig_user_id": "29073808048954218",
  "zona_horaria": "America/Bogota",
- "reglas": "Publicar cada item pendiente cuando llegue su hora (when, hora de Bogotá) como COLABORACIÓN con sergio_salazaar (no etiqueta). Crear el contenedor con COMPOSIO_PROXY_EXECUTE (toolkit instagram) POST https://graph.instagram.com/v21.0/29073808048954218/media con query: media_type=REELS, video_url=<video>, share_to_feed=true, collaborators=[\"sergio_salazaar\"], caption=<caption con # normal>. Si el item ya trae creation_id, usar ese. Publicar con INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH (cuenta instagram_adept-warmth, ig_user_id 29073808048954218, max_wait_seconds 50, reintentar si IN_PROGRESS). Luego status=publicado + ig_media_id + permalink.",
+ "reglas": "Publicar cada item pendiente cuando llegue su hora (when, hora de Bogotá) como COLABORACIÓN con sergio_salazaar (no etiqueta). Crear el contenedor con COMPOSIO_PROXY_EXECUTE (toolkit instagram) POST https://graph.instagram.com/v21.0/29073808048954218/media con query: media_type=REELS, video_url=<video>, share_to_feed=true, collaborators=[\"sergio_salazaar\"], caption=<caption con # normal>. Si el item ya trae creation_id, usar ese. Publicar con INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH (cuenta instagram_adept-warmth, ig_user_id 29073808048954218, max_wait_seconds 50, reintentar si IN_PROGRESS). Luego status=publicado + ig_media_id + permalink. Solo van los videos nuevos de IA: los videos que Sergio editó al inicio (status no_instagram) ya están en Instagram y NO se suben. Sergio autorizó publicar solos todos los pendientes a su hora (5 y 6 nov). Antes de publicar, revisar los últimos posts de @leaad_master para no duplicar.",
  "items": [
   {
    "when": "2026-11-05T11:45",
@@ -47,32 +47,15 @@
    "permalink": "https://www.instagram.com/reel/DfX98z_Er8K/"
   },
   {
-   "when": "2026-11-05T18:00",
-   "title": "Idea 4 · Curiosos vs compradores",
-   "video": "https://static.metricool.com/planner/202611/7885543-file-2876673229898588681.mp4",
-   "caption": "¿Por qué Meta te sigue mandando puros curiosos? Este sistema lee cada conversación, saca qué busca el lead, en qué zona, con qué presupuesto y qué tan pronto quiere comprar, y le avisa a Meta quién sí agenda para que tus anuncios busquen más gente así.\nComenta LEADS y te mando cómo funciona.\n#inmobiliarias #metaads #marketinginmobiliario #leads #bienesraices",
-   "status": "pendiente"
-  },
-  {
-   "when": "2026-11-05T19:15",
-   "title": "Idea 12 · Orgullo GoHighLevel",
-   "video": "https://static.metricool.com/planner/202611/7885543-file-12714744512155006254.mp4",
-   "caption": "Dices con orgullo que pagas GoHighLevel… y tus asesores siguen anotando en una libreta. Tener las herramientas no es tener el control. Lead Master conecta tu GoHighLevel con el WhatsApp y las llamadas de tus asesores y llena el CRM solo.\nComenta GHL y te mando cómo funciona.\n#gohighlevel #inmobiliarias #crm #bienesraices #asesoresinmobiliarios",
-   "status": "pendiente"
-  },
-  {
-   "when": "2026-11-05T20:30",
-   "title": "Idea 3 · Este CRM se mueve solo",
-   "video": "https://static.metricool.com/planner/202611/7885543-file-6035548245611221919.mp4",
-   "caption": "Este CRM se mueve solo. Tu asesor habla con el lead por WhatsApp como siempre y el sistema anota qué busca, escribe la nota, mueve la etapa y le deja la cita lista para confirmar.\nComenta CRM y te enseño cómo funcionaría en tu inmobiliaria.\n#inmobiliarias #crm #bienesraices #asesoresinmobiliarios #leads",
-   "status": "pendiente"
-  },
-  {
    "when": "2026-11-06T08:00",
    "title": "G3 · Si crees que se roban los leads",
    "video": "https://static.metricool.com/planner/202611/7885543-file-33479937941277715.mp4",
    "caption": "Si crees que tus asesores se roban los leads que les das, esto es lo que yo haría: conectar el WhatsApp de cada asesor al CRM (solo las conversaciones con leads), que todas las llamadas salgan del sistema y queden grabadas, y recibir un aviso si un lead se queda sin seguimiento. Si el asesor se va, el historial se queda en tu inmobiliaria.\nComenta CONTROL y te mando cómo funciona.\n#inmobiliarias #asesoresinmobiliarios #crm #leads #bienesraices",
-   "status": "pendiente"
+   "status": "publicado",
+   "creation_id": "18110583362285889",
+   "ig_media_id": "18358953541168782",
+   "permalink": "https://www.instagram.com/reel/DfaKcxUDmhn/",
+   "nota": "publicado atrasado el 6 nov a las 12:40 (los avisos no lo publicaron)"
   },
   {
    "when": "2026-11-06T10:00",
@@ -87,7 +70,20 @@
    "title": "F · Lead Master en un minuto",
    "video": "https://static.metricool.com/planner/202611/7885543-file-14229336481189901785.mp4",
    "caption": "Qué es Lead Master, en un minuto: 1) junta todos tus leads y los reparte; si un asesor no atiende a tiempo, pasa al siguiente. 2) Vive en el WhatsApp y las llamadas de tu equipo. 3) Le dice a cada asesor a quién llamar. 4) Te da los reportes sin que nadie llene nada. 5) Le avisa a Meta quién sí agenda y compra.\nComenta DEMO y te mando cómo funciona.\n#inmobiliarias #crm #bienesraices #leadmaster #asesoresinmobiliarios",
-   "status": "pendiente"
+   "status": "publicado",
+   "creation_id": "18110583365285889",
+   "ig_media_id": "18013929828002764",
+   "permalink": "https://www.instagram.com/reel/DfaKdEjErxt/",
+   "nota": "publicado atrasado el 6 nov a las 12:40 (los avisos no lo publicaron)"
+  },
+  {
+   "when": "2026-11-06T14:00",
+   "title": "Idea 4 · Curiosos vs compradores",
+   "video": "https://static.metricool.com/planner/202611/7885543-file-2876673229898588681.mp4",
+   "caption": "¿Por qué Meta te sigue mandando puros curiosos? Este sistema lee cada conversación, saca qué busca el lead, en qué zona, con qué presupuesto y qué tan pronto quiere comprar, y le avisa a Meta quién sí agenda para que tus anuncios busquen más gente así.\nComenta LEADS y te mando cómo funciona.\n#inmobiliarias #metaads #marketinginmobiliario #leads #bienesraices",
+   "status": "pendiente",
+   "when_original": "2026-11-05T18:00",
+   "nota": "atrasado del 5 nov: pasa a un hueco libre de Instagram (hora de un video editado al inicio)"
   },
   {
    "when": "2026-11-06T14:00",
@@ -134,11 +130,29 @@
    "nota": "video editado al inicio: ya está en Instagram, no se duplica"
   },
   {
+   "when": "2026-11-07T10:00",
+   "title": "Idea 3 · Este CRM se mueve solo",
+   "video": "https://static.metricool.com/planner/202611/7885543-file-6035548245611221919.mp4",
+   "caption": "Este CRM se mueve solo. Tu asesor habla con el lead por WhatsApp como siempre y el sistema anota qué busca, escribe la nota, mueve la etapa y le deja la cita lista para confirmar.\nComenta CRM y te enseño cómo funcionaría en tu inmobiliaria.\n#inmobiliarias #crm #bienesraices #asesoresinmobiliarios #leads",
+   "status": "pendiente",
+   "when_original": "2026-11-05T20:30",
+   "nota": "atrasado del 5 nov: pasa a un hueco libre de Instagram (hora de un video editado al inicio)"
+  },
+  {
    "when": "2026-11-07T12:00",
    "title": "Idea 1 · Monterrey",
    "video": "https://static.metricool.com/planner/202611/7885543-file-15422568517791490899.mp4",
    "caption": "Si yo tuviera una inmobiliaria en Monterrey con más de 5 asesores y no supiera qué hacen con los leads que les doy, esto es lo que haría: conectar el WhatsApp y las llamadas al CRM, dejar que la IA llene la nota y la etapa, y recibir el reporte del equipo todos los días en mi WhatsApp.\nComenta REPORTE y te mando cómo funciona.\n#inmobiliarias #monterrey #bienesraices #crm #asesoresinmobiliarios",
    "status": "pendiente"
+  },
+  {
+   "when": "2026-11-07T14:00",
+   "title": "Idea 12 · Orgullo GoHighLevel",
+   "video": "https://static.metricool.com/planner/202611/7885543-file-12714744512155006254.mp4",
+   "caption": "Dices con orgullo que pagas GoHighLevel… y tus asesores siguen anotando en una libreta. Tener las herramientas no es tener el control. Lead Master conecta tu GoHighLevel con el WhatsApp y las llamadas de tus asesores y llena el CRM solo.\nComenta GHL y te mando cómo funciona.\n#gohighlevel #inmobiliarias #crm #bienesraices #asesoresinmobiliarios",
+   "status": "pendiente",
+   "when_original": "2026-11-05T19:15",
+   "nota": "atrasado del 5 nov: pasa a un hueco libre de Instagram (hora de un video editado al inicio)"
   },
   {
    "when": "2026-11-07T14:00",
