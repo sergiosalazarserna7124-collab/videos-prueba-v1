@@ -10,7 +10,10 @@ for spec in videos/*.json; do
   missing=$(python3 - "$spec" <<'EOF'
 import json, os, sys
 s = json.load(open(sys.argv[1]))
-print(sum(1 for sc in s['scenes'] if not os.path.exists(f"public/tts/{sc['key']}.json")))
+if 'ugc' in s:  # UGC: la voz es la del video de ella
+    print(0 if os.path.exists(os.path.join('public', s['ugc']['src'])) else 1)
+else:
+    print(sum(1 for sc in s['scenes'] if not os.path.exists(f"public/tts/{sc['key']}.json")))
 EOF
 )
   if [ "$missing" != "0" ]; then echo "FALTA_VOZ $id ($missing escenas)"; continue; fi
