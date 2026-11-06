@@ -10,7 +10,7 @@ import {BrandBg, NoBgCtx} from '../ui/Bg';
 //   full  -> gráfico a pantalla completa (ella se sigue oyendo)
 
 export const SPLIT_Y = 960; // alto del panel de arriba en pantalla dividida
-export const SPLIT_CAP_Y = 905; // subtítulos sobre la línea divisoria
+export const SPLIT_CAP_Y = 925; // subtítulos sobre la línea divisoria
 const HEAD_FACE = 500; // dónde queda la coronilla cuando habla a cámara (deja aire para el título)
 const K = 0.72; // escala del contenido del motor dentro del panel de arriba
 const TY = 40;

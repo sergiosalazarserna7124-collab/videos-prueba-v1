@@ -131,7 +131,11 @@ def insert_sfx(x):
 # Video de la modelo hablando a cámara: su voz manda. Cada escena empieza en una palabra de ella
 # ("at": "@palabra", se busca después del inicio de la escena anterior) y dura hasta la siguiente.
 # layout: face (ella completa + "over" encima) | split (sistema arriba, ella abajo) | full (gráfico).
-UGC_SPLIT_CAP_Y = 905
+UGC_SPLIT_CAP_Y = 925
+# Escala y desplazamiento del contenido en el panel de arriba según lo que se muestra (tarjeta o celular).
+# Los celulares se cortan abajo a propósito: lo importante está arriba de la pantalla.
+SPLIT_FIT = {'crm': (0.78, 24), 'note': (0.85, 4), 'cita': (0.84, 6), 'call': (0.88, -6), 'tasks': (0.92, -16),
+             'report': (0.85, 22), 'phonelist': (0.86, 18), 'stack': (0.8, 10)}
 UGC_LEAD = 0.07  # el corte entra un poco antes de la palabra
 
 
@@ -208,6 +212,9 @@ def build_ugc(spec, safe=False):
             out['ins'] = ins
         if layout == 'split':
             out['enter'] = prev_layout != 'split'
+            fits = [SPLIT_FIT[x['kind']] for x in ins if x['kind'] in SPLIT_FIT] or ([SPLIT_FIT[out['type']]] if out['type'] in SPLIT_FIT else [])
+            if fits:
+                out['k'], out['ty'] = min(fits)
             for k in ('k', 'ty'):
                 if k in sc:
                     out[k] = sc[k]

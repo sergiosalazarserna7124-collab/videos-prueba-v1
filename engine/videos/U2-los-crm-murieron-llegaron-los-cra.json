@@ -117,7 +117,7 @@
    ]
   },
   {
-   "at": "@Y",
+   "at": "@siempre-3",
    "layout": "full",
    "type": "photo",
    "p": {
@@ -269,7 +269,7 @@
    ]
   },
   {
-   "at": "@Y",
+   "at": "@aquí-2",
    "layout": "face",
    "p": {
     "lines": [
@@ -290,7 +290,7 @@
    ]
   },
   {
-   "at": "@El",
+   "at": "@CRM-5",
    "layout": "full",
    "type": "compare",
    "p": {
@@ -350,8 +350,6 @@
   {
    "at": "@Así",
    "layout": "split",
-   "k": 0.86,
-   "ty": 10,
    "ins": [
     {
      "kind": "tasks",
