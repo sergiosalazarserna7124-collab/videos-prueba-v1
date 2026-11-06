@@ -6,20 +6,20 @@ Estructura de todos: gancho con personas hechas con IA (8 a 16 s, sala de juntas
 
 _llamadas · P08 · Junta · ~36 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** ¿A CUÁNTOS / LES [LLAMARON]?
+**Gancho en pantalla:** 200 [LEADS] / ¿A CUÁNTOS?
 
 **Personas con IA**
 
 1. Plano medio de Don Ramiro de pie en la cabecera de la mesa de juntas; golpea la mesa con las dos manos, las tazas de café brincan y los asesores se echan para atrás.
-   - **Don Ramiro:** "¡Doscientos leads esta semana! ¿Y a cuántos les llamaron? ¡¿A cuántos?!"
+   - **Don Ramiro:** "¡Asesores inmobiliarios! Doscientos leads esta semana. ¿A cuántos les llamaron? ¡¿A cuántos?!"
    - Sonido: golpe en la mesa, tazas que tintinean
 2. Contraplano de Diego detrás de su laptop, sudando, se acomoda los lentes; Paola, a su lado, pone los ojos en blanco.
-   - **Diego:** "Jefe, es que hay que buscarlos uno por uno… y se me acaba el día."
+   - **Diego:** "Jefe, es que hay que buscar los leads uno por uno… y se me acaba el día."
    - Sonido: silencio incómodo, un grillo
 
 **Motor (narrador)**
 
-- `photo` · Si tu equipo tiene que buscar lead por lead, copiar el número, marcar y anotar, al final del día llamó a quince. Y los otros ciento ochenta y cinco se enfrían.  
+- `photo` · Si en tu inmobiliaria cada asesor tiene que buscar lead por lead, copiar el número, marcar y anotar, al final del día llamó a quince. Y los otros ciento ochenta y cinco se enfrían.  
   Pantalla: Titular: LEAD POR [LEAD]. Foto de asesor con libreta y celular; contador 15 de 200 en rojo.
 - `ui+call` · Con Lead Master tu asesor aprieta un botón y el sistema marca a toda su lista, uno tras otro. Si nadie contesta, pasa solo al siguiente.  
   Pantalla: Botón «Llamar a mi lista (200)». Insertos de llamada en cadena: Adriana Solís · no contesta → Lucía Hernández · no contesta → Diana Trejo · llamando…
@@ -32,21 +32,21 @@ _llamadas · P08 · Junta · ~36 s · Comenta SISTEMA_
 
 _llamadas · P08 · Junta · ~37 s · Comenta LEADS_
 
-**Gancho en pantalla:** SU CRM ES UNA / [LIBRETA]
+**Gancho en pantalla:** LEADS EN UNA / [LIBRETA]
 
 **Personas con IA**
 
 1. Sala de juntas. Paola señala con la pluma la libreta de Diego, llena de post-its de colores y garabatos; Diego la abraza contra el pecho, orgulloso.
-   - **Paola:** "Diego, ¿esa libreta es tu CRM?"
-   - **Diego:** "Es mi sistema, Paola. Tiene colores."
+   - **Paola:** "Diego, ¿así manejan los leads los asesores inmobiliarios en 2026? ¿En una libreta?"
+   - **Diego:** "Es mi sistema de leads, Paola. Tiene colores."
    - Sonido: risas contenidas
 2. Don Ramiro le quita la libreta a Diego y la hojea con cara de desesperación; se caen tres post-its al piso.
-   - **Don Ramiro:** "Aquí dice «llamar a la señora del depa». ¿Cuál señora? ¿Cuál depa?"
+   - **Don Ramiro:** "Aquí dice «llamar a la señora del depa». ¿Cuál señora? ¿Cuál lead?"
    - Sonido: post-its cayendo, suspiro largo
 
 **Motor (narrador)**
 
-- `photo` · Cuando el seguimiento vive en una libreta, nadie sabe a quién se le llamó, a quién le toca hoy ni qué se prometió. Y si el asesor la pierde, se pierden los leads.  
+- `photo` · Cuando en tu inmobiliaria el seguimiento vive en una libreta, nadie sabe a quién se le llamó, a quién le toca hoy ni qué se prometió. Y si el asesor la pierde, se pierden los leads.  
   Pantalla: Foto de libreta llena de post-its. Titular: ¿CUÁL [SEÑORA]?
 - `phonelist` · Con Lead Master, cada mañana tu asesor recibe en su WhatsApp la lista de a quién llamar: lo urgente, los que nunca buscó y los que se están enfriando.  
   Pantalla: Lista del día · 8:00 am: Lo urgente 3 · Nunca los has buscado 5 · Se están enfriando 4.
@@ -59,20 +59,20 @@ _llamadas · P08 · Junta · ~37 s · Comenta LEADS_
 
 _llamadas · P08 · Junta · ~35 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** [12] LLAMADAS / EN TODO EL DÍA
+**Gancho en pantalla:** [12] LEADS / EN TODO EL DÍA
 
 **Personas con IA**
 
 1. Rubén, con la laptop abierta y los lentes en la punta de la nariz, lee un reporte en voz alta; Diego se va hundiendo en su silla.
-   - **Rubén:** "Diego marcó a doce leads. En todo el día."
+   - **Rubén:** "Don Ramiro, nuestros asesores inmobiliarios marcaron a doce leads. Doce. En todo el día."
    - Sonido: teclado, carraspeo
 2. Don Ramiro se levanta despacio; la cara se le pone roja y le sale vapor de las orejas como olla exprés.
-   - **Don Ramiro:** "¿Doce? ¡Yo marco doce mientras se me enfría el café!"
+   - **Don Ramiro:** "¿Doce leads? ¡Yo marco doce mientras se me enfría el café!"
    - Sonido: silbido de olla exprés
 
 **Motor (narrador)**
 
-- `flow` · El problema no siempre es que tu asesor sea flojo. Entre llamada y llamada busca el número, lo copia, marca, cuelga, anota y vuelve a empezar. Ahí se le va la mañana.  
+- `flow` · En tu inmobiliaria el problema no siempre es que el asesor sea flojo. Entre llamada y llamada busca el número, lo copia, marca, cuelga, anota y vuelve a empezar. Ahí se le va la mañana.  
   Pantalla: Flujo con flechas: buscar → copiar → marcar → colgar → anotar → repetir. Reloj avanzando de 9:00 a 12:30.
 - `ui+call` · Con Lead Master aprieta un botón y el sistema marca solo. Si no contestan, pasa al siguiente. Si contestan, habla.  
   Pantalla: Insertos de llamada en cadena: Adriana Solís · no contesta → Lucía Hernández · no contesta → Diana Trejo · contestó.
@@ -85,20 +85,20 @@ _llamadas · P08 · Junta · ~35 s · Comenta SISTEMA_
 
 _llamadas · P08 · Frutinovela · ~36 s · Comenta CRM_
 
-**Gancho en pantalla:** ¿QUÉ LE / [PROMETISTE]?
+**Gancho en pantalla:** ¿QUÉ LE PROMETIÓ / AL [LEAD]?
 
 **Personas con IA**
 
 1. Sala de juntas de frutas con luz de telenovela. Plátano Diego, con manchas cafés de nervios, sostiene un teléfono que suena con las dos manos.
-   - **Plátano Diego:** "Lucía me está llamando… ¿qué le prometí? ¡No anoté nada!"
+   - **Plátano Diego:** "¡Soy asesor inmobiliario y no anoté nada de mis leads! ¿Qué le prometí a Lucía?"
    - Sonido: teléfono sonando, violines dramáticos
 2. Fresa Valeria, tranquila, se acomoda las hojitas de la corona y sonríe con superioridad; triple zoom dramático a su cara.
-   - **Fresa Valeria:** "Yo tampoco anoto, Plátano. Mis notas se escriben solas."
+   - **Fresa Valeria:** "Yo tampoco anoto mis leads, Plátano. Mis notas se escriben solas."
    - Sonido: golpe de telenovela: ¡tan, tan, taaan!
 
 **Motor (narrador)**
 
-- `photo` · Tus asesores hablan con decenas de leads por semana. Nadie se acuerda de todo y casi nadie lo anota. El lead lo nota cuando le preguntas lo mismo por tercera vez.  
+- `photo` · Los asesores de una inmobiliaria hablan con decenas de leads por semana. Nadie se acuerda de todo y casi nadie lo anota. El lead lo nota cuando le preguntas lo mismo por tercera vez.  
   Pantalla: Titular: ¿QUÉ LE [PROMETÍ]? Foto de asesor confundido mirando el celular.
 - `ui+note` · Con Lead Master las llamadas salen del sistema. Cuando cuelgas, lo que se habló ya está en las notas: qué busca, cuánto puede pagar y qué le prometiste.  
   Pantalla: Nota automática en Lucía Hernández: «Casa de 3 recámaras en Zapopan · hasta 4.5 millones · crédito bancario · prometí mandarle 3 opciones el martes».
@@ -111,15 +111,15 @@ _llamadas · P08 · Frutinovela · ~36 s · Comenta CRM_
 
 _llamadas · P08 · Junta · ~36 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** LLEGÓ A SU CITA / Y NADIE [SABÍA]
+**Gancho en pantalla:** EL [LEAD] LLEGÓ / Y NADIE SABÍA
 
 **Personas con IA**
 
 1. Don Ramiro entra de golpe a la sala de juntas con los brazos abiertos, señalando hacia la recepción a través de la puerta de vidrio.
-   - **Don Ramiro:** "¡Hay un cliente en recepción que dice que tiene cita! ¿Quién lo agendó?"
+   - **Don Ramiro:** "¡Asesores inmobiliarios! ¿Quién agenda a nuestros leads? Hay uno en recepción con cita y nadie sabía."
    - Sonido: puerta que se abre, murmullos
 2. Andrés, recargado con su chamarra de cuero, esconde el celular rápido y levanta la mano a medias.
-   - **Andrés:** "Yo, jefe. La agendé… en mi cabeza."
+   - **Andrés:** "Yo, jefe. Lo agendé… en mi cabeza."
    - Sonido: silencio, alguien se ríe bajito
 
 **Motor (narrador)**
@@ -142,7 +142,7 @@ _llamadas · P08 · Junta · ~36 s · Comenta LEADS_
 **Personas con IA**
 
 1. Don Ramiro de pie frente a una pantalla que proyecta un Excel enorme con miles de filas; voltea furioso hacia la mesa.
-   - **Don Ramiro:** "Tenemos tres mil leads viejos en este Excel. ¿Alguien les ha vuelto a marcar?"
+   - **Don Ramiro:** "¡Tres mil leads viejos en este Excel! ¿Algún asesor inmobiliario les ha vuelto a marcar?"
    - Sonido: zumbido de proyector
 2. Todos miran al techo. Rubén, sin levantar la vista de su laptop, se sube los lentes con un dedo.
    - **Rubén:** "Están en la pestaña que se llama «Ya no», jefe."
@@ -150,7 +150,7 @@ _llamadas · P08 · Junta · ~36 s · Comenta LEADS_
 
 **Motor (narrador)**
 
-- `stat` · Esos leads ya los pagaste. Muchos no compraron porque nadie les volvió a llamar, no porque no quisieran.  
+- `stat` · Esos leads ya los pagó tu inmobiliaria. Muchos no compraron porque nadie les volvió a llamar, no porque no quisieran.  
   Pantalla: Número gigante: 3,000 leads · ya pagados · 0 llamadas este año.
 - `ui+call` · Con Lead Master tu base vieja queda en una lista. Tu equipo aprieta un botón y el sistema les marca uno tras otro. El que no contesta se salta; el que contesta, habla con tu asesor.  
   Pantalla: Botón «Llamar a la lista: Base 2024 (3,000)». Insertos de llamada en cadena.
@@ -163,13 +163,13 @@ _llamadas · P08 · Junta · ~36 s · Comenta LEADS_
 
 _chat · P09 · Junta · ~34 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** «SÚPER BIEN, / [JEFE]»
+**Gancho en pantalla:** ¿Y LOS [LEADS]? / «SÚPER BIEN»
 
 **Personas con IA**
 
 1. Junta de los lunes. Don Ramiro, con los brazos cruzados, mira fijo a Diego; Diego sonríe demasiado.
-   - **Don Ramiro:** "Diego, ¿cómo vamos con los leads de hoy?"
-   - **Diego:** "¡Súper bien, jefe! A todos les marqué."
+   - **Don Ramiro:** "A ver, asesores inmobiliarios, ¿cómo vamos con los leads de hoy? Diego, tú primero."
+   - **Diego:** "¡Súper bien, jefe! A todos mis leads les marqué."
    - Sonido: reloj de pared
 2. Don Ramiro saca su celular, lee la pantalla despacio y levanta una ceja; a Diego se le borra la sonrisa.
    - **Don Ramiro:** "Aquí dice que le marcaste a dos. De veintiocho."
@@ -177,7 +177,7 @@ _chat · P09 · Junta · ~34 s · Comenta SISTEMA_
 
 **Motor (narrador)**
 
-- `photo` · Si para saber qué hizo tu equipo tienes que preguntarle a cada asesor, te van a contestar lo que quieres oír.  
+- `photo` · Si en tu inmobiliaria para saber qué hizo tu equipo tienes que preguntarle a cada asesor, te van a contestar lo que quieres oír.  
   Pantalla: Titular: TE DICEN LO QUE QUIERES [OÍR].
 - `chat` · En Lead Master le escribes al sistema como a una persona: ¿quién no ha llamado a sus leads de hoy? Y te contesta con lo que pasó en los chats y en las llamadas.  
   Pantalla: Chat con la IA de Lead Master. Pregunta: «¿Quién no ha llamado a sus leads de hoy?». Respuesta: «Diego H.: 2 de 28. Andrés M.: 9 de 22. Paola G. y Valeria R.: todos contactados.»
@@ -190,15 +190,15 @@ _chat · P09 · Junta · ~34 s · Comenta SISTEMA_
 
 _chat · P09 · Frutinovela · ~36 s · Comenta LEADS_
 
-**Gancho en pantalla:** NO SE ACUERDA / DE [NADA]
+**Gancho en pantalla:** UN [LEAD] / FURIOSO
 
 **Personas con IA**
 
 1. Sala de juntas de frutas con luz de telenovela. Don Piña, con la corona temblando de coraje, de pie frente a Plátano Diego.
-   - **Don Piña:** "¡Diana Trejo está furiosa! Dice que le prometiste algo. ¿Qué le prometiste, Plátano?"
+   - **Don Piña:** "¡Asesores inmobiliarios! Uno de nuestros leads está furioso: Diana Trejo. ¿Qué le prometiste, Plátano?"
    - Sonido: trueno, violines
 2. Plátano Diego tartamudea y mira a todos lados; Aguacate Andrés se esconde detrás de una maceta; zoom dramático a Plátano.
-   - **Plátano Diego:** "¿Prometer? Yo nunca prometo nada… creo… a veces."
+   - **Plátano Diego:** "¿Prometer? Yo nunca le prometo nada a los leads… creo… a veces."
    - Sonido: golpe de telenovela: ¡tan, tan, taaan!
 
 **Motor (narrador)**
@@ -216,20 +216,20 @@ _chat · P09 · Frutinovela · ~36 s · Comenta LEADS_
 
 _chat · P09 · Junta · ~35 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** UN REPORTE DE / [14] PESTAÑAS
+**Gancho en pantalla:** [LEADS] EN / 14 PESTAÑAS
 
 **Personas con IA**
 
 1. Rubén, orgulloso, proyecta un Excel con catorce pestañas de colores; tiene un control de presentaciones en la mano.
-   - **Rubén:** "Jefe, el reporte de la semana. Son catorce pestañas, empiezo por la de colores."
+   - **Rubén:** "Jefe, el reporte de leads de los asesores inmobiliarios. Son catorce pestañas, empiezo por la de colores."
    - Sonido: clic de presentador
 2. Don Ramiro, agotado, apoya la frente en la mesa y levanta un solo dedo sin levantar la cabeza.
-   - **Don Ramiro:** "Rubén. Yo solo quiero saber una cosa: ¿quién sacó citas esta semana?"
+   - **Don Ramiro:** "Rubén. Solo quiero saber una cosa: ¿qué leads sacaron cita esta semana?"
    - Sonido: suspiro largo
 
 **Motor (narrador)**
 
-- `photo` · Tu coordinador tarda días armando un reporte que nadie lee, porque tú solo quieres contestar una o dos preguntas.  
+- `photo` · En tu inmobiliaria el coordinador tarda días armando un reporte que nadie lee, porque tú solo quieres contestar una o dos preguntas.  
   Pantalla: Titular: 4 DÍAS PARA UN [REPORTE]. Foto de Excel de noche.
 - `chat` · En Lead Master se lo preguntas directo: ¿cuántas citas salieron esta semana y de qué asesor? Y te contesta con los datos de los chats y las llamadas, sin que nadie llene nada.  
   Pantalla: Chat. Pregunta: «¿Cuántas citas salieron esta semana y de quién?». Respuesta: «19 citas: Paola G. 7 · Valeria R. 6 · Andrés M. 4 · Diego H. 2.»
@@ -242,12 +242,12 @@ _chat · P09 · Junta · ~35 s · Comenta SISTEMA_
 
 _chat · P09 · Junta · ~34 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** DOMINGO, / [11] PM
+**Gancho en pantalla:** DOMINGO, 11 PM: / ¿Y LOS [LEADS]?
 
 **Personas con IA**
 
 1. Lunes en la sala de juntas. Don Ramiro, despeinado y ojeroso, levanta su celular y muestra un chat de grupo lleno de mensajes suyos sin respuesta.
-   - **Don Ramiro:** "¡El domingo a las once pregunté cuántas citas teníamos hoy! ¡Nadie contestó!"
+   - **Don Ramiro:** "¡Asesores inmobiliarios! El domingo a las once pregunté cuántos leads tenían cita. ¡Nadie contestó!"
    - Sonido: ráfaga de notificaciones de WhatsApp
 2. Diego y Paola se miran; Paola contesta sin despegar la vista de su café.
    - **Diego:** "Jefe… era domingo."
@@ -256,7 +256,7 @@ _chat · P09 · Junta · ~34 s · Comenta SISTEMA_
 
 **Motor (narrador)**
 
-- `photo` · Si para saber cómo viene tu semana tienes que escribirle a tu equipo en domingo, el problema no es tu equipo. Es que la información vive en sus celulares.  
+- `photo` · Si para saber cómo viene la semana de tu inmobiliaria tienes que escribirle a tu equipo en domingo, el problema no es tu equipo. Es que la información vive en sus celulares.  
   Pantalla: Titular: LA INFORMACIÓN VIVE EN SUS [CELULARES].
 - `chat` · Con Lead Master le preguntas al sistema desde tu celular, a la hora que quieras: ¿qué citas tenemos el lunes? ¿Qué leads entraron el fin de semana y quién los tiene?  
   Pantalla: Chat · domingo 23:04. «¿Qué citas tenemos mañana?» → «5 citas: 10:00 Diana Trejo (Paola G.) · 12:00 Lucía Hernández (Valeria R.)…». «¿Qué leads entraron el fin de semana?» → «23, todos asignados; 4 sin contacto (Diego H.)».
@@ -269,21 +269,21 @@ _chat · P09 · Junta · ~34 s · Comenta SISTEMA_
 
 _chat · P09 · Junta · ~36 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** ¿QUIÉN NO / [LLAMÓ] HOY?
+**Gancho en pantalla:** ¿QUIÉN NO LLAMÓ / A SUS [LEADS]?
 
 **Personas con IA**
 
 1. Plano medio de Don Ramiro de pie en la cabecera de la mesa, mirando a cada asesor con los ojos entrecerrados.
-   - **Don Ramiro:** "A ver. Que levante la mano el que NO llamó a sus leads hoy."
+   - **Don Ramiro:** "A ver, asesores inmobiliarios: que levante la mano el que NO llamó a sus leads hoy."
    - Sonido: silencio tenso, reloj de pared
 2. Diego, Andrés y Paola con los brazos cruzados; Don Ramiro voltea su celular hacia Diego y sonríe.
-   - **Diego:** "¡Yo llamé a todos, jefe! A todititos."
+   - **Diego:** "¡Yo llamé a todos mis leads, jefe! A todititos."
    - **Don Ramiro:** "Qué raro. La IA dice que hiciste dos llamadas."
    - Sonido: grillos
 
 **Motor (narrador)**
 
-- `photo` · En casi todas las juntas pasa lo mismo: preguntas quién hizo su trabajo y todos dicen que sí. Y tú no tienes cómo comprobarlo sin revisar celular por celular.  
+- `photo` · En casi todas las juntas de una inmobiliaria pasa lo mismo: preguntas quién hizo su trabajo y todos dicen que sí. Y tú no tienes cómo comprobarlo sin revisar celular por celular.  
   Pantalla: Foto de junta con asesores. Titular: TODOS DICEN QUE [SÍ].
 - `mock` · Con Lead Master le escribes al sistema como a una persona: ¿quién no llamó a sus leads hoy? Y te contesta en segundos, con nombres y números.  
   Pantalla: Chat con la IA de Lead Master. Pregunta: «¿Quién no llamó a sus leads hoy?». Respuesta: «Diego H.: 2 de 14 leads. Andrés M.: 5 de 11. Paola G.: 12 de 12.»
@@ -296,21 +296,21 @@ _chat · P09 · Junta · ~36 s · Comenta SISTEMA_
 
 _chat · P09 · Frutinovela · ~35 s · Comenta LEADS_
 
-**Gancho en pantalla:** ¿QUÉ LE / [PROMETISTE]?
+**Gancho en pantalla:** SE OLVIDÓ DE / SU [LEAD]
 
 **Personas con IA**
 
 1. Sala de juntas de frutas con música de telenovela. Plátano Diego contesta el celular, se pone pálido y tapa la bocina con la mano.
-   - **Plátano Diego:** "¡Es Lucía Hernández! ¿Qué le prometí? ¿¡Qué le prometí la semana pasada!?"
+   - **Plátano Diego:** "¡Soy el peor asesor inmobiliario! Llama Lucía, uno de mis leads, ¿y qué le prometí?"
    - Sonido: música dramática, celular vibrando
 2. Fresa Valeria, sentada a su lado, le quita el celular con calma y empieza a teclear; triple zoom dramático a Plátano.
-   - **Fresa Valeria:** "Tranquilo, Plátano. Le preguntamos al sistema."
-   - **Plátano Diego:** "¿El sistema se acuerda mejor que yo?"
+   - **Fresa Valeria:** "Tranquilo, Plátano. Le preguntamos al sistema qué le prometiste a tu lead."
+   - **Plátano Diego:** "¿El sistema se acuerda de mis leads mejor que yo?"
    - Sonido: trueno, golpe de piano
 
 **Motor (narrador)**
 
-- `photo` · Tu asesor habla con cuarenta leads a la semana. Es imposible que se acuerde de lo que le prometió a cada uno. Y el lead sí se acuerda.  
+- `photo` · En una inmobiliaria, cada asesor habla con cuarenta leads a la semana. Es imposible que se acuerde de lo que le prometió a cada uno. Y el lead sí se acuerda.  
   Pantalla: Foto de asesor con el celular lleno de chats. Titular: EL LEAD SÍ SE [ACUERDA].
 - `mock` · En Lead Master el asesor pregunta: ¿qué le prometí a Lucía Hernández? Y la IA le contesta con lo que se habló en el chat y en la llamada.  
   Pantalla: Chat con la IA. Pregunta: «¿Qué le prometí a Lucía Hernández?». Respuesta: «Mandarle 3 opciones en Del Valle hasta 4.5 millones y llamarla el jueves a las 6 pm. Le preocupa el crédito.»
@@ -323,21 +323,21 @@ _chat · P09 · Frutinovela · ~35 s · Comenta LEADS_
 
 _metricas · P10 · Junta · ~37 s · Comenta LEADS_
 
-**Gancho en pantalla:** NADIE / [CONTESTA]
+**Gancho en pantalla:** LOS [LEADS] NO / CONTESTAN
 
 **Personas con IA**
 
 1. Diego de pie frente a la mesa, con los brazos abiertos, indignado; golpea la mesa con la palma.
-   - **Diego:** "¡Jefe, esos leads no sirven! ¡Nadie contesta! ¡Nadie!"
+   - **Diego:** "¡Jefe, los asesores inmobiliarios no hacemos milagros! ¡Esos leads no contestan! ¡Nadie!"
    - Sonido: golpe en la mesa
 2. Don Ramiro voltea despacio hacia Paola, que levanta la mirada de su laptop con una ceja arriba.
-   - **Don Ramiro:** "¿Y a ti, Paola?"
+   - **Don Ramiro:** "¿Y a ti, Paola? ¿Te contestan esos leads?"
    - **Paola:** "A mí me contestan cuatro de cada diez. Los mismos leads."
    - Sonido: silencio incómodo
 
 **Motor (narrador)**
 
-- `photo` · Cuando un asesor dice que nadie contesta, casi siempre le crees. Y le echas la culpa a la campaña, al portal o a Meta.  
+- `photo` · Cuando un asesor de tu inmobiliaria dice que nadie contesta, casi siempre le crees. Y le echas la culpa a la campaña, al portal o a Meta.  
   Pantalla: Foto de asesor frustrado con el celular. Titular: ¿CULPA DEL [LEAD]?
 - `bars` · Lead Master mide la tasa de contestación de cada asesor. Si con los mismos leads a Paola le contestan cuatro de cada diez y a Diego uno, el problema no es el lead.  
   Pantalla: Barras de tasa de contestación: Paola G. 41 % · Valeria R. 37 % · Diego H. 9 %.
@@ -350,20 +350,20 @@ _metricas · P10 · Junta · ~37 s · Comenta LEADS_
 
 _metricas · P10 · Junta · ~35 s · Comenta LEADS_
 
-**Gancho en pantalla:** ¿A QUÉ HORA / [LLAMAS]?
+**Gancho en pantalla:** [LEADS] A LA / HORA DE COMER
 
 **Personas con IA**
 
 1. Diego en la sala de juntas con la boca llena, mordiendo una torta enorme y marcando con la otra mano.
-   - **Diego:** "Son las dos y media, jefe. Hora perfecta para llamar."
+   - **Diego:** "Dos y media, jefe. La hora perfecta para que un asesor inmobiliario le marque a sus leads."
    - Sonido: mordida, tono de llamada que nadie contesta
 2. Don Ramiro, rojo de coraje, señala la torta con el dedo tembloroso.
-   - **Don Ramiro:** "¡A esta hora tus clientes también están comiendo, Diego! ¡Como tú!"
+   - **Don Ramiro:** "¡A esta hora tus leads también están comiendo, Diego! ¡Como tú!"
    - Sonido: golpe en la mesa
 
 **Motor (narrador)**
 
-- `photo` · Tu equipo llama cuando tiene tiempo, no cuando el cliente puede contestar. Y luego te dice que los leads no contestan.  
+- `photo` · En tu inmobiliaria el equipo llama cuando tiene tiempo, no cuando el cliente puede contestar. Y luego te dice que los leads no contestan.  
   Pantalla: Foto de asesor comiendo en su escritorio. Titular: LLAMAN CUANDO [PUEDEN].
 - `bars` · Lead Master te muestra a qué hora te contestan más tus leads. En este ejemplo contestaban el triple entre siete y nueve de la noche, justo cuando nadie llamaba.  
   Pantalla: Barras por hora (datos de ejemplo): 9 am 18 % · 2 pm 7 % · 7 pm 39 % · 8 pm 34 %.
@@ -376,21 +376,21 @@ _metricas · P10 · Junta · ~35 s · Comenta LEADS_
 
 _metricas · P10 · Junta · ~36 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** 61 LLAMADAS / DE [7] SEGUNDOS
+**Gancho en pantalla:** 61 [LEADS] EN / 7 SEGUNDOS
 
 **Personas con IA**
 
 1. Andrés se pone de pie y presume con el celular en alto mientras los demás aplauden sin ganas.
-   - **Andrés:** "Sesenta y una llamadas ayer. Soy el que más llamó de toda la oficina."
+   - **Andrés:** "Sesenta y una llamadas a leads ayer. Soy el asesor inmobiliario que más llamó de toda la oficina."
    - Sonido: aplausos flojos
 2. Rubén se baja los lentes a la punta de la nariz y lee su laptop; Don Ramiro abre los ojos enormes.
    - **Rubén:** "Sesenta y una… de siete segundos cada una."
-   - **Don Ramiro:** "¿Siete segundos? ¡Eso ni es un hola!"
+   - **Don Ramiro:** "¿Siete segundos? ¡Eso ni es un hola para un lead!"
    - Sonido: disco rayado
 
 **Motor (narrador)**
 
-- `photo` · Contar llamadas no sirve de nada si no sabes cuánto duraron ni cuántas veces se intentó de verdad con cada lead.  
+- `photo` · En una inmobiliaria, contar llamadas no sirve de nada si no sabes cuánto duraron ni cuántas veces se intentó de verdad con cada lead.  
   Pantalla: Foto de asesor marcando sin parar. Titular: ¿LLAMADAS O [MARCADAS]?
 - `panel` · Lead Master te muestra por asesor cuántas llamadas hizo, cuánto duraron y cuántos intentos hubo por lead. Ahí ves quién de verdad está hablando con clientes.  
   Pantalla: Panel: Paola G. · 38 llamadas · 3:40 min promedio · 3 intentos por lead | Andrés M. · 61 llamadas · 0:07 min promedio · 1 intento por lead.
@@ -403,15 +403,15 @@ _metricas · P10 · Junta · ~36 s · Comenta SISTEMA_
 
 _metricas · P10 · Junta · ~37 s · Comenta LEADS_
 
-**Gancho en pantalla:** SEIS HORAS / PARA [CONTESTAR]
+**Gancho en pantalla:** SEIS HORAS / PARA UN [LEAD]
 
 **Personas con IA**
 
 1. Don Ramiro lee su celular en voz alta, con una calma que da miedo, de pie junto a Diego.
-   - **Don Ramiro:** "La señora preguntó a las diez de la mañana. ¿A qué hora le contestaste?"
+   - **Don Ramiro:** "¡Asesores inmobiliarios! Los leads preguntan a las diez de la mañana. ¿A qué hora les contestan?"
    - Sonido: reloj de pared con tic tac fuerte
 2. Diego mira al techo, cuenta con los dedos y sonríe nervioso.
-   - **Diego:** "A las cuatro… y cuarto. Pero le contesté con mucho cariño, jefe."
+   - **Diego:** "A las cuatro… y cuarto. Pero con mucho cariño, jefe."
    - Sonido: grillos
 
 **Motor (narrador)**
@@ -434,7 +434,7 @@ _metricas · P10 · Frutinovela · ~36 s · Comenta LEADS_
 **Personas con IA**
 
 1. Sala de juntas de frutas con música de telenovela. Limón abre la laptop despacio, con mirada fría, frente a Don Piña.
-   - **Limón:** "Don Piña… hay veintitrés leads que nadie ha tocado. Ni un mensaje."
+   - **Limón:** "Don Piña, hay veintitrés leads que ningún asesor inmobiliario ha tocado. Ni un mensaje."
    - Sonido: música dramática, trueno
 2. Don Piña voltea lentamente hacia Plátano Diego, que se esconde detrás de una taza; triple zoom a su cara.
    - **Don Piña:** "¿De quién son esos leads, Plátano?"
@@ -456,21 +456,21 @@ _metricas · P10 · Frutinovela · ~36 s · Comenta LEADS_
 
 _metricas · P10 · Junta · ~37 s · Comenta LEADS_
 
-**Gancho en pantalla:** ¿DE DÓNDE / SALEN LAS [CITAS]?
+**Gancho en pantalla:** 400 [LEADS] / Y 2 CITAS
 
 **Personas con IA**
 
 1. Karla de pie junto a una pantalla con una gráfica que sube, sonriendo de oreja a oreja.
-   - **Karla:** "¡Cuatrocientos leads este mes, a tres dólares! ¡La mejor campaña del año!"
+   - **Karla:** "¡Asesores inmobiliarios, cuatrocientos leads este mes a tres dólares! ¡La mejor campaña del año!"
    - Sonido: fanfarria corta
 2. Paola, sin levantar la vista del celular, la interrumpe; Don Ramiro voltea a verla con la boca abierta.
-   - **Paola:** "Y dos citas. Las otras nueve salieron del portal."
+   - **Paola:** "Y dos citas. Las otras nueve salieron de los leads del portal."
    - **Don Ramiro:** "¿Y entonces a quién le estamos pagando?"
    - Sonido: disco rayado
 
 **Motor (narrador)**
 
-- `photo` · Contar cuántos leads te trae cada canal no sirve. Lo que importa es cuántas citas y cuántos apartados salen de cada uno.  
+- `photo` · En tu inmobiliaria, contar cuántos leads te trae cada canal no sirve. Lo que importa es cuántas citas y cuántos apartados salen de cada uno.  
   Pantalla: Foto de dueño frente a una gráfica de anuncios. Titular: LEADS NO SON [CITAS].
 - `bars` · Lead Master te muestra las citas por fuente: anuncios, portales y referidos. Así ves qué canal trae compradores y cuál te trae puros curiosos.  
   Pantalla: Barras (datos de ejemplo): Facebook 400 leads → 2 citas · Inmuebles24 40 leads → 9 citas · Referidos 12 leads → 4 citas.
@@ -483,12 +483,12 @@ _metricas · P10 · Junta · ~37 s · Comenta LEADS_
 
 _objeciones · P10 · Junta · ~37 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** ¿POR QUÉ NO / [COMPRAN]?
+**Gancho en pantalla:** 300 [LEADS] / Y 3 VENTAS
 
 **Personas con IA**
 
 1. Don Ramiro golpea la mesa con una carpeta gruesa; todos brincan en sus sillas.
-   - **Don Ramiro:** "¡Trescientos leads y tres ventas! ¿Por qué carajo no nos compran?"
+   - **Don Ramiro:** "¡Asesores inmobiliarios! Trescientos leads y tres ventas. ¿Por qué carajo no nos compran?"
    - Sonido: golpe de carpeta
 2. Rubén se ajusta los lentes y voltea la laptop hacia Don Ramiro, muy serio.
    - **Rubén:** "Para saberlo habría que escuchar las trescientas llamadas, jefe."
@@ -497,7 +497,7 @@ _objeciones · P10 · Junta · ~37 s · Comenta SISTEMA_
 
 **Motor (narrador)**
 
-- `photo` · Nadie en tu equipo tiene tiempo de escuchar cientos de llamadas para entender por qué no te compran. Así que adivinas.  
+- `photo` · Nadie en tu inmobiliaria tiene tiempo de escuchar cientos de llamadas para entender por qué no te compran. Así que adivinas.  
   Pantalla: Foto de coordinador con audífonos y una pila de papeles. Titular: ¿Y SI SOLO [ADIVINAS]?
 - `bars` · Lead Master detecta las objeciones en los chats y en las llamadas, y te dice cuáles se repiten más: precio, ubicación, crédito y el famoso «lo voy a pensar».  
   Pantalla: Barras (datos de ejemplo): «Está muy caro» 34 % · «No califico al crédito» 27 % · «Lo voy a pensar» 21 % · «Está muy lejos» 18 %.
@@ -510,21 +510,21 @@ _objeciones · P10 · Junta · ~37 s · Comenta SISTEMA_
 
 _objeciones · P10 · Junta · ~36 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** «LO VOY A / [PENSAR]»
+**Gancho en pantalla:** 5 [LEADS] LO VAN / A PENSAR
 
 **Personas con IA**
 
 1. Diego habla por el celular en altavoz sobre la mesa de juntas; sonríe tranquilo y cuelga.
-   - **Diego:** "Perfecto, señora. Piénselo con calma, yo aquí la espero."
+   - **Diego:** "Otro lead que lo va a pensar. Los asesores inmobiliarios somos pacientes con los leads, jefe."
    - Sonido: tono de llamada colgada
 2. Paola y Don Ramiro voltean a ver a Diego al mismo tiempo, incrédulos.
-   - **Paola:** "Es la quinta de hoy que se va a pensarlo."
-   - **Diego:** "Es que la gente piensa mucho, Paola."
+   - **Paola:** "Es el quinto lead de hoy que se va a pensarlo."
+   - **Diego:** "Es que los leads piensan mucho, Paola."
    - Sonido: grillos
 
 **Motor (narrador)**
 
-- `photo` · «Lo voy a pensar» casi nunca significa que lo va a pensar. Significa que tiene una duda que nadie le preguntó.  
+- `photo` · En una inmobiliaria, «lo voy a pensar» casi nunca significa que lo va a pensar. Significa que el cliente tiene una duda que nadie le preguntó.  
   Pantalla: Foto de clienta dudando con el celular en la mano. Titular: NO LO VA A [PENSAR].
 - `bars` · Lead Master junta las objeciones de todos los chats y llamadas de tu equipo. Si «lo voy a pensar» es la número uno, ya sabes qué entrenar en la próxima junta.  
   Pantalla: Barras (datos de ejemplo): «Lo voy a pensar» 38 % · Precio 26 % · Ubicación 19 % · Crédito 17 %.
@@ -537,21 +537,21 @@ _objeciones · P10 · Junta · ~36 s · Comenta SISTEMA_
 
 _objeciones · P10 · Junta · ~36 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** 30 CITAS, / [0] APARTADOS
+**Gancho en pantalla:** 30 [LEADS], / 0 APARTADOS
 
 **Personas con IA**
 
 1. Plano medio de Don Ramiro en la cabecera de la sala de juntas; avienta una hoja impresa sobre la mesa y se le pone la cara roja.
-   - **Don Ramiro:** "¡Treinta citas este mes y cero apartados! ¿Qué carajo les están diciendo los clientes?"
+   - **Don Ramiro:** "¡Asesores inmobiliarios! Treinta citas con leads y cero apartados. ¿Qué carajo les están diciendo?"
    - Sonido: hoja golpeando la mesa, tazas que brincan
 2. Plano general de la mesa: Diego contesta rápido y nervioso; Rubén, muy serio, gira su laptop con un Excel enorme hacia Don Ramiro.
-   - **Diego:** "Que está caro, jefe."
+   - **Diego:** "Que está caro, jefe. Todos los leads dicen eso."
    - **Rubén:** "Según mi Excel, la objeción número uno es… «otros»."
    - Sonido: silencio incómodo, un grillo
 
 **Motor (narrador)**
 
-- `photo` · Si nadie sabe por qué no compran tus clientes, cada asesor adivina. Y con adivinanzas no se corrige nada.  
+- `photo` · Si en tu inmobiliaria nadie sabe por qué no compran tus clientes, cada asesor adivina. Y con adivinanzas no se corrige nada.  
   Pantalla: Foto de una junta tensa. Titular: ¿POR QUÉ NO [COMPRAN]?
 - `bars` · Lead Master lee los chats y las llamadas de tu equipo y te muestra las objeciones más comunes de tus clientes: precio, ubicación, crédito y el famoso «lo voy a pensar».  
   Pantalla: Barras «Objeciones del mes»: Precio 41 %, Ubicación 22 %, Crédito 18 %, «Lo voy a pensar» 12 %, Otras 7 %.
@@ -564,21 +564,21 @@ _objeciones · P10 · Junta · ~36 s · Comenta SISTEMA_
 
 _objeciones · P10 · Frutinovela · ~38 s · Comenta LEADS_
 
-**Gancho en pantalla:** «LO VOY A / [PENSAR]»
+**Gancho en pantalla:** 20 [LEADS] LO / VAN A PENSAR
 
 **Personas con IA**
 
 1. Sala de juntas de frutas con música de telenovela; zoom lento a Fresa Valeria, que llora lágrimas de jugo.
-   - **Fresa Valeria:** "Don Piña… los veinte clientes de esta semana me dijeron lo mismo: «lo voy a pensar»."
+   - **Fresa Valeria:** "Don Piña, los veinte leads de los asesores inmobiliarios dijeron lo mismo: «lo voy a pensar»."
    - Sonido: violines dramáticos
 2. Triple zoom a Don Piña, a quien se le paran las hojas de la corona; al fondo, Plátano Diego levanta la mano muy tranquilo.
-   - **Don Piña:** "¡¿Veinte?! ¿Y cuántos lo pensaron?"
+   - **Don Piña:** "¡¿Veinte leads?! ¿Y cuántos lo pensaron?"
    - **Plátano Diego:** "Yo tampoco lo pensé, Don Piña."
    - Sonido: trueno, golpe de orquesta
 
 **Motor (narrador)**
 
-- `photo` · «Lo voy a pensar» no es un no. Es una objeción que nadie le preguntó al cliente. Y si no la mides, la escuchas todas las semanas.  
+- `photo` · En tu inmobiliaria, «lo voy a pensar» no es un no. Es una objeción que nadie le preguntó al cliente. Y si no la mides, la escuchas todas las semanas.  
   Pantalla: Titular: «LO VOY A PENSAR» [NO ES UN NO]. Foto de asesora con el celular.
 - `panel` · Lead Master revisa los chats y las llamadas de tu equipo y te dice qué objeciones se repiten más. Aquí, «lo voy a pensar» va en primer lugar.  
   Pantalla: Panel «Objeciones del mes»: «Lo voy a pensar» 34 %, Precio 27 %, Crédito 19 %, Ubicación 12 %.
@@ -591,12 +591,12 @@ _objeciones · P10 · Frutinovela · ~38 s · Comenta LEADS_
 
 _objeciones · P10 · Junta · ~37 s · Comenta INMOBILIARIO_
 
-**Gancho en pantalla:** ¿QUIÉN SABE DE / [CRÉDITO]?
+**Gancho en pantalla:** 1 DE 3 [LEADS] / PIDE CRÉDITO
 
 **Personas con IA**
 
 1. Don Ramiro de pie junto a un pizarrón con la palabra CRÉDITO escrita enorme; mira a todos con los brazos cruzados.
-   - **Don Ramiro:** "Uno de cada tres clientes pregunta por crédito Infonavit. ¿Quién sabe cómo funciona?"
+   - **Don Ramiro:** "¡Asesores inmobiliarios! Uno de cada tres leads pregunta por crédito Infonavit. ¿Quién sabe cómo funciona?"
    - Sonido: marcador rechinando en el pizarrón
 2. Silencio total; Diego levanta la mano despacio, muy serio. Paola se tapa la cara con las dos manos.
    - **Diego:** "Jefe… ¿se come?"
@@ -604,7 +604,7 @@ _objeciones · P10 · Junta · ~37 s · Comenta INMOBILIARIO_
 
 **Motor (narrador)**
 
-- `photo` · Si tus clientes preguntan por crédito y tu equipo no sabe contestar, no es que no tengan dinero. Es que nadie les resolvió la duda.  
+- `photo` · Si en tu inmobiliaria los clientes preguntan por crédito y tu equipo no sabe contestar, no es que no tengan dinero. Es que nadie les resolvió la duda.  
   Pantalla: Titular: NADIE LES [RESOLVIÓ] LA DUDA. Foto de pareja revisando papeles.
 - `bars` · Lead Master saca de los chats y las llamadas las objeciones más comunes de tus clientes. En esta inmobiliaria, el crédito aparece en casi uno de cada tres.  
   Pantalla: Barras «Objeciones del mes»: Crédito 31 %, Precio 26 %, Ubicación 17 %, «Lo voy a pensar» 15 %.
@@ -617,12 +617,12 @@ _objeciones · P10 · Junta · ~37 s · Comenta INMOBILIARIO_
 
 _opciones · P12 · Junta · ~38 s · Comenta LEADS_
 
-**Gancho en pantalla:** ¿Y LAS / [OPCIONES]?
+**Gancho en pantalla:** ¿Y LAS OPCIONES / DEL [LEAD]?
 
 **Personas con IA**
 
 1. Don Ramiro lee en voz alta un mensaje en su celular, temblando de coraje; detrás de él, todos fingen trabajar.
-   - **Don Ramiro:** "«Me dijeron ahorita te mando opciones… hace dos semanas.» ¡¿Quién fue?!"
+   - **Don Ramiro:** "¡Asesores inmobiliarios! A uno de nuestros leads le dijeron «ahorita te mando opciones» hace dos semanas. ¡¿Quién fue?!"
    - Sonido: teclados que suenan de golpe
 2. Plano general: todos señalan a Diego al mismo tiempo; Diego se esconde detrás de su laptop.
    - **Diego:** "¡Es que tenemos trescientas propiedades, jefe! No me las sé todas."
@@ -630,7 +630,7 @@ _opciones · P12 · Junta · ~38 s · Comenta LEADS_
 
 **Motor (narrador)**
 
-- `chat` · El lead pidió algo clarísimo: dos recámaras, en la Roma, hasta cinco millones. Y tu asesor tardó dos semanas porque tenía que buscar a mano.  
+- `chat` · El lead le pidió a tu inmobiliaria algo clarísimo: dos recámaras, en la Roma, hasta cinco millones. Y tu asesor tardó dos semanas porque tenía que buscar a mano.  
   Pantalla: Chat de WhatsApp. Adriana Solís: «Busco depa de 2 recámaras en la Roma, hasta 5 millones». Asesor: «Ahorita te mando opciones». Hace 14 días.
 - `mock` · Con Lead Master, la IA lee lo que pidió el lead y busca en tu inventario de EasyBroker las propiedades que sí coinciden.  
   Pantalla: Pantalla «Opciones para Adriana Solís»: Roma Norte, 2 rec., $4.8 M · Roma Sur, 2 rec., $4.5 M · Roma Norte, 2 rec., $4.9 M · Roma Sur, 2 rec., $4.2 M.
@@ -643,12 +643,12 @@ _opciones · P12 · Junta · ~38 s · Comenta LEADS_
 
 _opciones · P12 · Junta · ~35 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** 40 PESTAÑAS / [ABIERTAS]
+**Gancho en pantalla:** 1 HORA POR / CADA [LEAD]
 
 **Personas con IA**
 
 1. Primer plano de Paola frente a su laptop con decenas de pestañas abiertas; el pelo rizado cada vez más despeinado.
-   - **Paola:** "Llevo una hora buscando un depa con terraza que acepte mascotas. ¡Una hora!"
+   - **Paola:** "Los asesores inmobiliarios no somos detectives. Llevo una hora buscando depa con terraza para mis leads."
    - Sonido: clics de mouse sin parar
 2. Rubén se asoma por encima de sus lentes con una sonrisa orgullosa y le enseña su laptop.
    - **Rubén:** "Tranquila, yo tengo todo el inventario en un Excel."
@@ -657,7 +657,7 @@ _opciones · P12 · Junta · ~35 s · Comenta SISTEMA_
 
 **Motor (narrador)**
 
-- `photo` · Tu equipo pierde horas buscando propiedades a mano entre el portal, el Excel y la memoria. Y mientras busca, el lead se enfría.  
+- `photo` · En tu inmobiliaria el equipo pierde horas buscando propiedades a mano entre el portal, el Excel y la memoria. Y mientras busca, el lead se enfría.  
   Pantalla: Titular: HORAS [BUSCANDO] A MANO. Foto de asesora frente a la laptop de noche.
 - `mock` · En Lead Master, la IA toma lo que pidió el lead, presupuesto, zona y lo que necesita, y busca en tu inventario de EasyBroker o del portal.  
   Pantalla: Pantalla «Lo que pidió»: Del Valle · hasta $3.5 M · terraza · acepta mascotas → 3 propiedades encontradas.
@@ -670,21 +670,21 @@ _opciones · P12 · Junta · ~35 s · Comenta SISTEMA_
 
 _opciones · P12 · Frutinovela · ~36 s · Comenta LEADS_
 
-**Gancho en pantalla:** PIDIÓ [4] / LE MANDARON [12]
+**Gancho en pantalla:** [LEAD]: PIDIÓ 4 / LE MANDARON 12
 
 **Personas con IA**
 
 1. Sala de juntas de frutas, música de telenovela; Don Piña sostiene un celular con la foto de un penthouse de lujo.
-   - **Don Piña:** "Plátano… la señora Lucía pidió una casa de cuatro millones en Zapopan."
+   - **Don Piña:** "¡Asesores inmobiliarios! Uno de nuestros leads pidió una casa de cuatro millones en Zapopan."
    - Sonido: violines que suben
 2. Triple zoom dramático a Plátano Diego, que sonríe orgulloso; trueno de fondo.
-   - **Don Piña:** "¡¿Y tú le mandaste un penthouse de doce millones en Polanco?!"
+   - **Don Piña:** "¡¿Y tú, Plátano, le mandaste un penthouse de doce millones en Polanco?!"
    - **Plátano Diego:** "Es que estaba bonito, Don Piña."
    - Sonido: trueno, golpe de orquesta
 
 **Motor (narrador)**
 
-- `chat` · Cuando tu asesor manda opciones que no tienen nada que ver con lo que pidió el cliente, el cliente entiende una sola cosa: no me escucharon.  
+- `chat` · Cuando un asesor de tu inmobiliaria manda opciones que no tienen nada que ver con lo que pidió el cliente, el cliente entiende una sola cosa: no me escucharon.  
   Pantalla: Chat. Lucía Hernández: «Busco casa en Zapopan, hasta 4 millones». Asesor: ficha de penthouse en Polanco, $12 M. Lucía: «Ok… gracias». Visto.
 - `mock` · Lead Master lee lo que pidió el lead y busca en tu inventario opciones que sí coinciden en presupuesto y en zona.  
   Pantalla: Pantalla «Lucía Hernández · Zapopan · hasta $4 M» → 3 casas: $3.6 M, $3.9 M, $4 M.
@@ -697,15 +697,15 @@ _opciones · P12 · Frutinovela · ~36 s · Comenta LEADS_
 
 _opciones · P12 · Junta · ~35 s · Comenta LEADS_
 
-**Gancho en pantalla:** ¿CUÁNTO / [TARDASTE]?
+**Gancho en pantalla:** ¿CUÁNTO TARDASTE / CON EL [LEAD]?
 
 **Personas con IA**
 
 1. Andrés entra a la sala de juntas mirando su celular escondido debajo de la chamarra; Don Ramiro lo detiene con la mirada.
-   - **Andrés:** "Jefe, el cliente del depa de Polanco ya compró con otra inmobiliaria."
+   - **Andrés:** "Jefe, perdimos otro de los leads de los asesores inmobiliarios: el del depa de Polanco."
    - Sonido: puerta que se cierra, silencio
 2. Don Ramiro se inclina hacia Andrés con una calma que da miedo; Andrés traga saliva.
-   - **Don Ramiro:** "¿Cuánto tardaste en mandarle opciones?"
+   - **Don Ramiro:** "¿Cuánto tardaste en mandarle opciones a ese lead?"
    - **Andrés:** "Tres días… pero eran muy buenas."
    - Sonido: un tic de reloj, tensión
 
@@ -724,21 +724,21 @@ _opciones · P12 · Junta · ~35 s · Comenta LEADS_
 
 _opciones · P12 · Junta · ~37 s · Comenta INMOBILIARIO_
 
-**Gancho en pantalla:** ¿TENÍAMOS / [ESA] CASA?
+**Gancho en pantalla:** ¿TENÍAMOS LA / CASA DEL [LEAD]?
 
 **Personas con IA**
 
 1. Don Ramiro con el puño sobre la mesa y la vena de la frente saltando; todos lo miran sin parpadear.
-   - **Don Ramiro:** "El cliente quería casa con alberca en Juriquilla. ¿Teníamos o no teníamos?"
+   - **Don Ramiro:** "¡Asesores inmobiliarios! Tres leads querían casa con alberca en Juriquilla. ¿Teníamos o no teníamos?"
    - Sonido: puño en la mesa
 2. Paola y Diego se miran; Paola levanta tres dedos, a Diego se le abren los ojos como platos.
    - **Paola:** "Teníamos tres."
-   - **Diego:** "¿¡Tres!? Yo le dije que no había nada…"
+   - **Diego:** "¿¡Tres!? Yo les dije a esos leads que no había nada…"
    - Sonido: golpe de música de suspenso
 
 **Motor (narrador)**
 
-- `photo` · Tu equipo no se sabe todo tu inventario de memoria. Nadie se lo sabe. Y por eso a veces dicen que no hay, cuando sí hay.  
+- `photo` · Tu equipo no se sabe de memoria todo el inventario de tu inmobiliaria. Nadie se lo sabe. Y por eso a veces dicen que no hay, cuando sí hay.  
   Pantalla: Titular: SÍ HABÍA. NADIE [SABÍA]. Foto de casa con alberca.
 - `mock` · Lead Master toma lo que el lead pidió en el chat y busca en tu inventario de EasyBroker o del portal lo que coincide, aunque el asesor no se acuerde.  
   Pantalla: Pantalla «Juriquilla · casa · con alberca» → 3 propiedades de tu inventario.
@@ -751,21 +751,21 @@ _opciones · P12 · Junta · ~37 s · Comenta INMOBILIARIO_
 
 _portales · P11 · Junta · ~36 s · Comenta LEADS_
 
-**Gancho en pantalla:** ¿QUIÉN REVISÓ / EL [PORTAL]?
+**Gancho en pantalla:** [LEADS] DEL / PORTAL: NADIE
 
 **Personas con IA**
 
 1. Don Ramiro señala la pantalla de la sala, donde se ve una bandeja de mensajes con un número rojo enorme sin leer.
-   - **Don Ramiro:** "¿Quién revisó los leads de Inmuebles24 esta semana? ¿Nadie?"
+   - **Don Ramiro:** "¡Asesores inmobiliarios! ¿Quién revisó los leads de Inmuebles24 esta semana? ¿Nadie?"
    - Sonido: zumbido de proyector
 2. Rubén sube la mano despacio, sin despegar los ojos de su Excel; Don Ramiro se acerca.
    - **Rubén:** "La contraseña la tenía la practicante, jefe."
-   - **Don Ramiro:** "¿Y la practicante?!"
+   - **Don Ramiro:** "¿¡Y la practicante!?"
    - Sonido: Rubén contesta bajito: «se fue en agosto»; un grillo
 
 **Motor (narrador)**
 
-- `stat` · Cuando un portal depende de que alguien entre a revisar, pasa esto: cuarenta y seis leads sin abrir. Personas que preguntaron por una propiedad y nadie les contestó.  
+- `stat` · Cuando en tu inmobiliaria el portal depende de que alguien entre a revisar, pasa esto: cuarenta y seis leads sin abrir. Personas que preguntaron por una propiedad y nadie les contestó.  
   Pantalla: Número gigante: [46] leads sin abrir · Inmuebles24 · últimas 3 semanas.
 - `flow` · Lead Master está conectado a tus portales, EasyBroker, Inmuebles24 y otros. Cada lead entra solo al sistema y se le asigna a un asesor.  
   Pantalla: Flujo: Portal → Lead Master → Asignado a Paola G. → Llamada.
@@ -778,16 +778,16 @@ _portales · P11 · Junta · ~36 s · Comenta LEADS_
 
 _portales · P11 · Junta · ~36 s · Comenta LEADS_
 
-**Gancho en pantalla:** VIERNES, / [9:00] PM
+**Gancho en pantalla:** VIERNES 9 PM: / UN [LEAD] NUEVO
 
 **Personas con IA**
 
 1. Lunes temprano; Don Ramiro con un café en la mano y cara de pocos amigos lee una notificación en su celular.
-   - **Don Ramiro:** "Un lead de EasyBroker pidió visita el viernes a las nueve. ¿Quién lo vio?"
+   - **Don Ramiro:** "¡Asesores inmobiliarios! Uno de nuestros leads de EasyBroker pidió visita el viernes a las nueve. ¿Quién lo vio?"
    - Sonido: sorbo de café, taza que se azota
 2. Diego bosteza con lentes de sol puestos; Paola lo mira de reojo.
-   - **Diego:** "Lo vi hoy, jefe… pero ya se fue a ver otro desarrollo."
-   - **Paola:** "Los portales no descansan, Diego."
+   - **Diego:** "Lo vi hoy, jefe… pero ese lead ya se fue a ver otro desarrollo."
+   - **Paola:** "Los leads no descansan, Diego."
    - Sonido: bostezo largo, golpe de música
 
 **Motor (narrador)**
@@ -810,7 +810,7 @@ _portales · P11 · Junta · ~37 s · Comenta LEADS_
 **Personas con IA**
 
 1. Plano medio en la sala de juntas: Don Ramiro, rojo, señala una laptop cerrada en la mesa; Diego se encoge en su silla con el saco grande.
-   - **Don Ramiro:** "¿Quién tiene la contraseña del portal? ¡Llevo dos semanas sin ver un solo lead!"
+   - **Don Ramiro:** "¡Asesores inmobiliarios! ¿Quién tiene la contraseña del portal? ¡Llevo dos semanas sin ver leads!"
    - **Diego:** "La cambié yo, jefe… y no me acuerdo cuál puse."
    - Sonido: silencio incómodo, un reloj de pared
 2. Rubén, con los lentes en la punta de la nariz, voltea la laptop hacia la mesa; la bandeja del portal llena de mensajes sin abrir. Don Ramiro abre los ojos enormes.
@@ -833,12 +833,12 @@ _portales · P11 · Junta · ~37 s · Comenta LEADS_
 
 _portales · P11 · Junta · ~36 s · Comenta LEADS_
 
-**Gancho en pantalla:** LLEGÓ EL VIERNES / LO VIO [HOY]
+**Gancho en pantalla:** EL [LEAD] LLEGÓ / EL VIERNES
 
 **Personas con IA**
 
 1. Plano medio: Diego, sonriente, levanta su celular como si trajera buenas noticias; Don Ramiro, al lado, deja de tomar café a medio sorbo.
-   - **Diego:** "Jefe, entró un lead buenísimo del portal. Llegó el viernes en la noche, lo vi hoy."
+   - **Diego:** "Jefe, como buen asesor inmobiliario reviso mis leads del portal. Uno llegó el viernes… lo vi hoy."
    - **Don Ramiro:** "¡¿Hoy?! ¡Diego, es miércoles!"
    - Sonido: café que se derrama, golpe de taza
 2. Paola, sin levantar la vista de su laptop, con sarcasmo; Diego se queda congelado con el celular en alto.
@@ -860,12 +860,12 @@ _portales · P11 · Junta · ~36 s · Comenta LEADS_
 
 _portales · P11 · Junta · ~36 s · Comenta LEADS_
 
-**Gancho en pantalla:** ¿CUÁL PORTAL / TE [VENDE]?
+**Gancho en pantalla:** 3 PORTALES DE / [LEADS]: ¿CUÁL?
 
 **Personas con IA**
 
 1. Sala de juntas: Don Ramiro con tres facturas en la mano; Karla, con su tablet, sonríe forzada.
-   - **Don Ramiro:** "Pagamos tres portales. Tres. ¿Cuál nos vende? ¡Uno! ¡Díganme uno!"
+   - **Don Ramiro:** "¡Asesores inmobiliarios! Pagamos tres portales para traer leads. ¿Cuál nos vende? ¡Díganme uno!"
    - **Karla:** "¡Todos traen leads, Don Ramiro! ¡Muchísimos!"
    - Sonido: papeles golpeando la mesa
 2. Rubén revisa su Excel enorme, entrecierra los ojos; Don Ramiro se tapa la cara con las dos manos.
@@ -893,8 +893,8 @@ _anecdotas · P06 · Junta · ~38 s · Comenta LEADS_
 **Personas con IA**
 
 1. Don Ramiro lee una hoja larguísima que se desenrolla hasta el piso; Diego se ajusta los lentes, nervioso.
-   - **Don Ramiro:** "Diego, descartaste treinta y siete leads esta semana. ¿Todos dicen «no contesta»?"
-   - **Diego:** "Es que la gente ya no contesta, jefe. Es la economía."
+   - **Don Ramiro:** "Diego, eres asesor inmobiliario, no de la funeraria. ¡Descartaste treinta y siete leads esta semana!"
+   - **Diego:** "Es que los leads ya no contestan, jefe. Es la economía."
    - Sonido: papel desenrollándose
 2. Paola levanta su celular con una sonrisa triunfal; Diego traga saliva en primer plano.
    - **Paola:** "Yo le marqué a tres de tus descartados. Uno ya agendó para el sábado."
@@ -915,12 +915,12 @@ _anecdotas · P06 · Junta · ~38 s · Comenta LEADS_
 
 _anecdotas · P04 · Junta · ~38 s · Comenta LEADS_
 
-**Gancho en pantalla:** ¿QUÉ [PRIMO], / ANDRÉS?
+**Gancho en pantalla:** ¿A QUÉ PRIMO LE / PASAS [LEADS]?
 
 **Personas con IA**
 
 1. Andrés, en una esquina de la sala con la chamarra de cuero, susurra al celular tapándose la boca; Don Ramiro aparece justo detrás de él, con los brazos cruzados.
-   - **Andrés:** "Sí, primo, te paso al cliente por fuera… le sale más barato."
+   - **Andrés:** "Primo, los asesores inmobiliarios de aquí ni se enteran. Te paso mis leads por fuera."
    - **Don Ramiro:** "¿Qué primo, Andrés?"
    - Sonido: golpe musical seco
 2. Andrés guarda el celular de golpe y sonríe nervioso; Paola, desde la mesa, levanta una ceja.
@@ -948,8 +948,8 @@ _anecdotas · P04 · Frutinovela · ~39 s · Comenta LEADS_
 **Personas con IA**
 
 1. Sala de juntas de frutas, música de telenovela: Aguacate Andrés entra con una caja de cartón con sus cosas; Don Piña, en la cabecera, aprieta la corona de hojas.
-   - **Aguacate Andrés:** "Don Piña, renuncio. Me voy a otra inmobiliaria."
-   - **Don Piña:** "Está bien, Aguacate… pero mis leads se quedan."
+   - **Aguacate Andrés:** "Don Piña, renuncio. Me voy de asesor inmobiliario a otra inmobiliaria… con mis leads."
+   - **Don Piña:** "Está bien, Aguacate… pero los leads se quedan."
    - Sonido: violines dramáticos
 2. Aguacate sonríe de lado y agita su celular; triple zoom a la cara de Don Piña, que cae de rodillas mientras Fresa Valeria se tapa la boca.
    - **Aguacate Andrés:** "¿Cuáles leads? Los ciento veinte están en mi celular."
@@ -976,7 +976,7 @@ _anecdotas · P05 · Junta · ~35 s · Comenta SISTEMA_
 **Personas con IA**
 
 1. Plano medio: Don Ramiro con los brazos cruzados; Diego, muy confiado, se recarga en la silla con las manos detrás de la cabeza.
-   - **Don Ramiro:** "Diego, ¿cuántos leads nuevos tienes?"
+   - **Don Ramiro:** "A ver, asesores inmobiliarios. Diego, ¿cuántos leads nuevos tienes?"
    - **Diego:** "Veintidós, jefe. Todos calientitos."
    - Sonido: murmullo de oficina
 2. Don Ramiro se inclina sobre la mesa; Diego pierde la sonrisa y la silla se le va para atrás. Rubén escupe el café.
@@ -999,13 +999,13 @@ _anecdotas · P05 · Junta · ~35 s · Comenta SISTEMA_
 
 _anecdotas · P07 · Junta · ~37 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** ¿QUIÉN ESCRIBIÓ / [ESTO]?
+**Gancho en pantalla:** ¿QUÉ LE DIJERON / AL [LEAD]?
 
 **Personas con IA**
 
 1. Don Ramiro lee su celular en voz alta, incrédulo; todos alrededor de la mesa se voltean a ver a Andrés.
-   - **Don Ramiro:** "«Si no tiene para el enganche, no me haga perder el tiempo». ¿Quién escribió esto?"
-   - **Andrés:** "Pues… era la verdad, jefe."
+   - **Don Ramiro:** "¡Asesores inmobiliarios! A uno de nuestros leads le escribieron «no me haga perder el tiempo». ¿Quién fue?"
+   - **Andrés:** "Pues… no tenía para el enganche, jefe. Era la verdad."
    - Sonido: golpe dramático
 2. Karla entra corriendo con su tablet en alto; Don Ramiro se deja caer en la silla con la cara entre las manos.
    - **Karla:** "Ya está en el grupo de Facebook de la colonia. Tiene trescientos comentarios."
@@ -1026,16 +1026,16 @@ _anecdotas · P07 · Junta · ~37 s · Comenta SISTEMA_
 
 _anecdotas · P13 · Junta · ~37 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** 90 % SEGÚN / EL [EXCEL]
+**Gancho en pantalla:** 90 % DE [LEADS] / SEGÚN EL EXCEL
 
 **Personas con IA**
 
 1. Rubén presenta orgulloso en la pantalla de la sala un Excel con un 90 % gigante en verde; Don Ramiro lo mira con los ojos entrecerrados.
-   - **Rubén:** "¡Noventa por ciento de leads contactados, Don Ramiro! ¡Récord!"
+   - **Rubén:** "¡Récord, Don Ramiro! Los asesores inmobiliarios contactaron al noventa por ciento de los leads."
    - **Don Ramiro:** "¿Noventa? ¿Y por qué este mes vendimos tres?"
    - Sonido: fanfarria que se corta de golpe
 2. Al fondo de la mesa, Diego se acerca a Paola y le susurra tapándose la boca; los dos miran al techo.
-   - **Diego:** "Yo puse que llamé a todos… por si acaso."
+   - **Diego:** "Yo puse que llamé a todos mis leads… por si acaso."
    - **Paola:** "Yo también."
    - Sonido: silbido inocente
 
@@ -1054,13 +1054,13 @@ _anecdotas · P13 · Junta · ~37 s · Comenta SISTEMA_
 
 _anecdotas · P05 · Frutinovela · ~36 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** 15 LLAMADAS / EN [3] MINUTOS
+**Gancho en pantalla:** 15 LLAMADAS AL / [LEAD] EN 3 MIN
 
 **Personas con IA**
 
 1. Sala de juntas de frutas, música de telenovela: Don Piña de brazos cruzados frente a Plátano Diego, que levanta la mano como jurando.
-   - **Don Piña:** "Plátano Diego, ¿le marcaste a Lucía Hernández?"
-   - **Plátano Diego:** "¡Quince veces, Don Piña! ¡Lo juro por mi racimo!"
+   - **Don Piña:** "Plátano, ¿qué clase de asesor inmobiliario eres? ¿Le marcaste a tus leads o no?"
+   - **Plátano Diego:** "¡Quince veces a Lucía, Don Piña! ¡Lo juro por mi racimo!"
    - Sonido: violines de suspenso
 2. Limón abre la laptop con triple zoom dramático; Plátano Diego se pone café de los nervios y Don Piña se levanta furioso.
    - **Limón:** "Quince llamadas… en tres minutos. A las dos de la tarde. En plena comida."
@@ -1069,7 +1069,7 @@ _anecdotas · P05 · Frutinovela · ~36 s · Comenta SISTEMA_
 
 **Motor (narrador)**
 
-- `events` · Quince intentos en tres minutos no son seguimiento. Son un solo intento, justo a la hora en que nadie contesta.  
+- `events` · En una inmobiliaria, quince intentos en tres minutos no son seguimiento. Son un solo intento, justo a la hora en que nadie contesta.  
   Pantalla: Registro de llamadas: Diego H. → Lucía Hernández · 15 llamadas entre 2:47 y 2:50 pm · 0 contestadas.
 - `bars` · Lead Master registra cada llamada que sale del sistema: cuántos intentos, a qué hora y cuánto duró. Y te dice a qué hora sí te contestan tus leads.  
   Pantalla: Barras de tasa de contestación por horario (ejemplo): 2 pm 8 % · 11 am 21 % · 7 pm 38 %.
@@ -1087,10 +1087,10 @@ _descartados · P06 · Junta · ~36 s · Comenta LEADS_
 **Personas con IA**
 
 1. Plano medio de Don Ramiro en la cabecera de la mesa; desenrolla una hoja impresa tan larga que cae de la mesa y rueda por el piso de la sala de juntas.
-   - **Don Ramiro:** "¿Cuatrocientos doce descartados? ¡¿Quién descartó a media ciudad?!"
+   - **Don Ramiro:** "¡Asesores inmobiliarios! ¿Cuatrocientos doce leads descartados? ¡¿Quién descartó a media ciudad?!"
    - Sonido: papel desenrollándose, rollo que cae al piso
 2. Contraplano: Diego encogido detrás de su laptop, sudando; a su lado Paola cruza los brazos y lo mira de reojo.
-   - **Diego:** "Jefe, es que no contestaban…"
+   - **Diego:** "Jefe, es que esos leads no contestaban…"
    - **Paola:** "Les marcó una vez. A la hora de la comida."
    - Sonido: silencio incómodo, un grillo
 
@@ -1109,20 +1109,20 @@ _descartados · P06 · Junta · ~36 s · Comenta LEADS_
 
 _descartados · P06 · Junta · ~35 s · Comenta LEADS_
 
-**Gancho en pantalla:** NO LE INTERESA / ¿[SEGURO]?
+**Gancho en pantalla:** [LEADS] QUE «NO / LES INTERESA»
 
 **Personas con IA**
 
 1. Plano medio de Don Ramiro con los lentes en la mano, leyendo la pantalla de la laptop en voz alta; la vena de la frente le empieza a latir.
-   - **Don Ramiro:** "Motivo de descarte: «no le interesa». Diego… ¡el señor preguntó por el enganche!"
+   - **Don Ramiro:** "Diego, ¿qué clase de asesor inmobiliario descarta leads por «no le interesa»? ¡El señor preguntó por el enganche!"
    - Sonido: tic del reloj de la sala
 2. Diego se acomoda el saco que le queda grande, muy seguro de sí; al fondo Rubén se baja los lentes y se tapa la cara con la mano.
-   - **Diego:** "Bueno, jefe, preguntar no es comprar."
+   - **Diego:** "Bueno, jefe, que un lead pregunte no quiere decir que compre."
    - Sonido: palmada en la frente
 
 **Motor (narrador)**
 
-- `chat` · Este es el chat del lead que Diego descartó por «no le interesa». Preguntó por el enganche, le dijeron «le paso info» y nadie volvió a escribirle.  
+- `chat` · En tu inmobiliaria pasa esto: el lead que Diego descartó por «no le interesa» preguntó por el enganche, le dijeron «le paso info» y nadie volvió a escribirle.  
   Pantalla: Chat: Lead: «¿De cuánto es el enganche del depa de 2 recámaras?» · Diego: «le paso info» · tres días sin mensajes · etiqueta roja: Descartado, no le interesa.
 - `mock` · Lead Master pone al lado de cada motivo la conversación completa. Si el lead preguntó por el enganche, por el crédito o por una visita, no era un curioso.  
   Pantalla: Descartado · Motivo: «no le interesa» · Última pregunta del lead: «¿de cuánto es el enganche?» · botón Revisar.
@@ -1135,21 +1135,21 @@ _descartados · P06 · Junta · ~35 s · Comenta LEADS_
 
 _descartados · P06 · Junta · ~37 s · Comenta INMOBILIARIO_
 
-**Gancho en pantalla:** YA COMPRÓ. / [CON OTRO]
+**Gancho en pantalla:** [LEAD] CURIOSA: / YA COMPRÓ
 
 **Personas con IA**
 
 1. Paola le enseña su celular a Don Ramiro: en la pantalla, una foto de una señora sonriendo con unas llaves frente a una casa nueva. Don Ramiro sonríe orgulloso.
-   - **Paola:** "Jefe, ¿se acuerda de Adriana Solís? Ya compró. Subió foto con las llaves."
+   - **Paola:** "Jefe, ¿se acuerda de los leads que los asesores inmobiliarios marcaron como curiosos? Adriana ya compró."
    - **Don Ramiro:** "¡Qué bien! ¿Quién se la cerró?"
    - Sonido: murmullo de oficina
 2. Silencio. Paola niega lentamente con la cabeza. Don Ramiro se pone rojo de abajo hacia arriba como termómetro y le sale vapor de las orejas; Diego se desliza debajo de la mesa.
-   - **Paola:** "Nosotros no, jefe."
+   - **Paola:** "Nosotros no, jefe. Subió foto con las llaves… de otra inmobiliaria."
    - Sonido: silbido de olla exprés
 
 **Motor (narrador)**
 
-- `events` · Adriana dejó sus datos en marzo. Diego le marcó una vez, la puso como curiosa y nadie más la buscó. En mayo compró una casa de 4 millones con otra inmobiliaria.  
+- `events` · Adriana le dejó sus datos a tu inmobiliaria en marzo. Diego le marcó una vez, la puso como curiosa y nadie más la buscó. En mayo compró una casa de 4 millones con otra inmobiliaria.  
   Pantalla: Línea de tiempo: 3 mar entra el lead · 3 mar 1 llamada · 4 mar descartada «curiosa» · 12 may compró con otra inmobiliaria.
 - `stat` · Una casa de 4 millones al 3 por ciento son 120 mil pesos de comisión que se fueron por un clic.  
   Pantalla: Número gigante: $120,000 · comisión que se fue.
@@ -1162,12 +1162,12 @@ _descartados · P06 · Junta · ~37 s · Comenta INMOBILIARIO_
 
 _descartados · P06 · Frutinovela · ~38 s · Comenta LEADS_
 
-**Gancho en pantalla:** LA CAJA DE LOS / [DESCARTADOS]
+**Gancho en pantalla:** 150 [LEADS] EN / UNA CAJA
 
 **Personas con IA**
 
 1. Sala de juntas de frutas. Fresa Valeria saca de debajo del escritorio de Plátano Diego una caja empolvada que dice DESCARTADOS; la abre y se ilumina como un tesoro. Zoom lento, música de telenovela.
-   - **Fresa Valeria:** "Don Piña… aquí hay ciento cincuenta leads… ¡y todos siguen vivos!"
+   - **Fresa Valeria:** "Don Piña, en esta caja hay ciento cincuenta leads que un asesor inmobiliario descartó… ¡y siguen vivos!"
    - Sonido: coro dramático
 2. Don Piña con la corona de hojas erizada encara a Plátano Diego, que se pone café de los nervios. Trueno, triple zoom a la cara del Plátano.
    - **Don Piña:** "¡Plátano! ¿Por qué escondiste estos leads?"
@@ -1189,20 +1189,20 @@ _descartados · P06 · Frutinovela · ~38 s · Comenta LEADS_
 
 _descartados · P06 · Junta · ~35 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** 600 CHATS / A [MANO]
+**Gancho en pantalla:** 600 [LEADS] / A MANO
 
 **Personas con IA**
 
 1. Don Ramiro de pie con una lupa gigante en la mano, como detective; los cuatro asesores alrededor de la mesa abren la boca horrorizados.
-   - **Don Ramiro:** "¡A partir de hoy, cada viernes revisamos uno por uno los leads que descartaron!"
+   - **Don Ramiro:** "¡Asesores inmobiliarios! Desde hoy, cada viernes revisamos uno por uno los leads que descartaron."
    - Sonido: golpe de orquesta de suspenso
 2. Rubén gira su laptop: una lista que no se acaba. Don Ramiro baja la lupa despacio y se sienta derrotado.
-   - **Rubén:** "Jefe, son seiscientos. Nos quedamos hasta el lunes."
+   - **Rubén:** "Jefe, son seiscientos leads. Nos quedamos hasta el lunes."
    - Sonido: trombón triste
 
 **Motor (narrador)**
 
-- `photo` · Revisar descartados a mano no escala. Nadie tiene tiempo de leer seiscientos chats un viernes en la tarde. Y si nadie los revisa, tus asesores aprenden que descartar no tiene consecuencias.  
+- `photo` · En una inmobiliaria, revisar descartados a mano no escala. Nadie tiene tiempo de leer seiscientos chats un viernes en la tarde. Y si nadie los revisa, tus asesores aprenden que descartar no tiene consecuencias.  
   Pantalla: Titular: 600 CHATS [A MANO]. Foto de Excel de noche.
 - `mock` · Lead Master te los ordena: cada descartado con su asesor, su motivo, cuántas veces se le llamó y la conversación al lado.  
   Pantalla: Descartados agrupados por asesor y por motivo, con número de intentos y botón Ver conversación.
@@ -1215,21 +1215,21 @@ _descartados · P06 · Junta · ~35 s · Comenta SISTEMA_
 
 _circulos · P01 · Junta · ~36 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** PRESIONE 1 / PARA [VENDER]
+**Gancho en pantalla:** UN BOT PARA / TUS [LEADS]
 
 **Personas con IA**
 
 1. Karla, con blazer morado, presenta su tablet frente a la mesa con sonrisa forzada de comercial; Don Ramiro la escucha con los brazos cruzados.
-   - **Karla:** "¡Les traje un bot que atiende solito a sus clientes, veinticuatro siete!"
+   - **Karla:** "¡Asesores inmobiliarios, despídanse! Les traje un bot que atiende solito a sus leads, veinticuatro siete."
    - **Don Ramiro:** "¿Y vende?"
    - Sonido: fanfarria de anuncio
 2. Paola lee en voz alta desde su celular, sin emoción; todos voltean despacio a ver a Karla, que mantiene la sonrisa congelada.
-   - **Paola:** "Un cliente preguntó por un depa en Polanco. El bot le contestó: «presione uno»."
+   - **Paola:** "Un lead preguntó por un depa en Polanco. El bot le contestó: «presione uno»."
    - Sonido: disco rayado
 
 **Motor (narrador)**
 
-- `chat` · Así atienden muchos bots a alguien que quiere comprar un departamento de 6 millones. El cliente pregunta algo concreto y el bot lo manda a dar vueltas en un menú.  
+- `chat` · Así atienden muchos bots de inmobiliaria a alguien que quiere comprar un departamento de 6 millones. El cliente pregunta algo concreto y el bot lo manda a dar vueltas en un menú.  
   Pantalla: Chat: Lead: «¿El depa de Polanco tiene estacionamiento?» · Bot: «Presione 1 para ventas, 2 para rentas» · Lead: «?» · Bot: «No entendí. Presione 1» · el lead deja de contestar.
 - `photo` · Nadie compra una casa porque un bot le contestó rápido. La compra porque una persona le dio seguimiento.  
   Pantalla: Titular: COMPRA POR UNA [PERSONA]. Foto de recorrido con asesora.
@@ -1242,15 +1242,15 @@ _circulos · P01 · Junta · ~36 s · Comenta SISTEMA_
 
 _circulos · P02 · Junta · ~36 s · Comenta LEADS_
 
-**Gancho en pantalla:** MARKETING / VS. [VENTAS]
+**Gancho en pantalla:** MARKETING / VS. [ASESORES]
 
 **Personas con IA**
 
 1. Karla y Diego frente a frente en la sala de juntas como boxeadores; Don Ramiro en medio hace de réferi y toca una campanita.
-   - **Don Ramiro:** "¡Primer round! La agencia dice que los leads son buenos. Ventas dice que son basura."
+   - **Don Ramiro:** "¡Primer round! La agencia dice que los leads son buenos. Los asesores inmobiliarios dicen que son basura."
    - Sonido: campana de box, multitud
 2. Karla y Diego se gritan a la cara; Paola levanta la mano desde su silla sin despegar los ojos de su café.
-   - **Karla:** "¡Les mando trescientos a la semana!"
+   - **Karla:** "¡Les mando trescientos leads a la semana!"
    - **Diego:** "¡Y ninguno contesta!"
    - **Paola:** "Diego, les marcas a los tres días."
    - Sonido: golpe de K.O.
@@ -1275,7 +1275,7 @@ _circulos · P03 · Junta · ~35 s · Comenta CRM_
 **Personas con IA**
 
 1. Rubén proyecta en la pantalla de la sala un tablero de CRM con todas las tarjetas apiladas en la primera columna y telarañas en las demás; Don Ramiro se atraganta con el café.
-   - **Rubén:** "Jefe, este es nuestro CRM. Trescientos leads en «Nuevo»… desde marzo."
+   - **Rubén:** "Jefe, este es el CRM de los asesores inmobiliarios. Trescientos leads en «Nuevo»… desde marzo."
    - Sonido: tos, taza que se cae
 2. Don Ramiro, con la camisa manchada de café, golpea la mesa; Rubén contesta sin inmutarse mientras Diego silba viendo al techo.
    - **Don Ramiro:** "¡¿Y cuánto estamos pagando por esto?!"
@@ -1284,7 +1284,7 @@ _circulos · P03 · Junta · ~35 s · Comenta CRM_
 
 **Motor (narrador)**
 
-- `photo` · Pagaste GoHighLevel, pero tus asesores viven en WhatsApp, no en el CRM. Por eso las tarjetas nunca se mueven.  
+- `photo` · Tu inmobiliaria pagó GoHighLevel, pero tus asesores viven en WhatsApp, no en el CRM. Por eso las tarjetas nunca se mueven.  
   Pantalla: Titular: UN CRM QUE [NADIE] LLENA. Foto de laptop con tablero vacío.
 - `ui+crm` · Lead Master lee lo que pasa en los chats y en las llamadas de cada asesor y mueve el lead solo: contactado, cita, apartado.  
   Pantalla: Tarjeta de Diana Trejo pasa sola de «Nuevo» a «Cita agendada».
@@ -1302,7 +1302,7 @@ _circulos · P04 · Frutinovela · ~38 s · Comenta LEADS_
 **Personas con IA**
 
 1. Sala de juntas de frutas. Don Piña golpea la mesa; Aguacate Andrés esconde el celular detrás de la espalda y suda. Música de telenovela, zoom rápido.
-   - **Don Piña:** "Aguacate, ¿por qué Diana Trejo dice que ya la atiende «tu socio»?"
+   - **Don Piña:** "Aguacate, ¿desde cuándo los asesores inmobiliarios tienen socio? ¡Tu socio ya atiende a tus leads!"
    - **Aguacate Andrés:** "¿Socio? ¿Cuál socio? Yo no tengo socio."
    - Sonido: golpe en la mesa, violines
 2. Limón abre la laptop despacio y la gira hacia Don Piña; Mango ahoga un grito, Fresa Valeria se tapa la boca. Trueno, triple zoom a Aguacate, que se empieza a poner café.
@@ -1311,7 +1311,7 @@ _circulos · P04 · Frutinovela · ~38 s · Comenta LEADS_
 
 **Motor (narrador)**
 
-- `chat` · Este es el chat que nunca ves, porque vive en el celular personal de tu asesor. Ahí se ofrecen otros proyectos, otras comisiones y otros socios.  
+- `chat` · Este es el chat que nunca ves en tu inmobiliaria, porque vive en el celular personal de tu asesor. Ahí se ofrecen otros proyectos, otras comisiones y otros socios.  
   Pantalla: Chat Andrés → Diana Trejo: «Mejor te atiendo por fuera con mi socio, te sale más barato la comisión».
 - `stack` · Con Lead Master el WhatsApp de cada asesor está conectado, solo las conversaciones con leads. Y las llamadas salen del sistema y quedan grabadas.  
   Pantalla: Tarjetas: WhatsApp conectado (lo personal no) · Llamadas grabadas · Llamadas por fuera: 0.
@@ -1324,15 +1324,15 @@ _circulos · P04 · Frutinovela · ~38 s · Comenta LEADS_
 
 _circulos · P07 · Junta · ~36 s · Comenta SISTEMA_
 
-**Gancho en pantalla:** UN WHATSAPP, / UNA [DEMANDA]
+**Gancho en pantalla:** UN LEAD, UNA / [DEMANDA]
 
 **Personas con IA**
 
 1. Rubén entra corriendo a la sala de juntas agitando un sobre; Don Ramiro escupe el café sobre la mesa.
-   - **Rubén:** "¡Don Ramiro! ¡Llegó una demanda! ¡Por un WhatsApp de Diego!"
+   - **Rubén:** "¡Don Ramiro! ¡Llegó una demanda de uno de nuestros leads por un WhatsApp de un asesor inmobiliario!"
    - Sonido: puerta que se azota, escupitajo de café
 2. Don Ramiro voltea despacio hacia Diego, que suda y sonríe nervioso; todos los demás se dan una palmada en la frente al mismo tiempo.
-   - **Don Ramiro:** "Diego… ¿qué le escribiste a ese cliente?"
+   - **Don Ramiro:** "Diego… ¿qué le escribiste a ese lead?"
    - **Diego:** "Nada, jefe. Nomás que le garantizaba quince por ciento de plusvalía."
    - Sonido: cuatro palmadas al mismo tiempo
 

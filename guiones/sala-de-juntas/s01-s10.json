@@ -4,20 +4,49 @@
   "tema": "llamadas",
   "pilar": "P08",
   "titulo": "Don Ramiro descubre el botón",
-  "gancho_pantalla": ["¿A CUÁNTOS", "LES [LLAMARON]?"],
+  "gancho_pantalla": [
+   "200 [LEADS]",
+   "¿A CUÁNTOS?"
+  ],
   "formato": "junta",
   "ia": [
-   {"plano": "Plano medio de Don Ramiro de pie en la cabecera de la mesa de juntas; golpea la mesa con las dos manos, las tazas de café brincan y los asesores se echan para atrás.",
-    "dialogo": [{"quien": "Don Ramiro", "dice": "¡Doscientos leads esta semana! ¿Y a cuántos les llamaron? ¡¿A cuántos?!"}],
-    "sonido": "golpe en la mesa, tazas que tintinean"},
-   {"plano": "Contraplano de Diego detrás de su laptop, sudando, se acomoda los lentes; Paola, a su lado, pone los ojos en blanco.",
-    "dialogo": [{"quien": "Diego", "dice": "Jefe, es que hay que buscarlos uno por uno… y se me acaba el día."}],
-    "sonido": "silencio incómodo, un grillo"}
+   {
+    "plano": "Plano medio de Don Ramiro de pie en la cabecera de la mesa de juntas; golpea la mesa con las dos manos, las tazas de café brincan y los asesores se echan para atrás.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "¡Asesores inmobiliarios! Doscientos leads esta semana. ¿A cuántos les llamaron? ¡¿A cuántos?!"
+     }
+    ],
+    "sonido": "golpe en la mesa, tazas que tintinean"
+   },
+   {
+    "plano": "Contraplano de Diego detrás de su laptop, sudando, se acomoda los lentes; Paola, a su lado, pone los ojos en blanco.",
+    "dialogo": [
+     {
+      "quien": "Diego",
+      "dice": "Jefe, es que hay que buscar los leads uno por uno… y se me acaba el día."
+     }
+    ],
+    "sonido": "silencio incómodo, un grillo"
+   }
   ],
   "motor": [
-   {"tipo": "photo", "voz": "Si tu equipo tiene que buscar lead por lead, copiar el número, marcar y anotar, al final del día llamó a quince. Y los otros ciento ochenta y cinco se enfrían.", "pantalla": "Titular: LEAD POR [LEAD]. Foto de asesor con libreta y celular; contador 15 de 200 en rojo."},
-   {"tipo": "ui+call", "voz": "Con Lead Master tu asesor aprieta un botón y el sistema marca a toda su lista, uno tras otro. Si nadie contesta, pasa solo al siguiente.", "pantalla": "Botón «Llamar a mi lista (200)». Insertos de llamada en cadena: Adriana Solís · no contesta → Lucía Hernández · no contesta → Diana Trejo · llamando…"},
-   {"tipo": "ui+cita", "voz": "Si alguien contesta, hablas. Lo que se dijo queda en notas solo y, si agendan, la cita aparece en el calendario sin que nadie la capture.", "pantalla": "Llamada con Diana Trejo · 3:12 min. Nota automática: «Busca 2 recámaras en Polanco, hasta 5 millones». Cita: jueves 11:00 am · confirmada."}
+   {
+    "tipo": "photo",
+    "voz": "Si en tu inmobiliaria cada asesor tiene que buscar lead por lead, copiar el número, marcar y anotar, al final del día llamó a quince. Y los otros ciento ochenta y cinco se enfrían.",
+    "pantalla": "Titular: LEAD POR [LEAD]. Foto de asesor con libreta y celular; contador 15 de 200 en rojo."
+   },
+   {
+    "tipo": "ui+call",
+    "voz": "Con Lead Master tu asesor aprieta un botón y el sistema marca a toda su lista, uno tras otro. Si nadie contesta, pasa solo al siguiente.",
+    "pantalla": "Botón «Llamar a mi lista (200)». Insertos de llamada en cadena: Adriana Solís · no contesta → Lucía Hernández · no contesta → Diana Trejo · llamando…"
+   },
+   {
+    "tipo": "ui+cita",
+    "voz": "Si alguien contesta, hablas. Lo que se dijo queda en notas solo y, si agendan, la cita aparece en el calendario sin que nadie la capture.",
+    "pantalla": "Llamada con Diana Trejo · 3:12 min. Nota automática: «Busca 2 recámaras en Polanco, hasta 5 millones». Cita: jueves 11:00 am · confirmada."
+   }
   ],
   "cta": "SISTEMA",
   "cierre": "Comenta SISTEMA y te enseñamos cómo funciona.",
@@ -28,20 +57,53 @@
   "tema": "llamadas",
   "pilar": "P08",
   "titulo": "Diego y su CRM de papel",
-  "gancho_pantalla": ["SU CRM ES UNA", "[LIBRETA]"],
+  "gancho_pantalla": [
+   "LEADS EN UNA",
+   "[LIBRETA]"
+  ],
   "formato": "junta",
   "ia": [
-   {"plano": "Sala de juntas. Paola señala con la pluma la libreta de Diego, llena de post-its de colores y garabatos; Diego la abraza contra el pecho, orgulloso.",
-    "dialogo": [{"quien": "Paola", "dice": "Diego, ¿esa libreta es tu CRM?"}, {"quien": "Diego", "dice": "Es mi sistema, Paola. Tiene colores."}],
-    "sonido": "risas contenidas"},
-   {"plano": "Don Ramiro le quita la libreta a Diego y la hojea con cara de desesperación; se caen tres post-its al piso.",
-    "dialogo": [{"quien": "Don Ramiro", "dice": "Aquí dice «llamar a la señora del depa». ¿Cuál señora? ¿Cuál depa?"}],
-    "sonido": "post-its cayendo, suspiro largo"}
+   {
+    "plano": "Sala de juntas. Paola señala con la pluma la libreta de Diego, llena de post-its de colores y garabatos; Diego la abraza contra el pecho, orgulloso.",
+    "dialogo": [
+     {
+      "quien": "Paola",
+      "dice": "Diego, ¿así manejan los leads los asesores inmobiliarios en 2026? ¿En una libreta?"
+     },
+     {
+      "quien": "Diego",
+      "dice": "Es mi sistema de leads, Paola. Tiene colores."
+     }
+    ],
+    "sonido": "risas contenidas"
+   },
+   {
+    "plano": "Don Ramiro le quita la libreta a Diego y la hojea con cara de desesperación; se caen tres post-its al piso.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "Aquí dice «llamar a la señora del depa». ¿Cuál señora? ¿Cuál lead?"
+     }
+    ],
+    "sonido": "post-its cayendo, suspiro largo"
+   }
   ],
   "motor": [
-   {"tipo": "photo", "voz": "Cuando el seguimiento vive en una libreta, nadie sabe a quién se le llamó, a quién le toca hoy ni qué se prometió. Y si el asesor la pierde, se pierden los leads.", "pantalla": "Foto de libreta llena de post-its. Titular: ¿CUÁL [SEÑORA]?"},
-   {"tipo": "phonelist", "voz": "Con Lead Master, cada mañana tu asesor recibe en su WhatsApp la lista de a quién llamar: lo urgente, los que nunca buscó y los que se están enfriando.", "pantalla": "Lista del día · 8:00 am: Lo urgente 3 · Nunca los has buscado 5 · Se están enfriando 4."},
-   {"tipo": "ui+note", "voz": "Y con un botón les marca a todos, uno tras otro. Lo que se habla en cada llamada queda escrito solo. Sin libreta y sin post-its.", "pantalla": "Botón «Llamar a mi lista». Nota automática en Lucía Hernández: «Casa con jardín en Zapopan · crédito aprobado · llamarla el lunes»."}
+   {
+    "tipo": "photo",
+    "voz": "Cuando en tu inmobiliaria el seguimiento vive en una libreta, nadie sabe a quién se le llamó, a quién le toca hoy ni qué se prometió. Y si el asesor la pierde, se pierden los leads.",
+    "pantalla": "Foto de libreta llena de post-its. Titular: ¿CUÁL [SEÑORA]?"
+   },
+   {
+    "tipo": "phonelist",
+    "voz": "Con Lead Master, cada mañana tu asesor recibe en su WhatsApp la lista de a quién llamar: lo urgente, los que nunca buscó y los que se están enfriando.",
+    "pantalla": "Lista del día · 8:00 am: Lo urgente 3 · Nunca los has buscado 5 · Se están enfriando 4."
+   },
+   {
+    "tipo": "ui+note",
+    "voz": "Y con un botón les marca a todos, uno tras otro. Lo que se habla en cada llamada queda escrito solo. Sin libreta y sin post-its.",
+    "pantalla": "Botón «Llamar a mi lista». Nota automática en Lucía Hernández: «Casa con jardín en Zapopan · crédito aprobado · llamarla el lunes»."
+   }
   ],
   "cta": "LEADS",
   "cierre": "Comenta LEADS y te mostramos la lista del día.",
@@ -52,20 +114,49 @@
   "tema": "llamadas",
   "pilar": "P08",
   "titulo": "Doce llamadas en todo el día",
-  "gancho_pantalla": ["[12] LLAMADAS", "EN TODO EL DÍA"],
+  "gancho_pantalla": [
+   "[12] LEADS",
+   "EN TODO EL DÍA"
+  ],
   "formato": "junta",
   "ia": [
-   {"plano": "Rubén, con la laptop abierta y los lentes en la punta de la nariz, lee un reporte en voz alta; Diego se va hundiendo en su silla.",
-    "dialogo": [{"quien": "Rubén", "dice": "Diego marcó a doce leads. En todo el día."}],
-    "sonido": "teclado, carraspeo"},
-   {"plano": "Don Ramiro se levanta despacio; la cara se le pone roja y le sale vapor de las orejas como olla exprés.",
-    "dialogo": [{"quien": "Don Ramiro", "dice": "¿Doce? ¡Yo marco doce mientras se me enfría el café!"}],
-    "sonido": "silbido de olla exprés"}
+   {
+    "plano": "Rubén, con la laptop abierta y los lentes en la punta de la nariz, lee un reporte en voz alta; Diego se va hundiendo en su silla.",
+    "dialogo": [
+     {
+      "quien": "Rubén",
+      "dice": "Don Ramiro, nuestros asesores inmobiliarios marcaron a doce leads. Doce. En todo el día."
+     }
+    ],
+    "sonido": "teclado, carraspeo"
+   },
+   {
+    "plano": "Don Ramiro se levanta despacio; la cara se le pone roja y le sale vapor de las orejas como olla exprés.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "¿Doce leads? ¡Yo marco doce mientras se me enfría el café!"
+     }
+    ],
+    "sonido": "silbido de olla exprés"
+   }
   ],
   "motor": [
-   {"tipo": "flow", "voz": "El problema no siempre es que tu asesor sea flojo. Entre llamada y llamada busca el número, lo copia, marca, cuelga, anota y vuelve a empezar. Ahí se le va la mañana.", "pantalla": "Flujo con flechas: buscar → copiar → marcar → colgar → anotar → repetir. Reloj avanzando de 9:00 a 12:30."},
-   {"tipo": "ui+call", "voz": "Con Lead Master aprieta un botón y el sistema marca solo. Si no contestan, pasa al siguiente. Si contestan, habla.", "pantalla": "Insertos de llamada en cadena: Adriana Solís · no contesta → Lucía Hernández · no contesta → Diana Trejo · contestó."},
-   {"tipo": "compare", "voz": "Lo que antes era un día de doce llamadas se vuelve una mañana con muchos más intentos, y todo queda registrado para que tú lo veas.", "pantalla": "Antes: 12 llamadas en el día. Con Lead Master (ejemplo): 64 intentos en la mañana · 11 contactados · 2 citas."}
+   {
+    "tipo": "flow",
+    "voz": "En tu inmobiliaria el problema no siempre es que el asesor sea flojo. Entre llamada y llamada busca el número, lo copia, marca, cuelga, anota y vuelve a empezar. Ahí se le va la mañana.",
+    "pantalla": "Flujo con flechas: buscar → copiar → marcar → colgar → anotar → repetir. Reloj avanzando de 9:00 a 12:30."
+   },
+   {
+    "tipo": "ui+call",
+    "voz": "Con Lead Master aprieta un botón y el sistema marca solo. Si no contestan, pasa al siguiente. Si contestan, habla.",
+    "pantalla": "Insertos de llamada en cadena: Adriana Solís · no contesta → Lucía Hernández · no contesta → Diana Trejo · contestó."
+   },
+   {
+    "tipo": "compare",
+    "voz": "Lo que antes era un día de doce llamadas se vuelve una mañana con muchos más intentos, y todo queda registrado para que tú lo veas.",
+    "pantalla": "Antes: 12 llamadas en el día. Con Lead Master (ejemplo): 64 intentos en la mañana · 11 contactados · 2 citas."
+   }
   ],
   "cta": "SISTEMA",
   "cierre": "Comenta SISTEMA y te lo mostramos funcionando.",
@@ -76,20 +167,49 @@
   "tema": "llamadas",
   "pilar": "P08",
   "titulo": "Plátano Diego no anotó nada",
-  "gancho_pantalla": ["¿QUÉ LE", "[PROMETISTE]?"],
+  "gancho_pantalla": [
+   "¿QUÉ LE PROMETIÓ",
+   "AL [LEAD]?"
+  ],
   "formato": "fruti",
   "ia": [
-   {"plano": "Sala de juntas de frutas con luz de telenovela. Plátano Diego, con manchas cafés de nervios, sostiene un teléfono que suena con las dos manos.",
-    "dialogo": [{"quien": "Plátano Diego", "dice": "Lucía me está llamando… ¿qué le prometí? ¡No anoté nada!"}],
-    "sonido": "teléfono sonando, violines dramáticos"},
-   {"plano": "Fresa Valeria, tranquila, se acomoda las hojitas de la corona y sonríe con superioridad; triple zoom dramático a su cara.",
-    "dialogo": [{"quien": "Fresa Valeria", "dice": "Yo tampoco anoto, Plátano. Mis notas se escriben solas."}],
-    "sonido": "golpe de telenovela: ¡tan, tan, taaan!"}
+   {
+    "plano": "Sala de juntas de frutas con luz de telenovela. Plátano Diego, con manchas cafés de nervios, sostiene un teléfono que suena con las dos manos.",
+    "dialogo": [
+     {
+      "quien": "Plátano Diego",
+      "dice": "¡Soy asesor inmobiliario y no anoté nada de mis leads! ¿Qué le prometí a Lucía?"
+     }
+    ],
+    "sonido": "teléfono sonando, violines dramáticos"
+   },
+   {
+    "plano": "Fresa Valeria, tranquila, se acomoda las hojitas de la corona y sonríe con superioridad; triple zoom dramático a su cara.",
+    "dialogo": [
+     {
+      "quien": "Fresa Valeria",
+      "dice": "Yo tampoco anoto mis leads, Plátano. Mis notas se escriben solas."
+     }
+    ],
+    "sonido": "golpe de telenovela: ¡tan, tan, taaan!"
+   }
   ],
   "motor": [
-   {"tipo": "photo", "voz": "Tus asesores hablan con decenas de leads por semana. Nadie se acuerda de todo y casi nadie lo anota. El lead lo nota cuando le preguntas lo mismo por tercera vez.", "pantalla": "Titular: ¿QUÉ LE [PROMETÍ]? Foto de asesor confundido mirando el celular."},
-   {"tipo": "ui+note", "voz": "Con Lead Master las llamadas salen del sistema. Cuando cuelgas, lo que se habló ya está en las notas: qué busca, cuánto puede pagar y qué le prometiste.", "pantalla": "Nota automática en Lucía Hernández: «Casa de 3 recámaras en Zapopan · hasta 4.5 millones · crédito bancario · prometí mandarle 3 opciones el martes»."},
-   {"tipo": "ui+crm", "voz": "Así cualquier asesor retoma la conversación donde se quedó, y tú ves qué se le dijo a cada cliente sin preguntarle a nadie.", "pantalla": "Ficha del lead con historial: llamada de 4:05 min, nota, siguiente paso «mandar opciones el martes»."}
+   {
+    "tipo": "photo",
+    "voz": "Los asesores de una inmobiliaria hablan con decenas de leads por semana. Nadie se acuerda de todo y casi nadie lo anota. El lead lo nota cuando le preguntas lo mismo por tercera vez.",
+    "pantalla": "Titular: ¿QUÉ LE [PROMETÍ]? Foto de asesor confundido mirando el celular."
+   },
+   {
+    "tipo": "ui+note",
+    "voz": "Con Lead Master las llamadas salen del sistema. Cuando cuelgas, lo que se habló ya está en las notas: qué busca, cuánto puede pagar y qué le prometiste.",
+    "pantalla": "Nota automática en Lucía Hernández: «Casa de 3 recámaras en Zapopan · hasta 4.5 millones · crédito bancario · prometí mandarle 3 opciones el martes»."
+   },
+   {
+    "tipo": "ui+crm",
+    "voz": "Así cualquier asesor retoma la conversación donde se quedó, y tú ves qué se le dijo a cada cliente sin preguntarle a nadie.",
+    "pantalla": "Ficha del lead con historial: llamada de 4:05 min, nota, siguiente paso «mandar opciones el martes»."
+   }
   ],
   "cta": "CRM",
   "cierre": "Comenta CRM y te mostramos cómo se llenan solas las notas.",
@@ -100,20 +220,49 @@
   "tema": "llamadas",
   "pilar": "P08",
   "titulo": "Llegó a su cita y nadie sabía",
-  "gancho_pantalla": ["LLEGÓ A SU CITA", "Y NADIE [SABÍA]"],
+  "gancho_pantalla": [
+   "EL [LEAD] LLEGÓ",
+   "Y NADIE SABÍA"
+  ],
   "formato": "junta",
   "ia": [
-   {"plano": "Don Ramiro entra de golpe a la sala de juntas con los brazos abiertos, señalando hacia la recepción a través de la puerta de vidrio.",
-    "dialogo": [{"quien": "Don Ramiro", "dice": "¡Hay un cliente en recepción que dice que tiene cita! ¿Quién lo agendó?"}],
-    "sonido": "puerta que se abre, murmullos"},
-   {"plano": "Andrés, recargado con su chamarra de cuero, esconde el celular rápido y levanta la mano a medias.",
-    "dialogo": [{"quien": "Andrés", "dice": "Yo, jefe. La agendé… en mi cabeza."}],
-    "sonido": "silencio, alguien se ríe bajito"}
+   {
+    "plano": "Don Ramiro entra de golpe a la sala de juntas con los brazos abiertos, señalando hacia la recepción a través de la puerta de vidrio.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "¡Asesores inmobiliarios! ¿Quién agenda a nuestros leads? Hay uno en recepción con cita y nadie sabía."
+     }
+    ],
+    "sonido": "puerta que se abre, murmullos"
+   },
+   {
+    "plano": "Andrés, recargado con su chamarra de cuero, esconde el celular rápido y levanta la mano a medias.",
+    "dialogo": [
+     {
+      "quien": "Andrés",
+      "dice": "Yo, jefe. Lo agendé… en mi cabeza."
+     }
+    ],
+    "sonido": "silencio, alguien se ríe bajito"
+   }
   ],
   "motor": [
-   {"tipo": "photo", "voz": "Cuando las citas se apuntan en el celular de cada asesor, nadie más se entera. El cliente llega, nadie lo atiende y se va pensando que tu inmobiliaria es un desorden.", "pantalla": "Titular: AGENDADA EN SU [CABEZA]. Foto de recepción vacía."},
-   {"tipo": "ui+cita", "voz": "Con Lead Master tu asesor llama desde el sistema. Si en la llamada acuerdan una visita, la cita se crea sola en el calendario de tu CRM, como GoHighLevel.", "pantalla": "Llamada con Diana Trejo: «nos vemos el sábado a las 11». Inserto de cita: sábado 11:00 am · Recorrido Torre Polanco · Andrés M. · confirmada."},
-   {"tipo": "ui+report", "voz": "Todo el equipo la ve, a ti te aparece en el reporte del día y el cliente llega a una oficina que ya lo está esperando.", "pantalla": "Reporte del equipo: Citas de mañana: 5 · sábado 11:00 Diana Trejo (Andrés M.)."}
+   {
+    "tipo": "photo",
+    "voz": "Cuando las citas se apuntan en el celular de cada asesor, nadie más se entera. El cliente llega, nadie lo atiende y se va pensando que tu inmobiliaria es un desorden.",
+    "pantalla": "Titular: AGENDADA EN SU [CABEZA]. Foto de recepción vacía."
+   },
+   {
+    "tipo": "ui+cita",
+    "voz": "Con Lead Master tu asesor llama desde el sistema. Si en la llamada acuerdan una visita, la cita se crea sola en el calendario de tu CRM, como GoHighLevel.",
+    "pantalla": "Llamada con Diana Trejo: «nos vemos el sábado a las 11». Inserto de cita: sábado 11:00 am · Recorrido Torre Polanco · Andrés M. · confirmada."
+   },
+   {
+    "tipo": "ui+report",
+    "voz": "Todo el equipo la ve, a ti te aparece en el reporte del día y el cliente llega a una oficina que ya lo está esperando.",
+    "pantalla": "Reporte del equipo: Citas de mañana: 5 · sábado 11:00 Diana Trejo (Andrés M.)."
+   }
   ],
   "cta": "SISTEMA",
   "cierre": "Comenta SISTEMA y te lo instalamos.",
@@ -124,20 +273,49 @@
   "tema": "llamadas",
   "pilar": "P08",
   "titulo": "3,000 leads en la pestaña «Ya no»",
-  "gancho_pantalla": ["[3,000] LEADS", "OLVIDADOS"],
+  "gancho_pantalla": [
+   "[3,000] LEADS",
+   "OLVIDADOS"
+  ],
   "formato": "junta",
   "ia": [
-   {"plano": "Don Ramiro de pie frente a una pantalla que proyecta un Excel enorme con miles de filas; voltea furioso hacia la mesa.",
-    "dialogo": [{"quien": "Don Ramiro", "dice": "Tenemos tres mil leads viejos en este Excel. ¿Alguien les ha vuelto a marcar?"}],
-    "sonido": "zumbido de proyector"},
-   {"plano": "Todos miran al techo. Rubén, sin levantar la vista de su laptop, se sube los lentes con un dedo.",
-    "dialogo": [{"quien": "Rubén", "dice": "Están en la pestaña que se llama «Ya no», jefe."}],
-    "sonido": "grillos"}
+   {
+    "plano": "Don Ramiro de pie frente a una pantalla que proyecta un Excel enorme con miles de filas; voltea furioso hacia la mesa.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "¡Tres mil leads viejos en este Excel! ¿Algún asesor inmobiliario les ha vuelto a marcar?"
+     }
+    ],
+    "sonido": "zumbido de proyector"
+   },
+   {
+    "plano": "Todos miran al techo. Rubén, sin levantar la vista de su laptop, se sube los lentes con un dedo.",
+    "dialogo": [
+     {
+      "quien": "Rubén",
+      "dice": "Están en la pestaña que se llama «Ya no», jefe."
+     }
+    ],
+    "sonido": "grillos"
+   }
   ],
   "motor": [
-   {"tipo": "stat", "voz": "Esos leads ya los pagaste. Muchos no compraron porque nadie les volvió a llamar, no porque no quisieran.", "pantalla": "Número gigante: 3,000 leads · ya pagados · 0 llamadas este año."},
-   {"tipo": "ui+call", "voz": "Con Lead Master tu base vieja queda en una lista. Tu equipo aprieta un botón y el sistema les marca uno tras otro. El que no contesta se salta; el que contesta, habla con tu asesor.", "pantalla": "Botón «Llamar a la lista: Base 2024 (3,000)». Insertos de llamada en cadena."},
-   {"tipo": "ui+report", "voz": "Lo que se habla queda en notas y las citas se agendan solas. Con un solo día de reactivación sabes cuántos de esos leads siguen buscando.", "pantalla": "Resumen del día de reactivación (ejemplo): 412 llamadas · 96 contestaron · 18 siguen buscando · 6 citas."}
+   {
+    "tipo": "stat",
+    "voz": "Esos leads ya los pagó tu inmobiliaria. Muchos no compraron porque nadie les volvió a llamar, no porque no quisieran.",
+    "pantalla": "Número gigante: 3,000 leads · ya pagados · 0 llamadas este año."
+   },
+   {
+    "tipo": "ui+call",
+    "voz": "Con Lead Master tu base vieja queda en una lista. Tu equipo aprieta un botón y el sistema les marca uno tras otro. El que no contesta se salta; el que contesta, habla con tu asesor.",
+    "pantalla": "Botón «Llamar a la lista: Base 2024 (3,000)». Insertos de llamada en cadena."
+   },
+   {
+    "tipo": "ui+report",
+    "voz": "Lo que se habla queda en notas y las citas se agendan solas. Con un solo día de reactivación sabes cuántos de esos leads siguen buscando.",
+    "pantalla": "Resumen del día de reactivación (ejemplo): 412 llamadas · 96 contestaron · 18 siguen buscando · 6 citas."
+   }
   ],
   "cta": "LEADS",
   "cierre": "Comenta LEADS y te decimos cómo reactivar tu base.",
@@ -148,20 +326,53 @@
   "tema": "chat",
   "pilar": "P09",
   "titulo": "«Vamos súper bien, jefe»",
-  "gancho_pantalla": ["«SÚPER BIEN,", "[JEFE]»"],
+  "gancho_pantalla": [
+   "¿Y LOS [LEADS]?",
+   "«SÚPER BIEN»"
+  ],
   "formato": "junta",
   "ia": [
-   {"plano": "Junta de los lunes. Don Ramiro, con los brazos cruzados, mira fijo a Diego; Diego sonríe demasiado.",
-    "dialogo": [{"quien": "Don Ramiro", "dice": "Diego, ¿cómo vamos con los leads de hoy?"}, {"quien": "Diego", "dice": "¡Súper bien, jefe! A todos les marqué."}],
-    "sonido": "reloj de pared"},
-   {"plano": "Don Ramiro saca su celular, lee la pantalla despacio y levanta una ceja; a Diego se le borra la sonrisa.",
-    "dialogo": [{"quien": "Don Ramiro", "dice": "Aquí dice que le marcaste a dos. De veintiocho."}],
-    "sonido": "disco rayado"}
+   {
+    "plano": "Junta de los lunes. Don Ramiro, con los brazos cruzados, mira fijo a Diego; Diego sonríe demasiado.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "A ver, asesores inmobiliarios, ¿cómo vamos con los leads de hoy? Diego, tú primero."
+     },
+     {
+      "quien": "Diego",
+      "dice": "¡Súper bien, jefe! A todos mis leads les marqué."
+     }
+    ],
+    "sonido": "reloj de pared"
+   },
+   {
+    "plano": "Don Ramiro saca su celular, lee la pantalla despacio y levanta una ceja; a Diego se le borra la sonrisa.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "Aquí dice que le marcaste a dos. De veintiocho."
+     }
+    ],
+    "sonido": "disco rayado"
+   }
   ],
   "motor": [
-   {"tipo": "photo", "voz": "Si para saber qué hizo tu equipo tienes que preguntarle a cada asesor, te van a contestar lo que quieres oír.", "pantalla": "Titular: TE DICEN LO QUE QUIERES [OÍR]."},
-   {"tipo": "chat", "voz": "En Lead Master le escribes al sistema como a una persona: ¿quién no ha llamado a sus leads de hoy? Y te contesta con lo que pasó en los chats y en las llamadas.", "pantalla": "Chat con la IA de Lead Master. Pregunta: «¿Quién no ha llamado a sus leads de hoy?». Respuesta: «Diego H.: 2 de 28. Andrés M.: 9 de 22. Paola G. y Valeria R.: todos contactados.»"},
-   {"tipo": "ui+tasks", "voz": "Sin juntas eternas y sin Excel. Preguntas, te responde y sabes a quién tienes que apoyar hoy.", "pantalla": "Inserto: los 26 leads de Diego sin llamada, ordenados del más antiguo al más reciente."}
+   {
+    "tipo": "photo",
+    "voz": "Si en tu inmobiliaria para saber qué hizo tu equipo tienes que preguntarle a cada asesor, te van a contestar lo que quieres oír.",
+    "pantalla": "Titular: TE DICEN LO QUE QUIERES [OÍR]."
+   },
+   {
+    "tipo": "chat",
+    "voz": "En Lead Master le escribes al sistema como a una persona: ¿quién no ha llamado a sus leads de hoy? Y te contesta con lo que pasó en los chats y en las llamadas.",
+    "pantalla": "Chat con la IA de Lead Master. Pregunta: «¿Quién no ha llamado a sus leads de hoy?». Respuesta: «Diego H.: 2 de 28. Andrés M.: 9 de 22. Paola G. y Valeria R.: todos contactados.»"
+   },
+   {
+    "tipo": "ui+tasks",
+    "voz": "Sin juntas eternas y sin Excel. Preguntas, te responde y sabes a quién tienes que apoyar hoy.",
+    "pantalla": "Inserto: los 26 leads de Diego sin llamada, ordenados del más antiguo al más reciente."
+   }
   ],
   "cta": "SISTEMA",
   "cierre": "Comenta SISTEMA y te enseñamos el chat.",
@@ -172,20 +383,49 @@
   "tema": "chat",
   "pilar": "P09",
   "titulo": "Lo que Plátano le prometió a Diana",
-  "gancho_pantalla": ["NO SE ACUERDA", "DE [NADA]"],
+  "gancho_pantalla": [
+   "UN [LEAD]",
+   "FURIOSO"
+  ],
   "formato": "fruti",
   "ia": [
-   {"plano": "Sala de juntas de frutas con luz de telenovela. Don Piña, con la corona temblando de coraje, de pie frente a Plátano Diego.",
-    "dialogo": [{"quien": "Don Piña", "dice": "¡Diana Trejo está furiosa! Dice que le prometiste algo. ¿Qué le prometiste, Plátano?"}],
-    "sonido": "trueno, violines"},
-   {"plano": "Plátano Diego tartamudea y mira a todos lados; Aguacate Andrés se esconde detrás de una maceta; zoom dramático a Plátano.",
-    "dialogo": [{"quien": "Plátano Diego", "dice": "¿Prometer? Yo nunca prometo nada… creo… a veces."}],
-    "sonido": "golpe de telenovela: ¡tan, tan, taaan!"}
+   {
+    "plano": "Sala de juntas de frutas con luz de telenovela. Don Piña, con la corona temblando de coraje, de pie frente a Plátano Diego.",
+    "dialogo": [
+     {
+      "quien": "Don Piña",
+      "dice": "¡Asesores inmobiliarios! Uno de nuestros leads está furioso: Diana Trejo. ¿Qué le prometiste, Plátano?"
+     }
+    ],
+    "sonido": "trueno, violines"
+   },
+   {
+    "plano": "Plátano Diego tartamudea y mira a todos lados; Aguacate Andrés se esconde detrás de una maceta; zoom dramático a Plátano.",
+    "dialogo": [
+     {
+      "quien": "Plátano Diego",
+      "dice": "¿Prometer? Yo nunca le prometo nada a los leads… creo… a veces."
+     }
+    ],
+    "sonido": "golpe de telenovela: ¡tan, tan, taaan!"
+   }
   ],
   "motor": [
-   {"tipo": "photo", "voz": "Pasa en todas las inmobiliarias: el cliente se acuerda de todo lo que le dijeron. Tu asesor no.", "pantalla": "Titular: EL CLIENTE SÍ SE [ACUERDA]."},
-   {"tipo": "chat", "voz": "Con Lead Master, el asesor le pregunta al sistema: ¿qué le prometí a Diana Trejo? La IA revisa sus chats y sus llamadas y le contesta en segundos.", "pantalla": "Chat. Pregunta: «¿Qué le prometí a Diana Trejo?». Respuesta: «El 3 de noviembre le prometiste mandarle opciones en Polanco hasta 5 millones y llamarla el jueves. Todavía no se hace ninguna de las dos.»"},
-   {"tipo": "phonelist", "voz": "Y como ya está en su lista del día, no se le vuelve a pasar. El cliente siente que lo escuchaste, aunque hayas tenido cuarenta chats esa semana.", "pantalla": "Lista del día: Lo urgente · Diana Trejo · «mandar opciones en Polanco y llamar hoy»."}
+   {
+    "tipo": "photo",
+    "voz": "Pasa en todas las inmobiliarias: el cliente se acuerda de todo lo que le dijeron. Tu asesor no.",
+    "pantalla": "Titular: EL CLIENTE SÍ SE [ACUERDA]."
+   },
+   {
+    "tipo": "chat",
+    "voz": "Con Lead Master, el asesor le pregunta al sistema: ¿qué le prometí a Diana Trejo? La IA revisa sus chats y sus llamadas y le contesta en segundos.",
+    "pantalla": "Chat. Pregunta: «¿Qué le prometí a Diana Trejo?». Respuesta: «El 3 de noviembre le prometiste mandarle opciones en Polanco hasta 5 millones y llamarla el jueves. Todavía no se hace ninguna de las dos.»"
+   },
+   {
+    "tipo": "phonelist",
+    "voz": "Y como ya está en su lista del día, no se le vuelve a pasar. El cliente siente que lo escuchaste, aunque hayas tenido cuarenta chats esa semana.",
+    "pantalla": "Lista del día: Lo urgente · Diana Trejo · «mandar opciones en Polanco y llamar hoy»."
+   }
   ],
   "cta": "LEADS",
   "cierre": "Comenta LEADS y te mostramos cómo le preguntas al sistema.",
@@ -196,20 +436,49 @@
   "tema": "chat",
   "pilar": "P09",
   "titulo": "El reporte de catorce pestañas",
-  "gancho_pantalla": ["UN REPORTE DE", "[14] PESTAÑAS"],
+  "gancho_pantalla": [
+   "[LEADS] EN",
+   "14 PESTAÑAS"
+  ],
   "formato": "junta",
   "ia": [
-   {"plano": "Rubén, orgulloso, proyecta un Excel con catorce pestañas de colores; tiene un control de presentaciones en la mano.",
-    "dialogo": [{"quien": "Rubén", "dice": "Jefe, el reporte de la semana. Son catorce pestañas, empiezo por la de colores."}],
-    "sonido": "clic de presentador"},
-   {"plano": "Don Ramiro, agotado, apoya la frente en la mesa y levanta un solo dedo sin levantar la cabeza.",
-    "dialogo": [{"quien": "Don Ramiro", "dice": "Rubén. Yo solo quiero saber una cosa: ¿quién sacó citas esta semana?"}],
-    "sonido": "suspiro largo"}
+   {
+    "plano": "Rubén, orgulloso, proyecta un Excel con catorce pestañas de colores; tiene un control de presentaciones en la mano.",
+    "dialogo": [
+     {
+      "quien": "Rubén",
+      "dice": "Jefe, el reporte de leads de los asesores inmobiliarios. Son catorce pestañas, empiezo por la de colores."
+     }
+    ],
+    "sonido": "clic de presentador"
+   },
+   {
+    "plano": "Don Ramiro, agotado, apoya la frente en la mesa y levanta un solo dedo sin levantar la cabeza.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "Rubén. Solo quiero saber una cosa: ¿qué leads sacaron cita esta semana?"
+     }
+    ],
+    "sonido": "suspiro largo"
+   }
   ],
   "motor": [
-   {"tipo": "photo", "voz": "Tu coordinador tarda días armando un reporte que nadie lee, porque tú solo quieres contestar una o dos preguntas.", "pantalla": "Titular: 4 DÍAS PARA UN [REPORTE]. Foto de Excel de noche."},
-   {"tipo": "chat", "voz": "En Lead Master se lo preguntas directo: ¿cuántas citas salieron esta semana y de qué asesor? Y te contesta con los datos de los chats y las llamadas, sin que nadie llene nada.", "pantalla": "Chat. Pregunta: «¿Cuántas citas salieron esta semana y de quién?». Respuesta: «19 citas: Paola G. 7 · Valeria R. 6 · Andrés M. 4 · Diego H. 2.»"},
-   {"tipo": "bars", "voz": "Una pregunta en lugar de catorce pestañas. Y tu coordinador deja de armar reportes y se pone a ayudar a vender.", "pantalla": "Barras de citas por asesor: Paola 7, Valeria 6, Andrés 4, Diego 2."}
+   {
+    "tipo": "photo",
+    "voz": "En tu inmobiliaria el coordinador tarda días armando un reporte que nadie lee, porque tú solo quieres contestar una o dos preguntas.",
+    "pantalla": "Titular: 4 DÍAS PARA UN [REPORTE]. Foto de Excel de noche."
+   },
+   {
+    "tipo": "chat",
+    "voz": "En Lead Master se lo preguntas directo: ¿cuántas citas salieron esta semana y de qué asesor? Y te contesta con los datos de los chats y las llamadas, sin que nadie llene nada.",
+    "pantalla": "Chat. Pregunta: «¿Cuántas citas salieron esta semana y de quién?». Respuesta: «19 citas: Paola G. 7 · Valeria R. 6 · Andrés M. 4 · Diego H. 2.»"
+   },
+   {
+    "tipo": "bars",
+    "voz": "Una pregunta en lugar de catorce pestañas. Y tu coordinador deja de armar reportes y se pone a ayudar a vender.",
+    "pantalla": "Barras de citas por asesor: Paola 7, Valeria 6, Andrés 4, Diego 2."
+   }
   ],
   "cta": "SISTEMA",
   "cierre": "Comenta SISTEMA y hazle tu primera pregunta.",
@@ -220,20 +489,53 @@
   "tema": "chat",
   "pilar": "P09",
   "titulo": "El mensaje del domingo a las 11 pm",
-  "gancho_pantalla": ["DOMINGO,", "[11] PM"],
+  "gancho_pantalla": [
+   "DOMINGO, 11 PM:",
+   "¿Y LOS [LEADS]?"
+  ],
   "formato": "junta",
   "ia": [
-   {"plano": "Lunes en la sala de juntas. Don Ramiro, despeinado y ojeroso, levanta su celular y muestra un chat de grupo lleno de mensajes suyos sin respuesta.",
-    "dialogo": [{"quien": "Don Ramiro", "dice": "¡El domingo a las once pregunté cuántas citas teníamos hoy! ¡Nadie contestó!"}],
-    "sonido": "ráfaga de notificaciones de WhatsApp"},
-   {"plano": "Diego y Paola se miran; Paola contesta sin despegar la vista de su café.",
-    "dialogo": [{"quien": "Diego", "dice": "Jefe… era domingo."}, {"quien": "Paola", "dice": "Y eran las once."}],
-    "sonido": "sorbo de café"}
+   {
+    "plano": "Lunes en la sala de juntas. Don Ramiro, despeinado y ojeroso, levanta su celular y muestra un chat de grupo lleno de mensajes suyos sin respuesta.",
+    "dialogo": [
+     {
+      "quien": "Don Ramiro",
+      "dice": "¡Asesores inmobiliarios! El domingo a las once pregunté cuántos leads tenían cita. ¡Nadie contestó!"
+     }
+    ],
+    "sonido": "ráfaga de notificaciones de WhatsApp"
+   },
+   {
+    "plano": "Diego y Paola se miran; Paola contesta sin despegar la vista de su café.",
+    "dialogo": [
+     {
+      "quien": "Diego",
+      "dice": "Jefe… era domingo."
+     },
+     {
+      "quien": "Paola",
+      "dice": "Y eran las once."
+     }
+    ],
+    "sonido": "sorbo de café"
+   }
   ],
   "motor": [
-   {"tipo": "photo", "voz": "Si para saber cómo viene tu semana tienes que escribirle a tu equipo en domingo, el problema no es tu equipo. Es que la información vive en sus celulares.", "pantalla": "Titular: LA INFORMACIÓN VIVE EN SUS [CELULARES]."},
-   {"tipo": "chat", "voz": "Con Lead Master le preguntas al sistema desde tu celular, a la hora que quieras: ¿qué citas tenemos el lunes? ¿Qué leads entraron el fin de semana y quién los tiene?", "pantalla": "Chat · domingo 23:04. «¿Qué citas tenemos mañana?» → «5 citas: 10:00 Diana Trejo (Paola G.) · 12:00 Lucía Hernández (Valeria R.)…». «¿Qué leads entraron el fin de semana?» → «23, todos asignados; 4 sin contacto (Diego H.)»."},
-   {"tipo": "photo", "voz": "Tú duermes tranquilo, tu equipo descansa y el lunes la junta dura diez minutos.", "pantalla": "Foto de dueño relajado. Titular: LA JUNTA DURA [10] MINUTOS."}
+   {
+    "tipo": "photo",
+    "voz": "Si para saber cómo viene la semana de tu inmobiliaria tienes que escribirle a tu equipo en domingo, el problema no es tu equipo. Es que la información vive en sus celulares.",
+    "pantalla": "Titular: LA INFORMACIÓN VIVE EN SUS [CELULARES]."
+   },
+   {
+    "tipo": "chat",
+    "voz": "Con Lead Master le preguntas al sistema desde tu celular, a la hora que quieras: ¿qué citas tenemos el lunes? ¿Qué leads entraron el fin de semana y quién los tiene?",
+    "pantalla": "Chat · domingo 23:04. «¿Qué citas tenemos mañana?» → «5 citas: 10:00 Diana Trejo (Paola G.) · 12:00 Lucía Hernández (Valeria R.)…». «¿Qué leads entraron el fin de semana?» → «23, todos asignados; 4 sin contacto (Diego H.)»."
+   },
+   {
+    "tipo": "photo",
+    "voz": "Tú duermes tranquilo, tu equipo descansa y el lunes la junta dura diez minutos.",
+    "pantalla": "Foto de dueño relajado. Titular: LA JUNTA DURA [10] MINUTOS."
+   }
   ],
   "cta": "SISTEMA",
   "cierre": "Comenta SISTEMA y te lo instalamos.",

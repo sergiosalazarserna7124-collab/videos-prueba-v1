@@ -5,8 +5,8 @@
   "pilar": "P10",
   "titulo": "Treinta citas y cero apartados",
   "gancho_pantalla": [
-   "30 CITAS,",
-   "[0] APARTADOS"
+   "30 [LEADS],",
+   "0 APARTADOS"
   ],
   "formato": "junta",
   "ia": [
@@ -15,7 +15,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "¡Treinta citas este mes y cero apartados! ¿Qué carajo les están diciendo los clientes?"
+      "dice": "¡Asesores inmobiliarios! Treinta citas con leads y cero apartados. ¿Qué carajo les están diciendo?"
      }
     ],
     "sonido": "hoja golpeando la mesa, tazas que brincan"
@@ -25,7 +25,7 @@
     "dialogo": [
      {
       "quien": "Diego",
-      "dice": "Que está caro, jefe."
+      "dice": "Que está caro, jefe. Todos los leads dicen eso."
      },
      {
       "quien": "Rubén",
@@ -38,7 +38,7 @@
   "motor": [
    {
     "tipo": "photo",
-    "voz": "Si nadie sabe por qué no compran tus clientes, cada asesor adivina. Y con adivinanzas no se corrige nada.",
+    "voz": "Si en tu inmobiliaria nadie sabe por qué no compran tus clientes, cada asesor adivina. Y con adivinanzas no se corrige nada.",
     "pantalla": "Foto de una junta tensa. Titular: ¿POR QUÉ NO [COMPRAN]?"
    },
    {
@@ -62,8 +62,8 @@
   "pilar": "P10",
   "titulo": "Fresa Valeria y los veinte «lo voy a pensar»",
   "gancho_pantalla": [
-   "«LO VOY A",
-   "[PENSAR]»"
+   "20 [LEADS] LO",
+   "VAN A PENSAR"
   ],
   "formato": "fruti",
   "ia": [
@@ -72,7 +72,7 @@
     "dialogo": [
      {
       "quien": "Fresa Valeria",
-      "dice": "Don Piña… los veinte clientes de esta semana me dijeron lo mismo: «lo voy a pensar»."
+      "dice": "Don Piña, los veinte leads de los asesores inmobiliarios dijeron lo mismo: «lo voy a pensar»."
      }
     ],
     "sonido": "violines dramáticos"
@@ -82,7 +82,7 @@
     "dialogo": [
      {
       "quien": "Don Piña",
-      "dice": "¡¿Veinte?! ¿Y cuántos lo pensaron?"
+      "dice": "¡¿Veinte leads?! ¿Y cuántos lo pensaron?"
      },
      {
       "quien": "Plátano Diego",
@@ -95,7 +95,7 @@
   "motor": [
    {
     "tipo": "photo",
-    "voz": "«Lo voy a pensar» no es un no. Es una objeción que nadie le preguntó al cliente. Y si no la mides, la escuchas todas las semanas.",
+    "voz": "En tu inmobiliaria, «lo voy a pensar» no es un no. Es una objeción que nadie le preguntó al cliente. Y si no la mides, la escuchas todas las semanas.",
     "pantalla": "Titular: «LO VOY A PENSAR» [NO ES UN NO]. Foto de asesora con el celular."
    },
    {
@@ -119,8 +119,8 @@
   "pilar": "P10",
   "titulo": "¿Quién sabe de crédito Infonavit?",
   "gancho_pantalla": [
-   "¿QUIÉN SABE DE",
-   "[CRÉDITO]?"
+   "1 DE 3 [LEADS]",
+   "PIDE CRÉDITO"
   ],
   "formato": "junta",
   "ia": [
@@ -129,7 +129,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "Uno de cada tres clientes pregunta por crédito Infonavit. ¿Quién sabe cómo funciona?"
+      "dice": "¡Asesores inmobiliarios! Uno de cada tres leads pregunta por crédito Infonavit. ¿Quién sabe cómo funciona?"
      }
     ],
     "sonido": "marcador rechinando en el pizarrón"
@@ -148,7 +148,7 @@
   "motor": [
    {
     "tipo": "photo",
-    "voz": "Si tus clientes preguntan por crédito y tu equipo no sabe contestar, no es que no tengan dinero. Es que nadie les resolvió la duda.",
+    "voz": "Si en tu inmobiliaria los clientes preguntan por crédito y tu equipo no sabe contestar, no es que no tengan dinero. Es que nadie les resolvió la duda.",
     "pantalla": "Titular: NADIE LES [RESOLVIÓ] LA DUDA. Foto de pareja revisando papeles."
    },
    {
@@ -172,8 +172,8 @@
   "pilar": "P12",
   "titulo": "«Ahorita te mando opciones»… hace dos semanas",
   "gancho_pantalla": [
-   "¿Y LAS",
-   "[OPCIONES]?"
+   "¿Y LAS OPCIONES",
+   "DEL [LEAD]?"
   ],
   "formato": "junta",
   "ia": [
@@ -182,7 +182,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "«Me dijeron ahorita te mando opciones… hace dos semanas.» ¡¿Quién fue?!"
+      "dice": "¡Asesores inmobiliarios! A uno de nuestros leads le dijeron «ahorita te mando opciones» hace dos semanas. ¡¿Quién fue?!"
      }
     ],
     "sonido": "teclados que suenan de golpe"
@@ -201,7 +201,7 @@
   "motor": [
    {
     "tipo": "chat",
-    "voz": "El lead pidió algo clarísimo: dos recámaras, en la Roma, hasta cinco millones. Y tu asesor tardó dos semanas porque tenía que buscar a mano.",
+    "voz": "El lead le pidió a tu inmobiliaria algo clarísimo: dos recámaras, en la Roma, hasta cinco millones. Y tu asesor tardó dos semanas porque tenía que buscar a mano.",
     "pantalla": "Chat de WhatsApp. Adriana Solís: «Busco depa de 2 recámaras en la Roma, hasta 5 millones». Asesor: «Ahorita te mando opciones». Hace 14 días."
    },
    {
@@ -225,8 +225,8 @@
   "pilar": "P12",
   "titulo": "Paola y las 40 pestañas abiertas",
   "gancho_pantalla": [
-   "40 PESTAÑAS",
-   "[ABIERTAS]"
+   "1 HORA POR",
+   "CADA [LEAD]"
   ],
   "formato": "junta",
   "ia": [
@@ -235,7 +235,7 @@
     "dialogo": [
      {
       "quien": "Paola",
-      "dice": "Llevo una hora buscando un depa con terraza que acepte mascotas. ¡Una hora!"
+      "dice": "Los asesores inmobiliarios no somos detectives. Llevo una hora buscando depa con terraza para mis leads."
      }
     ],
     "sonido": "clics de mouse sin parar"
@@ -258,7 +258,7 @@
   "motor": [
    {
     "tipo": "photo",
-    "voz": "Tu equipo pierde horas buscando propiedades a mano entre el portal, el Excel y la memoria. Y mientras busca, el lead se enfría.",
+    "voz": "En tu inmobiliaria el equipo pierde horas buscando propiedades a mano entre el portal, el Excel y la memoria. Y mientras busca, el lead se enfría.",
     "pantalla": "Titular: HORAS [BUSCANDO] A MANO. Foto de asesora frente a la laptop de noche."
    },
    {
@@ -282,8 +282,8 @@
   "pilar": "P12",
   "titulo": "Plátano le mandó un penthouse de 12 millones",
   "gancho_pantalla": [
-   "PIDIÓ [4]",
-   "LE MANDARON [12]"
+   "[LEAD]: PIDIÓ 4",
+   "LE MANDARON 12"
   ],
   "formato": "fruti",
   "ia": [
@@ -292,7 +292,7 @@
     "dialogo": [
      {
       "quien": "Don Piña",
-      "dice": "Plátano… la señora Lucía pidió una casa de cuatro millones en Zapopan."
+      "dice": "¡Asesores inmobiliarios! Uno de nuestros leads pidió una casa de cuatro millones en Zapopan."
      }
     ],
     "sonido": "violines que suben"
@@ -302,7 +302,7 @@
     "dialogo": [
      {
       "quien": "Don Piña",
-      "dice": "¡¿Y tú le mandaste un penthouse de doce millones en Polanco?!"
+      "dice": "¡¿Y tú, Plátano, le mandaste un penthouse de doce millones en Polanco?!"
      },
      {
       "quien": "Plátano Diego",
@@ -315,7 +315,7 @@
   "motor": [
    {
     "tipo": "chat",
-    "voz": "Cuando tu asesor manda opciones que no tienen nada que ver con lo que pidió el cliente, el cliente entiende una sola cosa: no me escucharon.",
+    "voz": "Cuando un asesor de tu inmobiliaria manda opciones que no tienen nada que ver con lo que pidió el cliente, el cliente entiende una sola cosa: no me escucharon.",
     "pantalla": "Chat. Lucía Hernández: «Busco casa en Zapopan, hasta 4 millones». Asesor: ficha de penthouse en Polanco, $12 M. Lucía: «Ok… gracias». Visto."
    },
    {
@@ -339,8 +339,8 @@
   "pilar": "P12",
   "titulo": "«Tres días… pero eran muy buenas»",
   "gancho_pantalla": [
-   "¿CUÁNTO",
-   "[TARDASTE]?"
+   "¿CUÁNTO TARDASTE",
+   "CON EL [LEAD]?"
   ],
   "formato": "junta",
   "ia": [
@@ -349,7 +349,7 @@
     "dialogo": [
      {
       "quien": "Andrés",
-      "dice": "Jefe, el cliente del depa de Polanco ya compró con otra inmobiliaria."
+      "dice": "Jefe, perdimos otro de los leads de los asesores inmobiliarios: el del depa de Polanco."
      }
     ],
     "sonido": "puerta que se cierra, silencio"
@@ -359,7 +359,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "¿Cuánto tardaste en mandarle opciones?"
+      "dice": "¿Cuánto tardaste en mandarle opciones a ese lead?"
      },
      {
       "quien": "Andrés",
@@ -396,8 +396,8 @@
   "pilar": "P12",
   "titulo": "¿Teníamos casa con alberca o no teníamos?",
   "gancho_pantalla": [
-   "¿TENÍAMOS",
-   "[ESA] CASA?"
+   "¿TENÍAMOS LA",
+   "CASA DEL [LEAD]?"
   ],
   "formato": "junta",
   "ia": [
@@ -406,7 +406,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "El cliente quería casa con alberca en Juriquilla. ¿Teníamos o no teníamos?"
+      "dice": "¡Asesores inmobiliarios! Tres leads querían casa con alberca en Juriquilla. ¿Teníamos o no teníamos?"
      }
     ],
     "sonido": "puño en la mesa"
@@ -420,7 +420,7 @@
      },
      {
       "quien": "Diego",
-      "dice": "¿¡Tres!? Yo le dije que no había nada…"
+      "dice": "¿¡Tres!? Yo les dije a esos leads que no había nada…"
      }
     ],
     "sonido": "golpe de música de suspenso"
@@ -429,7 +429,7 @@
   "motor": [
    {
     "tipo": "photo",
-    "voz": "Tu equipo no se sabe todo tu inventario de memoria. Nadie se lo sabe. Y por eso a veces dicen que no hay, cuando sí hay.",
+    "voz": "Tu equipo no se sabe de memoria todo el inventario de tu inmobiliaria. Nadie se lo sabe. Y por eso a veces dicen que no hay, cuando sí hay.",
     "pantalla": "Titular: SÍ HABÍA. NADIE [SABÍA]. Foto de casa con alberca."
    },
    {
@@ -453,8 +453,8 @@
   "pilar": "P11",
   "titulo": "La contraseña del portal la tenía la practicante",
   "gancho_pantalla": [
-   "¿QUIÉN REVISÓ",
-   "EL [PORTAL]?"
+   "[LEADS] DEL",
+   "PORTAL: NADIE"
   ],
   "formato": "junta",
   "ia": [
@@ -463,7 +463,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "¿Quién revisó los leads de Inmuebles24 esta semana? ¿Nadie?"
+      "dice": "¡Asesores inmobiliarios! ¿Quién revisó los leads de Inmuebles24 esta semana? ¿Nadie?"
      }
     ],
     "sonido": "zumbido de proyector"
@@ -477,7 +477,7 @@
      },
      {
       "quien": "Don Ramiro",
-      "dice": "¿Y la practicante?!"
+      "dice": "¿¡Y la practicante!?"
      }
     ],
     "sonido": "Rubén contesta bajito: «se fue en agosto»; un grillo"
@@ -486,7 +486,7 @@
   "motor": [
    {
     "tipo": "stat",
-    "voz": "Cuando un portal depende de que alguien entre a revisar, pasa esto: cuarenta y seis leads sin abrir. Personas que preguntaron por una propiedad y nadie les contestó.",
+    "voz": "Cuando en tu inmobiliaria el portal depende de que alguien entre a revisar, pasa esto: cuarenta y seis leads sin abrir. Personas que preguntaron por una propiedad y nadie les contestó.",
     "pantalla": "Número gigante: [46] leads sin abrir · Inmuebles24 · últimas 3 semanas."
    },
    {
@@ -510,8 +510,8 @@
   "pilar": "P11",
   "titulo": "El lead del viernes a las 9 de la noche",
   "gancho_pantalla": [
-   "VIERNES,",
-   "[9:00] PM"
+   "VIERNES 9 PM:",
+   "UN [LEAD] NUEVO"
   ],
   "formato": "junta",
   "ia": [
@@ -520,7 +520,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "Un lead de EasyBroker pidió visita el viernes a las nueve. ¿Quién lo vio?"
+      "dice": "¡Asesores inmobiliarios! Uno de nuestros leads de EasyBroker pidió visita el viernes a las nueve. ¿Quién lo vio?"
      }
     ],
     "sonido": "sorbo de café, taza que se azota"
@@ -530,11 +530,11 @@
     "dialogo": [
      {
       "quien": "Diego",
-      "dice": "Lo vi hoy, jefe… pero ya se fue a ver otro desarrollo."
+      "dice": "Lo vi hoy, jefe… pero ese lead ya se fue a ver otro desarrollo."
      },
      {
       "quien": "Paola",
-      "dice": "Los portales no descansan, Diego."
+      "dice": "Los leads no descansan, Diego."
      }
     ],
     "sonido": "bostezo largo, golpe de música"

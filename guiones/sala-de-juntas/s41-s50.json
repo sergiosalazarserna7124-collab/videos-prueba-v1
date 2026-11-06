@@ -15,7 +15,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "¿Cuatrocientos doce descartados? ¡¿Quién descartó a media ciudad?!"
+      "dice": "¡Asesores inmobiliarios! ¿Cuatrocientos doce leads descartados? ¡¿Quién descartó a media ciudad?!"
      }
     ],
     "sonido": "papel desenrollándose, rollo que cae al piso"
@@ -25,7 +25,7 @@
     "dialogo": [
      {
       "quien": "Diego",
-      "dice": "Jefe, es que no contestaban…"
+      "dice": "Jefe, es que esos leads no contestaban…"
      },
      {
       "quien": "Paola",
@@ -62,8 +62,8 @@
   "pilar": "P06",
   "titulo": "Motivo de descarte: «no le interesa»",
   "gancho_pantalla": [
-   "NO LE INTERESA",
-   "¿[SEGURO]?"
+   "[LEADS] QUE «NO",
+   "LES INTERESA»"
   ],
   "formato": "junta",
   "ia": [
@@ -72,7 +72,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "Motivo de descarte: «no le interesa». Diego… ¡el señor preguntó por el enganche!"
+      "dice": "Diego, ¿qué clase de asesor inmobiliario descarta leads por «no le interesa»? ¡El señor preguntó por el enganche!"
      }
     ],
     "sonido": "tic del reloj de la sala"
@@ -82,7 +82,7 @@
     "dialogo": [
      {
       "quien": "Diego",
-      "dice": "Bueno, jefe, preguntar no es comprar."
+      "dice": "Bueno, jefe, que un lead pregunte no quiere decir que compre."
      }
     ],
     "sonido": "palmada en la frente"
@@ -91,7 +91,7 @@
   "motor": [
    {
     "tipo": "chat",
-    "voz": "Este es el chat del lead que Diego descartó por «no le interesa». Preguntó por el enganche, le dijeron «le paso info» y nadie volvió a escribirle.",
+    "voz": "En tu inmobiliaria pasa esto: el lead que Diego descartó por «no le interesa» preguntó por el enganche, le dijeron «le paso info» y nadie volvió a escribirle.",
     "pantalla": "Chat: Lead: «¿De cuánto es el enganche del depa de 2 recámaras?» · Diego: «le paso info» · tres días sin mensajes · etiqueta roja: Descartado, no le interesa."
    },
    {
@@ -115,8 +115,8 @@
   "pilar": "P06",
   "titulo": "La «curiosa» ya subió foto con las llaves",
   "gancho_pantalla": [
-   "YA COMPRÓ.",
-   "[CON OTRO]"
+   "[LEAD] CURIOSA:",
+   "YA COMPRÓ"
   ],
   "formato": "junta",
   "ia": [
@@ -125,7 +125,7 @@
     "dialogo": [
      {
       "quien": "Paola",
-      "dice": "Jefe, ¿se acuerda de Adriana Solís? Ya compró. Subió foto con las llaves."
+      "dice": "Jefe, ¿se acuerda de los leads que los asesores inmobiliarios marcaron como curiosos? Adriana ya compró."
      },
      {
       "quien": "Don Ramiro",
@@ -139,7 +139,7 @@
     "dialogo": [
      {
       "quien": "Paola",
-      "dice": "Nosotros no, jefe."
+      "dice": "Nosotros no, jefe. Subió foto con las llaves… de otra inmobiliaria."
      }
     ],
     "sonido": "silbido de olla exprés"
@@ -148,7 +148,7 @@
   "motor": [
    {
     "tipo": "events",
-    "voz": "Adriana dejó sus datos en marzo. Diego le marcó una vez, la puso como curiosa y nadie más la buscó. En mayo compró una casa de 4 millones con otra inmobiliaria.",
+    "voz": "Adriana le dejó sus datos a tu inmobiliaria en marzo. Diego le marcó una vez, la puso como curiosa y nadie más la buscó. En mayo compró una casa de 4 millones con otra inmobiliaria.",
     "pantalla": "Línea de tiempo: 3 mar entra el lead · 3 mar 1 llamada · 4 mar descartada «curiosa» · 12 may compró con otra inmobiliaria."
    },
    {
@@ -172,8 +172,8 @@
   "pilar": "P06",
   "titulo": "La caja que el Plátano escondía",
   "gancho_pantalla": [
-   "LA CAJA DE LOS",
-   "[DESCARTADOS]"
+   "150 [LEADS] EN",
+   "UNA CAJA"
   ],
   "formato": "fruti",
   "ia": [
@@ -182,7 +182,7 @@
     "dialogo": [
      {
       "quien": "Fresa Valeria",
-      "dice": "Don Piña… aquí hay ciento cincuenta leads… ¡y todos siguen vivos!"
+      "dice": "Don Piña, en esta caja hay ciento cincuenta leads que un asesor inmobiliario descartó… ¡y siguen vivos!"
      }
     ],
     "sonido": "coro dramático"
@@ -229,8 +229,8 @@
   "pilar": "P06",
   "titulo": "El viernes de revisar descartados a mano",
   "gancho_pantalla": [
-   "600 CHATS",
-   "A [MANO]"
+   "600 [LEADS]",
+   "A MANO"
   ],
   "formato": "junta",
   "ia": [
@@ -239,7 +239,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "¡A partir de hoy, cada viernes revisamos uno por uno los leads que descartaron!"
+      "dice": "¡Asesores inmobiliarios! Desde hoy, cada viernes revisamos uno por uno los leads que descartaron."
      }
     ],
     "sonido": "golpe de orquesta de suspenso"
@@ -249,7 +249,7 @@
     "dialogo": [
      {
       "quien": "Rubén",
-      "dice": "Jefe, son seiscientos. Nos quedamos hasta el lunes."
+      "dice": "Jefe, son seiscientos leads. Nos quedamos hasta el lunes."
      }
     ],
     "sonido": "trombón triste"
@@ -258,7 +258,7 @@
   "motor": [
    {
     "tipo": "photo",
-    "voz": "Revisar descartados a mano no escala. Nadie tiene tiempo de leer seiscientos chats un viernes en la tarde. Y si nadie los revisa, tus asesores aprenden que descartar no tiene consecuencias.",
+    "voz": "En una inmobiliaria, revisar descartados a mano no escala. Nadie tiene tiempo de leer seiscientos chats un viernes en la tarde. Y si nadie los revisa, tus asesores aprenden que descartar no tiene consecuencias.",
     "pantalla": "Titular: 600 CHATS [A MANO]. Foto de Excel de noche."
    },
    {
@@ -282,8 +282,8 @@
   "pilar": "P01",
   "titulo": "Karla trajo un bot que atiende solito",
   "gancho_pantalla": [
-   "PRESIONE 1",
-   "PARA [VENDER]"
+   "UN BOT PARA",
+   "TUS [LEADS]"
   ],
   "formato": "junta",
   "ia": [
@@ -292,7 +292,7 @@
     "dialogo": [
      {
       "quien": "Karla",
-      "dice": "¡Les traje un bot que atiende solito a sus clientes, veinticuatro siete!"
+      "dice": "¡Asesores inmobiliarios, despídanse! Les traje un bot que atiende solito a sus leads, veinticuatro siete."
      },
      {
       "quien": "Don Ramiro",
@@ -306,7 +306,7 @@
     "dialogo": [
      {
       "quien": "Paola",
-      "dice": "Un cliente preguntó por un depa en Polanco. El bot le contestó: «presione uno»."
+      "dice": "Un lead preguntó por un depa en Polanco. El bot le contestó: «presione uno»."
      }
     ],
     "sonido": "disco rayado"
@@ -315,7 +315,7 @@
   "motor": [
    {
     "tipo": "chat",
-    "voz": "Así atienden muchos bots a alguien que quiere comprar un departamento de 6 millones. El cliente pregunta algo concreto y el bot lo manda a dar vueltas en un menú.",
+    "voz": "Así atienden muchos bots de inmobiliaria a alguien que quiere comprar un departamento de 6 millones. El cliente pregunta algo concreto y el bot lo manda a dar vueltas en un menú.",
     "pantalla": "Chat: Lead: «¿El depa de Polanco tiene estacionamiento?» · Bot: «Presione 1 para ventas, 2 para rentas» · Lead: «?» · Bot: «No entendí. Presione 1» · el lead deja de contestar."
    },
    {
@@ -340,7 +340,7 @@
   "titulo": "Karla vs. Diego: primer round",
   "gancho_pantalla": [
    "MARKETING",
-   "VS. [VENTAS]"
+   "VS. [ASESORES]"
   ],
   "formato": "junta",
   "ia": [
@@ -349,7 +349,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "¡Primer round! La agencia dice que los leads son buenos. Ventas dice que son basura."
+      "dice": "¡Primer round! La agencia dice que los leads son buenos. Los asesores inmobiliarios dicen que son basura."
      }
     ],
     "sonido": "campana de box, multitud"
@@ -359,7 +359,7 @@
     "dialogo": [
      {
       "quien": "Karla",
-      "dice": "¡Les mando trescientos a la semana!"
+      "dice": "¡Les mando trescientos leads a la semana!"
      },
      {
       "quien": "Diego",
@@ -410,7 +410,7 @@
     "dialogo": [
      {
       "quien": "Rubén",
-      "dice": "Jefe, este es nuestro CRM. Trescientos leads en «Nuevo»… desde marzo."
+      "dice": "Jefe, este es el CRM de los asesores inmobiliarios. Trescientos leads en «Nuevo»… desde marzo."
      }
     ],
     "sonido": "tos, taza que se cae"
@@ -433,7 +433,7 @@
   "motor": [
    {
     "tipo": "photo",
-    "voz": "Pagaste GoHighLevel, pero tus asesores viven en WhatsApp, no en el CRM. Por eso las tarjetas nunca se mueven.",
+    "voz": "Tu inmobiliaria pagó GoHighLevel, pero tus asesores viven en WhatsApp, no en el CRM. Por eso las tarjetas nunca se mueven.",
     "pantalla": "Titular: UN CRM QUE [NADIE] LLENA. Foto de laptop con tablero vacío."
    },
    {
@@ -467,7 +467,7 @@
     "dialogo": [
      {
       "quien": "Don Piña",
-      "dice": "Aguacate, ¿por qué Diana Trejo dice que ya la atiende «tu socio»?"
+      "dice": "Aguacate, ¿desde cuándo los asesores inmobiliarios tienen socio? ¡Tu socio ya atiende a tus leads!"
      },
      {
       "quien": "Aguacate Andrés",
@@ -490,7 +490,7 @@
   "motor": [
    {
     "tipo": "chat",
-    "voz": "Este es el chat que nunca ves, porque vive en el celular personal de tu asesor. Ahí se ofrecen otros proyectos, otras comisiones y otros socios.",
+    "voz": "Este es el chat que nunca ves en tu inmobiliaria, porque vive en el celular personal de tu asesor. Ahí se ofrecen otros proyectos, otras comisiones y otros socios.",
     "pantalla": "Chat Andrés → Diana Trejo: «Mejor te atiendo por fuera con mi socio, te sale más barato la comisión»."
    },
    {
@@ -514,8 +514,8 @@
   "pilar": "P07",
   "titulo": "Llegó una demanda por un WhatsApp de Diego",
   "gancho_pantalla": [
-   "UN WHATSAPP,",
-   "UNA [DEMANDA]"
+   "UN LEAD, UNA",
+   "[DEMANDA]"
   ],
   "formato": "junta",
   "ia": [
@@ -524,7 +524,7 @@
     "dialogo": [
      {
       "quien": "Rubén",
-      "dice": "¡Don Ramiro! ¡Llegó una demanda! ¡Por un WhatsApp de Diego!"
+      "dice": "¡Don Ramiro! ¡Llegó una demanda de uno de nuestros leads por un WhatsApp de un asesor inmobiliario!"
      }
     ],
     "sonido": "puerta que se azota, escupitajo de café"
@@ -534,7 +534,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "Diego… ¿qué le escribiste a ese cliente?"
+      "dice": "Diego… ¿qué le escribiste a ese lead?"
      },
      {
       "quien": "Diego",

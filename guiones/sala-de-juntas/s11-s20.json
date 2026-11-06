@@ -5,8 +5,8 @@
   "pilar": "P09",
   "titulo": "¿Quién no llamó hoy? Don Ramiro le pregunta a la IA",
   "gancho_pantalla": [
-   "¿QUIÉN NO",
-   "[LLAMÓ] HOY?"
+   "¿QUIÉN NO LLAMÓ",
+   "A SUS [LEADS]?"
   ],
   "formato": "junta",
   "ia": [
@@ -15,7 +15,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "A ver. Que levante la mano el que NO llamó a sus leads hoy."
+      "dice": "A ver, asesores inmobiliarios: que levante la mano el que NO llamó a sus leads hoy."
      }
     ],
     "sonido": "silencio tenso, reloj de pared"
@@ -25,7 +25,7 @@
     "dialogo": [
      {
       "quien": "Diego",
-      "dice": "¡Yo llamé a todos, jefe! A todititos."
+      "dice": "¡Yo llamé a todos mis leads, jefe! A todititos."
      },
      {
       "quien": "Don Ramiro",
@@ -38,7 +38,7 @@
   "motor": [
    {
     "tipo": "photo",
-    "voz": "En casi todas las juntas pasa lo mismo: preguntas quién hizo su trabajo y todos dicen que sí. Y tú no tienes cómo comprobarlo sin revisar celular por celular.",
+    "voz": "En casi todas las juntas de una inmobiliaria pasa lo mismo: preguntas quién hizo su trabajo y todos dicen que sí. Y tú no tienes cómo comprobarlo sin revisar celular por celular.",
     "pantalla": "Foto de junta con asesores. Titular: TODOS DICEN QUE [SÍ]."
    },
    {
@@ -62,8 +62,8 @@
   "pilar": "P09",
   "titulo": "Plátano Diego no se acuerda qué le prometió a Lucía",
   "gancho_pantalla": [
-   "¿QUÉ LE",
-   "[PROMETISTE]?"
+   "SE OLVIDÓ DE",
+   "SU [LEAD]"
   ],
   "formato": "fruti",
   "ia": [
@@ -72,7 +72,7 @@
     "dialogo": [
      {
       "quien": "Plátano Diego",
-      "dice": "¡Es Lucía Hernández! ¿Qué le prometí? ¿¡Qué le prometí la semana pasada!?"
+      "dice": "¡Soy el peor asesor inmobiliario! Llama Lucía, uno de mis leads, ¿y qué le prometí?"
      }
     ],
     "sonido": "música dramática, celular vibrando"
@@ -82,11 +82,11 @@
     "dialogo": [
      {
       "quien": "Fresa Valeria",
-      "dice": "Tranquilo, Plátano. Le preguntamos al sistema."
+      "dice": "Tranquilo, Plátano. Le preguntamos al sistema qué le prometiste a tu lead."
      },
      {
       "quien": "Plátano Diego",
-      "dice": "¿El sistema se acuerda mejor que yo?"
+      "dice": "¿El sistema se acuerda de mis leads mejor que yo?"
      }
     ],
     "sonido": "trueno, golpe de piano"
@@ -95,7 +95,7 @@
   "motor": [
    {
     "tipo": "photo",
-    "voz": "Tu asesor habla con cuarenta leads a la semana. Es imposible que se acuerde de lo que le prometió a cada uno. Y el lead sí se acuerda.",
+    "voz": "En una inmobiliaria, cada asesor habla con cuarenta leads a la semana. Es imposible que se acuerde de lo que le prometió a cada uno. Y el lead sí se acuerda.",
     "pantalla": "Foto de asesor con el celular lleno de chats. Titular: EL LEAD SÍ SE [ACUERDA]."
    },
    {
@@ -119,8 +119,8 @@
   "pilar": "P10",
   "titulo": "«Nadie contesta», dijo Diego. Los números no",
   "gancho_pantalla": [
-   "NADIE",
-   "[CONTESTA]"
+   "LOS [LEADS] NO",
+   "CONTESTAN"
   ],
   "formato": "junta",
   "ia": [
@@ -129,7 +129,7 @@
     "dialogo": [
      {
       "quien": "Diego",
-      "dice": "¡Jefe, esos leads no sirven! ¡Nadie contesta! ¡Nadie!"
+      "dice": "¡Jefe, los asesores inmobiliarios no hacemos milagros! ¡Esos leads no contestan! ¡Nadie!"
      }
     ],
     "sonido": "golpe en la mesa"
@@ -139,7 +139,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "¿Y a ti, Paola?"
+      "dice": "¿Y a ti, Paola? ¿Te contestan esos leads?"
      },
      {
       "quien": "Paola",
@@ -152,7 +152,7 @@
   "motor": [
    {
     "tipo": "photo",
-    "voz": "Cuando un asesor dice que nadie contesta, casi siempre le crees. Y le echas la culpa a la campaña, al portal o a Meta.",
+    "voz": "Cuando un asesor de tu inmobiliaria dice que nadie contesta, casi siempre le crees. Y le echas la culpa a la campaña, al portal o a Meta.",
     "pantalla": "Foto de asesor frustrado con el celular. Titular: ¿CULPA DEL [LEAD]?"
    },
    {
@@ -176,8 +176,8 @@
   "pilar": "P10",
   "titulo": "Diego llama a la hora de la comida. Todos los días",
   "gancho_pantalla": [
-   "¿A QUÉ HORA",
-   "[LLAMAS]?"
+   "[LEADS] A LA",
+   "HORA DE COMER"
   ],
   "formato": "junta",
   "ia": [
@@ -186,7 +186,7 @@
     "dialogo": [
      {
       "quien": "Diego",
-      "dice": "Son las dos y media, jefe. Hora perfecta para llamar."
+      "dice": "Dos y media, jefe. La hora perfecta para que un asesor inmobiliario le marque a sus leads."
      }
     ],
     "sonido": "mordida, tono de llamada que nadie contesta"
@@ -196,7 +196,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "¡A esta hora tus clientes también están comiendo, Diego! ¡Como tú!"
+      "dice": "¡A esta hora tus leads también están comiendo, Diego! ¡Como tú!"
      }
     ],
     "sonido": "golpe en la mesa"
@@ -205,7 +205,7 @@
   "motor": [
    {
     "tipo": "photo",
-    "voz": "Tu equipo llama cuando tiene tiempo, no cuando el cliente puede contestar. Y luego te dice que los leads no contestan.",
+    "voz": "En tu inmobiliaria el equipo llama cuando tiene tiempo, no cuando el cliente puede contestar. Y luego te dice que los leads no contestan.",
     "pantalla": "Foto de asesor comiendo en su escritorio. Titular: LLAMAN CUANDO [PUEDEN]."
    },
    {
@@ -229,8 +229,8 @@
   "pilar": "P10",
   "titulo": "61 llamadas de 7 segundos: el récord de Andrés",
   "gancho_pantalla": [
-   "61 LLAMADAS",
-   "DE [7] SEGUNDOS"
+   "61 [LEADS] EN",
+   "7 SEGUNDOS"
   ],
   "formato": "junta",
   "ia": [
@@ -239,7 +239,7 @@
     "dialogo": [
      {
       "quien": "Andrés",
-      "dice": "Sesenta y una llamadas ayer. Soy el que más llamó de toda la oficina."
+      "dice": "Sesenta y una llamadas a leads ayer. Soy el asesor inmobiliario que más llamó de toda la oficina."
      }
     ],
     "sonido": "aplausos flojos"
@@ -253,7 +253,7 @@
      },
      {
       "quien": "Don Ramiro",
-      "dice": "¿Siete segundos? ¡Eso ni es un hola!"
+      "dice": "¿Siete segundos? ¡Eso ni es un hola para un lead!"
      }
     ],
     "sonido": "disco rayado"
@@ -262,7 +262,7 @@
   "motor": [
    {
     "tipo": "photo",
-    "voz": "Contar llamadas no sirve de nada si no sabes cuánto duraron ni cuántas veces se intentó de verdad con cada lead.",
+    "voz": "En una inmobiliaria, contar llamadas no sirve de nada si no sabes cuánto duraron ni cuántas veces se intentó de verdad con cada lead.",
     "pantalla": "Foto de asesor marcando sin parar. Titular: ¿LLAMADAS O [MARCADAS]?"
    },
    {
@@ -287,7 +287,7 @@
   "titulo": "El lead preguntó a las 10:02. Diego contestó a las 4:15",
   "gancho_pantalla": [
    "SEIS HORAS",
-   "PARA [CONTESTAR]"
+   "PARA UN [LEAD]"
   ],
   "formato": "junta",
   "ia": [
@@ -296,7 +296,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "La señora preguntó a las diez de la mañana. ¿A qué hora le contestaste?"
+      "dice": "¡Asesores inmobiliarios! Los leads preguntan a las diez de la mañana. ¿A qué hora les contestan?"
      }
     ],
     "sonido": "reloj de pared con tic tac fuerte"
@@ -306,7 +306,7 @@
     "dialogo": [
      {
       "quien": "Diego",
-      "dice": "A las cuatro… y cuarto. Pero le contesté con mucho cariño, jefe."
+      "dice": "A las cuatro… y cuarto. Pero con mucho cariño, jefe."
      }
     ],
     "sonido": "grillos"
@@ -349,7 +349,7 @@
     "dialogo": [
      {
       "quien": "Limón",
-      "dice": "Don Piña… hay veintitrés leads que nadie ha tocado. Ni un mensaje."
+      "dice": "Don Piña, hay veintitrés leads que ningún asesor inmobiliario ha tocado. Ni un mensaje."
      }
     ],
     "sonido": "música dramática, trueno"
@@ -396,8 +396,8 @@
   "pilar": "P10",
   "titulo": "400 leads de Facebook vs. 40 del portal: ¿cuál vende?",
   "gancho_pantalla": [
-   "¿DE DÓNDE",
-   "SALEN LAS [CITAS]?"
+   "400 [LEADS]",
+   "Y 2 CITAS"
   ],
   "formato": "junta",
   "ia": [
@@ -406,7 +406,7 @@
     "dialogo": [
      {
       "quien": "Karla",
-      "dice": "¡Cuatrocientos leads este mes, a tres dólares! ¡La mejor campaña del año!"
+      "dice": "¡Asesores inmobiliarios, cuatrocientos leads este mes a tres dólares! ¡La mejor campaña del año!"
      }
     ],
     "sonido": "fanfarria corta"
@@ -416,7 +416,7 @@
     "dialogo": [
      {
       "quien": "Paola",
-      "dice": "Y dos citas. Las otras nueve salieron del portal."
+      "dice": "Y dos citas. Las otras nueve salieron de los leads del portal."
      },
      {
       "quien": "Don Ramiro",
@@ -429,7 +429,7 @@
   "motor": [
    {
     "tipo": "photo",
-    "voz": "Contar cuántos leads te trae cada canal no sirve. Lo que importa es cuántas citas y cuántos apartados salen de cada uno.",
+    "voz": "En tu inmobiliaria, contar cuántos leads te trae cada canal no sirve. Lo que importa es cuántas citas y cuántos apartados salen de cada uno.",
     "pantalla": "Foto de dueño frente a una gráfica de anuncios. Titular: LEADS NO SON [CITAS]."
    },
    {
@@ -453,8 +453,8 @@
   "pilar": "P10",
   "titulo": "¿Por qué no compran? Rubén tendría que oír 300 llamadas",
   "gancho_pantalla": [
-   "¿POR QUÉ NO",
-   "[COMPRAN]?"
+   "300 [LEADS]",
+   "Y 3 VENTAS"
   ],
   "formato": "junta",
   "ia": [
@@ -463,7 +463,7 @@
     "dialogo": [
      {
       "quien": "Don Ramiro",
-      "dice": "¡Trescientos leads y tres ventas! ¿Por qué carajo no nos compran?"
+      "dice": "¡Asesores inmobiliarios! Trescientos leads y tres ventas. ¿Por qué carajo no nos compran?"
      }
     ],
     "sonido": "golpe de carpeta"
@@ -486,7 +486,7 @@
   "motor": [
    {
     "tipo": "photo",
-    "voz": "Nadie en tu equipo tiene tiempo de escuchar cientos de llamadas para entender por qué no te compran. Así que adivinas.",
+    "voz": "Nadie en tu inmobiliaria tiene tiempo de escuchar cientos de llamadas para entender por qué no te compran. Así que adivinas.",
     "pantalla": "Foto de coordinador con audífonos y una pila de papeles. Titular: ¿Y SI SOLO [ADIVINAS]?"
    },
    {
@@ -510,8 +510,8 @@
   "pilar": "P10",
   "titulo": "«Lo voy a pensar»: la frase que Diego siempre acepta",
   "gancho_pantalla": [
-   "«LO VOY A",
-   "[PENSAR]»"
+   "5 [LEADS] LO VAN",
+   "A PENSAR"
   ],
   "formato": "junta",
   "ia": [
@@ -520,7 +520,7 @@
     "dialogo": [
      {
       "quien": "Diego",
-      "dice": "Perfecto, señora. Piénselo con calma, yo aquí la espero."
+      "dice": "Otro lead que lo va a pensar. Los asesores inmobiliarios somos pacientes con los leads, jefe."
      }
     ],
     "sonido": "tono de llamada colgada"
@@ -530,11 +530,11 @@
     "dialogo": [
      {
       "quien": "Paola",
-      "dice": "Es la quinta de hoy que se va a pensarlo."
+      "dice": "Es el quinto lead de hoy que se va a pensarlo."
      },
      {
       "quien": "Diego",
-      "dice": "Es que la gente piensa mucho, Paola."
+      "dice": "Es que los leads piensan mucho, Paola."
      }
     ],
     "sonido": "grillos"
@@ -543,7 +543,7 @@
   "motor": [
    {
     "tipo": "photo",
-    "voz": "«Lo voy a pensar» casi nunca significa que lo va a pensar. Significa que tiene una duda que nadie le preguntó.",
+    "voz": "En una inmobiliaria, «lo voy a pensar» casi nunca significa que lo va a pensar. Significa que el cliente tiene una duda que nadie le preguntó.",
     "pantalla": "Foto de clienta dudando con el celular en la mano. Titular: NO LO VA A [PENSAR]."
    },
    {
