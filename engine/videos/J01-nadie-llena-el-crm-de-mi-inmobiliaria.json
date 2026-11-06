@@ -1,0 +1,316 @@
+{
+ "id": "J01-nadie-llena-el-crm-de-mi-inmobiliaria",
+ "title": "Nadie llena el CRM de mi inmobiliaria (Serie Sala de Juntas, video 1)",
+ "voice": "antonio",
+ "music": "music/pulse.mp3",
+ "tempo": 1.1,
+ "keywords": [
+  "leads",
+  "asesores",
+  "inmobiliarios",
+  "inmobiliaria",
+  "CRM",
+  "notas",
+  "nota",
+  "WhatsApp",
+  "carajo",
+  "cabeza",
+  "viernes"
+ ],
+ "ia": [
+  {
+   "clip": "j01_a3",
+   "dice": "¡Asesores inmobiliarios! Nadie llena el CRM, nadie completa las notas. ¿Qué carajo pasó con mis leads?",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film, warm office lighting. Setting: a modern real estate agency meeting room with a glass wall, a long white table with laptops showing an empty CRM, coffee mugs and printed charts. At the head of the table stands Don Ramiro, a short chubby Mexican boss in his fifties with a thick black mustache, receding hairline, white shirt with rolled-up sleeves and a loose red tie. His face turns red with anger, he slams both fists on the table so the mugs jump, and shouts at his real estate agents in Mexican Spanish: \"¡Asesores inmobiliarios! Nadie llena el CRM, nadie completa las notas. ¿Qué carajo pasó con mis leads?\" Three real estate agents around the table flinch. Medium shot, slow push-in. Audio: only his angry voice in Spanish, fists on the table, mugs rattling. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j01_b3",
+   "dice": "Jefe, las notas de los leads las tengo… en mi cabeza. / Y yo lleno el CRM los viernes… cuando me acuerdo.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film, warm office lighting. Setting: a modern real estate agency meeting room with a glass wall, a long white table with laptops showing an empty CRM, coffee mugs and printed charts. Diego, a skinny young real estate agent with glasses, slicked-back gelled hair and an oversized blue blazer, sweats nervously and taps his own forehead with one finger while saying in Mexican Spanish: \"Jefe, las notas de los leads las tengo… en mi cabeza.\" Then Paola, a confident real estate agent with curly hair and a pink blouse, shrugs with a guilty smile and says: \"Y yo lleno el CRM los viernes… cuando me acuerdo.\" Awkward silence, crickets chirping. Medium two-shot, static camera. Audio: their voices in Spanish, then crickets. No music. No subtitles, no on-screen text."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j01_a3.mp4",
+    "words": "clips/j01_a3.words.json",
+    "lines": [
+     "¿QUÉ PASÓ CON",
+     "MIS [LEADS]?"
+    ],
+    "kicker": "Inmobiliarias · junta de asesores",
+    "titleOut": 66,
+    "size": 130
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j01_b3.mp4",
+    "words": "clips/j01_b3.words.json"
+   }
+  },
+  {
+   "type": "photo",
+   "key": "j01c_s2",
+   "voice": "antonio",
+   "tail": 0.35,
+   "text": "Si en tu inmobiliaria el CRM depende de que cada asesor lo llene, nunca vas a saber qué pasó con cada lead.",
+   "p": {
+    "img": "excel_night",
+    "lines": [
+     "NADIE LLENA",
+     "EL [CRM]"
+    ],
+    "lineAts": [
+     "@depende",
+     "@llene"
+    ],
+    "size": 120,
+    "stamp": {
+     "text": "SIN NOTAS",
+     "at": "@lead",
+     "size": 100
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llene",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@lead",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "type": "panel",
+   "key": "j01c_s3",
+   "voice": "antonio",
+   "text": "Con Lead Master, la IA lee los chats y escucha las llamadas de tus asesores, llena el CRM y escribe la nota de cada lead sola.",
+   "p": {
+    "title": "La IA llena el CRM",
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Busca depa de 2 recámaras · hasta 5 millones · quiere visitar el sábado",
+      "status": "Nota escrita",
+      "color": "green",
+      "at": "@chats"
+     },
+     {
+      "ch": "call",
+      "advisor": "Diego Herrera",
+      "lead": "Lucía Hernández",
+      "summary": "Llamada de 3 min · pidió crédito Infonavit · llamar el jueves",
+      "status": "CRM actualizado",
+      "color": "cyan",
+      "at": "@llamadas"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@chats",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@llamadas",
+     "vol": 0.08
+    }
+   ],
+   "ins": [
+    {
+     "kind": "note",
+     "at": "@nota",
+     "p": {
+      "lead": "Diana Trejo",
+      "tag": "Lead · Portal",
+      "stage": "Interesada",
+      "typeAt": "@nota+3",
+      "note": "Busca depa de 2 recámaras para mudarse en marzo. Quiere visitar el sábado a las 11.",
+      "fields": [
+       {
+        "k": "Presupuesto",
+        "v": "Hasta 5 millones",
+        "at": "@nota+10"
+       },
+       {
+        "k": "Zona",
+        "v": "Del Valle",
+        "at": "@nota+16"
+       },
+       {
+        "k": "Siguiente paso",
+        "v": "Visita el sábado",
+        "at": "@sola"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "type": "ui",
+   "key": "j01c_s4",
+   "voice": "antonio",
+   "tail": 0.6,
+   "text": "Y todos los días te llega a tu WhatsApp qué pasó con cada lead: a quién llamó cada asesor, quién se quedó sin contacto y cuántas citas salieron.",
+   "p": {
+    "items": [
+     {
+      "t": "Llamadas del equipo",
+      "at": "@llamó",
+      "color": "purple",
+      "n": 84
+     },
+     {
+      "t": "Sin contacto",
+      "at": "@contacto",
+      "color": "red",
+      "n": 6
+     },
+     {
+      "t": "Citas",
+      "at": "@citas",
+      "color": "green",
+      "n": 5
+     }
+    ],
+    "bg": "owner_phone_report",
+    "title": "Reporte del equipo",
+    "sub": "Lead Master · todos los días"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@WhatsApp",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamó",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@contacto",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@citas",
+     "vol": 0.11
+    }
+   ],
+   "ins": [
+    {
+     "kind": "report",
+     "at": 0,
+     "p": {
+      "time": "8:00 pm",
+      "lines": [
+       {
+        "t": "Leads que entraron hoy: 37 · todos con nota",
+        "at": "@WhatsApp",
+        "b": true
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@llamó"
+       },
+       {
+        "t": "Paola G. llamó a 14 · 2 citas",
+        "at": "@llamó"
+       },
+       {
+        "t": "Valeria R. llamó a 11 · 2 citas",
+        "at": "@llamó+5"
+       },
+       {
+        "t": "Diego H. llamó a 3",
+        "at": "@llamó+10",
+        "c": "amber"
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@contacto"
+       },
+       {
+        "t": "Sin contacto: 6 (Diego H. 4, Andrés M. 2)",
+        "at": "@contacto",
+        "c": "red"
+       },
+       {
+        "t": "Citas del día: 5",
+        "at": "@citas",
+        "c": "green"
+       }
+      ],
+      "alert": {
+       "t": "Nadie llenó nada: el CRM y las notas los llenó la IA",
+       "c": "green",
+       "at": "@citas+20"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "key": "j01c_s5",
+   "voice": "antonio",
+   "tail": 1.0,
+   "captions": true,
+   "text": "Si tienes una inmobiliaria con asesores, comenta CRM y te lo instalamos.",
+   "p": {
+    "word": "CRM",
+    "top": "PARA INMOBILIARIAS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}
