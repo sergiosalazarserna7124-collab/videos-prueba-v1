@@ -119,7 +119,7 @@ def from_text(name, text):
         wav = os.path.join(td, 'a.wav')
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', mp4, '-vn', '-ac', '1', '-ar', '16000', wav], check=True)
         segs = speech_segments(wav, dur) or [[0.0, dur]]
-    sents = [x.strip() for x in re.split(r'(?<=[.?!…])\s+', text.strip()) if x.strip()]
+    sents = [x.strip() for x in re.split(r'(?<=[.?!…:])\s+', text.strip()) if x.strip()]
     # agrupa frases en tantos grupos como tramos, en orden, equilibrando por largo
     n = min(len(segs), len(sents))
     segs = segs[:n]

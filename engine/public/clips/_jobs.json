@@ -40,5 +40,19 @@
   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Night, the same real estate agency office is empty and dark, only a desk lamp on. Toño, a stocky Mexican real estate agent in his late twenties with big curly hair, a thick beard, sunglasses pushed up on his head, a tight light-blue polo shirt with a real estate agency lanyard and a flashy gold watch, sits at his desk covered in messy sticky notes, scrolls his phone confused, scratches his head and squints at the screen while saying in Mexican Spanish, fast and worried: \"A ver… ¿con qué lead hablé hoy? ¿A quién le prometí la visita? ¿Y este quién es?\" Medium close-up, static camera. Audio: only his voice in Spanish, quiet office hum. No music. No subtitles, no on-screen text.",
   "seconds": "8",
   "created": 1793986472.830837
+ },
+ "j03_a": {
+  "id": "v1_ChZWaG51YXJyNUlMUzB4ZElQbnRTNVFREhZWaG51YXJyNUlMUzB4ZElQbnRTNVFR",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, inside a parked car right outside a real estate agency office. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, sits in the driver seat reading a WhatsApp message on his phone, raises an eyebrow, smirks and turns to the camera saying in Mexican Spanish, fast and confident, like a mockumentary confession: \"Los asesores inmobiliarios no perdemos leads: si aquí no hay desarrollo, se lo ofrezco a mi compadre.\" Medium close-up, static camera. Audio: only his voice in Spanish, quiet street ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1793988951.5294735
+ },
+ "j03_b": {
+  "id": "v1_ChdWeG51YXI2eU5vS3R1TVlQdTdiRHFRSRIXVnhudWFyNnlOb0t0dU1ZUHU3YkRxUUk",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Same parked car outside the real estate agency. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, holds the phone to his ear and says in a sweet, overly friendly voice in Mexican Spanish: \"¡Claro, señora! Le tengo justo lo que busca…\" Then he lowers the phone, covers it with his hand, winks at the camera and whispers: \"Total, la inmobiliaria ni cuenta se da.\" Medium close-up, static camera. Audio: only his voice in Spanish. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1793988952.8820026
  }
 }

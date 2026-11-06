@@ -1,0 +1,251 @@
+{
+ "id": "J03-se-lo-ofrezco-a-mi-compadre",
+ "title": "Se lo ofrezco a mi compadre: el asesor que se lleva tus leads (Serie Sala de Juntas, video 3)",
+ "voice": "antonio",
+ "music": "music/pulse.mp3",
+ "tempo": 1.15,
+ "keywords": [
+  "leads",
+  "lead",
+  "asesor",
+  "asesores",
+  "inmobiliario",
+  "inmobiliarios",
+  "inmobiliaria",
+  "WhatsApp",
+  "desarrollo",
+  "desarrollos",
+  "compadre",
+  "fuera",
+  "robando",
+  "aviso",
+  "grabadas"
+ ],
+ "ia": [
+  {
+   "clip": "j03_a",
+   "dice": "Los asesores inmobiliarios no perdemos leads: si aquí no hay desarrollo, se lo ofrezco a mi compadre.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, inside a parked car right outside a real estate agency office. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, sits in the driver seat reading a WhatsApp message on his phone, raises an eyebrow, smirks and turns to the camera saying in Mexican Spanish, fast and confident, like a mockumentary confession: \"Los asesores inmobiliarios no perdemos leads: si aquí no hay desarrollo, se lo ofrezco a mi compadre.\" Medium close-up, static camera. Audio: only his voice in Spanish, quiet street ambience. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j03_b",
+   "dice": "¡Claro, señora! Le tengo justo lo que busca… / Total, la inmobiliaria ni cuenta se da.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Same parked car outside the real estate agency. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, holds the phone to his ear and says in a sweet, overly friendly voice in Mexican Spanish: \"¡Claro, señora! Le tengo justo lo que busca…\" Then he lowers the phone, covers it with his hand, winks at the camera and whispers: \"Total, la inmobiliaria ni cuenta se da.\" Medium close-up, static camera. Audio: only his voice in Spanish. No music. No subtitles, no on-screen text."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j03_a.mp4",
+    "words": "clips/j03_a.words.json",
+    "lines": [
+     "«¿NO TIENEN OTROS",
+     "[DESARROLLOS]?»"
+    ],
+    "kicker": "WhatsApp de un lead",
+    "kickerColor": "wa",
+    "titleOut": 60,
+    "size": 104
+   },
+   "sfx": [
+    {
+     "src": "sfx/notif.wav",
+     "at": 0,
+     "vol": 0.16
+    }
+   ]
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j03_b.mp4",
+    "words": "clips/j03_b.words.json",
+    "range": [
+     0,
+     3.55
+    ]
+   }
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j03_b.mp4",
+    "words": "clips/j03_b.words.json",
+    "range": [
+     5.05,
+     7.6
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "key": "j03_s2",
+   "voice": "antonio",
+   "tail": 0.1,
+   "text": "Ojo: los leads son de tu inmobiliaria, no de tu asesor. Pero si todo pasa en su WhatsApp personal, te los pueden estar robando y ni te enteras.",
+   "p": {
+    "img": "advisor_car",
+    "lines": [
+     "TUS LEADS,",
+     "SUS [VENTAS]"
+    ],
+    "lineAts": [
+     "@leads",
+     "@robando"
+    ],
+    "size": 124,
+    "stamp": {
+     "text": "POR FUERA",
+     "at": "@enteras",
+     "size": 110
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@robando",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@enteras",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "type": "panel",
+   "key": "j03_s3",
+   "voice": "antonio",
+   "text": "Con Lead Master, el WhatsApp de cada asesor está conectado: ves lo que le dice a cada lead, y si pasa algo raro, te llega un aviso.",
+   "p": {
+    "title": "Conversaciones de hoy",
+    "right": "Avisos de la IA",
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Le mandó 3 opciones de la inmobiliaria · visita el sábado",
+      "status": "Normal",
+      "color": "green",
+      "at": "@conectado"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Rodrigo (asesor)",
+      "lead": "Lucía Hernández",
+      "summary": "«Te paso con un socio, por fuera te sale mejor»",
+      "status": "Algo raro",
+      "color": "red",
+      "at": "@raro"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@conectado",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@raro",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@aviso",
+     "vol": 0.14
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "key": "j03_s4",
+   "voice": "antonio",
+   "text": "Las llamadas salen del sistema y quedan grabadas. Y si el asesor se va, los leads y todo su historial se quedan en tu inmobiliaria.",
+   "p": {
+    "items": [
+     {
+      "t": "WhatsApp conectado",
+      "at": "@sistema",
+      "color": "cyan",
+      "k": "Siempre"
+     },
+     {
+      "t": "Llamadas grabadas",
+      "at": "@grabadas",
+      "color": "purple",
+      "k": "Siempre"
+     },
+     {
+      "t": "Los leads se quedan",
+      "at": "@quedan",
+      "color": "green",
+      "k": "Si se va"
+     }
+    ],
+    "img": "empty_desk",
+    "title": "TUS LEADS, TUYOS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@sistema",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@grabadas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@quedan",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "key": "j03_s5",
+   "voice": "antonio",
+   "tail": 1.0,
+   "captions": true,
+   "text": "Si tienes una inmobiliaria con asesores, comenta LEADS y te lo instalamos.",
+   "p": {
+    "word": "LEADS",
+    "top": "PARA INMOBILIARIAS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}
