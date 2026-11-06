@@ -1,0 +1,247 @@
+{
+ "id": "J04-mil-leads-y-nadie-sabe-que-paso",
+ "title": "Mil leads y nadie sabe qué pasó: el dinero de los anuncios (Serie Sala de Juntas, video 4)",
+ "voice": "antonio",
+ "music": "music/pulse.mp3",
+ "tempo": 1.15,
+ "keywords": [
+  "leads",
+  "lead",
+  "asesores",
+  "inmobiliarios",
+  "inmobiliaria",
+  "anuncios",
+  "Meta",
+  "mil",
+  "pesos",
+  "malos",
+  "verdad",
+  "compradores",
+  "curiosos",
+  "dinero"
+ ],
+ "ia": [
+  {
+   "clip": "j04_a",
+   "dice": "Metí cien mil pesos en anuncios: mil leads. ¿Y mis asesores inmobiliarios qué hicieron con ellos?",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Night, a real estate agency owner's office lit by a desk lamp and a computer monitor showing an ads dashboard with charts. Marcela, the owner of a real estate agency, a Mexican woman in her fifties with a short grey bob haircut, reading glasses, a burgundy blazer and pearl earrings, sits at her desk holding a calculator, looks stressed and worried, rubs her temple and says in Mexican Spanish, anxious and fast: \"Metí cien mil pesos en anuncios: mil leads. ¿Y mis asesores inmobiliarios qué hicieron con ellos?\" Medium close-up, slow push-in. Audio: only her voice in Spanish, quiet office hum. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j04_b",
+   "dice": "Jefa, esos leads estaban malísimos… nadie contestó. Bueno, eso creo.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, a real estate agency office with desks and property posters. Kevin, a young Mexican real estate agent in his early twenties with a beanie, a hoodie under a cheap blazer, chewing gum, very relaxed and careless, leans back in his chair with his feet on the desk, shrugs and says in Mexican Spanish, careless and fast: \"Jefa, esos leads estaban malísimos… nadie contestó. Bueno, eso creo.\" Medium shot, static camera. Audio: only his voice in Spanish, gum chewing, office ambience. No music. No subtitles, no on-screen text."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j04_a.mp4",
+    "words": "clips/j04_a.words.json",
+    "lines": [
+     "MIL [LEADS]",
+     "¿Y QUÉ PASÓ?"
+    ],
+    "kicker": "$100,000 en anuncios",
+    "kickerColor": "red",
+    "titleOut": 60,
+    "size": 140
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j04_b.mp4",
+    "words": "clips/j04_b.words.json",
+    "range": [
+     1.15,
+     4.9
+    ]
+   }
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j04_b.mp4",
+    "words": "clips/j04_b.words.json",
+    "range": [
+     5.62,
+     7.05
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "key": "j04_s2",
+   "voice": "antonio",
+   "tail": 0.1,
+   "text": "Si inviertes en anuncios y tus asesores solo te dicen que los leads eran malos, no tienes cómo saber si es verdad.",
+   "p": {
+    "img": "owner_stressed",
+    "lines": [
+     "«LOS LEADS",
+     "ERAN [MALOS]»"
+    ],
+    "lineAts": [
+     "@leads",
+     "@malos"
+    ],
+    "size": 124,
+    "stamp": {
+     "text": "¿SEGURO?",
+     "at": "@verdad",
+     "size": 120
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@malos",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@verdad",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "type": "bars",
+   "key": "j04_s3",
+   "voice": "antonio",
+   "text": "Con Lead Master ves qué pasó con cada uno de esos mil leads: a cuántos se llamó, cuántos contestaron, cuántos agendaron y a cuántos nadie llamó.",
+   "p": {
+    "rows": [
+     {
+      "name": "Se les llamó",
+      "value": 612,
+      "sub": "leads"
+     },
+     {
+      "name": "Contestaron",
+      "value": 341,
+      "sub": "leads"
+     },
+     {
+      "name": "Agendaron cita",
+      "value": 58,
+      "sub": "leads",
+      "color": "green"
+     },
+     {
+      "name": "Nadie les llamó",
+      "value": 388,
+      "sub": "leads",
+      "color": "red"
+     }
+    ],
+    "at": "@llamó",
+    "title": "Tus 1,000 leads del mes",
+    "right": "Este mes"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamó",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@nadie",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "type": "flow",
+   "key": "j04_s4",
+   "voice": "antonio",
+   "text": "Así sabes si el problema son los leads o el seguimiento. Y Lead Master le avisa a Meta quién sí agenda y compra, para que tu dinero traiga compradores, no curiosos.",
+   "p": {
+    "nodes": [
+     {
+      "t": "Agenda y compra",
+      "at": "@agenda",
+      "color": "green"
+     },
+     {
+      "t": "Lead Master le avisa a Meta",
+      "at": "@Meta",
+      "color": "cyan"
+     },
+     {
+      "t": "Más compradores",
+      "at": "@compradores",
+      "color": "purple",
+      "sub": "menos curiosos"
+     }
+    ],
+    "title": "TU DINERO, BIEN USADO"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@agenda",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@Meta",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@compradores",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "key": "j04_s5",
+   "voice": "antonio",
+   "tail": 1.0,
+   "captions": true,
+   "text": "Si tienes una inmobiliaria y pagas anuncios, comenta LEADS y te lo instalamos.",
+   "p": {
+    "word": "LEADS",
+    "top": "PARA INMOBILIARIAS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}

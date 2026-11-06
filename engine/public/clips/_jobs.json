@@ -54,5 +54,19 @@
   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Same parked car outside the real estate agency. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, holds the phone to his ear and says in a sweet, overly friendly voice in Mexican Spanish: \"¡Claro, señora! Le tengo justo lo que busca…\" Then he lowers the phone, covers it with his hand, winks at the camera and whispers: \"Total, la inmobiliaria ni cuenta se da.\" Medium close-up, static camera. Audio: only his voice in Spanish. No music. No subtitles, no on-screen text.",
   "seconds": "8",
   "created": 1793988952.8820026
+ },
+ "j04_a": {
+  "id": "v1_Chc0eUh1YXQzakJKdmJ5dE1QNFlIaTZBMBIXNHlIdWF0M2pCSnZieXRNUDRZSGk2QTA",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Night, a real estate agency owner's office lit by a desk lamp and a computer monitor showing an ads dashboard with charts. Marcela, the owner of a real estate agency, a Mexican woman in her fifties with a short grey bob haircut, reading glasses, a burgundy blazer and pearl earrings, sits at her desk holding a calculator, looks stressed and worried, rubs her temple and says in Mexican Spanish, anxious and fast: \"Metí cien mil pesos en anuncios: mil leads. ¿Y mis asesores inmobiliarios qué hicieron con ellos?\" Medium close-up, slow push-in. Audio: only her voice in Spanish, quiet office hum. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1793991139.9537487
+ },
+ "j04_b": {
+  "id": "v1_Chc1Q0h1YW9UOEZ0bkN5dE1Qd0xLNGtRdxIXNUNIdWFvVDhGdG5DeXRNUHdMSzRrUXc",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, a real estate agency office with desks and property posters. Kevin, a young Mexican real estate agent in his early twenties with a beanie, a hoodie under a cheap blazer, chewing gum, very relaxed and careless, leans back in his chair with his feet on the desk, shrugs and says in Mexican Spanish, careless and fast: \"Jefa, esos leads estaban malísimos… nadie contestó. Bueno, eso creo.\" Medium shot, static camera. Audio: only his voice in Spanish, gum chewing, office ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1793991141.237314
  }
 }
