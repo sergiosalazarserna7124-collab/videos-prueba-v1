@@ -7,6 +7,12 @@ Originales: carpeta de Drive 1n0KyNDilNbQGyMV1GX1TdivMY9aWwAHr (se bajan con GOO
 drive.usercontent.google.com está bloqueado). Para rehacerlos: `tools/ugc_prep.py`, Scribe para las palabras,
 `tools/ugc_bg.py` y `tools/build.py` (ver README). Pendiente: que Sergio los revise; no están en la cola de Instagram.
 
+UGC anteriores re-editados con el mismo formato (6 nov): 6 ganchos (H1 Jalisco, H2 Monterrey, H3 Mérida, H4 robando
+leads, H5 claridad en 7 días, H6 monitorear asesores) x 2 cuerpos (C1 el CRM que nadie usa, C2 juntas de marketing y
+ventas) = 12 videos `videos/UH*-C*-celular.mp4`. Originales en Drive 1q-rkfY2oC3OlxRROjeswqORj9aPJOQLE (sueltos = cuerpos,
+carpeta Hooks = ganchos, carpeta editados = la edición vieja). Specs `engine/videos/UH*.json`, `UC*.json` ("part": true) y
+`engine/videos/_ugc_combos.json`; se renderiza cada parte una vez y `tools/ugc_combo.py` arma las combinaciones.
+
 # Siguiente paso: video demo J01 (Serie Sala de Juntas)
 
 Estado al 5 nov 2026, 4:15 pm Bogotá.
