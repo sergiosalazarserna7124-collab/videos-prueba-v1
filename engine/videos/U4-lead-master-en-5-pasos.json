@@ -10,7 +10,15 @@
    600
   ],
   "zoom": 1.45,
-  "splitZoom": 1.15
+  "splitZoom": 1.15,
+  "intro": {
+   "img": "monterrey_tower",
+   "frames": 152,
+   "fade": [
+    1250,
+    1460
+   ]
+  }
  },
  "music": "music/drive.mp3",
  "musicVol": 0.08,

@@ -17,3 +17,9 @@
 - Planos: Gemini Omni 1.2 Flash por la Interactions API (`engine/tools/ia_clip.py`), key en `GEMINI_API_KEY`.
   Subtítulos de los planos: `engine/tools/clip_words.py`.
 - Guiones: `guiones/sala-de-juntas/`. Página de aprobación: https://claude.ai/artifact/P3VF9fWuQsvozsJ2Apkz7c
+
+## Videos UGC (la modelo hablando a cámara)
+- Mismo estilo que "Un mensaje. Una demanda": títulos con palabra en color, subtítulos palabra por palabra, sellos,
+  tarjetas del sistema. Mostrar lo que ella dice: el sistema arriba y ella abajo, o gráfico a pantalla completa.
+- **Al inicio siempre una casa o un desarrollo detrás de ella** (`intro` en el spec + `engine/tools/ugc_bg.py`).
+- Specs: `engine/videos/U*.json`. Ver README.

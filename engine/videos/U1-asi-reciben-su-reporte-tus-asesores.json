@@ -10,7 +10,15 @@
    389
   ],
   "zoom": 1.25,
-  "splitZoom": 1.0
+  "splitZoom": 1.0,
+  "intro": {
+   "img": "queretaro_house",
+   "frames": 149,
+   "fade": [
+    980,
+    1180
+   ]
+  }
  },
  "music": "music/pulse.mp3",
  "musicVol": 0.08,

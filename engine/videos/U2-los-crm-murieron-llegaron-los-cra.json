@@ -10,7 +10,15 @@
    557
   ],
   "zoom": 1.45,
-  "splitZoom": 1.15
+  "splitZoom": 1.15,
+  "intro": {
+   "img": "gdl_development",
+   "frames": 197,
+   "fade": [
+    1060,
+    1260
+   ]
+  }
  },
  "music": "music/drive.mp3",
  "musicVol": 0.08,

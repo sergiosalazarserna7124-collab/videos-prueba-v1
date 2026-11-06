@@ -41,8 +41,12 @@ Spec con `"ugc": {"src", "words", "face": [x, y nariz, y coronilla], "zoom", "sp
 cd engine
 python3 tools/ugc_prep.py <original.mov> u1      # public/ugc/u1.mp4 (1440x2560, audio limpio a -16 LUFS)
 # subtítulos: ElevenLabs Scribe (Composio) -> public/ugc/u1.words.json
+python3 tools/ugc_bg.py videos/U1-asi-reciben-su-reporte-tus-asesores.json   # gancho con casa/desarrollo detrás
 python3 tools/build.py videos/U1-asi-reciben-su-reporte-tus-asesores.json
 ```
+- **Inicio siempre con una casa o desarrollo detrás** (pedido de Sergio): `"intro": {"img", "frames", "fade"}` en el
+  spec; `tools/ugc_bg.py` la recorta con Robust Video Matting y pone la foto en los primeros cuadros.
+- El render de los UGC va por tramos de 300 cuadros (si uno se traba se reintenta solo ese) y el audio aparte.
 Los .mp4 de `public/ugc/` no se suben (pesan); los originales están en Drive (carpeta de la modelo UGC).
 
 ## Escenas disponibles

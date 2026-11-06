@@ -11,7 +11,15 @@
   ],
   "zoom": 1.1,
   "splitZoom": 1.0,
-  "splitHead": -20
+  "splitHead": -20,
+  "intro": {
+   "img": "cancun_tower",
+   "frames": 146,
+   "fade": [
+    1350,
+    1560
+   ]
+  }
  },
  "music": "music/pulse.mp3",
  "musicVol": 0.08,
