@@ -136,18 +136,31 @@ def build(spec_path, safe=False):
     music_from = 0
     for i, sc in enumerate(spec['scenes']):
         if sc['type'] == 'clip':
-            # Clip de IA con su propio audio: dura lo que dura el video (o 'cut' segundos).
+            # Clip de IA con su propio audio. Se recorta solo a la parte con voz (menos tiempo muerto):
+            # p.range = [ini, fin] en segundos del clip para elegir un tramo a mano; si no, se usa
+            # la primera y la última palabra de los subtítulos (p.words) con un margen corto.
             p = dict(sc['p'])
             vid = os.path.join(PUB, p['src'])
-            vdur = probe_dur(vid) - p.get('startFrom', 0) / FPS
-            dur_s = min(vdur, sc.get('cut', vdur)) + (GAP if i < len(spec['scenes']) - 1 else 0)
+            full = probe_dur(vid)
+            wpath = os.path.join(PUB, p.get('words', '')) if p.get('words') else None
+            wl = json.load(open(wpath)) if wpath and os.path.exists(wpath) else []
+            if p.get('range'):
+                a, b = p['range']
+            elif wl and p.get('trim', True):
+                a = max(0.0, wl[0]['s'] - p.get('headPad', 0.2))
+                b = min(full, wl[-1]['e'] + p.get('tailPad', 0.3))
+            else:
+                a, b = p.get('startFrom', 0) / FPS, full
+            b = min(b, a + sc.get('cut', b - a))
+            p['startFrom'] = round(a * FPS)
+            p.pop('range', None)
+            dur_s = (b - a) + (GAP if i < len(spec['scenes']) - 1 else 0)
             start_f = round(t0 * FPS)
             dur_f = round((t0 + dur_s) * FPS) - start_f
-            wpath = os.path.join(PUB, p.get('words', '')) if p.get('words') else None
-            for x in (json.load(open(wpath)) if wpath and os.path.exists(wpath) else []):
-                if x['s'] * FPS >= dur_f:
+            for x in wl:
+                if x['s'] < a - 0.05 or x['s'] >= b:
                     continue
-                all_words.append({'w': x['w'], 's': round(t0 + x['s'], 3), 'e': round(t0 + min(x['e'], dur_s), 3),
+                all_words.append({'w': x['w'], 's': round(t0 + x['s'] - a, 3), 'e': round(t0 + min(x['e'], b) - a, 3),
                                   'hl': norm(x['w']) in keywords or bool(re.search(r'\d', x['w']))})
             scenes.append({'type': 'clip', 'from': start_f, 'dur': dur_f, 'p': p,
                            'sfx': [x for x in sc.get('sfx', []) if isinstance(x.get('at', 0), int)],

@@ -3,7 +3,7 @@
  "title": "Nadie llena el CRM de mi inmobiliaria (Serie Sala de Juntas, video 1)",
  "voice": "antonio",
  "music": "music/pulse.mp3",
- "tempo": 1.1,
+ "tempo": 1.15,
  "keywords": [
   "leads",
   "asesores",
@@ -55,14 +55,29 @@
    "type": "clip",
    "p": {
     "src": "clips/j01_b3.mp4",
-    "words": "clips/j01_b3.words.json"
+    "words": "clips/j01_b3.words.json",
+    "range": [
+     0,
+     3.62
+    ]
+   }
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j01_b3.mp4",
+    "words": "clips/j01_b3.words.json",
+    "range": [
+     4.02,
+     8.04
+    ]
    }
   },
   {
    "type": "photo",
    "key": "j01c_s2",
    "voice": "antonio",
-   "tail": 0.35,
+   "tail": 0.1,
    "text": "Si en tu inmobiliaria el CRM depende de que cada asesor lo llene, nunca vas a saber qué pasó con cada lead.",
    "p": {
     "img": "excel_night",
@@ -179,7 +194,7 @@
    "type": "ui",
    "key": "j01c_s4",
    "voice": "antonio",
-   "tail": 0.6,
+   "tail": 0.3,
    "text": "Y todos los días te llega a tu WhatsApp qué pasó con cada lead: a quién llamó cada asesor, quién se quedó sin contacto y cuántas citas salieron.",
    "p": {
     "items": [

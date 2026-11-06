@@ -1,0 +1,261 @@
+{
+ "id": "J02-mejor-al-rato-el-crm-sin-actualizar",
+ "title": "Mejor al rato: el asesor que nunca actualiza el CRM (Serie Sala de Juntas, video 2)",
+ "voice": "antonio",
+ "music": "music/pulse.mp3",
+ "tempo": 1.15,
+ "keywords": [
+  "leads",
+  "lead",
+  "asesor",
+  "asesores",
+  "inmobiliario",
+  "inmobiliarios",
+  "inmobiliaria",
+  "CRM",
+  "nota",
+  "notas",
+  "rato",
+  "WhatsApp",
+  "visita"
+ ],
+ "ia": [
+  {
+   "clip": "j02_a",
+   "dice": "¡Ahhh! Soy asesor inmobiliario, no secretario. ¿Otra vez anotar lo de este lead? Mejor al rato.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Warm daylight in a busy modern real estate agency office with desks and property posters. Toño, a stocky Mexican real estate agent in his late twenties with big curly hair, a thick beard, sunglasses pushed up on his head, a tight light-blue polo shirt with a real estate agency lanyard and a flashy gold watch, sits at his desk, just hangs up a phone call, looks at his laptop showing an empty CRM form, rolls his eyes, leans back in his chair and lazily pushes the laptop lid half closed while saying in Mexican Spanish, fast and annoyed: \"¡Ahhh! Soy asesor inmobiliario, no secretario. ¿Otra vez anotar lo de este lead? Mejor al rato.\" Medium shot, slight push-in. Audio: only his voice in Spanish, office ambience. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j02_b",
+   "dice": "A ver… ¿con qué lead hablé hoy? ¿A quién le prometí la visita? ¿Y este quién es?",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Night, the same real estate agency office is empty and dark, only a desk lamp on. Toño, a stocky Mexican real estate agent in his late twenties with big curly hair, a thick beard, sunglasses pushed up on his head, a tight light-blue polo shirt with a real estate agency lanyard and a flashy gold watch, sits at his desk covered in messy sticky notes, scrolls his phone confused, scratches his head and squints at the screen while saying in Mexican Spanish, fast and worried: \"A ver… ¿con qué lead hablé hoy? ¿A quién le prometí la visita? ¿Y este quién es?\" Medium close-up, static camera. Audio: only his voice in Spanish, quiet office hum. No music. No subtitles, no on-screen text."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j02_a.mp4",
+    "words": "clips/j02_a.words.json",
+    "lines": [
+     "¿OTRA VEZ",
+     "ANOTAR EL [LEAD]?"
+    ],
+    "kicker": "Asesores inmobiliarios",
+    "titleOut": 66,
+    "size": 122
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j02_b.mp4",
+    "words": "clips/j02_b.words.json",
+    "lines": [
+     "8 HORAS",
+     "[DESPUÉS]"
+    ],
+    "kicker": "La misma inmobiliaria",
+    "titleOut": 45,
+    "size": 120
+   }
+  },
+  {
+   "type": "photo",
+   "key": "j02_s2",
+   "voice": "antonio",
+   "tail": 0.1,
+   "text": "Así pasa en casi todas las inmobiliarias: el asesor deja el CRM para más tarde, y en la noche ya no se acuerda con qué lead habló.",
+   "p": {
+    "img": "advisor_night",
+    "lines": [
+     "MEJOR",
+     "AL [RATO]"
+    ],
+    "lineAts": [
+     "@tarde",
+     "@noche"
+    ],
+    "size": 130,
+    "stamp": {
+     "text": "CRM SIN ACTUALIZAR",
+     "at": "@habló",
+     "size": 80
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@tarde",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@habló",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "type": "panel",
+   "key": "j02_s3",
+   "voice": "antonio",
+   "text": "Con Lead Master, tu asesor ya no tiene que anotar nada: la IA lee sus chats, escucha sus llamadas y escribe la nota de cada lead al momento.",
+   "p": {
+    "title": "La IA anota por tu asesor",
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Toño (asesor)",
+      "lead": "Diana Trejo",
+      "summary": "Quiere visitar el sábado a las 11 · depa de 2 recámaras",
+      "status": "Nota escrita",
+      "color": "green",
+      "at": "@chats"
+     },
+     {
+      "ch": "call",
+      "advisor": "Toño (asesor)",
+      "lead": "Lucía Hernández",
+      "summary": "Le prometió mandar opciones hoy · presupuesto 3 millones",
+      "status": "CRM actualizado",
+      "color": "cyan",
+      "at": "@llamadas"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@chats",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@llamadas",
+     "vol": 0.08
+    }
+   ],
+   "ins": [
+    {
+     "kind": "note",
+     "at": "@nota",
+     "p": {
+      "lead": "Lucía Hernández",
+      "tag": "Lead · Llamada",
+      "stage": "Interesada",
+      "typeAt": "@nota+3",
+      "note": "Le prometió mandar 3 opciones hoy. Busca casa en preventa, quiere crédito bancario.",
+      "fields": [
+       {
+        "k": "Presupuesto",
+        "v": "3 millones",
+        "at": "@nota+10"
+       },
+       {
+        "k": "Siguiente paso",
+        "v": "Mandar opciones hoy",
+        "at": "@momento"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "type": "phonelist",
+   "key": "j02_s4",
+   "voice": "antonio",
+   "text": "Y cada mañana le llega por WhatsApp su lista: con quién habló, a quién le prometió llamar y qué leads se están enfriando.",
+   "p": {
+    "items": [
+     {
+      "t": "Con quién hablaste ayer",
+      "at": "@habló",
+      "color": "cyan",
+      "n": 12
+     },
+     {
+      "t": "Le prometiste llamar hoy",
+      "at": "@prometió",
+      "color": "amber",
+      "n": 3
+     },
+     {
+      "t": "Se están enfriando",
+      "at": "@enfriando",
+      "color": "red",
+      "n": 4
+     }
+    ],
+    "bg": "advisor_woman",
+    "title": "Tu lista de hoy",
+    "sub": "WhatsApp · 8:00 am",
+    "clock": "8:00"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@habló",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@prometió",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@enfriando",
+     "vol": 0.11
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "key": "j02_s5",
+   "voice": "antonio",
+   "tail": 1.0,
+   "captions": true,
+   "text": "Si tienes una inmobiliaria con asesores, comenta CRM y te lo instalamos.",
+   "p": {
+    "word": "CRM",
+    "top": "PARA INMOBILIARIAS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}
