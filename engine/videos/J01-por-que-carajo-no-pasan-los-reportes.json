@@ -4,57 +4,243 @@
  "voice": "antonio",
  "music": "music/pulse.mp3",
  "tempo": 1.1,
- "keywords": ["reportes", "reporte", "Excel", "WhatsApp", "SISTEMA", "meses", "carajo"],
+ "keywords": [
+  "Excel",
+  "SISTEMA",
+  "WhatsApp",
+  "asesores",
+  "carajo",
+  "celular",
+  "inmobiliaria",
+  "inmobiliarios",
+  "leads",
+  "libreta",
+  "meses",
+  "reporte",
+  "reportes"
+ ],
  "ia": [
-  {"clip": "j01_a", "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film, warm office lighting. Setting: a modern real estate agency meeting room with a glass wall, a long white table with laptops, coffee mugs and printed charts. At the head of the table stands Don Ramiro, a short chubby Mexican boss in his fifties with a thick black mustache, receding hairline, white shirt with rolled-up sleeves and a loose red tie. His face turns red with anger, he slams both fists on the table so the mugs jump, and shouts in Mexican Spanish: \"¡Llevo meses diciéndoles! ¡Meses! ¿Por qué carajo nadie me pasa los reportes?\" Three sales agents around the table flinch. Medium shot, slow push-in. Audio: only his angry voice in Spanish, fists on the table, mugs rattling. No music. No subtitles, no on-screen text.", "dice": "¡Llevo meses diciéndoles! ¡Meses! ¿Por qué carajo nadie me pasa los reportes?"},
-  {"clip": "j01_b", "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film, warm office lighting. Same modern real estate agency meeting room with a glass wall, laptops and coffee mugs. Diego, a skinny young sales agent with glasses, slicked-back gelled hair and an oversized blue blazer, sweats nervously behind his laptop and says in Mexican Spanish: \"Es que el Excel no abre, jefe.\" Then Paola, a confident woman with curly hair and a pink blouse, shrugs and says: \"Yo lo mandé por correo... creo.\" Awkward silence, crickets chirping. Medium two-shot, static camera. Audio: their voices in Spanish, then crickets. No music. No subtitles, no on-screen text.", "dice": "Es que el Excel no abre, jefe. / Yo lo mandé por correo... creo."}
+  {
+   "clip": "j01_a2",
+   "dice": "¡Asesores inmobiliarios! Les di doscientos leads esta semana. ¿Por qué carajo nadie me pasa el reporte?",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film, warm office lighting. Setting: a modern real estate agency meeting room with a glass wall, a long white table with laptops, coffee mugs and printed charts. At the head of the table stands Don Ramiro, a short chubby Mexican boss in his fifties with a thick black mustache, receding hairline, white shirt with rolled-up sleeves and a loose red tie. His face turns red with anger, he slams both fists on the table so the mugs jump, and shouts at his sales agents in Mexican Spanish: \"¡Asesores inmobiliarios! Les di doscientos leads esta semana. ¿Por qué carajo nadie me pasa el reporte?\" Three real estate agents around the table flinch. Medium shot, slow push-in. Audio: only his angry voice in Spanish, fists on the table, mugs rattling. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j01_b2",
+   "dice": "Jefe, los leads los tengo anotados… en mi libreta. / Y yo los tengo en mi celular… creo.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film, warm office lighting. Setting: a modern real estate agency meeting room with a glass wall, a long white table with laptops, coffee mugs and printed charts. Diego, a skinny young real estate agent with glasses, slicked-back gelled hair and an oversized blue blazer, sweats nervously, holds up a small worn paper notebook and says in Mexican Spanish: \"Jefe, los leads los tengo anotados… en mi libreta.\" Then Paola, a confident real estate agent with curly hair and a pink blouse, holds up her phone, shrugs and says: \"Y yo los tengo en mi celular… creo.\" Awkward silence, crickets chirping. Medium two-shot, static camera. Audio: their voices in Spanish, then crickets. No music. No subtitles, no on-screen text."
+  }
  ],
  "scenes": [
   {
    "type": "clip",
-   "p": {"src": "clips/j01_a.mp4", "words": "clips/j01_a.words.json", "lines": ["¿Y LOS", "[REPORTES]?"], "kicker": "La junta de los lunes", "titleOut": 66, "size": 150},
-   "sfx": [{"src": "sfx/impact.wav", "at": 0, "vol": 0.12}]
+   "p": {
+    "src": "clips/j01_a2.mp4",
+    "words": "clips/j01_a2.words.json",
+    "lines": [
+     "¿Y EL REPORTE",
+     "DE LOS [LEADS]?"
+    ],
+    "kicker": "Inmobiliarias · junta de asesores",
+    "titleOut": 66,
+    "size": 130
+   },
+   "sfx": [
+    {
+     "src": "sfx/impact.wav",
+     "at": 0,
+     "vol": 0.12
+    }
+   ]
   },
   {
    "type": "clip",
-   "p": {"src": "clips/j01_b.mp4", "words": "clips/j01_b.words.json"}
+   "p": {
+    "src": "clips/j01_b2.mp4",
+    "words": "clips/j01_b2.words.json"
+   }
   },
   {
    "type": "photo",
-   "text": "Si esta junta te suena, el problema no son tus asesores. Es que el reporte depende de que alguien lo llene.",
-   "p": {"img": "excel_night", "lines": ["DEPENDE DE QUE", "ALGUIEN LO [LLENE]"], "lineAts": ["@depende", "@llene"], "size": 112,
-         "stamp": {"text": "NADIE LO LLENA", "at": "@llene+14", "size": 92}},
-   "sfx": [{"src": "sfx/whoosh.wav", "at": 0, "vol": 0.08}, {"src": "sfx/pop.wav", "at": "@depende", "vol": 0.1}, {"src": "sfx/stamp.wav", "at": "@llene+14", "vol": 0.26}],
-   "key": "j01_s2",
+   "text": "Si en tu inmobiliaria cada asesor tiene los leads en su libreta o en su celular, el reporte nunca va a llegar.",
+   "p": {
+    "img": "excel_night",
+    "lines": [
+     "LOS LEADS EN",
+     "SU [LIBRETA]"
+    ],
+    "lineAts": [
+     "@leads",
+     "@libreta"
+    ],
+    "size": 112,
+    "stamp": {
+     "text": "SIN REPORTE",
+     "at": "@llegar",
+     "size": 96
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@libreta",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@llegar",
+     "vol": 0.26
+    }
+   ],
+   "key": "j01b_s2",
    "voice": "antonio",
    "tail": 0.35
   },
   {
    "type": "ui",
-   "text": "Con Lead Master, el reporte te llega solo a tu WhatsApp todos los días: cuántos leads entraron, a quién llamó cada asesor, quién se quedó sin contacto y cuántas citas salieron.",
-   "p": {"items": [{"t": "Leads que entraron", "at": "@entraron", "color": "cyan", "n": 37}, {"t": "Llamadas del equipo", "at": "@llamó", "color": "purple", "n": 84}, {"t": "Sin contacto", "at": "@contacto", "color": "red", "n": 6}, {"t": "Citas", "at": "@citas", "color": "green", "n": 5}], "bg": "owner_phone_report", "title": "Reporte del equipo", "sub": "Lead Master · todos los días"},
-   "sfx": [{"src": "sfx/whoosh.wav", "at": 0, "vol": 0.08}, {"src": "sfx/notif.wav", "at": "@entraron", "vol": 0.14}, {"src": "sfx/pop.wav", "at": "@llamó", "vol": 0.11}, {"src": "sfx/pop.wav", "at": "@contacto", "vol": 0.11}, {"src": "sfx/pop.wav", "at": "@citas", "vol": 0.11}],
-   "key": "j01_s3",
-   "ins": [{"kind": "report", "at": 0, "p": {"time": "8:00 pm", "lines": [
-     {"t": "Leads que entraron hoy: 37", "at": "@entraron", "b": true},
-     {"t": "", "sep": true, "at": "@llamó"},
-     {"t": "Paola G. llamó a 14 · 2 citas", "at": "@llamó"},
-     {"t": "Valeria R. llamó a 11 · 2 citas", "at": "@llamó+5"},
-     {"t": "Diego H. llamó a 3", "at": "@llamó+10", "c": "amber"},
-     {"t": "", "sep": true, "at": "@contacto"},
-     {"t": "Sin contacto: 6 (Diego H. 4, Andrés M. 2)", "at": "@contacto", "c": "red"},
-     {"t": "Citas del día: 5", "at": "@citas", "c": "green"}],
-     "alert": {"t": "Nadie llenó nada: lo armó Lead Master con los chats y las llamadas", "c": "green", "at": "@citas+20"}}}],
+   "text": "Con Lead Master, todos los días te llega a tu WhatsApp qué pasó con cada lead: cuántos entraron, a quién llamó cada asesor inmobiliario, quién se quedó sin contacto y cuántas citas salieron.",
+   "p": {
+    "items": [
+     {
+      "t": "Leads que entraron",
+      "at": "@entraron",
+      "color": "cyan",
+      "n": 37
+     },
+     {
+      "t": "Llamadas del equipo",
+      "at": "@llamó",
+      "color": "purple",
+      "n": 84
+     },
+     {
+      "t": "Sin contacto",
+      "at": "@contacto",
+      "color": "red",
+      "n": 6
+     },
+     {
+      "t": "Citas",
+      "at": "@citas",
+      "color": "green",
+      "n": 5
+     }
+    ],
+    "bg": "owner_phone_report",
+    "title": "Reporte del equipo",
+    "sub": "Lead Master · todos los días"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@entraron",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamó",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@contacto",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@citas",
+     "vol": 0.11
+    }
+   ],
+   "key": "j01b_s3",
+   "ins": [
+    {
+     "kind": "report",
+     "at": 0,
+     "p": {
+      "time": "8:00 pm",
+      "lines": [
+       {
+        "t": "Leads que entraron hoy: 37",
+        "at": "@entraron",
+        "b": true
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@llamó"
+       },
+       {
+        "t": "Paola G. llamó a 14 · 2 citas",
+        "at": "@llamó"
+       },
+       {
+        "t": "Valeria R. llamó a 11 · 2 citas",
+        "at": "@llamó+5"
+       },
+       {
+        "t": "Diego H. llamó a 3",
+        "at": "@llamó+10",
+        "c": "amber"
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@contacto"
+       },
+       {
+        "t": "Sin contacto: 6 (Diego H. 4, Andrés M. 2)",
+        "at": "@contacto",
+        "c": "red"
+       },
+       {
+        "t": "Citas del día: 5",
+        "at": "@citas",
+        "c": "green"
+       }
+      ],
+      "alert": {
+       "t": "Nadie llenó nada: lo armó Lead Master con los chats y las llamadas",
+       "c": "green",
+       "at": "@citas+20"
+      }
+     }
+    }
+   ],
    "voice": "antonio",
    "tail": 0.6
   },
   {
    "type": "cta",
-   "text": "Sin que nadie llene nada y sin perseguir a nadie. Comenta SISTEMA y te lo instalamos.",
-   "p": {"word": "SISTEMA", "top": "SIN PERSEGUIR A NADIE"},
+   "text": "Si tienes una inmobiliaria con asesores, comenta SISTEMA y te lo instalamos. Sin que nadie llene nada.",
+   "p": {
+    "word": "SISTEMA",
+    "top": "PARA INMOBILIARIAS"
+   },
    "tail": 1.0,
-   "sfx": [{"src": "sfx/whoosh.wav", "at": 0, "vol": 0.08}, {"src": "sfx/impact.wav", "at": 6, "vol": 0.14}],
-   "key": "j01_s4",
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ],
+   "key": "j01b_s4",
    "voice": "antonio",
    "captions": true
   }
