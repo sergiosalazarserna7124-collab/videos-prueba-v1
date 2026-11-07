@@ -44,17 +44,17 @@ python3 tools/build.py videos/J01-por-que-carajo-no-pasan-los-reportes.json
 La escena `clip` (engine/src/scenes/Clip.tsx) pone el gancho "¿Y LOS REPORTES?" encima del primer plano;
 la música entra después de los clips. Probado con un clip de relleno: funciona.
 
-## Instagram
-Desde el 6 nov (3 pm) Instagram se programa en **Metricool**, igual que TikTok, Facebook y YouTube.
-- Metricool tiene conectada la cuenta **@sergio_salazaar**. Cada reel sale desde ahí con **@leaad_master como colaborador**
-  (`instagramData.collaborators`). @leaad_master tiene que aceptar cada invitación en la app.
-- Por qué: con Composio los reels salían en @leaad_master con @sergio_salazaar invitado, pero nunca aparecieron en
-  @sergio_salazaar. Los avisos programados de Claude para Instagram quedaron apagados.
-- En Metricool hay un post solo de Instagram por cada reel (aparte del de TikTok/Facebook/YouTube), a la hora de
-  `videos/ig_queue.json`. Para un video nuevo: programarlo en Metricool con instagram + los demás, collaborator leaad_master.
-- Solo van los videos nuevos de IA y los UGC con modelo. Los que Sergio editó al inicio (status `no_instagram`) ya están en
-  @sergio_salazaar: no se suben.
-- Ya publicados en @leaad_master por Composio (no están en @sergio_salazaar): El mayor error, Un mensaje. Una demanda.,
-  Le pregunto a mi CRM, Idea 1 Jalisco, G3, F e Idea 4.
-- Videos UGC con modelo (16: U1-U4 y UH1..UH6 x C1/C2, de la rama `claude/modest-euler-0k49k2`): del 13 al 15 nov.
-  Metricool tomó cada video del link público de GitHub (raw, fijado al commit 717d253).
+## Publicaciones (desde el 7 nov: GoHighLevel)
+El 7 nov Metricool empezó a fallar con «You have reached your Metricool account limit» (desde las 8 am ya no publicó nada).
+La sesión de videos (rama `claude/keen-cerf-e6nqma`) programó todo el calendario del 7 al 15 nov en el **Social Planner de
+GoHighLevel**: Instagram @leaad_master y @sergio_salazaar por separado, Facebook, TikTok y YouTube (69 publicaciones; plan e
+ids en `publicar/plan_ghl.json` y `publicar/ghl_programado.json` de esa rama). Esa es ahora la fuente de verdad.
+- En Metricool siguen los posts viejos (los de TikTok/Facebook/YouTube y los 56 solo de Instagram desde @sergio_salazaar con
+  @leaad_master de colaborador). Hoy fallan por el límite; si Sergio sube de plan en Metricool, se publicarían DOBLE con
+  GoHighLevel. Hay que borrarlos o pasarlos a borrador antes.
+- `videos/ig_queue.json` queda como historial (status `programado_metricool`); ya no se usa para publicar.
+- Composio ya no publica en Instagram; los avisos programados de Claude para Instagram están apagados.
+- Nunca subir a Instagram los videos que Sergio editó al inicio (status `no_instagram`): ya están en @sergio_salazaar.
+- Ya publicados en @leaad_master por Composio: El mayor error, Un mensaje. Una demanda., Le pregunto a mi CRM,
+  Idea 1 Jalisco, G3, F e Idea 4.
+- Videos UGC con modelo (16, de la rama `claude/modest-euler-0k49k2`): del 13 al 15 nov, también en GoHighLevel.
