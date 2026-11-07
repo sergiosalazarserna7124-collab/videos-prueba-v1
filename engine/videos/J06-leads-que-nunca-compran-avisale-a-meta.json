@@ -1,0 +1,370 @@
+{
+ "id": "J06-leads-que-nunca-compran-avisale-a-meta",
+ "title": "Leads de terrenos que nunca compran: avísale a Meta, paso a paso (Serie Sala de Juntas, video 6)",
+ "voice": "antonio",
+ "music": "music/pulse.mp3",
+ "tempo": 1.15,
+ "keywords": [
+  "leads",
+  "lead",
+  "asesores",
+  "inmobiliarios",
+  "inmobiliaria",
+  "terreno",
+  "Meta",
+  "agendan",
+  "agendó",
+  "cita",
+  "automático",
+  "WhatsApp",
+  "compradores",
+  "curiosos",
+  "Uno",
+  "Dos",
+  "Tres",
+  "Cuatro",
+  "Cinco"
+ ],
+ "ia": [
+  {
+   "clip": "j06_a",
+   "dice": "Ya estoy cansado. A mis asesores inmobiliarios les llegan leads preguntando por un terreno… y nunca compran.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, an outdoor café terrace table with two coffee cups and a phone on the table. Beto, a heavyset Mexican land lot seller in his fifties with a straw cowboy hat, a plaid shirt and a thick grey mustache, sits at the table, exhausted, takes off his hat, rubs his face and says in Mexican Spanish, tired and fed up: \"Ya estoy cansado. A mis asesores inmobiliarios les llegan leads preguntando por un terreno… y nunca compran.\" Medium close-up on him, static camera. Audio: only his voice in Spanish, light café ambience. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j06_b",
+   "dice": "¿Y le estás diciendo a Meta cuáles de esos leads sí te agendan?",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, an outdoor café terrace table with two coffee cups and a phone on the table. Gaby, a sharp Mexican woman in her forties with a black bob haircut, glasses and a white blazer, holding a coffee cup, sitting across the table, raises an eyebrow, puts her coffee down and asks him in Mexican Spanish, curious and direct: \"¿Y le estás diciendo a Meta cuáles de esos leads sí te agendan?\" Medium close-up on her, static camera. Audio: only her voice in Spanish, light café ambience. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j06_c",
+   "seconds": 5,
+   "dice": "No… ¿cómo se hace eso?",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, an outdoor café terrace table with two coffee cups and a phone on the table. Beto, a heavyset Mexican land lot seller in his fifties with a straw cowboy hat, a plaid shirt and a thick grey mustache, confused, lifts his straw hat and scratches his head, says in Mexican Spanish: \"No… ¿cómo se hace eso?\" Close-up on him, static camera. Audio: only his voice in Spanish. No music. No subtitles, no on-screen text."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j06_a.mp4",
+    "words": "clips/j06_a.words.json",
+    "lines": [
+     "LEADS QUE",
+     "NUNCA [COMPRAN]"
+    ],
+    "kicker": "Inmobiliarias que venden terrenos",
+    "kickerColor": "red",
+    "titleOut": 60,
+    "size": 130
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j06_b.mp4",
+    "words": "clips/j06_b.words.json"
+   }
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j06_c.mp4",
+    "words": "clips/j06_c.words.json"
+   }
+  },
+  {
+   "type": "panel",
+   "key": "j06_s1",
+   "voice": "antonio",
+   "text": "Así funciona, paso a paso. Uno: el lead llena el formulario de tu anuncio en Meta y llega solo a Lead Master, que se lo asigna a un asesor.",
+   "p": {
+    "title": "1 · Llega solo",
+    "right": "Anuncio de Meta",
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Adriana Solís",
+      "lead": "lead nuevo de Meta",
+      "raw": true,
+      "summary": "Terreno en Mérida · llenó el formulario hace 1 min",
+      "status": "Asignado a Paola G.",
+      "color": "green",
+      "at": "@asigna"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@llega",
+     "vol": 0.14
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@asigna",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "type": "flow",
+   "key": "j06_s2",
+   "voice": "antonio",
+   "tail": 0.2,
+   "text": "Dos: Lead Master se conecta al WhatsApp y a las llamadas de tus asesores y vendedores, y en automático sabe qué pasó con ese lead.",
+   "p": {
+    "img": "office_agents",
+    "title": "2 · TODO EN AUTOMÁTICO",
+    "nodes": [
+     {
+      "t": "WhatsApp de tus asesores",
+      "at": "@WhatsApp",
+      "color": "wa",
+      "sub": "y vendedores"
+     },
+     {
+      "t": "Sus llamadas",
+      "at": "@llamadas",
+      "color": "purple"
+     },
+     {
+      "t": "Lead Master (IA)",
+      "at": "@automático",
+      "color": "cyan",
+      "sub": "en automático"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamadas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@automático",
+     "vol": 0.1
+    }
+   ],
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@lead#2",
+     "p": {
+      "title": "Qué pasó con cada lead",
+      "sub": "Reporte automático · Lead Master",
+      "sched": "Llega solo todos los días · 8:00 pm",
+      "time": "8:00 pm",
+      "lines": [
+       {
+        "t": "Diana Trejo · Paola G. · cita el sábado 11 am",
+        "c": "green",
+        "at": "@lead#2+4"
+       },
+       {
+        "t": "Adriana Solís · Valeria R. · pidió opciones",
+        "at": "@lead#2+10"
+       },
+       {
+        "t": "Lucía Hernández · Diego H. · nadie le llamó",
+        "c": "red",
+        "at": "@lead#2+16"
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@lead#2+24"
+       },
+       {
+        "t": "Nadie llenó nada: lo armó Lead Master solo",
+        "b": true,
+        "at": "@lead#2+24"
+       }
+      ],
+      "alert": {
+       "t": "En automático: WhatsApp y llamadas conectados",
+       "c": "green",
+       "at": "@lead#2+30"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "ui",
+   "key": "j06_s3",
+   "voice": "antonio",
+   "text": "Tres: si el lead agenda una visita, Lead Master lo detecta solo y lo marca como cita.",
+   "p": {},
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    }
+   ],
+   "ins": [
+    {
+     "kind": "cita",
+     "at": "@agenda",
+     "p": {
+      "mode": "confirm",
+      "what": "Visita · Terreno en Mérida",
+      "when": "Sábado 15 · 10:00 am",
+      "dayIdx": 5,
+      "lead": "Adriana Solís",
+      "source": "Detectada en el WhatsApp",
+      "doneText": "Cita detectada sola",
+      "confirmAt": "@cita"
+     }
+    }
+   ]
+  },
+  {
+   "type": "flow",
+   "key": "j06_s4",
+   "voice": "antonio",
+   "text": "Cuatro: Lead Master le avisa a Meta, en automático, que ese lead sí agendó. Y si compra, también.",
+   "p": {
+    "title": "4 · LE AVISA A META",
+    "nodes": [
+     {
+      "t": "Cita agendada",
+      "at": "@Cuatro",
+      "color": "green"
+     },
+     {
+      "t": "Lead Master",
+      "at": "@avisa",
+      "color": "cyan",
+      "sub": "en automático"
+     },
+     {
+      "t": "Meta",
+      "at": "@agendó",
+      "color": "purple",
+      "sub": "se entera solo"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@avisa",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@agendó",
+     "vol": 0.1
+    }
+   ]
+  },
+  {
+   "type": "compare",
+   "key": "j06_s5",
+   "voice": "antonio",
+   "text": "Cinco: Meta aprende qué personas sí agendan y compran, y te trae más como ellas. Menos curiosos, más compradores.",
+   "p": {
+    "rows": [
+     {
+      "t": "Meta sabe quién agenda y compra",
+      "l": false,
+      "r": true,
+      "at": "@aprende"
+     },
+     {
+      "t": "Menos curiosos",
+      "l": false,
+      "r": true,
+      "at": "@curiosos"
+     },
+     {
+      "t": "Más compradores",
+      "l": false,
+      "r": true,
+      "at": "@compradores"
+     }
+    ],
+    "left": "Antes",
+    "right": "Con Lead Master",
+    "title": "5 · META APRENDE"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@aprende",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@curiosos",
+     "vol": 0.11
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@compradores",
+     "vol": 0.11
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "key": "j06_s6",
+   "voice": "antonio",
+   "tail": 1.0,
+   "captions": true,
+   "text": "Si tienes una inmobiliaria y pagas anuncios, comenta META y te lo instalamos.",
+   "p": {
+    "word": "META",
+    "top": "PARA INMOBILIARIAS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}

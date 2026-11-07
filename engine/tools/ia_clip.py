@@ -107,7 +107,7 @@ def from_spec(path):
     spec = json.load(open(path))
     for ia in spec.get('ia', []):
         if not os.path.exists(os.path.join(CLIPS, ia['clip'] + '.mp4')):
-            start(ia['clip'], ia['prompt'])
+            start(ia['clip'], ia['prompt'], str(ia.get('seconds', 8)))
     for ia in spec.get('ia', []):
         if not os.path.exists(os.path.join(CLIPS, ia['clip'] + '.mp4')):
             wait(ia['clip'])

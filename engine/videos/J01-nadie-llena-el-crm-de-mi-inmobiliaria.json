@@ -5,16 +5,19 @@
  "music": "music/pulse.mp3",
  "tempo": 1.15,
  "keywords": [
-  "leads",
-  "asesores",
-  "inmobiliarios",
-  "inmobiliaria",
   "CRM",
-  "notas",
-  "nota",
   "WhatsApp",
-  "carajo",
+  "asesores",
+  "automático",
   "cabeza",
+  "carajo",
+  "inmobiliaria",
+  "inmobiliarios",
+  "leads",
+  "nota",
+  "notas",
+  "reporte",
+  "vendedores",
   "viernes"
  ],
  "ia": [
@@ -191,35 +194,33 @@
    ]
   },
   {
-   "type": "ui",
-   "key": "j01c_s4",
+   "type": "flow",
+   "key": "auto_std",
    "voice": "antonio",
-   "tail": 0.3,
-   "text": "Y todos los días te llega a tu WhatsApp qué pasó con cada lead: a quién llamó cada asesor, quién se quedó sin contacto y cuántas citas salieron.",
+   "tail": 0.2,
+   "text": "Lead Master se conecta al WhatsApp y a las llamadas de tus asesores y vendedores, y en automático te dice qué pasó con cada lead. Todos los días te llega el reporte, sin que nadie llene nada.",
    "p": {
-    "items": [
+    "img": "office_agents",
+    "title": "TODO EN AUTOMÁTICO",
+    "nodes": [
      {
-      "t": "Llamadas del equipo",
-      "at": "@llamó",
-      "color": "purple",
-      "n": 84
+      "t": "WhatsApp de tus asesores",
+      "at": "@WhatsApp",
+      "color": "wa",
+      "sub": "y vendedores"
      },
      {
-      "t": "Sin contacto",
-      "at": "@contacto",
-      "color": "red",
-      "n": 6
+      "t": "Sus llamadas",
+      "at": "@llamadas",
+      "color": "purple"
      },
      {
-      "t": "Citas",
-      "at": "@citas",
-      "color": "green",
-      "n": 5
+      "t": "Lead Master (IA)",
+      "at": "@automático",
+      "color": "cyan",
+      "sub": "en automático"
      }
-    ],
-    "bg": "owner_phone_report",
-    "title": "Reporte del equipo",
-    "sub": "Lead Master · todos los días"
+    ]
    },
    "sfx": [
     {
@@ -228,76 +229,60 @@
      "vol": 0.08
     },
     {
-     "src": "sfx/notif.wav",
+     "src": "sfx/pop.wav",
      "at": "@WhatsApp",
-     "vol": 0.14
+     "vol": 0.12
     },
     {
      "src": "sfx/pop.wav",
-     "at": "@llamó",
-     "vol": 0.11
+     "at": "@llamadas",
+     "vol": 0.12
     },
     {
-     "src": "sfx/pop.wav",
-     "at": "@contacto",
-     "vol": 0.11
-    },
-    {
-     "src": "sfx/pop.wav",
-     "at": "@citas",
-     "vol": 0.11
+     "src": "sfx/ding.wav",
+     "at": "@automático",
+     "vol": 0.1
     }
    ],
    "ins": [
     {
      "kind": "report",
-     "at": 0,
+     "at": "@lead#2",
      "p": {
+      "title": "Qué pasó con cada lead",
+      "sub": "Reporte automático · Lead Master",
+      "sched": "Llega solo todos los días · 8:00 pm",
       "time": "8:00 pm",
       "lines": [
        {
-        "t": "Leads que entraron hoy: 37 · todos con nota",
-        "at": "@WhatsApp",
-        "b": true
+        "t": "Diana Trejo · Paola G. · cita el sábado 11 am",
+        "c": "green",
+        "at": "@lead#2+4"
+       },
+       {
+        "t": "Adriana Solís · Valeria R. · pidió opciones",
+        "at": "@lead#2+10"
+       },
+       {
+        "t": "Lucía Hernández · Diego H. · nadie le llamó",
+        "c": "red",
+        "at": "@lead#2+16"
        },
        {
         "t": "",
         "sep": true,
-        "at": "@llamó"
+        "at": "@reporte"
        },
        {
-        "t": "Paola G. llamó a 14 · 2 citas",
-        "at": "@llamó"
-       },
-       {
-        "t": "Valeria R. llamó a 11 · 2 citas",
-        "at": "@llamó+5"
-       },
-       {
-        "t": "Diego H. llamó a 3",
-        "at": "@llamó+10",
-        "c": "amber"
-       },
-       {
-        "t": "",
-        "sep": true,
-        "at": "@contacto"
-       },
-       {
-        "t": "Sin contacto: 6 (Diego H. 4, Andrés M. 2)",
-        "at": "@contacto",
-        "c": "red"
-       },
-       {
-        "t": "Citas del día: 5",
-        "at": "@citas",
-        "c": "green"
+        "t": "Nadie llenó nada: lo armó Lead Master solo",
+        "b": true,
+        "at": "@reporte"
        }
       ],
       "alert": {
-       "t": "Nadie llenó nada: el CRM y las notas los llenó la IA",
+       "t": "En automático: WhatsApp y llamadas conectados",
        "c": "green",
-       "at": "@citas+20"
+       "at": "@nada"
       }
      }
     }

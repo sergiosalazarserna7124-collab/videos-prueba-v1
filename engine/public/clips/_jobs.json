@@ -82,5 +82,26 @@
   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. A modern real estate agency meeting room with a glass wall and a long table; four real estate agents sit around the table silently avoiding eye contact. Ricardo, the owner of a real estate agency, a tall Mexican man in his forties with slicked-back dark hair with grey temples, an expensive navy suit and a loosened tie, sweating and panicking, walks around the table pointing at each silent agent one by one, desperate, saying in Mexican Spanish: \"Hay citas en el calendario… ¿por qué no cerramos ninguna? ¿Alguien? ¿Nadie?\" The agents look away, one whistles, one stares at the ceiling. Medium wide shot, camera follows him. Audio: only his voice in Spanish, awkward silence. No music. No subtitles, no on-screen text.",
   "seconds": "8",
   "created": 1793998030.2936
+ },
+ "j06_a": {
+  "id": "v1_ChdobW52YW8tYko4Mk95dE1QdExmRjhBdxIXaG1udmFvLWJKODJPeXRNUHRMZkY4QXc",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, an outdoor café terrace table with two coffee cups and a phone on the table. Beto, a heavyset Mexican land lot seller in his fifties with a straw cowboy hat, a plaid shirt and a thick grey mustache, sits at the table, exhausted, takes off his hat, rubs his face and says in Mexican Spanish, tired and fed up: \"Ya estoy cansado. A mis asesores inmobiliarios les llegan leads preguntando por un terreno… y nunca compran.\" Medium close-up on him, static camera. Audio: only his voice in Spanish, light café ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1794075015.4581542
+ },
+ "j06_b": {
+  "id": "v1_ChdoMm52YXV6UE5JQ3B5dE1Qd3VLODhRMBIXaDJudmF1elBOSUNweXRNUHd1Szg4UTA",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, an outdoor café terrace table with two coffee cups and a phone on the table. Gaby, a sharp Mexican woman in her forties with a black bob haircut, glasses and a white blazer, holding a coffee cup, sitting across the table, raises an eyebrow, puts her coffee down and asks him in Mexican Spanish, curious and direct: \"¿Y le estás diciendo a Meta cuáles de esos leads sí te agendan?\" Medium close-up on her, static camera. Audio: only her voice in Spanish, light café ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1794075016.9323943
+ },
+ "j06_c": {
+  "id": "v1_ChZpV252YXRXQUZLZkJ4ZElQNFp2TlFREhZpV252YXRXQUZLZkJ4ZElQNFp2TlFR",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, an outdoor café terrace table with two coffee cups and a phone on the table. Beto, a heavyset Mexican land lot seller in his fifties with a straw cowboy hat, a plaid shirt and a thick grey mustache, confused, lifts his straw hat and scratches his head, says in Mexican Spanish: \"No… ¿cómo se hace eso?\" Close-up on him, static camera. Audio: only his voice in Spanish. No music. No subtitles, no on-screen text.",
+  "seconds": "5",
+  "created": 1794075018.349624
  }
 }
