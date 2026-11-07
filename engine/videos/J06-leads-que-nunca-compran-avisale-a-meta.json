@@ -97,7 +97,7 @@
       "summary": "Terreno en Mérida · llenó el formulario hace 1 min",
       "status": "Asignado a Paola G.",
       "color": "green",
-      "at": "@asigna"
+      "at": "@formulario"
      }
     ]
    },
@@ -114,7 +114,7 @@
     },
     {
      "src": "sfx/ding.wav",
-     "at": "@asigna",
+     "at": "@formulario",
      "vol": 0.1
     }
    ]
