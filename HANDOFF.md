@@ -49,9 +49,10 @@ El 7 nov Metricool empezó a fallar con «You have reached your Metricool accoun
 La sesión de videos (rama `claude/keen-cerf-e6nqma`) programó todo el calendario del 7 al 15 nov en el **Social Planner de
 GoHighLevel**: Instagram @leaad_master y @sergio_salazaar por separado, Facebook, TikTok y YouTube (69 publicaciones; plan e
 ids en `publicar/plan_ghl.json` y `publicar/ghl_programado.json` de esa rama). Esa es ahora la fuente de verdad.
-- En Metricool siguen los posts viejos (los de TikTok/Facebook/YouTube y los 56 solo de Instagram desde @sergio_salazaar con
-  @leaad_master de colaborador). Hoy fallan por el límite; si Sergio sube de plan en Metricool, se publicarían DOBLE con
-  GoHighLevel. Hay que borrarlos o pasarlos a borrador antes.
+- Metricool está apagado: el 8 nov se pasaron a borrador los 99 posts pendientes del 7 al 15 nov (nada borrado; del 16 al
+  30 no había nada). Así no se publica nada doble con GoHighLevel aunque Metricool vuelva a tener cupo. Queda uno sin pasar
+  porque Sergio negó ese cambio: 11 nov 14:00, «Este video lo editó una IA» (Facebook, TikTok, YouTube; id 417939290).
+  Los 14 posts del 7 y 8 nov que fallaron por el límite quedaron en ERROR, sin tocar. No programar nada nuevo en Metricool.
 - `videos/ig_queue.json` queda como historial (status `programado_metricool`); ya no se usa para publicar.
 - Composio ya no publica en Instagram; los avisos programados de Claude para Instagram están apagados.
 - Nunca subir a Instagram los videos que Sergio editó al inicio (status `no_instagram`): ya están en @sergio_salazaar.
