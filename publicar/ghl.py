@@ -18,7 +18,10 @@ CUENTAS = {
     'tiktok': '6aef78a7322b72268e7bedaa_XXxOHLaqkCAyEZoiS4eW_000UiYC7ZSzLmEOImgdav4Dr8OzOuviy91Z_business',
     'youtube': '6aef78c2500565d789d7b443_XXxOHLaqkCAyEZoiS4eW_UCOb3Wk4rHdTOuf9KF8270bw_profile',
 }
-TODAS = ['ig_leaad_master', 'ig_sergio_salazaar', 'fb_sergio', 'tiktok', 'youtube']
+# Instagram: una sola publicación desde @sergio_salazaar con @leaad_master de colaborador (pedido de Sergio,
+# 8 nov: dos publicaciones iguales en cada cuenta Meta las toma como contenido duplicado).
+TODAS = ['ig_sergio_salazaar', 'fb_sergio', 'tiktok', 'youtube']
+COLABORADOR_IG = 'leaad_master'
 SIN_IG = ['fb_sergio', 'tiktok', 'youtube']
 
 
@@ -39,6 +42,8 @@ def programar(video_url, texto, cuando_utc, cuentas, titulo_yt):
         'scheduleDate': cuando_utc, 'summary': texto,
         'media': [{'url': video_url, 'type': 'video/mp4'}],
     }
+    if 'ig_sergio_salazaar' in cuentas and 'ig_leaad_master' not in cuentas:
+        body['instagramPostDetails'] = {'collaborators': {CUENTAS['ig_sergio_salazaar']: [COLABORADOR_IG]}}
     if 'youtube' in cuentas:
         body['youtubePostDetails'] = {'type': 'short', 'title': titulo_yt[:95], 'privacyLevel': 'public'}
     r = urllib.request.Request(f'{BASE}/social-media-posting/{LOC}/posts', data=json.dumps(body).encode(), method='POST',
