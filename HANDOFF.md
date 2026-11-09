@@ -69,3 +69,12 @@ ids en `publicar/plan_ghl.json` y `publicar/ghl_programado.json` de esa rama). E
   14 nov 12:00, J02 14 nov 19:15, B 15 nov 12:00, E 15 nov 18:00). Antes/después con ids: `videos/ghl_movidos_9nov.json`.
   `plan_ghl.json` y `ghl_programado.json` de la otra rama tienen las horas viejas de esos 22.
   Reporte con todo el calendario: https://claude.ai/artifact/AJ81oJxGM6Z2eoGHHUSp2W
+
+## Meta Ads (9 nov)
+Token de Meta (usuario del sistema "Conversions API System User") guardado como secreto de red de graph.facebook.com en el entorno
+lead-master-video: se usa con `Authorization: Bearer proxy-injected`. Ojo con curl y las llaves `{}` en los fields: usar `curl -g`.
+- Campaña EN PAUSA "LeadMaster | UGC formato nuevo | Formulario | CO-CL-USA | 9 nov" (formulario 4563633850580091, optimiza leads):
+  conjuntos Colombia US$25/día, Chile US$25/día, USA en español US$30/día; 25-65 años, Advantage+ audiencia.
+  10 anuncios por país (U1-U4, UH4-UH6 C1/C2). Los UH1-UH3 (ganchos Jalisco/Monterrey/Mérida) quedaron fuera porque no son
+  para esos países. Ids en `videos/meta_ads_9nov.json`. Nadie la ha prendido.
+- Las campañas viejas de Laura (web + evento Schedule del píxel) gastaron ~US$2.400 sin citas atribuidas.

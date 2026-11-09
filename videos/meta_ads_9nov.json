@@ -1,0 +1,83 @@
+{
+ "creado": "2026-11-09",
+ "cuenta": "act_1413884820756687",
+ "pagina": "348238158383886 (Sergio salazar Serna)",
+ "instagram": "17841410694405520 (@sergio_salazaar)",
+ "formulario": "4563633850580091",
+ "campana": {
+  "id": "120253144169380351",
+  "nombre": "LeadMaster | UGC formato nuevo | Formulario | CO-CL-USA | 9 nov",
+  "estado": "PAUSED"
+ },
+ "conjuntos": {
+  "CO": {
+   "id": "120253144169980351",
+   "presupuesto_diario_usd": 25
+  },
+  "CL": {
+   "id": "120253144170310351",
+   "presupuesto_diario_usd": 25
+  },
+  "US": {
+   "id": "120253144170610351",
+   "presupuesto_diario_usd": 30,
+   "idioma": "Español (todos)"
+  }
+ },
+ "videos_meta": {
+  "U1-asi-reciben-su-reporte-tus-asesores": "1144359627962291",
+  "U2-los-crm-murieron-llegaron-los-cra": "4643067729299380",
+  "U3-por-que-te-llegan-puros-curiosos": "2009324909757095",
+  "U4-lead-master-en-5-pasos": "1670049911501082",
+  "UH4-C1-robando-leads-crm-que-nadie-usa": "1440428284401303",
+  "UH4-C2-robando-leads-juntas-marketing-ventas": "4669603463361277",
+  "UH5-C1-claridad-7-dias-crm-que-nadie-usa": "1622373316573697",
+  "UH5-C2-claridad-7-dias-juntas-marketing-ventas": "1408129664445869",
+  "UH6-C1-monitorear-asesores-crm-que-nadie-usa": "29445467431739547",
+  "UH6-C2-monitorear-asesores-juntas-marketing-ventas": "1377694620912974"
+ },
+ "creativos": {
+  "U1-asi-reciben-su-reporte-tus-asesores": "1449261333843801",
+  "U2-los-crm-murieron-llegaron-los-cra": "1891958605299875",
+  "U3-por-que-te-llegan-puros-curiosos": "1438253944532674",
+  "U4-lead-master-en-5-pasos": "1829268454936413",
+  "UH4-C1-robando-leads-crm-que-nadie-usa": "1714165196807814",
+  "UH4-C2-robando-leads-juntas-marketing-ventas": "1071764082539130",
+  "UH5-C1-claridad-7-dias-crm-que-nadie-usa": "1166248306147269",
+  "UH5-C2-claridad-7-dias-juntas-marketing-ventas": "1660903685743872",
+  "UH6-C1-monitorear-asesores-crm-que-nadie-usa": "1681814169956759",
+  "UH6-C2-monitorear-asesores-juntas-marketing-ventas": "1567247555171075"
+ },
+ "anuncios": {
+  "CO|U1-asi-reciben-su-reporte-tus-asesores": "120253144187780351",
+  "CO|U2-los-crm-murieron-llegaron-los-cra": "120253144188140351",
+  "CO|U3-por-que-te-llegan-puros-curiosos": "120253144188770351",
+  "CO|U4-lead-master-en-5-pasos": "120253144189480351",
+  "CO|UH4-C1-robando-leads-crm-que-nadie-usa": "120253144189710351",
+  "CO|UH4-C2-robando-leads-juntas-marketing-ventas": "120253144190510351",
+  "CO|UH5-C1-claridad-7-dias-crm-que-nadie-usa": "120253144190690351",
+  "CO|UH5-C2-claridad-7-dias-juntas-marketing-ventas": "120253144191290351",
+  "CO|UH6-C1-monitorear-asesores-crm-que-nadie-usa": "120253144191470351",
+  "CO|UH6-C2-monitorear-asesores-juntas-marketing-ventas": "120253144191830351",
+  "CL|U1-asi-reciben-su-reporte-tus-asesores": "120253144193210351",
+  "CL|U2-los-crm-murieron-llegaron-los-cra": "120253144194050351",
+  "CL|U3-por-que-te-llegan-puros-curiosos": "120253144194340351",
+  "CL|U4-lead-master-en-5-pasos": "120253144194970351",
+  "CL|UH4-C1-robando-leads-crm-que-nadie-usa": "120253144195150351",
+  "CL|UH4-C2-robando-leads-juntas-marketing-ventas": "120253144196480351",
+  "CL|UH5-C1-claridad-7-dias-crm-que-nadie-usa": "120253144197220351",
+  "CL|UH5-C2-claridad-7-dias-juntas-marketing-ventas": "120253144198140351",
+  "CL|UH6-C1-monitorear-asesores-crm-que-nadie-usa": "120253144198990351",
+  "CL|UH6-C2-monitorear-asesores-juntas-marketing-ventas": "120253144199590351",
+  "US|U1-asi-reciben-su-reporte-tus-asesores": "120253144200320351",
+  "US|U2-los-crm-murieron-llegaron-los-cra": "120253144200790351",
+  "US|U3-por-que-te-llegan-puros-curiosos": "120253144201260351",
+  "US|U4-lead-master-en-5-pasos": "120253144202480351",
+  "US|UH4-C1-robando-leads-crm-que-nadie-usa": "120253144203120351",
+  "US|UH4-C2-robando-leads-juntas-marketing-ventas": "120253144203380351",
+  "US|UH5-C1-claridad-7-dias-crm-que-nadie-usa": "120253144204030351",
+  "US|UH5-C2-claridad-7-dias-juntas-marketing-ventas": "120253144204350351",
+  "US|UH6-C1-monitorear-asesores-crm-que-nadie-usa": "120253144204750351",
+  "US|UH6-C2-monitorear-asesores-juntas-marketing-ventas": "120253144205070351"
+ }
+}
