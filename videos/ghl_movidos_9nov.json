@@ -1,0 +1,134 @@
+{
+ "Idea 1 · Mérida": {
+  "id": "6aef7b0a8e5a79aa899cb67c",
+  "antes": "2026-11-09T12:00",
+  "ahora": "2026-11-13T12:00",
+  "res": "ok 2026-11-13T17:00:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "Si no llama a tiempo, pasa al siguiente": {
+  "id": "6aef7b0a8e5a79aa899cb6e4",
+  "antes": "2026-11-09T14:00",
+  "ahora": "2026-11-13T16:00",
+  "res": "ok 2026-11-13T21:00:00.000Z scheduled collab={}"
+ },
+ "Idea 14 · GoHighLevel no basta": {
+  "id": "6aef7b0ba16da913edbb7d69",
+  "antes": "2026-11-09T16:00",
+  "ahora": "2026-11-14T12:00",
+  "res": "ok 2026-11-14T17:00:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "J02-mejor-al-rato-el-crm-sin-actualizar": {
+  "id": "6aef7b0e619b539bf1af68be",
+  "antes": "2026-11-09T19:15",
+  "ahora": "2026-11-14T19:15",
+  "res": "ok 2026-11-15T00:15:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "B · Marketing y ventas pelean": {
+  "id": "6aef7b0c97f3fd6dc564b6b3",
+  "antes": "2026-11-09T18:00",
+  "ahora": "2026-11-15T12:00",
+  "res": "ok 2026-11-15T17:00:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "E · Así recibirías tus reportes": {
+  "id": "6aef7b0f8e5a79aa899cbd56",
+  "antes": "2026-11-09T20:30",
+  "ahora": "2026-11-15T18:00",
+  "res": "ok 2026-11-15T23:00:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "UGC U2 · Los CRM murieron, llegaron los CRA (con modelo)": {
+  "id": "6aef7b2d6b311a7f8ada6c2c",
+  "antes": "2026-11-14T14:00",
+  "ahora": "2026-11-09T11:45",
+  "res": "ok 2026-11-09T16:45:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "UGC U3 · Por qué te llegan puros curiosos (con modelo)": {
+  "id": "6aef7b306b311a7f8ada7090",
+  "antes": "2026-11-15T10:00",
+  "ahora": "2026-11-09T12:30",
+  "res": "ok 2026-11-09T17:30:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "UGC U4 · Qué es Lead Master en 5 pasos (con modelo)": {
+  "id": "6aef7b248e5a79aa899ce767",
+  "antes": "2026-11-13T10:00",
+  "ahora": "2026-11-09T13:15",
+  "res": "ok 2026-11-09T18:15:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "UGC UH1-C1 · Jalisco + el CRM que nadie usa": {
+  "id": "6aef7b2fc7cd4e7e4c799d68",
+  "antes": "2026-11-14T20:30",
+  "ahora": "2026-11-09T14:00",
+  "res": "ok 2026-11-09T19:00:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "UGC UH2-C2 · Monterrey + juntas de marketing y ventas": {
+  "id": "6aef7b308e5a79aa899d034a",
+  "antes": "2026-11-15T12:00",
+  "ahora": "2026-11-09T14:45",
+  "res": "ok 2026-11-09T19:45:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "UGC UH3-C1 · Mérida + el CRM que nadie usa": {
+  "id": "6aef7b327b918fbaa0cdfa02",
+  "antes": "2026-11-15T16:00",
+  "ahora": "2026-11-09T15:30",
+  "res": "ok 2026-11-09T20:30:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "UGC UH4-C2 · Robando leads + juntas de marketing y ventas": {
+  "id": "6aef7b2ec262dede21c5a5dd",
+  "antes": "2026-11-14T18:00",
+  "ahora": "2026-11-09T16:15",
+  "res": "ok 2026-11-09T21:15:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "UGC UH5-C1 · Claridad en 7 días + el CRM que nadie usa": {
+  "id": "6aef7b27500565d789da6bc6",
+  "antes": "2026-11-13T16:00",
+  "ahora": "2026-11-09T17:00",
+  "res": "ok 2026-11-09T22:00:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "UGC UH6-C2 · Monitorear asesores + juntas de marketing y ventas": {
+  "id": "6aef7b2bca93e97482203ac1",
+  "antes": "2026-11-14T08:00",
+  "ahora": "2026-11-09T17:45",
+  "res": "ok 2026-11-09T22:45:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "UGC UH1-C2 · Jalisco + juntas de marketing y ventas": {
+  "id": "6aef7b253f522d982fb802a9",
+  "antes": "2026-11-13T12:00",
+  "ahora": "2026-11-09T18:30",
+  "res": "ok 2026-11-09T23:30:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "UGC UH2-C1 · Monterrey + el CRM que nadie usa": {
+  "id": "6aef7b2cca93e97482203d85",
+  "antes": "2026-11-14T12:00",
+  "ahora": "2026-11-09T19:15",
+  "res": "ok 2026-11-10T00:15:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "UGC UH3-C2 · Mérida + juntas de marketing y ventas": {
+  "id": "6aef7b2dc262dede21c5a49d",
+  "antes": "2026-11-14T16:00",
+  "ahora": "2026-11-09T20:00",
+  "res": "ok 2026-11-10T01:00:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "UGC UH4-C1 · Robando leads + el CRM que nadie usa": {
+  "id": "6aef7b2413c74e9196d786dc",
+  "antes": "2026-11-13T08:00",
+  "ahora": "2026-11-09T20:45",
+  "res": "ok 2026-11-10T01:45:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "UGC UH5-C2 · Claridad en 7 días + juntas de marketing y ventas": {
+  "id": "6aef7b2fc7cd4e7e4c799e48",
+  "antes": "2026-11-15T08:00",
+  "ahora": "2026-11-09T21:30",
+  "res": "ok 2026-11-10T02:30:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "UGC UH6-C1 · Monitorear asesores + el CRM que nadie usa": {
+  "id": "6aef7b3113c74e9196d79b07",
+  "antes": "2026-11-15T14:00",
+  "ahora": "2026-11-09T22:15",
+  "res": "ok 2026-11-10T03:15:00.000Z scheduled collab={'collaborators': {'6ac644b3cd5b03630e6643e6_XXxOHLaqkCAyEZoiS4eW_17841410694405520_profile': ['leaad_master']}}"
+ },
+ "UGC U1 · Así reciben su reporte tus asesores (con modelo)": {
+  "id": "6aef7b2bca93e97482203c42",
+  "antes": "2026-11-14T10:00",
+  "ahora": "2026-11-09T11:00",
+  "res": "ok"
+ }
+}

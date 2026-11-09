@@ -63,4 +63,9 @@ ids en `publicar/plan_ghl.json` y `publicar/ghl_programado.json` de esa rama). E
 - Nunca subir a Instagram los videos que Sergio editó al inicio (status `no_instagram`): ya están en @sergio_salazaar.
 - Ya publicados en @leaad_master por Composio: El mayor error, Un mensaje. Una demanda., Le pregunto a mi CRM,
   Idea 1 Jalisco, G3, F e Idea 4.
-- Videos UGC con modelo (16, de la rama `claude/modest-euler-0k49k2`): del 13 al 15 nov, también en GoHighLevel.
+- Videos UGC con modelo (16, de la rama `claude/modest-euler-0k49k2`): el 9 nov Sergio pidió sacarlos ese mismo día.
+  Se movieron en GoHighLevel a 9 nov de 11:00 a 22:15 (cada 45 min: U1-U4 primero, luego los 12 UH). Los 6 que estaban
+  el 9 nov desde las 12:00 pasaron a los huecos del 13 al 15 (Mérida 13 nov 12:00, Si no llama 13 nov 16:00, Idea 14
+  14 nov 12:00, J02 14 nov 19:15, B 15 nov 12:00, E 15 nov 18:00). Antes/después con ids: `videos/ghl_movidos_9nov.json`.
+  `plan_ghl.json` y `ghl_programado.json` de la otra rama tienen las horas viejas de esos 22.
+  Reporte con todo el calendario: https://claude.ai/artifact/AJ81oJxGM6Z2eoGHHUSp2W
