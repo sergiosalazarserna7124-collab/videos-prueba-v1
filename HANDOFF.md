@@ -53,6 +53,11 @@ ids en `publicar/plan_ghl.json` y `publicar/ghl_programado.json` de esa rama). E
   30 no había nada). Así no se publica nada doble con GoHighLevel aunque Metricool vuelva a tener cupo. Queda uno sin pasar
   porque Sergio negó ese cambio: 11 nov 14:00, «Este video lo editó una IA» (Facebook, TikTok, YouTube; id 417939290).
   Los 14 posts del 7 y 8 nov que fallaron por el límite quedaron en ERROR, sin tocar. No programar nada nuevo en Metricool.
+- Instagram en GoHighLevel: una sola publicación por video, desde @sergio_salazaar con @leaad_master de colaborador
+  (`instagramPostDetails = {"collaborators": {"<accountId de @sergio_salazaar>": ["leaad_master"]}}`). Nunca programar
+  el mismo video en los dos Instagram por separado: Meta lo toma como contenido duplicado. El 7 y 8 nov salieron 13 videos
+  dobles así; el 8 nov en la noche se corrigieron los 46 pendientes (9 al 15 nov). Lista de los 13 dobles con links y ids:
+  `videos/ig_dobles_publicados.json`. @leaad_master tiene que aceptar la invitación de colaboración en la app.
 - `videos/ig_queue.json` queda como historial (status `programado_metricool`); ya no se usa para publicar.
 - Composio ya no publica en Instagram; los avisos programados de Claude para Instagram están apagados.
 - Nunca subir a Instagram los videos que Sergio editó al inicio (status `no_instagram`): ya están en @sergio_salazaar.
