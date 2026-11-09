@@ -77,5 +77,9 @@ lead-master-video: se usa con `Authorization: Bearer proxy-injected`. Ojo con cu
   CBO de US$80/día a nivel campaña y UN SOLO conjunto (Sergio lo pidió así) con Colombia, Chile y USA; gente con Facebook en
   español, 25-65 años, Advantage+ audiencia. 16 anuncios: 10 UGC (U1-U4, UH4-UH6 C1/C2) y los 6 de Sala de Juntas (J01-J06,
   Gemini). Los UH1-UH3 (ganchos Jalisco/Monterrey/Mérida) no están. Los 3 conjuntos por país que se armaron antes se borraron
-  (nunca gastaron). Ids en `videos/meta_ads_9nov.json`. Nadie la ha prendido.
+  (nunca gastaron). Ids en `videos/meta_ads_9nov.json`.
+  Se prendió el 9 nov y se volvió a pausar a los minutos (gastó US$0,34, sin leads): Sergio quiere un formulario nuevo antes.
+  Pendiente: formulario nuevo en español con asesores «Solo yo / 2-5 / 6-10 / Más de 10» (Meta no deja editar el publicado),
+  link de política de privacidad, pasar los 16 anuncios al formulario nuevo y conectarlo en GoHighLevel (Integraciones → Facebook).
+  El formulario actual (4563633850580091) sí mandó leads a GoHighLevel en junio (6 contactos con fuente «Facebook», 2 jun).
 - Las campañas viejas de Laura (web + evento Schedule del píxel) gastaron ~US$2.400 sin citas atribuidas.
