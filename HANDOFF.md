@@ -74,7 +74,8 @@ ids en `publicar/plan_ghl.json` y `publicar/ghl_programado.json` de esa rama). E
 Token de Meta (usuario del sistema "Conversions API System User") guardado como secreto de red de graph.facebook.com en el entorno
 lead-master-video: se usa con `Authorization: Bearer proxy-injected`. Ojo con curl y las llaves `{}` en los fields: usar `curl -g`.
 - Campaña EN PAUSA "LeadMaster | UGC formato nuevo | Formulario | CO-CL-USA | 9 nov" (formulario 4563633850580091, optimiza leads):
-  conjuntos Colombia US$25/día, Chile US$25/día, USA en español US$30/día; 25-65 años, Advantage+ audiencia.
-  10 anuncios por país (U1-U4, UH4-UH6 C1/C2). Los UH1-UH3 (ganchos Jalisco/Monterrey/Mérida) quedaron fuera porque no son
-  para esos países. Ids en `videos/meta_ads_9nov.json`. Nadie la ha prendido.
+  CBO de US$80/día a nivel campaña (Meta reparte entre países); conjuntos Colombia, Chile y USA (gente con Facebook en
+  español); 25-65 años, Advantage+ audiencia. 16 anuncios por país, 48 en total: 10 UGC (U1-U4, UH4-UH6 C1/C2) y los 6 de
+  Sala de Juntas (J01-J06, Gemini). Los UH1-UH3 (ganchos Jalisco/Monterrey/Mérida) no están. Ids en `videos/meta_ads_9nov.json`.
+  Nadie la ha prendido.
 - Las campañas viejas de Laura (web + evento Schedule del píxel) gastaron ~US$2.400 sin citas atribuidas.
