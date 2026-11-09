@@ -79,7 +79,15 @@ lead-master-video: se usa con `Authorization: Bearer proxy-injected`. Ojo con cu
   Gemini). Los UH1-UH3 (ganchos Jalisco/Monterrey/Mérida) no están. Los 3 conjuntos por país que se armaron antes se borraron
   (nunca gastaron). Ids en `videos/meta_ads_9nov.json`.
   Se prendió el 9 nov y se volvió a pausar a los minutos (gastó US$0,34, sin leads): Sergio quiere un formulario nuevo antes.
-  Pendiente: formulario nuevo en español con asesores «Solo yo / 2-5 / 6-10 / Más de 10» (Meta no deja editar el publicado),
-  link de política de privacidad, pasar los 16 anuncios al formulario nuevo y conectarlo en GoHighLevel (Integraciones → Facebook).
+  Formulario nuevo APROBADO por Sergio (9 nov), falta crearlo: Meta exige link de política de privacidad («Falta contenido legal»).
+  es_LA. Preguntas: asesores (Solo yo / Entre 2 y 5 / Entre 6 y 10 / Más de 10), leads al mes (Menos de 50 / Entre 50 y 200 /
+  Entre 200 y 500 / Más de 500), nombre o Instagram de la inmobiliaria (libre), nombre, teléfono, correo; botón final WhatsApp.
+  Se crea con el token de página (GET /348238158383886?fields=access_token, mandarlo como access_token, nunca imprimirlo).
+  Después: pasar los 16 anuncios al formulario nuevo y revisar que llegue a GoHighLevel (Integraciones → Facebook).
+- WhatsApp de GoHighLevel (proveedor custom «Whatsapp», id 67fb7921ff76fb73c232c866) DESCONECTADO el 9 nov: todo envío falla con
+  «Error 101: No connected instances found!». Los 2 leads del 9 nov (contactos Rd2QuF0AghiTONZ4bmfm y NbHWk5exNL8Q6GEJdYnl)
+  no han recibido nada; reenviarles el primer mensaje de Lead Master (está en las instrucciones del bot) cuando se reconecte.
+  Bot «Lead Master · Calificación inmobiliarias» (PcY06YwRZVuqw0Wvyvoe) en modo off: falta que Sergio diga si va para toda la
+  subcuenta o solo para esos contactos. El workflow que dispara al llegar el lead todavía manda el texto viejo de AutoKPI.
   El formulario actual (4563633850580091) sí mandó leads a GoHighLevel en junio (6 contactos con fuente «Facebook», 2 jun).
 - Las campañas viejas de Laura (web + evento Schedule del píxel) gastaron ~US$2.400 sin citas atribuidas.
