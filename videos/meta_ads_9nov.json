@@ -11,15 +11,16 @@
   "presupuesto": "CBO US$80/día a nivel campaña (Advantage campaign budget); conjuntos sin presupuesto"
  },
  "conjuntos": {
-  "CO": {
-   "id": "120253144169980351"
-  },
-  "CL": {
-   "id": "120253144170310351"
-  },
-  "US": {
-   "id": "120253144170610351",
-   "idioma": "Español (todos)"
+  "CO+CL+US": {
+   "id": "120253145439540351",
+   "paises": [
+    "CO",
+    "CL",
+    "US"
+   ],
+   "idioma": "Español (todos)",
+   "edad": "25-65",
+   "advantage_audience": true
   }
  },
  "videos_meta": {
@@ -59,53 +60,26 @@
   "J06-leads-que-nunca-compran-avisale-a-meta": "2498592647329875"
  },
  "anuncios": {
-  "CO|U1-asi-reciben-su-reporte-tus-asesores": "120253144187780351",
-  "CO|U2-los-crm-murieron-llegaron-los-cra": "120253144188140351",
-  "CO|U3-por-que-te-llegan-puros-curiosos": "120253144188770351",
-  "CO|U4-lead-master-en-5-pasos": "120253144189480351",
-  "CO|UH4-C1-robando-leads-crm-que-nadie-usa": "120253144189710351",
-  "CO|UH4-C2-robando-leads-juntas-marketing-ventas": "120253144190510351",
-  "CO|UH5-C1-claridad-7-dias-crm-que-nadie-usa": "120253144190690351",
-  "CO|UH5-C2-claridad-7-dias-juntas-marketing-ventas": "120253144191290351",
-  "CO|UH6-C1-monitorear-asesores-crm-que-nadie-usa": "120253144191470351",
-  "CO|UH6-C2-monitorear-asesores-juntas-marketing-ventas": "120253144191830351",
-  "CL|U1-asi-reciben-su-reporte-tus-asesores": "120253144193210351",
-  "CL|U2-los-crm-murieron-llegaron-los-cra": "120253144194050351",
-  "CL|U3-por-que-te-llegan-puros-curiosos": "120253144194340351",
-  "CL|U4-lead-master-en-5-pasos": "120253144194970351",
-  "CL|UH4-C1-robando-leads-crm-que-nadie-usa": "120253144195150351",
-  "CL|UH4-C2-robando-leads-juntas-marketing-ventas": "120253144196480351",
-  "CL|UH5-C1-claridad-7-dias-crm-que-nadie-usa": "120253144197220351",
-  "CL|UH5-C2-claridad-7-dias-juntas-marketing-ventas": "120253144198140351",
-  "CL|UH6-C1-monitorear-asesores-crm-que-nadie-usa": "120253144198990351",
-  "CL|UH6-C2-monitorear-asesores-juntas-marketing-ventas": "120253144199590351",
-  "US|U1-asi-reciben-su-reporte-tus-asesores": "120253144200320351",
-  "US|U2-los-crm-murieron-llegaron-los-cra": "120253144200790351",
-  "US|U3-por-que-te-llegan-puros-curiosos": "120253144201260351",
-  "US|U4-lead-master-en-5-pasos": "120253144202480351",
-  "US|UH4-C1-robando-leads-crm-que-nadie-usa": "120253144203120351",
-  "US|UH4-C2-robando-leads-juntas-marketing-ventas": "120253144203380351",
-  "US|UH5-C1-claridad-7-dias-crm-que-nadie-usa": "120253144204030351",
-  "US|UH5-C2-claridad-7-dias-juntas-marketing-ventas": "120253144204350351",
-  "US|UH6-C1-monitorear-asesores-crm-que-nadie-usa": "120253144204750351",
-  "US|UH6-C2-monitorear-asesores-juntas-marketing-ventas": "120253144205070351",
-  "CO|J01-nadie-llena-el-crm-de-mi-inmobiliaria": "120253145380290351",
-  "CO|J02-mejor-al-rato-el-crm-sin-actualizar": "120253145381320351",
-  "CO|J03-se-lo-ofrezco-a-mi-compadre": "120253145381680351",
-  "CO|J04-mil-leads-y-nadie-sabe-que-paso": "120253145383350351",
-  "CO|J05-300-leads-y-cero-ventas": "120253145384600351",
-  "CO|J06-leads-que-nunca-compran-avisale-a-meta": "120253145385370351",
-  "CL|J01-nadie-llena-el-crm-de-mi-inmobiliaria": "120253145386530351",
-  "CL|J02-mejor-al-rato-el-crm-sin-actualizar": "120253145388680351",
-  "CL|J03-se-lo-ofrezco-a-mi-compadre": "120253145389700351",
-  "CL|J04-mil-leads-y-nadie-sabe-que-paso": "120253145390380351",
-  "CL|J05-300-leads-y-cero-ventas": "120253145391040351",
-  "CL|J06-leads-que-nunca-compran-avisale-a-meta": "120253145391630351",
-  "US|J01-nadie-llena-el-crm-de-mi-inmobiliaria": "120253145392800351",
-  "US|J02-mejor-al-rato-el-crm-sin-actualizar": "120253145394320351",
-  "US|J03-se-lo-ofrezco-a-mi-compadre": "120253145395080351",
-  "US|J04-mil-leads-y-nadie-sabe-que-paso": "120253145396330351",
-  "US|J05-300-leads-y-cero-ventas": "120253145397100351",
-  "US|J06-leads-que-nunca-compran-avisale-a-meta": "120253145397710351"
- }
+  "U1-asi-reciben-su-reporte-tus-asesores": "120253145441020351",
+  "U2-los-crm-murieron-llegaron-los-cra": "120253145442710351",
+  "U3-por-que-te-llegan-puros-curiosos": "120253145443890351",
+  "U4-lead-master-en-5-pasos": "120253145444710351",
+  "UH4-C1-robando-leads-crm-que-nadie-usa": "120253145445690351",
+  "UH4-C2-robando-leads-juntas-marketing-ventas": "120253145446710351",
+  "UH5-C1-claridad-7-dias-crm-que-nadie-usa": "120253145448190351",
+  "UH5-C2-claridad-7-dias-juntas-marketing-ventas": "120253145449470351",
+  "UH6-C1-monitorear-asesores-crm-que-nadie-usa": "120253145450650351",
+  "UH6-C2-monitorear-asesores-juntas-marketing-ventas": "120253145452560351",
+  "J01-nadie-llena-el-crm-de-mi-inmobiliaria": "120253145454630351",
+  "J02-mejor-al-rato-el-crm-sin-actualizar": "120253145455760351",
+  "J03-se-lo-ofrezco-a-mi-compadre": "120253145457490351",
+  "J04-mil-leads-y-nadie-sabe-que-paso": "120253145458790351",
+  "J05-300-leads-y-cero-ventas": "120253145460860351",
+  "J06-leads-que-nunca-compran-avisale-a-meta": "120253145462020351"
+ },
+ "conjuntos_borrados": [
+  "120253144169980351 (Colombia)",
+  "120253144170310351 (Chile)",
+  "120253144170610351 (USA)"
+ ]
 }
