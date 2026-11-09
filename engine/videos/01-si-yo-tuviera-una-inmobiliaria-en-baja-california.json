@@ -173,13 +173,13 @@
        },
        {
         "name": "Diana Trejo",
-        "sub": "Casa · Playas de Tijuana",
+        "sub": "Casa · Ensenada",
         "col": 0,
         "age": "hace 12 min"
        },
        {
         "name": "Adriana Solís",
-        "sub": "Terreno · Playas de Tijuana",
+        "sub": "Terreno · Ensenada",
         "col": 1,
         "age": "hace 1 h"
        },
@@ -191,7 +191,7 @@
        },
        {
         "name": "Sofía Méndez",
-        "sub": "Depa · Playas de Tijuana",
+        "sub": "Depa · Ensenada",
         "col": 2,
         "age": "jueves 5 pm"
        }
@@ -215,7 +215,7 @@
       "ch": "wa",
       "advisor": "Valeria Ríos",
       "lead": "Diana Trejo",
-      "summary": "Presupuesto definido · Zona: Playas de Tijuana · Busca casa con jardín",
+      "summary": "Presupuesto definido · Zona: Ensenada · Busca casa con jardín",
       "status": "Nota escrita",
       "color": "green",
       "at": "@nota"
@@ -256,7 +256,7 @@
      "at": "@nota",
      "p": {
       "lead": "Diana Trejo",
-      "tag": "Lead · Playas de Tijuana",
+      "tag": "Lead · Ensenada",
       "stage": "Interesada",
       "typeAt": "@nota+3",
       "note": "Busca casa con jardín para mudarse en marzo. Pidió planos y forma de pago.",
@@ -268,7 +268,7 @@
        },
        {
         "k": "Zona",
-        "v": "Playas de Tijuana",
+        "v": "Ensenada",
         "at": "@zona"
        },
        {
