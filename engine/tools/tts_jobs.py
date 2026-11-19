@@ -23,10 +23,10 @@ def main():
         spec = json.load(open(f))
         scenes = spec['scenes']
         for i, sc in enumerate(scenes):
-            if os.path.exists(os.path.join(PUB, 'tts', f"{sc['key']}.json")):
+            if 'key' not in sc or os.path.exists(os.path.join(PUB, 'tts', f"{sc['key']}.json")):
                 continue
             voice = sc.get('voice', spec.get('voice', 'fernando'))
-            same = lambda j: 0 <= j < len(scenes) and scenes[j].get('voice', spec.get('voice')) == voice and scenes[j].get('fx') == sc.get('fx')
+            same = lambda j: 0 <= j < len(scenes) and 'text' in scenes[j] and scenes[j].get('voice', spec.get('voice')) == voice and scenes[j].get('fx') == sc.get('fx')
             job = {'key': sc['key'], 'voice_id': VOICE_IDS[voice], 'text': to_tts(sc['text'])}
             if same(i - 1):
                 job['prev'] = to_tts(scenes[i - 1]['text'])

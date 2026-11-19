@@ -1,0 +1,299 @@
+{
+ "id": "J16-regla-numero-uno-del-asesor-vivo",
+ "title": "Regla número uno del asesor vivo: los clientes se van con él (Serie Sala de Juntas, video 16)",
+ "voice": "antonio",
+ "music": "music/pulse.mp3",
+ "tempo": 1.15,
+ "keywords": [
+  "WhatsApp",
+  "asesor",
+  "asesores",
+  "automático",
+  "aviso",
+  "avisa",
+  "compadre",
+  "comisión",
+  "competencia",
+  "dólares",
+  "fuera",
+  "grabadas",
+  "inmobiliaria",
+  "inmobiliarios",
+  "lead",
+  "leads",
+  "reporte",
+  "robando",
+  "probar",
+  "contestó",
+  "celular",
+  "saber",
+  "venta"
+ ],
+ "ia": [
+  {
+   "clip": "j16_a",
+   "dice": "Regla número uno del asesor inmobiliario vivo: los leads entran por el WhatsApp de la empresa… y yo me los paso a mi WhatsApp.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, his desk in a real estate agency office, a ring light and a phone on a tripod in front of him. Brayan, a young Mexican real estate agent in his twenties who acts like a TikTok influencer, with a trendy fade haircut, a tight white t-shirt under a slim beige blazer, a small gold earring, sunglasses on top of his head and white sneakers, talks to the camera like a TikTok tutorial, counting with one finger, moving his hands a lot and says in Mexican Spanish, fast and cocky, like an influencer: \"Regla número uno del asesor inmobiliario vivo: los leads entran por el WhatsApp de la empresa… y yo me los paso a mi WhatsApp.\" Medium close-up, static camera. Audio: only his voice in Spanish, office ambience. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j16_b",
+   "dice": "Regla número dos: si me corren… los clientes se van conmigo.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, his desk in a real estate agency office, a ring light in front of him. Brayan, a young Mexican real estate agent in his twenties who acts like a TikTok influencer, with a trendy fade haircut, a tight white t-shirt under a slim beige blazer, a small gold earring, sunglasses on top of his head and white sneakers, leans toward the camera, lowers his sunglasses and winks, then points at himself with both thumbs and says in Mexican Spanish, cocky, slow and smug: \"Regla número dos: si me corren… los clientes se van conmigo.\" Close-up, static camera. Audio: only his voice in Spanish, office ambience. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j16_c",
+   "dice": "¿Ese no es… mi asesor?",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, the owner's office of a real estate agency. Don Ramiro, the owner of a real estate agency, a short chubby Mexican man in his fifties with a thick black mustache, receding hairline, white shirt with rolled-up sleeves and a loose red tie, sits at his desk watching a video on his phone, his jaw drops and his eyes pop out, he looks at the camera in shock and says in Mexican Spanish, shocked, slow: \"¿Ese no es… mi asesor?\" Close-up, static camera. Audio: only his voice in Spanish, faint phone video audio. No music. No subtitles, no on-screen text."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j16_a.mp4",
+    "words": "clips/j16_a.words.json",
+    "lines": [
+     "REGLA DEL",
+     "[ASESOR] VIVO"
+    ],
+    "kicker": "Inmobiliarias",
+    "kickerColor": "red",
+    "titleOut": 66,
+    "size": 124
+   },
+   "sfx": [
+    {
+     "src": "sfx/notif.wav",
+     "at": 0,
+     "vol": 0.16
+    }
+   ]
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j16_b.mp4",
+    "words": "clips/j16_b.words.json"
+   }
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j16_c.mp4",
+    "words": "clips/j16_c.words.json"
+   }
+  },
+  {
+   "type": "photo",
+   "key": "j16_s2",
+   "voice": "antonio",
+   "tail": 0.1,
+   "text": "Y tiene razón: si el lead vive en el WhatsApp personal del asesor, el día que se va, se lleva tus clientes. Y tú pagaste cada uno.",
+   "p": {
+    "img": "advisor_night",
+    "lines": [
+     "TÚ LOS PAGAS,",
+     "ÉL SE LOS [LLEVA]"
+    ],
+    "lineAts": [
+     "@razón",
+     "@lleva"
+    ],
+    "size": 112,
+    "stamp": {
+     "text": "TUS CLIENTES",
+     "at": "@pagaste",
+     "size": 90
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@lleva",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@pagaste",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "type": "flow",
+   "key": "auto_std",
+   "voice": "antonio",
+   "tail": 0.2,
+   "text": "Lead Master se conecta al WhatsApp y a las llamadas de tus asesores y vendedores, y en automático te dice qué pasó con cada lead. Todos los días te llega el reporte, sin que nadie llene nada.",
+   "p": {
+    "img": "office_agents",
+    "title": "TODO EN AUTOMÁTICO",
+    "nodes": [
+     {
+      "t": "WhatsApp de tus asesores",
+      "at": "@WhatsApp",
+      "color": "wa",
+      "sub": "y vendedores"
+     },
+     {
+      "t": "Sus llamadas",
+      "at": "@llamadas",
+      "color": "purple"
+     },
+     {
+      "t": "Lead Master (IA)",
+      "at": "@automático",
+      "color": "cyan",
+      "sub": "en automático"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamadas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@automático",
+     "vol": 0.1
+    }
+   ],
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@lead#2",
+     "p": {
+      "title": "Qué pasó con cada lead",
+      "sub": "Reporte automático · Lead Master",
+      "sched": "Llega solo todos los días · 8:00 pm",
+      "time": "8:00 pm",
+      "lines": [
+       {
+        "t": "Diana Trejo · Paola G. · cita el sábado 11 am",
+        "c": "green",
+        "at": "@lead#2+4"
+       },
+       {
+        "t": "Adriana Solís · Valeria R. · pidió opciones",
+        "at": "@lead#2+10"
+       },
+       {
+        "t": "Lucía Hernández · Diego H. · nadie le llamó",
+        "c": "red",
+        "at": "@lead#2+16"
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@reporte"
+       },
+       {
+        "t": "Nadie llenó nada: lo armó Lead Master solo",
+        "b": true,
+        "at": "@reporte"
+       }
+      ],
+      "alert": {
+       "t": "En automático: WhatsApp y llamadas conectados",
+       "c": "green",
+       "at": "@nada"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "key": "j03_s4",
+   "voice": "antonio",
+   "text": "Las llamadas salen del sistema y quedan grabadas. Y si el asesor se va, los leads y todo su historial se quedan en tu inmobiliaria.",
+   "p": {
+    "items": [
+     {
+      "t": "WhatsApp conectado",
+      "at": "@sistema",
+      "color": "cyan",
+      "k": "Siempre"
+     },
+     {
+      "t": "Llamadas grabadas",
+      "at": "@grabadas",
+      "color": "purple",
+      "k": "Siempre"
+     },
+     {
+      "t": "Los leads se quedan",
+      "at": "@quedan",
+      "color": "green",
+      "k": "Si se va"
+     }
+    ],
+    "img": "empty_desk",
+    "title": "TUS LEADS, TUYOS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@sistema",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@grabadas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@quedan",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "key": "j03_s5",
+   "voice": "antonio",
+   "tail": 1.0,
+   "captions": true,
+   "text": "Si tienes una inmobiliaria con asesores, comenta LEADS y te lo instalamos.",
+   "p": {
+    "word": "LEADS",
+    "top": "PARA INMOBILIARIAS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}

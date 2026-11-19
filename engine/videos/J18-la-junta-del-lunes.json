@@ -1,0 +1,299 @@
+{
+ "id": "J18-la-junta-del-lunes",
+ "title": "La junta del lunes: «llamamos a todos, jefe» (Serie Sala de Juntas, video 18)",
+ "voice": "antonio",
+ "music": "music/pulse.mp3",
+ "tempo": 1.15,
+ "keywords": [
+  "WhatsApp",
+  "asesor",
+  "asesores",
+  "automático",
+  "aviso",
+  "avisa",
+  "compadre",
+  "comisión",
+  "competencia",
+  "dólares",
+  "fuera",
+  "grabadas",
+  "inmobiliaria",
+  "inmobiliarios",
+  "lead",
+  "leads",
+  "reporte",
+  "robando",
+  "probar",
+  "contestó",
+  "celular",
+  "saber",
+  "venta"
+ ],
+ "ia": [
+  {
+   "clip": "j18_a",
+   "dice": "A ver, asesores inmobiliarios: ¿a cuántos leads llamaron esta semana?",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Warm office lighting, a modern real estate agency meeting room with a glass wall, a long white table with laptops, coffee mugs and printed charts. Fabián, the sales director of a real estate agency, a Mexican man in his forties with a neatly trimmed beard, square black glasses and a fitted navy blazer over a black turtleneck, stands at the head of the table with his arms crossed, looks over his glasses at the real estate agents sitting around the table and says in Mexican Spanish, firm and direct: \"A ver, asesores inmobiliarios: ¿a cuántos leads llamaron esta semana?\" Medium shot, slow push-in. Audio: only his voice in Spanish, office ambience. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j18_b",
+   "dice": "¡A todos, jefe! Uno por uno. Yo personalmente.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Warm office lighting, a modern real estate agency meeting room with a glass wall, a long white table with laptops, coffee mugs and printed charts. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, sits at the table, puts his hand on his chest, very proud, nods with total confidence and says in Mexican Spanish, confident and exaggerated: \"¡A todos, jefe! Uno por uno. Yo personalmente.\" Medium close-up, static camera. Audio: only his voice in Spanish, office ambience. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j18_c",
+   "dice": "¿Ah, sí? ¿Y por qué tengo cuarenta sin respuesta?",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Warm office lighting, a modern real estate agency meeting room with a glass wall, a long white table with laptops, coffee mugs and printed charts. Fabián, the sales director of a real estate agency, a Mexican man in his forties with a neatly trimmed beard, square black glasses and a fitted navy blazer over a black turtleneck, slowly turns his laptop around toward the agents, the screen shows a list in red, raises one eyebrow and says in Mexican Spanish, calm and ironic: \"¿Ah, sí? ¿Y por qué tengo cuarenta sin respuesta?\" Medium close-up, static camera. Audio: only his voice in Spanish, then an awkward silence. No music. No subtitles, no on-screen text."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j18_a.mp4",
+    "words": "clips/j18_a.words.json",
+    "lines": [
+     "¿LLAMARON A",
+     "TODOS LOS [LEADS]?"
+    ],
+    "kicker": "Junta del lunes · inmobiliaria",
+    "kickerColor": "red",
+    "titleOut": 66,
+    "size": 112
+   },
+   "sfx": [
+    {
+     "src": "sfx/notif.wav",
+     "at": 0,
+     "vol": 0.16
+    }
+   ]
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j18_b.mp4",
+    "words": "clips/j18_b.words.json"
+   }
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j18_c.mp4",
+    "words": "clips/j18_c.words.json"
+   }
+  },
+  {
+   "type": "photo",
+   "key": "j18_s2",
+   "voice": "antonio",
+   "tail": 0.1,
+   "text": "Todos dicen que llamaron. Pero si no ves los chats ni las llamadas de cada asesor, no sabes cuántos leads se quedaron sin respuesta.",
+   "p": {
+    "img": "meeting",
+    "lines": [
+     "«LLAMAMOS",
+     "A [TODOS]»"
+    ],
+    "lineAts": [
+     "@llamaron",
+     "@asesor"
+    ],
+    "size": 132,
+    "stamp": {
+     "text": "SIN RESPUESTA",
+     "at": "@respuesta",
+     "size": 90
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@asesor",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@respuesta",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "type": "flow",
+   "key": "auto_std",
+   "voice": "antonio",
+   "tail": 0.2,
+   "text": "Lead Master se conecta al WhatsApp y a las llamadas de tus asesores y vendedores, y en automático te dice qué pasó con cada lead. Todos los días te llega el reporte, sin que nadie llene nada.",
+   "p": {
+    "img": "office_agents",
+    "title": "TODO EN AUTOMÁTICO",
+    "nodes": [
+     {
+      "t": "WhatsApp de tus asesores",
+      "at": "@WhatsApp",
+      "color": "wa",
+      "sub": "y vendedores"
+     },
+     {
+      "t": "Sus llamadas",
+      "at": "@llamadas",
+      "color": "purple"
+     },
+     {
+      "t": "Lead Master (IA)",
+      "at": "@automático",
+      "color": "cyan",
+      "sub": "en automático"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamadas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@automático",
+     "vol": 0.1
+    }
+   ],
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@lead#2",
+     "p": {
+      "title": "Qué pasó con cada lead",
+      "sub": "Reporte automático · Lead Master",
+      "sched": "Llega solo todos los días · 8:00 pm",
+      "time": "8:00 pm",
+      "lines": [
+       {
+        "t": "Diana Trejo · Paola G. · cita el sábado 11 am",
+        "c": "green",
+        "at": "@lead#2+4"
+       },
+       {
+        "t": "Adriana Solís · Valeria R. · pidió opciones",
+        "at": "@lead#2+10"
+       },
+       {
+        "t": "Lucía Hernández · Diego H. · nadie le llamó",
+        "c": "red",
+        "at": "@lead#2+16"
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@reporte"
+       },
+       {
+        "t": "Nadie llenó nada: lo armó Lead Master solo",
+        "b": true,
+        "at": "@reporte"
+       }
+      ],
+      "alert": {
+       "t": "En automático: WhatsApp y llamadas conectados",
+       "c": "green",
+       "at": "@nada"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "panel",
+   "key": "j03_s3",
+   "voice": "antonio",
+   "text": "Con Lead Master, el WhatsApp de cada asesor está conectado: ves lo que le dice a cada lead, y si pasa algo raro, te llega un aviso.",
+   "p": {
+    "title": "Conversaciones de hoy",
+    "right": "Avisos de la IA",
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Le mandó 3 opciones de la inmobiliaria · visita el sábado",
+      "status": "Normal",
+      "color": "green",
+      "at": "@conectado"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Rodrigo (asesor)",
+      "lead": "Lucía Hernández",
+      "summary": "«Te paso con un socio, por fuera te sale mejor»",
+      "status": "Algo raro",
+      "color": "red",
+      "at": "@raro"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@conectado",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@raro",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@aviso",
+     "vol": 0.14
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "key": "j03_s5",
+   "voice": "antonio",
+   "tail": 1.0,
+   "captions": true,
+   "text": "Si tienes una inmobiliaria con asesores, comenta LEADS y te lo instalamos.",
+   "p": {
+    "word": "LEADS",
+    "top": "PARA INMOBILIARIAS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}

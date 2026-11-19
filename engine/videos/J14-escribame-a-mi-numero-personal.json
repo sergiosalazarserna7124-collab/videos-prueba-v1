@@ -1,0 +1,299 @@
+{
+ "id": "J14-escribame-a-mi-numero-personal",
+ "title": "Escríbame a mi número personal: la nota de voz que no era para el grupo (Serie Sala de Juntas, video 14)",
+ "voice": "antonio",
+ "music": "music/pulse.mp3",
+ "tempo": 1.15,
+ "keywords": [
+  "WhatsApp",
+  "asesor",
+  "asesores",
+  "automático",
+  "aviso",
+  "avisa",
+  "compadre",
+  "comisión",
+  "competencia",
+  "dólares",
+  "fuera",
+  "grabadas",
+  "inmobiliaria",
+  "inmobiliarios",
+  "lead",
+  "leads",
+  "reporte",
+  "robando",
+  "probar",
+  "contestó",
+  "celular",
+  "saber",
+  "venta"
+ ],
+ "ia": [
+  {
+   "clip": "j14_a",
+   "dice": "Asesores inmobiliarios: así me quedo con los leads de la inmobiliaria.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, a narrow office hallway of a real estate agency next to the restrooms, a fire extinguisher on the wall. Karla, a Mexican real estate agent in her late twenties with a very tight high ponytail, huge fake eyelashes, a leopard print blouse and long pink nails, hides in the hallway, looks left and right, then leans toward the camera with a sly smile and says in Mexican Spanish, whispering, like a mockumentary confession: \"Asesores inmobiliarios: así me quedo con los leads de la inmobiliaria.\" Medium close-up, static camera. Audio: only her voice in Spanish, muffled office ambience. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j14_b",
+   "dice": "Señora, escríbame a mi número personal, ¿sí? Yo le consigo uno igualito… y no le comente a nadie.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, a narrow office hallway of a real estate agency next to the restrooms. Karla, a Mexican real estate agent in her late twenties with a very tight high ponytail, huge fake eyelashes, a leopard print blouse and long pink nails, holds her phone close to her mouth recording a WhatsApp voice note, covering it with her other hand and says in Mexican Spanish, whispering fast, conspiratorial: \"Señora, escríbame a mi número personal, ¿sí? Yo le consigo uno igualito… y no le comente a nadie.\" Close-up, static camera. Audio: only her voice in Spanish. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j14_c",
+   "dice": "¿Qué? No, no, no… ¿lo mandé al grupo de la inmobiliaria?",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, a narrow office hallway of a real estate agency next to the restrooms. Karla, a Mexican real estate agent in her late twenties with a very tight high ponytail, huge fake eyelashes, a leopard print blouse and long pink nails, looks at her phone screen, her eyes go huge with horror, she covers her mouth and says in Mexican Spanish, panicking, high pitched: \"¿Qué? No, no, no… ¿lo mandé al grupo de la inmobiliaria?\" Medium close-up, static camera. Audio: only her voice in Spanish, a phone notification sound. No music. No subtitles, no on-screen text."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j14_a.mp4",
+    "words": "clips/j14_a.words.json",
+    "lines": [
+     "¿A QUÉ NÚMERO",
+     "VA TU [LEAD]?"
+    ],
+    "kicker": "Inmobiliarias",
+    "kickerColor": "red",
+    "titleOut": 66,
+    "size": 112
+   },
+   "sfx": [
+    {
+     "src": "sfx/notif.wav",
+     "at": 0,
+     "vol": 0.16
+    }
+   ]
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j14_b.mp4",
+    "words": "clips/j14_b.words.json"
+   }
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j14_c.mp4",
+    "words": "clips/j14_c.words.json"
+   }
+  },
+  {
+   "type": "photo",
+   "key": "j14_s2",
+   "voice": "antonio",
+   "tail": 0.1,
+   "text": "Esta vez la cacharon por error. Pero casi siempre pasa en el WhatsApp personal del asesor, y en tu inmobiliaria nadie se entera.",
+   "p": {
+    "img": "advisor_woman",
+    "lines": [
+     "«A MI NÚMERO",
+     "[PERSONAL]»"
+    ],
+    "lineAts": [
+     "@error",
+     "@WhatsApp"
+    ],
+    "size": 124,
+    "stamp": {
+     "text": "NADIE SE ENTERA",
+     "at": "@entera",
+     "size": 80
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@entera",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "type": "flow",
+   "key": "auto_std",
+   "voice": "antonio",
+   "tail": 0.2,
+   "text": "Lead Master se conecta al WhatsApp y a las llamadas de tus asesores y vendedores, y en automático te dice qué pasó con cada lead. Todos los días te llega el reporte, sin que nadie llene nada.",
+   "p": {
+    "img": "office_agents",
+    "title": "TODO EN AUTOMÁTICO",
+    "nodes": [
+     {
+      "t": "WhatsApp de tus asesores",
+      "at": "@WhatsApp",
+      "color": "wa",
+      "sub": "y vendedores"
+     },
+     {
+      "t": "Sus llamadas",
+      "at": "@llamadas",
+      "color": "purple"
+     },
+     {
+      "t": "Lead Master (IA)",
+      "at": "@automático",
+      "color": "cyan",
+      "sub": "en automático"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamadas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@automático",
+     "vol": 0.1
+    }
+   ],
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@lead#2",
+     "p": {
+      "title": "Qué pasó con cada lead",
+      "sub": "Reporte automático · Lead Master",
+      "sched": "Llega solo todos los días · 8:00 pm",
+      "time": "8:00 pm",
+      "lines": [
+       {
+        "t": "Diana Trejo · Paola G. · cita el sábado 11 am",
+        "c": "green",
+        "at": "@lead#2+4"
+       },
+       {
+        "t": "Adriana Solís · Valeria R. · pidió opciones",
+        "at": "@lead#2+10"
+       },
+       {
+        "t": "Lucía Hernández · Diego H. · nadie le llamó",
+        "c": "red",
+        "at": "@lead#2+16"
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@reporte"
+       },
+       {
+        "t": "Nadie llenó nada: lo armó Lead Master solo",
+        "b": true,
+        "at": "@reporte"
+       }
+      ],
+      "alert": {
+       "t": "En automático: WhatsApp y llamadas conectados",
+       "c": "green",
+       "at": "@nada"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "panel",
+   "key": "j03_s3",
+   "voice": "antonio",
+   "text": "Con Lead Master, el WhatsApp de cada asesor está conectado: ves lo que le dice a cada lead, y si pasa algo raro, te llega un aviso.",
+   "p": {
+    "title": "Conversaciones de hoy",
+    "right": "Avisos de la IA",
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Le mandó 3 opciones de la inmobiliaria · visita el sábado",
+      "status": "Normal",
+      "color": "green",
+      "at": "@conectado"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Rodrigo (asesor)",
+      "lead": "Lucía Hernández",
+      "summary": "«Te paso con un socio, por fuera te sale mejor»",
+      "status": "Algo raro",
+      "color": "red",
+      "at": "@raro"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@conectado",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@raro",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@aviso",
+     "vol": 0.14
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "key": "j03_s5",
+   "voice": "antonio",
+   "tail": 1.0,
+   "captions": true,
+   "text": "Si tienes una inmobiliaria con asesores, comenta LEADS y te lo instalamos.",
+   "p": {
+    "word": "LEADS",
+    "top": "PARA INMOBILIARIAS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}

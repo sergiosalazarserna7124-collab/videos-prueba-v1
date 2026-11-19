@@ -1,0 +1,299 @@
+{
+ "id": "J17-le-di-los-leads-y-se-fue",
+ "title": "Le di los leads y se fue: la dueña que perdió sus clientes (Serie Sala de Juntas, video 17)",
+ "voice": "antonio",
+ "music": "music/pulse.mp3",
+ "tempo": 1.15,
+ "keywords": [
+  "WhatsApp",
+  "asesor",
+  "asesores",
+  "automático",
+  "aviso",
+  "avisa",
+  "compadre",
+  "comisión",
+  "competencia",
+  "dólares",
+  "fuera",
+  "grabadas",
+  "inmobiliaria",
+  "inmobiliarios",
+  "lead",
+  "leads",
+  "reporte",
+  "robando",
+  "probar",
+  "contestó",
+  "celular",
+  "saber",
+  "venta"
+ ],
+ "ia": [
+  {
+   "clip": "j17_a",
+   "dice": "A mi mejor asesor inmobiliario le pagué la pauta, le pagué el sueldo, le di los leads…",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Night, an empty real estate agency office, rows of empty desks, only one desk lamp on. Doña Mónica, the owner of a real estate agency, an elegant Mexican woman in her fifties with short silver hair, red-framed glasses, a cream blazer and pearl earrings, stands next to an empty desk with an open folder in her hands, voice breaking, counts with her fingers and says in Mexican Spanish, hurt and angry, slow: \"A mi mejor asesor inmobiliario le pagué la pauta, le pagué el sueldo, le di los leads…\" Medium close-up, static camera. Audio: only her voice in Spanish, quiet night office ambience. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j17_b",
+   "dice": "…y se fue con la competencia. ¡Con todos mis clientes!",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Night, an empty real estate agency office, rows of empty desks, only one desk lamp on. Doña Mónica, the owner of a real estate agency, an elegant Mexican woman in her fifties with short silver hair, red-framed glasses, a cream blazer and pearl earrings, slams the folder on the desk so papers fly everywhere, furious, looks at the camera and says in Mexican Spanish, furious, shouting: \"…y se fue con la competencia. ¡Con todos mis clientes!\" Medium close-up, static camera. Audio: only her voice in Spanish, papers flying. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j17_c",
+   "dice": "Nueva oficina… mismos clientes.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, a brand new office of a competing real estate agency with a sign that says \"INMOBILIARIA NUEVA\". Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, puts a cardboard box with his things on a new desk, takes out his phone full of WhatsApp chats, smiles smugly at the camera and says in Mexican Spanish, smug and relaxed: \"Nueva oficina… mismos clientes.\" Medium close-up, static camera. Audio: only his voice in Spanish, office ambience. No music. No subtitles, no on-screen text."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j17_a.mp4",
+    "words": "clips/j17_a.words.json",
+    "lines": [
+     "LE DI LOS [LEADS]",
+     "Y SE FUE"
+    ],
+    "kicker": "Dueña de inmobiliaria",
+    "kickerColor": "red",
+    "titleOut": 66,
+    "size": 112
+   },
+   "sfx": [
+    {
+     "src": "sfx/notif.wav",
+     "at": 0,
+     "vol": 0.16
+    }
+   ]
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j17_b.mp4",
+    "words": "clips/j17_b.words.json"
+   }
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j17_c.mp4",
+    "words": "clips/j17_c.words.json"
+   }
+  },
+  {
+   "type": "photo",
+   "key": "j17_s2",
+   "voice": "antonio",
+   "tail": 0.1,
+   "text": "Le pasa a muchos dueños de inmobiliaria: el asesor se va, y los leads que pagaste se van con él, en su celular.",
+   "p": {
+    "img": "empty_desk",
+    "lines": [
+     "SE FUE CON",
+     "TUS [CLIENTES]"
+    ],
+    "lineAts": [
+     "@dueños",
+     "@leads"
+    ],
+    "size": 124,
+    "stamp": {
+     "text": "EN SU CELULAR",
+     "at": "@celular",
+     "size": 86
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@leads",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@celular",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "type": "flow",
+   "key": "auto_std",
+   "voice": "antonio",
+   "tail": 0.2,
+   "text": "Lead Master se conecta al WhatsApp y a las llamadas de tus asesores y vendedores, y en automático te dice qué pasó con cada lead. Todos los días te llega el reporte, sin que nadie llene nada.",
+   "p": {
+    "img": "office_agents",
+    "title": "TODO EN AUTOMÁTICO",
+    "nodes": [
+     {
+      "t": "WhatsApp de tus asesores",
+      "at": "@WhatsApp",
+      "color": "wa",
+      "sub": "y vendedores"
+     },
+     {
+      "t": "Sus llamadas",
+      "at": "@llamadas",
+      "color": "purple"
+     },
+     {
+      "t": "Lead Master (IA)",
+      "at": "@automático",
+      "color": "cyan",
+      "sub": "en automático"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamadas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@automático",
+     "vol": 0.1
+    }
+   ],
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@lead#2",
+     "p": {
+      "title": "Qué pasó con cada lead",
+      "sub": "Reporte automático · Lead Master",
+      "sched": "Llega solo todos los días · 8:00 pm",
+      "time": "8:00 pm",
+      "lines": [
+       {
+        "t": "Diana Trejo · Paola G. · cita el sábado 11 am",
+        "c": "green",
+        "at": "@lead#2+4"
+       },
+       {
+        "t": "Adriana Solís · Valeria R. · pidió opciones",
+        "at": "@lead#2+10"
+       },
+       {
+        "t": "Lucía Hernández · Diego H. · nadie le llamó",
+        "c": "red",
+        "at": "@lead#2+16"
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@reporte"
+       },
+       {
+        "t": "Nadie llenó nada: lo armó Lead Master solo",
+        "b": true,
+        "at": "@reporte"
+       }
+      ],
+      "alert": {
+       "t": "En automático: WhatsApp y llamadas conectados",
+       "c": "green",
+       "at": "@nada"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "key": "j03_s4",
+   "voice": "antonio",
+   "text": "Las llamadas salen del sistema y quedan grabadas. Y si el asesor se va, los leads y todo su historial se quedan en tu inmobiliaria.",
+   "p": {
+    "items": [
+     {
+      "t": "WhatsApp conectado",
+      "at": "@sistema",
+      "color": "cyan",
+      "k": "Siempre"
+     },
+     {
+      "t": "Llamadas grabadas",
+      "at": "@grabadas",
+      "color": "purple",
+      "k": "Siempre"
+     },
+     {
+      "t": "Los leads se quedan",
+      "at": "@quedan",
+      "color": "green",
+      "k": "Si se va"
+     }
+    ],
+    "img": "empty_desk",
+    "title": "TUS LEADS, TUYOS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@sistema",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@grabadas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@quedan",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "key": "j03_s5",
+   "voice": "antonio",
+   "tail": 1.0,
+   "captions": true,
+   "text": "Si tienes una inmobiliaria con asesores, comenta LEADS y te lo instalamos.",
+   "p": {
+    "word": "LEADS",
+    "top": "PARA INMOBILIARIAS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}
