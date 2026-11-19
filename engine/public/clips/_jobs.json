@@ -26,5 +26,82 @@
   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film, warm office lighting. Setting: a modern real estate agency meeting room with a glass wall, a long white table with laptops showing an empty CRM, coffee mugs and printed charts. Diego, a skinny young real estate agent with glasses, slicked-back gelled hair and an oversized blue blazer, sweats nervously and taps his own forehead with one finger while saying in Mexican Spanish: \"Jefe, las notas de los leads las tengo… en mi cabeza.\" Then Paola, a confident real estate agent with curly hair and a pink blouse, shrugs with a guilty smile and says: \"Y yo lleno el CRM los viernes… cuando me acuerdo.\" Awkward silence, crickets chirping. Medium two-shot, static camera. Audio: their voices in Spanish, then crickets. No music. No subtitles, no on-screen text.",
   "seconds": "8",
   "created": 1793975321.6928434
+ },
+ "j02_a": {
+  "id": "v1_ChdwUV91YXZpdk9ZSFp5dE1Qa3NpMDBBSRIXcFFfdWF2aXZPWUhaeXRNUGtzaTAwQUk",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Warm daylight in a busy modern real estate agency office with desks and property posters. Toño, a stocky Mexican real estate agent in his late twenties with big curly hair, a thick beard, sunglasses pushed up on his head, a tight light-blue polo shirt with a real estate agency lanyard and a flashy gold watch, sits at his desk, just hangs up a phone call, looks at his laptop showing an empty CRM form, rolls his eyes, leans back in his chair and lazily pushes the laptop lid half closed while saying in Mexican Spanish, fast and annoyed: \"¡Ahhh! Soy asesor inmobiliario, no secretario. ¿Otra vez anotar lo de este lead? Mejor al rato.\" Medium shot, slight push-in. Audio: only his voice in Spanish, office ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1793986470.7758265
+ },
+ "j02_b": {
+  "id": "v1_Chdwd191YXQ2aEI0cmUwX2dQeUtEZjJRTRIXcHdfdWF0NmhCNHJlMF9nUHlLRGYyUU0",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Night, the same real estate agency office is empty and dark, only a desk lamp on. Toño, a stocky Mexican real estate agent in his late twenties with big curly hair, a thick beard, sunglasses pushed up on his head, a tight light-blue polo shirt with a real estate agency lanyard and a flashy gold watch, sits at his desk covered in messy sticky notes, scrolls his phone confused, scratches his head and squints at the screen while saying in Mexican Spanish, fast and worried: \"A ver… ¿con qué lead hablé hoy? ¿A quién le prometí la visita? ¿Y este quién es?\" Medium close-up, static camera. Audio: only his voice in Spanish, quiet office hum. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1793986472.830837
+ },
+ "j03_a": {
+  "id": "v1_ChZWaG51YXJyNUlMUzB4ZElQbnRTNVFREhZWaG51YXJyNUlMUzB4ZElQbnRTNVFR",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, inside a parked car right outside a real estate agency office. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, sits in the driver seat reading a WhatsApp message on his phone, raises an eyebrow, smirks and turns to the camera saying in Mexican Spanish, fast and confident, like a mockumentary confession: \"Los asesores inmobiliarios no perdemos leads: si aquí no hay desarrollo, se lo ofrezco a mi compadre.\" Medium close-up, static camera. Audio: only his voice in Spanish, quiet street ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1793988951.5294735
+ },
+ "j03_b": {
+  "id": "v1_ChdWeG51YXI2eU5vS3R1TVlQdTdiRHFRSRIXVnhudWFyNnlOb0t0dU1ZUHU3YkRxUUk",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Same parked car outside the real estate agency. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, holds the phone to his ear and says in a sweet, overly friendly voice in Mexican Spanish: \"¡Claro, señora! Le tengo justo lo que busca…\" Then he lowers the phone, covers it with his hand, winks at the camera and whispers: \"Total, la inmobiliaria ni cuenta se da.\" Medium close-up, static camera. Audio: only his voice in Spanish. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1793988952.8820026
+ },
+ "j04_a": {
+  "id": "v1_Chc0eUh1YXQzakJKdmJ5dE1QNFlIaTZBMBIXNHlIdWF0M2pCSnZieXRNUDRZSGk2QTA",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Night, a real estate agency owner's office lit by a desk lamp and a computer monitor showing an ads dashboard with charts. Marcela, the owner of a real estate agency, a Mexican woman in her fifties with a short grey bob haircut, reading glasses, a burgundy blazer and pearl earrings, sits at her desk holding a calculator, looks stressed and worried, rubs her temple and says in Mexican Spanish, anxious and fast: \"Metí cien mil pesos en anuncios: mil leads. ¿Y mis asesores inmobiliarios qué hicieron con ellos?\" Medium close-up, slow push-in. Audio: only her voice in Spanish, quiet office hum. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1793991139.9537487
+ },
+ "j04_b": {
+  "id": "v1_Chc1Q0h1YW9UOEZ0bkN5dE1Qd0xLNGtRdxIXNUNIdWFvVDhGdG5DeXRNUHdMSzRrUXc",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, a real estate agency office with desks and property posters. Kevin, a young Mexican real estate agent in his early twenties with a beanie, a hoodie under a cheap blazer, chewing gum, very relaxed and careless, leans back in his chair with his feet on the desk, shrugs and says in Mexican Spanish, careless and fast: \"Jefa, esos leads estaban malísimos… nadie contestó. Bueno, eso creo.\" Medium shot, static camera. Audio: only his voice in Spanish, gum chewing, office ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1793991141.237314
+ },
+ "j05_a": {
+  "id": "v1_Chd6RHp1YW9qaEJ0VGd5dE1QdkpHbzhBcxIXekR6dWFvamhCdFRneXRNUHZKR284QXM",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. A modern real estate agency meeting room with a glass wall and a long table; four real estate agents sit around the table silently avoiding eye contact. Ricardo, the owner of a real estate agency, a tall Mexican man in his forties with slicked-back dark hair with grey temples, an expensive navy suit and a loosened tie, sweating and panicking, stands at the head of the table holding up his phone showing ad results, eyes wide with panic, and says in Mexican Spanish, desperate and fast: \"¡Meta dice trescientos leads! Asesores inmobiliarios, ¿qué pasó con ellos? ¿Por qué no vendemos?\" Medium shot, slow push-in. Audio: only his voice in Spanish. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1793998028.8901768
+ },
+ "j05_b": {
+  "id": "v1_Chd6VHp1YXI2WkUtX2UwX2dQamVyaDJROBIXelR6dWFyNlpFLV9lMF9nUGplcmgyUTg",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. A modern real estate agency meeting room with a glass wall and a long table; four real estate agents sit around the table silently avoiding eye contact. Ricardo, the owner of a real estate agency, a tall Mexican man in his forties with slicked-back dark hair with grey temples, an expensive navy suit and a loosened tie, sweating and panicking, walks around the table pointing at each silent agent one by one, desperate, saying in Mexican Spanish: \"Hay citas en el calendario… ¿por qué no cerramos ninguna? ¿Alguien? ¿Nadie?\" The agents look away, one whistles, one stares at the ceiling. Medium wide shot, camera follows him. Audio: only his voice in Spanish, awkward silence. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1793998030.2936
+ },
+ "j06_a": {
+  "id": "v1_ChdobW52YW8tYko4Mk95dE1QdExmRjhBdxIXaG1udmFvLWJKODJPeXRNUHRMZkY4QXc",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, an outdoor café terrace table with two coffee cups and a phone on the table. Beto, a heavyset Mexican land lot seller in his fifties with a straw cowboy hat, a plaid shirt and a thick grey mustache, sits at the table, exhausted, takes off his hat, rubs his face and says in Mexican Spanish, tired and fed up: \"Ya estoy cansado. A mis asesores inmobiliarios les llegan leads preguntando por un terreno… y nunca compran.\" Medium close-up on him, static camera. Audio: only his voice in Spanish, light café ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1794075015.4581542
+ },
+ "j06_b": {
+  "id": "v1_ChdoMm52YXV6UE5JQ3B5dE1Qd3VLODhRMBIXaDJudmF1elBOSUNweXRNUHd1Szg4UTA",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, an outdoor café terrace table with two coffee cups and a phone on the table. Gaby, a sharp Mexican woman in her forties with a black bob haircut, glasses and a white blazer, holding a coffee cup, sitting across the table, raises an eyebrow, puts her coffee down and asks him in Mexican Spanish, curious and direct: \"¿Y le estás diciendo a Meta cuáles de esos leads sí te agendan?\" Medium close-up on her, static camera. Audio: only her voice in Spanish, light café ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1794075016.9323943
+ },
+ "j06_c": {
+  "id": "v1_ChZpV252YXRXQUZLZkJ4ZElQNFp2TlFREhZpV252YXRXQUZLZkJ4ZElQNFp2TlFR",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, an outdoor café terrace table with two coffee cups and a phone on the table. Beto, a heavyset Mexican land lot seller in his fifties with a straw cowboy hat, a plaid shirt and a thick grey mustache, confused, lifts his straw hat and scratches his head, says in Mexican Spanish: \"No… ¿cómo se hace eso?\" Close-up on him, static camera. Audio: only his voice in Spanish. No music. No subtitles, no on-screen text.",
+  "seconds": "5",
+  "created": 1794075018.349624
  }
 }

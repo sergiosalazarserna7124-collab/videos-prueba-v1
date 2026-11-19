@@ -11,6 +11,14 @@
   "Inmobiliarias" o similar.
 - No usar "manual action". Nombres solo de demo (ver README).
 
+## Bloque obligatorio: TODO EN AUTOMÁTICO (en todos los videos)
+- Todo video tiene que DECIR y MOSTRAR que Lead Master trabaja solo: se conecta al WhatsApp y a las llamadas
+  de los asesores y vendedores, y en automático dice qué pasó con cada lead y manda el reporte, sin que nadie llene nada.
+- Usa la escena fija `engine/videos/_auto_std.json` (voz `auto_std`, ya generada): flujo «WhatsApp de tus asesores
+  → Sus llamadas → Lead Master (IA) en automático» con título «TODO EN AUTOMÁTICO» y el reporte lead por lead
+  llegando solo por WhatsApp. Va justo después de plantear el problema. Si el guion ya explica pasos, la escena
+  puede cambiar el título (p. ej. «2 · TODO EN AUTOMÁTICO») pero tiene que estar.
+
 ## Videos con personas de IA (Serie Sala de Juntas)
 - La IA solo hace el gancho (8 a 16 s, 1 o 2 planos de 8 s, un personaje hablando por plano de preferencia).
   El resto es el motor (`engine/`) con la voz del narrador.
