@@ -11,9 +11,12 @@ Sergio pidió 5 variaciones del J03 (el que mejor funciona) con 2 o 3 muñecos p
   Si la key llega por secreto de red, poner `GEMINI_API_KEY=proxy` (valor de relleno, el proxy lo cambia).
 - Alternativa que Sergio está viendo: Higgsfield por MCP (prueba 3 días gratis; luego US$79 el 1er mes y US$129/mes).
   Los conectores solo se cargan en una sesión nueva.
-- **BLOQUEADO (19 nov, sesión lead-master-video):** al lanzar el 1er plano (j07_a) Google respondió 403
-  «Your billing account has an outstanding balance. Make a payment at aistudio.google.com/billing». No se generó
-  ni cobró ningún plano. Sergio tiene que pagar el saldo en AI Studio → Billing; luego correr los pasos tal cual.
+- **HECHO (19 nov, 5:30 pm):** los 15 planos generados y los 5 videos renderizados; copias para celular en `videos/`:
+  J07 58,2 s · J08 52,1 s · J09 51,4 s · J10 60,0 s · J11 58,3 s. j09_a se regeneró una vez (la 1ª versión salió realista);
+  j10_c y j11_c se relanzaron porque fallaron por RESOURCE_EXHAUSTED (15 a la vez es demasiado; lanzar de a 10 o menos).
+  j08_c tiene «VENTAS: 0» en el tablero porque así lo pide el prompt. Falta que Sergio los revise.
+- Subtítulos de los planos: la transcripción de Gemini (`clip_words.py`) dio tiempos amontonados; se rehicieron con
+  `tools/words_energia.py <clip> "<dice>"` (texto del guion alineado por la energía del audio).
 - Arreglado `tools/ia_clip.py`: google-genai 3.x usa la API v1 por defecto y ahí Omni da 404; ahora fuerza `v1beta`.
 - Después de cada plano, ajustar `range` de los clips con los tiempos de `*.words.json` para cortar tiempo muerto.
 
