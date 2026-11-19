@@ -103,5 +103,110 @@
   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, an outdoor café terrace table with two coffee cups and a phone on the table. Beto, a heavyset Mexican land lot seller in his fifties with a straw cowboy hat, a plaid shirt and a thick grey mustache, confused, lifts his straw hat and scratches his head, says in Mexican Spanish: \"No… ¿cómo se hace eso?\" Close-up on him, static camera. Audio: only his voice in Spanish. No music. No subtitles, no on-screen text.",
   "seconds": "5",
   "created": 1794075018.349624
+ },
+ "j07_a": {
+  "id": "v1_Chc5U3ZfYXFlcEVMR0Z5dE1QaDhlMzRBRRIXOVN2X2FxZXBFTEdGeXRNUGg4ZTM0QUU",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Night, the owner's office of a real estate agency, dark, lit only by the glow of his phone and a desk lamp; through the glass wall you can see the empty desks of his real estate agents. Don Ramiro, the owner of a real estate agency, a short chubby Mexican man in his fifties with a thick black mustache, receding hairline, white shirt with rolled-up sleeves and a loose red tie, paranoid and scared, peeks between the window blinds toward the agents' desks, then looks at the camera with wide worried eyes, sweating and says in Mexican Spanish, anxious, whispering and fast: \"¿Y si mis asesores inmobiliarios me están robando los leads? ¿Cómo lo voy a saber?\" Medium close-up, static camera. Audio: only his voice in Spanish, quiet night office ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1795107829.888154
+ },
+ "j07_b": {
+  "id": "v1_Chc5aXZfYXZDZkE2UGV5dE1Qa2YyMDhBSRIXOWl2X2F2Q2ZBNlBleXRNUGtmMjA4QUk",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, inside a parked car right outside a real estate agency office with a big \"AGENCIA INMOBILIARIA\" sign. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, sits in the driver seat holding the phone to his ear, smiling and says in Mexican Spanish, in a sweet, overly friendly voice: \"Ese proyecto aquí no lo tenemos, señora… pero no se preocupe: conozco a alguien que sí.\" Medium close-up, static camera. Audio: only his voice in Spanish, quiet street ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1795107830.7739456
+ },
+ "j07_c": {
+  "id": "v1_Chc5aXZfYXRhYlBLZmEwX2dQN3J6ZHdRMBIXOWl2X2F0YWJQS2ZhMF9nUDdyemR3UTA",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, inside a parked car right outside a real estate agency office with a big \"AGENCIA INMOBILIARIA\" sign. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, lowers the phone, covers it with his hand, turns to the camera, winks and says in Mexican Spanish, whispering like a mockumentary confession, sly: \"Lo vendo por fuera… y mi director comercial ni cuenta se va a dar.\" Close-up, static camera. Audio: only his voice in Spanish. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1795107831.7697916
+ },
+ "j08_a": {
+  "id": "v1_ChY5eXZfYXRIMU41dXB5dE1QXzkzamFREhY5eXZfYXRIMU41dXB5dE1QXzkzamFR",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, inside a parked car right outside a real estate agency office with a big \"AGENCIA INMOBILIARIA\" sign. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, shows his phone screen with a luxury apartment listing to the camera, greedy grin, rubs his thumb and fingers together in a money gesture and says in Mexican Spanish, fast and confident, like a mockumentary confession: \"Asesores inmobiliarios: ¿saben cuánto vale uno de estos leads? Un depa de doscientos mil dólares.\" Medium close-up, static camera. Audio: only his voice in Spanish, quiet street ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1795107832.9066312
+ },
+ "j08_b": {
+  "id": "v1_ChctU3ZfYXZ2TkJJbk4wX2dQclpmWG1BbxIXLVN2X2F2dk5CSW5OMF9nUHJaZlhtQW8",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, inside a parked car right outside a real estate agency office with a big \"AGENCIA INMOBILIARIA\" sign. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, holds the phone to his ear, looks left and right to make sure nobody is watching, leans in and says in Mexican Spanish, whispering, conspiratorial: \"Compadre, te paso el lead. Tú lo cierras allá y la comisión nos la partimos.\" Close-up, static camera. Audio: only his voice in Spanish. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1795107833.670961
+ },
+ "j08_c": {
+  "id": "v1_ChctU3ZfYXQtU05meTB4ZElQcjV1dnlRNBIXLVN2X2F0LVNOZnkweGRJUHI1dXZ5UTQ",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, a real estate agency owner's office with a big whiteboard that says \"VENTAS: 0\". Don Ramiro, the owner of a real estate agency, a short chubby Mexican man in his fifties with a thick black mustache, receding hairline, white shirt with rolled-up sleeves and a loose red tie, stands in front of the whiteboard holding a printed leads report, confused, scratches his head and looks at the camera and says in Mexican Spanish, confused and frustrated: \"¿Doscientos leads este mes… y ni una venta? Yo no entiendo qué pasa.\" Medium shot, static camera. Audio: only his voice in Spanish, office ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1795107834.4520729
+ },
+ "j09_a": {
+  "id": "v1_Chc4aXpfYW9hS05aakZ4ZElQbVpldmdRNBIXOGl6X2FvYUtOWmpGeGRJUG1aZXZnUTQ",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Warm office lighting, a modern real estate agency meeting room with a glass wall, a long white table with laptops, coffee mugs and printed charts. Fabián, the sales director of a real estate agency, a Mexican man in his forties with a neatly trimmed beard, square black glasses and a fitted navy blazer over a black turtleneck, stands at the head of the table holding a tablet, serious, looks over his glasses at the real estate agents sitting around the table and says in Mexican Spanish, firm and direct: \"A ver, asesores inmobiliarios: de los leads de ayer, ¿qué pasó con el del penthouse?\" Medium shot, slow push-in. Audio: only his voice in Spanish, office ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1795108083.4888937
+ },
+ "j09_b": {
+  "id": "v1_ChcteXZfYW96OE5fMjN4ZElQaXZ6WnFBOBIXLXl2X2FvejhOXzIzeGRJUGl2elpxQTg",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Warm office lighting, a modern real estate agency meeting room with a glass wall, a long white table with laptops, coffee mugs and printed charts. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, sits at the table leaning back in his chair, totally relaxed, shrugs and spins a pen and says in Mexican Spanish, casual and convincing: \"Ese lead nunca contestó, jefe. Ya lo di por perdido.\" Medium close-up, static camera. Audio: only his voice in Spanish, office ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1795107836.7473643
+ },
+ "j09_c": {
+  "id": "v1_ChdfQ3ZfYXRxOE42V0Ixc2dQaWFXSjhBNBIXX0N2X2F0cThONldCMXNnUGlhV0o4QTQ",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, inside a parked car right outside a real estate agency office with a big \"AGENCIA INMOBILIARIA\" sign. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, holds the phone to his ear, very happy, then winks at the camera and says in Mexican Spanish, cheerful and overly friendly, the last words whispered: \"¡Felicidades por su penthouse, señora! Mañana firmamos… pero en la otra oficina.\" Medium close-up, static camera. Audio: only his voice in Spanish, quiet street ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1795107837.6024125
+ },
+ "j10_a": {
+  "id": "v1_ChdfU3ZfYXJyU0x0cWc1Tm9Qak1ManlBVRIXX1N2X2FyclNMdHFnNU5vUGpNTGp5QVU",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, a busy modern real estate agency office with desks and property posters. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, sits at his desk holding two phones, one in each hand, lifts each one when he mentions it, smug grin, talking to the camera and says in Mexican Spanish, fast and confident, like a mockumentary confession: \"Asesores inmobiliarios: dos celulares. Uno para los leads de la inmobiliaria… y otro para los míos.\" Medium close-up, static camera. Audio: only his voice in Spanish, office ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1795107838.5819647
+ },
+ "j10_b": {
+  "id": "v1_ChdfaXZfYXNUX0s2R2l5dE1QbnNiMDBRSRIXX2l2X2FzVF9LNkdpeXRNUG5zYjAwUUk",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, a busy modern real estate agency office with desks and property posters. Paola, a confident Mexican real estate agent in her thirties with big curly hair, a pink blouse and gold hoop earrings, stands behind a desk with her arms crossed, catching a colleague red-handed, raises one eyebrow, angry and says in Mexican Spanish, firm and accusing: \"Rodrigo, ¿otra vez le estás pasando leads a la competencia?\" Medium close-up, static camera. Audio: only her voice in Spanish, office ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1795107839.413609
+ },
+ "j10_c": {
+  "id": "v1_ChdZaXpfYXZDYUZMbUYxc2dQdTV1US1BNBIXWWl6X2F2Q2FGTG1GMXNnUHU1dVEtQTQ",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, a busy modern real estate agency office with desks and property posters. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, sitting at his desk, startled, quickly hides one of his two phones inside his jacket, nervous laugh, sweating and says in Mexican Spanish, nervous and fast: \"¿Yo? No, no, no… es mi primo. Bueno, mi primo trabaja ahí.\" Medium close-up, static camera. Audio: only his voice in Spanish, office ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1795107938.9744432
+ },
+ "j11_a": {
+  "id": "v1_ChdBQ3pfYW96V0ljMm14ZElQa1pTVXVRNBIXQUN6X2FveldJYzJteGRJUGtaU1V1UTQ",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Warm office lighting, a modern real estate agency meeting room with a glass wall, a long white table with laptops, coffee mugs and printed charts. Don Ramiro, the owner of a real estate agency, a short chubby Mexican man in his fifties with a thick black mustache, receding hairline, white shirt with rolled-up sleeves and a loose red tie, stands at the head of the table, his face turns red with anger, slams both fists on the table so the mugs jump, shouting at his real estate agents and says in Mexican Spanish, furious, shouting: \"¡Asesores inmobiliarios! De todos mis leads, el de la casa en Zapopan compró… ¡con otra inmobiliaria!\" Medium shot, slow push-in. Audio: only his voice in Spanish, fists on the table, mugs rattling. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1795107841.206936
+ },
+ "j11_b": {
+  "id": "v1_ChdBU3pfYXZLQ0ZlWGh5dE1Qa2Z6Rm9RSRIXQVN6X2F2S0NGZVhoeXRNUGtmekZvUUk",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Warm office lighting, a modern real estate agency meeting room with a glass wall, a long white table with laptops, coffee mugs and printed charts. Paola, a confident Mexican real estate agent in her thirties with big curly hair, a pink blouse and gold hoop earrings, sits at the table, stands up and points her finger accusingly across the table and says in Mexican Spanish, indignant and fast: \"¡Fue Rodrigo, jefe! Yo vi cuando le pasó el lead a su compadre.\" Medium close-up, static camera. Audio: only her voice in Spanish, office ambience. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1795107842.1550453
+ },
+ "j11_c": {
+  "id": "v1_ChdZeXpfYXZqNEN2MjN4ZElQaXZ6WnFBOBIXWXl6X2F2ajRDdjIzeGRJUGl2elpxQTg",
+  "model": "gemini-omni-1.2-flash",
+  "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Warm office lighting, a modern real estate agency meeting room with a glass wall, a long white table with laptops, coffee mugs and printed charts. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, sits at the table, raises both hands pretending to be offended, then leans back with a smug smile and crosses his arms and says in Mexican Spanish, dramatic, then cocky: \"¿Yo? Qué acusación tan fuerte… A ver, ¡pruébalo!\" Medium close-up, static camera. Audio: only his voice in Spanish, a dramatic silence. No music. No subtitles, no on-screen text.",
+  "seconds": "8",
+  "created": 1795107939.8285291
  }
 }
