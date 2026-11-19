@@ -17,6 +17,7 @@ import time
 import urllib.request
 
 from google import genai
+from google.genai import types
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 CLIPS = os.path.join(ROOT, 'public', 'clips')
@@ -40,7 +41,8 @@ def client():
     key = gemini_key()
     if not key:
         raise SystemExit('Falta GEMINI_API_KEY')
-    _CLIENT = genai.Client(api_key=key)
+    # google-genai 3.x usa v1 por defecto y ahí no está Omni.
+    _CLIENT = genai.Client(api_key=key, http_options=types.HttpOptions(api_version='v1beta'))
     return _CLIENT
 
 

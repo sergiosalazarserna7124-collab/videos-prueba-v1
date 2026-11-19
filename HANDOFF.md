@@ -11,6 +11,10 @@ Sergio pidió 5 variaciones del J03 (el que mejor funciona) con 2 o 3 muñecos p
   Si la key llega por secreto de red, poner `GEMINI_API_KEY=proxy` (valor de relleno, el proxy lo cambia).
 - Alternativa que Sergio está viendo: Higgsfield por MCP (prueba 3 días gratis; luego US$79 el 1er mes y US$129/mes).
   Los conectores solo se cargan en una sesión nueva.
+- **BLOQUEADO (19 nov, sesión lead-master-video):** al lanzar el 1er plano (j07_a) Google respondió 403
+  «Your billing account has an outstanding balance. Make a payment at aistudio.google.com/billing». No se generó
+  ni cobró ningún plano. Sergio tiene que pagar el saldo en AI Studio → Billing; luego correr los pasos tal cual.
+- Arreglado `tools/ia_clip.py`: google-genai 3.x usa la API v1 por defecto y ahí Omni da 404; ahora fuerza `v1beta`.
 - Después de cada plano, ajustar `range` de los clips con los tiempos de `*.words.json` para cortar tiempo muerto.
 
 # Siguiente paso: video demo J01 (Serie Sala de Juntas)
