@@ -1,3 +1,18 @@
+# Ahora (19 nov 2026): 5 variaciones de J03 «se roban los leads» (J07 a J11)
+
+Sergio pidió 5 variaciones del J03 (el que mejor funciona) con 2 o 3 muñecos peleando y más narrativa.
+- Guiones: `guiones/sala-de-juntas/J07-J11-se-roban-los-leads.md`. Specs: `engine/videos/J07..J11*.json`, salen de
+  `engine/tools/specs_roban.py` (editar ahí y correrlo). 3 planos de IA por video (un personaje por plano).
+- Voces del narrador ya generadas (ElevenLabs por Composio, ruta with-timestamps): `engine/public/tts/j07_s2..j11_s3`.
+  Reusan `auto_std`, `j03_s4` (stack) y `j03_s5` (cierre «Comenta LEADS»).
+- FALTA: los 15 planos de muñecos (`python3 tools/ia_clip.py spec videos/J07-....json`, luego `tools/clip_words.py`
+  por plano) y el render. Necesita la key de Gemini: en el entorno leadmaster-tracker hay que agregar un secreto de red
+  para generativelanguage.googleapis.com con encabezado `x-goog-api-key` (el formulario automático no acepta ese encabezado).
+  Si la key llega por secreto de red, poner `GEMINI_API_KEY=proxy` (valor de relleno, el proxy lo cambia).
+- Alternativa que Sergio está viendo: Higgsfield por MCP (prueba 3 días gratis; luego US$79 el 1er mes y US$129/mes).
+  Los conectores solo se cargan en una sesión nueva.
+- Después de cada plano, ajustar `range` de los clips con los tiempos de `*.words.json` para cortar tiempo muerto.
+
 # Siguiente paso: video demo J01 (Serie Sala de Juntas)
 
 Estado al 5 nov 2026, 4:15 pm Bogotá.

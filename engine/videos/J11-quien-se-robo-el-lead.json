@@ -1,0 +1,351 @@
+{
+ "id": "J11-quien-se-robo-el-lead",
+ "title": "¿Quién se robó el lead?: la junta sin pruebas (Serie Sala de Juntas, video 11)",
+ "voice": "antonio",
+ "music": "music/pulse.mp3",
+ "tempo": 1.15,
+ "keywords": [
+  "WhatsApp",
+  "asesor",
+  "asesores",
+  "automático",
+  "aviso",
+  "avisa",
+  "compadre",
+  "comisión",
+  "competencia",
+  "dólares",
+  "fuera",
+  "grabadas",
+  "inmobiliaria",
+  "inmobiliarios",
+  "lead",
+  "leads",
+  "reporte",
+  "robando",
+  "probar",
+  "contestó",
+  "celular",
+  "saber",
+  "venta"
+ ],
+ "ia": [
+  {
+   "clip": "j11_a",
+   "dice": "¡Asesores inmobiliarios! De todos mis leads, el de la casa en Zapopan compró… ¡con otra inmobiliaria!",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Warm office lighting, a modern real estate agency meeting room with a glass wall, a long white table with laptops, coffee mugs and printed charts. Don Ramiro, the owner of a real estate agency, a short chubby Mexican man in his fifties with a thick black mustache, receding hairline, white shirt with rolled-up sleeves and a loose red tie, stands at the head of the table, his face turns red with anger, slams both fists on the table so the mugs jump, shouting at his real estate agents and says in Mexican Spanish, furious, shouting: \"¡Asesores inmobiliarios! De todos mis leads, el de la casa en Zapopan compró… ¡con otra inmobiliaria!\" Medium shot, slow push-in. Audio: only his voice in Spanish, fists on the table, mugs rattling. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j11_b",
+   "dice": "¡Fue Rodrigo, jefe! Yo vi cuando le pasó el lead a su compadre.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Warm office lighting, a modern real estate agency meeting room with a glass wall, a long white table with laptops, coffee mugs and printed charts. Paola, a confident Mexican real estate agent in her thirties with big curly hair, a pink blouse and gold hoop earrings, sits at the table, stands up and points her finger accusingly across the table and says in Mexican Spanish, indignant and fast: \"¡Fue Rodrigo, jefe! Yo vi cuando le pasó el lead a su compadre.\" Medium close-up, static camera. Audio: only her voice in Spanish, office ambience. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j11_c",
+   "dice": "¿Yo? Qué acusación tan fuerte… A ver, ¡pruébalo!",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Warm office lighting, a modern real estate agency meeting room with a glass wall, a long white table with laptops, coffee mugs and printed charts. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, sits at the table, raises both hands pretending to be offended, then leans back with a smug smile and crosses his arms and says in Mexican Spanish, dramatic, then cocky: \"¿Yo? Qué acusación tan fuerte… A ver, ¡pruébalo!\" Medium close-up, static camera. Audio: only his voice in Spanish, a dramatic silence. No music. No subtitles, no on-screen text."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j11_a.mp4",
+    "words": "clips/j11_a.words.json",
+    "lines": [
+     "¿QUIÉN SE ROBÓ",
+     "EL [LEAD]?"
+    ],
+    "kicker": "Junta de asesores · inmobiliaria",
+    "kickerColor": "red",
+    "titleOut": 66,
+    "size": 124
+   },
+   "sfx": [
+    {
+     "src": "sfx/notif.wav",
+     "at": 0,
+     "vol": 0.16
+    }
+   ]
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j11_b.mp4",
+    "words": "clips/j11_b.words.json"
+   }
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j11_c.mp4",
+    "words": "clips/j11_c.words.json"
+   }
+  },
+  {
+   "type": "photo",
+   "key": "j11_s2",
+   "voice": "antonio",
+   "tail": 0.1,
+   "text": "Y ese es el problema: si todo pasa en el WhatsApp personal de cada asesor, no puedes probar quién se llevó el lead.",
+   "p": {
+    "img": "meeting",
+    "lines": [
+     "SIN",
+     "[PRUEBAS]"
+    ],
+    "lineAts": [
+     "@problema",
+     "@probar"
+    ],
+    "size": 150,
+    "stamp": {
+     "text": "NO SE PUEDE PROBAR",
+     "at": "@llevó",
+     "size": 76
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@probar",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@llevó",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "type": "flow",
+   "key": "auto_std",
+   "voice": "antonio",
+   "tail": 0.2,
+   "text": "Lead Master se conecta al WhatsApp y a las llamadas de tus asesores y vendedores, y en automático te dice qué pasó con cada lead. Todos los días te llega el reporte, sin que nadie llene nada.",
+   "p": {
+    "img": "office_agents",
+    "title": "TODO EN AUTOMÁTICO",
+    "nodes": [
+     {
+      "t": "WhatsApp de tus asesores",
+      "at": "@WhatsApp",
+      "color": "wa",
+      "sub": "y vendedores"
+     },
+     {
+      "t": "Sus llamadas",
+      "at": "@llamadas",
+      "color": "purple"
+     },
+     {
+      "t": "Lead Master (IA)",
+      "at": "@automático",
+      "color": "cyan",
+      "sub": "en automático"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamadas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@automático",
+     "vol": 0.1
+    }
+   ],
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@lead#2",
+     "p": {
+      "title": "Qué pasó con cada lead",
+      "sub": "Reporte automático · Lead Master",
+      "sched": "Llega solo todos los días · 8:00 pm",
+      "time": "8:00 pm",
+      "lines": [
+       {
+        "t": "Diana Trejo · Paola G. · cita el sábado 11 am",
+        "c": "green",
+        "at": "@lead#2+4"
+       },
+       {
+        "t": "Adriana Solís · Valeria R. · pidió opciones",
+        "at": "@lead#2+10"
+       },
+       {
+        "t": "Lucía Hernández · Diego H. · nadie le llamó",
+        "c": "red",
+        "at": "@lead#2+16"
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@reporte"
+       },
+       {
+        "t": "Nadie llenó nada: lo armó Lead Master solo",
+        "b": true,
+        "at": "@reporte"
+       }
+      ],
+      "alert": {
+       "t": "En automático: WhatsApp y llamadas conectados",
+       "c": "green",
+       "at": "@nada"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "panel",
+   "key": "j11_s3",
+   "voice": "antonio",
+   "text": "Con Lead Master queda todo: qué le dijo cada asesor a cada lead y cuándo. Y si alguien lo manda a otro lado, la IA te avisa.",
+   "p": {
+    "title": "Conversaciones de hoy",
+    "right": "Avisos de la IA",
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Paola Gutiérrez",
+      "lead": "Diana Trejo",
+      "summary": "Le mandó 2 casas en Zapopan · visita el sábado",
+      "status": "Normal",
+      "color": "green",
+      "at": "@dijo"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Rodrigo (asesor)",
+      "lead": "Lucía Hernández",
+      "summary": "«Te paso el número de mi compadre, él te lo deja más barato»",
+      "status": "Lead por fuera",
+      "color": "red",
+      "at": "@lado"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@dijo",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@lado",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@avisa",
+     "vol": 0.14
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "key": "j03_s4",
+   "voice": "antonio",
+   "text": "Las llamadas salen del sistema y quedan grabadas. Y si el asesor se va, los leads y todo su historial se quedan en tu inmobiliaria.",
+   "p": {
+    "items": [
+     {
+      "t": "WhatsApp conectado",
+      "at": "@sistema",
+      "color": "cyan",
+      "k": "Siempre"
+     },
+     {
+      "t": "Llamadas grabadas",
+      "at": "@grabadas",
+      "color": "purple",
+      "k": "Siempre"
+     },
+     {
+      "t": "Los leads se quedan",
+      "at": "@quedan",
+      "color": "green",
+      "k": "Si se va"
+     }
+    ],
+    "img": "empty_desk",
+    "title": "TUS LEADS, TUYOS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@sistema",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@grabadas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@quedan",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "key": "j03_s5",
+   "voice": "antonio",
+   "tail": 1.0,
+   "captions": true,
+   "text": "Si tienes una inmobiliaria con asesores, comenta LEADS y te lo instalamos.",
+   "p": {
+    "word": "LEADS",
+    "top": "PARA INMOBILIARIAS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}

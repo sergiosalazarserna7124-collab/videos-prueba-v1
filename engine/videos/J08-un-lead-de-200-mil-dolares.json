@@ -1,0 +1,315 @@
+{
+ "id": "J08-un-lead-de-200-mil-dolares",
+ "title": "Un lead de 200 mil dólares: la comisión que se va por fuera (Serie Sala de Juntas, video 8)",
+ "voice": "antonio",
+ "music": "music/pulse.mp3",
+ "tempo": 1.15,
+ "keywords": [
+  "WhatsApp",
+  "asesor",
+  "asesores",
+  "automático",
+  "aviso",
+  "avisa",
+  "compadre",
+  "comisión",
+  "competencia",
+  "dólares",
+  "fuera",
+  "grabadas",
+  "inmobiliaria",
+  "inmobiliarios",
+  "lead",
+  "leads",
+  "reporte",
+  "robando",
+  "probar",
+  "contestó",
+  "celular",
+  "saber",
+  "venta"
+ ],
+ "ia": [
+  {
+   "clip": "j08_a",
+   "dice": "Asesores inmobiliarios: ¿saben cuánto vale uno de estos leads? Un depa de doscientos mil dólares.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, inside a parked car right outside a real estate agency office with a big \"AGENCIA INMOBILIARIA\" sign. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, shows his phone screen with a luxury apartment listing to the camera, greedy grin, rubs his thumb and fingers together in a money gesture and says in Mexican Spanish, fast and confident, like a mockumentary confession: \"Asesores inmobiliarios: ¿saben cuánto vale uno de estos leads? Un depa de doscientos mil dólares.\" Medium close-up, static camera. Audio: only his voice in Spanish, quiet street ambience. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j08_b",
+   "dice": "Compadre, te paso el lead. Tú lo cierras allá y la comisión nos la partimos.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, inside a parked car right outside a real estate agency office with a big \"AGENCIA INMOBILIARIA\" sign. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, holds the phone to his ear, looks left and right to make sure nobody is watching, leans in and says in Mexican Spanish, whispering, conspiratorial: \"Compadre, te paso el lead. Tú lo cierras allá y la comisión nos la partimos.\" Close-up, static camera. Audio: only his voice in Spanish. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j08_c",
+   "dice": "¿Doscientos leads este mes… y ni una venta? Yo no entiendo qué pasa.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, a real estate agency owner's office with a big whiteboard that says \"VENTAS: 0\". Don Ramiro, the owner of a real estate agency, a short chubby Mexican man in his fifties with a thick black mustache, receding hairline, white shirt with rolled-up sleeves and a loose red tie, stands in front of the whiteboard holding a printed leads report, confused, scratches his head and looks at the camera and says in Mexican Spanish, confused and frustrated: \"¿Doscientos leads este mes… y ni una venta? Yo no entiendo qué pasa.\" Medium shot, static camera. Audio: only his voice in Spanish, office ambience. No music. No subtitles, no on-screen text."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j08_a.mp4",
+    "words": "clips/j08_a.words.json",
+    "lines": [
+     "UN [LEAD] DE",
+     "US$200,000"
+    ],
+    "kicker": "Asesores inmobiliarios",
+    "kickerColor": "red",
+    "titleOut": 66,
+    "size": 118
+   },
+   "sfx": [
+    {
+     "src": "sfx/notif.wav",
+     "at": 0,
+     "vol": 0.16
+    }
+   ]
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j08_b.mp4",
+    "words": "clips/j08_b.words.json"
+   }
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j08_c.mp4",
+    "words": "clips/j08_c.words.json"
+   }
+  },
+  {
+   "type": "stat",
+   "key": "j08_s2",
+   "voice": "antonio",
+   "tail": 0.1,
+   "text": "Haz la cuenta: cada lead que se va por fuera puede ser una venta de cincuenta, cien o doscientos mil dólares. Y esa comisión ya no es para tu inmobiliaria.",
+   "p": {
+    "title": "LO QUE SE VA POR FUERA",
+    "img": "advisor_car",
+    "stacked": true,
+    "items": [
+     {
+      "value": 50000,
+      "prefix": "US$",
+      "label": "un depa",
+      "at": "@cincuenta",
+      "color": "amber"
+     },
+     {
+      "value": 100000,
+      "prefix": "US$",
+      "label": "una casa",
+      "at": "@cien",
+      "color": "amber"
+     },
+     {
+      "value": 200000,
+      "prefix": "US$",
+      "label": "un penthouse",
+      "at": "@doscientos",
+      "color": "red"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@cincuenta",
+     "vol": 0.09
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@cien",
+     "vol": 0.09
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@doscientos",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "type": "flow",
+   "key": "auto_std",
+   "voice": "antonio",
+   "tail": 0.2,
+   "text": "Lead Master se conecta al WhatsApp y a las llamadas de tus asesores y vendedores, y en automático te dice qué pasó con cada lead. Todos los días te llega el reporte, sin que nadie llene nada.",
+   "p": {
+    "img": "office_agents",
+    "title": "TODO EN AUTOMÁTICO",
+    "nodes": [
+     {
+      "t": "WhatsApp de tus asesores",
+      "at": "@WhatsApp",
+      "color": "wa",
+      "sub": "y vendedores"
+     },
+     {
+      "t": "Sus llamadas",
+      "at": "@llamadas",
+      "color": "purple"
+     },
+     {
+      "t": "Lead Master (IA)",
+      "at": "@automático",
+      "color": "cyan",
+      "sub": "en automático"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamadas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@automático",
+     "vol": 0.1
+    }
+   ],
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@lead#2",
+     "p": {
+      "title": "Qué pasó con cada lead",
+      "sub": "Reporte automático · Lead Master",
+      "sched": "Llega solo todos los días · 8:00 pm",
+      "time": "8:00 pm",
+      "lines": [
+       {
+        "t": "Diana Trejo · Paola G. · cita el sábado 11 am",
+        "c": "green",
+        "at": "@lead#2+4"
+       },
+       {
+        "t": "Adriana Solís · Valeria R. · pidió opciones",
+        "at": "@lead#2+10"
+       },
+       {
+        "t": "Lucía Hernández · Diego H. · nadie le llamó",
+        "c": "red",
+        "at": "@lead#2+16"
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@reporte"
+       },
+       {
+        "t": "Nadie llenó nada: lo armó Lead Master solo",
+        "b": true,
+        "at": "@reporte"
+       }
+      ],
+      "alert": {
+       "t": "En automático: WhatsApp y llamadas conectados",
+       "c": "green",
+       "at": "@nada"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "panel",
+   "key": "j08_s3",
+   "voice": "antonio",
+   "text": "Con Lead Master ves cada conversación. Y si un asesor manda un lead a otra inmobiliaria, te llega un aviso antes de que se cierre la venta.",
+   "p": {
+    "title": "Conversaciones de hoy",
+    "right": "Avisos de la IA",
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Depa de 2 recámaras · visita el sábado 11 am",
+      "status": "Normal",
+      "color": "green",
+      "at": "@conversación"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Rodrigo (asesor)",
+      "lead": "Adriana Solís",
+      "summary": "«Te paso con mi compadre, allá te lo dejan mejor»",
+      "status": "Lead por fuera",
+      "color": "red",
+      "at": "@otra"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@conversación",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@otra",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@aviso",
+     "vol": 0.14
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "key": "j03_s5",
+   "voice": "antonio",
+   "tail": 1.0,
+   "captions": true,
+   "text": "Si tienes una inmobiliaria con asesores, comenta LEADS y te lo instalamos.",
+   "p": {
+    "word": "LEADS",
+    "top": "PARA INMOBILIARIAS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}

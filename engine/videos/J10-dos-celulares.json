@@ -1,0 +1,351 @@
+{
+ "id": "J10-dos-celulares",
+ "title": "Dos celulares: el asesor que le pasa tus leads a la competencia (Serie Sala de Juntas, video 10)",
+ "voice": "antonio",
+ "music": "music/pulse.mp3",
+ "tempo": 1.15,
+ "keywords": [
+  "WhatsApp",
+  "asesor",
+  "asesores",
+  "automático",
+  "aviso",
+  "avisa",
+  "compadre",
+  "comisión",
+  "competencia",
+  "dólares",
+  "fuera",
+  "grabadas",
+  "inmobiliaria",
+  "inmobiliarios",
+  "lead",
+  "leads",
+  "reporte",
+  "robando",
+  "probar",
+  "contestó",
+  "celular",
+  "saber",
+  "venta"
+ ],
+ "ia": [
+  {
+   "clip": "j10_a",
+   "dice": "Asesores inmobiliarios: dos celulares. Uno para los leads de la inmobiliaria… y otro para los míos.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, a busy modern real estate agency office with desks and property posters. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, sits at his desk holding two phones, one in each hand, lifts each one when he mentions it, smug grin, talking to the camera and says in Mexican Spanish, fast and confident, like a mockumentary confession: \"Asesores inmobiliarios: dos celulares. Uno para los leads de la inmobiliaria… y otro para los míos.\" Medium close-up, static camera. Audio: only his voice in Spanish, office ambience. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j10_b",
+   "dice": "Rodrigo, ¿otra vez le estás pasando leads a la competencia?",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, a busy modern real estate agency office with desks and property posters. Paola, a confident Mexican real estate agent in her thirties with big curly hair, a pink blouse and gold hoop earrings, stands behind a desk with her arms crossed, catching a colleague red-handed, raises one eyebrow, angry and says in Mexican Spanish, firm and accusing: \"Rodrigo, ¿otra vez le estás pasando leads a la competencia?\" Medium close-up, static camera. Audio: only her voice in Spanish, office ambience. No music. No subtitles, no on-screen text."
+  },
+  {
+   "clip": "j10_c",
+   "dice": "¿Yo? No, no, no… es mi primo. Bueno, mi primo trabaja ahí.",
+   "prompt": "Vertical 9:16 video. Stylized 3D animated cartoon with exaggerated caricature proportions, like a modern animated comedy film. Daytime, a busy modern real estate agency office with desks and property posters. Rodrigo, a tall thin Mexican real estate agent in his thirties with slicked-back shiny hair, a thin pencil mustache, a shiny grey suit with an open collar and a gold chain, sly smile, sitting at his desk, startled, quickly hides one of his two phones inside his jacket, nervous laugh, sweating and says in Mexican Spanish, nervous and fast: \"¿Yo? No, no, no… es mi primo. Bueno, mi primo trabaja ahí.\" Medium close-up, static camera. Audio: only his voice in Spanish, office ambience. No music. No subtitles, no on-screen text."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j10_a.mp4",
+    "words": "clips/j10_a.words.json",
+    "lines": [
+     "¿EL [LEAD] ES",
+     "TUYO O SUYO?"
+    ],
+    "kicker": "Inmobiliarias",
+    "kickerColor": "red",
+    "titleOut": 66,
+    "size": 122
+   },
+   "sfx": [
+    {
+     "src": "sfx/notif.wav",
+     "at": 0,
+     "vol": 0.16
+    }
+   ]
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j10_b.mp4",
+    "words": "clips/j10_b.words.json"
+   }
+  },
+  {
+   "type": "clip",
+   "p": {
+    "src": "clips/j10_c.mp4",
+    "words": "clips/j10_c.words.json"
+   }
+  },
+  {
+   "type": "photo",
+   "key": "j10_s2",
+   "voice": "antonio",
+   "tail": 0.1,
+   "text": "Si tus leads viven en el celular personal de cada asesor, son más de él que de tu inmobiliaria. Y nadie ve a quién se los pasa.",
+   "p": {
+    "img": "advisor_night",
+    "lines": [
+     "SU CELULAR,",
+     "SUS [LEADS]"
+    ],
+    "lineAts": [
+     "@celular",
+     "@inmobiliaria"
+    ],
+    "size": 124,
+    "stamp": {
+     "text": "A LA COMPETENCIA",
+     "at": "@pasa",
+     "size": 80
+    }
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@inmobiliaria",
+     "vol": 0.1
+    },
+    {
+     "src": "sfx/stamp.wav",
+     "at": "@pasa",
+     "vol": 0.26
+    }
+   ]
+  },
+  {
+   "type": "flow",
+   "key": "auto_std",
+   "voice": "antonio",
+   "tail": 0.2,
+   "text": "Lead Master se conecta al WhatsApp y a las llamadas de tus asesores y vendedores, y en automático te dice qué pasó con cada lead. Todos los días te llega el reporte, sin que nadie llene nada.",
+   "p": {
+    "img": "office_agents",
+    "title": "TODO EN AUTOMÁTICO",
+    "nodes": [
+     {
+      "t": "WhatsApp de tus asesores",
+      "at": "@WhatsApp",
+      "color": "wa",
+      "sub": "y vendedores"
+     },
+     {
+      "t": "Sus llamadas",
+      "at": "@llamadas",
+      "color": "purple"
+     },
+     {
+      "t": "Lead Master (IA)",
+      "at": "@automático",
+      "color": "cyan",
+      "sub": "en automático"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@WhatsApp",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@llamadas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@automático",
+     "vol": 0.1
+    }
+   ],
+   "ins": [
+    {
+     "kind": "report",
+     "at": "@lead#2",
+     "p": {
+      "title": "Qué pasó con cada lead",
+      "sub": "Reporte automático · Lead Master",
+      "sched": "Llega solo todos los días · 8:00 pm",
+      "time": "8:00 pm",
+      "lines": [
+       {
+        "t": "Diana Trejo · Paola G. · cita el sábado 11 am",
+        "c": "green",
+        "at": "@lead#2+4"
+       },
+       {
+        "t": "Adriana Solís · Valeria R. · pidió opciones",
+        "at": "@lead#2+10"
+       },
+       {
+        "t": "Lucía Hernández · Diego H. · nadie le llamó",
+        "c": "red",
+        "at": "@lead#2+16"
+       },
+       {
+        "t": "",
+        "sep": true,
+        "at": "@reporte"
+       },
+       {
+        "t": "Nadie llenó nada: lo armó Lead Master solo",
+        "b": true,
+        "at": "@reporte"
+       }
+      ],
+      "alert": {
+       "t": "En automático: WhatsApp y llamadas conectados",
+       "c": "green",
+       "at": "@nada"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "panel",
+   "key": "j10_s3",
+   "voice": "antonio",
+   "text": "Con Lead Master, el WhatsApp de cada asesor está conectado: ves lo que le dice a cada lead. Y si manda uno a la competencia, te avisa.",
+   "p": {
+    "title": "Conversaciones de hoy",
+    "right": "Avisos de la IA",
+    "rows": [
+     {
+      "ch": "wa",
+      "advisor": "Valeria Ríos",
+      "lead": "Diana Trejo",
+      "summary": "Le mandó 3 opciones de la inmobiliaria · visita el sábado",
+      "status": "Normal",
+      "color": "green",
+      "at": "@conectado"
+     },
+     {
+      "ch": "wa",
+      "advisor": "Rodrigo (asesor)",
+      "lead": "Lucía Hernández",
+      "summary": "«Mejor te atiende mi primo, en la otra inmobiliaria»",
+      "status": "A la competencia",
+      "color": "red",
+      "at": "@competencia"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/ding.wav",
+     "at": "@conectado",
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": "@competencia",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/notif.wav",
+     "at": "@avisa",
+     "vol": 0.14
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "key": "j03_s4",
+   "voice": "antonio",
+   "text": "Las llamadas salen del sistema y quedan grabadas. Y si el asesor se va, los leads y todo su historial se quedan en tu inmobiliaria.",
+   "p": {
+    "items": [
+     {
+      "t": "WhatsApp conectado",
+      "at": "@sistema",
+      "color": "cyan",
+      "k": "Siempre"
+     },
+     {
+      "t": "Llamadas grabadas",
+      "at": "@grabadas",
+      "color": "purple",
+      "k": "Siempre"
+     },
+     {
+      "t": "Los leads se quedan",
+      "at": "@quedan",
+      "color": "green",
+      "k": "Si se va"
+     }
+    ],
+    "img": "empty_desk",
+    "title": "TUS LEADS, TUYOS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@sistema",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@grabadas",
+     "vol": 0.12
+    },
+    {
+     "src": "sfx/pop.wav",
+     "at": "@quedan",
+     "vol": 0.12
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "key": "j03_s5",
+   "voice": "antonio",
+   "tail": 1.0,
+   "captions": true,
+   "text": "Si tienes una inmobiliaria con asesores, comenta LEADS y te lo instalamos.",
+   "p": {
+    "word": "LEADS",
+    "top": "PARA INMOBILIARIAS"
+   },
+   "sfx": [
+    {
+     "src": "sfx/whoosh.wav",
+     "at": 0,
+     "vol": 0.08
+    },
+    {
+     "src": "sfx/impact.wav",
+     "at": 6,
+     "vol": 0.14
+    }
+   ]
+  }
+ ]
+}
