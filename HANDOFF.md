@@ -13,9 +13,9 @@
   `python3 tools/ia_clip.py spec videos/J19-....json` (igual J20, J21), revisar cuadros, `tools/words_energia.py` por plano,
   y render con build.py + copia para celular (ver `tools/render_all.sh`).
 - Gasto Gemini en esta tanda: 18 × 8 s × US$0,07 ≈ US$10,1 (faltan ≈ US$5,0).
-- Drive: carpeta privada «Lead Master · Sala de Juntas J13-J21» creada
-  (https://drive.google.com/drive/folders/15dEzhmpk_Y1kIMoQtTetZmutOdmgGRu3), pero está VACÍA: el conector de Drive de
-  esta sesión no acepta archivos de más de ~3 MB por llamada y los videos pesan 7,6–11 MB.
+- Drive: J13–J18 subidos (20 nov) a la carpeta privada «Lead Master · Sala de Juntas J13-J21»
+  (https://drive.google.com/drive/folders/15dEzhmpk_Y1kIMoQtTetZmutOdmgGRu3) con GOOGLEDRIVE_UPLOAD_FROM_URL de Composio
+  (cuenta de Sergio) desde el raw de GitHub de esta rama; el conector de Drive de la sesión no acepta más de ~3 MB por llamada.
 
 # Ahora (19 nov 2026): 5 variaciones de J03 «se roban los leads» (J07 a J11)
 
