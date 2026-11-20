@@ -14,7 +14,8 @@
   y render con build.py + copia para celular (ver `tools/render_all.sh`).
 - Gasto Gemini en esta tanda: 18 × 8 s × US$0,07 ≈ US$10,1 (faltan ≈ US$5,0).
 - Meta Ads (20 nov, pedido de Sergio): a la campaña «LeadMaster | UGC formato nuevo | Formulario | CO-CL-USA | 9 nov»
-  (sigue EN PAUSA) se agregaron 12 anuncios nuevos, todos en PAUSED (borrador) hasta que Sergio diga: J07–J11, J13–J18 y
+  se agregaron 12 anuncios nuevos. **LANZADA el 20 nov por pedido de Sergio** (campaña, conjunto y los 28 anuncios en ACTIVE,
+  US$16/día por la regla del jueves; el domingo la regla la sube a US$80): J07–J11, J13–J18 y
   HF1 (el video de Higgsfield, asesor realista en el carro «se lo paso a mi compa», 10 s, 480p, sin bloque TODO EN AUTOMÁTICO
   ni cierre: es un test). Mismo formato que J03 (formulario 4563633850580091, botón «Registrarte», texto y título de J03).
   Ids en `videos/meta_ads_20nov.json`. Total: 28 anuncios (16 viejos activos dentro de la campaña pausada + 12 nuevos en pausa).
