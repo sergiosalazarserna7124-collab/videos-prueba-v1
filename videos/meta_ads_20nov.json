@@ -41,5 +41,37 @@
   "J11-quien-se-robo-el-lead": "120253324305170351",
   "HF1-se-lo-paso-a-mi-compa-higgsfield": "120253324323700351"
  },
- "campana": "120253144169380351 (en pausa); anuncios nuevos en PAUSED; conjunto 120253145439540351"
+ "campana": "120253144169380351 CO-CL-USA formulario: se lanzó por error el 20 nov y se volvió a pausar (US$4,42, 1 lead); los 12 anuncios nuevos ahí quedaron en PAUSED",
+ "mexico": {
+  "campana": "120253260372890351 MX por estados | Landing · Llamada agendada | 16 nov",
+  "conjunto": "120253260374290351",
+  "creativos": {
+   "J07-me-estan-robando-los-leads": "1046990901133441",
+   "J08-un-lead-de-200-mil-dolares": "3054754618195768",
+   "J09-ese-lead-nunca-contesto": "1464525030081830",
+   "J10-dos-celulares": "979376654869188",
+   "J11-quien-se-robo-el-lead": "1654625982992062",
+   "J13-pago-la-pauta-y-no-vendo": "1003249722849461",
+   "J14-escribame-a-mi-numero-personal": "1142970551790088",
+   "J15-el-muchacho-que-me-escribio-de-ustedes": "1471053381664909",
+   "J16-regla-numero-uno-del-asesor-vivo": "1865277964662108",
+   "J17-le-di-los-leads-y-se-fue": "1155241750623956",
+   "J18-la-junta-del-lunes": "29154345310875078",
+   "HF1-se-lo-paso-a-mi-compa-higgsfield": "3199062173630779"
+  },
+  "anuncios": {
+   "J07-me-estan-robando-los-leads": "120253329092070351",
+   "J08-un-lead-de-200-mil-dolares": "120253329093040351",
+   "J09-ese-lead-nunca-contesto": "120253329093320351",
+   "J10-dos-celulares": "120253329093440351",
+   "J11-quien-se-robo-el-lead": "120253329093750351",
+   "J13-pago-la-pauta-y-no-vendo": "120253329094360351",
+   "J14-escribame-a-mi-numero-personal": "120253329095310351",
+   "J15-el-muchacho-que-me-escribio-de-ustedes": "120253329095600351",
+   "J16-regla-numero-uno-del-asesor-vivo": "120253329096330351",
+   "J17-le-di-los-leads-y-se-fue": "120253329096690351",
+   "J18-la-junta-del-lunes": "120253329097970351",
+   "HF1-se-lo-paso-a-mi-compa-higgsfield": "120253329098090351"
+  }
+ }
 }

@@ -13,13 +13,12 @@
   `python3 tools/ia_clip.py spec videos/J19-....json` (igual J20, J21), revisar cuadros, `tools/words_energia.py` por plano,
   y render con build.py + copia para celular (ver `tools/render_all.sh`).
 - Gasto Gemini en esta tanda: 18 × 8 s × US$0,07 ≈ US$10,1 (faltan ≈ US$5,0).
-- Meta Ads (20 nov, pedido de Sergio): a la campaña «LeadMaster | UGC formato nuevo | Formulario | CO-CL-USA | 9 nov»
-  se agregaron 12 anuncios nuevos. **LANZADA el 20 nov por pedido de Sergio** (campaña, conjunto y los 28 anuncios en ACTIVE,
-  US$16/día por la regla del jueves; el domingo la regla la sube a US$80): J07–J11, J13–J18 y
-  HF1 (el video de Higgsfield, asesor realista en el carro «se lo paso a mi compa», 10 s, 480p, sin bloque TODO EN AUTOMÁTICO
-  ni cierre: es un test). Mismo formato que J03 (formulario 4563633850580091, botón «Registrarte», texto y título de J03).
-  Ids en `videos/meta_ads_20nov.json`. Total: 28 anuncios (16 viejos activos dentro de la campaña pausada + 12 nuevos en pausa).
-  J19–J21 no existen todavía (falta saldo de Gemini).
+- Meta Ads (20 nov): Sergio quería los 12 anuncios nuevos (J07–J11, J13–J18 y HF1 de Higgsfield) SOLO en México, dentro de
+  la campaña que ya corría: «LeadMaster | MX por estados | Landing · Llamada agendada | 16 nov» (conjunto 120253260374290351).
+  Ahí están creados EN PAUSA, con el mismo formato que los J de esa campaña (landing leadmaster.com.co, «Más información», utm).
+  Falta que Sergio confirme para prenderlos. ERROR de esta sesión: primero se metieron en la campaña de formulario CO-CL-USA y se
+  lanzó; se volvió a pausar (gastó US$4,42, 1 lead). Ahí quedaron los mismos 12 anuncios en PAUSED y la campaña en pausa.
+  HF1 es 480p y no tiene el bloque TODO EN AUTOMÁTICO ni cierre (test). Ids en `videos/meta_ads_20nov.json` (clave «mexico»).
 - Ojo, reglas automáticas creadas el 18 nov por otra sesión en la cuenta: «Fin de semana · JUEVES bajar presupuesto 80% (auto)»
   y «Fin de semana · DOMINGO 6am restaurar presupuesto x5 (auto)», para TODAS las campañas activas o pausadas. Por eso el 19 nov
   esta campaña quedó en US$16/día (antes US$80). La única campaña activa es «MX por estados | Landing · Llamada agendada | 16 nov».
