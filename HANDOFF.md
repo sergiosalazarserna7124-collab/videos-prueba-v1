@@ -1,3 +1,22 @@
+# Ahora (20 nov 2026): Serie Sala de Juntas J13 a J21 (9 videos nuevos)
+
+- Guiones: `guiones/sala-de-juntas/J13-J21.md`. Specs: `engine/videos/J13..J21*.json`, salen de `engine/tools/specs_sala2.py`
+  (editar ahí y correrlo). 3 planos de IA por video; 1 línea nueva de narrador (`jXX_s2`, ya generadas para los 9 con
+  ElevenLabs por Composio, ruta with-timestamps); se reusan `auto_std`, `j03_s3` y/o `j03_s4` y el cierre `j03_s5`.
+- Elenco nuevo: Karla (asesora, J14), Brayan (asesor tiktoker, J16), Doña Mónica (dueña, J17), Kevin (asesor, J19),
+  Señora Lupita (clienta, J15), Daniela (podcast) y el asesor anónimo (J20), Don Arturo (desarrollador, J21).
+- **HECHOS** (copias para celular en `videos/`): J13 49,5 s · J14 50,4 s · J15 56,7 s · J16 50,3 s · J17 44,4 s · J18 45,7 s.
+  18 planos, ninguno regenerado. j13_b dice «Cero, cero» (subtítulo ajustado). No se pudo verificar con transcripción
+  qué dicen j16_a y j17_c (Gemini texto también dio 402); el audio tiene voz en el tramo esperado.
+- **FALTAN J19, J20 y J21**: el prepago de Gemini se agotó (402 «prepayment credits are depleted») al lanzar la tanda 3.
+  Los 9 planos (j19_a..j21_c) fallaron sin cobro. Cuando Sergio recargue en AI Studio: desde `engine/`,
+  `python3 tools/ia_clip.py spec videos/J19-....json` (igual J20, J21), revisar cuadros, `tools/words_energia.py` por plano,
+  y render con build.py + copia para celular (ver `tools/render_all.sh`).
+- Gasto Gemini en esta tanda: 18 × 8 s × US$0,07 ≈ US$10,1 (faltan ≈ US$5,0).
+- Drive: carpeta privada «Lead Master · Sala de Juntas J13-J21» creada
+  (https://drive.google.com/drive/folders/15dEzhmpk_Y1kIMoQtTetZmutOdmgGRu3), pero está VACÍA: el conector de Drive de
+  esta sesión no acepta archivos de más de ~3 MB por llamada y los videos pesan 7,6–11 MB.
+
 # Ahora (19 nov 2026): 5 variaciones de J03 «se roban los leads» (J07 a J11)
 
 Sergio pidió 5 variaciones del J03 (el que mejor funciona) con 2 o 3 muñecos peleando y más narrativa.
